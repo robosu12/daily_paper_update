@@ -7,6 +7,7 @@ import logging
 import argparse
 import datetime
 import requests
+import time  # 添加time模块用于API调用延迟
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
@@ -15,6 +16,10 @@ logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
 base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
 github_url = "https://api.github.com/search/repositories"
 arxiv_url = "http://arxiv.org/"
+
+# DeepSeek API配置 - 从环境变量获取API密钥
+DEEPSEEK_API_KEY = "sk-179d350b272b4b4da85b426b6271c7b5"
+DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 
 def load_config(config_file:str) -> dict:
     '''
@@ -84,13 +89,72 @@ def get_code_link(qword:str) -> str:
         code_link = results["items"][0]["html_url"]
     return code_link
 
-def get_daily_papers(topic,query="slam", max_results=2):
+def get_paper_summary(paper_title: str, paper_abstract: str) -> str:
+    """
+    使用DeepSeek API总结论文内容和创新点
+    @param paper_title: 论文标题
+    @param paper_abstract: 论文摘要
+    @return: 格式化的总结内容
+    """
+    if not DEEPSEEK_API_KEY or DEEPSEEK_API_KEY == "your_api_key_here":
+        logging.warning("DeepSeek API key not configured. Skipping summary generation.")
+        return "Summary not available (API key missing)"
+    
+    try:
+        # 构建API请求
+        headers = {
+            "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
+            "Content-Type": "application/json"
+        }
+        
+        # 创建提示词，要求总结论文内容和创新点
+        prompt = (
+            f"请总结以下学术论文的主要内容并列出其创新点，使用简洁的Markdown格式：\n"
+            f"标题: {paper_title}\n"
+            f"摘要: {paper_abstract}\n\n"
+            f"要求：\n"
+            f"1. 主要内容总结在2-3句话内\n"
+            f"2. 创新点使用项目符号列表展示\n"
+            f"3. 总字数不超过200字"
+        )
+        
+        data = {
+            "model": "deepseek-reasoner",
+            "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.3,
+            "max_tokens": 500,
+            "stream": False
+        }
+        
+        # 调用DeepSeek API
+        response = requests.post(DEEPSEEK_API_URL, headers=headers, json=data)
+        response.raise_for_status()
+        
+        # 解析响应
+        result = response.json()
+        content = result["choices"][0]["message"]["content"].strip()
+        
+        # 简化输出，移除不必要的格式
+        content = re.sub(r"^.*?### (主要内容|创新点)[:\s]*", "", content, flags=re.DOTALL)
+        return content
+    
+    except requests.exceptions.RequestException as e:
+        logging.error(f"DeepSeek API请求失败: {e}")
+        return "Summary generation failed (API error)"
+    except (KeyError, IndexError) as e:
+        logging.error(f"DeepSeek API响应解析失败: {e}")
+        return "Summary generation failed (response format error)"
+    except Exception as e:
+        logging.error(f"DeepSeek API未知错误: {e}")
+        return "Summary generation failed (unknown error)"
+
+def get_daily_papers(topic, query="slam", max_results=2):
     """
     @param topic: str
     @param query: str
     @return paper_with_code: dict
     """
-    # output
+    # 输出
     content = dict()
     content_to_web = dict()
     search_engine = arxiv.Search(
@@ -100,27 +164,29 @@ def get_daily_papers(topic,query="slam", max_results=2):
     )
 
     for result in search_engine.results():
-
-        paper_id            = result.get_short_id()
-        paper_title         = result.title
-        paper_url           = result.entry_id
-        code_url            = base_url + paper_id #TODO
-        paper_abstract      = result.summary.replace("\n"," ")
-        paper_authors       = get_authors(result.authors)
-        paper_first_author  = get_authors(result.authors,first_author = True)
-        primary_category    = result.primary_category
-        publish_time        = result.published.date()
-        update_time         = result.updated.date()
-        comments            = result.comment
+        paper_id = result.get_short_id()
+        paper_title = result.title
+        paper_url = result.entry_id
+        code_url = base_url + paper_id
+        paper_abstract = result.summary.replace("\n", " ")
+        paper_authors = get_authors(result.authors)
+        paper_first_author = get_authors(result.authors, first_author=True)
+        primary_category = result.primary_category
+        publish_time = result.published.date()
+        update_time = result.updated.date()
+        comments = result.comment
 
         logging.info(f"Time = {update_time} title = {paper_title} author = {paper_first_author}")
 
+        # 生成论文总结
+        paper_summary = get_paper_summary(paper_title, paper_abstract)
+        
+        # 添加延迟以避免API速率限制
+        time.sleep(1)
+
         # eg: 2108.09112v1 -> 2108.09112
         ver_pos = paper_id.find('v')
-        if ver_pos == -1:
-            paper_key = paper_id
-        else:
-            paper_key = paper_id[0:ver_pos]
+        paper_key = paper_id[0:ver_pos] if ver_pos != -1 else paper_id
         paper_url = arxiv_url + 'abs/' + paper_key
 
         try:
@@ -129,26 +195,23 @@ def get_daily_papers(topic,query="slam", max_results=2):
             repo_url = None
             if "official" in r and r["official"]:
                 repo_url = r["official"]["url"]
-            # TODO: not found, two more chances
-            # else:
-            #    repo_url = get_code_link(paper_title)
-            #    if repo_url is None:
-            #        repo_url = get_code_link(paper_key)
+            
+            # 更新表格格式，添加总结列
             if repo_url is not None:
-                content[paper_key] = "|**{}**|**{}**|{} et.al.|[{}]({})|**[link]({})**|\n".format(
-                       update_time,paper_title,paper_first_author,paper_key,paper_url,repo_url)
-                content_to_web[paper_key] = "- {}, **{}**, {} et.al., Paper: [{}]({}), Code: **[{}]({})**".format(
-                       update_time,paper_title,paper_first_author,paper_url,paper_url,repo_url,repo_url)
-
+                content[paper_key] = "|**{}**|**{}**|{} et.al.|[{}]({})|**[link]({})**|{}|\n".format(
+                    update_time, paper_title, paper_first_author, paper_key, paper_url, repo_url, paper_summary)
+                
+                content_to_web[paper_key] = "- {}, **{}**, {} et.al., Paper: [{}]({}), Code: **[{}]({})**, Summary: {}".format(
+                    update_time, paper_title, paper_first_author, paper_url, paper_url, repo_url, repo_url, paper_summary)
             else:
-                content[paper_key] = "|**{}**|**{}**|{} et.al.|[{}]({})|null|\n".format(
-                       update_time,paper_title,paper_first_author,paper_key,paper_url)
-                content_to_web[paper_key] = "- {}, **{}**, {} et.al., Paper: [{}]({})".format(
-                       update_time,paper_title,paper_first_author,paper_url,paper_url)
+                content[paper_key] = "|**{}**|**{}**|{} et.al.|[{}]({})|null|{}|\n".format(
+                    update_time, paper_title, paper_first_author, paper_key, paper_url, paper_summary)
+                
+                content_to_web[paper_key] = "- {}, **{}**, {} et.al., Paper: [{}]({}), Summary: {}".format(
+                    update_time, paper_title, paper_first_author, paper_url, paper_url, paper_summary)
 
-            # TODO: select useful comments
-            comments = None
-            if comments != None:
+            # 添加注释信息（如果有）
+            if comments:
                 content_to_web[paper_key] += f", {comments}\n"
             else:
                 content_to_web[paper_key] += f"\n"
@@ -156,9 +219,9 @@ def get_daily_papers(topic,query="slam", max_results=2):
         except Exception as e:
             logging.error(f"exception: {e} with id: {paper_key}")
 
-    data = {topic:content}
-    data_web = {topic:content_to_web}
-    return data,data_web
+    data = {topic: content}
+    data_web = {topic: content_to_web}
+    return data, data_web
 
 def update_paper_links(filename):
     '''
@@ -324,13 +387,14 @@ def json_to_md(filename,md_filename,
             # the head of each part
             f.write(f"## {keyword}\n\n")
 
-            if use_title == True :
+            if use_title:
                 if to_web == False:
-                    f.write("|Publish Date|Title|Authors|PDF|Code|\n" + "|---|---|---|---|---|\n")
+                    f.write("|Publish Date|Title|Authors|PDF|Code|Summary|\n" 
+                            "|---|---|---|---|---|---|\n")
                 else:
-                    f.write("| Publish Date | Title | Authors | PDF | Code |\n")
-                    f.write("|:---------|:-----------------------|:---------|:------|:------|\n")
-
+                    f.write("| Publish Date | Title | Authors | PDF | Code | Summary |\n")
+                    f.write("|:---------|:-----------------------|:---------|:------|:------|:--------|\n")
+            
             # sort papers by date
             day_content = sort_papers(day_content)
 
