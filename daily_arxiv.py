@@ -54,13 +54,15 @@ def load_config(config_file:str) -> dict:
         logging.info(f'config = {config}')
     return config
 
-def get_authors(authors, first_author = False):
-    output = str()
-    if first_author == False:
-        output = ", ".join(str(author) for author in authors)
+def get_authors(authors, first_author=False):
+    """处理作者列表，支持单作者和多作者显示"""
+    if not first_author:
+        # 所有作者用逗号分隔
+        return ", ".join(str(author) for author in authors)
     else:
-        output = authors[0] + "等" if len(authors) > 1 else authors[0]
-    return output
+        # 仅显示第一作者，多作者时添加“等”
+        first_author_name = str(authors[0])  # 关键修复：转换为字符串
+        return f"{first_author_name}等" if len(authors) > 1 else first_author_name
 
 def sort_papers(papers):
     output = dict()
