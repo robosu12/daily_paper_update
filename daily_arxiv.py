@@ -9,6 +9,7 @@ import datetime
 import requests
 import time
 import html
+import feedparser  # 添加备用解析库
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
@@ -58,7 +59,7 @@ def get_authors(authors, first_author = False):
     if first_author == False:
         output = ", ".join(str(author) for author in authors)
     else:
-        output = authors[0]
+        output = authors[0] + "等" if len(authors) > 1 else authors[0]
     return output
 
 def sort_papers(papers):
@@ -82,12 +83,16 @@ def get_code_link(qword:str) -> str:
         "sort": "stars",
         "order": "desc"
     }
-    r = requests.get(github_url, params=params)
-    results = r.json()
-    code_link = None
-    if results["total_count"] > 0:
-        code_link = results["items"][0]["html_url"]
-    return code_link
+    try:
+        r = requests.get(github_url, params=params, timeout=15)
+        results = r.json()
+        code_link = None
+        if results["total_count"] > 0:
+            code_link = results["items"][0]["html_url"]
+        return code_link
+    except Exception as e:
+        logging.error(f"GitHub搜索失败: {e}")
+        return None
 
 def get_paper_summary(paper_title: str, paper_abstract: str) -> str:
     """
@@ -99,7 +104,7 @@ def get_paper_summary(paper_title: str, paper_abstract: str) -> str:
     # 检查API密钥是否配置
     if not DEEPSEEK_API_KEY or DEEPSEEK_API_KEY == "your_api_key_here":
         logging.warning("DeepSeek API key not configured. Skipping summary generation.")
-        return "API key missing"
+        return generate_fallback_summary(paper_abstract)
     
     try:
         # 构建API请求
@@ -151,24 +156,83 @@ def get_paper_summary(paper_title: str, paper_abstract: str) -> str:
     
     except requests.exceptions.RequestException as e:
         logging.error(f"DeepSeek API请求失败: {e}")
-        return "API请求失败"
+        return generate_fallback_summary(paper_abstract)
     except (KeyError, IndexError) as e:
         logging.error(f"DeepSeek API响应解析失败: {e}")
-        return "响应解析失败"
+        return generate_fallback_summary(paper_abstract)
     except Exception as e:
         logging.error(f"DeepSeek API未知错误: {e}")
-        return "未知错误"
+        return generate_fallback_summary(paper_abstract)
 
 def generate_fallback_summary(paper_abstract: str) -> str:
     """生成备用摘要（当API失败时使用）"""
     sentences = re.split(r'(?<=[.!?])\s+', paper_abstract)
-    if len(sentences) >= 3:
-        return sentences[0] + " " + sentences[1] + "..."
+    if len(sentences) >= 2:
+        return sentences[0] + " " + sentences[1][:50] + "..."
     elif sentences:
-        return sentences[0][:100] + ("..." if len(sentences[0]) > 100 else "")
+        return sentences[0][:70] + ("..." if len(sentences[0]) > 70 else "")
     return "无可用摘要"
 
-def get_daily_papers(topic, query="slam", max_results=2):
+def fetch_arxiv_results(query, max_results=10):
+    """获取arXiv结果（带重试机制）"""
+    max_retries = 5
+    for attempt in range(max_retries):
+        try:
+            # 使用arxiv库获取结果
+            client = arxiv.Client(num_retries=3)
+            search = arxiv.Search(
+                query=query,
+                max_results=max_results,
+                sort_by=arxiv.SortCriterion.SubmittedDate
+            )
+            return list(client.results(search))
+        except Exception as e:
+            logging.warning(f"arXiv API请求失败 (尝试 {attempt+1}/{max_retries}): {e}")
+            if attempt < max_retries - 1:
+                wait_time = (2 ** attempt) + 1  # 指数退避
+                logging.info(f"等待 {wait_time} 秒后重试...")
+                time.sleep(wait_time)
+    
+    # 如果所有重试都失败，尝试直接API调用
+    logging.warning("arxiv.py库请求失败，尝试直接调用arXiv API")
+    try:
+        url = "http://export.arxiv.org/api/query"
+        params = {
+            "search_query": query,
+            "start": 0,
+            "max_results": max_results,
+            "sortBy": "submittedDate",
+            "sortOrder": "descending"
+        }
+        response = requests.get(url, params=params, timeout=30)
+        response.raise_for_status()
+        feed = feedparser.parse(response.content)
+        
+        results = []
+        for entry in feed.entries:
+            # 解析arXiv返回的Atom格式数据
+            result = arxiv.Result(
+                entry_id=entry.id,
+                updated=datetime.datetime.strptime(entry.updated, "%Y-%m-%dT%H:%M:%SZ"),
+                published=datetime.datetime.strptime(entry.published, "%Y-%m-%dT%H:%M:%SZ"),
+                title=entry.title,
+                authors=[arxiv.Author(name=a.name) for a in entry.authors],
+                summary=entry.summary,
+                comment=entry.get("arxiv_comment", ""),
+                journal_ref=entry.get("arxiv_journal_ref", ""),
+                doi=entry.get("arxiv_doi", ""),
+                primary_category=entry.get("arxiv_primary_category", {}).get("term", ""),
+                categories=[t.term for t in entry.tags if t.scheme == "http://arxiv.org/schemas/atom"],
+                links=[arxiv.Link(href=l.href, title=l.title, rel=l.rel) for l in entry.links],
+                pdf_url=next((l.href for l in entry.links if l.title == "pdf"), None)
+            )
+            results.append(result)
+        return results
+    except Exception as e:
+        logging.error(f"直接arXiv API请求失败: {e}")
+        return []
+
+def get_daily_papers(topic, query="slam", max_results=10):
     """
     @param topic: str
     @param query: str
@@ -176,13 +240,15 @@ def get_daily_papers(topic, query="slam", max_results=2):
     """
     content = dict()
     content_to_web = dict()
-    search_engine = arxiv.Search(
-        query=query,
-        max_results=max_results,
-        sort_by=arxiv.SortCriterion.SubmittedDate
-    )
+    
+    logging.info(f"获取主题 '{topic}' 的论文")
+    results = fetch_arxiv_results(query, max_results)
+    
+    if not results:
+        logging.error(f"无法获取主题 '{topic}' 的论文")
+        return {}, {}
 
-    for result in search_engine.results():
+    for result in results:
         paper_id = result.get_short_id()
         paper_title = result.title
         paper_url = result.entry_id
@@ -190,19 +256,15 @@ def get_daily_papers(topic, query="slam", max_results=2):
         paper_abstract = result.summary.replace("\n", " ")
         paper_authors = get_authors(result.authors)
         paper_first_author = get_authors(result.authors, first_author=True)
-        primary_category = result.primary_category
         publish_time = result.published.date()
         update_time = result.updated.date()
         comments = result.comment
 
-        logging.info(f"Processing: {paper_title} by {paper_first_author}")
+        logging.info(f"处理: {paper_title} by {paper_first_author}")
 
         # 生成论文总结
         try:
             paper_summary = get_paper_summary(paper_title, paper_abstract)
-            # 如果API返回错误，使用备用摘要
-            if "失败" in paper_summary or "错误" in paper_summary:
-                paper_summary = generate_fallback_summary(paper_abstract)
         except Exception as e:
             logging.error(f"摘要生成失败: {e}")
             paper_summary = generate_fallback_summary(paper_abstract)
@@ -217,23 +279,28 @@ def get_daily_papers(topic, query="slam", max_results=2):
 
         try:
             # 获取源码链接
-            r = requests.get(code_url, timeout=10).json()
             repo_url = None
-            if "official" in r and r["official"]:
-                repo_url = r["official"]["url"]
-            else:
-                # 尝试GitHub搜索
+            try:
+                r = requests.get(code_url, timeout=15).json()
+                if "official" in r and r["official"]:
+                    repo_url = r["official"]["url"]
+            except Exception as e:
+                logging.warning(f"paperswithcode API请求失败: {e}")
+            
+            # 如果未找到代码，尝试GitHub搜索
+            if not repo_url:
                 repo_url = get_code_link(paper_title)
             
             # 准备表格内容
             title_short = paper_title[:50] + ("..." if len(paper_title) > 50 else "")
             author_short = paper_first_author[:20] + ("..." if len(paper_first_author) > 20 else "")
+            summary_short = paper_summary[:100] + ("..." if len(paper_summary) > 100 else "")
             
             if repo_url:
-                content[paper_key] = f"|{update_time}|{title_short}|{author_short}|[{paper_key}]({paper_url})|[code]({repo_url})|{paper_summary}|\n"
+                content[paper_key] = f"|{update_time}|{title_short}|{author_short}|[{paper_key}]({paper_url})|[code]({repo_url})|{summary_short}|\n"
                 content_to_web[paper_key] = f"- {update_time}, **{paper_title}**, {paper_first_author} et al., Paper: [{paper_key}]({paper_url}), Code: [link]({repo_url}), Summary: {paper_summary}"
             else:
-                content[paper_key] = f"|{update_time}|{title_short}|{author_short}|[{paper_key}]({paper_url})|null|{paper_summary}|\n"
+                content[paper_key] = f"|{update_time}|{title_short}|{author_short}|[{paper_key}]({paper_url})|无|{summary_short}|\n"
                 content_to_web[paper_key] = f"- {update_time}, **{paper_title}**, {paper_first_author} et al., Paper: [{paper_key}]({paper_url}), Summary: {paper_summary}"
 
             # 添加注释信息
@@ -245,7 +312,7 @@ def get_daily_papers(topic, query="slam", max_results=2):
         except Exception as e:
             logging.error(f"处理论文时出错 {paper_key}: {e}")
             # 创建没有代码链接的条目
-            content[paper_key] = f"|{update_time}|{paper_title[:50]}|{paper_first_author[:20]}|[{paper_key}]({paper_url})|null|{paper_summary}|\n"
+            content[paper_key] = f"|{update_time}|{paper_title[:50]}|{paper_first_author[:20]}|[{paper_key}]({paper_url})|无|{paper_summary[:100]}|\n"
             content_to_web[paper_key] = f"- {update_time}, {paper_title}, {paper_first_author} et al., Paper: [{paper_key}]({paper_url}), Summary: {paper_summary}\n"
 
     data = {topic: content}
@@ -271,7 +338,7 @@ def update_paper_links(filename):
         json_data = m.copy()
 
         for keywords, v in json_data.items():
-            logging.info(f'Updating keyword: {keywords}')
+            logging.info(f'更新关键词: {keywords}')
             for paper_id, contents in v.items():
                 contents = str(contents)
                 try:
@@ -279,16 +346,16 @@ def update_paper_links(filename):
                     contents = f"|{update_time}|{paper_title}|{paper_first_author}|{paper_url}|{code_url}|\n"
                     json_data[keywords][paper_id] = str(contents)
                     
-                    if '|null|' in contents:
+                    if '|无|' in contents or '|null|' in contents:
                         try:
                             code_url = base_url + paper_id
-                            r = requests.get(code_url, timeout=10).json()
+                            r = requests.get(code_url, timeout=15).json()
                             if "official" in r and r["official"]:
                                 repo_url = r["official"]["url"]
                                 if repo_url:
-                                    new_cont = contents.replace('|null|', f'|[link]({repo_url})|')
+                                    new_cont = contents.replace('|无|', f'|[code]({repo_url})|').replace('|null|', f'|[code]({repo_url})|')
                                     json_data[keywords][paper_id] = str(new_cont)
-                                    logging.info(f'Updated code link for {paper_id}')
+                                    logging.info(f'为 {paper_id} 更新代码链接')
                         except Exception as e:
                             logging.error(f"更新链接时出错 {paper_id}: {e}")
                 except Exception as e:
@@ -330,36 +397,39 @@ def json_to_md(filename, md_filename,
         data = json.loads(content) if content else {}
 
     # 创建或清空Markdown文件
-    with open(md_filename, "w+") as f:
-        f.write(f"# 论文速递 ({DateNow})\n\n")
-        f.write("> 每日更新计算机视觉领域的最新论文\n\n")
+    with open(md_filename, "w+", encoding="utf-8") as f:
+        f.write(f"# 计算机视觉领域最新论文 ({DateNow})\n\n")
+        f.write("> 每日自动更新计算机视觉领域的最新arXiv论文\n\n")
         f.write("> 使用说明: [点击查看](./docs/README.md#usage)\n\n")
         
         # 添加CSS样式
         f.write("""<style>
 table {
   width: 100%;
-  font-size: 0.85em;
+  font-size: 0.9em;
   border-collapse: collapse;
+  margin-bottom: 15px;
 }
 th, td {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 10px;
   text-align: left;
 }
 th {
-  background-color: #f2f2f2;
+  background-color: #f8f9fa;
   font-weight: bold;
-}
-tr:nth-child(even) {
-  background-color: #f9f9f9;
 }
 .paper-title {
   max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .paper-summary {
   max-width: 350px;
   word-wrap: break-word;
+  font-size: 0.9em;
+  color: #555;
 }
 </style>\n\n""")
         
@@ -402,6 +472,7 @@ tr:nth-child(even) {
         # 添加页脚
         f.write("---\n")
         f.write("> 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)\n")
+        f.write("> 更新于: " + DateNow + "\n")
 
     logging.info(f"{task} 已完成")
 
