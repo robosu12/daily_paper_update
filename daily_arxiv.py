@@ -59,6 +59,7 @@ def get_authors(authors, first_author = False):
     else:
         output = authors[0]
     return output
+
 def sort_papers(papers):
     output = dict()
     keys = list(papers.keys())
@@ -66,7 +67,6 @@ def sort_papers(papers):
     for key in keys:
         output[key] = papers[key]
     return output
-import requests
 
 def get_code_link(qword:str) -> str:
     """
@@ -107,22 +107,22 @@ def get_paper_summary(paper_title: str, paper_abstract: str) -> str:
             "Content-Type": "application/json"
         }
         
-        # 创建提示词，要求总结论文内容和创新点
+        # 创建更严格的提示词，要求简洁输出
         prompt = (
-            f"请总结以下学术论文的主要内容并列出其创新点，使用简洁的Markdown格式：\n"
+            f"请用30字以内总结以下论文的核心贡献，并列出1-2个关键创新点:\n"
             f"标题: {paper_title}\n"
             f"摘要: {paper_abstract}\n\n"
-            f"要求：\n"
-            f"1. 主要内容总结在2-3句话内\n"
-            f"2. 创新点使用项目符号列表展示\n"
-            f"3. 总字数不超过200字"
+            f"输出格式要求:\n"
+            f"- 用1句话总结核心贡献\n"
+            f"- 关键创新点前加'◆'符号\n"
+            f"- 总字数不超过50字"
         )
         
         data = {
             "model": "deepseek-reasoner",
             "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.3,
-            "max_tokens": 500,
+            "temperature": 0.2,  # 降低随机性
+            "max_tokens": 100,    # 限制输出长度
             "stream": False
         }
         
@@ -135,18 +135,24 @@ def get_paper_summary(paper_title: str, paper_abstract: str) -> str:
         content = result["choices"][0]["message"]["content"].strip()
         
         # 简化输出，移除不必要的格式
-        content = re.sub(r"^.*?### (主要内容|创新点)[:\s]*", "", content, flags=re.DOTALL)
+        content = re.sub(r"\n+", " ", content)  # 替换换行符为空格
+        content = re.sub(r"\s+", " ", content)  # 合并多余空格
+        
+        # 截断超过50字的内容
+        if len(content) > 50:
+            content = content[:47] + "..."
+            
         return content
     
     except requests.exceptions.RequestException as e:
         logging.error(f"DeepSeek API请求失败: {e}")
-        return "Summary generation failed (API error)"
+        return "Summary generation failed"
     except (KeyError, IndexError) as e:
         logging.error(f"DeepSeek API响应解析失败: {e}")
-        return "Summary generation failed (response format error)"
+        return "Summary generation failed"
     except Exception as e:
         logging.error(f"DeepSeek API未知错误: {e}")
-        return "Summary generation failed (unknown error)"
+        return "Summary generation failed"
 
 def get_daily_papers(topic, query="slam", max_results=2):
     """
@@ -196,16 +202,27 @@ def get_daily_papers(topic, query="slam", max_results=2):
             if "official" in r and r["official"]:
                 repo_url = r["official"]["url"]
             
-            # 更新表格格式，添加总结列
+            # 更新表格格式 - 固定列宽
             if repo_url is not None:
-                content[paper_key] = "|**{}**|**{}**|{} et.al.|[{}]({})|**[link]({})**|{}|\n".format(
-                    update_time, paper_title, paper_first_author, paper_key, paper_url, repo_url, paper_summary)
+                content[paper_key] = "|{}|{}|{}|[{}]({})|[link]({})|{}|\n".format(
+                    update_time, 
+                    paper_title[:50] + ("..." if len(paper_title) > 50 else ""),  # 标题截断
+                    paper_first_author[:15] + ("..." if len(paper_first_author) > 15 else ""),  # 作者截断
+                    paper_key, 
+                    paper_url, 
+                    repo_url, 
+                    paper_summary)
                 
-                content_to_web[paper_key] = "- {}, **{}**, {} et.al., Paper: [{}]({}), Code: **[{}]({})**, Summary: {}".format(
+                content_to_web[paper_key] = "- {}, **{}**, {} et.al., Paper: [{}]({}), Code: [{}]({}), Summary: {}".format(
                     update_time, paper_title, paper_first_author, paper_url, paper_url, repo_url, repo_url, paper_summary)
             else:
-                content[paper_key] = "|**{}**|**{}**|{} et.al.|[{}]({})|null|{}|\n".format(
-                    update_time, paper_title, paper_first_author, paper_key, paper_url, paper_summary)
+                content[paper_key] = "|{}|{}|{}|[{}]({})|null|{}|\n".format(
+                    update_time, 
+                    paper_title[:50] + ("..." if len(paper_title) > 50 else ""), 
+                    paper_first_author[:15] + ("..." if len(paper_first_author) > 15 else ""), 
+                    paper_key, 
+                    paper_url, 
+                    paper_summary)
                 
                 content_to_web[paper_key] = "- {}, **{}**, {} et.al., Paper: [{}]({}), Summary: {}".format(
                     update_time, paper_title, paper_first_author, paper_url, paper_url, paper_summary)
@@ -267,7 +284,7 @@ def update_paper_links(filename):
                     if "official" in r and r["official"]:
                         repo_url = r["official"]["url"]
                         if repo_url is not None:
-                            new_cont = contents.replace('|null|',f'|**[link]({repo_url})**|')
+                            new_cont = contents.replace('|null|',f'|[link]({repo_url})|')
                             logging.info(f'ID = {paper_id}, contents = {new_cont}')
                             json_data[keywords][paper_id] = str(new_cont)
 
@@ -350,21 +367,35 @@ def json_to_md(filename,md_filename,
         if (use_title == True) and (to_web == True):
             f.write("---\n" + "layout: default\n" + "---\n\n")
 
-        # if show_badge == True:
-        #     f.write(f"[![Contributors][contributors-shield]][contributors-url]\n")
-        #     f.write(f"[![Forks][forks-shield]][forks-url]\n")
-        #     f.write(f"[![Stargazers][stars-shield]][stars-url]\n")
-        #     f.write(f"[![Issues][issues-shield]][issues-url]\n\n")
-
         if use_title == True:
-            #f.write(("<p align="center"><h1 align="center"><br><ins>CV-ARXIV-DAILY"
-            #         "</ins><br>Automatically Update CV Papers Daily</h1></p>\n"))
             f.write("## Updated on " + DateNow + "\n")
         else:
             f.write("> Updated on " + DateNow + "\n")
 
         # TODO: add usage
         f.write("> Usage instructions: [here](./docs/README.md#usage)\n\n")
+
+        # 优化表格样式
+        f.write("<style>\n")
+        f.write("  table {\n")
+        f.write("    width: 100%;\n")
+        f.write("    font-size: 0.9em; /* 减小字体大小 */\n")
+        f.write("    border-collapse: collapse;\n")
+        f.write("  }\n")
+        f.write("  th, td {\n")
+        f.write("    border: 1px solid #ddd;\n")
+        f.write("    padding: 8px;\n")
+        f.write("    text-align: left;\n")
+        f.write("    vertical-align: top; /* 顶部对齐 */\n")
+        f.write("  }\n")
+        f.write("  th {\n")
+        f.write("    background-color: #f2f2f2;\n")
+        f.write("  }\n")
+        f.write("  .summary {\n")
+        f.write("    max-width: 300px; /* 限制摘要列宽度 */\n")
+        f.write("    word-wrap: break-word; /* 允许单词断行 */\n")
+        f.write("  }\n")
+        f.write("</style>\n\n")
 
         #Add: table of contents
         if use_tc == True:
@@ -389,11 +420,11 @@ def json_to_md(filename,md_filename,
 
             if use_title:
                 if to_web == False:
-                    f.write("|Publish Date|Title|Authors|PDF|Code|Summary|\n" 
-                            "|---|---|---|---|---|---|\n")
+                    f.write("|Date|Title|Authors|Paper|Code|Summary|\n" 
+                            "|:---|:-----|:------|:----|:---|:------|\n")
                 else:
-                    f.write("| Publish Date | Title | Authors | PDF | Code | Summary |\n")
-                    f.write("|:---------|:-----------------------|:---------|:------|:------|:--------|\n")
+                    f.write("| Date | Title | Authors | Paper | Code | Summary |\n")
+                    f.write("|:-----|:-------|:--------|:------|:-----|:--------|\n")
             
             # sort papers by date
             day_content = sort_papers(day_content)
