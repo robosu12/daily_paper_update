@@ -7,7 +7,8 @@ import logging
 import argparse
 import datetime
 import requests
-import time  # 添加time模块用于API调用延迟
+import time
+import html
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
@@ -17,7 +18,7 @@ base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
 github_url = "https://api.github.com/search/repositories"
 arxiv_url = "http://arxiv.org/"
 
-# DeepSeek API配置 - 从环境变量获取API密钥
+# DeepSeek API配置
 DEEPSEEK_API_KEY = "sk-179d350b272b4b4da85b426b6271c7b5"
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 
@@ -75,7 +76,6 @@ def get_code_link(qword:str) -> str:
     @param qword: query string, eg. arxiv ids and paper titles
     @return paper_code in github: string, if not found, return None
     """
-    # query = f"arxiv:{arxiv_id}"
     query = f"{qword}"
     params = {
         "q": query,
@@ -96,9 +96,10 @@ def get_paper_summary(paper_title: str, paper_abstract: str) -> str:
     @param paper_abstract: 论文摘要
     @return: 格式化的总结内容
     """
+    # 检查API密钥是否配置
     if not DEEPSEEK_API_KEY or DEEPSEEK_API_KEY == "your_api_key_here":
         logging.warning("DeepSeek API key not configured. Skipping summary generation.")
-        return "Summary not available (API key missing)"
+        return "API key missing"
     
     try:
         # 构建API请求
@@ -107,36 +108,40 @@ def get_paper_summary(paper_title: str, paper_abstract: str) -> str:
             "Content-Type": "application/json"
         }
         
-        # 创建更严格的提示词，要求简洁输出
+        # 创建更有效的提示词
         prompt = (
-            f"请用30字以内总结以下论文的核心贡献，并列出1-2个关键创新点:\n"
+            f"请用1-2句话总结以下论文的核心贡献，并列出1-2个关键创新点:\n"
             f"标题: {paper_title}\n"
             f"摘要: {paper_abstract}\n\n"
             f"输出格式要求:\n"
-            f"- 用1句话总结核心贡献\n"
-            f"- 关键创新点前加'◆'符号\n"
-            f"- 总字数不超过50字"
+            f"- 核心贡献不超过20字\n"
+            f"- 创新点用'◆'符号开头\n"
+            f"- 总字数不超过50字\n"
+            f"- 使用中文"
         )
         
         data = {
             "model": "deepseek-reasoner",
             "messages": [{"role": "user", "content": prompt}],
-            "temperature": 0.2,  # 降低随机性
-            "max_tokens": 100,    # 限制输出长度
+            "temperature": 0.3,
+            "max_tokens": 150,
             "stream": False
         }
         
         # 调用DeepSeek API
-        response = requests.post(DEEPSEEK_API_URL, headers=headers, json=data)
+        response = requests.post(DEEPSEEK_API_URL, headers=headers, json=data, timeout=20)
         response.raise_for_status()
         
         # 解析响应
         result = response.json()
         content = result["choices"][0]["message"]["content"].strip()
         
-        # 简化输出，移除不必要的格式
-        content = re.sub(r"\n+", " ", content)  # 替换换行符为空格
-        content = re.sub(r"\s+", " ", content)  # 合并多余空格
+        # 记录API调用详情
+        logging.debug(f"DeepSeek API request successful. Response: {content}")
+        
+        # 清理内容
+        content = re.sub(r"^.*?(核心贡献|创新点)[：:\s]*", "", content)
+        content = content.replace('**', '').replace('###', '').strip()
         
         # 截断超过50字的内容
         if len(content) > 50:
@@ -146,13 +151,22 @@ def get_paper_summary(paper_title: str, paper_abstract: str) -> str:
     
     except requests.exceptions.RequestException as e:
         logging.error(f"DeepSeek API请求失败: {e}")
-        return "Summary generation failed"
+        return "API请求失败"
     except (KeyError, IndexError) as e:
         logging.error(f"DeepSeek API响应解析失败: {e}")
-        return "Summary generation failed"
+        return "响应解析失败"
     except Exception as e:
         logging.error(f"DeepSeek API未知错误: {e}")
-        return "Summary generation failed"
+        return "未知错误"
+
+def generate_fallback_summary(paper_abstract: str) -> str:
+    """生成备用摘要（当API失败时使用）"""
+    sentences = re.split(r'(?<=[.!?])\s+', paper_abstract)
+    if len(sentences) >= 3:
+        return sentences[0] + " " + sentences[1] + "..."
+    elif sentences:
+        return sentences[0][:100] + ("..." if len(sentences[0]) > 100 else "")
+    return "无可用摘要"
 
 def get_daily_papers(topic, query="slam", max_results=2):
     """
@@ -160,13 +174,12 @@ def get_daily_papers(topic, query="slam", max_results=2):
     @param query: str
     @return paper_with_code: dict
     """
-    # 输出
     content = dict()
     content_to_web = dict()
     search_engine = arxiv.Search(
-        query = query,
-        max_results = max_results,
-        sort_by = arxiv.SortCriterion.SubmittedDate
+        query=query,
+        max_results=max_results,
+        sort_by=arxiv.SortCriterion.SubmittedDate
     )
 
     for result in search_engine.results():
@@ -182,68 +195,65 @@ def get_daily_papers(topic, query="slam", max_results=2):
         update_time = result.updated.date()
         comments = result.comment
 
-        logging.info(f"Time = {update_time} title = {paper_title} author = {paper_first_author}")
+        logging.info(f"Processing: {paper_title} by {paper_first_author}")
 
         # 生成论文总结
-        paper_summary = get_paper_summary(paper_title, paper_abstract)
+        try:
+            paper_summary = get_paper_summary(paper_title, paper_abstract)
+            # 如果API返回错误，使用备用摘要
+            if "失败" in paper_summary or "错误" in paper_summary:
+                paper_summary = generate_fallback_summary(paper_abstract)
+        except Exception as e:
+            logging.error(f"摘要生成失败: {e}")
+            paper_summary = generate_fallback_summary(paper_abstract)
         
         # 添加延迟以避免API速率限制
-        time.sleep(1)
+        time.sleep(1.5)
 
-        # eg: 2108.09112v1 -> 2108.09112
+        # 处理arxiv ID
         ver_pos = paper_id.find('v')
         paper_key = paper_id[0:ver_pos] if ver_pos != -1 else paper_id
         paper_url = arxiv_url + 'abs/' + paper_key
 
         try:
-            # source code link
-            r = requests.get(code_url).json()
+            # 获取源码链接
+            r = requests.get(code_url, timeout=10).json()
             repo_url = None
             if "official" in r and r["official"]:
                 repo_url = r["official"]["url"]
-            
-            # 更新表格格式 - 固定列宽
-            if repo_url is not None:
-                content[paper_key] = "|{}|{}|{}|[{}]({})|[link]({})|{}|\n".format(
-                    update_time, 
-                    paper_title[:50] + ("..." if len(paper_title) > 50 else ""),  # 标题截断
-                    paper_first_author[:15] + ("..." if len(paper_first_author) > 15 else ""),  # 作者截断
-                    paper_key, 
-                    paper_url, 
-                    repo_url, 
-                    paper_summary)
-                
-                content_to_web[paper_key] = "- {}, **{}**, {} et.al., Paper: [{}]({}), Code: [{}]({}), Summary: {}".format(
-                    update_time, paper_title, paper_first_author, paper_url, paper_url, repo_url, repo_url, paper_summary)
             else:
-                content[paper_key] = "|{}|{}|{}|[{}]({})|null|{}|\n".format(
-                    update_time, 
-                    paper_title[:50] + ("..." if len(paper_title) > 50 else ""), 
-                    paper_first_author[:15] + ("..." if len(paper_first_author) > 15 else ""), 
-                    paper_key, 
-                    paper_url, 
-                    paper_summary)
-                
-                content_to_web[paper_key] = "- {}, **{}**, {} et.al., Paper: [{}]({}), Summary: {}".format(
-                    update_time, paper_title, paper_first_author, paper_url, paper_url, paper_summary)
+                # 尝试GitHub搜索
+                repo_url = get_code_link(paper_title)
+            
+            # 准备表格内容
+            title_short = paper_title[:50] + ("..." if len(paper_title) > 50 else "")
+            author_short = paper_first_author[:20] + ("..." if len(paper_first_author) > 20 else "")
+            
+            if repo_url:
+                content[paper_key] = f"|{update_time}|{title_short}|{author_short}|[{paper_key}]({paper_url})|[code]({repo_url})|{paper_summary}|\n"
+                content_to_web[paper_key] = f"- {update_time}, **{paper_title}**, {paper_first_author} et al., Paper: [{paper_key}]({paper_url}), Code: [link]({repo_url}), Summary: {paper_summary}"
+            else:
+                content[paper_key] = f"|{update_time}|{title_short}|{author_short}|[{paper_key}]({paper_url})|null|{paper_summary}|\n"
+                content_to_web[paper_key] = f"- {update_time}, **{paper_title}**, {paper_first_author} et al., Paper: [{paper_key}]({paper_url}), Summary: {paper_summary}"
 
-            # 添加注释信息（如果有）
+            # 添加注释信息
             if comments:
                 content_to_web[paper_key] += f", {comments}\n"
             else:
-                content_to_web[paper_key] += f"\n"
+                content_to_web[paper_key] += "\n"
 
         except Exception as e:
-            logging.error(f"exception: {e} with id: {paper_key}")
+            logging.error(f"处理论文时出错 {paper_key}: {e}")
+            # 创建没有代码链接的条目
+            content[paper_key] = f"|{update_time}|{paper_title[:50]}|{paper_first_author[:20]}|[{paper_key}]({paper_url})|null|{paper_summary}|\n"
+            content_to_web[paper_key] = f"- {update_time}, {paper_title}, {paper_first_author} et al., Paper: [{paper_key}]({paper_url}), Summary: {paper_summary}\n"
 
     data = {topic: content}
     data_web = {topic: content_to_web}
     return data, data_web
 
 def update_paper_links(filename):
-    '''
-    weekly update paper links in json file
-    '''
+    '''每周更新JSON文件中的论文链接'''
     def parse_arxiv_string(s):
         parts = s.split("|")
         date = parts[1].strip()
@@ -252,287 +262,217 @@ def update_paper_links(filename):
         arxiv_id = parts[4].strip()
         code = parts[5].strip()
         arxiv_id = re.sub(r'v\d+', '', arxiv_id)
-        return date,title,authors,arxiv_id,code
+        return date, title, authors, arxiv_id, code
 
-    with open(filename,"r") as f:
+    with open(filename, "r") as f:
         content = f.read()
-        if not content:
-            m = {}
-        else:
-            m = json.loads(content)
+        m = json.loads(content) if content else {}
 
         json_data = m.copy()
 
-        for keywords,v in json_data.items():
-            logging.info(f'keywords = {keywords}')
-            for paper_id,contents in v.items():
+        for keywords, v in json_data.items():
+            logging.info(f'Updating keyword: {keywords}')
+            for paper_id, contents in v.items():
                 contents = str(contents)
-
-                update_time, paper_title, paper_first_author, paper_url, code_url = parse_arxiv_string(contents)
-
-                contents = "|{}|{}|{}|{}|{}|\n".format(update_time,paper_title,paper_first_author,paper_url,code_url)
-                json_data[keywords][paper_id] = str(contents)
-                logging.info(f'paper_id = {paper_id}, contents = {contents}')
-
-                valid_link = False if '|null|' in contents else True
-                if valid_link:
-                    continue
                 try:
-                    code_url = base_url + paper_id #TODO
-                    r = requests.get(code_url).json()
-                    repo_url = None
-                    if "official" in r and r["official"]:
-                        repo_url = r["official"]["url"]
-                        if repo_url is not None:
-                            new_cont = contents.replace('|null|',f'|[link]({repo_url})|')
-                            logging.info(f'ID = {paper_id}, contents = {new_cont}')
-                            json_data[keywords][paper_id] = str(new_cont)
-
+                    update_time, paper_title, paper_first_author, paper_url, code_url = parse_arxiv_string(contents)
+                    contents = f"|{update_time}|{paper_title}|{paper_first_author}|{paper_url}|{code_url}|\n"
+                    json_data[keywords][paper_id] = str(contents)
+                    
+                    if '|null|' in contents:
+                        try:
+                            code_url = base_url + paper_id
+                            r = requests.get(code_url, timeout=10).json()
+                            if "official" in r and r["official"]:
+                                repo_url = r["official"]["url"]
+                                if repo_url:
+                                    new_cont = contents.replace('|null|', f'|[link]({repo_url})|')
+                                    json_data[keywords][paper_id] = str(new_cont)
+                                    logging.info(f'Updated code link for {paper_id}')
+                        except Exception as e:
+                            logging.error(f"更新链接时出错 {paper_id}: {e}")
                 except Exception as e:
-                    logging.error(f"exception: {e} with id: {paper_id}")
-        # dump to json file
-        with open(filename,"w") as f:
-            json.dump(json_data,f)
+                    logging.error(f"解析论文条目时出错: {e}")
+        
+        with open(filename, "w") as f:
+            json.dump(json_data, f)
 
-def update_json_file(filename,data_dict):
-    '''
-    daily update json file using data_dict
-    '''
-    with open(filename,"r") as f:
+def update_json_file(filename, data_dict):
+    '''使用数据字典每日更新JSON文件'''
+    with open(filename, "r") as f:
         content = f.read()
-        if not content:
-            m = {}
-        else:
-            m = json.loads(content)
+        m = json.loads(content) if content else {}
 
     json_data = m.copy()
 
-    # update papers in each keywords
     for data in data_dict:
-        for keyword in data.keys():
-            papers = data[keyword]
-
-            if keyword in json_data.keys():
+        for keyword, papers in data.items():
+            if keyword in json_data:
                 json_data[keyword].update(papers)
             else:
                 json_data[keyword] = papers
 
-    with open(filename,"w") as f:
-        json.dump(json_data,f)
+    with open(filename, "w") as f:
+        json.dump(json_data, f)
 
-def json_to_md(filename,md_filename,
-               task = '',
-               to_web = False,
-               use_title = True,
-               use_tc = True,
-               show_badge = True,
-               use_b2t = True):
-    """
-    @param filename: str
-    @param md_filename: str
-    @return None
-    """
-    def pretty_math(s:str) -> str:
-        ret = ''
-        match = re.search(r"\$.*\$", s)
-        if match == None:
-            return s
-        math_start,math_end = match.span()
-        space_trail = space_leading = ''
-        if s[:math_start][-1] != ' ' and '*' != s[:math_start][-1]: space_trail = ' '
-        if s[math_end:][0] != ' ' and '*' != s[math_end:][0]: space_leading = ' '
-        ret += s[:math_start]
-        ret += f'{space_trail}${match.group()[1:-1].strip()}${space_leading}'
-        ret += s[math_end:]
-        return ret
-
-    DateNow = datetime.date.today()
-    DateNow = str(DateNow)
-    DateNow = DateNow.replace('-','.')
-
-    with open(filename,"r") as f:
+def json_to_md(filename, md_filename,
+               task='',
+               to_web=False,
+               use_title=True,
+               use_tc=True,
+               show_badge=True,
+               use_b2t=True):
+    """将JSON文件转换为Markdown格式"""
+    DateNow = datetime.date.today().strftime('%Y.%m.%d')
+    
+    with open(filename, "r") as f:
         content = f.read()
-        if not content:
-            data = {}
-        else:
-            data = json.loads(content)
+        data = json.loads(content) if content else {}
 
-    # clean README.md if daily already exist else create it
-    with open(md_filename,"w+") as f:
-        pass
-
-    # write data into README.md
-    with open(md_filename,"a+") as f:
-
-        if (use_title == True) and (to_web == True):
-            f.write("---\n" + "layout: default\n" + "---\n\n")
-
-        if use_title == True:
-            f.write("## Updated on " + DateNow + "\n")
-        else:
-            f.write("> Updated on " + DateNow + "\n")
-
-        # TODO: add usage
-        f.write("> Usage instructions: [here](./docs/README.md#usage)\n\n")
-
-        # 优化表格样式
-        f.write("<style>\n")
-        f.write("  table {\n")
-        f.write("    width: 100%;\n")
-        f.write("    font-size: 0.9em; /* 减小字体大小 */\n")
-        f.write("    border-collapse: collapse;\n")
-        f.write("  }\n")
-        f.write("  th, td {\n")
-        f.write("    border: 1px solid #ddd;\n")
-        f.write("    padding: 8px;\n")
-        f.write("    text-align: left;\n")
-        f.write("    vertical-align: top; /* 顶部对齐 */\n")
-        f.write("  }\n")
-        f.write("  th {\n")
-        f.write("    background-color: #f2f2f2;\n")
-        f.write("  }\n")
-        f.write("  .summary {\n")
-        f.write("    max-width: 300px; /* 限制摘要列宽度 */\n")
-        f.write("    word-wrap: break-word; /* 允许单词断行 */\n")
-        f.write("  }\n")
-        f.write("</style>\n\n")
-
-        #Add: table of contents
-        if use_tc == True:
-            f.write("<details>\n")
-            f.write("  <summary>Table of Contents</summary>\n")
-            f.write("  <ol>\n")
+    # 创建或清空Markdown文件
+    with open(md_filename, "w+") as f:
+        f.write(f"# 论文速递 ({DateNow})\n\n")
+        f.write("> 每日更新计算机视觉领域的最新论文\n\n")
+        f.write("> 使用说明: [点击查看](./docs/README.md#usage)\n\n")
+        
+        # 添加CSS样式
+        f.write("""<style>
+table {
+  width: 100%;
+  font-size: 0.85em;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.paper-title {
+  max-width: 250px;
+}
+.paper-summary {
+  max-width: 350px;
+  word-wrap: break-word;
+}
+</style>\n\n""")
+        
+        # 添加目录
+        if use_tc:
+            f.write("<details>\n<summary>目录</summary>\n<ol>\n")
             for keyword in data.keys():
-                day_content = data[keyword]
-                if not day_content:
-                    continue
-                kw = keyword.replace(' ','-')
-                f.write(f"    <li><a href=#{kw.lower()}>{keyword}</a></li>\n")
-            f.write("  </ol>\n")
-            f.write("</details>\n\n")
-
-        for keyword in data.keys():
-            day_content = data[keyword]
-            if not day_content:
+                if data[keyword]:
+                    kw_slug = re.sub(r'\W+', '-', keyword.lower())
+                    f.write(f"<li><a href='#{kw_slug}'>{keyword}</a></li>\n")
+            f.write("</ol>\n</details>\n\n")
+        
+        # 添加各个主题部分
+        for keyword, papers in data.items():
+            if not papers:
                 continue
-            # the head of each part
-            f.write(f"## {keyword}\n\n")
-
-            if use_title:
-                if to_web == False:
-                    f.write("|Date|Title|Authors|Paper|Code|Summary|\n" 
-                            "|:---|:-----|:------|:----|:---|:------|\n")
-                else:
-                    f.write("| Date | Title | Authors | Paper | Code | Summary |\n")
-                    f.write("|:-----|:-------|:--------|:------|:-----|:--------|\n")
+                
+            kw_slug = re.sub(r'\W+', '-', keyword.lower())
+            f.write(f"<h2 id='{kw_slug}'>{keyword}</h2>\n\n")
             
-            # sort papers by date
-            day_content = sort_papers(day_content)
-
-            for _,v in day_content.items():
-                if v is not None:
-                    f.write(pretty_math(v)) # make latex pretty
-
-            f.write(f"\n")
-
-            #Add: back to top
+            # 表格标题
+            f.write("| 日期 | 标题 | 作者 | 论文 | 代码 | 摘要 |\n")
+            f.write("|:----|:-----|:-----|:-----|:-----|:------|\n")
+            
+            # 排序论文
+            sorted_papers = sorted(papers.items(), key=lambda x: x[0], reverse=True)
+            
+            # 添加论文条目
+            for paper_id, paper_entry in sorted_papers:
+                # 清理条目中的特殊字符
+                cleaned_entry = html.unescape(paper_entry)
+                f.write(cleaned_entry)
+            
+            f.write("\n")
+            
+            # 返回顶部链接
             if use_b2t:
-                top_info = f"#Updated on {DateNow}"
-                top_info = top_info.replace(' ','-').replace('.','')
-                f.write(f"<p align=right>(<a href={top_info.lower()}>back to top</a>)</p>\n\n")
+                f.write(f"<div align='right'><a href='#top'>↑ 返回顶部</a></div>\n\n")
+        
+        # 添加页脚
+        f.write("---\n")
+        f.write("> 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)\n")
 
-        if show_badge == True:
-            # we don't like long string, break it!
-            f.write((f"[contributors-shield]: https://img.shields.io/github/"
-                     f"contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge\n"))
-            f.write((f"[contributors-url]: https://github.com/Vincentqyw/"
-                     f"cv-arxiv-daily/graphs/contributors\n"))
-            f.write((f"[forks-shield]: https://img.shields.io/github/forks/Vincentqyw/"
-                     f"cv-arxiv-daily.svg?style=for-the-badge\n"))
-            f.write((f"[forks-url]: https://github.com/Vincentqyw/"
-                     f"cv-arxiv-daily/network/members\n"))
-            f.write((f"[stars-shield]: https://img.shields.io/github/stars/Vincentqyw/"
-                     f"cv-arxiv-daily.svg?style=for-the-badge\n"))
-            f.write((f"[stars-url]: https://github.com/Vincentqyw/"
-                     f"cv-arxiv-daily/stargazers\n"))
-            f.write((f"[issues-shield]: https://img.shields.io/github/issues/Vincentqyw/"
-                     f"cv-arxiv-daily.svg?style=for-the-badge\n"))
-            f.write((f"[issues-url]: https://github.com/Vincentqyw/"
-                     f"cv-arxiv-daily/issues\n\n"))
-
-    logging.info(f"{task} finished")
+    logging.info(f"{task} 已完成")
 
 def demo(**config):
-    # TODO: use config
     data_collector = []
-    data_collector_web= []
-
+    data_collector_web = []
+    
     keywords = config['kv']
     max_results = config['max_results']
     publish_readme = config['publish_readme']
     publish_gitpage = config['publish_gitpage']
     publish_wechat = config['publish_wechat']
     show_badge = config['show_badge']
-
     b_update = config['update_paper_links']
-    logging.info(f'Update Paper Link = {b_update}')
-    if config['update_paper_links'] == False:
-        logging.info(f"GET daily papers begin")
+    
+    logging.info(f'更新论文链接: {b_update}')
+    if not b_update:
+        logging.info("开始获取每日论文")
         for topic, keyword in keywords.items():
-            logging.info(f"Keyword: {topic}")
-            data, data_web = get_daily_papers(topic, query = keyword,
-                                            max_results = max_results)
+            logging.info(f"关键词: {topic}")
+            data, data_web = get_daily_papers(topic, query=keyword, max_results=max_results)
             data_collector.append(data)
             data_collector_web.append(data_web)
-            print("\n")
-        logging.info(f"GET daily papers end")
-
-    # 1. update README.md file
+        logging.info("获取每日论文完成")
+    
+    # 更新README.md
     if publish_readme:
         json_file = config['json_readme_path']
-        md_file   = config['md_readme_path']
-        # update paper links
-        if config['update_paper_links']:
+        md_file = config['md_readme_path']
+        if b_update:
             update_paper_links(json_file)
         else:
-            # update json data
-            update_json_file(json_file,data_collector)
-        # json data to markdown
-        json_to_md(json_file,md_file, task ='Update Readme', \
-            show_badge = show_badge)
-
-    # 2. update docs/index.md file (to gitpage)
+            update_json_file(json_file, data_collector)
+        json_to_md(json_file, md_file, task='更新README', show_badge=show_badge)
+    
+    # 更新GitHub Pages
     if publish_gitpage:
         json_file = config['json_gitpage_path']
-        md_file   = config['md_gitpage_path']
-        # TODO: duplicated update paper links!!!
-        if config['update_paper_links']:
+        md_file = config['md_gitpage_path']
+        if b_update:
             update_paper_links(json_file)
         else:
-            update_json_file(json_file,data_collector)
-        json_to_md(json_file, md_file, task ='Update GitPage', \
-            to_web = True, show_badge = show_badge, \
-            use_tc=False, use_b2t=False)
-
-    # 3. Update docs/wechat.md file
+            update_json_file(json_file, data_collector)
+        json_to_md(json_file, md_file, task='更新GitPage', to_web=True, 
+                  show_badge=show_badge, use_tc=False, use_b2t=False)
+    
+    # 更新微信文档
     if publish_wechat:
         json_file = config['json_wechat_path']
-        md_file   = config['md_wechat_path']
-        # TODO: duplicated update paper links!!!
-        if config['update_paper_links']:
+        md_file = config['md_wechat_path']
+        if b_update:
             update_paper_links(json_file)
         else:
             update_json_file(json_file, data_collector_web)
-        json_to_md(json_file, md_file, task ='Update Wechat', \
-            to_web=False, use_title= False, show_badge = show_badge)
+        json_to_md(json_file, md_file, task='更新微信', to_web=False, 
+                  use_title=False, show_badge=show_badge)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--config_path',type=str, default='config.yaml',
-                            help='configuration file path')
-    parser.add_argument('--update_paper_links', default=False,
-                        action="store_true",help='whether to update paper links etc.')
+    parser.add_argument('--config_path', type=str, default='config.yaml',
+                       help='配置文件路径')
+    parser.add_argument('--update_paper_links', action='store_true',
+                       help='是否更新论文链接')
     args = parser.parse_args()
+    
+    # 设置更详细的日志
+    logging.getLogger().setLevel(logging.INFO)
+    logging.info("启动论文速递更新")
+    
     config = load_config(args.config_path)
-    config = {**config, 'update_paper_links':args.update_paper_links}
+    config['update_paper_links'] = args.update_paper_links
     demo(**config)
+    
+    logging.info("更新完成")
