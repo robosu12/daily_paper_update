@@ -86,7 +86,7 @@ def get_paper_summary(title: str, abstract: str) -> str:
         "要求:\n"
         "- 用中文回复\n"
         "- 不使用Markdown格式\n"
-        "- 不超过100字\n"
+        "- 不超过200字\n"
         "- 创新点用'◆'符号开头\n"
     )
     
