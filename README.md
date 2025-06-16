@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.06.15)
+# 计算机视觉领域最新论文 (2025.06.16)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -64,24 +64,24 @@ td:nth-child(6) {  /* 摘要列 */
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>作者</th><th>论文</th><th>代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-06-12</td><td>LRSLAM: Low-rank Representation of Si...</td><td>Hongbeen Park等</td><td>[2506.10567](http://arxiv.org/pdf/2506.10567)</td><td>无</td><td>◆LRSLAM提出了一种基于低秩张量分解（Six-axis和CP分解）的稠密视觉SLAM方法，显著提升了内存效率和收敛速度。  
-◆相比现有方法（如ESLAM），该模型在保持重建与定位精度的同时...</td></tr>
-<tr><td>2025-06-11</td><td>VAULT: A Mobile Mapping System for R...</td><td>Miguel Á. González-Santamarta等</td><td>[2506.09583](http://arxiv.org/pdf/2506.09583)</td><td>无</td><td>◆提出VAULT原型系统，基于ROS 2框架整合多传感器（GNSS/VIO/IMU）与EKF算法，实现室内外环境下的鲁棒3D里程计。  
-◆创新性结合视觉SLAM技术生成高精度3D点云地图，解决...</td></tr>
-<tr><td>2025-06-10</td><td>UFM: A Simple Path towards Unified...</td><td>Yuchen Zhang等</td><td>[2506.09278](http://arxiv.org/pdf/2506.09278)</td><td>无</td><td>◆提出统一流与匹配模型UFM，首次通过单一模型在宽基线场景和光流估计两大领域同时超越专用方法。  
-◆采用简单通用的Transformer架构直接回归(u,v)流，相比传统由粗到细的代价体积方法...</td></tr>
-<tr><td>2025-06-10</td><td>Princeton365: A Diverse Dataset with Accura...</td><td>Karhan Kayan等</td><td>[2506.09035](http://arxiv.org/pdf/2506.09035)</td><td>无</td><td>◆提出Princeton365数据集，包含365段多样化的室内外视频，提供高精度相机位姿，弥补了现有SLAM基准在精度与多样性间的不足。  
-◆设计新型地面真值采集框架，结合标定板与360度相机...</td></tr>
-<tr><td>2025-06-10</td><td>Planar Collisionless Shock Simulations with Semi-I...</td><td>Hongyang Zhou等</td><td>[2506.08384](http://arxiv.org/pdf/2506.08384)</td><td>无</td><td>◆研究验证了半隐式粒子网格代码FLEKS在无碰撞激波模拟中的适用性，特别是在与全球磁层建模相关的参数范围内。  
-◆通过一维和二维局部平面激波模拟，成功捕捉了激波关键特征（如结构、上下游波动和非...</td></tr>
-<tr><td>2025-06-09</td><td>ZeroVO: Visual Odometry with Minimal Assumptions</td><td>Lei Lai等</td><td>[2506.08005](http://arxiv.org/pdf/2506.08005)</td><td>无</td><td>ZeroVO提出了一种无需标定、零样本泛化的视觉里程计算法，其核心创新点包括：◆首创几何感知网络结构，无需相机标定且能处理深度与参数噪声；◆引入语言先验增强语义特征提取，提升跨域泛化能力；◆开发...</td></tr>
+<tr><td>2025-06-12</td><td>LRSLAM: Low-rank Representation of Si...</td><td>Hongbeen Park等</td><td>[2506.10567](http://arxiv.org/pdf/2506.10567)</td><td>无</td><td>◆提出LRSLAM，采用低秩张量分解（Six-axis和CP分解）表示有符号距离场，显著提升稠密视觉SLAM的实时性和内存效率。  
+◆相比现有方法（如ESLAM），在保持重建与定位精度的同时，...</td></tr>
+<tr><td>2025-06-11</td><td>VAULT: A Mobile Mapping System for R...</td><td>Miguel Á. González-Santamarta等</td><td>[2506.09583](http://arxiv.org/pdf/2506.09583)</td><td>无</td><td>◆提出VAULT原型系统，结合GNSS、VIO、IMU和EKF算法，实现室内外环境下自主机器人的鲁棒3D里程计定位。  
+◆集成视觉SLAM技术生成高精度3D点云地图，显著提升复杂户外场景（如农...</td></tr>
+<tr><td>2025-06-10</td><td>UFM: A Simple Path towards Unified...</td><td>Yuchen Zhang等</td><td>[2506.09278](http://arxiv.org/pdf/2506.09278)</td><td>无</td><td>◆提出统一流与匹配模型UFM，首次通过单一模型同时处理光流估计和宽基线匹配任务，性能超越领域专用方法。  
+◆采用简单通用的Transformer架构直接回归(u,v)流，相比传统 coarse...</td></tr>
+<tr><td>2025-06-10</td><td>Princeton365: A Diverse Dataset with Accura...</td><td>Karhan Kayan等</td><td>[2506.09035](http://arxiv.org/pdf/2506.09035)</td><td>无</td><td>◆提出Princeton365数据集，包含365个多样场景视频，提供高精度相机位姿，弥补现有SLAM基准在精度与多样性上的不足。  
+◆设计新型真值采集框架，结合标定板与360相机，同步输出单目...</td></tr>
+<tr><td>2025-06-10</td><td>Planar Collisionless Shock Simulations with Semi-I...</td><td>Hongyang Zhou等</td><td>[2506.08384](http://arxiv.org/pdf/2506.08384)</td><td>无</td><td>◆开发了半隐式粒子网格代码FLEKS，能够在电子惯性长度量级的网格分辨率下精确模拟无碰撞激波。  
+◆首次证明二维模拟对准确重现准垂直激波下游波动物理和捕捉准平行激波复杂动力学（如表面波纹、激波...</td></tr>
+<tr><td>2025-06-09</td><td>ZeroVO: Visual Odometry with Minimal Assumptions</td><td>Lei Lai等</td><td>[2506.08005](http://arxiv.org/pdf/2506.08005)</td><td>无</td><td>ZeroVO提出了一种无需标定、零样本泛化的视觉里程计算法，其核心创新包括：◆设计几何感知网络结构，无需相机标定且能处理深度与参数噪声；◆引入语言先验增强语义特征提取，提升跨域泛化能力；◆开发半...</td></tr>
 <tr><td>2025-06-08</td><td>Faster than Fast: Accelerating Oriented FAST Fe...</td><td>Qiong Chang等</td><td>[2506.07164](http://arxiv.org/pdf/2506.07164)</td><td>无</td><td>该论文提出了两种方法在低端嵌入式GPU上加速Oriented FAST特征检测：◆采用二进制编码策略快速确定候选点，◆使用可分离的Harris检测策略结合GPU硬件指令优化。实验表明，相比支持G...</td></tr>
 <tr><td>2025-06-08</td><td>UNO: Unified Self-Supervised Monoc...</td><td>Wentao Zhao等</td><td>[2506.07013](http://arxiv.org/pdf/2506.07013)</td><td>无</td><td>◆提出UNO框架，通过混合专家策略和可微分Gumbel-Softmax模块实现跨平台自监督单目里程计，无需场景特定调参。  
-◆结合多专家解码器处理不同运动模式，并利用轻量级后端融合尺度无关深度...</td></tr>
-<tr><td>2025-06-06</td><td>GS4: Generalizable Sparse Splatting Semantic SLAM</td><td>Mingqi Jiang等</td><td>[2506.06517](http://arxiv.org/pdf/2506.06517)</td><td>无</td><td>◆提出了首个基于可泛化高斯泼溅（GS）的语义SLAM算法，通过学习网络实现跨场景的增量式3D场景重建。  
+◆结合多专家解码器处理不同运动模式，并利用鲁棒帧间关联图选择最优专家...</td></tr>
+<tr><td>2025-06-06</td><td>GS4: Generalizable Sparse Splatting Semantic SLAM</td><td>Mingqi Jiang等</td><td>[2506.06517](http://arxiv.org/pdf/2506.06517)</td><td>无</td><td>◆提出了首个基于可泛化高斯泼溅（GS）的语义SLAM算法，通过学习网络实现跨场景的增量式3D地图构建。  
 ◆创新性地将3D语义分割集成到GS框架中，共享主干网络实现建图与识别的协同优化。  
 ...</td></tr>
-<tr><td>2025-06-06</td><td>Enhancing Situational Awareness in Underwater Robo...</td><td>Pushyami Kaveti等</td><td>[2506.06476](http://arxiv.org/pdf/2506.06476)</td><td>无</td><td>◆提出多模态感知融合方法，结合摄像头、IMU和声学设备数据，提升水下机器人在恶劣视觉环境中的SLAM鲁棒性。 ◆通过几何与学习融合技术及语义分析，实现了实时状态估计和高精度3D重建，并在真实海域...</td></tr>
+<tr><td>2025-06-06</td><td>Enhancing Situational Awareness in Underwater Robo...</td><td>Pushyami Kaveti等</td><td>[2506.06476](http://arxiv.org/pdf/2506.06476)</td><td>无</td><td>◆提出多模态感知融合方法，结合摄像头、IMU和声学设备数据，解决水下视觉SLAM因光线衰减和低对比度导致的失效问题。◆通过几何与学习结合的技术及语义分析，在真实海域实验中实现了恶劣水下环境的实时...</td></tr>
 <tr><td>2025-06-06</td><td>Dy3DGS-SLAM: Monocular 3D Gaussian Splatti...</td><td>Mingrui Li等</td><td>[2506.05965](http://arxiv.org/pdf/2506.05965)</td><td>无</td><td>◆ 提出了首个基于单目RGB输入的动态场景3D高斯泼溅SLAM系统Dy3DGS-SLAM。  
 ◆ 通过融合光流掩码和深度掩码的概率模型生成动态掩码，仅需单次网络迭代即可优化跟踪尺度和几何渲染。...</td></tr>
 <tr><td>2025-06-06</td><td>Analysis of points outcome in ATP Grand Slam Tenni...</td><td>Martin Illum等</td><td>[2506.05866](http://arxiv.org/pdf/2506.05866)</td><td>无</td><td>◆ 该论文创新地利用大数据和机器学习方法（如逻辑回归、随机森林等）预测网球大满贯赛事中每一分的胜负，并结合球员排名、历史数据等因素分析影响得分的关键战略因素。  
@@ -1058,24 +1058,27 @@ td:nth-child(6) {  /* 摘要列 */
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>作者</th><th>论文</th><th>代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-06-11</td><td>OWSM-Biasing: Contextualizing Open Whisper-...</td><td>Yui Sudo等</td><td>[2506.09448](http://arxiv.org/pdf/2506.09448)</td><td>无</td><td>◆ 该论文创新性地将上下文偏置（CB）方法与预训练的OWSM v3.1模型结合，冻结预训练参数以保留其知识优势，仅通过小数据集即可显著提升罕见词识别准确率。  
-◆ 实验表明，该方法在Libri...</td></tr>
-<tr><td>2025-06-06</td><td>SurGSplat: Progressive Geometry-Constrai...</td><td>Yuchao Zheng等</td><td>[2506.05935](http://arxiv.org/pdf/2506.05935)</td><td>无</td><td>◆提出SurGSplat方法，通过渐进式几何约束优化3D高斯泼溅技术，解决内窥镜场景中特征稀疏和光照不均导致的重建难题。  
-◆结合血管等关键结构的几何约束，显著提升手术场景重建精度和视图合成质...</td></tr>
-<tr><td>2025-06-05</td><td>On-the-fly Reconstruction for Large-Scale Novel Vi...</td><td>Andreas Meuleman等</td><td>[2506.05558](http://arxiv.org/pdf/2506.05558)</td><td>无</td><td>◆提出实时重建方法，在拍摄完成后立即生成相机位姿和训练好的3D高斯泼溅模型。◆采用快速初始位姿估计和GPU友好的小型束调整，结合高斯基元直接采样与增量生成技术，显著加速训练。◆通过可扩展的辐射场...</td></tr>
-<tr><td>2025-06-05</td><td>SupeRANSAC: One RANSAC to Rule Them All</td><td>Daniel Barath</td><td>[2506.04803](http://arxiv.org/pdf/2506.04803)</td><td>无</td><td>◆提出SupeRANSAC统一框架，整合多种RANSAC优化技术，实现跨任务（如单应性矩阵、本质矩阵、位姿估计）的稳定高精度。  
-◆通过系统分析RANSAC核心组件与实现细节，在多个数据集上平...</td></tr>
-<tr><td>2025-06-04</td><td>Voyager: Long-Range and World-Consiste...</td><td>Tianyu Huang等</td><td>[2506.04225](http://arxiv.org/pdf/2506.04225)</td><td>无</td><td>◆Voyager提出首个端到端视频扩散框架，通过单张输入图像和用户自定义相机路径直接生成世界一致的长序列3D点云视频，无需传统3D重建流程。  
-◆核心创新包括：1）联合生成对齐RGB与深度视频...</td></tr>
-<tr><td>2025-06-04</td><td>Accelerating SfM-based Pose Estimation with Domina...</td><td>Joji Joseph等</td><td>[2506.03667](http://arxiv.org/pdf/2506.03667)</td><td>无</td><td>◆ 提出基于图论支配集的预处理方法，加速SfM位姿估计流程，在保持精度的同时显著提升计算效率。  
-◆ 通过OnePose数据集验证，处理速度提升1.5-14.48倍，参考图像和点云规模分别缩减...</td></tr>
-<tr><td>2025-06-03</td><td>Nearby dwarf galaxies with extreme star formation rates: a window into dwarf-galaxy ev...</td><td>S. Kaviraj等</td><td>[2506.03265](http://arxiv.org/pdf/2506.03265)</td><td>无</td><td>◆研究发现附近极端恒星形成率的矮星系与早期宇宙矮星系类似，其高恒星形成率并非由致密结构或特殊环境驱动，而是与星系相互作用和早期形态密切相关。  
-◆通过对比分析，提出当前恒星形成主序的低红移数据...</td></tr>
+<tr><td>2025-06-11</td><td>OWSM-Biasing: Contextualizing Open Whisper-...</td><td>Yui Sudo等</td><td>[2506.09448](http://arxiv.org/pdf/2506.09448)</td><td>无</td><td>◆ 该论文创新性地将上下文偏置（CB）方法与预训练的OWSM v3.1模型结合，冻结预训练参数以保留其知识，仅通过小数据集即可显著提升罕见词识别效果。  
+◆ 实验表明，该方法在LibriSpe...</td></tr>
+<tr><td>2025-06-06</td><td>SurGSplat: Progressive Geometry-Constrai...</td><td>Yuchao Zheng等</td><td>[2506.05935](http://arxiv.org/pdf/2506.05935)</td><td>无</td><td>◆提出SurGSplat方法，通过渐进式几何约束优化3D高斯泼溅(3DGS)，解决内窥镜场景中特征稀疏和光照不均导致的重建失败问题。  
+◆结合血管结构等关键特征的几何约束，显著提升手术场景重建...</td></tr>
+<tr><td>2025-06-05</td><td>On-the-fly Reconstruction for Large-Scale Novel Vi...</td><td>Andreas Meuleman等</td><td>[2506.05558](http://arxiv.org/pdf/2506.05558)</td><td>无</td><td>◆提出实时重建方法，在拍摄完成后立即生成相机位姿和训练好的3D高斯泼溅模型，支持大场景和宽基线有序图像序列处理。  
+◆创新性地结合快速初始位姿估计（基于学习特征和GPU友好型小型束调整）与高斯...</td></tr>
+<tr><td>2025-06-05</td><td>SupeRANSAC: One RANSAC to Rule Them All</td><td>Daniel Barath</td><td>[2506.04803](http://arxiv.org/pdf/2506.04803)</td><td>无</td><td>◆提出SupeRANSAC，一种统一且高性能的RANSAC框架，通过系统整合关键组件（如采样、评分）和优化实现细节，显著提升了多任务几何估计的鲁棒性。  
+◆在基础矩阵估计等任务上平均提升6个A...</td></tr>
+<tr><td>2025-06-04</td><td>Voyager: Long-Range and World-Consiste...</td><td>Tianyu Huang等</td><td>[2506.04225](http://arxiv.org/pdf/2506.04225)</td><td>无</td><td>◆Voyager提出首个端到端视频扩散框架，通过单张输入图像和用户自定义相机路径直接生成长距离、全局一致的3D点云序列，无需传统3D重建流程。  
+◆核心创新包括：1) 联合生成对齐的RGB-D...</td></tr>
+<tr><td>2025-06-04</td><td>Accelerating SfM-based Pose Estimation with Domina...</td><td>Joji Joseph等</td><td>[2506.03667](http://arxiv.org/pdf/2506.03667)</td><td>无</td><td>◆ 提出基于图论支配集的预处理方法，显著加速SfM位姿估计流程，在OnePose数据集上实现1.5-14.48倍速度提升。  
+◆ 通过精简参考图像（17-23倍）和点云规模（2.27-4倍），...</td></tr>
+<tr><td>2025-06-03</td><td>Nearby dwarf galaxies with extreme star formation rates: a window into dwarf-galaxy ev...</td><td>S. Kaviraj等</td><td>[2506.03265](http://arxiv.org/pdf/2506.03265)</td><td>无</td><td>◆研究发现附近低光度矮星系（质量10^7-10^8太阳质量）存在极端恒星形成率（0.1-3太阳质量/年），可作为早期宇宙（z~5.5）矮星系的类比样本。  
+◆通过对比分析，揭示极端恒星形成率并...</td></tr>
 <tr><td>2025-06-02</td><td>Fast and Robust Rotation Averaging with Anisotropi...</td><td>Yaroslava Lochman等</td><td>[2506.01940](http://arxiv.org/pdf/2506.01940)</td><td>无</td><td>◆提出一种基于各向异性坐标下降的快速鲁棒旋转平均方法，通过简化块坐标下降的数学推导并扩展至各向异性场景，显著提升了计算效率。  
 ◆将新求解器集成到大规模鲁棒旋转平均流程中，在公开数据集上实现了...</td></tr>
-<tr><td>2025-06-03</td><td>Improving Multilingual Speech Models on ML-SUPERB 2.0: Fine-tuning with Data Augment...</td><td>Qingzheng Wang等</td><td>[2505.24200](http://arxiv.org/pdf/2505.24200)</td><td>无</td><td>◆提出多种适应策略（冻结上游训练、部分微调、低秩适应）优化多语言语音模型在ML-SUPERB 2.0上的表现。◆引入数据增强缓解少样本场景性能下降，并创新性使用LID感知CTC损失进行正则化。该...</td></tr>
+<tr><td>2025-06-03</td><td>Improving Multilingual Speech Models on ML-SUPERB 2.0: Fine-tuning with Data Augment...</td><td>Qingzheng Wang等</td><td>[2505.24200](http://arxiv.org/pdf/2505.24200)</td><td>无</td><td>◆提出多种适应策略（冻结上游训练、部分微调、低秩适应）优化多语言语音模型的微调效果。  
+◆结合数据增强缓解少样本场景性能下降，并引入LID感知CTC损失进行正则化。  
+在ML-SUPERB ...</td></tr>
 <tr><td>2025-05-29</td><td>Rooms from Motion: Un-posed Indoor 3D Object Det...</td><td>Justin Lazarow等</td><td>[2505.23756](http://arxiv.org/pdf/2505.23756)</td><td>无</td><td>◆提出Rooms from Motion (RfM)方法，通过物体中心匹配替代传统2D关键点匹配，实现无相机位姿输入的室内3D物体检测与建图。  
-◆创新性地将3D物体检测转化为定位与建图问题，...</td></tr>
+◆创新性地将3D定向框作为几何基元，同步估计相...</td></tr>
 <tr><td>2025-05-30</td><td>FAMA: The First Large-Scale Open-Sc...</td><td>Sara Papi等</td><td>[2505.22759](http://arxiv.org/pdf/2505.22759)</td><td>[代码](https://github.com/hlt-mt/fbk-fairseq)</td><td>◆FAMA是首个面向英语和意大利语的大规模开源语音基础模型，填补了语音领域开放科学的空白。  
 ◆创新性地使用15万+小时开源语音数据训练，并发布了包含1.6万小时清洗和伪标注数据的新数据集。 ...</td></tr>
 <tr><td>**2025-05-28**</td><td>**UAVPairs: A Challenging Benchmark for Match Pair Retrieval of Large-scale UAV Images**</td><td>Junhuan Liu et.al.</td><td>[2505.22098](http://arxiv.org/abs/2505.22098)</td><td>无</td><td>摘要生成中...</td></tr>
@@ -1501,21 +1504,25 @@ td:nth-child(6) {  /* 摘要列 */
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>作者</th><th>论文</th><th>代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-06-11</td><td>Improving Personalized Search with Regularized Low...</td><td>Fiona Ryan等</td><td>[2506.10182](http://arxiv.org/pdf/2506.10182)</td><td>无</td><td>◆提出一种正则化低秩参数更新方法，仅需微调语言编码器最后一层的少量参数即可实现个性化视觉语言检索，有效平衡新概念学习与通用知识保留。  
-◆探索多概念参数融合策略，发现参数相加法效果最佳，并引入...</td></tr>
-<tr><td>2025-06-10</td><td>Safeguarding Multimodal Knowledge Copyright in the...</td><td>Tianyu Chen等</td><td>[2506.10030](http://arxiv.org/pdf/2506.10030)</td><td>无</td><td>◆提出了首个多模态RAG系统中的图像知识版权保护水印框架AQUA，填补了现有方法仅保护文本知识的空白。  
-◆创新性地采用基于缩写的触发器和空间关系线索两种互补方法，将语义信号嵌入合成图像，确保...</td></tr>
-<tr><td>2025-06-11</td><td>Hierarchical Image Matching for UAV Absolute Visua...</td><td>Xiangkai Zhang等</td><td>[2506.09748](http://arxiv.org/pdf/2506.09748)</td><td>无</td><td>该论文提出了一种用于无人机绝对视觉定位的分层跨源图像匹配方法。◆创新点在于结合了语义感知与结构约束的粗匹配模块和轻量级细粒度匹配模块，通过区域级语义对应和像素级精细匹配克服跨源与时变差异。实验证...</td></tr>
-<tr><td>2025-06-10</td><td>Robust Visual Localization via Semantic-Guided Mul...</td><td>Zhongtao Tian等</td><td>[2506.08526](http://arxiv.org/pdf/2506.08526)</td><td>无</td><td>◆提出语义引导的多尺度Transformer框架，通过跨尺度注意力融合几何细节与上下文信息，在保持空间精度的同时适应环境变化。  
-◆创新性地引入神经场景表征的语义监督机制，指导网络学习抑制环境...</td></tr>
-<tr><td>2025-06-08</td><td>Interpretable and Reliable Detection of AI-Generat...</td><td>Yikun Ji等</td><td>[2506.07045](http://arxiv.org/pdf/2506.07045)</td><td>无</td><td>◆提出基于多模态大语言模型（MLLMs）的可解释AI图像检测方法，通过标注合成伪影的边界框和描述性文本构建数据集，实现视觉-文本的接地推理。  
-◆采用多阶段优化策略微调MLLMs，平衡检测准确...</td></tr>
-<tr><td>2025-06-07</td><td>Zero Shot Composed Image Retrieval</td><td>Santhosh Kakarla等</td><td>[2506.06602](http://arxiv.org/pdf/2506.06602)</td><td>无</td><td>◆提出了一种基于BLIP-2和轻量级Q-Former的微调方法，通过融合视觉和文本特征到单一嵌入，显著提升了零样本组合图像检索在FashionIQ基准上的性能（Recall@10最高达50.4%...</td></tr>
-<tr><td>2025-06-06</td><td>GenIR: Generative Visual Feedback fo...</td><td>Diji Yang等</td><td>[2506.06220](http://arxiv.org/pdf/2506.06220)</td><td>无</td><td>◆提出GenIR框架，利用扩散模型生成可视化反馈，将AI对用户心理图像的理解显式具象化，解决了传统文本反馈模糊低效的问题。  
-◆首次定义心理图像检索任务(MIR)，并构建自动化多轮交互数据集，...</td></tr>
-<tr><td>2025-06-06</td><td>Astra: Toward General-Purpose Mobile...</td><td>Sheng Chen等</td><td>[2506.06205](http://arxiv.org/pdf/2506.06205)</td><td>无</td><td>该论文提出了Astra系统，通过分层多模态学习实现通用移动机器人导航。◆创新点1：采用双模型架构（Astra-Global多模态大模型和Astra-Local多任务网络），结合混合拓扑语义图进行...</td></tr>
-<tr><td>2025-06-05</td><td>HypeVPR: Exploring Hyperbolic Space fo...</td><td>Suhan Woo等</td><td>[2506.04764](http://arxiv.org/pdf/2506.04764)</td><td>无</td><td>◆提出HypeVPR框架，首次将双曲空间引入透视-环视图像匹配任务，利用双曲几何特性捕捉全景图像的层次化结构。  
-◆设计分层特征聚合机制，在双曲空间实现局部到全局的特征表达，并通过粗-精检索策...</td></tr>
+<tr><td>2025-06-11</td><td>Towards a general-purpose foundation model for fMR...</td><td>Cheng Wang等</td><td>[2506.11167](http://arxiv.org/pdf/2506.11167)</td><td>无</td><td>◆提出NeuroSTORM，首个基于4D fMRI数据的通用基础模型，直接处理原始时空数据，突破传统任务特定模型的限制。  
+◆采用Mamba架构和移位扫描策略高效处理海量数据，预训练覆盖5-1...</td></tr>
+<tr><td>2025-06-11</td><td>Improving Personalized Search with Regularized Low...</td><td>Fiona Ryan等</td><td>[2506.10182](http://arxiv.org/pdf/2506.10182)</td><td>无</td><td>◆提出一种正则化低秩参数更新方法，仅需微调语言编码器最后一层的少量参数，即可实现个性化视觉语言检索，既保留模型通用知识又有效识别新概念。  
+◆探索多概念参数融合策略，发现参数相加法效果最佳，并...</td></tr>
+<tr><td>2025-06-10</td><td>Safeguarding Multimodal Knowledge Copyright in the...</td><td>Tianyu Chen等</td><td>[2506.10030](http://arxiv.org/pdf/2506.10030)</td><td>无</td><td>◆提出了首个多模态RAG系统中的图像知识版权保护水印框架AQUA。  
+◆创新性地采用基于首字母的触发器和空间关系线索两种互补方法，将语义信号嵌入合成图像，实现了水印在图像检索器到文本生成器的间...</td></tr>
+<tr><td>2025-06-11</td><td>Hierarchical Image Matching for UAV Absolute Visua...</td><td>Xiangkai Zhang等</td><td>[2506.09748](http://arxiv.org/pdf/2506.09748)</td><td>无</td><td>该论文提出了一种用于无人机绝对视觉定位的分层跨源图像匹配方法。◆创新点在于结合了语义感知与结构约束的粗匹配模块和轻量级细粒度匹配模块，通过区域级语义对应和像素级精细匹配克服跨源与时序差异的挑战。...</td></tr>
+<tr><td>2025-06-10</td><td>Robust Visual Localization via Semantic-Guided Mul...</td><td>Zhongtao Tian等</td><td>[2506.08526](http://arxiv.org/pdf/2506.08526)</td><td>无</td><td>◆提出语义引导的多尺度Transformer框架，通过跨尺度注意力融合几何细节与上下文信息，在动态环境中保持定位精度。  
+◆创新性地引入神经场景表征的语义监督，指导网络学习对环境干扰具有鲁棒性...</td></tr>
+<tr><td>2025-06-08</td><td>Interpretable and Reliable Detection of AI-Generat...</td><td>Yikun Ji等</td><td>[2506.07045](http://arxiv.org/pdf/2506.07045)</td><td>无</td><td>◆提出基于多模态大语言模型（MLLMs）的可解释AI图像检测方法，通过视觉定位和文本解释的结合实现可靠检测。  
+◆构建首个标注合成伪影边界框和描述性文本的数据集，支撑视觉-文本联合推理。  
+...</td></tr>
+<tr><td>2025-06-07</td><td>Zero Shot Composed Image Retrieval</td><td>Santhosh Kakarla等</td><td>[2506.06602](http://arxiv.org/pdf/2506.06602)</td><td>无</td><td>◆提出一种基于BLIP-2的轻量级Q-Former模型，通过融合视觉和文本特征到单一嵌入，将FashionIQ基准上的Recall@10提升至45.6%（衬衫）、40.1%（裙子）和50.4%（...</td></tr>
+<tr><td>2025-06-06</td><td>GenIR: Generative Visual Feedback fo...</td><td>Diji Yang等</td><td>[2506.06220](http://arxiv.org/pdf/2506.06220)</td><td>无</td><td>◆提出Mental Image Retrieval (MIR)任务，研究用户通过多轮交互检索心中模糊图像的真实场景。  
+◆首创GenIR方法，利用扩散模型生成可视化反馈，直观展示系统理解，帮助...</td></tr>
+<tr><td>2025-06-06</td><td>Astra: Toward General-Purpose Mobile...</td><td>Sheng Chen等</td><td>[2506.06205](http://arxiv.org/pdf/2506.06205)</td><td>无</td><td>该论文提出了Astra，一种用于移动机器人导航的双模型架构（Astra-Global和Astra-Local），通过分层多模态学习提升机器人在复杂室内环境中的适应性。  
+◆Astra-Glob...</td></tr>
+<tr><td>2025-06-05</td><td>HypeVPR: Exploring Hyperbolic Space fo...</td><td>Suhan Woo等</td><td>[2506.04764](http://arxiv.org/pdf/2506.04764)</td><td>无</td><td>◆提出HypeVPR框架，首次将双曲空间引入透视到环视（P2E）视觉位置识别任务，利用双曲几何特性建模全景图像的层次化场景结构。  
+◆设计分层特征聚合机制，在双曲空间中实现局部到全局的特征层次...</td></tr>
 <tr><td>2025-06-05</td><td>Deep Learning Reforms Image Matching: A Survey and Outlook</td><td>Shihua Zhang等</td><td>[2506.04619](http://arxiv.org/pdf/2506.04619)</td><td>无</td><td>这篇论文系统综述了深度学习如何逐步革新传统图像匹配流程，并提出了分类框架。  
 ◆创新点一：首次从&quot;逐步替代传统模块&quot;和&quot;端到端合并多步骤&quot;两个维度，对深度学习方法进行系统分类（包括可学习检测-...</td></tr>
 <tr><td>2025-06-02</td><td>Entity Image and Mixed-Modal Image Retrieval Datas...</td><td>Cristian-Ioan Blaga等</td><td>[2506.02291](http://arxiv.org/pdf/2506.02291)</td><td>无</td><td>◆提出首个结合视觉与文本信息的混合模态图像检索基准MMIR，包含单实体图像和多实体图像两种复杂查询类型。  
@@ -2689,25 +2696,24 @@ td:nth-child(6) {  /* 摘要列 */
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>作者</th><th>论文</th><th>代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-05-29</td><td>TimePoint: Accelerated Time Series Align...</td><td>Ron Shapira Weber等</td><td>[2505.23475](http://arxiv.org/pdf/2505.23475)</td><td>[代码](https://github.com/bgu-cs-vil/timepoint)</td><td>◆TimePoint提出了一种自监督学习方法，通过从合成数据中学习关键点和描述符来加速基于DTW的时间序列对齐，同时提高对齐精度。  
-◆该方法创新性地将2D关键点检测思想适配到1D信号，利用高...</td></tr>
-<tr><td>2025-05-24</td><td>Why Not Replace? Sustaining Long-Term Visual Local...</td><td>Yicheng Lin等</td><td>[2505.18652](http://arxiv.org/pdf/2505.18652)</td><td>[代码](https://github.com/linyicheng1/orb_slam3_localization)</td><td>◆提出手工-学习特征协作的CPU高效定位框架，通过实时手工特征追踪与选择性学习特征匹配的层级架构，实现长期稳定定位。  
-◆首次系统验证两类特征在连续跟踪（手工优）与宽基线匹配（学习优）的功能互...</td></tr>
-<tr><td>2025-05-18</td><td>SEPT: Standard-Definition Map Enhan...</td><td>Muleilan Pei等</td><td>[2505.12246](http://arxiv.org/pdf/2505.12246)</td><td>无</td><td>◆提出SEPT框架，利用标准定义地图(SD Map)作为先验知识增强自动驾驶场景感知与拓扑推理能力。  
-◆创新性设计混合特征融合策略，结合栅格化与矢量化表示，解决SD地图与鸟瞰图特征空间的对齐...</td></tr>
+<tr><td>2025-05-29</td><td>TimePoint: Accelerated Time Series Align...</td><td>Ron Shapira Weber等</td><td>[2505.23475](http://arxiv.org/pdf/2505.23475)</td><td>[代码](https://github.com/bgu-cs-vil/timepoint)</td><td>◆TimePoint提出了一种自监督学习方法，通过从合成数据中学习关键点和描述符，显著加速了基于动态时间规整(DTW)的时间序列对齐，同时提高了对齐精度。  
+◆该方法创新性地将2D关键点检测思...</td></tr>
+<tr><td>2025-05-24</td><td>Why Not Replace? Sustaining Long-Term Visual Local...</td><td>Yicheng Lin等</td><td>[2505.18652](http://arxiv.org/pdf/2505.18652)</td><td>[代码](https://github.com/linyicheng1/orb_slam3_localization)</td><td>◆提出手工-学习特征协作的层次化定位框架，通过实时手工特征实现连续追踪，结合选择性学习特征进行绝对定位，解决传统方法在光照敏感、计算量大和环境依赖方面的局限。 ◆在CPU平台上实现高效长期视觉定...</td></tr>
+<tr><td>2025-05-18</td><td>SEPT: Standard-Definition Map Enhan...</td><td>Muleilan Pei等</td><td>[2505.12246](http://arxiv.org/pdf/2505.12246)</td><td>无</td><td>◆提出SEPT框架，通过融合标准定义地图（SD Map）与鸟瞰图（BEV）特征，结合栅格化和矢量化表示，解决自动驾驶场景感知中长距离和遮挡问题。  
+◆设计混合特征融合策略，缓解SD地图与BEV...</td></tr>
 <tr><td>2025-05-17</td><td>Keypoints as Dynamic Centroids for Unified Human P...</td><td>Niaz Ahmad等</td><td>[2505.12130](http://arxiv.org/pdf/2505.12130)</td><td>无</td><td>◆提出动态质心关键点（KDC）方法，将关键点作为动态质心统一解决人体姿态估计和实例分割任务。  
 ◆通过关键点圆盘生成KeyCentroids提升关键点检测置信度，并利用高置信度关键点作为Mas...</td></tr>
-<tr><td>2025-05-16</td><td>Deepfake Forensic Analysis: Source Dataset Attribution an...</td><td>Massimiliano Cassia等</td><td>[2505.11110](http://arxiv.org/pdf/2505.11110)</td><td>无</td><td>◆提出了一种基于可解释特征分析的新型法医框架，通过结合频谱变换、颜色分布度量和局部特征描述符，准确识别GAN生成图像的训练数据集（如CelebA或FFHQ）。  
-◆实验表明该框架在二元分类（真...</td></tr>
-<tr><td>2025-05-12</td><td>RDD: Robust Feature Detector and D...</td><td>Gonglin Chen等</td><td>[2505.08013](http://arxiv.org/pdf/2505.08013)</td><td>无</td><td>◆提出基于可变形Transformer的鲁棒特征检测与描述方法RDD，通过可变形自注意力机制捕获全局上下文和几何不变性。  
-◆引入航空到地面视角的新数据集，并创建两个强调大视角变化和跨高度匹配...</td></tr>
-<tr><td>2025-05-12</td><td>Enabling Privacy-Aware AI-Based Ergonomic Analysis</td><td>Sander De Coninck等</td><td>[2505.07306](http://arxiv.org/pdf/2505.07306)</td><td>无</td><td>◆提出一种隐私保护的人体工学评估框架，通过对抗训练开发轻量级神经网络对视频数据进行模糊化处理，仅保留姿态估计所需关键信息。◆结合多视角集成和REBA评估方法，在保护工人隐私的同时实现高精度3D姿...</td></tr>
-<tr><td>2025-05-09</td><td>My Emotion on your face: The use of Facial Keypoint De...</td><td>Jingrui He等</td><td>[2505.06436](http://arxiv.org/pdf/2505.06436)</td><td>无</td><td>◆提出了一种结合人脸关键点检测模型（HFLD损失）的新损失函数，用于解决StyleGAN/2潜在空间编辑中的表情纠缠问题。  
-◆通过定量和定性实验证明，该方法能将情感变化减少49%，显著优于现...</td></tr>
+<tr><td>2025-05-16</td><td>Deepfake Forensic Analysis: Source Dataset Attribution an...</td><td>Massimiliano Cassia等</td><td>[2505.11110](http://arxiv.org/pdf/2505.11110)</td><td>无</td><td>◆提出了一种基于可解释特征分析的新颖法医框架，通过结合频谱变换、颜色分布度量和局部特征描述符，准确识别GAN生成图像的训练数据集（如CelebA或FFHQ）。  
+◆实验证明该框架在二元分类（真...</td></tr>
+<tr><td>2025-05-12</td><td>RDD: Robust Feature Detector and D...</td><td>Gonglin Chen等</td><td>[2505.08013](http://arxiv.org/pdf/2505.08013)</td><td>无</td><td>◆ 提出基于可变形Transformer的鲁棒特征检测与描述方法RDD，通过可变形自注意力机制捕获全局上下文和几何不变性。  
+◆ 构建包含Air-to-Ground场景的新数据集，并设立两个新...</td></tr>
+<tr><td>2025-05-12</td><td>Enabling Privacy-Aware AI-Based Ergonomic Analysis</td><td>Sander De Coninck等</td><td>[2505.07306](http://arxiv.org/pdf/2505.07306)</td><td>无</td><td>◆提出一种隐私感知的人体工学评估框架，通过对抗训练开发轻量级神经网络对视频数据进行模糊处理，仅保留姿态估计所需关键信息。◆结合多视角集成和REBA评估方法，在保护工人隐私的同时实现高精度3D姿态...</td></tr>
+<tr><td>2025-05-09</td><td>My Emotion on your face: The use of Facial Keypoint De...</td><td>Jingrui He等</td><td>[2505.06436](http://arxiv.org/pdf/2505.06436)</td><td>无</td><td>◆提出了一种结合人脸关键点检测模型（HFLD损失）的新损失函数，用于在StyleGAN/2的潜在空间编辑中更好地保持面部表情不变。  
+◆通过定量和定性实验证明，该方法能将情感变化减少49%，有...</td></tr>
 <tr><td>2025-05-05</td><td>Unsupervised training of keypoint-agnostic descrip...</td><td>David Rivas-Villar等</td><td>[2505.02787](http://arxiv.org/pdf/2505.02787)</td><td>无</td><td>◆提出了一种无需关键点检测的无监督描述符学习方法，使描述符网络在配准推理时不受关键点检测器限制。  
 ◆通过多类型关键点检测器的广泛验证，证明该方法在视网膜图像配准中达到与监督方法相当的精度，且...</td></tr>
-<tr><td>2025-05-05</td><td>Unsupervised Deep Learning-based Keypoint Localiza...</td><td>David Rivas-Villar等</td><td>[2505.02779](http://arxiv.org/pdf/2505.02779)</td><td>无</td><td>◆提出首个完全无监督的视网膜图像配准流程，无需任何标注数据，颠覆了传统依赖标注数据的检测器-描述符范式。  
-◆创新性地通过描述符性能反推关键点位置，实现描述符引导的无监督关键点检测网络，在四大...</td></tr>
+<tr><td>2025-05-05</td><td>Unsupervised Deep Learning-based Keypoint Localiza...</td><td>David Rivas-Villar等</td><td>[2505.02779](http://arxiv.org/pdf/2505.02779)</td><td>无</td><td>◆提出首个完全无监督的视网膜图像配准流程，无需任何标注数据，颠覆了传统先检测关键点再学习描述符的范式。  
+◆创新性地通过描述符性能反推关键点位置，设计了无标签的描述符学习方法和关键点检测网络，...</td></tr>
 <tr><td>**2025-05-04**</td><td>**Focus What Matters: Matchability-Based Reweighting for Local Feature Matching**</td><td>Dongyue Li et.al.</td><td>[2505.02161](http://arxiv.org/abs/2505.02161)</td><td>无</td><td>摘要生成中...</td></tr>
 <tr><td>**2025-05-04**</td><td>**Enhancing Lidar Point Cloud Sampling via Colorization and Super-Resolution of Lidar Imagery**</td><td>Sier Ha et.al.</td><td>[2505.02049](http://arxiv.org/abs/2505.02049)</td><td>无</td><td>摘要生成中...</td></tr>
 <tr><td>**2025-04-29**</td><td>**Emotion Recognition in Contemporary Dance Performances Using Laban Movement Analysis**</td><td>Muhammad Turab et.al.</td><td>[2504.21154](http://arxiv.org/abs/2504.21154)</td><td>无</td><td>摘要生成中...</td></tr>
@@ -3018,21 +3024,20 @@ td:nth-child(6) {  /* 摘要列 */
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>作者</th><th>论文</th><th>代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-06-12</td><td>RealKeyMorph: Keypoints in Real-world Coord...</td><td>Mina C. Moghadam等</td><td>[2506.10344](http://arxiv.org/pdf/2506.10344)</td><td>无</td><td>◆提出RealKeyMorph（RKM），首次实现无需重采样的分辨率无关医学图像配准，直接处理原始分辨率数据。  
-◆通过利用扫描仪提供的仿射矩阵将关键点转换为真实世界坐标，使关键点提取与分辨率...</td></tr>
-<tr><td>2025-06-11</td><td>Hierarchical Image Matching for UAV Absolute Visua...</td><td>Xiangkai Zhang等</td><td>[2506.09748](http://arxiv.org/pdf/2506.09748)</td><td>无</td><td>该论文提出了一种用于无人机绝对视觉定位的分层跨源图像匹配方法。◆创新点在于结合了语义感知与结构约束的粗匹配模块和轻量级细粒度匹配模块，通过区域级语义对应和像素级精细匹配克服跨源与时序差异的挑战。...</td></tr>
-<tr><td>2025-06-11</td><td>ScaleLSD: Scalable Deep Line Segment De...</td><td>Zeran Ke等</td><td>[2506.09369](http://arxiv.org/pdf/2506.09369)</td><td>[代码](https://github.com/ant-research/scalelsd)</td><td>◆提出ScaleLSD，首个通过大规模自监督学习（超1000万无标签图像）实现的高效深度线段检测模型，全面超越传统非深度方法。  
-◆通过重新设计深度学习与非深度方法的底层架构，实现了对自然图像...</td></tr>
-<tr><td>2025-05-21</td><td>Anti-interrupted sampling repeater jamming via lin...</td><td>Jia-Mian Li等</td><td>[2506.06302](http://arxiv.org/pdf/2506.06302)</td><td>无</td><td>◆提出基于广义线性正则维格分布（GLWD）的时频分析方法，通过合理设置参数显著提升多分量信号场景下的时频分辨率和能量集中度，有效解决传统方法在低信噪比下难以抑制能量相近的间歇采样转发干扰（ISR...</td></tr>
-<tr><td>2025-06-05</td><td>Vanishing arcs for isolated plane curve singularit...</td><td>Hanwool Bae等</td><td>[2506.04917](http://arxiv.org/pdf/2506.04917)</td><td>无</td><td>◆提出&quot;消失弧集&quot;新概念，作为几何消失循环的对应物，通过几何变异算子处理恰当弧与闭曲线。◆建立弧与几何消失循环的精确对应关系，用弧与几何单值化映像的交点数刻画其变异特性。◆证明对任意A&#x27;Camp...</td></tr>
-<tr><td>2025-06-05</td><td>Deep Learning Reforms Image Matching: A Survey and Outlook</td><td>Shihua Zhang等</td><td>[2506.04619](http://arxiv.org/pdf/2506.04619)</td><td>无</td><td>这篇论文系统综述了深度学习如何逐步革新传统图像匹配流程，提出了基于学习的两大技术路径：  
-◆ 用可学习模块（如检测-描述子、离群点过滤、几何估计器）替代传统流程中的独立步骤  
-◆ 将多个步骤...</td></tr>
-<tr><td>2025-06-05</td><td>SR3D: Unleashing Single-view 3D Rec...</td><td>Mingxu Zhang等</td><td>[2505.24305](http://arxiv.org/pdf/2505.24305)</td><td>无</td><td>该论文提出了一种无需训练的框架SR3D，通过单视角RGB和深度图像实现透明和镜面物体的3D重建与抓取。◆创新点在于结合外部视觉模型生成物体网格，并通过视图匹配和关键点匹配机制，利用2D/3D语义...</td></tr>
+<tr><td>2025-06-12</td><td>RealKeyMorph: Keypoints in Real-world Coord...</td><td>Mina C. Moghadam等</td><td>[2506.10344](http://arxiv.org/pdf/2506.10344)</td><td>无</td><td>◆提出RealKeyMorph（RKM），首次实现无需重采样的多分辨率医学图像配准，避免传统方法因插值导致的伪影问题。  
+◆通过利用扫描仪提供的仿射矩阵将关键点映射到真实世界坐标，使关键点提取...</td></tr>
+<tr><td>2025-06-11</td><td>Hierarchical Image Matching for UAV Absolute Visua...</td><td>Xiangkai Zhang等</td><td>[2506.09748](http://arxiv.org/pdf/2506.09748)</td><td>无</td><td>该论文提出了一种用于无人机绝对视觉定位的分层跨源图像匹配方法。◆创新点在于结合了语义感知与结构约束的粗匹配模块和轻量级细粒度匹配模块，通过区域级语义对应和像素级精细匹配克服跨源与时变差异。实验证...</td></tr>
+<tr><td>2025-06-11</td><td>ScaleLSD: Scalable Deep Line Segment De...</td><td>Zeran Ke等</td><td>[2506.09369](http://arxiv.org/pdf/2506.09369)</td><td>[代码](https://github.com/ant-research/scalelsd)</td><td>◆提出ScaleLSD，首个通过大规模自监督学习（超过1000万无标签图像）训练的领域无关深度线段检测模型。  
+◆在零样本设定下全面超越传统非深度方法，首次实现深度模型在所有测试任务（检测、单...</td></tr>
+<tr><td>2025-05-21</td><td>Anti-interrupted sampling repeater jamming via lin...</td><td>Jia-Mian Li等</td><td>[2506.06302](http://arxiv.org/pdf/2506.06302)</td><td>无</td><td>◆提出基于广义线性正则维格纳分布(GLWD)的时频分析方法，通过合理设置参数显著提升多分量信号场景下的时频分辨率和能量集中度。◆改进现有移动线段检测算法为移动长线段检测(M-LLSD)，增强对目...</td></tr>
+<tr><td>2025-06-05</td><td>Vanishing arcs for isolated plane curve singularit...</td><td>Hanwool Bae等</td><td>[2506.04917](http://arxiv.org/pdf/2506.04917)</td><td>无</td><td>◆ 提出&quot;消失弧集&quot;概念作为几何消失循环的对应物，通过几何变分算子建立恰当嵌入弧与消失循环的联系。  
+◆ 用相交数刻画几何变分算子将弧映射为几何消失循环的条件，并证明对任意A&#x27;Campo分割产...</td></tr>
+<tr><td>2025-06-05</td><td>Deep Learning Reforms Image Matching: A Survey and Outlook</td><td>Shihua Zhang等</td><td>[2506.04619](http://arxiv.org/pdf/2506.04619)</td><td>无</td><td>这篇论文系统综述了深度学习如何逐步革新传统图像匹配流程，并提出了未来研究方向。◆创新点在于：1) 首次从&quot;逐步替换传统流程组件&quot;和&quot;端到端合并多步骤&quot;双视角建立分类体系；2) 全面评估了可学习检...</td></tr>
+<tr><td>2025-06-05</td><td>SR3D: Unleashing Single-view 3D Rec...</td><td>Mingxu Zhang等</td><td>[2505.24305](http://arxiv.org/pdf/2505.24305)</td><td>无</td><td>该论文提出了一种无需训练的框架SR3D，通过单视角RGB和深度图像实现透明和镜面物体的3D重建与抓取。◆创新点在于结合外部视觉模型生成物体网格，并通过视图匹配和关键点匹配机制，利用2D和3D的语...</td></tr>
 <tr><td>2025-06-05</td><td>Universal Domain Adaptation for Semantic Segmentat...</td><td>Seun-An Choe等</td><td>[2505.22458](http://arxiv.org/pdf/2505.22458)</td><td>无</td><td>该论文提出了通用领域自适应语义分割（UniDA-SS）方法UniMAP，解决了传统方法因未知类别设置导致的性能下降问题。◆创新点1：提出域特定原型区分（DSPD），通过双原型分离域特定特征，增强...</td></tr>
-<tr><td>2025-05-23</td><td>To Glue or Not to Glue? Classical vs Learned Image...</td><td>Simone Gaisbauer等</td><td>[2505.17973](http://arxiv.org/pdf/2505.17973)</td><td>无</td><td>◆ 该论文首次系统比较了传统手工特征匹配方法与深度学习特征匹配方法在语义3D建筑模型相机定位任务中的性能差异。  
-◆ 通过定制数据集和标准基准测试证明，在具有挑战性的建筑立面匹配场景中，可学习...</td></tr>
-<tr><td>2025-05-16</td><td>Multi-view dense image matching with similarity le...</td><td>Mohamed Ali Chebbi等</td><td>[2505.11264](http://arxiv.org/pdf/2505.11264)</td><td>无</td><td>◆提出MV-DeepSimNets框架，结合深度相似性学习与几何先验，通过极线约束或单应性校正生成几何感知特征，无需复杂多视图训练数据。◆创新性地在线融合几何先验与平面扫描假设投影，增强多视图重...</td></tr>
+<tr><td>2025-05-23</td><td>To Glue or Not to Glue? Classical vs Learned Image...</td><td>Simone Gaisbauer等</td><td>[2505.17973](http://arxiv.org/pdf/2505.17973)</td><td>无</td><td>◆ 该论文首次系统比较了传统手工特征匹配方法与深度学习特征匹配方法在语义3D建筑模型相机定位任务中的性能表现。  
+◆ 通过定制数据集和标准基准测试，证明学习方法在复杂场景下（如零RANSAC内...</td></tr>
+<tr><td>2025-05-16</td><td>Multi-view dense image matching with similarity le...</td><td>Mohamed Ali Chebbi等</td><td>[2505.11264](http://arxiv.org/pdf/2505.11264)</td><td>无</td><td>◆提出MV-DeepSimNets框架，通过深度学习结合极线几何先验实现多视图相似性学习，无需繁琐的多视图训练数据构建。◆创新性地引入在线几何先验（极线约束或单应矫正）生成几何感知特征，通过平面...</td></tr>
 <tr><td>2025-05-12</td><td>Boosting Global-Local Feature Matching via Anomaly...</td><td>Yuqi Cheng等</td><td>[2505.07375](http://arxiv.org/pdf/2505.07375)</td><td>[代码](https://github.com/hustCYQ/GLFM-Multi-class-3DAD)</td><td>◆提出GLFM方法，通过全局-局部特征匹配解决多类别点云异常检测中的特征混淆问题。  
 ◆创新性地设计了三阶段框架：异常合成增强特征表示、建立抗混淆的全局-局部记忆库、基于特征距离的异常检测，显...</td></tr>
 <tr><td>2025-05-04</td><td>OBD-Finder: Explainable Coarse-to-Fine Te...</td><td>Chongsheng Zhang等</td><td>[2505.03836](http://arxiv.org/pdf/2505.03836)</td><td>[代码](https://github.com/cszhanglmu/obd-finder)</td><td>◆提出了一种渐进式甲骨文重复片发现框架，结合无监督低层关键点匹配与高层以文本为中心的内容匹配，实现语义感知和可解释的候选排序。◆在保持高召回率的同时，该方法在Top-5和Top-15检索结果中取...</td></tr>
@@ -3370,25 +3375,26 @@ td:nth-child(6) {  /* 摘要列 */
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>作者</th><th>论文</th><th>代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-06-12</td><td>PointGS: Point Attention-Aware Sparse ...</td><td>Lintao Xiang等</td><td>[2506.10335](http://arxiv.org/pdf/2506.10335)</td><td>无</td><td>◆提出PointGS框架，通过点级特征感知高斯泼溅技术实现稀疏视角下的实时高质量渲染。  
-◆结合立体基础模型估计精确相机位姿并重建稠密点云初始化高斯分布，利用自注意力机制的点交互网络增强点级外...</td></tr>
+<tr><td>2025-06-12</td><td>PointGS: Point Attention-Aware Sparse ...</td><td>Lintao Xiang等</td><td>[2506.10335](http://arxiv.org/pdf/2506.10335)</td><td>无</td><td>◆提出PointGS框架，通过点级特征感知高斯泼溅实现稀疏视角下的实时高质量渲染。  
+◆结合立体基础模型精确估计相机位姿并重建稠密点云初始化高斯分布，利用多尺度2D外观特征编码和自注意力点交互...</td></tr>
 <tr><td>2025-06-11</td><td>The Less You Depend, The More You Learn: Synthesizing Novel Views from...</td><td>Haoru Wang等</td><td>[2506.09885](http://arxiv.org/pdf/2506.09885)</td><td>[代码](https://github.com/ou524u/Less3Depend)</td><td>◆提出了一种无需3D先验知识和相机位姿标注的新视角合成框架，仅依赖稀疏2D图像即可学习隐式3D感知。  
 ◆通过系统分析揭示了数据规模扩大时，减少3D知识依赖的方法性能提升更快，最终能达到依赖3...</td></tr>
-<tr><td>2025-06-10</td><td>A Probability-guided Sampler for Neural Implicit S...</td><td>Gonçalo Dias Pais等</td><td>[2506.08619](http://arxiv.org/pdf/2506.08619)</td><td>无</td><td>◆提出基于3D图像投影空间的概率密度函数采样方法，通过隐式表面表示引导光线采样聚焦于兴趣区域，提升渲染质量。  
-◆设计新型表面重建损失函数，结合近表面和空白空间约束，充分利用3D投影空间模型，...</td></tr>
-<tr><td>2025-06-09</td><td>Speedy Deformable 3D Gaussian Splatting: Fast Rendering and Compressio...</td><td>Allen Tu等</td><td>[2506.07917](http://arxiv.org/pdf/2506.07917)</td><td>无</td><td>◆提出时间敏感度剪枝评分和退火平滑剪枝机制，动态剔除对重建贡献低的3D高斯点，提升鲁棒性。  
-◆开发GroupFlow运动分析技术，通过轨迹相似性聚类高斯点并预测每组刚性变换，大幅减少神经推理...</td></tr>
+<tr><td>2025-06-10</td><td>A Probability-guided Sampler for Neural Implicit S...</td><td>Gonçalo Dias Pais等</td><td>[2506.08619](http://arxiv.org/pdf/2506.08619)</td><td>无</td><td>◆提出基于隐式表面表示的概率密度函数模型，在3D图像投影空间实现针对兴趣区域的射线定向采样，提升渲染质量。  
+◆设计新型表面重建损失函数，充分利用3D投影空间模型，结合近表面和空白空间约束，进...</td></tr>
+<tr><td>2025-06-09</td><td>Speedy Deformable 3D Gaussian Splatting: Fast Rendering and Compressio...</td><td>Allen Tu等</td><td>[2506.07917](http://arxiv.org/pdf/2506.07917)</td><td>无</td><td>◆提出时间敏感度剪枝分数和退火平滑剪枝机制，动态剔除对重建贡献低的3D高斯点，提升实时性并增强对不精确相机位姿的鲁棒性。  
+◆开发GroupFlow运动分析技术，通过轨迹相似性聚类高斯点并预测...</td></tr>
 <tr><td>2025-06-11</td><td>Genesis: Multimodal Driving Scene Gene...</td><td>Xiangyu Guo等</td><td>[2506.07497](http://arxiv.org/pdf/2506.07497)</td><td>无</td><td>◆提出Genesis框架，首次实现多视角驾驶视频与LiDAR序列的联合生成，通过共享潜在空间确保跨模态时空一致性。  
 ◆创新两阶段架构：结合DiT视频扩散模型与3D-VAE编码，以及BEV感知...</td></tr>
 <tr><td>2025-06-07</td><td>SPC to 3D: Novel View Synthesis from Bin...</td><td>Sumit Sharma等</td><td>[2506.06890](http://arxiv.org/pdf/2506.06890)</td><td>无</td><td>◆提出模块化两阶段框架，首次实现从二进制单光子相机(SPC)数据生成高质量彩色新视角。  
-◆第一阶段采用生成模型(Pix2PixHD)解决SPC二值图像信息缺失问题，实现RGB图像转换；第二阶...</td></tr>
-<tr><td>2025-06-06</td><td>Splat and Replace: 3D Reconstruction with Repeti...</td><td>Nicolás Violante等</td><td>[2506.06462](http://arxiv.org/pdf/2506.06462)</td><td>无</td><td>◆利用场景中的重复元素提升3D重建质量，通过分割、配准3D高斯泼溅(3DGS)中的重复实例并共享信息，有效改善了因视角覆盖不足或遮挡导致的低质量区域重建。◆提出同时处理几何结构和外观变化的方案，...</td></tr>
+◆第一阶段采用生成模型(Pix2PixHD)将二值SPC图像转化为RGB图像，解决纹理色彩信息缺失问题...</td></tr>
+<tr><td>2025-06-06</td><td>Splat and Replace: 3D Reconstruction with Repeti...</td><td>Nicolás Violante等</td><td>[2506.06462](http://arxiv.org/pdf/2506.06462)</td><td>无</td><td>◆利用场景中的重复元素提升3D重建质量，通过分割和配准3D高斯泼溅(3DGS)中的重复实例实现信息共享。  
+◆提出同时优化几何结构和外观差异的方法，显著改善了训练视角覆盖不足或遮挡区域的渲染效果。</td></tr>
 <tr><td>2025-06-06</td><td>NeurNCD: Novel Class Discovery via Imp...</td><td>Junming Wang等</td><td>[2506.06412](http://arxiv.org/pdf/2506.06412)</td><td>无</td><td>◆提出NeurNCD框架，首次将隐式神经表示（Embedding-NeRF）与KL散度结合，替代传统显式3D分割图，实现开放场景下的新类别发现。  
 ◆通过特征查询、调制和聚类等关键组件，在预训...</td></tr>
-<tr><td>2025-06-06</td><td>Dy3DGS-SLAM: Monocular 3D Gaussian Splatti...</td><td>Mingrui Li等</td><td>[2506.05965](http://arxiv.org/pdf/2506.05965)</td><td>无</td><td>◆提出首个基于单目RGB输入的动态场景3D高斯泼溅SLAM系统Dy3DGS-SLAM。  
-◆通过概率模型融合光流掩码与深度掩码生成动态掩膜，仅需单次网络迭代即可约束跟踪尺度并优化几何渲染。  ...</td></tr>
-<tr><td>2025-06-06</td><td>ProJo4D: Progressive Joint Optimizatio...</td><td>Daniel Rho等</td><td>[2506.05317](http://arxiv.org/pdf/2506.05317)</td><td>无</td><td>◆提出ProJo4D渐进式联合优化框架，通过参数敏感性引导逐步扩展联合优化范围，实现几何、外观、物理状态和材料属性的全参数联合优化。  
-◆解决了稀疏多视角视频下传统序列优化误差累积问题，在4D...</td></tr>
+<tr><td>2025-06-06</td><td>Dy3DGS-SLAM: Monocular 3D Gaussian Splatti...</td><td>Mingrui Li等</td><td>[2506.05965](http://arxiv.org/pdf/2506.05965)</td><td>无</td><td>◆ 提出了首个基于单目RGB输入的动态场景3D高斯泼溅SLAM系统Dy3DGS-SLAM。  
+◆ 通过融合光流掩码和深度掩码的概率模型生成动态掩码，单次网络迭代即可约束跟踪尺度并优化几何渲染。...</td></tr>
+<tr><td>2025-06-06</td><td>ProJo4D: Progressive Joint Optimizatio...</td><td>Daniel Rho等</td><td>[2506.05317](http://arxiv.org/pdf/2506.05317)</td><td>无</td><td>◆提出ProJo4D渐进式联合优化框架，通过按参数敏感性逐步扩展联合优化范围，解决了稀疏多视角视频下物理参数估计的误差累积问题。  
+◆首次实现几何、外观、物理状态和材料属性的完全联合优化，在4...</td></tr>
 <tr><td>2025-06-06</td><td>Unifying Appearance Codes and Bilateral Grids for ...</td><td>Nan Wang等</td><td>[2506.05280](http://arxiv.org/pdf/2506.05280)</td><td>[代码](https://github.com/bigcileng/bilateral-driving)</td><td>◆提出多尺度双边网格新方法，统一了外观编码和双边网格的优势，解决了动态驾驶场景中光度不一致导致的几何失真问题。  
 ◆通过像素级颜色映射和分层约束优化，显著降低了光不一致产生的漂浮伪影，在四大自...</td></tr>
 <tr><td>2025-06-05</td><td>Generating Synthetic Stereo Datasets using 3D Gaus...</td><td>Filip Slezak等</td><td>[2506.04908](http://arxiv.org/pdf/2506.04908)</td><td>无</td><td>◆ 提出基于3D高斯泼溅（3DGS）的立体数据集生成流程，相比NeRF方法更高效。  
@@ -5012,4 +5018,4 @@ td:nth-child(6) {  /* 摘要列 */
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.06.15
+> 更新于: 2025.06.16
