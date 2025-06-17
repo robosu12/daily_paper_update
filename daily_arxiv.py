@@ -80,14 +80,15 @@ def get_paper_summary(title: str, abstract: str) -> str:
     
     # 2. 构建更有效的提示词
     prompt = (
-        "用1-2句话总结以下论文的核心贡献和创新点:\n"
+        "用5-6句话总结以下论文的核心贡献和创新点:\n"
         f"标题: {title}\n"
         f"摘要: {abstract[:2000]}\n"
         "要求:\n"
         "- 用中文回复\n"
         "- 不使用Markdown格式\n"
-        "- 不超过200字\n"
-        "- 创新点用'◆'符号开头\n"
+        "- 不超过400字\n"
+        "- 创新点用'◆'符号开头\n" 
+        "- 每个创新点单开一行\n"
     )
     
     # 3. 带重试机制的API请求
@@ -216,7 +217,7 @@ def fetch_arxiv_results(query, max_results=10):
         return []
 
 def get_daily_papers(topic, query="slam", max_results=10):
-    """获取每日论文 - 解决图片中摘要为空的问题"""
+    """获取每日论文 - 修复代码链接问题"""
     papers = {}
     web_content = {}
     
@@ -236,36 +237,15 @@ def get_daily_papers(topic, query="slam", max_results=10):
             abstract = result.summary.replace("\n", " ")
             date = result.updated.date()
             
-            # 智能优化标题显示 (匹配图片样式)
-            if len(title) > 50:
-                if ':' in title:
-                    parts = title.split(':', 1)
-                    short_title = f"{parts[0].strip()}:{parts[1][:30]}..." if len(parts[1]) > 30 else title
-                else:
-                    short_title = title[:50] + "..."
-            else:
-                short_title = title
+            short_title = title
                 
-            # 智能生成摘要 (确保永不空白)
+            # 智能生成摘要
             summary = get_paper_summary(title, abstract)
             
-            # 获取代码链接
-            code_link = None
-            try:
-                # 先尝试paperswithcode API
-                code_response = requests.get(base_url + paper_id, timeout=10)
-                if code_response.status_code == 200:
-                    data = code_response.json()
-                    if data.get("official") and data["official"].get("url"):
-                        code_link = data["official"]["url"]
+            # 获取官方代码链接（使用修复后的函数）
+            code_link = get_official_code_link(paper_id, title, result.authors)
                 
-                # 没有结果则尝试GitHub搜索
-                if not code_link:
-                    code_link = get_code_link(title)
-            except Exception as e:
-                logging.warning(f"获取代码链接失败: {str(e)}")
-            
-            # 构建表格行 (匹配图片格式)
+            # 构建表格行
             paper_key = paper_id.split('v')[0]
             code_display = "无"
             if code_link:
