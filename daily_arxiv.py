@@ -455,9 +455,46 @@ td:nth-child(6) {  /* 摘要列 */
             
             f.write('<div class="table-container">\n')
             f.write("<table>\n")
-            # 根据图片设置表头
-            f.write("<thead><tr><th>日期</th><th>标题</th><th>作者</th><th>论文</th><th>代码</th><th>摘要</th></tr></thead>\n")
+            # 根据新需求调整表头：去掉作者和代码栏
+            f.write("<thead><tr><th>日期</th><th>标题</th><th>论文</th><th>摘要</th></tr></thead>\n")
             f.write("<tbody>\n")
+            
+            sorted_papers = sorted(papers.items(), key=lambda x: x[0], reverse=True)
+            
+            for paper_id, paper_entry in sorted_papers:
+                entry_parts = paper_entry.strip().split('|')
+                if len(entry_parts) >= 7:  # 包括开头的空字符串
+                    date = entry_parts[1].strip()
+                    title = entry_parts[2].strip()
+                    paper_link = entry_parts[4].strip()
+                    code_link = entry_parts[5].strip()
+                    summary = entry_parts[6].strip()
+                    
+                    if not summary or summary in ["无", "null"]:
+                        summary = "摘要生成中..."
+                    
+                    # 核心修改：合并论文链接和代码链接
+                    paper_display = paper_link
+                    if code_link not in ["无", "null", ""]:
+                        # 提取纯URL（去除Markdown格式）
+                        code_url_match = re.search(r'$(.*?)$', code_link)
+                        if code_url_match:
+                            code_url = code_url_match.group(1)
+                            paper_display = f"{paper_link}<br><a href='{code_url}'>[代码]</a>"
+                    
+                    f.write("<tr>")
+                    f.write(f"<td>{html.escape(date)}</td>")
+                    f.write(f"<td>{html.escape(title)}</td>")
+                    f.write(f"<td>{paper_display}</td>")  # 合并后的论文+代码栏
+                    f.write(f"<td>{html.escape(summary)}</td>")
+                    f.write("</tr>\n")
+            
+            f.write("</tbody>\n")
+            f.write("</table>\n")
+            f.write("</div>\n\n")
+            
+            if use_b2t:
+                f.write(f"<div align='right'><a href='#top'>↑ 返回顶部</a></div>\n\n")
             
             # 6. 排序并添加论文
             sorted_papers = sorted(papers.items(), key=lambda x: x[0], reverse=True)
