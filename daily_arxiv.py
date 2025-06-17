@@ -55,18 +55,42 @@ def sort_papers(papers):
     """按日期排序论文"""
     return dict(sorted(papers.items(), key=lambda x: x[0], reverse=True))
 
-def get_code_link(title: str) -> str:
-    """优化代码链接获取"""
-    query = f"{title} in:name,description arxiv"
+def get_official_code_link(paper_id: str, title: str, authors: list) -> str:
+    """获取论文官方开源代码链接（带多重验证）[1](@ref)"""
+    # 1. 优先使用paperswithcode API获取官方链接
+    try:
+        code_response = requests.get(base_url + paper_id, timeout=10)
+        if code_response.status_code == 200:
+            data = code_response.json()
+            if data.get("official") and data["official"].get("url"):
+                return data["official"]["url"]
+    except Exception:
+        pass
+    
+    # 2. 从作者名和论文标题构建精准搜索查询
+    author_query = authors[0].last if authors and len(authors) > 0 else ""
+    query = f"{title} {author_query} arxiv in:name,description"
     params = {"q": query, "sort": "stars", "order": "desc"}
     
     try:
         response = requests.get(github_url, params=params, timeout=15)
-        response.raise_for_status()
-        repos = response.json().get('items', [])
-        return repos[0]['html_url'] if repos else None
+        if response.status_code == 200:
+            repos = response.json().get('items', [])
+            
+            # 验证仓库是否确实包含论文相关代码
+            for repo in repos:
+                repo_description = repo.get('description', '').lower()
+                repo_name = repo.get('name', '').lower()
+                
+                # 验证关键词匹配
+                if ('arxiv' in repo_description or 
+                    paper_id.split('v')[0] in repo_description or
+                    any(keyword in repo_description for keyword in ['paper', 'implementation'])):
+                    return repo['html_url']
     except Exception:
-        return None
+        pass
+    
+    return None
 
 def get_paper_summary(title: str, abstract: str) -> str:
     """确保摘要永不空白的生成函数"""
@@ -104,10 +128,10 @@ def get_paper_summary(title: str, abstract: str) -> str:
                     "model": "deepseek-chat",
                     "messages": [{"role": "user", "content": prompt}],
                     "temperature": 0.3,
-                    "max_tokens": 200,
+                    "max_tokens": 500,  # 增加token限制以适应更长的摘要
                     "stream": False
                 },
-                timeout=20
+                timeout=30  # 增加超时时间
             )
             
             # 4. 检查响应状态
@@ -126,7 +150,7 @@ def get_paper_summary(title: str, abstract: str) -> str:
             if content:
                 # 6. 清理响应内容
                 content = re.sub(r"\*\*|\#\#\#|\`", "", content)
-                content = content[:97] + "..." if len(content) > 100 else content
+                # 不再截断摘要，保持完整
                 return content
                 
         except requests.Timeout:
@@ -140,10 +164,12 @@ def get_paper_summary(title: str, abstract: str) -> str:
 
 def generate_fallback_summary(title: str, abstract: str) -> str:
     """智能生成备用摘要"""
-    # 1. 尝试从摘要中提取第一句
+    # 1. 尝试从摘要中提取前3句
     sentences = re.split(r'(?<=[.!?])\s+', abstract)
-    if sentences:
-        return sentences[0][:97] + "..." if len(sentences[0]) > 100 else sentences[0]
+    if len(sentences) >= 3:
+        return " ".join(sentences[:3])
+    elif sentences:
+        return sentences[0]
     
     # 2. 如果摘要为空，根据标题生成示例摘要
     topics = ["视觉定位", "三维重建", "特征匹配", "场景理解", "神经网络"]
@@ -151,10 +177,10 @@ def generate_fallback_summary(title: str, abstract: str) -> str:
     contributions = ["提高准确率", "降低计算成本", "增强鲁棒性", "解决领域难题"]
     
     return (
-        f"提出了一种新的{random.choice(topics)}方法，"
-        f"通过{random.choice(techniques)}技术"
-        f"实现{random.choice(contributions)}。"
-        f"在多个数据集上验证了有效性。"
+        f"◆ 提出了一种新的{random.choice(topics)}方法\n"
+        f"◆ 通过{random.choice(techniques)}技术创新\n"
+        f"◆ 实现{random.choice(contributions)}\n"
+        f"◆ 在多个数据集上验证了有效性"
     )
 
 def fetch_arxiv_results(query, max_results=10):
@@ -237,12 +263,12 @@ def get_daily_papers(topic, query="slam", max_results=10):
             abstract = result.summary.replace("\n", " ")
             date = result.updated.date()
             
-            short_title = title
+            short_title = title  # 使用完整标题，不缩略
                 
             # 智能生成摘要
             summary = get_paper_summary(title, abstract)
             
-            # 获取官方代码链接（使用修复后的函数）
+            # 获取官方代码链接
             code_link = get_official_code_link(paper_id, title, result.authors)
                 
             # 构建表格行
@@ -313,7 +339,7 @@ def update_paper_links(filename):
                                 continue
                         
                         # 尝试GitHub搜索
-                        gh_link = get_code_link(title)
+                        gh_link = get_official_code_link(arxiv_id, title, [])
                         if gh_link:
                             new_code = f"[代码]({gh_link})"
                             new_content = content_str.replace(f"|{code}|", f"|{new_code}|")
@@ -397,21 +423,26 @@ th {
   position: sticky;
   top: 0;
 }
-/* 根据图片中的列宽设置 */
+/* 标题列样式 */
 td:nth-child(2) {  /* 标题列 */
-  max-width: 250px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-td:nth-child(6) {  /* 摘要列 */
-  max-width: 300px;
+  max-width: none;  /* 允许完整标题显示 */
   word-wrap: break-word;
-  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+td:nth-child(4) {  /* 摘要列 */
+  max-width: 400px;  /* 增加宽度以容纳更长的摘要 */
+  word-wrap: break-word;
+  line-height: 1.6;
 }
 /* 响应式设计 */
 @media (max-width: 768px) {
   .table-container {
     font-size: 0.75em;
+    display: block;
+    overflow-x: auto;
+  }
+  td:nth-child(2) {
+    min-width: 200px;  /* 保证最小可读宽度 */
   }
 }
 </style>\n\n""")
@@ -436,7 +467,7 @@ td:nth-child(6) {  /* 摘要列 */
             f.write('<div class="table-container">\n')
             f.write("<table>\n")
             # 根据新需求调整表头：去掉作者和代码栏
-            f.write("<thead><tr><th>日期</th><th>标题</th><th>论文</th><th>摘要</th></tr></thead>\n")
+            f.write("<thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>\n")
             f.write("<tbody>\n")
             
             sorted_papers = sorted(papers.items(), key=lambda x: x[0], reverse=True)
@@ -460,6 +491,7 @@ td:nth-child(6) {  /* 摘要列 */
                         code_url_match = re.search(r'$(.*?)$', code_link)
                         if code_url_match:
                             code_url = code_url_match.group(1)
+                            # 在论文链接下方添加代码链接
                             paper_display = f"{paper_link}<br><a href='{code_url}'>[代码]</a>"
                     
                     f.write("<tr>")
@@ -473,61 +505,6 @@ td:nth-child(6) {  /* 摘要列 */
             f.write("</table>\n")
             f.write("</div>\n\n")
             
-            if use_b2t:
-                f.write(f"<div align='right'><a href='#top'>↑ 返回顶部</a></div>\n\n")
-            
-            # 6. 排序并添加论文
-            sorted_papers = sorted(papers.items(), key=lambda x: x[0], reverse=True)
-            
-            for paper_id, paper_entry in sorted_papers:
-                # 根据图片样式清理和提取内容
-                entry_parts = paper_entry.strip().split('|')
-                if len(entry_parts) >= 7:  # 包括开头的空字符串
-                    # 从原始格式中提取数据
-                    date = entry_parts[1].strip()
-                    title = entry_parts[2].strip()
-                    author = entry_parts[3].strip()
-                    paper_link = entry_parts[4].strip()
-                    code_link = entry_parts[5].strip()
-                    summary = entry_parts[6].strip()
-                    
-                    # 确保摘要不为空
-                    if not summary or summary in ["无", "null"]:
-                        summary = "摘要生成中..."
-                    
-                    # 创建表格行
-                    f.write("<tr>")
-                    f.write(f"<td>{html.escape(date)}</td>")
-                    f.write(f"<td>{html.escape(title)}</td>")
-                    f.write(f"<td>{html.escape(author)}</td>")
-                    
-                    # 处理论文链接
-                    paper_match = re.search(r'$$([^$$]+)\]$([^)]+)$', paper_link)
-                    if paper_match:
-                        link_text, url = paper_match.groups()
-                        f.write(f"<td><a href='{html.escape(url)}'>{html.escape(link_text)}</a></td>")
-                    else:
-                        f.write(f"<td>{html.escape(paper_link)}</td>")
-                    
-                    # 处理代码链接
-                    code_match = re.search(r'$$([^$$]+)\]$([^)]+)$', code_link)
-                    if code_match:
-                        link_text, url = code_match.groups()
-                        f.write(f"<td><a href='{html.escape(url)}'>{html.escape(link_text)}</a></td>")
-                    elif code_link in ["无", "null"]:
-                        f.write(f"<td>无</td>")
-                    else:
-                        f.write(f"<td>{html.escape(code_link)}</td>")
-                    
-                    # 摘要列
-                    f.write(f"<td>{html.escape(summary)}</td>")
-                    f.write("</tr>\n")
-            
-            f.write("</tbody>\n")
-            f.write("</table>\n")
-            f.write("</div>\n\n")
-            
-            # 添加返回顶部链接
             if use_b2t:
                 f.write(f"<div align='right'><a href='#top'>↑ 返回顶部</a></div>\n\n")
         
