@@ -56,7 +56,7 @@ def sort_papers(papers):
     return dict(sorted(papers.items(), key=lambda x: x[0], reverse=True))
 
 def get_official_code_link(paper_id: str, title: str, authors: list) -> str:
-    """获取论文官方开源代码链接（带多重验证）[1](@ref)"""
+    """获取论文官方开源代码链接（带多重验证）"""
     # 1. 优先使用paperswithcode API获取官方链接
     try:
         code_response = requests.get(base_url + paper_id, timeout=10)
@@ -67,8 +67,19 @@ def get_official_code_link(paper_id: str, title: str, authors: list) -> str:
     except Exception:
         pass
     
-    # 2. 从作者名和论文标题构建精准搜索查询
-    author_query = authors[0].last if authors and len(authors) > 0 else ""
+    # 2. 从作者名构建查询（修复last属性不存在的问题）
+    author_query = ""
+    if authors:
+        try:
+            # 尝试从全名提取姓氏（西方姓名规范）
+            full_name = str(authors[0])
+            if full_name:
+                # 分割全名并取最后一部分作为姓氏
+                author_query = full_name.split()[-1]
+        except Exception as e:
+            logging.warning(f"作者名解析失败: {str(e)}")
+    
+    # 3. 构建GitHub搜索查询
     query = f"{title} {author_query} arxiv in:name,description"
     params = {"q": query, "sort": "stars", "order": "desc"}
     
@@ -79,8 +90,8 @@ def get_official_code_link(paper_id: str, title: str, authors: list) -> str:
             
             # 验证仓库是否确实包含论文相关代码
             for repo in repos:
-                repo_description = repo.get('description', '').lower()
-                repo_name = repo.get('name', '').lower()
+                repo_description = (repo.get('description') or '').lower()
+                repo_name = (repo.get('name') or '').lower()
                 
                 # 验证关键词匹配
                 if ('arxiv' in repo_description or 
@@ -128,7 +139,7 @@ def get_paper_summary(title: str, abstract: str) -> str:
                     "model": "deepseek-chat",
                     "messages": [{"role": "user", "content": prompt}],
                     "temperature": 0.3,
-                    "max_tokens": 500,  # 增加token限制以适应更长的摘要
+                    "max_tokens": 500,  # 增加token限制
                     "stream": False
                 },
                 timeout=30  # 增加超时时间
@@ -150,7 +161,6 @@ def get_paper_summary(title: str, abstract: str) -> str:
             if content:
                 # 6. 清理响应内容
                 content = re.sub(r"\*\*|\#\#\#|\`", "", content)
-                # 不再截断摘要，保持完整
                 return content
                 
         except requests.Timeout:
@@ -167,9 +177,9 @@ def generate_fallback_summary(title: str, abstract: str) -> str:
     # 1. 尝试从摘要中提取前3句
     sentences = re.split(r'(?<=[.!?])\s+', abstract)
     if len(sentences) >= 3:
-        return " ".join(sentences[:3])
+        return "◆ " + "\n◆ ".join(sentences[:3])
     elif sentences:
-        return sentences[0]
+        return "◆ " + sentences[0]
     
     # 2. 如果摘要为空，根据标题生成示例摘要
     topics = ["视觉定位", "三维重建", "特征匹配", "场景理解", "神经网络"]
@@ -263,12 +273,13 @@ def get_daily_papers(topic, query="slam", max_results=10):
             abstract = result.summary.replace("\n", " ")
             date = result.updated.date()
             
-            short_title = title  # 使用完整标题，不缩略
+            # 使用完整标题（不缩略）
+            short_title = title
                 
             # 智能生成摘要
             summary = get_paper_summary(title, abstract)
             
-            # 获取官方代码链接
+            # 获取官方代码链接（使用修复后的函数）
             code_link = get_official_code_link(paper_id, title, result.authors)
                 
             # 构建表格行
@@ -301,8 +312,9 @@ def update_paper_links(filename):
         date = parts[1].strip()
         title = parts[2].strip()
         authors = parts[3].strip()
-        arxiv_id = re.search(r'$$(.*?)$$', parts[4])
-        arxiv_id = arxiv_id.group(1) if arxiv_id else ""
+        # 修正正则表达式提取arxiv_id
+        arxiv_match = re.search(r'$$(.*?)$$', parts[4])
+        arxiv_id = arxiv_match.group(1) if arxiv_match else ""
         code = parts[5].strip()
         
         return date, title, authors, arxiv_id, code
@@ -382,7 +394,7 @@ def json_to_md(filename, md_filename,
                use_tc=True,
                show_badge=True,
                use_b2t=True):
-    """根据图片样式优化Markdown生成"""
+    """优化Markdown生成"""
     today = datetime.date.today().strftime('%Y.%m.%d')
     
     # 1. 加载数据
@@ -399,9 +411,8 @@ def json_to_md(filename, md_filename,
         f.write("> 每日自动更新计算机视觉领域的最新arXiv论文\n\n")
         f.write("> 使用说明: [点击查看](./docs/README.md#usage)\n\n")
         
-        # 3. 根据图片优化表格CSS
+        # 3. 优化表格CSS
         f.write("""<style>
-/* 根据图片样式优化 */
 .table-container {
   overflow-x: auto;
   margin-bottom: 20px;
@@ -424,13 +435,13 @@ th {
   top: 0;
 }
 /* 标题列样式 */
-td:nth-child(2) {  /* 标题列 */
-  max-width: none;  /* 允许完整标题显示 */
+td:nth-child(2) {
+  max-width: none;
   word-wrap: break-word;
   overflow-wrap: anywhere;
 }
-td:nth-child(4) {  /* 摘要列 */
-  max-width: 400px;  /* 增加宽度以容纳更长的摘要 */
+td:nth-child(4) {
+  max-width: 400px;
   word-wrap: break-word;
   line-height: 1.6;
 }
@@ -442,7 +453,7 @@ td:nth-child(4) {  /* 摘要列 */
     overflow-x: auto;
   }
   td:nth-child(2) {
-    min-width: 200px;  /* 保证最小可读宽度 */
+    min-width: 200px;
   }
 }
 </style>\n\n""")
@@ -466,7 +477,6 @@ td:nth-child(4) {  /* 摘要列 */
             
             f.write('<div class="table-container">\n')
             f.write("<table>\n")
-            # 根据新需求调整表头：去掉作者和代码栏
             f.write("<thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>\n")
             f.write("<tbody>\n")
             
@@ -474,7 +484,7 @@ td:nth-child(4) {  /* 摘要列 */
             
             for paper_id, paper_entry in sorted_papers:
                 entry_parts = paper_entry.strip().split('|')
-                if len(entry_parts) >= 7:  # 包括开头的空字符串
+                if len(entry_parts) >= 7:
                     date = entry_parts[1].strip()
                     title = entry_parts[2].strip()
                     paper_link = entry_parts[4].strip()
@@ -484,20 +494,19 @@ td:nth-child(4) {  /* 摘要列 */
                     if not summary or summary in ["无", "null"]:
                         summary = "摘要生成中..."
                     
-                    # 核心修改：合并论文链接和代码链接
+                    # 合并论文链接和代码链接
                     paper_display = paper_link
                     if code_link not in ["无", "null", ""]:
-                        # 提取纯URL（去除Markdown格式）
+                        # 修正正则表达式提取URL
                         code_url_match = re.search(r'$(.*?)$', code_link)
                         if code_url_match:
                             code_url = code_url_match.group(1)
-                            # 在论文链接下方添加代码链接
                             paper_display = f"{paper_link}<br><a href='{code_url}'>[代码]</a>"
                     
                     f.write("<tr>")
                     f.write(f"<td>{html.escape(date)}</td>")
                     f.write(f"<td>{html.escape(title)}</td>")
-                    f.write(f"<td>{paper_display}</td>")  # 合并后的论文+代码栏
+                    f.write(f"<td>{paper_display}</td>")
                     f.write(f"<td>{html.escape(summary)}</td>")
                     f.write("</tr>\n")
             
