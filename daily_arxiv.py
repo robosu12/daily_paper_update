@@ -252,10 +252,13 @@ def fetch_arxiv_results(query, max_results=10):
         logging.error(f"直接arXiv API请求失败: {e}")
         return []
 
-def get_daily_papers(topic, query="slam", max_results=10):
-    """获取每日论文 - 修复代码链接问题"""
+def get_daily_papers(topic, query="slam", max_results=10, existing_data=None):
+    """获取每日论文 - 修复代码链接问题并保留已有摘要"""
     papers = {}
     web_content = {}
+    
+    # 获取现有数据（如果提供）
+    existing_papers = existing_data.get(topic, {}) if existing_data else {}
     
     # 获取arXiv结果
     results = fetch_arxiv_results(query, max_results)
@@ -267,23 +270,37 @@ def get_daily_papers(topic, query="slam", max_results=10):
         try:
             # 提取基础信息
             paper_id = result.get_short_id()
+            paper_key = paper_id.split('v')[0]
             title = result.title
-            pdf_url = arxiv_url + 'pdf/' + paper_id.split('v')[0]
+            pdf_url = arxiv_url + 'pdf/' + paper_key
             authors = get_authors(result.authors, first_author=True)
             abstract = result.summary.replace("\n", " ")
             date = result.updated.date()
             
             # 使用完整标题（不缩略）
             short_title = title
-                
-            # 智能生成摘要
-            summary = get_paper_summary(title, abstract)
             
-            # 获取官方代码链接（使用修复后的函数）
+            # 检查是否已有摘要
+            summary = None
+            if paper_key in existing_papers:
+                existing_entry = existing_papers[paper_key]
+                # 从现有条目中提取摘要
+                parts = existing_entry.split('|')
+                if len(parts) >= 7:  # 确保格式正确
+                    existing_summary = parts[6].strip()
+                    if existing_summary and existing_summary not in ["无", "null", ""]:
+                        summary = existing_summary
+                        logging.info(f"使用现有摘要: {paper_key}")
+            
+            # 如果没有现有摘要或无效，生成新摘要
+            if not summary:
+                summary = get_paper_summary(title, abstract)
+                logging.info(f"生成新摘要: {paper_key}")
+            
+            # 获取官方代码链接
             code_link = get_official_code_link(paper_id, title, result.authors)
                 
             # 构建表格行
-            paper_key = paper_id.split('v')[0]
             code_display = "无"
             if code_link:
                 code_display = f"[代码]({code_link})"
@@ -291,7 +308,7 @@ def get_daily_papers(topic, query="slam", max_results=10):
             papers[paper_key] = f"|{date}|{short_title}|{authors}|[{paper_key}]({pdf_url})|{code_display}|{summary}|\n"
             
             # 构建网页内容
-            web_entry = f"- {date}, **{title}**, {authors}等, 论文: [{paper_key}]({pdf_url})"
+            web_entry = f"- {date}, {title}, {authors}等, 论文: [{paper_key}]({pdf_url})"
             if code_link:
                 web_entry += f", 代码: [链接]({code_link})"
             web_entry += f", 摘要: {summary}\n"
@@ -303,21 +320,22 @@ def get_daily_papers(topic, query="slam", max_results=10):
     return {topic: papers}, {topic: web_content}
 
 def update_paper_links(filename):
-    """更新JSON文件中的代码链接"""
+    """更新JSON文件中的代码链接并保留摘要"""
     def parse_arxiv_string(s):
         parts = s.split("|")
-        if len(parts) < 6:
-            return None, None, None, None, None
+        if len(parts) < 7:
+            return None, None, None, None, None, None
         
         date = parts[1].strip()
         title = parts[2].strip()
         authors = parts[3].strip()
-        # 修正正则表达式提取arxiv_id
+        # 提取arxiv_id
         arxiv_match = re.search(r'$$(.*?)$$', parts[4])
         arxiv_id = arxiv_match.group(1) if arxiv_match else ""
         code = parts[5].strip()
+        summary = parts[6].strip()
         
-        return date, title, authors, arxiv_id, code
+        return date, title, authors, arxiv_id, code, summary
 
     with open(filename, "r") as f:
         content = f.read()
@@ -329,7 +347,7 @@ def update_paper_links(filename):
         logging.info(f'更新关键词: {keyword}')
         for paper_id, content_str in papers.items():
             try:
-                date, title, author, arxiv_id, code = parse_arxiv_string(content_str)
+                date, title, author, arxiv_id, code, summary = parse_arxiv_string(content_str)
                 if not arxiv_id:
                     continue
                 
@@ -344,8 +362,8 @@ def update_paper_links(filename):
                             if result.get("official") and result["official"].get("url"):
                                 new_code = f"[代码]({result['official']['url']})"
                                 
-                                # 更新内容
-                                new_content = content_str.replace(f"|{code}|", f"|{new_code}|")
+                                # 更新内容但保留摘要
+                                new_content = f"|{date}|{title}|{author}|[{arxiv_id}](http://arxiv.org/pdf/{arxiv_id})|{new_code}|{summary}|\n"
                                 updated_data[keyword][paper_id] = new_content
                                 logging.info(f'为 {arxiv_id} 更新代码链接')
                                 continue
@@ -354,7 +372,7 @@ def update_paper_links(filename):
                         gh_link = get_official_code_link(arxiv_id, title, [])
                         if gh_link:
                             new_code = f"[代码]({gh_link})"
-                            new_content = content_str.replace(f"|{code}|", f"|{new_code}|")
+                            new_content = f"|{date}|{title}|{author}|[{arxiv_id}](http://arxiv.org/pdf/{arxiv_id})|{new_code}|{summary}|\n"
                             updated_data[keyword][paper_id] = new_content
                             logging.info(f'为 {arxiv_id} 添加GitHub代码链接')
                     except Exception as e:
@@ -498,7 +516,7 @@ td:nth-child(4) {
                     paper_display = paper_link
                     if code_link not in ["无", "null", ""]:
                         # 修正正则表达式提取URL
-                        code_url_match = re.search(r'$(.*?)$', code_link)
+                        code_url_match = re.search(r'$$.*?$$$(.*?)$', code_link)
                         if code_url_match:
                             code_url = code_url_match.group(1)
                             paper_display = f"{paper_link}<br><a href='{code_url}'>[代码]</a>"
@@ -537,12 +555,24 @@ def demo(**config):
     show_badge = config['show_badge']
     update_links = config['update_paper_links']
     
+    # 读取现有数据（用于保留已有摘要）
+    existing_data = {}
+    if publish_readme and not update_links:
+        try:
+            with open(config['json_readme_path'], 'r') as f:
+                existing_data = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            existing_data = {}
+    
     logging.info(f'更新论文链接: {update_links}')
     if not update_links:
         logging.info("开始获取每日论文")
         for topic, query in keywords.items():
             logging.info(f"关键词: {topic}")
-            data, data_web = get_daily_papers(topic, query=query, max_results=max_results)
+            # 传递现有数据以保留摘要
+            data, data_web = get_daily_papers(topic, query=query, 
+                                            max_results=max_results, 
+                                            existing_data=existing_data)
             data_collector.append(data)
             data_collector_web.append(data_web)
         logging.info("获取每日论文完成")
