@@ -126,7 +126,7 @@ def get_paper_summary(title: str, abstract: str) -> str:
         "- 每个创新点单开一行\n"
     )
     
-    # 3. 带重试机制的API请求
+    # 极3. 带重试机制的API请求
     for attempt in range(MAX_RETRIES):
         try:
             response = requests.post(
@@ -199,7 +199,7 @@ def fetch_arxiv_results(query, max_results=10):
     for attempt in range(max_retries):
         try:
             # 使用arxiv库获取结果
-            client = arxiv.Client(num_retries=3)
+            client = arxiv.Client(num极retries=3)
             search = arxiv.Search(
                 query=query,
                 max_results=max_results,
@@ -277,7 +277,7 @@ def get_daily_papers(topic, query="slam", max_results=10, existing_data=None):
             abstract = result.summary.replace("\n", " ")
             date = result.updated.date()
             
-            # === 新增：过滤2025-05之前的论文 ===
+            # 过滤2025-05之前的论文
             if date < datetime.date(2025, 5, 1):
                 continue
             
@@ -345,6 +345,32 @@ def update_paper_links(filename):
         content = f.read()
         data = json.loads(content) if content else {}
 
+    # 清理旧论文 (2025-05之前)
+    cutoff_date = datetime.date(2025, 5, 1)
+    for topic in list(data.keys()):
+        papers = data[topic]
+        papers_to_remove = []
+        for paper_id, entry in papers.items():
+            parts = entry.split('|')
+            if len(parts) >= 2:
+                date_str = parts[1].strip()
+                try:
+                    paper_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
+                    if paper_date < cutoff_date:
+                        papers_to_remove.append(paper_id)
+                except Exception:
+                    continue
+        
+        # 删除旧论文
+        for paper_id in papers_to_remove:
+            del papers[paper_id]
+            logging.info(f"删除旧论文: {paper_id}")
+        
+        # 如果主题下没有论文了，删除该主题
+        if not papers:
+            del data[topic]
+            logging.info(f"删除空主题: {topic}")
+
     updated_data = data.copy()
 
     for keyword, papers in data.items():
@@ -394,6 +420,33 @@ def update_json_file(filename, data_dict):
         # 读取现有数据
         with open(filename, "r") as f:
             existing_data = json.load(f)
+        
+        # 清理旧论文 (2025-05之前)
+        cutoff_date = datetime.date(2025, 5, 1)
+        for topic in list(existing_data.keys()):
+            papers = existing_data[topic]
+            papers_to_remove = []
+            for paper_id, entry in papers.items():
+                parts = entry.split('|')
+                if len(parts) >= 2:
+                    date_str = parts[1].strip()
+                    try:
+                        paper_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
+                        if paper_date < cutoff_date:
+                            papers_to_remove.append(paper_id)
+                    except Exception:
+                        continue
+            
+            # 删除旧论文
+            for paper_id in papers_to_remove:
+                del papers[paper_id]
+                logging.info(f"删除旧论文: {paper_id}")
+            
+            # 如果主题下没有论文了，删除该主题
+            if not papers:
+                del existing_data[topic]
+                logging.info(f"删除空主题: {topic}")
+                
     except (FileNotFoundError, json.JSONDecodeError):
         existing_data = {}
     
@@ -469,7 +522,7 @@ td:nth-child(4) {
 }
 /* 响应式设计 */
 @media (max-width: 768px) {
-  .table-container {
+  .极able-container {
     font-size: 0.75em;
     display: block;
     overflow-x: auto;
@@ -513,7 +566,7 @@ td:nth-child(4) {
                     code_link = entry_parts[5].strip()
                     summary = entry_parts[6].strip()
                     
-                    # === 新增：二次过滤2025-05之前的论文 ===
+                    # 二次过滤2025-05之前的论文
                     try:
                         paper_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
                         if paper_date < datetime.date(2025, 5, 1):
@@ -528,7 +581,7 @@ td:nth-child(4) {
                     paper_display = paper_link
                     if code_link not in ["无", "null", ""]:
                         # 修正正则表达式提取URL
-                        code_url_match = re.search(r'$$.*?$$$(.*?)$', code_link)
+                        code_url_match = re.search(r'$(.*?)$', code_link)
                         if code_url_match:
                             code_url = code_url_match.group(1)
                             paper_display = f"{paper_link}<br><a href='{code_url}'>[代码]</a>"
@@ -573,6 +626,33 @@ def demo(**config):
         try:
             with open(config['json_readme_path'], 'r') as f:
                 existing_data = json.load(f)
+            
+            # 清理现有数据中的旧论文
+            cutoff_date = datetime.date(2025, 5, 1)
+            for topic in list(existing_data.keys()):
+                papers = existing_data[topic]
+                papers_to_remove = []
+                for paper_id, entry in papers.items():
+                    parts = entry.split('|')
+                    if len(parts) >= 2:
+                        date_str = parts[1].strip()
+                        try:
+                            paper_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
+                            if paper_date < cutoff_date:
+                                papers_to_remove.append(paper_id)
+                        except Exception:
+                            continue
+                
+                # 删除旧论文
+                for paper_id in papers_to_remove:
+                    del papers[paper_id]
+                    logging.info(f"清理现有数据中的旧论文: {paper_id}")
+                
+                # 如果主题下没有论文了，删除该主题
+                if not papers:
+                    del existing_data[topic]
+                    logging.info(f"删除空主题: {topic}")
+                    
         except (FileNotFoundError, json.JSONDecodeError):
             existing_data = {}
     
