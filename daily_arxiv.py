@@ -675,7 +675,7 @@ def demo(**config):
     if publish_gitpage:
         json_file = config['json_gitpage_path']
         md_file = config['md_gitpage_path']
-        if update极inks:
+        if update_links:
             update_paper_links(json_file)
         else:
             update_json_file(json_file, data_collector)
