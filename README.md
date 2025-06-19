@@ -39,7 +39,7 @@ td:nth-child(4) {
 }
 /* 响应式设计 */
 @media (max-width: 768px) {
-  .table-container {
+  .极able-container {
     font-size: 0.75em;
     display: block;
     overflow-x: auto;
@@ -68,6 +68,29 @@ td:nth-child(4) {
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-18</td><td>MCOO-SLAM: A Multi-Camera Omnidirectional Object SLAM System</td><td>[2506.15402](http://arxiv.org/pdf/2506.15402)</td><td>◆ 提出MCOO-SLAM系统，首次将多相机全景配置引入物体级SLAM，解决传统单目或RGB-D系统视场窄、遮挡敏感和深度感知受限的问题。  
+◆ 融合点特征与开放词汇语义增强的物体级地标，实现复杂户外场景中更鲁棒且语义丰富的建图。  
+◆ 设计语义-几何-时序多模态融合策略，显著提升跨视角物体关联的准确性，改善物体建模一致性。  
+◆ 创新全景闭环检测模块，通过场景级描述符实现视角无关的地点识别，增强系统在动态环境中的稳定性。  
+◆ 构建分层3D场景图谱抽象地图，为机器人高层推理任务提供结构化语义支持。  
+实验证明该系统在遮挡、位姿变化和复杂环境下的定位精度与可扩展性均优于现有方法。</td></tr>
+<tr><td>2025-06-18</td><td>RA-NeRF: Robust Neural Radiance Field Reconstruction with Accurate Camera Pose Estimation under Complex Trajectories</td><td>[2506.15242](http://arxiv.org/pdf/2506.15242)</td><td>◆ 提出RA-NeRF方法，能够在复杂相机轨迹下实现高精度的相机位姿估计，解决了传统NeRF和3DGS依赖准确位姿先验的问题。  
+◆ 采用增量式重建流程，结合光度一致性约束和光流驱动的位姿调节机制，提升了初始化和定位阶段的鲁棒性。  
+◆ 创新性地引入隐式位姿滤波器，通过捕捉相机运动模式有效消除位姿估计中的噪声干扰。  
+◆ 在Tanks&amp;Temple和NeRFBuster两个数据集上验证了方法的有效性，其中NeRFBuster包含极具挑战性的相机轨迹场景。  
+◆ 实验结果表明，RA-NeRF在相机位姿估计精度和场景重建视觉质量上均达到最先进水平，尤其在复杂轨迹条件下表现突出。</td></tr>
+<tr><td>2025-06-18</td><td>SHeRLoc: Synchronized Heterogeneous Radar Place Recognition for Cross-Modal Localization</td><td>[2506.15175](http://arxiv.org/pdf/2506.15175)</td><td>◆ 提出SHeRLoc，首个专为异构雷达设计的深度网络，填补了跨模态雷达定位研究的空白。  
+◆ 采用RCS极坐标匹配技术，有效对齐多模态雷达数据，解决异构传感器数据融合难题。  
+◆ 提出基于分层最优传输的特征聚合方法，生成具有旋转鲁棒性的多尺度描述符。  
+◆ 结合FFT相似性数据挖掘和自适应边界三元组损失，实现视场感知的度量学习。  
+◆ 在公开数据集上实现召回率@1从不足0.1提升至0.9，性能超越现有最佳方法一个数量级。  
+◆ 扩展性强，可应用于LiDAR等传感器，为跨模态地点识别和异构SLAM开辟新途径。</td></tr>
+<tr><td>2025-06-18</td><td>VIMS: A Visual-Inertial-Magnetic-Sonar SLAM System in Underwater Environments</td><td>[2506.15126](http://arxiv.org/pdf/2506.15126)</td><td>◆ 提出VIMS系统，首次将视觉-惯性-磁力-声纳多模态融合用于水下SLAM，解决传统视觉-惯性方法在水下环境中的尺度估计和闭环难题。  
+◆ 创新性引入低成本单波束声纳，有效提升水下尺度估计精度，克服纯视觉方法因水体折射导致的尺度漂移问题。  
+◆ 利用高采样率磁力计配合经济型磁场线圈生成磁特征，实现基于磁场指纹的场所识别，填补水下无纹理区域的感知空白。  
+◆ 设计分层式视觉-磁力混合闭环检测框架，通过多模态数据互补增强闭环鲁棒性，显著降低误匹配率。  
+◆ 优化前端计算负载，平衡局部特征跟踪与全局描述子匹配，在不增加前端负担的前提下实现高效闭环。  
+◆ 实验验证系统在复杂水下环境中的优越性，相比传统方法定位精度提升30%以上，为低成本水下自主导航提供新方案。</td></tr>
 <tr><td>2025-06-16</td><td>Slanted light-sheet array microscopy for large volume imaging at rates exceeding 100 Hz</td><td>[2506.13664](http://arxiv.org/pdf/2506.13664)</td><td>◆ 开发了倾斜光片阵列显微镜（SLAM），实现了超过100 Hz的超快速大体积成像，突破了传统成像速度限制。  
 ◆ 基于标准宽场复合显微镜进行简单改造，仅需对照明光路进行最小化修改，便于集成和推广。  
 ◆ 支持大范围多维度高分辨率成像（横向超过500像素，深度超过200层），同时保持光学切片和局部光化学能力。  
@@ -86,7 +109,7 @@ td:nth-child(4) {
 ◆ 提出基于深度强化学习（DRL）的平台运动解耦主动SLAM方法，能够自主优化运动策略以增加特征点多样性。  
 ◆ 实验证明，所提VIEO算法相比传统VIO算法在共视关系和估计精度上均有显著提升，且DRL主动SLAM进一步优化了系统性能。  
 ◆ 为复杂环境下主动SLAM系统的平台设计和运动解耦方法提供了新思路，兼具理论创新和实用价值。</td></tr>
-<tr><td>2025-06-16</td><td>SuperPoint-SLAM3: Augmenting ORB-SLAM3 with Deep Features, Adaptive NMS, and Learning-Based Loop Closure</td><td>[2506.13089](http://arxiv.org/pdf/2506.13089)</td><td>◆ 用自监督的SuperPoint特征检测-描述子替代传统ORB特征，提升了在极端视角、尺度和光照变化下的鲁棒性。  
+<tr><td>2025-06-16</td><td>SuperPoint-SLAM3: Augmenting ORB-SLAM3 with Deep Features, Adaptive NMS, and Learning-Based Loop Closure</td><td>[2506.13089](http://arxiv.org/pdf/2506.13089)<br><a href=''>[代码]</a></td><td>◆ 用自监督的SuperPoint特征检测-描述子替代传统ORB特征，提升了在极端视角、尺度和光照变化下的鲁棒性。  
 ◆ 引入自适应非极大值抑制(ANMS)技术，实现空间分布更均匀的关键点提取，增强场景覆盖度。  
 ◆ 集成轻量级NetVLAD模块作为学习式回环检测器，显著改善了传统词袋模型的识别能力。  
 ◆ 在KITTI数据集上将平均平移误差从4.15%降至0.34%，旋转误差从0.0027度/米降至0.0010度/米。  
@@ -1609,6 +1632,11 @@ td:nth-child(4) {
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-18</td><td>ReSeDis: A Dataset for Referring-based Object Search across Large-Scale Image Collections</td><td>[2506.15180](http://arxiv.org/pdf/2506.15180)</td><td>◆ 提出ReSeDis任务，首次将大规模图像检索与像素级定位结合，要求模型根据文本描述在图像库中检索目标并精确定位其位置（边界框或分割掩码）。  
+◆ 构建首个针对该任务的基准数据集，确保每个描述唯一对应分散在大规模多样化图像库中的目标实例，避免误匹配问题。  
+◆ 设计联合评估指标，同时衡量检索召回率与定位精度，解决现有技术只能单独评估某一方面的局限。  
+◆ 提供基于冻结视觉语言模型的零样本基线方法，揭示该任务未来研究的巨大提升空间。  
+◆ 为构建下一代鲁棒、可扩展的多模态搜索系统提供真实端到端测试平台，弥补现有技术（视觉定位假设目标必然存在，文本检索缺乏细粒度定位）的不足。</td></tr>
 <tr><td>2025-06-17</td><td>HARMONY: A Scalable Distributed Vector Database for High-Throughput Approximate Nearest Neighbor Search</td><td>[2506.14707](http://arxiv.org/pdf/2506.14707)</td><td>◆ 提出Harmony分布式向量数据库，解决单机处理高维向量时的内存和效率瓶颈。  
 ◆ 创新性地采用多粒度分区策略，结合基于维度和基于向量的分区方法，实现计算负载均衡。  
 ◆ 通过优化分区策略有效降低节点间通信开销，提升系统整体吞吐量。  
@@ -1625,7 +1653,7 @@ td:nth-child(4) {
 ◆ 通过知识图谱量化医学概念间的语义距离，克服了现有方法将医学概念视为独立标签的局限性，能够捕捉概念间的细微关联。  
 ◆ 设计了基于近似匹配的相关性评分机制，通过计算两组医学概念的相似性间接衡量医学图像的相似度。  
 ◆ 在公开数据集上验证了所提方法的有效性和可行性，为医学CBIR评估提供了更符合临床语义的新标准。</td></tr>
-<tr><td>2025-06-16</td><td>Hierarchical Multi-Positive Contrastive Learning for Patent Image Retrieval</td><td>[2506.13496](http://arxiv.org/pdf/2506.13496)</td><td>◆提出分层多正例对比学习损失函数，首次利用Locarno国际分类体系（LIC）的层级关系指导专利图像检索。  
+<tr><td>2025-06-17</td><td>Hierarchical Multi-Positive Contrastive Learning for Patent Image Retrieval</td><td>[2506.13496](http://arxiv.org/pdf/2506.13496)</td><td>◆提出分层多正例对比学习损失函数，首次利用Locarno国际分类体系（LIC）的层级关系指导专利图像检索。  
 ◆通过层级分类树动态分配多组正样本对，根据专利图像在LIC中的层级距离赋予不同相似度权重。  
 ◆突破传统对比学习仅使用单一样本对的限制，能同时学习跨层级的细粒度语义关联。  
 ◆在DeepPatent2数据集上验证了方法的普适性，可适配多种视觉和多模态预训练模型。  
