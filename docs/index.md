@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.06.18)
+# 计算机视觉领域最新论文 (2025.06.19)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -2895,7 +2895,7 @@ td:nth-child(4) {
 ◆实验证明频域特征（DCT/FFT）对捕捉数据集特异性伪影（如上采样模式、频谱异常）具有显著优势，色彩直方图则能揭示GAN训练的隐式正则化策略。  
 ◆首次系统探讨了合成媒体数据集溯源的法律应用场景，包括版权侵权、隐私数据滥用（如GDPR合规）及加州AB 602法案等监管应对方案。  
 ◆该框架为生成模型的问责制治理提供了技术支撑，可应用于数字取证、内容审核和知识产权诉讼等实际领域。</td></tr>
-<tr><td>2025-05-12</td><td>RDD: Robust Feature Detector and Descriptor using Deformable Transformer</td><td>[2505.08013](http://arxiv.org/pdf/2505.08013)</td><td>◆ 提出RDD（Robust Deformable Detector），一种基于可变形Transformer的新型关键点检测与描述方法，通过可变形自注意力机制捕获全局上下文和几何不变性。  
+<tr><td>2025-06-18</td><td>RDD: Robust Feature Detector and Descriptor using Deformable Transformer</td><td>[2505.08013](http://arxiv.org/pdf/2505.08013)</td><td>◆ 提出RDD（Robust Deformable Detector），一种基于可变形Transformer的新型关键点检测与描述方法，通过可变形自注意力机制捕获全局上下文和几何不变性。  
 ◆ 利用可变形注意力机制聚焦关键位置，显著降低搜索空间复杂度并有效建模几何变换，解决了传统方法难以学习长程视觉关系的问题。  
 ◆ 结合标准MegaDepth数据集与自建的Air-to-Ground（空对地）数据集进行训练，增强模型在跨视角和跨尺度场景下的鲁棒性。  
 ◆ 在稀疏匹配任务中性能超越现有最优方法，并具备半稠密匹配能力，扩展了应用场景。  
@@ -3232,6 +3232,11 @@ td:nth-child(4) {
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-18</td><td>ReSeDis: A Dataset for Referring-based Object Search across Large-Scale Image Collections</td><td>[2506.15180](http://arxiv.org/pdf/2506.15180)</td><td>◆ 提出ReSeDis任务，首次将大规模图像检索与像素级定位统一，要求模型根据文本描述在图像库中同时判断对象是否存在并精确定位。  
+◆ 构建首个针对该任务的基准数据集，确保每个描述唯一对应分散在大规模多样图像库中的对象实例，避免误匹配。  
+◆ 设计联合评估指标，同时衡量检索召回率与定位精度，为端到端性能提供量化标准。  
+◆ 提出基于冻结视觉语言模型的零样本基线方法，揭示该任务未来研究的巨大提升空间。  
+◆ 为构建下一代鲁棒、可扩展的多模态搜索系统提供真实场景下的测试平台，弥补现有技术仅侧重检索或定位单一能力的缺陷。</td></tr>
 <tr><td>2025-06-16</td><td>EmbodiedPlace: Learning Mixture-of-Features with Embodied Constraints for Visual Place Recognition</td><td>[2506.13133](http://arxiv.org/pdf/2506.13133)</td><td>◆ 提出了一种新颖的简单重排序方法，通过混合特征（MoF）方法在具身约束下优化全局特征，提升视觉地点识别（VPR）性能。  
 ◆ 首次系统分析了具身约束在VPR中的实际可行性，并根据现有数据集将其分类为GPS标签、时序戳、局部特征匹配和自相似矩阵等类型。  
 ◆ 设计了一种基于学习的MoF权重计算策略，采用多度量损失函数，有效融合多种特征信息。  
@@ -3280,7 +3285,7 @@ td:nth-child(4) {
 ◆ 开发Target-based Image Matching（TIM）策略，基于目标域伪标签匹配最佳源域图像进行批量训练，有效提升共有类别的学习效果。  
 ◆ 构建新的UniDA-SS基准数据集，为后续研究提供标准化评估平台。  
 ◆ 实验证明UniMAP方法显著优于基线模型，代码已开源。</td></tr>
-<tr><td>2025-05-23</td><td>To Glue or Not to Glue? Classical vs Learned Image Matching for Mobile Mapping Cameras to Textured Semantic 3D Building Models</td><td>[2505.17973](http://arxiv.org/pdf/2505.17973)</td><td>◆ 首次系统比较了传统手工特征匹配（如SIFT+RANSAC）与深度学习特征匹配方法在语义3D建筑模型相机定位任务中的性能差异。  
+<tr><td>2025-05-23</td><td>To Glue or Not to Glue? Classical vs Learned Image Matching for Mobile Mapping Cameras to Textured Semantic 3D Building Models</td><td>[2505.17973](http://arxiv.org/pdf/2505.17973)<br><a href=''>[代码]</a></td><td>◆ 首次系统比较了传统手工特征匹配（如SIFT+RANSAC）与深度学习特征匹配方法在语义3D建筑模型相机定位任务中的性能差异。  
 ◆ 针对移动测绘相机与纹理化CityGML LoD2模型的匹配场景，提出定制化评估框架，填补了该领域的研究空白。  
 ◆ 结合标准数据集（HPatches、MegaDepth-1500）和自建数据集（含地面/无人机拍摄的立面纹理与对应影像），验证方法普适性。  
 ◆ 通过PnP算法量化绝对位姿估计精度，利用地理参考轨迹数据生成几何真值，建立客观评估基准。  
@@ -3627,7 +3632,18 @@ td:nth-child(4) {
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-06-15</td><td>Rasterizing Wireless Radiance Field via Deformable 2D Gaussian Splatting</td><td>[2506.12787](http://arxiv.org/pdf/2506.12787)</td><td>◆ 提出SwiftWRF框架，首次将高斯泼溅（Gaussian Splatting）技术引入无线辐射场（WRF）建模，突破传统方法在精度和效率上的局限。  
+<tr><td>2025-06-18</td><td>RA-NeRF: Robust Neural Radiance Field Reconstruction with Accurate Camera Pose Estimation under Complex Trajectories</td><td>[2506.15242](http://arxiv.org/pdf/2506.15242)</td><td>◆ 提出RA-NeRF方法，能够在复杂相机轨迹下实现高精度的相机位姿估计，解决了传统NeRF和3DGS依赖准确位姿先验的问题。  
+◆ 采用增量式重建流程，结合光度一致性约束和光流驱动的位姿调节机制，提升了初始化和定位阶段的鲁棒性。  
+◆ 引入隐式位姿滤波器，通过捕捉相机运动模式有效消除位姿估计中的噪声，增强复杂轨迹下的稳定性。  
+◆ 在Tanks&amp;Temple和NeRFBuster等具有挑战性的数据集上验证了方法有效性，位姿估计和视觉质量均达到SOTA水平。  
+◆ 整体框架无需外部约束，仅通过端到端优化即可同时优化场景重建与相机位姿，适用于SLAM等实际应用场景。</td></tr>
+<tr><td>2025-06-17</td><td>Peering into the Unknown: Active View Selection with Neural Uncertainty Maps for 3D Reconstruction</td><td>[2506.14856](http://arxiv.org/pdf/2506.14856)</td><td>◆提出了一种基于轻量级前馈神经网络UPNet的新颖主动视角选择方法，直接预测候选视角的不确定性图，避免了传统方法需要计算每个视角不确定性的高计算成本。  
+◆UPNet仅需单张输入图像即可预测所有候选视角的不确定性，通过学习自然物体视角与体素表示不确定性的映射关系，实现了高效的信息提取。  
+◆通过聚合历史预测的不确定性图来抑制冗余视角，智能选择信息量最大的新视角，仅需一半视角即可达到与上限相当的3D重建精度。  
+◆相比基线方法，计算效率显著提升，实现高达400倍的加速，并减少50%以上的CPU、RAM和GPU资源消耗。  
+◆方法具有强大的泛化能力，无需额外训练即可适用于新物体类别的视角选择任务，展现了广泛的适用性。  
+◆整体方案将神经渲染与高效视角选择相结合，为3D重建领域提供了高精度与低资源消耗的实用化解决方案。</td></tr>
+<tr><td>2025-06-18</td><td>Rasterizing Wireless Radiance Field via Deformable 2D Gaussian Splatting</td><td>[2506.12787](http://arxiv.org/pdf/2506.12787)</td><td>◆ 提出SwiftWRF框架，首次将高斯泼溅（Gaussian Splatting）技术引入无线辐射场（WRF）建模，突破传统方法在精度和效率上的局限。  
 ◆ 采用可变形2D高斯泼溅方法，通过轻量级MLP建模高斯形变，有效捕捉收发端单侧移动导致的WRF动态变化。  
 ◆ 实现CUDA加速的光栅化渲染，频谱合成速度超过10万帧/秒，比现有最优方法快500倍，满足实时性需求。  
 ◆ 创新性地支持任意位置的WRF频谱合成，并在到达角（AoA）和信号强度（RSSI）预测任务中验证实用性。  
@@ -5315,4 +5331,4 @@ td:nth-child(4) {
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.06.18
+> 更新于: 2025.06.19
