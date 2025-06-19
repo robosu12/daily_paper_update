@@ -277,6 +277,10 @@ def get_daily_papers(topic, query="slam", max_results=10, existing_data=None):
             abstract = result.summary.replace("\n", " ")
             date = result.updated.date()
             
+            # === 新增：过滤2025-05之前的论文 ===
+            if date < datetime.date(2025, 5, 1):
+                continue
+            
             # 使用完整标题（不缩略）
             short_title = title
             
@@ -503,11 +507,19 @@ td:nth-child(4) {
             for paper_id, paper_entry in sorted_papers:
                 entry_parts = paper_entry.strip().split('|')
                 if len(entry_parts) >= 7:
-                    date = entry_parts[1].strip()
+                    date_str = entry_parts[1].strip()
                     title = entry_parts[2].strip()
                     paper_link = entry_parts[4].strip()
                     code_link = entry_parts[5].strip()
                     summary = entry_parts[6].strip()
+                    
+                    # === 新增：二次过滤2025-05之前的论文 ===
+                    try:
+                        paper_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
+                        if paper_date < datetime.date(2025, 5, 1):
+                            continue
+                    except Exception:
+                        pass
                     
                     if not summary or summary in ["无", "null"]:
                         summary = "摘要生成中..."
@@ -522,7 +534,7 @@ td:nth-child(4) {
                             paper_display = f"{paper_link}<br><a href='{code_url}'>[代码]</a>"
                     
                     f.write("<tr>")
-                    f.write(f"<td>{html.escape(date)}</td>")
+                    f.write(f"<td>{html.escape(date_str)}</td>")
                     f.write(f"<td>{html.escape(title)}</td>")
                     f.write(f"<td>{paper_display}</td>")
                     f.write(f"<td>{html.escape(summary)}</td>")
