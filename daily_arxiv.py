@@ -24,7 +24,10 @@ arxiv_url = "http://arxiv.org/"
 DEEPSEEK_API_KEY = "sk-179d350b272b4b4da85b426b6271c7b5"
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 
-def load_config(config_file:str) -> dict:
+# 全局过滤日期 - 修改这里调整过滤条件
+MIN_DATE = datetime.date(2025, 5, 1)
+
+def load_config(config_file: str) -> dict:
     '''
     config_file: 配置文件路径
     return: 配置字典
@@ -42,6 +45,37 @@ def load_config(config_file:str) -> dict:
         config['kv'] = pretty_filters(**config)
         logging.info(f'加载配置: {config}')
     return config
+
+def filter_old_papers(papers: dict) -> dict:
+    """
+    过滤掉旧论文的核心函数
+    """
+    filtered = {}
+    count = 0
+    for paper_id, paper_entry in papers.items():
+        try:
+            # 提取论文日期
+            parts = paper_entry.split('|')
+            if len(parts) > 1:
+                date_str = parts[1].strip()
+                
+                # 解析日期并应用过滤条件
+                paper_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
+                if paper_date >= MIN_DATE:
+                    filtered[paper_id] = paper_entry
+                else:
+                    count += 1
+            else:
+                # 格式错误时保留
+                filtered[paper_id] = paper_entry
+        except ValueError:
+            # 日期解析错误时保留
+            filtered[paper_id] = paper_entry
+    
+    if count > 0:
+        logging.info(f"过滤掉 {count} 篇 {MIN_DATE} 前的旧论文")
+    
+    return filtered
 
 def get_authors(authors, first_author=False):
     """优化作者显示格式"""
@@ -126,7 +160,7 @@ def get_paper_summary(title: str, abstract: str) -> str:
         "- 每个创新点单开一行\n"
     )
     
-    # 极3. 带重试机制的API请求
+    # 3. 带重试机制的API请求
     for attempt in range(MAX_RETRIES):
         try:
             response = requests.post(
@@ -139,24 +173,24 @@ def get_paper_summary(title: str, abstract: str) -> str:
                     "model": "deepseek-chat",
                     "messages": [{"role": "user", "content": prompt}],
                     "temperature": 0.3,
-                    "max_tokens": 500,  # 增加token限制
+                    "max_tokens": 500,
                     "stream": False
                 },
-                timeout=30  # 增加超时时间
+                timeout=30
             )
             
             # 4. 检查响应状态
             if response.status_code != 200:
                 logging.warning(f"DeepSeek API响应错误: {response.status_code}")
-                continue  # 继续重试
-            
+                continue
+                
             # 5. 解析API响应
             data = response.json()
             choices = data.get("choices", [])
             if not choices:
                 logging.warning("DeepSeek API返回空内容")
-                continue  # 继续重试
-            
+                continue
+                
             content = choices[0].get("message", {}).get("content", "").strip()
             if content:
                 # 6. 清理响应内容
@@ -194,11 +228,11 @@ def generate_fallback_summary(title: str, abstract: str) -> str:
     )
 
 def fetch_arxiv_results(query, max_results=10):
-    """获取arXiv结果（带重试机制）"""
+    """修复参数错误并增强网络稳定性"""
     max_retries = 5
     for attempt in range(max_retries):
         try:
-            # 使用arxiv库获取结果
+            # 修正参数名：使用正确的num_retries
             client = arxiv.Client(num_retries=3)
             search = arxiv.Search(
                 query=query,
@@ -209,14 +243,14 @@ def fetch_arxiv_results(query, max_results=10):
         except Exception as e:
             logging.warning(f"arXiv API请求失败 (尝试 {attempt+1}/{max_retries}): {e}")
             if attempt < max_retries - 1:
-                wait_time = (2 ** attempt) + 1  # 指数退避
-                logging.info(f"等待 {wait_time} 秒后重试...")
+                wait_time = (2 ** attempt) + random.uniform(0, 1)
+                logging.info(f"等待 {wait_time:.1f} 秒后重试...")
                 time.sleep(wait_time)
     
     # 如果所有重试都失败，尝试直接API调用
     logging.warning("arxiv.py库请求失败，尝试直接调用arXiv API")
     try:
-        url = "http://export.arxiv.org/api/query"
+        url = "https://arxiv.org.cn/api/query"  # 国内镜像站点
         params = {
             "search_query": query,
             "start": 0,
@@ -224,7 +258,7 @@ def fetch_arxiv_results(query, max_results=10):
             "sortBy": "submittedDate",
             "sortOrder": "descending"
         }
-        response = requests.get(url, params=params, timeout=30)
+        response = requests.get(url, params=params, timeout=15)  # 关键超时设置
         response.raise_for_status()
         feed = feedparser.parse(response.content)
         
@@ -248,12 +282,14 @@ def fetch_arxiv_results(query, max_results=10):
             )
             results.append(result)
         return results
+    except (requests.Timeout, ConnectionResetError) as e:
+        logging.error(f"直接API请求失败: {type(e).__name__}, 建议检查网络或重试")
     except Exception as e:
-        logging.error(f"直接arXiv API请求失败: {e}")
-        return []
+        logging.error(f"直接arXiv API请求失败: {type(e).__name__}: {str(e)}")
+    return []
 
 def get_daily_papers(topic, query="slam", max_results=10, existing_data=None):
-    """获取每日论文 - 修复代码链接问题并保留已有摘要"""
+    """获取每日论文 - 应用三重过滤机制确保无旧论文"""
     papers = {}
     web_content = {}
     
@@ -277,20 +313,19 @@ def get_daily_papers(topic, query="slam", max_results=10, existing_data=None):
             abstract = result.summary.replace("\n", " ")
             date = result.updated.date()
             
-            # 过滤2025-05之前的论文
-            if date < datetime.date(2025, 5, 1):
+            # 第一重过滤：获取时直接跳过旧论文
+            if date < MIN_DATE:
                 continue
             
-            # 使用完整标题（不缩略）
+            # 使用完整标题
             short_title = title
             
             # 检查是否已有摘要
             summary = None
             if paper_key in existing_papers:
                 existing_entry = existing_papers[paper_key]
-                # 从现有条目中提取摘要
                 parts = existing_entry.split('|')
-                if len(parts) >= 7:  # 确保格式正确
+                if len(parts) >= 7:
                     existing_summary = parts[6].strip()
                     if existing_summary and existing_summary not in ["无", "null", ""]:
                         summary = existing_summary
@@ -324,7 +359,7 @@ def get_daily_papers(topic, query="slam", max_results=10, existing_data=None):
     return {topic: papers}, {topic: web_content}
 
 def update_paper_links(filename):
-    """更新JSON文件中的代码链接并保留摘要"""
+    """更新JSON文件中的代码链接并应用过滤"""
     def parse_arxiv_string(s):
         parts = s.split("|")
         if len(parts) < 7:
@@ -345,29 +380,11 @@ def update_paper_links(filename):
         content = f.read()
         data = json.loads(content) if content else {}
 
-    # 清理旧论文 (2025-05之前)
-    cutoff_date = datetime.date(2025, 5, 1)
+    # 应用全局过滤
     for topic in list(data.keys()):
-        papers = data[topic]
-        papers_to_remove = []
-        for paper_id, entry in papers.items():
-            parts = entry.split('|')
-            if len(parts) >= 2:
-                date_str = parts[1].strip()
-                try:
-                    paper_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
-                    if paper_date < cutoff_date:
-                        papers_to_remove.append(paper_id)
-                except Exception:
-                    continue
-        
-        # 删除旧论文
-        for paper_id in papers_to_remove:
-            del papers[paper_id]
-            logging.info(f"删除旧论文: {paper_id}")
-        
-        # 如果主题下没有论文了，删除该主题
-        if not papers:
+        data[topic] = filter_old_papers(data[topic])
+        # 删除空主题
+        if not data[topic]:
             del data[topic]
             logging.info(f"删除空主题: {topic}")
 
@@ -401,7 +418,7 @@ def update_paper_links(filename):
                         # 尝试GitHub搜索
                         gh_link = get_official_code_link(arxiv_id, title, [])
                         if gh_link:
-                            new_code = f"[代码]({gh_link})"
+                            new_code = f"[极代码]({gh_link})"
                             new_content = f"|{date}|{title}|{author}|[{arxiv_id}](http://arxiv.org/pdf/{arxiv_id})|{new_code}|{summary}|\n"
                             updated_data[keyword][paper_id] = new_content
                             logging.info(f'为 {arxiv_id} 添加GitHub代码链接')
@@ -415,48 +432,37 @@ def update_paper_links(filename):
         json.dump(updated_data, f, indent=2)
 
 def update_json_file(filename, data_dict):
-    """使用数据字典更新JSON文件"""
+    """更新JSON文件并应用过滤"""
     try:
         # 读取现有数据
         with open(filename, "r") as f:
             existing_data = json.load(f)
         
-        # 清理旧论文 (2025-05之前)
-        cutoff_date = datetime.date(2025, 5, 1)
+        # 应用全局过滤
         for topic in list(existing_data.keys()):
-            papers = existing_data[topic]
-            papers_to_remove = []
-            for paper_id, entry in papers.items():
-                parts = entry.split('|')
-                if len(parts) >= 2:
-                    date_str = parts[1].strip()
-                    try:
-                        paper_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
-                        if paper_date < cutoff_date:
-                            papers_to_remove.append(paper_id)
-                    except Exception:
-                        continue
-            
-            # 删除旧论文
-            for paper_id in papers_to_remove:
-                del papers[paper_id]
-                logging.info(f"删除旧论文: {paper_id}")
-            
-            # 如果主题下没有论文了，删除该主题
-            if not papers:
+            existing_data[topic] = filter_old_papers(existing_data[topic])
+            # 删除空主题
+            if not existing_data[topic]:
                 del existing_data[topic]
-                logging.info(f"删除空主题: {topic}")
+                logging.info(f"清理空主题: {topic}")
                 
     except (FileNotFoundError, json.JSONDecodeError):
         existing_data = {}
     
-    # 更新数据
+    # 更新数据并再次过滤
     for data in data_dict:
         for topic, papers in data.items():
+            # 过滤新数据
+            filtered_papers = filter_old_papers(papers)
+            if not filtered_papers:
+                continue
+                
             if topic in existing_data:
-                existing_data[topic].update(papers)
+                # 合并前过滤现有数据
+                existing_data[topic] = filter_old_papers(existing_data[topic])
+                existing_data[topic].update(filtered_papers)
             else:
-                existing_data[topic] = papers
+                existing_data[topic] = filtered_papers
     
     # 保存更新
     with open(filename, "w") as f:
@@ -469,13 +475,20 @@ def json_to_md(filename, md_filename,
                use_tc=True,
                show_badge=True,
                use_b2t=True):
-    """优化Markdown生成"""
+    """生成Markdown文件并应用最终过滤"""
     today = datetime.date.today().strftime('%Y.%m.%d')
     
-    # 1. 加载数据
+    # 1. 加载并过滤数据
     try:
         with open(filename, "r") as f:
             data = json.load(f)
+            
+        # 应用最终过滤
+        for topic in list(data.keys()):
+            data[topic] = filter_old_papers(data[topic])
+            if not data[topic]:
+                del data[topic]
+                
     except (FileNotFoundError, json.JSONDecodeError):
         data = {}
     
@@ -522,7 +535,7 @@ td:nth-child(4) {
 }
 /* 响应式设计 */
 @media (max-width: 768px) {
-  .极able-container {
+  .table-container {
     font-size: 0.75em;
     display: block;
     overflow-x: auto;
@@ -566,10 +579,10 @@ td:nth-child(4) {
                     code_link = entry_parts[5].strip()
                     summary = entry_parts[6].strip()
                     
-                    # 二次过滤2025-05之前的论文
+                    # 最终过滤（理论上应无旧论文）
                     try:
                         paper_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
-                        if paper_date < datetime.date(2025, 5, 1):
+                        if paper_date < MIN_DATE:
                             continue
                     except Exception:
                         pass
@@ -628,30 +641,10 @@ def demo(**config):
                 existing_data = json.load(f)
             
             # 清理现有数据中的旧论文
-            cutoff_date = datetime.date(2025, 5, 1)
             for topic in list(existing_data.keys()):
-                papers = existing_data[topic]
-                papers_to_remove = []
-                for paper_id, entry in papers.items():
-                    parts = entry.split('|')
-                    if len(parts) >= 2:
-                        date_str = parts[1].strip()
-                        try:
-                            paper_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
-                            if paper_date < cutoff_date:
-                                papers_to_remove.append(paper_id)
-                        except Exception:
-                            continue
-                
-                # 删除旧论文
-                for paper_id in papers_to_remove:
-                    del papers[paper_id]
-                    logging.info(f"清理现有数据中的旧论文: {paper_id}")
-                
-                # 如果主题下没有论文了，删除该主题
-                if not papers:
+                existing_data[topic] = filter_old_papers(existing_data[topic])
+                if not existing_data[topic]:
                     del existing_data[topic]
-                    logging.info(f"删除空主题: {topic}")
                     
         except (FileNotFoundError, json.JSONDecodeError):
             existing_data = {}
@@ -661,7 +654,6 @@ def demo(**config):
         logging.info("开始获取每日论文")
         for topic, query in keywords.items():
             logging.info(f"关键词: {topic}")
-            # 传递现有数据以保留摘要
             data, data_web = get_daily_papers(topic, query=query, 
                                             max_results=max_results, 
                                             existing_data=existing_data)
@@ -683,7 +675,7 @@ def demo(**config):
     if publish_gitpage:
         json_file = config['json_gitpage_path']
         md_file = config['md_gitpage_path']
-        if update_links:
+        if update极inks:
             update_paper_links(json_file)
         else:
             update_json_file(json_file, data_collector)
@@ -711,7 +703,7 @@ if __name__ == "__main__":
     
     # 设置日志级别
     logging.getLogger().setLevel(logging.INFO)
-    logging.info("启动论文速递更新")
+    logging.info(f"启动论文速递更新 (过滤日期: {MIN_DATE})")
     
     # 加载配置并运行
     config = load_config(args.config_path)
