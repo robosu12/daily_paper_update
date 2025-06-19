@@ -199,7 +199,7 @@ def fetch_arxiv_results(query, max_results=10):
     for attempt in range(max_retries):
         try:
             # 使用arxiv库获取结果
-            client = arxiv.Client(num极retries=3)
+            client = arxiv.Client(num_retries=3)
             search = arxiv.Search(
                 query=query,
                 max_results=max_results,
