@@ -26,6 +26,9 @@ DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 
 # 全局过滤日期 - 修改这里调整过滤条件
 MIN_DATE = datetime.date(2025, 5, 1)
+MIN_YEAR = 2025
+MIN_MONTH = 5
+MIN_DAY = 1
 
 def load_config(config_file: str) -> dict:
     '''
@@ -59,9 +62,7 @@ def filter_old_papers(papers: dict) -> dict:
             if len(parts) > 1:
                 date_str = parts[1].strip()
                 
-                # 解析日期并应用过滤条件
-                paper_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
-                if paper_date >= MIN_DATE:
+                if is_date_above_min(date_str):
                     filtered[paper_id] = paper_entry
                 else:
                     count += 1
@@ -500,51 +501,51 @@ def json_to_md(filename, md_filename,
         f.write("> 使用说明: [点击查看](./docs/README.md#usage)\n\n")
         
         # 3. 优化表格CSS
-        f.write("""<style>
-.table-container {
-  overflow-x: auto;
-  margin-bottom: 20px;
-}
-table {
-  width: 100%;
-  font-size: 0.85em;
-  border-collapse: collapse;
-}
-th, td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: left;
-  vertical-align: top;
-}
-th {
-  background-color: #f8f9fa;
-  font-weight: bold;
-  position: sticky;
-  top: 0;
-}
-/* 标题列样式 */
-td:nth-child(2) {
-  max-width: none;
-  word-wrap: break-word;
-  overflow-wrap: anywhere;
-}
-td:nth-child(4) {
-  max-width: 400px;
-  word-wrap: break-word;
-  line-height: 1.6;
-}
-/* 响应式设计 */
-@media (max-width: 768px) {
-  .table-container {
-    font-size: 0.75em;
-    display: block;
-    overflow-x: auto;
-  }
-  td:nth-child(2) {
-    min-width: 200px;
-  }
-}
-</style>\n\n""")
+#         f.write("""<style>
+# .table-container {
+#   overflow-x: auto;
+#   margin-bottom: 20px;
+# }
+# table {
+#   width: 100%;
+#   font-size: 0.85em;
+#   border-collapse: collapse;
+# }
+# th, td {
+#   border: 1px solid #ddd;
+#   padding: 10px;
+#   text-align: left;
+#   vertical-align: top;
+# }
+# th {
+#   background-color: #f8f9fa;
+#   font-weight: bold;
+#   position: sticky;
+#   top: 0;
+# }
+# /* 标题列样式 */
+# td:nth-child(2) {
+#   max-width: none;
+#   word-wrap: break-word;
+#   overflow-wrap: anywhere;
+# }
+# td:nth-child(4) {
+#   max-width: 400px;
+#   word-wrap: break-word;
+#   line-height: 1.6;
+# }
+# /* 响应式设计 */
+# @media (max-width: 768px) {
+#   .table-container {
+#     font-size: 0.75em;
+#     display: block;
+#     overflow-x: auto;
+#   }
+#   td:nth-child(2) {
+#     min-width: 200px;
+#   }
+# }
+# </style>\n\n""")
         
         # 4. 添加目录（如果需要）
         if use_tc:
@@ -579,13 +580,9 @@ td:nth-child(4) {
                     code_link = entry_parts[5].strip()
                     summary = entry_parts[6].strip()
                     
-                    # 最终过滤（理论上应无旧论文）
-                    try:
-                        paper_date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
-                        if paper_date < MIN_DATE:
-                            continue
-                    except Exception:
-                        pass
+
+                    if not is_date_above_min(date_str):
+                        continue
                     
                     if not summary or summary in ["无", "null"]:
                         summary = "摘要生成中..."
@@ -692,6 +689,23 @@ def demo(**config):
             update_json_file(json_file, data_collector_web)
         json_to_md(json_file, md_file, task='更新微信', to_web=False, 
                    use_title=False)
+
+def is_date_above_min(date_str: str) -> bool:
+    date_str = date_str.replace('**', '')
+    data_part = date_str.split('-')
+    # print(f"{data_part[0]}-{data_part[1]}-{data_part[2]}")
+    
+    if int(data_part[0]) > MIN_YEAR:
+        return True
+    
+    if int(data_part[0]) == MIN_YEAR and int(data_part[1]) > MIN_MONTH:
+        return True
+    
+    if int(data_part[0]) == MIN_YEAR and int(data_part[1]) == MIN_MONTH and int(data_part[2]) >= MIN_DAY:
+        return True
+    
+    # print("False")
+    return False
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
