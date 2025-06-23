@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.06.22)
+# 计算机视觉领域最新论文 (2025.06.23)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -286,6 +286,34 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-20</td><td>Class Agnostic Instance-level Descriptor for Visual Instance Search</td><td>[2506.16745](http://arxiv.org/pdf/2506.16745)</td><td>◆提出了一种基于自监督ViT的类无关实例级描述符，解决了视觉实例搜索中缺乏有效实例级特征表示的问题。  
+◆通过层次化分解特征集，将实例区域发现建模为检测紧凑特征子集的过程，生成多层次的语义特征子集。  
+◆构建的特征层次结构中，非叶节点和叶节点对应图像中不同语义尺度的实例区域，有效处理了物体嵌入和遮挡问题。  
+◆生成的节点特征构成图像的全面实例表示，适用于已知和未知物体类别，具有强泛化能力。  
+◆在三个实例搜索基准测试中表现显著优于现有方法，验证了其优越性。</td></tr>
+<tr><td>2025-06-19</td><td>MambaHash: Visual State Space Deep Hashing Model for Large-Scale Image Retrieval</td><td>[2506.16353](http://arxiv.org/pdf/2506.16353)</td><td>◆ 首次将视觉状态空间模型（Mamba）引入大规模图像哈希检索任务，探索其在该领域的适用性和优势。  
+◆ 提出分阶段的主干网络架构，通过分组Mamba操作实现多方向扫描，有效建模局部和全局信息。  
+◆ 设计通道交互注意力模块，增强跨通道信息交流，提升特征表达能力。  
+◆ 开发自适应特征增强模块，增加特征多样性并强化模型的视觉表示能力。  
+◆ 在CIFAR-10、NUS-WIDE和IMAGENET等主流数据集上验证了方法的优越性，相比现有深度哈希方法具有更高效率和检索性能。  
+◆ 开源代码促进后续研究，为线性复杂度模型在图像检索中的应用提供新思路。</td></tr>
+<tr><td>2025-06-19</td><td>Fine-grained Image Retrieval via Dual-Vision Adaptation</td><td>[2506.16273](http://arxiv.org/pdf/2506.16273)</td><td>◆提出双视觉适应（DVA）方法，通过样本和特征协同适配解决细粒度图像检索（FGIR）中预训练模型易过拟合的问题，保留预训练知识的同时提升泛化能力。  
+◆设计对象感知适配（Object-Perceptual Adaptation），通过修改输入样本引导冻结的预训练模型聚焦对类别预测关键的物体及局部特征。  
+◆提出上下文内适配（In-Context Adaptation），仅引入少量可调参数进行特征适配，使调整后的特征更贴近预训练任务，避免修改原始预训练参数。  
+◆结合知识蒸馏机制提出判别感知迁移（Discrimination Perception Transfer），将对象感知适配中的判别知识高效迁移至图像编码器，平衡检索效率与性能。  
+◆实验表明DVA在3个分布内和3个分布外细粒度数据集上表现优异，且可学习参数量显著少于现有方法。</td></tr>
+<tr><td>2025-06-19</td><td>Adversarial Attacks and Detection in Visual Place Recognition for Safer Robot Navigation</td><td>[2506.15988](http://arxiv.org/pdf/2506.15988)</td><td>◆ 首次系统分析了四种常见对抗攻击和四种VPR专用攻击对视觉地点识别（VPR）定位性能的影响，揭示了现有系统的脆弱性。  
+◆ 提出了一种闭环系统框架，将VPR、对抗攻击检测器（AAD）和主动导航决策相结合，并通过实验验证其性能优势。  
+◆ 设计了新颖的实验范式，证明即使AAD的检测准确率有限（如真阳性率75%、假阳性率25%），也能显著降低平均沿轨定位误差约50%。  
+◆ 首次研究了快速梯度符号法（FGSM）对抗攻击在VPR中的有效性，填补了该领域的研究空白。  
+◆ 提出了多项关键评估指标（如沿轨误差、受攻击时间比例、不安全状态时间比例等），为系统设计提供了量化依据。  
+◆ 强调了AAD在实际机器人导航系统中的必要性，为构建可信赖的导航系统提供了重要参考。</td></tr>
+<tr><td>2025-06-18</td><td>Semantic and Feature Guided Uncertainty Quantification of Visual Localization for Autonomous Vehicles</td><td>[2506.15851](http://arxiv.org/pdf/2506.15851)</td><td>◆ 提出了一种结合图像特征和语义信息的轻量级传感器误差模型，用于预测视觉定位中的二维误差分布。  
+◆ 通过条件化不确定性估计，隐含地捕捉了未标注的关键环境因素（如城市/高速、动态/静态场景、季节变化）。  
+◆ 采用高斯混合模型（GMM）替代传统高斯分布，更准确地描述恶劣天气和光照条件下的测量误差特性。  
+◆ 在Ithaca365多天气/光照数据集上验证了框架的准确性，涵盖晴天、夜间和雪天等复杂场景。  
+◆ 提出独特的传感器门控方法，结合贝叶斯定位滤波器评估传感器与神经网络的联合不确定性量化性能。  
+◆ 为自动驾驶安全关键系统提供了可解释的上下文相关不确定性量化工具。</td></tr>
 <tr><td>2025-06-18</td><td>ReSeDis: A Dataset for Referring-based Object Search across Large-Scale Image Collections</td><td>[2506.15180](http://arxiv.org/pdf/2506.15180)</td><td>◆ 提出ReSeDis任务，首次将大规模图像检索与像素级定位结合，要求模型根据文本描述在图像库中检索目标并精确定位其位置（边界框或分割掩码）。  
 ◆ 构建首个针对该任务的基准数据集，确保每个描述唯一对应分散在大规模多样化图像库中的目标实例，避免误匹配问题。  
 ◆ 设计联合评估指标，同时衡量检索召回率与定位精度，解决现有技术只能单独评估某一方面的局限。  
@@ -307,7 +335,7 @@
 ◆ 通过知识图谱量化医学概念间的语义距离，克服了现有方法将医学概念视为独立标签的局限性，能够捕捉概念间的细微关联。  
 ◆ 设计了基于近似匹配的相关性评分机制，通过计算两组医学概念的相似性间接衡量医学图像的相似度。  
 ◆ 在公开数据集上验证了所提方法的有效性和可行性，为医学CBIR评估提供了更符合临床语义的新标准。</td></tr>
-<tr><td>2025-06-17</td><td>Hierarchical Multi-Positive Contrastive Learning for Patent Image Retrieval</td><td>[2506.13496](http://arxiv.org/pdf/2506.13496)</td><td>◆提出分层多正例对比学习损失函数，首次利用Locarno国际分类体系（LIC）的层级关系指导专利图像检索。  
+<tr><td>2025-06-19</td><td>Hierarchical Multi-Positive Contrastive Learning for Patent Image Retrieval</td><td>[2506.13496](http://arxiv.org/pdf/2506.13496)</td><td>◆提出分层多正例对比学习损失函数，首次利用Locarno国际分类体系（LIC）的层级关系指导专利图像检索。  
 ◆通过层级分类树动态分配多组正样本对，根据专利图像在LIC中的层级距离赋予不同相似度权重。  
 ◆突破传统对比学习仅使用单一样本对的限制，能同时学习跨层级的细粒度语义关联。  
 ◆在DeepPatent2数据集上验证了方法的普适性，可适配多种视觉和多模态预训练模型。  
@@ -453,7 +481,7 @@
 ◆实验证明频域特征（DCT/FFT）对捕捉数据集特异性伪影（如上采样模式、频谱异常）具有显著优势，色彩直方图则能揭示GAN训练的隐式正则化策略。  
 ◆首次系统探讨了合成媒体数据集溯源的法律应用场景，包括版权侵权、隐私数据滥用（如GDPR合规）及加州AB 602法案等监管应对方案。  
 ◆该框架为生成模型的问责制治理提供了技术支撑，可应用于数字取证、内容审核和知识产权诉讼等实际领域。</td></tr>
-<tr><td>2025-06-18</td><td>RDD: Robust Feature Detector and Descriptor using Deformable Transformer</td><td>[2505.08013](http://arxiv.org/pdf/2505.08013)</td><td>◆ 提出RDD（Robust Deformable Detector），一种基于可变形Transformer的新型关键点检测与描述方法，通过可变形自注意力机制捕获全局上下文和几何不变性。  
+<tr><td>2025-06-19</td><td>RDD: Robust Feature Detector and Descriptor using Deformable Transformer</td><td>[2505.08013](http://arxiv.org/pdf/2505.08013)</td><td>◆ 提出RDD（Robust Deformable Detector），一种基于可变形Transformer的新型关键点检测与描述方法，通过可变形自注意力机制捕获全局上下文和几何不变性。  
 ◆ 利用可变形注意力机制聚焦关键位置，显著降低搜索空间复杂度并有效建模几何变换，解决了传统方法难以学习长程视觉关系的问题。  
 ◆ 结合标准MegaDepth数据集与自建的Air-to-Ground（空对地）数据集进行训练，增强模型在跨视角和跨尺度场景下的鲁棒性。  
 ◆ 在稀疏匹配任务中性能超越现有最优方法，并具备半稠密匹配能力，扩展了应用场景。  
@@ -537,7 +565,7 @@
 ◆ 在相对位姿恢复、单应估计等核心任务上建立统一评测基准，定量比较了代表性方法的性能突破与现存缺陷。  
 ◆ 前瞻性指出自监督学习、跨模态匹配、动态场景适应等未来方向，为领域发展绘制了清晰的技术演进地图。  
 ◆ 通过揭示传统流程被深度学习&quot;解构-重构&quot;的完整路径，为计算机视觉基础问题研究提供了方法论层面的新范式。</td></tr>
-<tr><td>2025-06-05</td><td>SR3D: Unleashing Single-view 3D Reconstruction for Transparent and Specular Object Grasping</td><td>[2505.24305](http://arxiv.org/pdf/2505.24305)</td><td>◆提出SR3D框架，首次实现无需训练的基于单视角的透明与镜面物体3D重建与抓取，突破传统深度感知限制。  
+<tr><td>2025-06-20</td><td>SR3D: Unleashing Single-view 3D Reconstruction for Transparent and Specular Object Grasping</td><td>[2505.24305](http://arxiv.org/pdf/2505.24305)</td><td>◆提出SR3D框架，首次实现无需训练的基于单视角的透明与镜面物体3D重建与抓取，突破传统深度感知限制。  
 ◆利用外部视觉模型直接从RGB图像生成物体网格，结合深度图实现3D场景融合，避免复杂多视角采集系统。  
 ◆创新性提出视图匹配与关键点匹配双机制，联合2D语义与3D几何信息精准定位物体位姿与尺度。  
 ◆通过将重建物体逆向映射回原始深度缺失场景，生成高精度深度图，显著提升抓取检测效果。  
@@ -580,6 +608,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-19</td><td>R3eVision: A Survey on Robust Rendering, Restoration, and Enhancement for 3D Low-Level Vision</td><td>[2506.16262](http://arxiv.org/pdf/2506.16262)</td><td>◆ 提出“3D低层视觉（3D LLV）”新领域，将传统2D低层视觉任务（如超分、去模糊、天气退化修复等）扩展到3D空间，解决神经渲染在真实退化场景中的鲁棒性问题。  
+◆ 首次系统化定义“退化感知渲染”问题，明确时空一致性和病态优化等核心挑战，为3D LLV研究建立理论框架。  
+◆ 综述了将低层视觉技术与神经辐射场（NeRF）、3D高斯泼溅（3DGS）等神经渲染结合的创新方法，展示其在噪声、模糊、低分辨率等退化条件下的高保真3D重建能力。  
+◆ 梳理了自动驾驶、AR/VR、机器人等关键应用场景，强调从退化输入中实现可靠3D感知的实用价值。  
+◆ 汇总了代表性方法、数据集和评估协议，为未来3D LLV研究提供标准化参考，推动真实环境下鲁棒3D内容生成与场景重建的发展。</td></tr>
 <tr><td>2025-06-18</td><td>RA-NeRF: Robust Neural Radiance Field Reconstruction with Accurate Camera Pose Estimation under Complex Trajectories</td><td>[2506.15242](http://arxiv.org/pdf/2506.15242)</td><td>◆ 提出RA-NeRF方法，能够在复杂相机轨迹下实现高精度的相机位姿估计，解决了传统NeRF和3DGS依赖准确位姿先验的问题。  
 ◆ 采用增量式重建流程，结合光度一致性约束和光流驱动的位姿调节机制，提升了初始化和定位阶段的鲁棒性。  
 ◆ 引入隐式位姿滤波器，通过捕捉相机运动模式有效消除位姿估计中的噪声，增强复杂轨迹下的稳定性。  
@@ -627,7 +660,7 @@
 ◆ 开发GroupFlow运动分析技术，通过轨迹相似性聚类高斯群组，以单组刚性变换替代逐高斯形变预测，大幅减少计算量。  
 ◆ 实验验证框架在NeRF-DS数据集上实现10.37倍渲染加速、7.71倍模型压缩和2.71倍训练提速，在D-NeRF和HyperNeRF数据集分别提升4.20倍和58.23倍性能。  
 ◆ 模块化设计兼容现有动态3DGS/4DGS框架，兼具高效性与通用性。</td></tr>
-<tr><td>2025-06-16</td><td>Genesis: Multimodal Driving Scene Generation with Spatio-Temporal and Cross-Modal Consistency</td><td>[2506.07497](http://arxiv.org/pdf/2506.07497)</td><td>◆ 提出Genesis框架，首次实现多视角驾驶视频与LiDAR序列的联合生成，保证时空和跨模态一致性。  
+<tr><td>2025-06-20</td><td>Genesis: Multimodal Driving Scene Generation with Spatio-Temporal and Cross-Modal Consistency</td><td>[2506.07497](http://arxiv.org/pdf/2506.07497)</td><td>◆ 提出Genesis框架，首次实现多视角驾驶视频与LiDAR序列的联合生成，保证时空和跨模态一致性。  
 ◆ 采用两阶段架构：结合DiT视频扩散模型与3D-VAE编码，以及基于BEV的LiDAR生成器与NeRF渲染，实现高质量多模态输出。  
 ◆ 通过共享潜在空间直接耦合视觉与几何模态，确保生成内容在跨模态间的连贯演化。  
 ◆ 创新引入DataCrafter描述模块，利用视觉语言模型提供场景级和实例级语义监督，增强生成数据的结构化控制。  
@@ -704,4 +737,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.06.22
+> 更新于: 2025.06.23
