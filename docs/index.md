@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.06.24)
+# 计算机视觉领域最新论文 (2025.06.25)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -34,7 +34,7 @@
 ◆ 提出在线蒸馏方法实现多子地图融合，通过分布式通信优化解决NeRF类系统带宽受限问题。  
 ◆ 发布首个真实世界密集SLAM数据集DES，涵盖单/多智能体场景，提供连续轨迹与高精度3D网格真值，填补领域空白。  
 实验证明该方法在建图、定位和通信效率上均优于现有技术，代码与数据集将开源推动SLAM与三维重建研究发展。</td></tr>
-<tr><td>2025-06-22</td><td>Multimodal Fusion SLAM with Fourier Attention</td><td>[2506.18204](http://arxiv.org/pdf/2506.18204)</td><td>◆ 提出FMF-SLAM方法，通过快速傅里叶变换（FFT）提升多模态SLAM的算法效率，解决传统光流SLAM计算资源消耗大的问题。  
+<tr><td>2025-06-24</td><td>Multimodal Fusion SLAM with Fourier Attention</td><td>[2506.18204](http://arxiv.org/pdf/2506.18204)</td><td>◆ 提出FMF-SLAM方法，通过快速傅里叶变换（FFT）提升多模态SLAM的算法效率，解决传统光流SLAM计算资源消耗大的问题。  
 ◆ 创新设计基于傅里叶的自注意力与跨注意力机制，有效融合RGB和深度信号的特征提取。  
 ◆ 引入多尺度跨模态知识蒸馏技术，增强多模态特征间的交互与互补性。  
 ◆ 结合GNSS-RTK全局定位模块与全局Bundle Adjustment，实现安全机器人的实时应用验证。  
@@ -57,7 +57,7 @@
 ◆ 创新全景闭环检测模块，通过场景级描述符实现视角无关的地点识别，增强系统在动态环境中的稳定性。  
 ◆ 构建分层3D场景图谱抽象地图，为机器人高层推理任务提供结构化语义支持。  
 实验证明该系统在遮挡、位姿变化和复杂环境下的定位精度与可扩展性均优于现有方法。</td></tr>
-<tr><td>2025-06-18</td><td>RA-NeRF: Robust Neural Radiance Field Reconstruction with Accurate Camera Pose Estimation under Complex Trajectories</td><td>[2506.15242](http://arxiv.org/pdf/2506.15242)</td><td>◆ 提出RA-NeRF方法，能够在复杂相机轨迹下实现高精度的相机位姿估计，解决了传统NeRF和3DGS依赖准确位姿先验的问题。  
+<tr><td>2025-06-24</td><td>RA-NeRF: Robust Neural Radiance Field Reconstruction with Accurate Camera Pose Estimation under Complex Trajectories</td><td>[2506.15242](http://arxiv.org/pdf/2506.15242)</td><td>◆ 提出RA-NeRF方法，能够在复杂相机轨迹下实现高精度的相机位姿估计，解决了传统NeRF和3DGS依赖准确位姿先验的问题。  
 ◆ 采用增量式重建流程，结合光度一致性约束和光流驱动的位姿调节机制，提升了初始化和定位阶段的鲁棒性。  
 ◆ 创新性地引入隐式位姿滤波器，通过捕捉相机运动模式有效消除位姿估计中的噪声干扰。  
 ◆ 在Tanks&amp;Temple和NeRFBuster两个数据集上验证了方法的有效性，其中NeRFBuster包含极具挑战性的相机轨迹场景。  
@@ -220,6 +220,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-24</td><td>Experimental Assessment of Neural 3D Reconstruction for Small UAV-based Applications</td><td>[2506.19491](http://arxiv.org/pdf/2506.19491)</td><td>◆ 提出了一种将神经三维重建（N3DR）技术与小型无人机系统结合的新方法，用于精细三维数字重建静态小物体。  
+◆ 设计并实现了一套基于N3DR的流程，整合了Instant-ngp、Nerfacto和Splatfacto等先进模型，显著提升了重建质量。  
+◆ 通过多无人机协同采集图像，解决了小型无人机在动态飞行和功耗限制下的自主性与任务能力问题。  
+◆ 采用多种图像和点云指标评估模型性能，并与传统运动恢复结构（SfM）算法对比，验证了N3DR的优越性。  
+◆ 实验证明该方案能支持高精度三维建模和异常检测，拓展了小型无人机在受限环境中的应用潜力。  
+◆ 整体研究展示了N3DR技术在提升微型无人机系统能力方面的广阔前景。</td></tr>
 <tr><td>2025-06-23</td><td>ViDAR: Video Diffusion-Aware 4D Reconstruction From Monocular Inputs</td><td>[2506.18792](http://arxiv.org/pdf/2506.18792)</td><td>◆ 提出ViDAR框架，首次将个性化扩散模型引入单目视频的4D重建任务，通过生成伪多视角监督信号解决单目输入的结构-运动歧义问题。  
 ◆ 创新性地利用场景特定特征进行条件扩散，在保持外观细节的同时有效缓解单目模糊性导致的伪影问题。  
 ◆ 设计扩散感知损失函数，专门处理扩散生成视图的时空不一致性，提升合成视图与真实几何的对齐精度。  
@@ -248,7 +254,7 @@
 ◆ 提出可扩展的辐射场构建技术，通过渐进式聚类将3DGS图元存储在锚点中并从GPU卸载，有效管理大规模场景的内存需求。  
 ◆ 引入动态图元合并机制，根据视点需求自适应调整3DGS规模，保持渲染质量的同时优化计算资源使用。  
 ◆ 实验验证该方法能实时处理多种采集场景和不同规模的数据集，在速度、图像质量或两者兼备方面优于仅针对特定场景的现有方法。</td></tr>
-<tr><td>2025-06-05</td><td>SupeRANSAC: One RANSAC to Rule Them All</td><td>[2506.04803](http://arxiv.org/pdf/2506.04803)</td><td>◆ SupeRANSAC提出了一种统一的RANSAC框架，解决了传统RANSAC在不同视觉任务中性能不稳定的问题。  
+<tr><td>2025-06-05</td><td>SupeRANSAC: One RANSAC to Rule Them All</td><td>[2506.04803](http://arxiv.org/pdf/2506.04803)<br><a href=''>[代码]</a></td><td>◆ SupeRANSAC提出了一种统一的RANSAC框架，解决了传统RANSAC在不同视觉任务中性能不稳定的问题。  
 ◆ 通过系统分析RANSAC在特定视觉任务（如单应性矩阵、基础矩阵、位姿估计等）中的有效技术，优化了整体流程。  
 ◆ 相比现有最佳方法，SupeRANSAC在基础矩阵估计任务中平均提升了6个AUC点，表现出更高的准确性。  
 ◆ 该框架克服了现有库（如OpenCV和PoseLib）在不同任务中表现不一致的缺陷，实现了跨任务的稳定高性能。  
@@ -322,12 +328,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-06-23</td><td>jina-embeddings-v4: Universal Embeddings for Multimodal Multilingual Retrieval</td><td>[2506.18902](http://arxiv.org/pdf/2506.18902)</td><td>◆ 提出jina-embeddings-v4模型，这是一个38亿参数的多模态嵌入模型，统一了文本和图像的表示。  
+<tr><td>2025-06-24</td><td>jina-embeddings-v4: Universal Embeddings for Multimodal Multilingual Retrieval</td><td>[2506.18902](http://arxiv.org/pdf/2506.18902)</td><td>◆ 提出jina-embeddings-v4模型，这是一个38亿参数的多模态嵌入模型，统一了文本和图像的表示。  
 ◆ 采用新颖的架构，支持单向量和多向量嵌入，并采用后期交互风格。  
 ◆ 引入任务特定的低秩适应（LoRA）适配器，优化了多种检索场景的性能，包括基于查询的信息检索、跨模态语义相似性和编程代码搜索。  
 ◆ 在单模态和跨模态检索任务中实现了最先进的性能，尤其在处理视觉丰富内容（如表格、图表、图表和混合媒体格式）方面表现突出。  
 ◆ 提出Jina-VDR基准，专门用于评估视觉丰富图像检索能力，填补了该领域的空白。</td></tr>
-<tr><td>2025-06-23</td><td>Referring Expression Instance Retrieval and A Strong End-to-End Baseline</td><td>[2506.18246](http://arxiv.org/pdf/2506.18246)</td><td>◆ 提出新任务REIR（Referring Expression Instance Retrieval），填补了传统文本-图像检索（TIR）精度不足和指代表达理解（REC）扩展性差的空白，支持跨大规模图库的实例级检索与定位。  
+<tr><td>2025-06-24</td><td>Referring Expression Instance Retrieval and A Strong End-to-End Baseline</td><td>[2506.18246](http://arxiv.org/pdf/2506.18246)</td><td>◆ 提出新任务REIR（Referring Expression Instance Retrieval），填补了传统文本-图像检索（TIR）精度不足和指代表达理解（REC）扩展性差的空白，支持跨大规模图库的实例级检索与定位。  
 ◆ 构建首个大规模基准数据集REIRCOCO，通过视觉-语言模型生成细粒度指代表达，基于MSCOCO和RefCOCO实例增强数据多样性。  
 ◆ 提出端到端基线方法CLARE，采用双流架构设计，结合目标检测与REC预训练，实现跨模态特征对齐。  
 ◆ 创新性引入Mix of Relation Experts（MORE）模块，显式建模实例间关系，提升复杂场景下的检索精度。  
@@ -338,7 +344,7 @@
 ◆构建的特征层次结构中，非叶节点和叶节点对应图像中不同语义尺度的实例区域，有效处理了物体嵌入和遮挡问题。  
 ◆生成的节点特征构成图像的全面实例表示，适用于已知和未知物体类别，具有强泛化能力。  
 ◆在三个实例搜索基准测试中表现显著优于现有方法，验证了其优越性。</td></tr>
-<tr><td>2025-06-19</td><td>MambaHash: Visual State Space Deep Hashing Model for Large-Scale Image Retrieval</td><td>[2506.16353](http://arxiv.org/pdf/2506.16353)</td><td>◆ 首次将视觉状态空间模型（Mamba）引入大规模图像哈希检索任务，探索其在该领域的适用性和优势。  
+<tr><td>2025-06-19</td><td>MambaHash: Visual State Space Deep Hashing Model for Large-Scale Image Retrieval</td><td>[2506.16353](http://arxiv.org/pdf/2506.16353)<br><a href=''>[代码]</a></td><td>◆ 首次将视觉状态空间模型（Mamba）引入大规模图像哈希检索任务，探索其在该领域的适用性和优势。  
 ◆ 提出分阶段的主干网络架构，通过分组Mamba操作实现多方向扫描，有效建模局部和全局信息。  
 ◆ 设计通道交互注意力模块，增强跨通道信息交流，提升特征表达能力。  
 ◆ 开发自适应特征增强模块，增加特征多样性并强化模型的视觉表示能力。  
@@ -349,7 +355,7 @@
 ◆提出上下文内适配（In-Context Adaptation），仅引入少量可调参数进行特征适配，使调整后的特征更贴近预训练任务，避免修改原始预训练参数。  
 ◆结合知识蒸馏机制提出判别感知迁移（Discrimination Perception Transfer），将对象感知适配中的判别知识高效迁移至图像编码器，平衡检索效率与性能。  
 ◆实验表明DVA在3个分布内和3个分布外细粒度数据集上表现优异，且可学习参数量显著少于现有方法。</td></tr>
-<tr><td>2025-06-19</td><td>Adversarial Attacks and Detection in Visual Place Recognition for Safer Robot Navigation</td><td>[2506.15988](http://arxiv.org/pdf/2506.15988)</td><td>◆ 首次系统分析了四种常见对抗攻击和四种VPR专用攻击对视觉地点识别（VPR）定位性能的影响，揭示了现有系统的脆弱性。  
+<tr><td>2025-06-19</td><td>Adversarial Attacks and Detection in Visual Place Recognition for Safer Robot Navigation</td><td>[2506.15988](http://arxiv.org/pdf/2506.15988)<br><a href=''>[代码]</a></td><td>◆ 首次系统分析了四种常见对抗攻击和四种VPR专用攻击对视觉地点识别（VPR）定位性能的影响，揭示了现有系统的脆弱性。  
 ◆ 提出了一种闭环系统框架，将VPR、对抗攻击检测器（AAD）和主动导航决策相结合，并通过实验验证其性能优势。  
 ◆ 设计了新颖的实验范式，证明即使AAD的检测准确率有限（如真阳性率75%、假阳性率25%），也能显著降低平均沿轨定位误差约50%。  
 ◆ 首次研究了快速梯度符号法（FGSM）对抗攻击在VPR中的有效性，填补了该领域的研究空白。  
@@ -649,6 +655,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-24</td><td>NeRF-based CBCT Reconstruction needs Normalization and Initialization</td><td>[2506.19742](http://arxiv.org/pdf/2506.19742)</td><td>◆ 提出归一化哈希编码器（Normalized Hash Encoder），解决NeRF-based CBCT重建中哈希编码器与神经网络的局部-全局训练不匹配问题，通过增强特征一致性提升训练稳定性。  
+◆ 设计映射一致性初始化策略（MCI），利用预训练模型的全局映射特性初始化神经网络，减少早期训练波动，加速收敛并提高重建质量。  
+◆ 首次系统分析了哈希编码器参数局部稀疏性与神经网络全局密集更新的矛盾，指出特征错位是导致训练不稳定的核心原因。  
+◆ 方法仅需少量代码改动，即可在4个数据集、128例CT数据（涵盖7个解剖区域）上显著提升训练效率和重建性能。  
+◆ 通过实验验证了归一化与初始化策略的协同作用，为NeRF-based医学影像重建提供了简单有效的优化范式。</td></tr>
+<tr><td>2025-06-24</td><td>Self-Supervised Multimodal NeRF for Autonomous Driving</td><td>[2506.19615](http://arxiv.org/pdf/2506.19615)</td><td>◆ 提出自监督多模态NeRF框架NVSF，无需3D标注即可联合学习LiDAR和相机的时空隐式神经表示。  
+◆ 针对自动驾驶场景设计，同时处理静态和动态环境，显著提升真实驾驶场景的适应性。  
+◆ 引入启发式图像像素采样策略，优先选择信息丰富的像素，提升训练效率和收敛速度。  
+◆ 创新采用双梯度掩码技术，有效保留LiDAR点的局部特征，增强点云数据重建精度。  
+◆ 在KITTI-360数据集上验证，LiDAR和相机域性能均超越基线模型，展现多模态优势。  
+◆ 开源代码推动相关研究，为自动驾驶领域提供可复用的新型神经渲染解决方案。</td></tr>
+<tr><td>2025-06-24</td><td>HoliGS: Holistic Gaussian Splatting for Embodied View Synthesis</td><td>[2506.19291](http://arxiv.org/pdf/2506.19291)</td><td>◆ 提出HoliGS框架，首次将可变形高斯泼溅技术应用于长时序单目RGB视频的沉浸式视角合成任务，解决了传统4D高斯泼溅和动态NeRF在分钟级视频中训练开销过大的问题。  
+◆ 创新性地采用分层变形策略，将场景分解为静态背景和动态物体，其中动态部分通过可逆神经流实现全局刚性变换、骨骼驱动形变和细微非刚性形变的统一建模。  
+◆ 通过将高斯基元绑定到完整的前景规范形状（如第一人称或跟随视角），支持多演员交互和大视角变化的自由视点渲染，显著提升了复杂动态场景的重建鲁棒性。  
+◆ 提出可逆高斯变形网络，在保持高保真重建质量的同时，相比现有单目可变形NeRF方法大幅降低训练和渲染时间，实现了实际场景中的高效部署。  
+◆ 在挑战性数据集上的实验表明，该方法在重建质量和计算效率方面均优于当前最优技术，为沉浸式视角合成提供了可扩展的实用解决方案。</td></tr>
 <tr><td>2025-06-23</td><td>MCN-SLAM: Multi-Agent Collaborative Neural SLAM with Hybrid Implicit Neural Scene Representation</td><td>[2506.18678](http://arxiv.org/pdf/2506.18678)</td><td>◆ 提出首个分布式多智能体协作神经SLAM框架MCN-SLAM，结合混合隐式神经场景表示，解决传统单智能体隐式SLAM在大场景和长序列中的局限性。  
 ◆ 创新设计三平面-网格联合场景表示方法，显著提升场景重建质量，优于现有NeRF-based方法。  
 ◆ 开发&quot;内部-跨智能体&quot;闭环检测机制，首次实现单智能体局部一致性与多智能体全局一致性的协同优化。  
@@ -673,12 +695,12 @@
 ◆ 扩展多视角约束并引入单视角正则化方法，针对性解决纹理缺失区域的几何优化难题。  
 ◆ 在无人机航拍数据集GauU-Scene V2上验证，首次实现全尺寸图像优化的大规模场景精细重建，性能超越现有NeRF和Gaussian类方法。  
 （注：全文严格遵循5点创新性总结，未使用Markdown符号，字数控制在400字内）</td></tr>
-<tr><td>2025-06-23</td><td>R3eVision: A Survey on Robust Rendering, Restoration, and Enhancement for 3D Low-Level Vision</td><td>[2506.16262](http://arxiv.org/pdf/2506.16262)</td><td>◆ 提出“3D低层视觉（3D LLV）”新领域，将传统2D低层视觉任务（如超分、去模糊、天气退化修复等）扩展到3D空间，解决神经渲染在真实退化场景中的鲁棒性问题。  
+<tr><td>2025-06-23</td><td>R3eVision: A Survey on Robust Rendering, Restoration, and Enhancement for 3D Low-Level Vision</td><td>[2506.16262](http://arxiv.org/pdf/2506.16262)<br><a href=''>[代码]</a></td><td>◆ 提出“3D低层视觉（3D LLV）”新领域，将传统2D低层视觉任务（如超分、去模糊、天气退化修复等）扩展到3D空间，解决神经渲染在真实退化场景中的鲁棒性问题。  
 ◆ 首次系统化定义“退化感知渲染”问题，明确时空一致性和病态优化等核心挑战，为3D LLV研究建立理论框架。  
 ◆ 综述了将低层视觉技术与神经辐射场（NeRF）、3D高斯泼溅（3DGS）等神经渲染结合的创新方法，展示其在噪声、模糊、低分辨率等退化条件下的高保真3D重建能力。  
 ◆ 梳理了自动驾驶、AR/VR、机器人等关键应用场景，强调从退化输入中实现可靠3D感知的实用价值。  
 ◆ 汇总了代表性方法、数据集和评估协议，为未来3D LLV研究提供标准化参考，推动真实环境下鲁棒3D内容生成与场景重建的发展。</td></tr>
-<tr><td>2025-06-18</td><td>RA-NeRF: Robust Neural Radiance Field Reconstruction with Accurate Camera Pose Estimation under Complex Trajectories</td><td>[2506.15242](http://arxiv.org/pdf/2506.15242)</td><td>◆ 提出RA-NeRF方法，能够在复杂相机轨迹下实现高精度的相机位姿估计，解决了传统NeRF和3DGS依赖准确位姿先验的问题。  
+<tr><td>2025-06-24</td><td>RA-NeRF: Robust Neural Radiance Field Reconstruction with Accurate Camera Pose Estimation under Complex Trajectories</td><td>[2506.15242](http://arxiv.org/pdf/2506.15242)</td><td>◆ 提出RA-NeRF方法，能够在复杂相机轨迹下实现高精度的相机位姿估计，解决了传统NeRF和3DGS依赖准确位姿先验的问题。  
 ◆ 采用增量式重建流程，结合光度一致性约束和光流驱动的位姿调节机制，提升了初始化和定位阶段的鲁棒性。  
 ◆ 引入隐式位姿滤波器，通过捕捉相机运动模式有效消除位姿估计中的噪声，增强复杂轨迹下的稳定性。  
 ◆ 在Tanks&amp;Temple和NeRFBuster等具有挑战性的数据集上验证了方法有效性，位姿估计和视觉质量均达到SOTA水平。  
@@ -800,4 +822,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.06.24
+> 更新于: 2025.06.25
