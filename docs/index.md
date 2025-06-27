@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.06.26)
+# 计算机视觉领域最新论文 (2025.06.27)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-26</td><td>EndoFlow-SLAM: Real-Time Endoscopic SLAM with Flow-Constrained Gaussian Splatting</td><td>[2506.21420](http://arxiv.org/pdf/2506.21420)</td><td>◆ 提出EndoFlow-SLAM系统，首次将光流损失作为几何约束引入基于3D高斯泼溅（3DGS）的SLAM框架，有效解决了内窥镜场景中非朗伯表面和呼吸运动导致的位姿估计问题。  
+◆ 设计深度正则化策略，缓解内窥镜场景的光度不一致性问题，确保3DGS深度渲染的可靠性。  
+◆ 改进3DGS优化策略，针对关键帧中渲染质量较差的视角进行重点优化，提升场景表示精度。  
+◆ 在静态（C3VD数据集）和动态（StereoMIS数据集）手术场景中均实现领先性能，在新视角合成和相机位姿估计任务上超越现有方法。  
+◆ 系统支持实时运行，为内窥镜手术提供高效的三维重建与可视化能力。</td></tr>
+<tr><td>2025-06-26</td><td>CURL-SLAM: Continuous and Compact LiDAR Mapping</td><td>[2506.21077](http://arxiv.org/pdf/2506.21077)</td><td>◆ 提出了一种新型LiDAR SLAM范式CURL-SLAM，利用连续超紧凑表示（CURL）实现可更新、可定位的地图表示。  
+◆ 采用球谐函数隐式编码技术，生成支持可变密度连续重建的紧凑3D地图，显著降低存储需求。  
+◆ 通过独特的CURL定制优化问题重新定义LiDAR位姿估计，替代传统ICP方法，提升计算效率。  
+◆ 扩展局部光束法平差（BA）技术，实现位姿精修与地图校正同步进行，确保闭环后的全局一致性。  
+◆ 在CPU上达到10Hz实时性能，同时保持领先的3D建图质量和轨迹精度，适用于大规模场景。  
+◆ 开源CURL-SLAM实现，推动连续紧凑地图表示领域的研究与应用。</td></tr>
 <tr><td>2025-06-25</td><td>SPARK: Graph-Based Online Semantic Integration System for Robot Task Planning</td><td>[2506.20394](http://arxiv.org/pdf/2506.20394)</td><td>◆ 提出首个在线语义信息更新框架SPARK，解决机器人任务执行中语义信息实时更新的空白问题。  
 ◆ 创新性地将离线场景图表示扩展到在线场景，提升动态环境下的语义信息处理能力。  
 ◆ 通过环境嵌入线索（如手势等非传统空间提示）实时更新场景图，增强机器人对动态环境的适应性。  
@@ -236,6 +247,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-26</td><td>Wild refitting for black box prediction</td><td>[2506.21460](http://arxiv.org/pdf/2506.21460)</td><td>◆ 提出了一种名为&quot;wild refitting&quot;的高效计算流程，仅需单次数据集和预测方法的黑箱访问，通过残差计算、对称化和缩放三个步骤，为惩罚非参数估计提供实例级均方预测误差的高概率上界。  
+◆ 创新性地采用Rademacher残差对称化技术（类似wild bootstrap变体），通过预定义缩放因子ρ调整残差，构建以当前估计为中心的修正预测问题。  
+◆ 在允许噪声异质性的较温和条件下，理论证明了该方法性能：当wild噪声尺度ρ选择适当时，wild refit能确保预测误差上界的有效性。  
+◆ 为实际应用提供关键设计指导，包括残差构建方法、wild子问题中噪声缩放量的选择依据，以及黑箱程序局部稳定性的分析框架。  
+◆ 展示了方法在多个领域的适用性，如基于结构化矩阵惩罚的非刚性运动恢复、深度神经网络先验的即插即用图像修复，以及核方法的随机草图技术。</td></tr>
 <tr><td>2025-06-24</td><td>Experimental Assessment of Neural 3D Reconstruction for Small UAV-based Applications</td><td>[2506.19491](http://arxiv.org/pdf/2506.19491)</td><td>◆ 提出了一种将神经三维重建（N3DR）技术与小型无人机系统结合的新方法，用于精细三维数字重建静态小物体。  
 ◆ 设计并实现了一套基于N3DR的流程，整合了Instant-ngp、Nerfacto和Splatfacto等先进模型，显著提升了重建质量。  
 ◆ 通过多无人机协同采集图像，解决了小型无人机在动态飞行和功耗限制下的自主性与任务能力问题。  
@@ -344,6 +360,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-26</td><td>OracleFusion: Assisting the Decipherment of Oracle Bone Script with Structurally Constrained Semantic Typography</td><td>[2506.21101](http://arxiv.org/pdf/2506.21101)</td><td>◆ 提出OracleFusion两阶段框架，首次将语义排版技术应用于甲骨文破译，通过结构约束生成语义增强的矢量字体。  
+◆ 第一阶段采用多模态大语言模型（MLLM）结合空间感知推理（SAR），实现对甲骨文字形的结构分析与关键部件视觉定位。  
+◆ 第二阶段创新性引入甲骨文结构向量融合（OSVF）技术，通过字形结构约束和字形保持约束，确保生成结果的结构完整性与语义准确性。  
+◆ 在视觉呈现上突破传统方法，生成兼具美学质量与可读性的字形表达，为专家破译提供直观辅助。  
+◆ 实验证明OracleFusion在语义相关性、视觉吸引力和字形保持方面均优于现有基线模型，显著提升破译效率。  
+◆ 框架可对未解读甲骨文字符提供专家级见解，成为推动甲骨文研究的实用工具。</td></tr>
 <tr><td>2025-06-25</td><td>Visualizing intercalation effects in 2D materials using AFM based techniques</td><td>[2506.20467](http://arxiv.org/pdf/2506.20467)</td><td>◆ 提出了一种基于原子力显微镜（AFM）的非侵入性方法，用于可视化二维材料（如MoS2/石墨烯/Ir(111)）中硫插层引起的局部结构和电子性质变化，避免了传统超高真空技术的耗时、高成本和空间限制问题。  
 ◆ 通过AFM形貌成像直接观察到插层导致的结构变化，并结合相位成像与力学测量，首次发现插层区域杨氏模量和粘附力的降低。  
 ◆ 利用开尔文探针力显微镜（KPFM）揭示了插层区域的表面电势和功函数变化，为插层效应提供了明确的电子学特征证据。  
@@ -360,7 +382,7 @@
 ◆ 引入任务特定的低秩适应（LoRA）适配器，优化了多种检索场景的性能，包括基于查询的信息检索、跨模态语义相似性和编程代码搜索。  
 ◆ 在单模态和跨模态检索任务中实现了最先进的性能，尤其在处理视觉丰富内容（如表格、图表、图表和混合媒体格式）方面表现突出。  
 ◆ 提出Jina-VDR基准，专门用于评估视觉丰富图像检索能力，填补了该领域的空白。</td></tr>
-<tr><td>2025-06-24</td><td>Referring Expression Instance Retrieval and A Strong End-to-End Baseline</td><td>[2506.18246](http://arxiv.org/pdf/2506.18246)</td><td>◆ 提出新任务REIR（Referring Expression Instance Retrieval），填补了传统文本-图像检索（TIR）精度不足和指代表达理解（REC）扩展性差的空白，支持跨大规模图库的实例级检索与定位。  
+<tr><td>2025-06-26</td><td>Referring Expression Instance Retrieval and A Strong End-to-End Baseline</td><td>[2506.18246](http://arxiv.org/pdf/2506.18246)</td><td>◆ 提出新任务REIR（Referring Expression Instance Retrieval），填补了传统文本-图像检索（TIR）精度不足和指代表达理解（REC）扩展性差的空白，支持跨大规模图库的实例级检索与定位。  
 ◆ 构建首个大规模基准数据集REIRCOCO，通过视觉-语言模型生成细粒度指代表达，基于MSCOCO和RefCOCO实例增强数据多样性。  
 ◆ 提出端到端基线方法CLARE，采用双流架构设计，结合目标检测与REC预训练，实现跨模态特征对齐。  
 ◆ 创新性引入Mix of Relation Experts（MORE）模块，显式建模实例间关系，提升复杂场景下的检索精度。  
@@ -688,6 +710,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-26</td><td>PanSt3R: Multi-view Consistent Panoptic Segmentation</td><td>[2506.21348](http://arxiv.org/pdf/2506.21348)</td><td>◆ 提出PanSt3R方法，首次实现无需测试时优化的单次前向预测，直接联合输出3D几何和多视角全景分割结果，显著提升效率。  
+◆ 基于MUSt3R框架改进，引入语义感知能力，将3D重建与多视角全景分割任务统一整合，克服传统方法依赖2D预分割的局限性。  
+◆ 重新设计掩码后处理流程，提出更理论化的多视角分割融合策略，优化跨视角空间关系利用。  
+◆ 结合3D高斯泼溅（3DGS）技术，提出简单有效的新视角生成方法，扩展模型应用场景。  
+◆ 在多个基准测试中达到SOTA性能，速度比现有方法快数个数量级，兼具概念简洁性与计算高效性。</td></tr>
 <tr><td>2025-06-25</td><td>Joint attitude estimation and 3D neural reconstruction of non-cooperative space objects</td><td>[2506.20638](http://arxiv.org/pdf/2506.20638)</td><td>◆ 提出了一种联合优化方法，同时估计非合作空间物体的姿态（相机位姿）并利用神经辐射场（NeRF）进行3D重建，解决了传统方法在未知物体姿态下的重建难题。  
 ◆ 针对空间场景的特殊挑战（如单色图像、未知物体方向、有限视角、无漫反射光照等），改进了NeRF的适应性，使其在极端条件下仍能有效工作。  
 ◆ 实验证明，采用逐帧顺序训练图像的方式（而非批量训练）能显著提升3D重建的精度，为动态空间物体建模提供了新思路。  
@@ -715,7 +742,7 @@
 ◆ 提出在线蒸馏方法实现多子地图融合，突破通信带宽限制，确保全局地图一致性。  
 ◆ 发布首个真实世界密集SLAM数据集DES，涵盖单/多智能体场景，提供连续轨迹和高精度3D网格真值，填补领域空白。  
 实验证明该方法在建图、定位和通信效率上均优于现有技术，代码与数据集将开源推动SLAM和3D重建领域发展。</td></tr>
-<tr><td>2025-06-23</td><td>2D Triangle Splatting for Direct Differentiable Mesh Training</td><td>[2506.18575](http://arxiv.org/pdf/2506.18575)<br><a href=''>[代码]</a></td><td>◆ 提出2D三角形面片（2DTS）方法，替代传统3D高斯基元，实现更高效的直接可微分网格训练。  
+<tr><td>2025-06-26</td><td>2D Triangle Splatting for Direct Differentiable Mesh Training</td><td>[2506.18575](http://arxiv.org/pdf/2506.18575)<br><a href=''>[代码]</a></td><td>◆ 提出2D三角形面片（2DTS）方法，替代传统3D高斯基元，实现更高效的直接可微分网格训练。  
 ◆ 结合离散网格结构与连续体积建模优势，形成类网格的表示形式，提升渲染质量和灵活性。  
 ◆ 引入紧凑性参数到三角形基元中，支持直接训练高真实感网格，简化传统网格重建流程。  
 ◆ 实验证明，即使未优化紧凑性参数，其基础版本也能超越当前最优高斯基元方法的渲染保真度。  
@@ -860,4 +887,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.06.26
+> 更新于: 2025.06.27
