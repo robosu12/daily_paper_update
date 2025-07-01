@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.06.30)
+# 计算机视觉领域最新论文 (2025.07.01)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-29</td><td>TVG-SLAM: Robust Gaussian Splatting SLAM with Tri-view Geometric Constraints</td><td>[2506.23207](http://arxiv.org/pdf/2506.23207)</td><td>TVG-SLAM是一种基于3D高斯泼溅（3DGS）的RGB-only SLAM系统，通过三视图几何约束提升鲁棒性和场景重建质量。其核心贡献和创新点如下：
+
+◆ 提出三视图几何范式，通过密集三视图匹配模块聚合可靠的帧间对应关系，形成跨帧的鲁棒几何约束，解决传统方法依赖光度损失的局限性。
+
+◆ 设计混合几何约束（Hybrid Geometric Constraints），结合三视图匹配的几何线索与光度损失，显著提升相机位姿估计的准确性和稳定性，尤其在视角突变和光照变化场景。
+
+◆ 提出基于概率的初始化策略，将三视图对应关系的几何不确定性编码到新初始化的高斯模型中，提升映射质量。
+
+◆ 引入动态渲染信任衰减机制（Dynamic Attenuation of Rendering Trust），有效缓解因建图延迟导致的跟踪漂移问题。
+
+实验表明，TVG-SLAM在户外数据集上优于现有RGB-only 3DGS SLAM系统，在最挑战性数据集中将轨迹误差（ATE）降低69.0%，同时保持顶尖的渲染质量。</td></tr>
+<tr><td>2025-06-29</td><td>Event-based Stereo Visual-Inertial Odometry with Voxel Map</td><td>[2506.23078](http://arxiv.org/pdf/2506.23078)</td><td>◆ 提出Voxel-ESVIO系统，结合事件相机和立体视觉惯性里程计，利用体素地图管理提升定位精度。  
+◆ 采用基于体素的点选择方法，有效过滤事件流中的噪声，筛选高质量3D地图点。  
+◆ 创新性地引入体素感知的点管理机制，动态优化每个体素内地图点的更新和选择。  
+◆ 通过协同策略高效提取抗噪声且观测概率最高的地图点，确保状态估计的准确性。  
+◆ 在三个公开数据集上的实验表明，该系统在精度和计算效率上均优于现有方法。</td></tr>
 <tr><td>2025-06-26</td><td>Adaptive Multipath-Based SLAM for Distributed MIMO Systems</td><td>[2506.21798](http://arxiv.org/pdf/2506.21798)</td><td>◆ 提出了一种适用于分布式MIMO系统的自适应多路径SLAM方法，解决了传统方法在非凸几何环境中无法进行光线追踪的局限性。  
 ◆ 利用振幅统计量建立自适应时变检测概率，实现了&quot;软&quot;光线追踪策略，能够在非凸几何的射频环境中跨传播路径融合信息。  
 ◆ 通过将和积算法(SPA)的消息传递规则应用于所提出的统计模型因子图，建立了地图特征和智能体位置联合估计的贝叶斯估计方法。  
@@ -260,6 +276,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-30</td><td>Towards Initialization-free Calibrated Bundle Adjustment</td><td>[2506.23808](http://arxiv.org/pdf/2506.23808)</td><td>◆ 提出了一种无需初始化的标定束调整方法，能够在初始重建阶段直接利用相机标定信息，生成接近度量精度的重建结果（仅差一个相似变换）。  
+◆ 创新性地引入具有标定信息的成对相对旋转估计，这些旋转估计仅对相似变换保持不变，从而推动解保持真实场景的度量特征。  
+◆ 将旋转平均技术整合到伪物体空间误差（pOSE）框架中，实现了标定信息与初始化无关的SfM（运动恢复结构）流程。  
+◆ 实验证明该方法能够可靠优化目标函数，即使从随机初始解出发也能高概率收敛到全局最优，获得精确的接近度量重建。  
+◆ 相比现有基于pOSE的方法（仅能获得射影变换解且需要更多数据），新方法显著提升了重建精度和效率。</td></tr>
+<tr><td>2025-06-30</td><td>AttentionGS: Towards Initialization-Free 3D Gaussian Splatting via Structural Attention</td><td>[2506.23611](http://arxiv.org/pdf/2506.23611)</td><td>◆ 提出AttentionGS框架，首次实现无需高质量初始点云的3D高斯泼溅重建，突破传统3DGS对SfM点云的强依赖。  
+◆ 创新性引入几何注意力机制，在训练初期快速恢复场景全局结构，解决随机初始化导致的收敛难题。  
+◆ 设计渐进式纹理注意力模块，在训练后期精细化局部细节，显著提升纹理缺失场景的渲染质量。  
+◆ 开发不透明度加权梯度策略，优化高斯分布致密化过程，实现更精准的表面重建。  
+◆ 在标准数据集上全面超越现有方法，尤其在低纹理/受限视角场景中表现突出，验证了方案的鲁棒性。  
+◆ 为实际应用中复杂场景的3D重建提供新思路，扩展了3DGS技术的适用边界。</td></tr>
 <tr><td>2025-06-27</td><td>Single-Scanline Relative Pose Estimation for Rolling Shutter Cameras</td><td>[2506.22069](http://arxiv.org/pdf/2506.22069)</td><td>◆ 提出了一种基于单扫描线投影交点的新方法，用于估计滚动快门相机间的相对位姿，无需显式建模相机运动。  
 ◆ 创新性地实现了单视图内扫描线的相对位姿估计，扩展了滚动快门相机的应用场景。  
 ◆ 该方法作为滚动快门运动恢复结构（SfM）的基础模块，支持独立计算每条扫描线的位姿，且无需运动模型假设。  
@@ -386,6 +413,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-28</td><td>Utilizing a Novel Deep Learning Method for Scene Categorization in Remote Sensing Data</td><td>[2506.22939](http://arxiv.org/pdf/2506.22939)</td><td>这篇论文的核心贡献和创新点如下：  
+
+◆ 提出了一种名为“Cuttlefish Optimized Bidirectional Recurrent Neural Network (CO-BRNN)”的新型深度学习方法，用于遥感数据的场景分类。  
+◆ 通过结合双向循环神经网络和优化算法（Cuttlefish优化），显著提升了模型在复杂遥感数据中的特征提取能力。  
+◆ 在实验中，CO-BRNN的准确率达到97%，优于现有的多种方法（如MLP-CNN、CNN-LSTM、LSTM-CRF等），展现了其优越性能。  
+◆ 解决了传统深度学习方法对大规模、高噪声数据的依赖问题，提高了模型在有限数据条件下的鲁棒性。  
+◆ 强调了物理验证在卫星数据应用中的重要性，确保模型结果的可靠性和实用性。  
+◆ 为遥感场景分类提供了新的技术思路，可应用于灾害控制、生态监测、城市规划等多个领域。</td></tr>
+<tr><td>2025-06-28</td><td>Mask-aware Text-to-Image Retrieval: Referring Expression Segmentation Meets Cross-modal Retrieval</td><td>[2506.22864](http://arxiv.org/pdf/2506.22864)</td><td>◆ 提出Mask-aware TIR（MaTIR）新任务，首次将文本到图像检索（TIR）与指代表达分割（RES）统一，要求同时实现高效图像搜索和精确目标分割。  
+◆ 设计两阶段框架：第一阶段利用SAM 2和Alpha-CLIP离线生成对象掩码和区域级嵌入，实现可扩展的分割感知检索；第二阶段通过多模态大语言模型（MLLM）重新排序并生成目标框，与掩码匹配提升精度。  
+◆ 创新性结合分割模型（SAM 2）与跨模态检索技术（Alpha-CLIP），在离线阶段预计算掩码和嵌入，显著降低在线检索计算成本。  
+◆ 引入MLLM进行结果重排和定位优化，利用其多模态理解能力提升检索准确率与分割质量。  
+◆ 在COCO和D$^3$数据集上验证，检索精度和分割效果均显著优于现有方法，为跨模态任务提供新范式。</td></tr>
 <tr><td>2025-06-27</td><td>MatChA: Cross-Algorithm Matching with Feature Augmentation</td><td>[2506.22336](http://arxiv.org/pdf/2506.22336)</td><td>◆ 提出了首个解决跨特征检测器视觉定位问题的方法MatChA，突破了现有方法必须使用相同检测器的限制。  
 ◆ 创新性地通过特征描述符增强技术提升跨检测器特征匹配性能，解决了关键点重复率低和描述符区分度不足的难题。  
 ◆ 设计了将特征转换到潜在空间的方案，有效实现了不同算法生成描述符的兼容匹配。  
@@ -667,6 +707,23 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-30</td><td>Efficient and Accurate Image Provenance Analysis: A Scalable Pipeline for Large-scale Images</td><td>[2506.23707](http://arxiv.org/pdf/2506.23707)</td><td>这篇论文的核心贡献是提出了一种高效且准确的图像溯源分析管道，解决了现有方法在精度和可扩展性上的两大瓶颈。  
+
+◆ 创新性地引入修改关系追踪技术，显著提升了图像变体的过滤效果，能够全面发现与查询图像视觉相似度低的变体，解决了传统方法因低相似度而遗漏严重修改图像的问题。  
+
+◆ 通过结合局部特征匹配和压缩伪影捕捉技术，增强了方法对多样化修改的鲁棒性，能够更准确地分析图像间的关联性和修改方向。  
+
+◆ 提出了一种优化的相似度计算策略，并在构建有向溯源图时消除了冗余的成对分析，将时间复杂度从二次降低到线性，实现了大规模场景下的高效处理。  
+
+◆ 实验证明，该方法在精度上比现有技术提升了16.7%-56.1%，并在1000万规模图像上平均响应时间仅3秒，远优于现有方法的12分钟，展现了卓越的可扩展性。  
+
+◆ 最终生成的溯源图能够精确刻画图像的演化历史，为数字治理提供了可靠的取证工具。</td></tr>
+<tr><td>2025-06-29</td><td>Dynamic Contrastive Learning for Hierarchical Retrieval: A Case Study of Distance-Aware Cross-View Geo-Localization</td><td>[2506.23077](http://arxiv.org/pdf/2506.23077)</td><td>◆ 提出了Distance-Aware Cross-View Geo-Localization (DACVGL)新问题，强调模型需综合捕捉目标周围上下文信息并降低定位误差成本。  
+◆ 构建首个多视角图像与精确距离标注的基准数据集DA-Campus，涵盖三种空间分辨率，支持系统性研究。  
+◆ 将DACVGL问题形式化为跨域分层检索任务，揭示传统度量学习无法解决建筑间复杂空间关系的问题。  
+◆ 提出动态对比学习框架DyCL，通过分层空间间隔逐步对齐特征表示，解决跨视角层次化检索难题。  
+◆ 实验证明DyCL与现有多尺度度量学习方法高度互补，显著提升分层检索性能和跨视角地理定位精度。  
+◆ 公开代码和基准数据集，推动后续研究。</td></tr>
 <tr><td>2025-06-27</td><td>MatChA: Cross-Algorithm Matching with Feature Augmentation</td><td>[2506.22336](http://arxiv.org/pdf/2506.22336)</td><td>◆ 首次提出跨特征检测器的特征匹配方法，解决了不同设备使用不同稀疏特征提取算法时视觉定位失效的问题。  
 ◆ 通过特征描述符增强技术提升跨检测器场景下的特征匹配性能，突破了现有方法依赖相同关键点的限制。  
 ◆ 引入特征转换到潜在空间的策略，有效应对关键点低重复性和描述符区分度不足的挑战。  
@@ -773,6 +830,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-06-30</td><td>AttentionGS: Towards Initialization-Free 3D Gaussian Splatting via Structural Attention</td><td>[2506.23611](http://arxiv.org/pdf/2506.23611)</td><td>◆ 提出AttentionGS框架，首次实现无需高质量初始点云的3D高斯泼溅重建，突破传统3DGS对SfM点云的强依赖。  
+◆ 创新性引入两阶段注意力机制：几何注意力快速恢复场景全局结构，纹理注意力后期优化细粒度细节，实现从随机初始化直接重建。  
+◆ 设计不透明度加权梯度策略，改进高斯分布致密化过程，显著提升表面重建质量。  
+◆ 在纹理缺失和受限视角等极端场景下表现优异，相比现有方法重建质量提升显著。  
+◆ 通过多基准数据集验证，为实际应用中更鲁棒的3D重建提供新思路，扩展了3DGS的应用边界。</td></tr>
+<tr><td>2025-06-29</td><td>Dynamic View Synthesis from Small Camera Motion Videos</td><td>[2506.23153](http://arxiv.org/pdf/2506.23153)</td><td>这篇论文针对动态3D场景在小范围相机运动下的新视角合成问题提出了创新解决方案，核心贡献如下：
+
+◆ 提出基于分布的深度正则化方法(DDR)，通过Gumbel-softmax从离散渲染权重分布中可微分采样，解决了传统深度损失仅计算期望误差的局限性。
+
+◆ 引入物体边界前空间点体积密度趋近零的约束条件，确保场景几何结构的正确学习，有效改善了小相机运动下的几何表示问题。
+
+◆ 开发了可视化工具，可直接在渲染权重层面观察场景几何表示，为方法原理提供了直观解释。
+
+◆ 在训练过程中加入相机参数学习机制，增强了模型对相机参数的鲁棒性，解决了小运动下相机参数估计不准的问题。
+
+论文通过大量实验证明，该方法在小范围相机运动输入下显著优于现有先进方法，为动态场景新视角合成提供了更实用的解决方案。</td></tr>
 <tr><td>2025-06-27</td><td>UnMix-NeRF: Spectral Unmixing Meets Neural Radiance Fields</td><td>[2506.21884](http://arxiv.org/pdf/2506.21884)</td><td>◆ 首次将光谱解混技术融入神经辐射场（NeRF），实现联合高光谱新视角合成与无监督材质分割，突破传统NeRF仅依赖RGB数据的局限。  
 ◆ 提出基于漫反射和镜面反射分量的光谱反射率建模方法，通过全局端元字典学习纯材质特征，结合逐点丰度分布实现材质精准表达。  
 ◆ 创新性地利用学习到的端元光谱特征进行无监督材质聚类，无需人工标注即可完成场景材质分割。  
@@ -962,4 +1035,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.06.30
+> 更新于: 2025.07.01
