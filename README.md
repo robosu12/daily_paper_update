@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.02)
+# 计算机视觉领域最新论文 (2025.07.03)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-01</td><td>RaGNNarok: A Light-Weight Graph Neural Network for Enhancing Radar Point Clouds on Unmanned Ground Vehicles</td><td>[2507.00937](http://arxiv.org/pdf/2507.00937)</td><td>◆提出RaGNNarok，一种基于图神经网络（GNN）的轻量级框架，用于增强雷达点云数据，解决现有雷达定位中稀疏点云、噪声和误检测问题。  
+◆该框架在低成本设备（如树莓派5）上实现实时处理，推理时间仅7.3毫秒，无需额外计算资源，适合资源受限的移动机器人。  
+◆通过GNN模型优化雷达点云，显著提升在复杂动态环境中的性能，克服了传统激光雷达和相机在视觉遮挡环境中的局限性。  
+◆在定位、SLAM和自主导航等关键任务中进行了多环境测试，验证了其高可靠性和泛化能力。  
+◆为低成本室内移动机器人提供了一种经济高效的解决方案，结合毫米波雷达的低成本优势，推动自动化在家庭和商业空间的应用。</td></tr>
+<tr><td>2025-07-01</td><td>Generation of Indoor Open Street Maps for Robot Navigation from CAD Files</td><td>[2507.00552](http://arxiv.org/pdf/2507.00552)</td><td>◆ 提出全自动系统，将建筑CAD文件转换为分层拓扑OpenStreetMap（OSM）表示，专为机器人终身导航设计，解决SLAM在动态大尺度室内环境中耗时、脆弱且易过时的问题。  
+◆ 开发多阶段处理流程，从原始CAD数据中提取关键结构层，并基于AreaGraph进行拓扑分割，生成层次化可导航空间图，实现语义丰富的环境建模。  
+◆ 自动关联CAD源文件中的文本标签，增强地图语义信息，同时支持多楼层无缝合并，构建拓扑正确的统一模型，提升导航鲁棒性。  
+◆ 利用CAD文件固有的永久结构信息，规避SLAM的固有缺陷，为复杂室内场景提供高效、可扩展的解决方案。  
+◆ 集成直观图形用户界面（GUI）封装软件，降低使用门槛，并开源代码和数据集促进社区应用与研究。</td></tr>
+<tr><td>2025-06-30</td><td>VOCAL: Visual Odometry via ContrAstive Learning</td><td>[2507.00243](http://arxiv.org/pdf/2507.00243)</td><td>◆ VOCAL将视觉里程计（VO）重新定义为标签排序问题，突破了传统基于几何假设的局限，为数据驱动框架提供了新思路。  
+◆ 通过结合贝叶斯推理与表征学习，该框架使视觉特征与相机状态对齐，提升了特征的可解释性。  
+◆ 提出的排序机制迫使相似相机状态在潜在空间中形成一致且空间连贯的表征，增强了模型的鲁棒性。  
+◆ 框架支持多模态数据融合，为复杂场景下的VO应用提供了灵活性。  
+◆ 在KITTI数据集上的实验验证了VOCAL在可解释性和泛化性上的显著优势，推动了空间智能向更通用、可解释的方向发展。</td></tr>
 <tr><td>2025-06-29</td><td>TVG-SLAM: Robust Gaussian Splatting SLAM with Tri-view Geometric Constraints</td><td>[2506.23207](http://arxiv.org/pdf/2506.23207)</td><td>TVG-SLAM是一种基于3D高斯泼溅（3DGS）的RGB-only SLAM系统，通过三视图几何约束提升鲁棒性和场景重建质量。其核心贡献和创新点如下：
 
 ◆ 提出三视图几何范式，通过密集三视图匹配模块聚合可靠的帧间对应关系，形成跨帧的鲁棒几何约束，解决传统方法依赖光度损失的局限性。
@@ -413,6 +428,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-01</td><td>LoD-Loc v2: Aerial Visual Localization over Low Level-of-Detail City Models using Explicit Silhouette Alignment</td><td>[2507.00659](http://arxiv.org/pdf/2507.00659)</td><td>◆ 提出LoD-Loc v2方法，首次实现基于低细节层次（LoD1）城市模型的无人机空中视觉定位，突破以往依赖高细节模型（LoD2/LoD3）的限制。  
+◆ 采用粗到精的双阶段策略：通过显式轮廓对齐构建姿态代价体积筛选粗姿态，再结合粒子滤波与多光束跟踪进行精细优化。  
+◆ 创新性设计姿态代价体积，通过均匀采样姿态假设并量化投影轮廓与预测轮廓的对齐度，实现高效概率分布建模。  
+◆ 提出多光束跟踪的粒子滤波方法，显著扩大收敛域容错范围，可适应更大初始姿态误差。  
+◆ 发布首个覆盖10.7平方公里的LoD1城市模型数据集，包含真实RGB查询图像与姿态真值，推动该领域研究。  
+实验表明该方法在高/低LoD模型下均实现最优精度，甚至超越基于纹理模型的方法，为全球城市定位提供新范式。</td></tr>
 <tr><td>2025-06-28</td><td>Utilizing a Novel Deep Learning Method for Scene Categorization in Remote Sensing Data</td><td>[2506.22939](http://arxiv.org/pdf/2506.22939)</td><td>这篇论文的核心贡献和创新点如下：  
 
 ◆ 提出了一种名为“Cuttlefish Optimized Bidirectional Recurrent Neural Network (CO-BRNN)”的新型深度学习方法，用于遥感数据的场景分类。  
@@ -707,6 +728,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-02</td><td>What does really matter in image goal navigation?</td><td>[2507.01667](http://arxiv.org/pdf/2507.01667)</td><td>◆ 研究了端到端强化学习在图像目标导航任务中的有效性，挑战了传统依赖专用图像匹配或预训练视觉模块的方法。  
+◆ 通过大规模实验分析了多种架构设计（如延迟融合、通道堆叠、空间到深度投影和交叉注意力）对导航性能的影响。  
+◆ 揭示了仿真环境设置对现有方法性能的影响，指出仿真中存在的捷径问题，同时证明部分能力可迁移到更真实场景。  
+◆ 首次发现导航性能与相对位姿估计能力之间存在相关性，表明后者是导航任务中自然涌现的重要子技能。  
+◆ 为仅通过导航奖励信号训练相对位姿估计器提供了可能性，对具身AI及其他领域具有潜在影响。  
+◆ 通过系统实验验证了端到端训练智能体的潜力，同时指出了仿真与现实场景间的性能差距问题。</td></tr>
 <tr><td>2025-06-30</td><td>Efficient and Accurate Image Provenance Analysis: A Scalable Pipeline for Large-scale Images</td><td>[2506.23707](http://arxiv.org/pdf/2506.23707)</td><td>这篇论文的核心贡献是提出了一种高效且准确的图像溯源分析管道，解决了现有方法在精度和可扩展性上的两大瓶颈。  
 
 ◆ 创新性地引入修改关系追踪技术，显著提升了图像变体的过滤效果，能够全面发现与查询图像视觉相似度低的变体，解决了传统方法因低相似度而遗漏严重修改图像的问题。  
@@ -830,6 +857,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-02</td><td>Tile and Slide : A New Framework for Scaling NeRF from Local to Global 3D Earth Observation</td><td>[2507.01631](http://arxiv.org/pdf/2507.01631)</td><td>◆ 提出Snake-NeRF框架，首次实现单设备上大规模卫星影像的NeRF三维重建，突破传统方法受限于内存的小场景约束。  
+◆ 设计外存（out-of-core）训练方法，无需同时加载所有图像和网络，显著降低硬件需求。  
+◆ 创新性采用无重叠三维分块（3D tile）策略，将目标区域划分为独立训练的NeRF子模块。  
+◆ 提出重叠裁剪图像技术，确保每个子模块训练时获取完整必要像素，避免边界信息缺失。  
+◆ 开发2×2三维分块递进策略与分段采样器，有效消除分块边缘的三维重建误差。  
+实验证明该方法在单GPU上实现线性时间复杂度，且不损失重建质量，为全球尺度地球观测提供新范式。</td></tr>
+<tr><td>2025-07-01</td><td>Surgical Neural Radiance Fields from One Image</td><td>[2507.00969](http://arxiv.org/pdf/2507.00969)</td><td>◆ 提出了一种基于单张术中图像和术前MRI数据训练神经辐射场（NeRF）的新方法，解决了手术场景中多视角数据不足的限制。  
+◆ 利用术前MRI数据预先定义相机视角和图像集，结合神经风格迁移技术（WTC2和STROTSS）将术中图像外观迁移至预构建数据集，避免过度风格化。  
+◆ 实现了快速单图像NeRF训练，显著降低了术中数据采集的时间成本，提升了临床实用性。  
+◆ 在四例神经外科手术案例中验证了方法的有效性，定量对比显示其合成结果与真实手术显微镜图像高度一致。  
+◆ 重建结果与真实数据相比具有高结构相似性，证明了良好的重建质量和纹理保留能力。  
+◆ 为手术场景中的实时3D重建和视角合成提供了可行方案，突破了传统多视角方法的局限性。</td></tr>
+<tr><td>2025-07-01</td><td>PlantSegNeRF: A few-shot, cross-dataset method for plant 3D instance point cloud reconstruction via joint-channel NeRF with multi-view image instance matching</td><td>[2507.00371](http://arxiv.org/pdf/2507.00371)</td><td>◆提出PlantSegNeRF方法，首次实现从多视角RGB图像序列直接生成高精度植物器官实例点云，突破传统点云分割技术的局限性。  
+◆开发联合通道NeRF模型，同时渲染颜色、密度、语义和实例信息，构建包含多维度特征的隐式场景表示。  
+◆设计创新的多视角实例匹配模块，通过2D实例分割结果跨视图关联同一器官的实例ID，解决复杂植物结构的对应难题。  
+◆在语义分割任务中，关键指标（精确率、召回率等）平均提升16.1%-24.2%，显著优于现有最优方法。  
+◆在实例分割任务中，四项核心指标（mPrec等）最高提升达38.2%，实现跨物种的高泛化性表现。  
+◆为植物表型研究提供高通量三维数据生成方案，支持大规模植物模型开发。</td></tr>
 <tr><td>2025-06-30</td><td>AttentionGS: Towards Initialization-Free 3D Gaussian Splatting via Structural Attention</td><td>[2506.23611](http://arxiv.org/pdf/2506.23611)</td><td>◆ 提出AttentionGS框架，首次实现无需高质量初始点云的3D高斯泼溅重建，突破传统3DGS对SfM点云的强依赖。  
 ◆ 创新性引入两阶段注意力机制：几何注意力快速恢复场景全局结构，纹理注意力后期优化细粒度细节，实现从随机初始化直接重建。  
 ◆ 设计不透明度加权梯度策略，改进高斯分布致密化过程，显著提升表面重建质量。  
@@ -1035,4 +1080,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.02
+> 更新于: 2025.07.03
