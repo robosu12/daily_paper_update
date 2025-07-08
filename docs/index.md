@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.07)
+# 计算机视觉领域最新论文 (2025.07.08)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,29 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-07</td><td>Simultaneous Localization and Mapping Using Active mmWave Sensing in 5G NR</td><td>[2507.04662](http://arxiv.org/pdf/2507.04662)</td><td>◆ 提出利用毫米波5G NR系统进行主动感知，实现类似激光雷达的点云生成，克服了传统被动感知SLAM技术对镜面反射假设和简化地图表示的依赖。  
+◆ 采用二进制搜索方法从每个波束方向的功率延迟剖面中提取点云数据，提高了环境感知的精度和细节。  
+◆ 通过多个预定义目标点校准硬件延迟，确保点云数据的准确性，解决了硬件误差对定位的影响。  
+◆ 利用点云配准算法从连续轨迹视角的点云数据中估计终端位姿变化，实现了高精度的终端定位。  
+◆ 引入闭环检测和位姿图优化技术，进一步优化感知结果，实现了精确的终端定位和详细的无线电地图重建。  
+◆ 通过仿真和实验验证了系统的有效性，为5G NR在SLAM领域的应用提供了实践支持。</td></tr>
+<tr><td>2025-07-06</td><td>Lidar Variability: A Novel Dataset and Comparative Study of Solid-State and Spinning Lidars</td><td>[2507.04321](http://arxiv.org/pdf/2507.04321)</td><td>◆ 提出了首个包含穹顶式固态激光雷达（如Livox Mid-360）与其他固态及旋转式激光雷达（如Ouster系列）的综合数据集，填补了多类型激光雷达对比研究的空白。  
+◆ 首次在无IMU支持的里程计场景下，系统评估了低成本固态激光雷达（Livox Avia/Mid-360）与高端旋转式激光雷达的性能差异。  
+◆ 基于该数据集，对主流SLAM算法进行了跨传感器平台的基准测试，为异构激光雷达的定位与建图研究提供了标准化参考。  
+◆ 针对点云配准技术，通过室内外实测数据定量比较了点对点、点对平面及混合方法的性能差异。  
+◆ 研究结果为SLAM和3D重建领域在低成本固态激光雷达（尤其是穹顶式设计）的应用提供了数据支持与方法指导。  
+◆ 数据集与基准测试框架为未来异构激光雷达系统的算法开发与性能优化奠定了基础。</td></tr>
+<tr><td>2025-07-05</td><td>Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM</td><td>[2507.04004](http://arxiv.org/pdf/2507.04004)</td><td>◆ 首次提出结合LiDAR-惯性-相机的3D高斯泼溅SLAM系统，同步优化视觉质量、几何精度和实时性能，实现高保真3D高斯地图的实时构建与RGB/深度渲染。  
+◆ 针对LiDAR覆盖不足区域，采用轻量级零样本深度模型，融合RGB外观线索与稀疏LiDAR数据生成稠密深度图，显著提升稀疏LiDAR传感器的场景适用性。  
+◆ 利用高精度稀疏LiDAR深度监督高斯地图优化，并通过定制CUDA加速策略提升效率，增强几何准确性。  
+◆ 创新地将增量重建的高斯地图光度约束融入连续时间因子图优化，在LiDAR性能退化时提升位姿估计鲁棒性。  
+◆ 扩展系统功能至下游应用（如视频帧插值与快速3D网格提取），并构建包含真值位姿、深度图和外推轨迹的多模态数据集，支持严格评估。  
+◆ 在公开与自采数据集上验证系统对多种密度LiDAR的优越性，代码与数据集将开源。</td></tr>
+<tr><td>2025-07-04</td><td>Outdoor Monocular SLAM with Global Scale-Consistent 3D Gaussian Pointmaps</td><td>[2507.03737](http://arxiv.org/pdf/2507.03737)</td><td>◆ 提出S3PO-GS方法，首次实现基于RGB单目相机的户外全局尺度一致3D高斯点建图SLAM系统。  
+◆ 设计自一致跟踪模块，以3D高斯点图为锚点，避免累积尺度漂移，实现更精准鲁棒的相机跟踪（迭代次数更少）。  
+◆ 创新性提出基于分块的动态点图建图模块，引入几何先验知识的同时规避尺度歧义问题，显著提升复杂户外场景的跟踪精度和重建质量。  
+◆ 通过融合几何先验与3DGS渲染优势，解决了现有方法在户外场景缺乏几何约束或依赖独立跟踪模块导致的尺度漂移问题。  
+◆ 在Waymo、KITTI和DL3DV数据集上验证了方法的优越性，在新视角合成和跟踪精度上均超越现有3DGS SLAM方法。</td></tr>
 <tr><td>2025-07-01</td><td>RaGNNarok: A Light-Weight Graph Neural Network for Enhancing Radar Point Clouds on Unmanned Ground Vehicles</td><td>[2507.00937](http://arxiv.org/pdf/2507.00937)</td><td>◆提出RaGNNarok，一种基于图神经网络（GNN）的轻量级框架，用于增强雷达点云数据，解决现有雷达定位中稀疏点云、噪声和误检测问题。  
 ◆该框架在低成本设备（如树莓派5）上实现实时处理，推理时间仅7.3毫秒，无需额外计算资源，适合资源受限的移动机器人。  
 ◆通过GNN模型优化雷达点云，显著提升在复杂动态环境中的性能，克服了传统激光雷达和相机在视觉遮挡环境中的局限性。  
@@ -289,6 +312,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-04</td><td>MGSfM: Multi-Camera Geometry Driven Global Structure-from-Motion</td><td>[2507.03306](http://arxiv.org/pdf/2507.03306)</td><td>◆ 提出了一种专为多相机系统设计的全局运动平均框架，通过解耦旋转平均和混合平移平均模块提升传统全局SfM的鲁棒性问题。  
+◆ 采用分层策略的旋转平均方法：先估计刚性相机单元内的相对旋转，再计算全局刚性单元旋转，优化多相机系统的旋转估计精度。  
+◆ 创新性融合相机间约束和相机-点约束的平移平均模块，通过凸距离目标函数初始化相机位姿和3D点，并采用无偏非双线性角度目标函数进行细化。  
+◆ 在保持与增量式SfM相当精度的前提下，显著提升计算效率，实验证明其在大规模数据集上优于现有全局SfM方法。  
+◆ 框架充分利用多相机系统的固有相对位姿约束，为自动驾驶和机器人环境感知提供了更鲁棒的实时SfM解决方案。  
+◆ 开源代码便于学术和工业界应用验证，推动多相机SfM技术的实际部署。</td></tr>
 <tr><td>2025-06-30</td><td>Towards Initialization-free Calibrated Bundle Adjustment</td><td>[2506.23808](http://arxiv.org/pdf/2506.23808)</td><td>◆ 提出了一种无需初始化的标定束调整方法，能够在初始重建阶段直接利用相机标定信息，生成接近度量精度的重建结果（仅差一个相似变换）。  
 ◆ 创新性地引入具有标定信息的成对相对旋转估计，这些旋转估计仅对相似变换保持不变，从而推动解保持真实场景的度量特征。  
 ◆ 将旋转平均技术整合到伪物体空间误差（pOSE）框架中，实现了标定信息与初始化无关的SfM（运动恢复结构）流程。  
@@ -424,6 +453,35 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-07</td><td>An analysis of vision-language models for fabric retrieval</td><td>[2507.04735](http://arxiv.org/pdf/2507.04735)</td><td>◆ 提出了一种自动化标注流程，利用多模态大语言模型（MLLMs）生成两种文本描述（自由自然语言和结构化属性描述），解决了织物领域公开数据集的缺失问题。  
+◆ 首次系统评估了三种视觉语言模型（CLIP、LAION-CLIP和Meta Perception Encoder）在零样本织物图像检索任务中的性能。  
+◆ 发现结构化属性描述能显著提升检索精度，尤其在视觉复杂的织物类别中，揭示了文本描述形式对跨模态检索的关键影响。  
+◆ 验证了Meta Perception Encoder凭借更强的特征对齐能力，在织物检索任务中优于其他模型，为工业应用提供了模型选择依据。  
+◆ 指出零样本检索在细粒度织物领域的局限性，强调领域自适应方法的必要性，为后续研究指明方向。  
+◆ 结合技术性文本描述与先进视觉语言模型的策略，为制造业等专业领域的跨模态检索优化提供了实践指导。</td></tr>
+<tr><td>2025-07-07</td><td>What&#x27;s Making That Sound Right Now? Video-centric Audio-Visual Localization</td><td>[2507.04667](http://arxiv.org/pdf/2507.04667)</td><td>◆ 提出AVATAR基准测试，首次引入视频中心化视角，解决现有音频-视觉定位（AVL）研究仅关注静态图像的问题。  
+◆ 设计四种复杂场景（单声源、混合声源、多实体、屏幕外声源），突破传统方法假设声源可见且单一的局限性。  
+◆ 开发TAVLO模型，首创高分辨率时序建模机制，有效捕捉声音与视觉对象的动态关联。  
+◆ 实证发现传统方法因依赖全局音频特征和逐帧映射，难以追踪时序变化，而TAVLO通过时序建模实现精准对齐。  
+◆ 建立视频中心化AVL新标准，首次系统论证时序动态对音频-视觉定位的关键影响。</td></tr>
+<tr><td>2025-07-07</td><td>Simultaneous Localization and Mapping Using Active mmWave Sensing in 5G NR</td><td>[2507.04662](http://arxiv.org/pdf/2507.04662)</td><td>◆ 提出利用毫米波5G NR系统进行主动感知，实现类似激光雷达的点云生成，克服了传统被动SLAM技术依赖镜面反射假设的局限。  
+◆ 采用二进制搜索方法从每个波束方向的功率延迟剖面中提取点云，提高了环境感知的精度和细节。  
+◆ 通过多目标点校准硬件延迟，确保点云数据的准确性，为后续定位和建图提供可靠输入。  
+◆ 利用点云配准算法从连续轨迹视角估计终端位姿变化，实现动态环境下的高精度定位。  
+◆ 结合闭环检测与位姿图优化技术，进一步优化感知结果，完成精确的终端定位和无线电地图重建。  
+◆ 通过仿真和实验验证了系统的有效性，为5G NR在SLAM领域的应用提供了实践依据。</td></tr>
+<tr><td>2025-07-06</td><td>U-ViLAR: Uncertainty-Aware Visual Localization for Autonomous Driving via Differentiable Association and Registration</td><td>[2507.04503](http://arxiv.org/pdf/2507.04503)</td><td>◆ 提出U-ViLAR框架，首次将感知不确定性和定位不确定性同时纳入视觉定位系统，提升自动驾驶在复杂城市环境中的鲁棒性。  
+◆ 创新性地将视觉特征映射到鸟瞰图（BEV）空间，增强与高精地图的空间一致性，解决视角差异问题。  
+◆ 设计感知不确定性引导的特征关联模块（Perceptual Uncertainty-guided Association），有效降低感知误差对匹配的影响。  
+◆ 开发定位不确定性引导的配准模块（Localization Uncertainty-guided Registration），通过量化定位置信度优化位姿估计精度。  
+◆ 实现关联（大范围粗定位）与配准（精细定位）的协同优化，在保持大场景覆盖能力的同时提升厘米级定位准确性。  
+◆ 通过大规模自动驾驶车队实测验证，在GNSS失效、动态障碍物等复杂场景下保持稳定性能，综合精度超越现有方法。</td></tr>
+<tr><td>2025-07-04</td><td>Query-Based Adaptive Aggregation for Multi-Dataset Joint Training Toward Universal Visual Place Recognition</td><td>[2507.03831](http://arxiv.org/pdf/2507.03831)</td><td>◆提出基于查询的自适应聚合（QAA）方法，通过可学习的查询向量作为参考码本，有效提升多数据集联合训练中的信息容量，避免传统特征聚合层的信息饱和问题。  
+◆创新性地引入跨查询相似度（CS）计算机制，利用查询级图像特征与参考码本的相似性生成鲁棒描述符，显著提升模型泛化能力。  
+◆首次实现多数据集联合训练的通用视觉位置识别（VPR）模型，在保持单数据集峰值性能的同时，实现跨数据集的平衡泛化表现。  
+◆通过可视化分析揭示学习到的查询向量具有跨数据集的多样化注意力模式，为多源数据融合提供可解释性依据。  
+◆在计算效率和参数量控制方面表现优异，未显著增加模型复杂度的情况下实现性能突破。  
+◆开源代码并辅以详尽的消融实验，验证了QAA机制的可扩展性和核心组件有效性。</td></tr>
 <tr><td>2025-07-01</td><td>LoD-Loc v2: Aerial Visual Localization over Low Level-of-Detail City Models using Explicit Silhouette Alignment</td><td>[2507.00659](http://arxiv.org/pdf/2507.00659)</td><td>◆ 提出LoD-Loc v2方法，首次实现基于低细节层次（LoD1）城市模型的无人机空中视觉定位，突破以往依赖高细节模型（LoD2/LoD3）的限制。  
 ◆ 采用粗到精的双阶段策略：通过显式轮廓对齐构建姿态代价体积筛选粗姿态，再结合粒子滤波与多光束跟踪进行精细优化。  
 ◆ 创新性设计姿态代价体积，通过均匀采样姿态假设并量化投影轮廓与预测轮廓的对齐度，实现高效概率分布建模。  
@@ -720,6 +778,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-05</td><td>From Query to Explanation: Uni-RAG for Multi-Modal Retrieval-Augmented Learning in STEM</td><td>[2507.03868](http://arxiv.org/pdf/2507.03868)</td><td>◆ 提出Uni-Retrieval模块，通过提取查询风格原型并动态匹配Prompt Bank中的标记，解决现有检索系统无法处理教育场景多样性和模糊性的问题。  
+◆ 引入Prompt Bank，结合MoE-LoRA模块编码领域知识，支持测试时适应未见查询类型，增强检索灵活性。  
+◆ 将Uni-Retrieval与轻量级指令调优语言模型结合，构建完整的Uni-RAG流程，实现从检索到自然语言生成的教育内容输出。  
+◆ 采用风格条件查询机制，生成符合学习目标的可读解释、反馈或教学内容，提升个性化教学效果。  
+◆ 在SER等多模态基准测试中，Uni-RAG在检索精度和生成质量上均优于基线系统，同时保持低计算成本。  
+◆ 为STEM教育提供可扩展的智能解决方案，弥合检索与生成的鸿沟，支持高效、可解释的学习辅助。</td></tr>
 <tr><td>2025-07-02</td><td>What does really matter in image goal navigation?</td><td>[2507.01667](http://arxiv.org/pdf/2507.01667)</td><td>◆ 研究了端到端强化学习在图像目标导航任务中的有效性，挑战了传统依赖专用图像匹配或预训练视觉模块的方法。  
 ◆ 通过大规模实验分析了多种架构设计（如延迟融合、通道堆叠、空间到深度投影和交叉注意力）对导航性能的影响。  
 ◆ 揭示了仿真环境设置对现有方法性能的影响，指出仿真中存在的捷径问题，同时证明部分能力可迁移到更真实场景。  
@@ -748,7 +812,7 @@
 ◆ 引入特征转换到潜在空间的策略，有效应对关键点低重复性和描述符区分度不足的挑战。  
 ◆ 实验证明该方法在跨特征场景下显著提升了图像匹配和视觉定位的准确率。  
 ◆ 在多个基准数据集上验证了方法的有效性，为实际应用中不同描述符混合使用的场景提供了可行解决方案。</td></tr>
-<tr><td>2025-06-27</td><td>Q-Frame: Query-aware Frame Selection and Multi-Resolution Adaptation for Video-LLMs</td><td>[2506.22139](http://arxiv.org/pdf/2506.22139)</td><td>◆提出Q-Frame方法，通过查询自适应的帧选择策略解决视频-大语言模型中关键时空信息丢失的问题，突破传统均匀采样的局限性。  
+<tr><td>2025-07-07</td><td>Q-Frame: Query-aware Frame Selection and Multi-Resolution Adaptation for Video-LLMs</td><td>[2506.22139](http://arxiv.org/pdf/2506.22139)</td><td>◆提出Q-Frame方法，通过查询自适应的帧选择策略解决视频-大语言模型中关键时空信息丢失的问题，突破传统均匀采样的局限性。  
 ◆创新性地结合CLIP等文本-图像匹配网络，实现无需训练的即插即用式帧选择，利用Gumbel-Max技巧提升选择效率。  
 ◆引入多分辨率缩放机制，根据视频内容和查询需求动态调整帧的时空分辨率，优化计算资源分配。  
 ◆在保持计算负载不变的前提下，显著增加可处理的帧数，同时保留对任务至关重要的时空细节。  
@@ -847,6 +911,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-06</td><td>A View-consistent Sampling Method for Regularized Training of Neural Radiance Fields</td><td>[2507.04408](http://arxiv.org/pdf/2507.04408)</td><td>◆ 提出基于视角一致分布的采样方法，替代传统固定深度值估计，用于NeRF的正则化训练。  
+◆ 利用低层颜色特征和基础模型提取的高层特征，构建3D采样点在2D投影位置的视角一致性分布。  
+◆ 通过从视角一致性分布中采样，实现对NeRF训练的隐式正则化，避免依赖误差较大的深度估计。  
+◆ 结合深度推进损失（depth-pushing loss）与采样技术，共同消除训练中的失败模式。  
+◆ 在公开数据集上的实验表明，该方法显著优于现有NeRF变体和深度正则化方法，尤其适用于户外无界场景。  
+◆ 解决了传统深度估计方法需要昂贵3D监督和泛化性差的问题，提升了真实场景下的3D重建质量。</td></tr>
 <tr><td>2025-07-02</td><td>Tile and Slide : A New Framework for Scaling NeRF from Local to Global 3D Earth Observation</td><td>[2507.01631](http://arxiv.org/pdf/2507.01631)</td><td>◆ 提出Snake-NeRF框架，首次实现单设备上大规模卫星影像的NeRF三维重建，突破传统方法受限于内存的小场景约束。  
 ◆ 设计外存（out-of-core）训练方法，无需同时加载所有图像和网络，显著降低硬件需求。  
 ◆ 创新性采用无重叠三维分块（3D tile）策略，将目标区域划分为独立训练的NeRF子模块。  
@@ -1068,4 +1138,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.07
+> 更新于: 2025.07.08
