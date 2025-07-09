@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.08)
+# 计算机视觉领域最新论文 (2025.07.09)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-08</td><td>Cooperative Mapping, Localization, and Beam Management via Multi-Modal SLAM in ISAC Systems</td><td>[2507.05718](http://arxiv.org/pdf/2507.05718)</td><td>◆ 提出了一种新颖的多模态SLAM框架，解决了协同多用户SLAM在ISAC系统中的理论建模和通信层集成不足的问题。  
+◆ 开发了基于贝叶斯估计的协同多用户SLAM方法，并设计了两阶段算法，在动态异构感知条件下实现鲁棒的无线电地图构建。  
+◆ 引入多模态定位策略，通过误差感知模型融合SLAM结果、摄像头多目标跟踪和IMU数据，显著提升了多用户场景下的UE定位精度。  
+◆ 提出了感知辅助的波束管理方案，利用全局无线电地图和定位数据生成UE特定的先验信息，优化波束选择，降低用户间干扰并提升下行频谱效率。  
+◆ 仿真结果表明，该系统将无线电地图精度提升高达60%，定位精度提高37.5%，在室内外环境中均显著优于传统方法。</td></tr>
 <tr><td>2025-07-07</td><td>Simultaneous Localization and Mapping Using Active mmWave Sensing in 5G NR</td><td>[2507.04662](http://arxiv.org/pdf/2507.04662)</td><td>◆ 提出利用毫米波5G NR系统进行主动感知，实现类似激光雷达的点云生成，克服了传统被动感知SLAM技术对镜面反射假设和简化地图表示的依赖。  
 ◆ 采用二进制搜索方法从每个波束方向的功率延迟剖面中提取点云数据，提高了环境感知的精度和细节。  
 ◆ 通过多个预定义目标点校准硬件延迟，确保点云数据的准确性，解决了硬件误差对定位的影响。  
@@ -457,13 +462,31 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-08</td><td>Automatic Synthesis of High-Quality Triplet Data for Composed Image Retrieval</td><td>[2507.05970](http://arxiv.org/pdf/2507.05970)</td><td>◆ 提出了一种可扩展的自动三元组生成流程，解决了传统CIR方法依赖人工标注数据导致的扩展性和零样本能力受限问题。  
+◆ 构建了首个全合成数据集CIRHS，利用大语言模型生成多样化提示词，并通过文本到图像生成模型控制生成具有相同元素的图像对，经筛选重组形成高质量训练数据。  
+◆ 创新性地提出混合上下文对齐框架（CoAlign），实现了全局对齐与局部推理的协同优化，能够学习更鲁棒且信息丰富的表征。  
+◆ 首次验证了在全合成数据集上训练CIR模型的可行性，CoAlign在三个常用基准测试中展现出卓越的零样本性能。  
+◆ 在监督训练场景下，该方法超越所有现有先进CIR模型，证明了检索框架的有效性。  
+◆ 开源代码和CIRHS数据集将促进CIR领域的进一步研究。</td></tr>
+<tr><td>2025-07-08</td><td>OFFSET: Segmentation-based Focus Shift Revision for Composed Image Retrieval</td><td>[2507.05631](http://arxiv.org/pdf/2507.05631)</td><td>◆ 提出基于分割的焦点映射特征提取器，通过主导区域分割和双重焦点映射模块，有效区分图像中的关键区域与噪声，提升查询特征质量。  
+◆ 设计文本引导的焦点修正模块，利用修改文本的语义信息自适应调整参考图像的视觉焦点，解决传统方法中文本优先级被忽视的问题。  
+◆ 首次在组合图像检索（CIR）中引入视觉主导区域分割技术，减少噪声干扰对多模态特征融合的负面影响。  
+◆ 通过双焦点映射机制同步优化视觉与文本特征提取，增强模型对用户复杂修改意图的理解能力。  
+◆ 构建完整网络OFFSET，在四个基准数据集上验证其优越性，为CIR领域提供新的解决方案。  
+◆ 公开代码与数据，促进后续研究发展。</td></tr>
+<tr><td>2025-07-07</td><td>Llama Nemoretriever Colembed: Top-Performing Text-Image Retrieval Model</td><td>[2507.05513](http://arxiv.org/pdf/2507.05513)</td><td>◆ 提出llama-nemoretriever-colembed模型，实现文本-图像跨模态检索的顶尖性能，在ViDoRe V1/V2基准上NDCG@5分别达到91.0和63.5，刷新榜单记录。  
+◆ 基于NVIDIA Eagle2视觉语言模型进行架构改造，将因果注意力替换为双向注意力机制，增强多模态特征交互能力。  
+◆ 创新性地引入ColBERT风格的延迟交互机制，在共享嵌入空间中实现细粒度跨模态检索，显著提升匹配精度。  
+◆ 设计两阶段训练策略，先预训练再微调，有效增强模型检索能力。  
+◆ 全面分析模型在存储效率与检索精度之间的权衡关系，为实际应用提供优化依据。  
+◆ 发布1B和3B两种参数量变体，其中3B版本成为当前性能最优的跨模态检索模型。</td></tr>
 <tr><td>2025-07-07</td><td>An analysis of vision-language models for fabric retrieval</td><td>[2507.04735](http://arxiv.org/pdf/2507.04735)</td><td>◆ 提出了一种自动化标注流程，利用多模态大语言模型（MLLMs）生成两种文本描述（自由自然语言和结构化属性描述），解决了织物领域公开数据集的缺失问题。  
 ◆ 首次系统评估了三种视觉语言模型（CLIP、LAION-CLIP和Meta Perception Encoder）在零样本织物图像检索任务中的性能。  
 ◆ 发现结构化属性描述能显著提升检索精度，尤其在视觉复杂的织物类别中，揭示了文本描述形式对跨模态检索的关键影响。  
 ◆ 验证了Meta Perception Encoder凭借更强的特征对齐能力，在织物检索任务中优于其他模型，为工业应用提供了模型选择依据。  
 ◆ 指出零样本检索在细粒度织物领域的局限性，强调领域自适应方法的必要性，为后续研究指明方向。  
 ◆ 结合技术性文本描述与先进视觉语言模型的策略，为制造业等专业领域的跨模态检索优化提供了实践指导。</td></tr>
-<tr><td>2025-07-07</td><td>What&#x27;s Making That Sound Right Now? Video-centric Audio-Visual Localization</td><td>[2507.04667](http://arxiv.org/pdf/2507.04667)</td><td>◆ 提出AVATAR基准测试，首次引入视频中心化视角，解决现有音频-视觉定位（AVL）研究仅关注静态图像的问题。  
+<tr><td>2025-07-08</td><td>What&#x27;s Making That Sound Right Now? Video-centric Audio-Visual Localization</td><td>[2507.04667](http://arxiv.org/pdf/2507.04667)</td><td>◆ 提出AVATAR基准测试，首次引入视频中心化视角，解决现有音频-视觉定位（AVL）研究仅关注静态图像的问题。  
 ◆ 设计四种复杂场景（单声源、混合声源、多实体、屏幕外声源），突破传统方法假设声源可见且单一的局限性。  
 ◆ 开发TAVLO模型，首创高分辨率时序建模机制，有效捕捉声音与视觉对象的动态关联。  
 ◆ 实证发现传统方法因依赖全局音频特征和逐帧映射，难以追踪时序变化，而TAVLO通过时序建模实现精准对齐。  
@@ -921,6 +944,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-08</td><td>Reflections Unlock: Geometry-Aware Reflection Disentanglement in 3D Gaussian Splatting for Photorealistic Scenes Rendering</td><td>[2507.06103](http://arxiv.org/pdf/2507.06103)</td><td>◆ 提出Ref-Unlock框架，基于3D高斯泼溅（3DGS）实现几何感知的反射分离，首次在3DGS中显式解耦透射与反射成分，解决现有方法将反射误判为几何结构的问题。  
+◆ 采用双分支表示结合高阶球谐函数，有效捕捉高频反射细节，同时通过反射移除模块提供伪无反射监督信号，实现更干净的反射分解。  
+◆ 引入伪深度图与几何感知的双边平滑约束，增强3D几何一致性和分解稳定性，显著减少复杂场景下的表面伪影与模糊重建。  
+◆ 支持基于视觉基础模型（VFMs）的灵活反射编辑功能，扩展了方法在实际应用中的可操作性。  
+◆ 实验证明该方法大幅超越传统基于GS的反射处理方法，并与NeRF类模型性能相当，同时保持更高的计算效率。  
+◆ 为含反射场景的光照真实渲染提供了高效且泛化性强的解决方案，代码已开源。</td></tr>
+<tr><td>2025-07-08</td><td>DreamArt: Generating Interactable Articulated Objects from a Single Image</td><td>[2507.05763](http://arxiv.org/pdf/2507.05763)</td><td>◆ DreamArt首次提出从单张图像生成可交互的关节化3D物体的完整框架，填补了现有方法在部件分解和关节建模方面的空白。  
+◆ 通过三阶段流程创新：结合图像生成3D、掩码提示的部件分割与修复，解决了单视角下部件形状不完整的问题。  
+◆ 提出基于视频扩散模型的关节运动先验学习，利用部件遮罩和修复图像消除遮挡歧义，实现逼真关节运动生成。  
+◆ 采用双四元数表示关节运动参数，配合全局纹理优化，确保多部件纹理一致性与高质量渲染效果。  
+◆ 实验证明该方法能生成部件形状准确、外观逼真且关节运动合理的3D资产，为AR/VR和具身AI提供了可扩展的解决方案。</td></tr>
 <tr><td>2025-07-06</td><td>A View-consistent Sampling Method for Regularized Training of Neural Radiance Fields</td><td>[2507.04408](http://arxiv.org/pdf/2507.04408)</td><td>◆ 提出基于视角一致分布的采样方法，替代传统固定深度值估计，用于NeRF的正则化训练。  
 ◆ 利用低层颜色特征和基础模型提取的高层特征，构建3D采样点在2D投影位置的视角一致性分布。  
 ◆ 通过从视角一致性分布中采样，实现对NeRF训练的隐式正则化，避免依赖误差较大的深度估计。  
@@ -1150,4 +1184,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.08
+> 更新于: 2025.07.09
