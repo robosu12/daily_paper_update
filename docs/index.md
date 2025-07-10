@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.09)
+# 计算机视觉领域最新论文 (2025.07.10)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,14 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-08</td><td>Mapping the Catacombs: An Underwater Cave Segment of the Devil&#x27;s Eye System</td><td>[2507.06397](http://arxiv.org/pdf/2507.06397)</td><td>这篇论文的核心贡献是提出了一种低成本的水下洞穴测绘框架，并应用于佛罗里达州Ginnie Springs的Devil&#x27;s Eye洞穴系统。  
+
+◆ 使用廉价运动相机结合潜水电脑，实现了水下洞穴轨迹估计和稀疏点云重建，降低了测绘成本。  
+◆ 通过潜水电脑数据增强了视觉/惯性框架（SVIn2），实现了Z轴维度及横滚/俯仰角度的观测，弥补了纯视觉方法的不足。  
+◆ 将SVIn2生成的关键帧与相机位姿作为输入，结合全局优化框架COLMAP，重建了局部区域的高密度三维模型。  
+◆ 提出了一种洞穴通道的一维抽象表示方法，通过平均轨迹与边界（上下左右）描述洞穴轮廓。  
+◆ 采用MNemo V2仪器进行人工测绘验证，证明了该方法的有效性，同时表明运动相机足以构建洞穴地图的基本要素。  
+◆ 通过VI-SLAM与全局优化框架的协同，实现了选定区域的逼真密集三维重建，为水文地质和考古研究提供了新工具。</td></tr>
 <tr><td>2025-07-08</td><td>Cooperative Mapping, Localization, and Beam Management via Multi-Modal SLAM in ISAC Systems</td><td>[2507.05718](http://arxiv.org/pdf/2507.05718)</td><td>◆ 提出了一种新颖的多模态SLAM框架，解决了协同多用户SLAM在ISAC系统中的理论建模和通信层集成不足的问题。  
 ◆ 开发了基于贝叶斯估计的协同多用户SLAM方法，并设计了两阶段算法，在动态异构感知条件下实现鲁棒的无线电地图构建。  
 ◆ 引入多模态定位策略，通过误差感知模型融合SLAM结果、摄像头多目标跟踪和IMU数据，显著提升了多用户场景下的UE定位精度。  
@@ -39,7 +47,7 @@
 ◆ 针对点云配准技术，通过室内外实测数据定量比较了点对点、点对平面及混合方法的性能差异。  
 ◆ 研究结果为SLAM和3D重建领域在低成本固态激光雷达（尤其是穹顶式设计）的应用提供了数据支持与方法指导。  
 ◆ 数据集与基准测试框架为未来异构激光雷达系统的算法开发与性能优化奠定了基础。</td></tr>
-<tr><td>2025-07-05</td><td>Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM</td><td>[2507.04004](http://arxiv.org/pdf/2507.04004)</td><td>◆ 首次提出结合LiDAR-惯性-相机的3D高斯泼溅SLAM系统，同步优化视觉质量、几何精度和实时性能，实现高保真3D高斯地图的实时构建与RGB/深度渲染。  
+<tr><td>2025-07-09</td><td>Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM</td><td>[2507.04004](http://arxiv.org/pdf/2507.04004)</td><td>◆ 首次提出结合LiDAR-惯性-相机的3D高斯泼溅SLAM系统，同步优化视觉质量、几何精度和实时性能，实现高保真3D高斯地图的实时构建与RGB/深度渲染。  
 ◆ 针对LiDAR覆盖不足区域，采用轻量级零样本深度模型，融合RGB外观线索与稀疏LiDAR数据生成稠密深度图，显著提升稀疏LiDAR传感器的场景适用性。  
 ◆ 利用高精度稀疏LiDAR深度监督高斯地图优化，并通过定制CUDA加速策略提升效率，增强几何准确性。  
 ◆ 创新地将增量重建的高斯地图光度约束融入连续时间因子图优化，在LiDAR性能退化时提升位姿估计鲁棒性。  
@@ -345,7 +353,7 @@
 ◆ 设计了基于体素的场景致密化策略，有效指导大规模场景的重建过程，提升了场景覆盖率和几何细节的完整性。  
 ◆ 在室内外多种尺度场景的实验中，ICP-3DGS在相机位姿估计和新视角合成任务上均优于现有方法，证明了其鲁棒性和泛化能力。  
 ◆ 开源了完整代码，为后续研究提供了可复现的基础，推动了无预计算位姿的神经渲染技术的发展。</td></tr>
-<tr><td>2025-06-26</td><td>Wild refitting for black box prediction</td><td>[2506.21460](http://arxiv.org/pdf/2506.21460)</td><td>◆ 提出了一种名为&quot;wild refitting&quot;的高效计算流程，仅需单次数据集和预测方法的黑箱访问，通过残差计算、对称化和缩放三个步骤，为惩罚非参数估计提供实例级均方预测误差的高概率上界。  
+<tr><td>2025-07-08</td><td>Wild refitting for black box prediction</td><td>[2506.21460](http://arxiv.org/pdf/2506.21460)</td><td>◆ 提出了一种名为&quot;wild refitting&quot;的高效计算流程，仅需单次数据集和预测方法的黑箱访问，通过残差计算、对称化和缩放三个步骤，为惩罚非参数估计提供实例级均方预测误差的高概率上界。  
 ◆ 创新性地采用Rademacher残差对称化技术（类似wild bootstrap变体），通过预定义缩放因子ρ调整残差，构建以当前估计为中心的修正预测问题。  
 ◆ 在允许噪声异质性的较温和条件下，理论证明了该方法性能：当wild噪声尺度ρ选择适当时，wild refit能确保预测误差上界的有效性。  
 ◆ 为实际应用提供关键设计指导，包括残差构建方法、wild子问题中噪声缩放量的选择依据，以及黑箱程序局部稳定性的分析框架。  
@@ -458,6 +466,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-09</td><td>Evaluating Attribute Confusion in Fashion Text-to-Image Generation</td><td>[2507.07079](http://arxiv.org/pdf/2507.07079)</td><td>◆ 针对时尚领域文本生成图像（T2I）任务中现有评估方法难以捕捉细粒度属性关联的问题，提出了一种基于视觉定位和视觉问答（VQA）的新型评估框架。  
+◆ 通过单实体定位策略，在视觉和文本模态上同步分析属性混淆现象（如属性正确生成但归属错误实体），解决了传统方法对复杂组合语义评估的局限性。  
+◆ 设计了局部化人工评估协议，并创新性地提出自动指标L-VQAScore，结合视觉定位与VQA技术，同时检测属性正确反映（reflection）和错误泄漏（leakage）情况。  
+◆ 构建了包含挑战性组合对齐场景的新数据集，验证了L-VQAScore在细粒度实体-属性关联评估上的优越性，其与人类判断的相关性超越现有最优方法。  
+◆ 该工作为时尚领域T2I模型提供了可扩展的客观评估方案，显著减少对主观评价的依赖，推动生成模型在复杂语义场景下的精准优化。</td></tr>
+<tr><td>2025-07-09</td><td>MS-DPPs: Multi-Source Determinantal Point Processes for Contextual Diversity Refinement of Composite Attributes in Text to Image Retrieval</td><td>[2507.06654](http://arxiv.org/pdf/2507.06654)</td><td>◆ 提出新任务CDR-CA（复合属性上下文多样性优化），针对文本到图像检索中不同应用场景对多样性需求的差异，实现多属性多样性按需调整。  
+◆ 提出多源行列式点过程（MS-DPPs），将传统DPP扩展为多源形式，通过流形表示构建统一相似性矩阵，支持多属性联合优化。  
+◆ 引入切线归一化（Tangent Normalization）技术，有效融合不同上下文信息，动态适应多样化应用场景的需求。  
+◆ 实验验证了MS-DPPs在多样性优化任务中的优越性能，尤其在复合属性控制方面显著优于传统方法。  
+◆ 公开代码促进后续研究，为文本到图像检索的实用化多样性优化提供新基线。</td></tr>
 <tr><td>2025-07-08</td><td>Automatic Synthesis of High-Quality Triplet Data for Composed Image Retrieval</td><td>[2507.05970](http://arxiv.org/pdf/2507.05970)</td><td>◆ 提出了一种可扩展的自动三元组生成流程，解决了传统CIR方法依赖人工标注数据导致的扩展性和零样本能力受限问题。  
 ◆ 构建了首个全合成数据集CIRHS，利用大语言模型生成多样化提示词，并通过文本到图像生成模型控制生成具有相同元素的图像对，经筛选重组形成高质量训练数据。  
 ◆ 创新性地提出混合上下文对齐框架（CoAlign），实现了全局对齐与局部推理的协同优化，能够学习更鲁棒且信息丰富的表征。  
@@ -723,6 +741,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-09</td><td>Reading a Ruler in the Wild</td><td>[2507.07077](http://arxiv.org/pdf/2507.07077)</td><td>◆ 提出RulerNet深度学习框架，将标尺读数重新定义为统一的关键点检测问题，通过几何级数参数表示标尺刻度，实现透视变换下的鲁棒性测量。  
+◆ 采用抗畸变标注和训练策略直接定位厘米刻度，摆脱传统方法对手工阈值或固定流程的依赖，显著提升对不同标尺类型和成像条件的泛化能力。  
+◆ 开发可扩展的合成数据生成流程，结合图形化标尺生成与ControlNet技术添加逼真背景，有效缓解数据稀缺问题并增强训练多样性。  
+◆ 提出轻量级DeepGP网络，直接从噪声标记回归几何级数参数，替代传统迭代优化方法，实现移动或边缘设备上的实时尺度估计。  
+◆ 实验证明RulerNet在复杂真实场景中能提供高精度、一致且高效的尺度估计，为生物医学、法医等领域的自动化测量提供通用解决方案。</td></tr>
+<tr><td>2025-07-09</td><td>MK-Pose: Category-Level Object Pose Estimation via Multimodal-Based Keypoint Learning</td><td>[2507.06662](http://arxiv.org/pdf/2507.06662)</td><td>◆ 提出MK-Pose框架，首次融合RGB图像、点云数据和类别级文本描述，通过多模态输入提升类别级物体姿态估计的鲁棒性。  
+◆ 设计自监督关键点检测模块，结合注意力机制生成查询、软热图匹配和图关系建模，有效解决遮挡和跨实例泛化问题。  
+◆ 创新性引入图增强特征融合模块，整合局部几何信息与全局上下文，增强对复杂场景的建模能力。  
+◆ 在CAMERA25和REAL275数据集上验证性能，无需形状先验即超越现有最优方法（IoU和平均精度指标）。  
+◆ 额外测试跨数据集能力（HouseCat6D），证明模型具备强泛化性，适用于实际工业场景。  
+◆ 开源代码并提供完整实现，推动领域研究与应用落地。</td></tr>
 <tr><td>2025-06-27</td><td>MatChA: Cross-Algorithm Matching with Feature Augmentation</td><td>[2506.22336](http://arxiv.org/pdf/2506.22336)</td><td>◆ 提出了首个解决跨特征检测器场景下视觉定位问题的方法MatChA，突破了现有方法必须使用相同检测器的限制。  
 ◆ 通过特征描述符增强技术提升跨检测器特征匹配性能，解决了关键点重复率低和描述符区分度不足的难题。  
 ◆ 创新性地将增强后的特征转换到潜在空间，实现了不同算法生成描述符的有效匹配。  
@@ -801,6 +830,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-09</td><td>Dual-Granularity Cross-Modal Identity Association for Weakly-Supervised Text-to-Person Image Matching</td><td>[2507.06744](http://arxiv.org/pdf/2507.06744)</td><td>◆ 提出局部-全局双粒度身份关联机制，通过批内跨模态显式关联强化身份约束，提升模型对细微差异的捕捉能力。  
+◆ 构建以视觉模态为锚点的动态跨模态关联网络，引入基于置信度的动态调整机制，有效增强弱关联样本的识别能力。  
+◆ 设计信息不对称样本对构建方法，结合一致性学习解决困难样本挖掘问题，提升模型鲁棒性。  
+◆ 首次在弱监督文本-行人图像匹配任务中实现复杂一对多身份关系的建模，突破性能瓶颈。  
+◆ 实验证明该方法显著提升跨模态匹配准确率，为实际应用提供高效解决方案。</td></tr>
 <tr><td>2025-07-05</td><td>From Query to Explanation: Uni-RAG for Multi-Modal Retrieval-Augmented Learning in STEM</td><td>[2507.03868](http://arxiv.org/pdf/2507.03868)</td><td>◆ 提出Uni-Retrieval模块，通过提取查询风格原型并动态匹配Prompt Bank中的标记，解决现有检索系统无法处理教育场景多样性和模糊性的问题。  
 ◆ 引入Prompt Bank，结合MoE-LoRA模块编码领域知识，支持测试时适应未见查询类型，增强检索灵活性。  
 ◆ 将Uni-Retrieval与轻量级指令调优语言模型结合，构建完整的Uni-RAG流程，实现从检索到自然语言生成的教育内容输出。  
@@ -934,6 +968,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-08</td><td>A Probabilistic Approach to Uncertainty Quantification Leveraging 3D Geometry</td><td>[2507.06269](http://arxiv.org/pdf/2507.06269)</td><td>◆ 提出BayesSDF，首个针对神经隐式SDF模型的概率框架，解决3D几何不确定性量化问题，特别适用于科学模拟（如森林流体建模）。  
+◆ 通过拉普拉斯近似和基于Hessian的局部表面稳定性度量，实现高效计算且几何感知的不确定性估计，克服传统方法计算效率低的问题。  
+◆ 首次将几何一致性直接融入不确定性量化，生成与重建误差高度相关的校准化置信度地图，优于忽略几何的现有方法。  
+◆ 证明SDF的连续可微几何特性比辐射场模型（如NeRF）更适合物理模拟，为下游任务（如机器人决策）提供可靠几何基础。  
+◆ 在合成与真实数据集上验证了方法的优越性，其不确定性预测与重建缺陷高度吻合，校准性和几何一致性均超越现有技术。</td></tr>
 <tr><td>2025-07-08</td><td>Reflections Unlock: Geometry-Aware Reflection Disentanglement in 3D Gaussian Splatting for Photorealistic Scenes Rendering</td><td>[2507.06103](http://arxiv.org/pdf/2507.06103)</td><td>◆ 提出Ref-Unlock框架，基于3D高斯泼溅（3DGS）实现几何感知的反射分离，首次在3DGS中显式解耦透射与反射成分，解决现有方法将反射误判为几何结构的问题。  
 ◆ 采用双分支表示结合高阶球谐函数，有效捕捉高频反射细节，同时通过反射移除模块提供伪无反射监督信号，实现更干净的反射分解。  
 ◆ 引入伪深度图与几何感知的双边平滑约束，增强3D几何一致性和分解稳定性，显著减少复杂场景下的表面伪影与模糊重建。  
@@ -1172,4 +1211,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.09
+> 更新于: 2025.07.10
