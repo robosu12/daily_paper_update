@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.10)
+# 计算机视觉领域最新论文 (2025.07.11)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,23 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-10</td><td>Hardware-Aware Feature Extraction Quantisation for Real-Time Visual Odometry on FPGA Platforms</td><td>[2507.07903](http://arxiv.org/pdf/2507.07903)</td><td>◆ 提出了一种基于量化SuperPoint卷积神经网络的嵌入式无监督架构，用于实时视觉里程计中的特征点检测与描述。  
+◆ 通过硬件感知的模型量化技术（使用Brevitas库和FINN框架），在保证高检测质量的同时显著降低了计算需求。  
+◆ 在AMD/Xilinx Zynq UltraScale+ FPGA平台上实现高效部署，利用深度学习处理单元（DPU）优化性能。  
+◆ 实现了640×480分辨率图像54帧/秒的处理速度，优于当前同类先进解决方案。  
+◆ 在TUM数据集上验证了不同量化技术对模型精度与性能的影响，为资源受限平台（如移动/嵌入式系统）提供了实用优化方案。</td></tr>
+<tr><td>2025-07-10</td><td>IRAF-SLAM: An Illumination-Robust and Adaptive Feature-Culling Front-End for Visual SLAM in Challenging Environments</td><td>[2507.07752](http://arxiv.org/pdf/2507.07752)</td><td>◆ IRAF-SLAM提出了一种针对复杂光照环境的视觉SLAM前端框架，通过自适应机制提升系统鲁棒性。  
+◆ 创新性地引入图像增强方案，动态预处理不同光照条件下的图像质量，改善特征提取基础。  
+◆ 开发了基于图像熵、像素强度和梯度分析的自适应特征提取机制，根据环境动态调整检测灵敏度。  
+◆ 提出新型特征筛选策略，结合密度分布分析和光照影响因子，有效过滤不可靠特征点。  
+◆ 在TUM-VI和EuRoC数据集上的实验表明，该方法显著减少了跟踪失败率，并在恶劣光照下实现了优于现有方法的轨迹精度。  
+◆ 整个系统在提升鲁棒性的同时保持了较低计算开销，为实际应用提供了可行解决方案。</td></tr>
+<tr><td>2025-07-09</td><td>g2o vs. Ceres: Optimizing Scan Matching in Cartographer SLAM</td><td>[2507.07142](http://arxiv.org/pdf/2507.07142)</td><td>◆ 首次在Cartographer框架中对g2o和Ceres两种优化器进行了系统的扫描匹配性能对比分析。  
+◆ 通过实验验证了Ceres作为Cartographer默认求解器在速度、收敛效率和地图清晰度上的全面优势。  
+◆ 发现Ceres在真实场景（AgileX LIMO机器人）中表现更优，所需迭代次数更少且收敛更快。  
+◆ 揭示了g2o在局部障碍物检测方面的特殊优势，为其在特定场景的应用价值提供了依据。  
+◆ 为SLAM系统优化器选择提供了实证参考，指出不同优化器的适用场景差异。  
+◆ 通过定量化指标（如迭代次数、收敛时间）对比，深化了对两种优化器性能特征的理解。</td></tr>
 <tr><td>2025-07-08</td><td>Mapping the Catacombs: An Underwater Cave Segment of the Devil&#x27;s Eye System</td><td>[2507.06397](http://arxiv.org/pdf/2507.06397)</td><td>这篇论文的核心贡献是提出了一种低成本的水下洞穴测绘框架，并应用于佛罗里达州Ginnie Springs的Devil&#x27;s Eye洞穴系统。  
 
 ◆ 使用廉价运动相机结合潜水电脑，实现了水下洞穴轨迹估计和稀疏点云重建，降低了测绘成本。  
@@ -466,6 +483,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-10</td><td>SCREP: Scene Coordinate Regression and Evidential Learning-based Perception-Aware Trajectory Generation</td><td>[2507.07467](http://arxiv.org/pdf/2507.07467)</td><td>◆ 提出了一种结合场景坐标回归（SCR）和证据学习的新型感知感知轨迹生成框架SCREP，用于GPS拒止环境下的自主飞行。  
+◆ 通过证据学习方法优化SCR位姿估计器，能够预测像素不确定性并引导相机朝向可靠性高的场景坐标区域。  
+◆ 采用滚动时域轨迹优化器，实时调整飞行轨迹以最大化定位精度，同时结合固定滞后平滑器融合低频SCR数据与高频IMU数据。  
+◆ 在仿真实验中，相比固定偏航和前视基线方法，该框架将平移（旋转）平均误差降低了54%/15%（40%/31%）。  
+◆ 通过硬件在环实验验证了框架的实时性和可行性，实现了感知-控制闭环的高效运行。</td></tr>
+<tr><td>2025-07-10</td><td>VP-SelDoA: Visual-prompted Selective DoA Estimation of Target Sound via Semantic-Spatial Matching</td><td>[2507.07384](http://arxiv.org/pdf/2507.07384)</td><td>◆ 提出跨实例音频-视觉定位（CI-AVL）新任务，利用同类声音事件的不同实例图像定位目标声源，减少对配对数据的依赖并提升泛化能力。  
+◆ 设计VP-SelDoA框架，通过语义级模态融合和Frequency-Temporal ConMamba架构生成目标选择性掩码，实现多声源场景下的目标声源隔离。  
+◆ 提出语义-空间匹配机制，结合交叉注意力和自注意力对齐异构的语义与空间特征，解决传统方法中视觉语义与声学空间特征错位问题。  
+◆ 构建大规模数据集VGG-SSL，包含296类声音事件的13,981条空间音频片段，为CI-AVL研究提供数据支持。  
+◆ 实验表明，该方法在平均绝对误差（MAE）和准确率（ACC）上均优于现有音频-视觉定位方法，分别达到12.04和78.23%。</td></tr>
+<tr><td>2025-07-08</td><td>FACap: A Large-scale Fashion Dataset for Fine-grained Composed Image Retrieval</td><td>[2507.07135](http://arxiv.org/pdf/2507.07135)</td><td>◆ 提出了FACap数据集，这是一个大规模自动构建的时尚领域组合图像检索数据集，解决了现有数据集缺乏专业细粒度标注的问题。  
+◆ 设计了两阶段自动标注流程，结合视觉语言模型和大语言模型生成高质量修改文本，降低了人工标注成本。  
+◆ 提出了FashionBLIP-2模型，通过在FACap上微调通用BLIP-2模型，并引入轻量级适配器和多头查询-候选匹配机制，提升了时尚细粒度信息的处理能力。  
+◆ 在Fashion IQ基准和增强版enhFashionIQ数据集上验证了模型效果，实验表明该方法显著提升了时尚领域组合检索性能，尤其在细粒度文本修改场景。  
+◆ 为电商等实际应用场景提供了高效的时尚图像检索解决方案，展示了自动构建领域专用数据集与模型适配相结合的有效性。</td></tr>
 <tr><td>2025-07-09</td><td>Evaluating Attribute Confusion in Fashion Text-to-Image Generation</td><td>[2507.07079](http://arxiv.org/pdf/2507.07079)</td><td>◆ 针对时尚领域文本生成图像（T2I）任务中现有评估方法难以捕捉细粒度属性关联的问题，提出了一种基于视觉定位和视觉问答（VQA）的新型评估框架。  
 ◆ 通过单实体定位策略，在视觉和文本模态上同步分析属性混淆现象（如属性正确生成但归属错误实体），解决了传统方法对复杂组合语义评估的局限性。  
 ◆ 设计了局部化人工评估协议，并创新性地提出自动指标L-VQAScore，结合视觉定位与VQA技术，同时检测属性正确反映（reflection）和错误泄漏（leakage）情况。  
@@ -741,6 +773,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-10</td><td>Doodle Your Keypoints: Sketch-Based Few-Shot Keypoint Detection</td><td>[2507.07994](http://arxiv.org/pdf/2507.07994)</td><td>◆ 提出首个基于草图的小样本关键点检测框架，利用人类手绘草图作为无源数据替代方案，解决传统方法在查询数据分布不一致时的困境。  
+◆ 设计跨模态嵌入学习机制，有效桥接草图与真实图像之间的模态差异，实现草图到关键点的精准映射。  
+◆ 引入网格化定位器（grid-based locator）增强空间感知能力，结合原型网络优化关键点定位精度。  
+◆ 创新性采用原型域适应技术（prototypical domain adaptation），自适应消除用户手绘风格的个体差异，提升模型泛化性。  
+◆ 通过大量实验验证框架在跨类别、跨关键点任务中的小样本快速收敛能力，扩展了关键点检测的应用边界。</td></tr>
 <tr><td>2025-07-09</td><td>Reading a Ruler in the Wild</td><td>[2507.07077](http://arxiv.org/pdf/2507.07077)</td><td>◆ 提出RulerNet深度学习框架，将标尺读数重新定义为统一的关键点检测问题，通过几何级数参数表示标尺刻度，实现透视变换下的鲁棒性测量。  
 ◆ 采用抗畸变标注和训练策略直接定位厘米刻度，摆脱传统方法对手工阈值或固定流程的依赖，显著提升对不同标尺类型和成像条件的泛化能力。  
 ◆ 开发可扩展的合成数据生成流程，结合图形化标尺生成与ControlNet技术添加逼真背景，有效缓解数据稀缺问题并增强训练多样性。  
@@ -968,6 +1005,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-10</td><td>MUVOD: A Novel Multi-view Video Object Segmentation Dataset and A Benchmark for 3D Segmentation</td><td>[2507.07519](http://arxiv.org/pdf/2507.07519)</td><td>◆ 提出了MUVOD数据集，这是首个针对动态场景4D目标分割的大规模多视角视频数据集，填补了该领域数据集的空白。  
+◆ 数据集包含17个真实场景，涵盖室内外多种活动，提供7830张RGB图像及对应的4D运动分割掩码，支持跨视角和跨帧的目标跟踪。  
+◆ 数据集中包含459个实例，覆盖73个类别，为多视角视频分割方法提供了全面的基准测试平台。  
+◆ 提出了新的评估指标和基线分割方法，为动态场景分割研究提供了标准化评估框架。  
+◆ 基于MUVOD数据集构建了3D目标分割子集，包含50个不同场景下的标注对象，用于更全面地评估现有3D分割方法的性能。  
+◆ 数据集来源多样，包含不同相机设备采集的视角（9-46个视角），增强了数据集的泛化性和实用性。</td></tr>
 <tr><td>2025-07-08</td><td>A Probabilistic Approach to Uncertainty Quantification Leveraging 3D Geometry</td><td>[2507.06269](http://arxiv.org/pdf/2507.06269)</td><td>◆ 提出BayesSDF，首个针对神经隐式SDF模型的概率框架，解决3D几何不确定性量化问题，特别适用于科学模拟（如森林流体建模）。  
 ◆ 通过拉普拉斯近似和基于Hessian的局部表面稳定性度量，实现高效计算且几何感知的不确定性估计，克服传统方法计算效率低的问题。  
 ◆ 首次将几何一致性直接融入不确定性量化，生成与重建误差高度相关的校准化置信度地图，优于忽略几何的现有方法。  
@@ -1211,4 +1254,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.10
+> 更新于: 2025.07.11
