@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.13)
+# 计算机视觉领域最新论文 (2025.07.14)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-11</td><td>Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework</td><td>[2507.08364](http://arxiv.org/pdf/2507.08364)</td><td>◆ 提出M3DGR数据集：首个包含视觉干扰、激光雷达退化、轮式打滑和GNSS失效等系统性退化场景的多传感器基准数据集，填补了标准化评估工具的空白。  
+◆ 对40种SLAM系统进行大规模评测：首次在多样化退化条件下全面分析现有算法的鲁棒性，揭示了实际应用中的关键性能瓶颈。  
+◆ 开发Ground-Fusion++框架：创新性地融合GNSS、RGB-D、激光雷达、IMU和轮式里程计，通过模块化设计实现多传感器自适应选择。  
+◆ 解决传感器动态适配问题：提出环境变化下的传感器优选策略，突破传统框架仅固定融合少数传感器的局限。  
+◆ 公开代码与数据集：为后续研究提供可复现的实验平台和性能对比基准，推动领域发展。</td></tr>
 <tr><td>2025-07-10</td><td>Hardware-Aware Feature Extraction Quantisation for Real-Time Visual Odometry on FPGA Platforms</td><td>[2507.07903](http://arxiv.org/pdf/2507.07903)</td><td>◆ 提出了一种基于量化SuperPoint卷积神经网络的嵌入式无监督架构，用于实时视觉里程计中的特征点检测与描述。  
 ◆ 通过硬件感知的模型量化技术（使用Brevitas库和FINN框架），在保证高检测质量的同时显著降低了计算需求。  
 ◆ 在AMD/Xilinx Zynq UltraScale+ FPGA平台上实现高效部署，利用深度学习处理单元（DPU）优化性能。  
@@ -342,6 +347,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-11</td><td>Review of Feed-forward 3D Reconstruction: From DUSt3R to VGGT</td><td>[2507.08448](http://arxiv.org/pdf/2507.08448)</td><td>◆ 提出了前馈式3D重建新范式，以DUSt3R为代表，通过单一前向传播直接从无约束图像中联合推断相机位姿和稠密几何结构，颠覆了传统迭代优化流程。  
+◆ 采用基于Transformer的对应关系建模技术，实现了跨图像的高效特征匹配，显著提升了纹理缺失等挑战性场景的鲁棒性。  
+◆ 设计了联合位姿与几何回归机制，将传统多阶段流程（如SfM+MVS）整合为端到端网络，大幅简化了工作流程并降低计算成本。  
+◆ 系统分析了从双视图到多视图的扩展策略，为不同应用场景提供了灵活的技术路径。  
+◆ 通过与传统方法（如SfM）和早期学习型方法（如MVSNet）的对比，阐明了该范式在效率、泛化性和易用性方面的突破性优势。  
+◆ 探讨了动态场景处理、模型精度与可扩展性等未来挑战，为该领域的进一步发展指明了方向。</td></tr>
 <tr><td>2025-07-04</td><td>MGSfM: Multi-Camera Geometry Driven Global Structure-from-Motion</td><td>[2507.03306](http://arxiv.org/pdf/2507.03306)</td><td>◆ 提出了一种专为多相机系统设计的全局运动平均框架，通过解耦旋转平均和混合平移平均模块提升传统全局SfM的鲁棒性问题。  
 ◆ 采用分层策略的旋转平均方法：先估计刚性相机单元内的相对旋转，再计算全局刚性单元旋转，优化多相机系统的旋转估计精度。  
 ◆ 创新性融合相机间约束和相机-点约束的平移平均模块，通过凸距离目标函数初始化相机位姿和3D点，并采用无偏非双线性角度目标函数进行细化。  
@@ -483,6 +494,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-11</td><td>RadiomicsRetrieval: A Customizable Framework for Medical Image Retrieval Using Radiomics Features</td><td>[2507.08546](http://arxiv.org/pdf/2507.08546)</td><td>◆ 提出RadiomicsRetrieval框架，首次将手工设计的放射组学特征与深度学习嵌入结合，实现肿瘤级别的3D医学图像检索，突破现有2D方法的局限。  
+◆ 采用可提示分割模型（如SAM）生成肿瘤特异性图像嵌入，并通过对比学习与放射组学特征对齐，增强特征表达能力。  
+◆ 引入解剖位置嵌入（APE），为检索系统提供全局解剖上下文，支持基于位置的灵活查询。  
+◆ 框架仅需最小用户交互（如单点标注），显著降低分割开销，适应多样临床场景。  
+◆ 支持混合查询模式（图像嵌入或选定放射组学属性），提升诊断、治疗规划及医学研究的实用性。  
+◆ 在肺部CT和脑部MRI公开数据集验证中，放射组学特征显著提高检索特异性，APE对基于位置的搜索至关重要。</td></tr>
+<tr><td>2025-07-11</td><td>LiDAR, GNSS and IMU Sensor Alignment through Dynamic Time Warping to Construct 3D City Maps</td><td>[2507.08420](http://arxiv.org/pdf/2507.08420)</td><td>◆ 提出了一种融合LiDAR、GNSS和IMU数据的统一框架，通过动态时间规整（DTW）进行速度对齐，解决城市规模3D建图时的累积漂移问题。  
+◆ 采用扩展卡尔曼滤波优化GNSS和IMU信号，结合基于正态分布变换（NDT）的局部建图与位姿图优化，提升局部精度。  
+◆ 引入GNSS约束锚点和重叠段精细配准技术，显著改善全局一致性，将平均全局对齐误差从3.32米降低至1.24米（提升61.4%）。  
+◆ 发布了一个大规模多模态数据集，包含21条城市环线的12.8万帧128线LiDAR数据、同步RTK-GNSS轨迹及MEMS-IMU测量值，填补研究空白。  
+◆ 提出基于道路中心线和交叉口的几何一致性评估指标，量化全局与局部精度，为后续研究建立新基准。  
+◆ 所构建的高精度地图支持智慧城市规划、基础设施监测等应用，同时公开代码与数据集推动领域发展。</td></tr>
+<tr><td>2025-07-11</td><td>Deep Hashing with Semantic Hash Centers for Image Retrieval</td><td>[2507.08404](http://arxiv.org/pdf/2507.08404)</td><td>◆ 提出语义哈希中心概念，通过数据依赖的相似性计算捕捉类别间的语义关系，取代传统数据无关的哈希中心生成方法。  
+◆ 设计三阶段框架SHC：先训练分类网络识别语义相似性，再优化生成保留语义结构的哈希中心，最后训练深度哈希网络生成二进制码。  
+◆ 开发新型优化算法，在保持语义相关性的同时强制最小中心间距，避免哈希码过度相似的问题。  
+◆ 首次将类别语义关系建模为汉明空间的距离约束，使相似类别的哈希中心距离更近，不相似类别更远。  
+◆ 在多个公开数据集上验证显著提升检索性能，MAP@100/1000/ALL指标平均提升7.26%/7.62%/11.71%，超越现有最佳方法。  
+◆ 提出的数据依赖相似性计算方法能自适应不同数据分布，增强模型泛化能力。</td></tr>
+<tr><td>2025-07-08</td><td>Unveiling Effective In-Context Configurations for Image Captioning: An External &amp; Internal Analysis</td><td>[2507.08021](http://arxiv.org/pdf/2507.08021)</td><td>◆ 首次对多模态上下文学习（ICL）在图像描述任务中的演示配置进行系统性外部研究，探索了示例数量、图像检索和描述分配三个维度的策略。  
+◆ 通过内部注意力机制分析，揭示了典型大型多模态模型（LMM）的注意力特征，并开发了基于注意力的量化指标以评估模型行为。  
+◆ 结合外部实验与内部机制分析的双重视角，提供了理解多模态ICL的新方法，揭示了示例配置如何通过注意力机制影响模型表现。  
+◆ 提出注意力驱动的模型加速与压缩实验，验证了基于注意力分析的模型优化可行性。  
+◆ 对比了相同架构与预训练策略的LMM性能差异，从预训练数据特征角度解释了模型表现差异的原因。  
+◆ 开发了结合外部评估与内部指标的新方法论，可扩展至其他大模型研究领域。</td></tr>
 <tr><td>2025-07-10</td><td>SCREP: Scene Coordinate Regression and Evidential Learning-based Perception-Aware Trajectory Generation</td><td>[2507.07467](http://arxiv.org/pdf/2507.07467)</td><td>◆ 提出了一种结合场景坐标回归（SCR）和证据学习的新型感知感知轨迹生成框架SCREP，用于GPS拒止环境下的自主飞行。  
 ◆ 通过证据学习方法优化SCR位姿估计器，能够预测像素不确定性并引导相机朝向可靠性高的场景坐标区域。  
 ◆ 采用滚动时域轨迹优化器，实时调整飞行轨迹以最大化定位精度，同时结合固定滞后平滑器融合低频SCR数据与高频IMU数据。  
@@ -773,7 +808,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-07-10</td><td>Doodle Your Keypoints: Sketch-Based Few-Shot Keypoint Detection</td><td>[2507.07994](http://arxiv.org/pdf/2507.07994)</td><td>◆ 提出首个基于草图的小样本关键点检测框架，利用人类手绘草图作为无源数据替代方案，解决传统方法在查询数据分布不一致时的困境。  
+<tr><td>2025-07-11</td><td>Doodle Your Keypoints: Sketch-Based Few-Shot Keypoint Detection</td><td>[2507.07994](http://arxiv.org/pdf/2507.07994)</td><td>◆ 提出首个基于草图的小样本关键点检测框架，利用人类手绘草图作为无源数据替代方案，解决传统方法在查询数据分布不一致时的困境。  
 ◆ 设计跨模态嵌入学习机制，有效桥接草图与真实图像之间的模态差异，实现草图到关键点的精准映射。  
 ◆ 引入网格化定位器（grid-based locator）增强空间感知能力，结合原型网络优化关键点定位精度。  
 ◆ 创新性采用原型域适应技术（prototypical domain adaptation），自适应消除用户手绘风格的个体差异，提升模型泛化性。  
@@ -1254,4 +1289,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.13
+> 更新于: 2025.07.14
