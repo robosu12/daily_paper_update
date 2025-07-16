@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.15)
+# 计算机视觉领域最新论文 (2025.07.16)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -347,6 +347,14 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-14</td><td>Supporting SENĆOTEN Language Documentation Efforts with Automatic Speech Recognition</td><td>[2507.10827](http://arxiv.org/pdf/2507.10827)</td><td>这篇论文的核心贡献是通过自动语音识别（ASR）技术支持濒危语言SENĆOTEN的文档化工作，具体创新点如下：
+
+◆ 提出了一种ASR驱动的文档化流程，结合文本转语音（TTS）系统增强有限的语言数据，解决了数据不足的问题。  
+◆ 利用跨语言迁移学习技术，借助语音基础模型（SFMs）提升ASR在低资源语言上的性能。  
+◆ 引入n-gram语言模型，通过浅层融合或n-best恢复技术，最大化利用现有词汇数据。  
+◆ 在SENĆOTEN数据集上实现了19.34%的词错误率（WER）和5.09%的字符错误率（CER），经过过滤后分别提升至14.32%和3.45%，展示了方法的有效性。  
+◆ 特别针对SENĆOTEN的多合成结构和重音驱动的音位变换等语言特点，优化了ASR系统的适应性。  
+◆ 为濒危语言的数字化保护和教学资源创建提供了可行的技术方案。</td></tr>
 <tr><td>2025-07-11</td><td>Review of Feed-forward 3D Reconstruction: From DUSt3R to VGGT</td><td>[2507.08448](http://arxiv.org/pdf/2507.08448)</td><td>◆ 提出了前馈式3D重建新范式，以DUSt3R为代表，通过单一前向传播直接从无约束图像中联合推断相机位姿和稠密几何结构，颠覆了传统迭代优化流程。  
 ◆ 采用基于Transformer的对应关系建模技术，实现了跨图像的高效特征匹配，显著提升了纹理缺失等挑战性场景的鲁棒性。  
 ◆ 设计了联合位姿与几何回归机制，将传统多阶段流程（如SfM+MVS）整合为端到端网络，大幅简化了工作流程并降低计算成本。  
@@ -494,6 +502,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-09</td><td>Orchestrator-Agent Trust: A Modular Agentic AI Visual Classification System with Trust-Aware Orchestration and RAG-Based Reasoning</td><td>[2507.10571](http://arxiv.org/pdf/2507.10571)</td><td>◆ 提出了一种新型模块化Agentic AI视觉分类框架，将通用多模态智能体与非视觉推理协调器、RAG模块相结合，实现感知与元推理的分离。  
+◆ 创新性地引入信任感知协调机制，通过置信度校准指标（ECE/OCR/CCC）动态调节对多智能体的信任度，在零样本场景下准确率提升77.94%。  
+◆ 开发了基于CLIP图像检索和重评估循环的信任校准方法，利用视觉相似案例修正智能体的过度自信，增强预测可解释性。  
+◆ 在苹果叶病害诊断任务中验证三种配置：零样本置信协调、微调智能体优化、以及RAG增强的信任校准协调，最高达85.63%准确率。  
+◆ 发现GPT-4o具有更优校准性，而Qwen-2.5-VL存在过度自信现象，为多智能体行为分析提供实证依据。  
+◆ 开源全部模型、提示词、软件代码及实验结果，为可信多智能体系统建立可复现基准，适用于生物诊断等高风险领域。</td></tr>
 <tr><td>2025-07-14</td><td>GT-Loc: Unifying When and Where in Images Through a Joint Embedding Space</td><td>[2507.10473](http://arxiv.org/pdf/2507.10473)</td><td>◆ GT-Loc首次提出联合学习图像拍摄时间和地理位置的统一嵌入空间，通过多编码器（图像、时间、地点）在共享特征空间中对齐三者表征，解决传统方法中时间预测依赖地理信息的局限性。  
 ◆ 创新性地采用环形时序度量学习目标，将时间差异建模为环面（toroidal）上的软目标，替代传统对比学习的硬正负样本，更贴合时间周期性的本质。  
 ◆ 实验证明联合优化显著优于现有时间预测方法，即使对比那些在推理阶段使用真实地理位置作为输入的方法，仍展现出更高精度。  
@@ -824,6 +838,23 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-15</td><td>KptLLM++: Towards Generic Keypoint Comprehension with Large Language Model</td><td>[2507.11102](http://arxiv.org/pdf/2507.11102)</td><td>◆ 提出KptLLM++，首个专用于通用关键点理解的多模态大语言模型，通过用户指令整合多样化输入模态，填补了MLLMs在细粒度语义捕捉上的空白。  
+◆ 创新性地采用&quot;先识别后检测&quot;范式，通过结构化思维链推理机制，先解析关键点语义再精确定位，提升复杂场景下的理解能力。  
+◆ 构建超50万样本的大规模训练数据集，覆盖多样物体、关键点类别、图像风格及遮挡场景，显著增强模型泛化性。  
+◆ 实现跨场景关键点检测的统一框架，建立高效人机协作接口，支持细粒度图像分析、物体检索和行为识别等应用。  
+◆ 在多个关键点检测基准测试中达到SOTA性能，验证了其作为统一细粒度图像理解解决方案的潜力。  
+◆ 为AI理解结构化像素级语义信息提供新思路，对推动人机交互变革具有重要启示意义。</td></tr>
+<tr><td>2025-07-15</td><td>GKNet: Graph-based Keypoints Network for Monocular Pose Estimation of Non-cooperative Spacecraft</td><td>[2507.11077](http://arxiv.org/pdf/2507.11077)</td><td>◆ 提出基于图结构的关键点网络GKNet，利用关键点间的几何约束关系提升非合作航天器单目姿态估计的精度。  
+◆ 针对航天器结构对称性和局部遮挡问题，通过图网络建模关键点拓扑关系，增强检测鲁棒性。  
+◆ 构建中等规模航天器关键点检测数据集SKD，包含3种航天器目标、9万张仿真图像及高精度标注，填补领域数据空白。  
+◆ 实验证明GKNet在关键点检测精度上显著优于现有先进方法，尤其适用于复杂空间场景。  
+◆ 开源代码和数据集促进后续研究，为在轨服务任务（如卫星维护、太空碎片清理）提供可靠技术支撑。</td></tr>
+<tr><td>2025-07-14</td><td>FPC-Net: Revisiting SuperPoint with Descriptor-Free Keypoint Detection via Feature Pyramids and Consistency-Based Implicit Matching</td><td>[2507.10770](http://arxiv.org/pdf/2507.10770)</td><td>◆提出FPC-Net，通过特征金字塔和基于一致性的隐式匹配实现无描述符的关键点检测，重新改进了SuperPoint方法。  
+◆创新性地在关键点检测阶段直接建立关联性，省去了传统方法中描述符的计算、存储、传输和匹配步骤。  
+◆尽管匹配精度略低于传统方法，但完全消除了描述符需求，大幅降低了定位系统的内存占用。  
+◆通过特征金字塔和一致性匹配机制，实现了高效且轻量化的关键点检测与匹配流程。  
+◆在实验中对比了传统手工方法和现代学习方法，验证了该方法的有效性和实用性。  
+◆为几何计算机视觉任务提供了一种更简洁、更高效的解决方案，尤其适合资源受限的应用场景。</td></tr>
 <tr><td>2025-07-11</td><td>Doodle Your Keypoints: Sketch-Based Few-Shot Keypoint Detection</td><td>[2507.07994](http://arxiv.org/pdf/2507.07994)</td><td>◆ 提出首个基于草图的小样本关键点检测框架，利用人类手绘草图作为无源数据替代方案，解决传统方法在查询数据分布不一致时的困境。  
 ◆ 设计跨模态嵌入学习机制，有效桥接草图与真实图像之间的模态差异，实现草图到关键点的精准映射。  
 ◆ 引入网格化定位器（grid-based locator）增强空间感知能力，结合原型网络优化关键点定位精度。  
@@ -1321,4 +1352,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.15
+> 更新于: 2025.07.16
