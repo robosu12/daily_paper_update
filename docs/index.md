@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.16)
+# 计算机视觉领域最新论文 (2025.07.17)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,6 +22,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-16</td><td>Next-Gen Museum Guides: Autonomous Navigation and Visitor Interaction with an Agentic Robot</td><td>[2507.12273](http://arxiv.org/pdf/2507.12273)</td><td>◆ 提出并实现了一款名为Alter-Ego的自主博物馆导览机器人，结合先进导航与交互功能，提升参观体验。  
+◆ 首次将大型语言模型（LLMs）应用于博物馆场景，实现实时、情境感知的问答交互，支持游客与机器人就展品展开对话。  
+◆ 采用鲁棒的SLAM技术，使机器人能在博物馆环境中自主导航，并根据用户需求动态调整导览路线。  
+◆ 通过真实博物馆环境下的用户研究（34名参与者），验证了系统的可用性，结合对话质量分析与问卷调查量化评估效果。  
+◆ 揭示了AI驱动机器人在文化空间中人机交互（HRI）的潜力与挑战，包括知识获取的促进与实际部署中的技术局限性。  
+◆ 为公共服务机器人领域提供了兼具技术创新与实证研究的范例，推动复杂场景下自主系统的应用探索。</td></tr>
+<tr><td>2025-07-16</td><td>Tree-SLAM: semantic object SLAM for efficient mapping of individual trees in orchards</td><td>[2507.12093](http://arxiv.org/pdf/2507.12093)</td><td>◆ 提出Tree-SLAM，一种专为果园环境设计的语义SLAM方法，解决传统SLAM在树木重复外观下易混淆的问题。  
+◆ 结合RGB-D图像和实例分割模型，实现树干检测与定位，并通过级联图数据关联算法进行树干重识别。  
+◆ 将重识别的树干作为地标，融合噪声GPS信号、里程计和树干观测数据，构建因子图框架，提升定位精度。  
+◆ 系统在GPS信号不可靠时仍能保持高精度，单棵树的地理定位误差低至18厘米，低于种植间距的20%。  
+◆ 在苹果园和梨园的不同季节数据集上验证了方法的准确性和鲁棒性，适用于精准农业中的目标操作和单树监测任务。</td></tr>
 <tr><td>2025-07-11</td><td>Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework</td><td>[2507.08364](http://arxiv.org/pdf/2507.08364)</td><td>◆ 提出M3DGR数据集：首个包含视觉干扰、激光雷达退化、轮式打滑和GNSS失效等系统性退化场景的多传感器基准数据集，填补了标准化评估工具的空白。  
 ◆ 对40种SLAM系统进行大规模评测：首次在多样化退化条件下全面分析现有算法的鲁棒性，揭示了实际应用中的关键性能瓶颈。  
 ◆ 开发Ground-Fusion++框架：创新性地融合GNSS、RGB-D、激光雷达、IMU和轮式里程计，通过模块化设计实现多传感器自适应选择。  
@@ -347,6 +358,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-16</td><td>BRUM: Robust 3D Vehicle Reconstruction from 360 Sparse Images</td><td>[2507.12095](http://arxiv.org/pdf/2507.12095)</td><td>这篇论文的核心贡献是通过稀疏视角输入实现高精度的3D车辆重建，解决了现有方法依赖密集视角的局限性。  
+
+◆提出基于深度图和鲁棒位姿估计架构的新方法，能够从稀疏输入合成新视角并增强训练数据。  
+◆改进高斯泼溅技术，引入选择性光度损失函数，仅对高置信度像素进行计算，提升重建质量。  
+◆采用DUSt3R架构替代传统运动恢复结构（SfM）流程，显著提高了相机位姿估计的准确性。  
+◆发布了一个包含合成和真实公共交通工具车辆的新数据集，支持方法的全面评估。  
+实验结果表明，该方法在多个基准测试中达到最先进性能，尤其在输入条件受限时仍能实现高质量重建。</td></tr>
+<tr><td>2025-07-16</td><td>Spatial Frequency Modulation for Semantic Segmentation</td><td>[2507.11893](http://arxiv.org/pdf/2507.11893)</td><td>◆ 提出空间频率调制（SFM）方法，通过在下采样前将高频特征调制到低频，上采样时再解调回来，有效解决语义分割中高频信息因下采样导致的混叠失真问题。  
+◆ 设计自适应重采样（ARS）模块，通过密集采样高频区域来缩放信号，利用频率缩放特性降低高频成分的频率，实现高效调制。  
+◆ 提出多尺度自适应上采样（MSAU）模块，通过非均匀上采样解调特征并恢复高频信息，同时利用多尺度密集与稀疏采样区域的交互增强分割精度。  
+◆ 模块设计轻量且通用，可无缝集成到CNN和Transformer等多种架构中，扩展性强。  
+◆ 通过特征可视化验证了该方法能有效缓解混叠并保留细节，进一步在图像分类、对抗鲁棒性、实例分割和全景分割等任务中验证了其广泛适用性。</td></tr>
 <tr><td>2025-07-14</td><td>Supporting SENĆOTEN Language Documentation Efforts with Automatic Speech Recognition</td><td>[2507.10827](http://arxiv.org/pdf/2507.10827)</td><td>这篇论文的核心贡献是通过自动语音识别（ASR）技术支持濒危语言SENĆOTEN的文档化工作，具体创新点如下：
 
 ◆ 提出了一种ASR驱动的文档化流程，结合文本转语音（TTS）系统增强有限的语言数据，解决了数据不足的问题。  
@@ -502,6 +525,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-16</td><td>QuRe: Query-Relevant Retrieval through Hard Negative Sampling in Composed Image Retrieval</td><td>[2507.12416](http://arxiv.org/pdf/2507.12416)</td><td>◆ 提出QuRe方法，通过硬负样本采样解决组合图像检索（CIR）中假阴性问题，优化奖励模型目标以提升检索相关性。  
+◆ 设计新颖的硬负样本采样策略，选择目标图像后相关性分数两次陡降之间的图像，有效过滤假阴性样本。  
+◆ 创建HP-FashionIQ数据集，首次在CIR任务中明确捕获用户偏好，超越传统仅关注目标图像检索的评估方式。  
+◆ 实验证明QuRe在FashionIQ和CIRR数据集上达到最优性能，并在HP-FashionIQ上展现出与人类偏好最强的对齐性。  
+◆ 开源代码促进后续研究，为CIR领域提供可复现的基准方法和用户满意度导向的评估框架。</td></tr>
+<tr><td>2025-07-16</td><td>CorrMoE: Mixture of Experts with De-stylization Learning for Cross-Scene and Cross-Domain Correspondence Pruning</td><td>[2507.11834](http://arxiv.org/pdf/2507.11834)</td><td>◆ 提出CorrMoE框架，首次针对跨场景和跨域对应点修剪任务设计，解决了现有方法在视觉域不一致和场景结构多样时的性能瓶颈。  
+◆ 创新性地引入去风格化双分支结构，通过隐式和显式图特征的风格混合，有效减少域特异性表征的负面影响，提升跨域鲁棒性。  
+◆ 设计双融合专家混合模块（Bi-Fusion MoE），结合线性复杂度注意力机制和动态专家路由，自适应整合多视角特征以应对场景多样性。  
+◆ 在特征融合中实现计算效率优化，通过线性注意力降低传统Transformer的二次复杂度，同时保持多专家模型的动态适应性。  
+◆ 在多个基准数据集上验证了方法的优越性，显著超越现有SOTA方法，尤其在跨域和跨场景任务中展现强泛化能力。  
+◆ 开源代码与预训练模型，为后续研究提供可复现的基础。</td></tr>
 <tr><td>2025-07-09</td><td>Orchestrator-Agent Trust: A Modular Agentic AI Visual Classification System with Trust-Aware Orchestration and RAG-Based Reasoning</td><td>[2507.10571](http://arxiv.org/pdf/2507.10571)</td><td>◆ 提出了一种新型模块化Agentic AI视觉分类框架，将通用多模态智能体与非视觉推理协调器、RAG模块相结合，实现感知与元推理的分离。  
 ◆ 创新性地引入信任感知协调机制，通过置信度校准指标（ECE/OCR/CCC）动态调节对多智能体的信任度，在零样本场景下准确率提升77.94%。  
 ◆ 开发了基于CLIP图像检索和重评估循环的信任校准方法，利用视觉相似案例修正智能体的过度自信，增强预测可解释性。  
@@ -1087,6 +1121,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-16</td><td>DoRF: Doppler Radiance Fields for Robust Human Activity Recognition Using Wi-Fi</td><td>[2507.12132](http://arxiv.org/pdf/2507.12132)</td><td>◆ 提出DoRF（多普勒辐射场）方法，首次将神经辐射场（NeRF）思想引入Wi-Fi传感领域，通过一维多普勒速度投影重建3D潜在运动表征。  
+◆ 构建了统一的运动多普勒辐射场，提供活动全景视角，显著提升对环境变化的鲁棒性。  
+◆ 利用Wi-Fi CSI提取的多普勒速度投影，克服了传统方法依赖环境特定特征的限制。  
+◆ 所提3D潜在表征能有效捕捉人体活动时空特性，比现有2D方法更具判别力。  
+◆ 实验证明该方法显著提高了跨环境、跨用户的泛化性能，推动Wi-Fi传感走向实用化。  
+◆ 为无线感知开辟新思路，将计算机视觉中的体积渲染技术成功迁移至射频信号处理领域。</td></tr>
+<tr><td>2025-07-16</td><td>HPR3D: Hierarchical Proxy Representation for High-Fidelity 3D Reconstruction and Controllable Editing</td><td>[2507.11971](http://arxiv.org/pdf/2507.11971)</td><td>◆提出新型3D分层代理节点表示（HPR3D），通过物体表面及内部的稀疏层级树状代理节点网络统一表征形状与纹理，突破传统方法任务局限性的框架创新。  
+◆每个代理节点采用轻量MLP隐式编码局部几何与纹理信息，结合邻近及父节点的高效神经插值解码机制，实现复杂性与保真度的动态平衡。  
+◆层级结构天然支持语义对齐，用户可直接通过拖拽代理节点实现直观编辑，解决了NeRF结构模糊导致的操控难题。  
+◆稀疏节点分布与分层查询机制显著降低数据复杂度（相比网格顶点密度和NeRF体素采样），同时保持亚毫米级重建精度。  
+◆实验验证该表示在重建质量（PSNR提升2.1dB）、编辑效率（交互延迟&lt;10ms）和跨任务通用性（重建/生成/驱动）上的综合优势。</td></tr>
 <tr><td>2025-07-14</td><td>VoxelRF: Voxelized Radiance Field for Fast Wireless Channel Modeling</td><td>[2507.09987](http://arxiv.org/pdf/2507.09987)</td><td>◆ 提出VoxelRF新型神经表示方法，通过体素化辐射场实现复杂环境中无线信道的快速建模，解决了传统方法在精度、效率和可扩展性上的平衡难题。  
 ◆ 用基于体素网格的三线性插值替代NeRF中昂贵的多层感知机（MLP），结合两个浅层MLP分别建模传播和发射端相关效应，显著降低计算成本。  
 ◆ 引入渐进式学习策略，逐步优化体素网格分辨率，加速训练过程并提升模型泛化能力。  
@@ -1352,4 +1397,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.16
+> 更新于: 2025.07.17
