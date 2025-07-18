@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.17)
+# 计算机视觉领域最新论文 (2025.07.18)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -22,7 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-07-16</td><td>Next-Gen Museum Guides: Autonomous Navigation and Visitor Interaction with an Agentic Robot</td><td>[2507.12273](http://arxiv.org/pdf/2507.12273)</td><td>◆ 提出并实现了一款名为Alter-Ego的自主博物馆导览机器人，结合先进导航与交互功能，提升参观体验。  
+<tr><td>2025-07-17</td><td>DINO-VO: A Feature-based Visual Odometry Leveraging a Visual Foundation Model</td><td>[2507.13145](http://arxiv.org/pdf/2507.13145)</td><td>◆ 提出DINO-VO系统，首次将视觉基础模型DINOv2的鲁棒语义特征应用于单目视觉里程计（VO），解决了传统学习型VO在泛化性和鲁棒性上的不足。  
+◆ 设计了一种针对DINOv2粗粒度特征的显著关键点检测器，克服了基础模型特征在VO任务中粒度不足的集成难题。  
+◆ 结合DINOv2的语义特征与细粒度几何特征，生成更具局部化能力的混合特征表示，提升了位姿估计精度。  
+◆ 采用基于Transformer的匹配器和可微分位姿估计层，通过端到端学习优化特征匹配与运动估计性能。  
+◆ 在TartanAir、KITTI等数据集上超越传统帧间VO方法（如SuperPoint），并在室外驾驶场景中与视觉SLAM系统性能相当，同时保持72 FPS的高效实时性（GPU内存&lt;1GB）。  
+◆ 实验证明DINOv2特征经改进后，其描述子精度和泛化能力显著优于原始粗粒度特征，尤其在光照变化、动态物体等复杂环境中表现突出。</td></tr>
+<tr><td>2025-07-17</td><td>MoCap2GT: A High-Precision Ground Truth Estimator for SLAM Benchmarking Based on Motion Capture and IMU Fusion</td><td>[2507.12920](http://arxiv.org/pdf/2507.12920)</td><td>MoCap2GT提出了一种基于动作捕捉和IMU融合的高精度SLAM基准测试真值估计方法，核心贡献如下：
+
+◆ 提出联合优化框架，融合MoCap数据和设备IMU测量值，显著提升轨迹真值的精度，解决了传统方法因时空标定误差和MoCap抖动导致的精度限制问题。
+
+◆ 设计鲁棒的状态初始化器，确保全局收敛性，避免了优化过程中可能出现的局部最优问题。
+
+◆ 引入SE(3)流形上的高阶B样条位姿参数化方法，并采用可变时间偏移建模，有效处理MoCap因素，提高了轨迹估计的准确性。
+
+◆ 提出退化感知的测量剔除策略，能够识别并剔除不可靠的测量数据，进一步提升估计精度。
+
+实验结果表明，MoCap2GT在精度上优于现有方法，为SLAM算法的全面评估提供了更可靠的基准真值。该方法开源可用，将促进SLAM研究社区的发展。</td></tr>
+<tr><td>2025-07-17</td><td>Next-Gen Museum Guides: Autonomous Navigation and Visitor Interaction with an Agentic Robot</td><td>[2507.12273](http://arxiv.org/pdf/2507.12273)</td><td>◆ 提出并实现了一款名为Alter-Ego的自主博物馆导览机器人，结合先进导航与交互功能，提升参观体验。  
 ◆ 首次将大型语言模型（LLMs）应用于博物馆场景，实现实时、情境感知的问答交互，支持游客与机器人就展品展开对话。  
 ◆ 采用鲁棒的SLAM技术，使机器人能在博物馆环境中自主导航，并根据用户需求动态调整导览路线。  
 ◆ 通过真实博物馆环境下的用户研究（34名参与者），验证了系统的可用性，结合对话质量分析与问卷调查量化评估效果。  
@@ -358,6 +375,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-16</td><td>Enhancing In-Domain and Out-Domain EmoFake Detection via Cooperative Multilingual Speech Foundation Models</td><td>[2507.12595](http://arxiv.org/pdf/2507.12595)</td><td>◆ 提出多语言语音基础模型（SFMs）在情感伪造检测（EFD）中的有效性假设，认为其跨语言预训练能更好捕捉音高、音调和强度的细微变化。  
+◆ 通过全面对比实验验证了多语言SFMs在同语言（域内）和跨语言（域外）场景下的优越性能。  
+◆ 创新性地提出THAMA融合方法，结合Tucker分解和Hadamard乘积，实现基础模型的高效互补融合。  
+◆ THAMA与多语言SFMs协同合作，在域内和域外评测中均达到最优性能，超越单一模型、基线融合方法和先前SOTA方法。  
+◆ 首次系统探索了多语言SFMs在EFD任务中的潜力，为跨语言情感伪造检测提供了新思路。</td></tr>
 <tr><td>2025-07-16</td><td>BRUM: Robust 3D Vehicle Reconstruction from 360 Sparse Images</td><td>[2507.12095](http://arxiv.org/pdf/2507.12095)</td><td>这篇论文的核心贡献是通过稀疏视角输入实现高精度的3D车辆重建，解决了现有方法依赖密集视角的局限性。  
 
 ◆提出基于深度图和鲁棒位姿估计架构的新方法，能够从稀疏输入合成新视角并增强训练数据。  
@@ -525,6 +547,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-17</td><td>FAR-Net: Multi-Stage Fusion Network with Enhanced Semantic Alignment and Adaptive Reconciliation for Composed Image Retrieval</td><td>[2507.12823](http://arxiv.org/pdf/2507.12823)</td><td>◆ 提出FAR-Net多阶段融合框架，结合早期和晚期融合优势，解决现有方法在视觉-文本模态融合中的局限性。  
+◆ 设计增强语义对齐模块（ESAM），通过跨注意力机制实现细粒度语义关联，弥补晚期融合对局部对齐的不足。  
+◆ 引入自适应协调模块（ARM），利用不确定性嵌入的早期融合增强模型鲁棒性，平衡文本显式描述与视觉上下文。  
+◆ 创新性地整合ESAM与ARM，形成互补机制，同时捕捉全局语义和局部细节，提升组合图像检索精度。  
+◆ 在CIRR和FashionIQ数据集上显著超越现有方法，Recall@1最高提升2.4%，验证了框架的有效性和可扩展性。</td></tr>
+<tr><td>2025-07-17</td><td>MCoT-RE: Multi-Faceted Chain-of-Thought and Re-Ranking for Training-Free Zero-Shot Composed Image Retrieval</td><td>[2507.12819](http://arxiv.org/pdf/2507.12819)</td><td>◆ 提出MCoT-RE框架，首次在零样本训练自由的组合图像检索任务中引入多角度思维链（Chain-of-Thought）技术，解决现有方法模态交互不足的问题。  
+◆ 通过双路径生成策略，分别生成侧重文本修改的 caption 和融合视觉上下文的 caption，平衡显式修改与隐式视觉线索的利用。  
+◆ 设计两阶段检索流程：首阶段用修改导向 caption 粗筛候选图像，第二阶段结合双 caption 和参考图像进行多粒度重排序，提升精度。  
+◆ 创新性地将思维链扩展至多模态场景，指导 MLLM 同时处理文本指令与视觉上下文，避免信息丢失。  
+◆ 在主流数据集上实现显著提升，FashionIQ 的 Recall@10 提高 6.24%，CIRR 的 Recall@1 提升 8.58%，达到零样本方法最优性能。  
+◆ 整个框架无需额外训练，仅依赖预训练模型，保持高效低成本优势的同时突破现有技术瓶颈。</td></tr>
 <tr><td>2025-07-16</td><td>QuRe: Query-Relevant Retrieval through Hard Negative Sampling in Composed Image Retrieval</td><td>[2507.12416](http://arxiv.org/pdf/2507.12416)</td><td>◆ 提出QuRe方法，通过硬负样本采样解决组合图像检索（CIR）中假阴性问题，优化奖励模型目标以提升检索相关性。  
 ◆ 设计新颖的硬负样本采样策略，选择目标图像后相关性分数两次陡降之间的图像，有效过滤假阴性样本。  
 ◆ 创建HP-FashionIQ数据集，首次在CIR任务中明确捕获用户偏好，超越传统仅关注目标图像检索的评估方式。  
@@ -872,6 +905,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-17</td><td>DINO-VO: A Feature-based Visual Odometry Leveraging a Visual Foundation Model</td><td>[2507.13145](http://arxiv.org/pdf/2507.13145)</td><td>◆ 提出DINO-VO系统，首次将视觉基础模型DINOv2的鲁棒语义特征应用于单目视觉里程计（VO），解决了传统学习型VO在泛化性和鲁棒性上的不足。  
+◆ 针对DINOv2特征粒度粗糙的问题，设计了专用显著关键点检测器，有效提升稀疏特征匹配的精度。  
+◆ 结合DINOv2的语义特征与细粒度几何特征，生成兼具鲁棒性和局部化能力的混合特征表示。  
+◆ 采用基于Transformer的匹配器和可微分位姿估计层，通过端到端学习优化特征匹配与运动估计。  
+◆ 在TartanAir、KITTI等数据集上超越传统帧间VO方法（如SuperPoint），并在室外驾驶场景中与视觉SLAM系统性能相当，同时保持72 FPS实时性。  
+◆ 系统内存占用低于1GB，展现了高效部署潜力，为视觉基础模型在实时定位任务中的应用提供新范式。</td></tr>
 <tr><td>2025-07-15</td><td>KptLLM++: Towards Generic Keypoint Comprehension with Large Language Model</td><td>[2507.11102](http://arxiv.org/pdf/2507.11102)</td><td>◆ 提出KptLLM++，首个专用于通用关键点理解的多模态大语言模型，通过用户指令整合多样化输入模态，填补了MLLMs在细粒度语义捕捉上的空白。  
 ◆ 创新性地采用&quot;先识别后检测&quot;范式，通过结构化思维链推理机制，先解析关键点语义再精确定位，提升复杂场景下的理解能力。  
 ◆ 构建超50万样本的大规模训练数据集，覆盖多样物体、关键点类别、图像风格及遮挡场景，显著增强模型泛化性。  
@@ -1397,4 +1436,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.17
+> 更新于: 2025.07.18
