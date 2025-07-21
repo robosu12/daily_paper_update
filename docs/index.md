@@ -1,4 +1,4 @@
-# 计算机视觉领域最新论文 (2025.07.20)
+# 计算机视觉领域最新论文 (2025.07.21)
 
 > 每日自动更新计算机视觉领域的最新arXiv论文
 
@@ -375,6 +375,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-17</td><td>Uncertainty Quantification Framework for Aerial and UAV Photogrammetry through Error Propagation</td><td>[2507.13486](http://arxiv.org/pdf/2507.13486)</td><td>这篇论文的核心贡献和创新点如下：
+
+◆ 提出了一个完整的误差传播框架，用于量化航空和无人机摄影测量中从SfM到MVS两阶段的全流程不确定性，填补了MVS阶段不确定性评估的研究空白。
+
+◆ 针对MVS阶段非可微、多模态的特性，创新性地提出基于可靠多视角点（n≥6）的自校准方法，通过匹配代价等关键特征回归视差不确定性。
+
+◆ 该方法直接从MVS过程中提取自包含的可靠3D点，具有自监督特性，无需外部数据即可实现不确定性建模。
+
+◆ 提出的误差协方差矩阵建模方法严格遵循摄影测量误差传播路径，能适应不同场景的鲁棒性验证需求。
+
+◆ 通过公开数据集验证表明，该方法在保证高边界覆盖率的同时避免了不确定性高估问题，性能优于现有方法。
+
+◆ 首次实现了摄影测量点云逐点精度凭证的标准化输出，为场景依赖的摄影测量精度评估提供了可认证的量化工具。</td></tr>
 <tr><td>2025-07-16</td><td>Enhancing In-Domain and Out-Domain EmoFake Detection via Cooperative Multilingual Speech Foundation Models</td><td>[2507.12595](http://arxiv.org/pdf/2507.12595)</td><td>◆ 提出多语言语音基础模型（SFMs）在情感伪造检测（EFD）中的有效性假设，认为其跨语言预训练能更好捕捉音高、音调和强度的细微变化。  
 ◆ 通过全面对比实验验证了多语言SFMs在同语言（域内）和跨语言（域外）场景下的优越性能。  
 ◆ 创新性地提出THAMA融合方法，结合Tucker分解和Hadamard乘积，实现基础模型的高效互补融合。  
@@ -1160,6 +1173,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-18</td><td>TimeNeRF: Building Generalizable Neural Radiance Fields across Time from Few-Shot Input Views</td><td>[2507.13929](http://arxiv.org/pdf/2507.13929)</td><td>◆ TimeNeRF提出了一种通用神经渲染方法，能够在少量输入视图下渲染任意视角和任意时间点的新视图，解决了多视图采集成本高和场景重复优化效率低的问题。  
+◆ 该方法首次探索了NeRF在时序3D场景建模中的潜力，填补了当前技术在该领域的空白，尤其适用于元宇宙中昼夜自然过渡的沉浸式体验需求。  
+◆ 结合多视图立体视觉、神经辐射场和跨数据集解耦策略，构建了隐式内容辐射场，实现了场景表示和时间维度建模的统一框架。  
+◆ 无需逐场景优化即可在少样本条件下生成新视图，显著提升了渲染效率，实验证明其能有效捕捉从黎明到黄昏的复杂自然场景变化。  
+◆ 通过体渲染技术合成任意时间点的逼真新视图，在时间维度上实现了平滑过渡，为动态场景建模提供了新思路。</td></tr>
+<tr><td>2025-07-18</td><td>EPSilon: Efficient Point Sampling for Lightening of Hybrid-based 3D Avatar Generation</td><td>[2507.13648](http://arxiv.org/pdf/2507.13648)</td><td>◆ 提出EPSilon框架，通过高效点采样策略显著提升基于混合表示（SMPL网格+NeRF）的3D虚拟人生成效率，兼顾生成质量与速度。  
+◆ 创新性设计空射线剔除（ERO）方法，直接跳过空场景中的光线计算，减少无效采样点。  
+◆ 提出空区间剔除（EIO）技术，进一步压缩光线采样区间，仅保留衣物或网格覆盖的有效区域。  
+◆ 通过精细化采样策略，实现单阶段NeRF结构，无需传统分层采样，简化模型架构。  
+◆ 实验表明，EPSilon仅需3.9%的采样点即可保持生成质量，推理速度提升约20倍，训练收敛加快4倍。</td></tr>
 <tr><td>2025-07-16</td><td>DoRF: Doppler Radiance Fields for Robust Human Activity Recognition Using Wi-Fi</td><td>[2507.12132](http://arxiv.org/pdf/2507.12132)</td><td>◆ 提出DoRF（多普勒辐射场）方法，首次将神经辐射场（NeRF）思想引入Wi-Fi传感领域，通过一维多普勒速度投影重建3D潜在运动表征。  
 ◆ 构建了统一的运动多普勒辐射场，提供活动全景视角，显著提升对环境变化的鲁棒性。  
 ◆ 利用Wi-Fi CSI提取的多普勒速度投影，克服了传统方法依赖环境特定特征的限制。  
@@ -1436,4 +1459,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.20
+> 更新于: 2025.07.21
