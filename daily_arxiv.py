@@ -496,8 +496,8 @@ def json_to_md(filename, md_filename,
     # 2. 创建Markdown文件
     with open(md_filename, "w+", encoding="utf-8") as f:
         # 添加标题和介绍
-        f.write(f"# 计算机视觉领域最新论文 ({today})\n\n")
-        f.write("> 每日自动更新计算机视觉领域的最新arXiv论文\n\n")
+        f.write(f"# SLAM领域最新论文 ({today})\n\n")
+        f.write("> 每日自动更新SLAM领域的最新arXiv论文\n\n")
         f.write("> 使用说明: [点击查看](./docs/README.md#usage)\n\n")
         
         # 3. 优化表格CSS
