@@ -21,6 +21,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-21</td><td>A Comprehensive Evaluation of LiDAR Odometry Techniques</td><td>[2507.16000](http://arxiv.org/pdf/2507.16000)</td><td>◆ 首次系统梳理了LiDAR里程计（LO）技术中的各类模块化组件，填补了该领域缺乏全面组件对比研究的空白。  
+◆ 通过大量消融实验，在多样化数据集（不同环境、LiDAR型号和运动模式）上实证评估了各组件性能。  
+◆ 提出基于实验数据的LO流程设计准则，为未来高精度系统开发提供可复现的优化方向。  
+◆ 突破了以往仅对比完整技术流程的局限，首次从底层组件层面揭示性能差异的关键因素。  
+◆ 建立跨场景评估框架，验证了不同技术组合的泛化能力与鲁棒性。</td></tr>
 <tr><td>2025-07-21</td><td>Dense-depth map guided deep Lidar-Visual Odometry with Sparse Point Clouds and Images</td><td>[2507.15496](http://arxiv.org/pdf/2507.15496)</td><td>◆ 提出了一种新颖的LiDAR-视觉里程计框架，通过深度融合稀疏LiDAR点云和图像数据实现高精度位姿估计。  
 ◆ 创新性地利用深度补全技术生成稠密深度图，为运动估计提供更丰富的几何约束信息。  
 ◆ 设计了带注意力机制的多尺度特征提取网络，能够自适应生成深度感知的特征表示。  
@@ -110,6 +115,27 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-22</td><td>VGGT-Long: Chunk it, Loop it, Align it -- Pushing VGGT&#x27;s Limits on Kilometer-scale Long RGB Sequences</td><td>[2507.16443](http://arxiv.org/pdf/2507.16443)</td><td>◆ 提出VGGT-Long系统，首次将单目3D重建能力扩展到千米级无边界户外场景，突破现有基础模型的内存限制。  
+◆ 采用分块处理策略结合重叠对齐和轻量级闭环优化，无需相机标定、深度监督或模型重训练，显著提升可扩展性。  
+◆ 在KITTI、Waymo等数据集上验证，其轨迹和重建精度媲美传统方法，且能在长RGB序列（基础模型通常失效的场景）稳定运行。  
+◆ 通过创新性系统设计，证明基础模型在真实世界（如自动驾驶）中实现大规模单目3D场景重建的潜力。  
+◆ 开源代码提供完整实现，支持实际应用部署。</td></tr>
+<tr><td>2025-07-22</td><td>A Single-step Accurate Fingerprint Registration Method Based on Local Feature Matching</td><td>[2507.16201](http://arxiv.org/pdf/2507.16201)</td><td>◆ 提出了一种端到端的单步指纹配准算法，直接通过预测两幅指纹图像之间的半密集匹配点对应关系来实现对齐，避免了传统两步法的复杂性。  
+◆ 解决了低质量指纹图像中特征点数量不足导致的初始配准失败问题，提高了配准的鲁棒性和成功率。  
+◆ 创新性地结合全局-局部注意力机制，实现了两幅指纹图像之间的端到端像素级对齐，提升了配准精度。  
+◆ 实验证明该方法仅需单步配准即可达到最先进的匹配性能，同时还能与密集配准算法结合以进一步提升性能。  
+◆ 该方法简化了传统指纹配准流程，降低了因初始配准失败导致的整体配准失败风险，适用于实际应用场景。</td></tr>
+<tr><td>2025-07-22</td><td>Einstein&#x27;s Electron and Local Branching: Unitarity Does not Require Many-Worlds</td><td>[2507.16123](http://arxiv.org/pdf/2507.16123)</td><td>◆ 通过现代传感器技术重现爱因斯坦1927年单电子衍射思想实验，构建全封闭半球形探测器阵列系统，为多世界解释(MWI)与分支希尔伯特子空间解释(BHSI)提供直接实证对比框架。  
+◆ 证明两种解释均保持幺正性且无需波函数坍缩，但存在本体论差异：MWI主张不可逆的全局平行世界分支，而BHSI提出局域可逆的退相干子空间分支。  
+◆ 首次在实验设计中实现所有量子事件（分支、参与、脱离、重定位）完全局域化，且玻恩规则通过分支权重自然涌现于探测器统计。  
+◆ 提出创新的双层探测器增强实验方案：利用内层透明探测器与电子层间穿越时间短于传感器响应的特性，可检验测量时序异常（如延迟选择或未定状态）。  
+◆ 颠覆&quot;幺正性必然导致平行世界&quot;的传统认知，论证局域分支机制即可满足幺正性，无需引入全局世界分裂，为量子基础理论提供更简洁的解释路径。</td></tr>
+<tr><td>2025-07-21</td><td>MSGM: A Multi-Scale Spatiotemporal Graph Mamba for EEG Emotion Recognition</td><td>[2507.15914](http://arxiv.org/pdf/2507.15914)</td><td>◆ 提出多尺度时空图曼巴模型（MSGM），首次将状态空间模型（Mamba）引入脑电情绪识别领域，实现线性复杂度的动态时空特征建模。  
+◆ 设计多窗口时间分割策略，通过并行处理不同时间粒度的EEG信号片段，有效捕捉细粒度情绪波动。  
+◆ 创新双模态空间图构建方法，结合神经解剖学先验知识同时建模全局脑区连接与局部功能网络，增强空间层次表征能力。  
+◆ 开发多深度图卷积与令牌嵌入融合模块，通过曼巴架构实现跨尺度时空特征的动态交互与高效融合。  
+◆ 仅需单层MSST-Mamba即可在SEED等三大数据集上超越现有最优方法，兼顾高精度（主体独立分类）与毫秒级实时推理（NVIDIA Jetson平台）。  
+◆ 解决传统方法时空建模单一和计算效率低的双重瓶颈，为可穿戴设备实时情绪识别提供新范式。</td></tr>
 <tr><td>2025-07-21</td><td>DiffPF: Differentiable Particle Filtering with Generative Sampling via Conditional Diffusion Models</td><td>[2507.15716](http://arxiv.org/pdf/2507.15716)</td><td>◆ DiffPF首次将条件扩散模型融入粒子滤波框架，实现了高质量的后验采样，克服了传统方法的局限性。  
 ◆ 通过将扩散模型与预测粒子和当前观测条件结合，DiffPF能够从复杂、高维、多模态的滤波分布中生成精确且等权重的粒子。  
 ◆ 相比传统可微分粒子滤波依赖预定义或低容量提议分布的问题，DiffPF学习了一个灵活的后验采样器，显著提升了采样质量。  
@@ -151,6 +177,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-22</td><td>A Single-step Accurate Fingerprint Registration Method Based on Local Feature Matching</td><td>[2507.16201](http://arxiv.org/pdf/2507.16201)</td><td>◆ 提出一种端到端的单步指纹配准算法，直接预测两枚指纹间的半稠密匹配点对应关系，避免了传统两步法的初始配准失败风险。  
+◆ 采用全局-局部注意力机制，实现端到端的像素级对齐，提升了低质量指纹图像的配准精度。  
+◆ 通过单步配准即可达到当前最优的匹配性能，简化了传统方法中依赖 minutiae 初始配准的复杂流程。  
+◆ 算法兼容稠密配准算法，可进一步结合使用以提升性能，具有灵活性和扩展性。  
+◆ 实验证明该方法在低质量指纹图像中表现优异，解决了因 minutiae 数量不足导致的配准失败问题。</td></tr>
 <tr><td>2025-07-17</td><td>DINO-VO: A Feature-based Visual Odometry Leveraging a Visual Foundation Model</td><td>[2507.13145](http://arxiv.org/pdf/2507.13145)</td><td>◆ 提出DINO-VO，一种基于DINOv2视觉基础模型的稀疏特征匹配视觉里程计系统，解决了传统学习型单目VO在鲁棒性、泛化性和效率上的挑战。  
 ◆ 设计了一种针对DINOv2粗粒度特征的自适应显著关键点检测器，克服了基础模型特征粒度不足的集成难题。  
 ◆ 结合DINOv2的鲁棒语义特征与细粒度几何特征，生成更具局部化能力的混合特征表示。  
