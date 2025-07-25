@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.07.24)
+# SLAM领域最新论文 (2025.07.25)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -21,6 +21,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-24</td><td>G2S-ICP SLAM: Geometry-aware Gaussian Splatting ICP SLAM</td><td>[2507.18344](http://arxiv.org/pdf/2507.18344)</td><td>◆ 提出了一种基于几何感知的高斯泼溅SLAM系统（G2S-ICP SLAM），通过将场景元素表示为局部切平面约束的高斯分布，实现高保真3D重建和实时相机位姿跟踪。  
+◆ 创新性地使用2D高斯圆盘（而非传统3D椭球）表示局部表面，使其与底层几何对齐，显著提升了多视角深度解释的一致性。  
+◆ 将表面对齐的高斯圆盘嵌入广义ICP框架，通过引入各向异性协方差先验改进配准，无需修改原有配准公式。  
+◆ 提出几何感知损失函数，联合优化光度、深度和法向一致性，增强重建的几何精度与视觉质量。  
+◆ 系统在Replica和TUM-RGBD数据集上验证，定位精度、重建完整性和渲染质量均优于现有SLAM方法，且保持实时性能。</td></tr>
 <tr><td>2025-07-23</td><td>Physics-based Human Pose Estimation from a Single Moving RGB Camera</td><td>[2507.17406](http://arxiv.org/pdf/2507.17406)</td><td>◆ 提出了首个非合成的真实数据集MoviCam，包含动态移动的单目RGB相机轨迹、场景几何和3D人体运动数据，并标注了人-场景接触信息，填补了现有合成数据无法模拟真实光照、相机运动和姿态变化的缺陷。  
 ◆ 开发了PhysDynPose方法，首次在物理约束的人体姿态估计中整合场景几何信息，有效解决了相机移动和非平面场景下的跟踪难题。  
 ◆ 结合先进运动学估计器与鲁棒SLAM技术，实现了世界坐标系下人体姿态与相机轨迹的同步恢复，突破了传统方法依赖静态相机的限制。  
@@ -122,6 +127,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-24</td><td>DSFormer: A Dual-Scale Cross-Learning Transformer for Visual Place Recognition</td><td>[2507.18444](http://arxiv.org/pdf/2507.18444)</td><td>◆ 提出DSFormer双尺度交叉学习Transformer模块，通过双向信息传递整合CNN最后两层的双尺度特征，同时捕捉语义丰富性和空间细节。  
+◆ 设计自注意力机制处理单尺度内的长程依赖关系，并引入共享交叉注意力实现跨尺度学习，增强特征表示能力。  
+◆ 创新性提出块聚类策略，从多视角重构SF-XL训练数据集的分区方式，优化数据组织以提升视角变化的鲁棒性。  
+◆ 结合上述技术，生成适应环境变化的鲁棒全局嵌入表征，相比现有分区方法减少约30%训练数据需求。  
+◆ 仅使用512维全局描述符即实现全局检索，在多数基准数据集上超越DELG、Patch-NetVLAD等先进方法，达到SOTA性能。  
+◆ 显著提升计算效率，为视觉地点识别任务提供高效解决方案。</td></tr>
+<tr><td>2025-07-23</td><td>DiNAT-IR: Exploring Dilated Neighborhood Attention for High-Quality Image Restoration</td><td>[2507.17892](http://arxiv.org/pdf/2507.17892)</td><td>◆ 提出Dilated Neighborhood Attention (DiNA)机制，结合滑动窗口注意力和混合膨胀因子，在保持局部精度的同时扩展感受野，解决传统自注意力计算成本高的问题。  
+◆ 针对图像复原任务中局部注意力全局上下文理解不足的问题，引入通道感知模块，有效整合全局信息而不损失像素级精度。  
+◆ 设计专用于图像复原的Transformer架构DiNAT-IR，通过平衡全局与局部特征处理，显著提升复原质量。  
+◆ 实验证明该方法在多个基准测试中达到竞争性性能，为低层计算机视觉任务提供高效解决方案。  
+◆ 首次将混合膨胀注意力机制从高层视觉任务迁移到图像复原领域，并针对其局限性进行创新改进。  
+◆ 通过通道注意力与空间注意力的协同设计，克服了Restormer等模型忽视局部伪影的缺陷。</td></tr>
 <tr><td>2025-07-23</td><td>When and Where Localization Fails: An Analysis of the Iterative Closest Point in Evolving Environment</td><td>[2507.17531](http://arxiv.org/pdf/2507.17531)</td><td>◆ 提出了首个针对短期环境变化（数天至数周）的高分辨率多时段激光雷达数据集，填补了动态户外场景下短期定位研究的空白。  
 ◆ 数据集包含每周采集的自然与半城市场景的高密度点云地图、360度全景图像和轨迹数据，为短期定位鲁棒性评估提供结构化基准。  
 ◆ 创新性地使用传感器精确遮挡建模的投影激光雷达扫描，通过真实轨迹数据定量评估两种ICP变体（点对点与点对平面）的配准精度。  
@@ -209,6 +226,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-24</td><td>A 3D Cross-modal Keypoint Descriptor for MR-US Matching and Registration</td><td>[2507.18551](http://arxiv.org/pdf/2507.18551)</td><td>◆提出新型3D跨模态关键点描述符，解决MRI与实时超声(iUS)因模态差异导致的配准难题。  
+◆采用患者特异性合成匹配方法，通过术前MRI生成合成iUS数据，实现监督对比学习以构建共享描述符空间。  
+◆设计概率关键点检测策略，识别解剖学显著且跨模态一致的特征点，提升匹配可靠性。  
+◆创新性使用课程式三元组损失与动态困难负样本挖掘，使描述符具备抗iUS伪影（如斑点噪声）和旋转不变性。  
+◆在ReMIND数据集上验证，关键点匹配平均精度达69.8%，配准误差仅2.39mm，优于现有方法。  
+◆框架无需人工初始化，对iUS视野变化鲁棒，且具有可解释性，代码已开源。</td></tr>
 <tr><td>2025-07-23</td><td>CartoonAlive: Towards Expressive Live2D Modeling from Single Portraits</td><td>[2507.17327](http://arxiv.org/pdf/2507.17327)</td><td>◆ 提出CartoonAlive方法，首次实现从单张肖像照片快速生成高质量Live2D模型，耗时不足30秒。  
 ◆ 创新地将3D人脸建模中的形状基概念引入2D领域，构建适用于Live2D的面部混合形状。  
 ◆ 通过面部关键点检测自动推算混合形状权重，无需人工干预即可实现高精度表情控制。  
@@ -264,6 +287,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-24</td><td>Unposed 3DGS Reconstruction with Probabilistic Procrustes Mapping</td><td>[2507.18541](http://arxiv.org/pdf/2507.18541)</td><td>◆ 提出首个无需预设相机位姿的3D高斯泼溅(3DGS)重建框架，通过概率性Procrustes映射实现数百张户外图像的联合优化。  
+◆ 创新性地将数千万点云对齐问题建模为概率Procrustes问题，采用闭式解算方法实现分钟级全局配准。  
+◆ 设计软垃圾箱机制与概率耦合策略，有效过滤不确定对应点，提升跨子图对齐的鲁棒性。  
+◆ 开发基于置信度锚点的高斯初始化方法，结合可微渲染与解析雅可比矩阵，实现场景几何与相机位姿的联合优化。  
+◆ 在Waymo和KITTI数据集上验证了方法的优越性，为无位姿3DGS重建树立了新标杆。  
+该方法突破了传统MVS模型的内存限制与精度瓶颈，为大规模户外场景重建提供了高效解决方案。</td></tr>
+<tr><td>2025-07-24</td><td>High-fidelity 3D Gaussian Inpainting: preserving multi-view consistency and photorealistic details</td><td>[2507.18023](http://arxiv.org/pdf/2507.18023)</td><td>◆ 提出首个基于3D高斯分布的3D场景修复框架，通过稀疏修复视图实现完整3D场景重建，解决了传统方法在3D结构不规则性和多视角一致性上的难题。  
+◆ 开发自动掩膜优化流程，结合高斯场景过滤和反向投影技术，精准定位遮挡区域并实现自然边界修复，显著提升掩膜精度。  
+◆ 创新性引入区域级不确定性引导优化策略，通过多视角重要性评估动态调整训练权重，有效缓解多视角不一致问题。  
+◆ 设计细粒度优化方案，在修复过程中强化细节保真度，使修复结果同时保持照片级真实感和几何一致性。  
+◆ 在多样化数据集上的实验表明，该方法在视觉质量和视角一致性方面均超越现有最优方法，为3D内容创作提供新工具。</td></tr>
 <tr><td>2025-07-23</td><td>Temporal Smoothness-Aware Rate-Distortion Optimized 4D Gaussian Splatting</td><td>[2507.17336](http://arxiv.org/pdf/2507.17336)</td><td>◆ 提出首个针对4D高斯泼溅（4DGS）的端到端率失真优化压缩框架，解决动态场景存储和传输效率问题。  
 ◆ 基于全显式动态高斯泼溅（Ex4DGS）基线，兼容现有3DGS压缩方法，同时有效处理时间轴带来的额外挑战。  
 ◆ 创新采用小波变换替代独立存储运动轨迹，利用真实世界运动平滑性先验，显著提升存储效率。  
@@ -308,4 +342,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.24
+> 更新于: 2025.07.25
