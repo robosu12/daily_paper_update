@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.07.27)
+# SLAM领域最新论文 (2025.07.28)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -21,6 +21,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-25</td><td>DINO-SLAM: DINO-informed RGB-D SLAM for Neural Implicit and Explicit Representations</td><td>[2507.19474](http://arxiv.org/pdf/2507.19474)</td><td>◆ 提出DINO-SLAM框架，通过DINO特征增强策略提升神经隐式（NeRF）和显式（3DGS）SLAM系统的场景表示能力。  
+◆ 设计场景结构编码器（SSE），将原始DINO特征升级为增强版EDINO，有效捕捉场景层次化元素及其结构关系。  
+◆ 首次构建两种基于EDINO特征的SLAM范式，分别适配NeRF和3DGS两种主流三维表示方法。  
+◆ 在Replica、ScanNet和TUM数据集上验证了方案优越性，性能超越现有最优方法。  
+◆ 通过统一特征增强策略，实现了对复杂场景更全面的几何与语义理解，为SLAM系统提供新思路。</td></tr>
+<tr><td>2025-07-25</td><td>The Eloquence team submission for task 1 of MLC-SLM challenge</td><td>[2507.19308](http://arxiv.org/pdf/2507.19308)</td><td>◆ 评估了官方基线模型的多语言ASR性能，通过训练线性投影器和qformer两种投影器，结合不同基础模型，分析了其优势与局限性。  
+◆ 利用SLAM-ASR框架训练了自定义的多语言线性投影器，优化了模型在多语言场景下的适应性。  
+◆ 探索了对比学习在提升语音识别鲁棒性中的作用，通过改进训练策略增强模型对多样化语音输入的识别能力。  
+◆ 研究了扩展对话上下文对识别效果的影响，验证了长上下文信息在多语言对话语音识别中的重要性。  
+◆ 综合多种方法（如投影器设计、对比学习和上下文扩展）为多语言对话语音识别任务提供了系统性的解决方案。</td></tr>
+<tr><td>2025-07-25</td><td>SmartPNT-MSF: A Multi-Sensor Fusion Dataset for Positioning and Navigation Research</td><td>[2507.19079](http://arxiv.org/pdf/2507.19079)</td><td>◆ 提出了SmartPNT-MSF多传感器融合数据集，弥补了现有数据集在传感器多样性和环境覆盖范围上的不足。  
+◆ 整合了GNSS、IMU、光学相机和LiDAR等多种传感器数据，为多传感器融合和高精度导航研究提供了丰富资源。  
+◆ 详细记录了数据集构建过程，包括传感器配置、坐标系定义以及相机和LiDAR的校准流程，确保数据的一致性和可扩展性。  
+◆ 采用标准化框架进行数据采集和处理，支持大规模分析，并通过VINS-Mono和LIO-SAM等先进SLAM算法验证了数据集的实用性。  
+◆ 覆盖城市、校园、隧道和郊区等多种真实场景，为复杂环境下的导航技术研究提供了重要工具。  
+◆ 公开高质量数据集，促进了传感器多样性、数据可获取性和环境代表性的研究，推动了相关领域的创新发展。</td></tr>
 <tr><td>2025-07-24</td><td>G2S-ICP SLAM: Geometry-aware Gaussian Splatting ICP SLAM</td><td>[2507.18344](http://arxiv.org/pdf/2507.18344)</td><td>◆ 提出了一种基于几何感知的高斯泼溅SLAM系统（G2S-ICP SLAM），通过将场景元素表示为局部切平面约束的高斯分布，实现高保真3D重建和实时相机位姿跟踪。  
 ◆ 创新性地使用2D高斯圆盘（而非传统3D椭球）表示局部表面，使其与底层几何对齐，显著提升了多视角深度解释的一致性。  
 ◆ 将表面对齐的高斯圆盘嵌入广义ICP框架，通过引入各向异性协方差先验改进配准，无需修改原有配准公式。  
@@ -80,6 +96,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-25</td><td>A Fast and Light-weight Non-Iterative Visual Odometry with RGB-D Cameras</td><td>[2507.18886](http://arxiv.org/pdf/2507.18886)</td><td>◆ 提出了一种解耦的非迭代式视觉里程计方法，将6自由度位姿估计分为旋转和平移两步计算，避免了传统迭代优化的计算负担。  
+◆ 创新性地利用场景中的重叠平面特征直接计算旋转矩阵，简化了旋转估计流程。  
+◆ 采用核互相关器(KCC)计算平移量，省去了传统特征提取与匹配的耗时步骤。  
+◆ 整体方案无需迭代优化和特征对齐，在低端i5 CPU上实现了71Hz的高实时性能。  
+◆ 在低纹理退化环境中表现优于现有方法，特别适用于无特征点依赖的场景。  
+◆ 相比传统RGB-D视觉里程计，显著提升了计算效率并降低了时间延迟。</td></tr>
 <tr><td>2025-07-21</td><td>DiffPF: Differentiable Particle Filtering with Generative Sampling via Conditional Diffusion Models</td><td>[2507.15716](http://arxiv.org/pdf/2507.15716)</td><td>◆ DiffPF首次将条件扩散模型融入粒子滤波框架，实现了高质量的后验采样，克服了传统方法的局限性。  
 ◆ 通过将扩散模型与预测粒子及当前观测条件结合，DiffPF能够从复杂、高维、多模态的滤波分布中生成精确且等权重的粒子。  
 ◆ 相比传统可微分粒子滤波依赖预定义或低容量提议分布的问题，DiffPF学习了一个灵活的后验采样器，显著提升了采样质量。  
@@ -226,6 +248,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-25</td><td>Cross Spatial Temporal Fusion Attention for Remote Sensing Object Detection via Image Feature Matching</td><td>[2507.19118](http://arxiv.org/pdf/2507.19118)</td><td>◆提出跨时空融合注意力机制(CSTF)，通过独立检测参考图和查询图中的尺度不变关键点来增强特征表示，解决多模态遥感图像几何和辐射差异大的问题。  
+◆创新性地构建对应图，同时利用多图像区域信息，提升跨模态特征匹配能力。  
+◆将相似性匹配重新定义为分类任务，结合SoftMax和全卷积网络(FCN)层，兼顾局部特征敏感性和全局上下文信息。  
+◆在HRSC2016和DOTA基准测试中达到90.99%和90.86%的平均mAP，显著优于现有方法，验证了跨模态匹配对下游目标检测任务的直接提升。  
+◆保持12.5 FPS的推理速度，兼具高性能与计算效率，满足实际应用需求。</td></tr>
 <tr><td>2025-07-24</td><td>A 3D Cross-modal Keypoint Descriptor for MR-US Matching and Registration</td><td>[2507.18551](http://arxiv.org/pdf/2507.18551)</td><td>◆提出新型3D跨模态关键点描述符，解决MRI与实时超声(iUS)因模态差异导致的配准难题。  
 ◆采用患者特异性合成匹配方法，通过术前MRI生成合成iUS数据，实现监督对比学习以构建共享描述符空间。  
 ◆设计概率关键点检测策略，识别解剖学显著且跨模态一致的特征点，提升匹配可靠性。  
@@ -287,6 +314,33 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-25</td><td>DINO-SLAM: DINO-informed RGB-D SLAM for Neural Implicit and Explicit Representations</td><td>[2507.19474](http://arxiv.org/pdf/2507.19474)</td><td>◆ 提出DINO-SLAM，一种基于DINO特征的设计策略，用于增强SLAM系统中神经隐式（NeRF）和显式（3DGS）表示的场景建模能力。  
+◆ 引入场景结构编码器（SSE），将DINO特征升级为增强版EDINO，以捕捉场景的层次化元素和结构关系。  
+◆ 开发了两种基于EDINO特征的基础范式，分别针对NeRF和3DGS的SLAM系统，实现更全面的场景表示。  
+◆ 在Replica、ScanNet和TUM数据集上验证了DINO-SLAM的优越性能，超越现有最先进方法。  
+◆ 通过融合DINO特征，显著提升了SLAM系统在复杂场景中的鲁棒性和准确性。</td></tr>
+<tr><td>2025-07-25</td><td>Fast Learning of Non-Cooperative Spacecraft 3D Models through Primitive Initialization</td><td>[2507.19459](http://arxiv.org/pdf/2507.19459)</td><td>◆ 提出基于CNN的3D高斯泼溅(3DGS)初始化器，仅需单目图像即可生成粗糙3D模型和目标姿态，解决了传统方法依赖多视角精确姿态的问题。  
+◆ 开发支持噪声或隐式姿态估计的训练流程，突破现有方法对精确姿态标注的强依赖性，增强太空场景适用性。  
+◆ 通过几何基元初始化策略，将3DGS训练迭代次数和所需图像数量降低至少一个数量级，大幅提升计算效率。  
+◆ 设计多姿态估计变体的CNN架构，系统分析不同变体在噪声姿态下的3D重建效果，为实际应用提供选择依据。  
+◆ 实验证明即使存在姿态估计误差，仍能重建高保真3D模型，首次实现新型视图合成技术在太空非合作目标建模中的可行性。</td></tr>
+<tr><td>2025-07-25</td><td>3DGauCIM: Accelerating Static/Dynamic 3D Gaussian Splatting via Digital CIM for High Frame Rate Real-Time Edge Rendering</td><td>[2507.19133](http://arxiv.org/pdf/2507.19133)</td><td>◆ 提出3DGauCIM框架，通过算法-硬件协同设计优化静态/动态3D高斯泼溅（3DGS）技术，实现边缘设备上的高帧率实时渲染。  
+◆ 算法层面创新：开发DRAM访问减少的视锥剔除技术，降低动态场景中高斯参数加载的能耗开销。  
+◆ 算法层面创新：设计自适应分块分组策略，提升片上缓冲区的重用率，减少频繁DRAM访问。  
+◆ 算法层面创新：提出自适应间隔初始化桶-双调排序算法，显著降低动态场景的排序延迟和能耗。  
+◆ 硬件层面创新：设计数字存内计算（DCIM）友好型计算流程，基于16nm原型芯片实测数据验证能效优势。  
+◆ 实验成果：在大型静态/动态数据集上实现超200 FPS的实时渲染，功耗仅0.28W（静态）/0.63W（动态），突破边缘设备能效瓶颈。</td></tr>
+<tr><td>2025-07-25</td><td>Gaussian Set Surface Reconstruction through Per-Gaussian Optimization</td><td>[2507.18923](http://arxiv.org/pdf/2507.18923)</td><td>◆ 提出Gaussian Set Surface Reconstruction (GSSR)方法，通过逐高斯优化实现高斯沿隐式表面的均匀分布，解决现有3DGS方法中高斯分布偏离表面问题。  
+◆ 结合像素级和高斯级的单视角法线一致性以及多视角光度一致性约束，实现细粒度的几何对齐，优化局部和全局几何精度。  
+◆ 引入不透明度正则化损失，有效消除冗余高斯，提升表示效率。  
+◆ 采用周期性的深度和法线引导的高斯重新初始化策略，改善高斯空间分布的均匀性和清洁度。  
+◆ 实验证明GSSR显著提升了几何重建精度，同时保持高质量渲染性能，支持直观的场景编辑和新3D环境生成。</td></tr>
+<tr><td>2025-07-24</td><td>SaLF: Sparse Local Fields for Multi-Sensor Rendering in Real-Time</td><td>[2507.18713](http://arxiv.org/pdf/2507.18713)</td><td>◆ 提出SaLF（稀疏局部场）新型体积表示方法，支持光栅化和光线追踪两种渲染方式，突破了传统方法只能二选一的限制。  
+◆ 采用稀疏3D体素基元与局部隐式场结合的混合表示，每个体素包含局部隐式场，实现高效存储与高精度细节的平衡。  
+◆ 首次实现单一模型同时支持非针孔相机（如鱼眼镜头）和旋转激光雷达的多传感器实时渲染（相机50+ FPS，LiDAR 600+ FPS）。  
+◆ 引入自适应剪枝与致密化机制，可动态优化场景表示，轻松处理大规模自动驾驶场景。  
+◆ 训练速度显著提升（&lt;30分钟），比NeRF快两个数量级，同时保持与现有自动驾驶传感器仿真方法相当的逼真度。  
+◆ 解耦场景表示与渲染流程，增强系统通用性，为多传感器仿真提供统一解决方案。</td></tr>
 <tr><td>2025-07-24</td><td>Unposed 3DGS Reconstruction with Probabilistic Procrustes Mapping</td><td>[2507.18541](http://arxiv.org/pdf/2507.18541)</td><td>◆ 提出首个无需预设相机位姿的3D高斯泼溅(3DGS)重建框架，通过概率性Procrustes映射实现数百张户外图像的联合优化。  
 ◆ 创新性地将数千万点云对齐问题建模为概率Procrustes问题，采用闭式解算方法实现分钟级全局配准。  
 ◆ 设计软垃圾箱机制与概率耦合策略，有效过滤不确定对应点，提升跨子图对齐的鲁棒性。  
@@ -342,4 +396,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.27
+> 更新于: 2025.07.28
