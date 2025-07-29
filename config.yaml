@@ -5,7 +5,7 @@ repo_name: "daily_paper_update"
 show_authors: True
 show_links: True
 show_badge: True
-max_results: 5
+max_results: 10
 
 publish_readme: True
 publish_gitpage: True
@@ -23,12 +23,14 @@ md_wechat_path: './docs/wechat.md'
 # keywords to search
 keywords:
     "LiDAR SLAM": 
-        filters: ["SLAM", "LiDAR-inertial Odometry", "LiDAR Odometry", "Localization and Mapping"]
+        filters: ["SLAM", "LiDAR Odometry", "LiDAR-inertial Odometry"]
     "Visual SLAM":
-        filters: ["Visual SLAM", "Visual Odometry"]
+        filters: ["Visual SLAM", "Visual Odometry", "Visual-inertial Odometry"]
     "Loop Closure":
         filters: ["Place recognition", "Relocalization", "Global Localization", "Loop Closure"]
     "Image Matching":
         filters: ["Keypoint Detection", "Feature Descriptor", "Image Matching", "Keypoint Matching", "Local Feature Matching"]
+    "Depth Estimation":
+        filters: ["Depth Estimation", "Stereo Matching"]
     "3DGS":
         filters: ["3DGS"]
