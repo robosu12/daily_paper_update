@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.07.28)
+# SLAM领域最新论文 (2025.07.29)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -21,6 +21,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-28</td><td>$S^3$LAM: Surfel Splatting SLAM for Geometrically Accurate Tracking and Mapping</td><td>[2507.20854](http://arxiv.org/pdf/2507.20854)</td><td>◆ 提出S³LAM系统，采用2D面元（surfel）作为基本单元，替代传统3D高斯椭球体，实现更高效的场景几何表示。  
+◆ 创新性地利用2D高斯面元进行场景表面建模，专注于物体表面几何，显著提升重建质量和精度。  
+◆ 设计自适应表面渲染策略，有效解决SLAM中视角受限下的实时优化问题，兼顾计算效率与建图准确性。  
+◆ 首次从2D面元渲染公式直接推导相机位姿雅可比矩阵，通过几何精确表示提升跟踪收敛性。  
+◆ 在合成与真实数据集上验证了S³LAM的优越性，性能达到当前最优水平。</td></tr>
+<tr><td>2025-07-28</td><td>Large-Scale LiDAR-Inertial Dataset for Degradation-Robust High-Precision Mapping</td><td>[2507.20516](http://arxiv.org/pdf/2507.20516)</td><td>◆ 提出首个面向复杂场景的大规模LiDAR-惯性数据集，填补现有研究在真实环境验证不足的空白。  
+◆ 覆盖4类差异化场景（6万-75万平方米），包含长轨迹、复杂结构及工业级传感器数据（多线LiDAR+IMU+RTK-GNSS）。  
+◆ 创新采用背包式移动平台实现高灵活性数据采集，兼顾大范围与高精度需求。  
+◆ 提出SLAM优化与RTK-GNSS锚定融合的基准真值生成方法，并通过倾斜摄影联合验证轨迹精度（厘米级）。  
+◆ 为LIO系统在实际测绘中的退化鲁棒性、泛化能力评估提供标准化测试基准。</td></tr>
+<tr><td>2025-07-26</td><td>DOA: A Degeneracy Optimization Agent with Adaptive Pose Compensation Capability based on Deep Reinforcement Learning</td><td>[2507.19742](http://arxiv.org/pdf/2507.19742)</td><td>◆ 提出基于PPO深度强化学习的自适应退化优化智能体（DOA），解决传统粒子滤波SLAM在长直走廊等退化环境中的定位失效问题。  
+◆ 创新性设计系统化方法解决监督学习的三大瓶颈：退化数据集获取困难、训练样本质量下降以及标注协议模糊性问题。  
+◆ 设计专用奖励函数引导智能体感知退化环境，通过退化因子动态调节多传感器在位姿优化中的贡献权重。  
+◆ 提出基于退化因子的线性插值公式，将观测分布向运动模型分布自适应偏移，实现位姿补偿步长的动态调整。  
+◆ 引入迁移学习模块赋予跨环境泛化能力，解决退化环境训练效率低下问题，并通过消融实验验证其关键作用。  
+◆ 实验证明DOA在多种环境中优于现有方法，尤其在退化检测和位姿优化精度方面达到SOTA水平。</td></tr>
 <tr><td>2025-07-25</td><td>DINO-SLAM: DINO-informed RGB-D SLAM for Neural Implicit and Explicit Representations</td><td>[2507.19474](http://arxiv.org/pdf/2507.19474)</td><td>◆ 提出DINO-SLAM框架，通过DINO特征增强策略提升神经隐式（NeRF）和显式（3DGS）SLAM系统的场景表示能力。  
 ◆ 设计场景结构编码器（SSE），将原始DINO特征升级为增强版EDINO，有效捕捉场景层次化元素及其结构关系。  
 ◆ 首次构建两种基于EDINO特征的SLAM范式，分别适配NeRF和3DGS两种主流三维表示方法。  
@@ -149,6 +165,33 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-28</td><td>Learning Transferable Facial Emotion Representations from Large-Scale Semantically Rich Captions</td><td>[2507.21015](http://arxiv.org/pdf/2507.21015)</td><td>◆ 提出EmoCap100K数据集，包含超过10万条富含情感语义的面部表情标注，涵盖全局情感状态和细粒度局部面部行为描述，解决了现有数据集中情感标签过于简化的问题。  
+◆ 设计EmoCapCLIP框架，通过全局-局部对比学习联合训练，结合跨模态引导的正样本挖掘模块，充分利用多层次文本信息并捕捉相似表情的语义关联。  
+◆ 首次系统性地探索自然语言描述作为监督信号的面部情感表征学习，突破了传统固定类别或维度标签的局限性，提升了模型的泛化能力和可解释性。  
+◆ 提出结构化语义描述方法，同时建模宏观情感和微观面部动作，实现了对复杂情感谱系的更精细表达。  
+◆ 在超过20个基准测试和5类任务中验证了方法的优越性，证明了大规模语义丰富标注对情感识别任务的重要价值。</td></tr>
+<tr><td>2025-07-28</td><td>PixelNav: Towards Model-based Vision-Only Navigation with Topological Graphs</td><td>[2507.20892](http://arxiv.org/pdf/2507.20892)</td><td>◆ 提出了一种结合深度学习与经典模型规划算法的混合视觉导航方法，突破了纯端到端数据驱动模型的局限性。  
+◆ 采用分层系统架构，整合了模型预测控制、可通行性估计、视觉地点识别和位姿估计等多项先进技术。  
+◆ 创新性地使用拓扑图作为环境表征，显著提升了系统的可解释性和可扩展性。  
+◆ 通过减少对大量训练数据的依赖，解决了当前主流方法在实际应用中的关键瓶颈问题。  
+◆ 大量真实场景实验验证了该方法的有效性，为视觉导航领域提供了新的技术路径。</td></tr>
+<tr><td>2025-07-28</td><td>Existence, uniqueness, and long-time asymptotic behavior of regular solutions in multidimensional thermoelasticity</td><td>[2507.20794](http://arxiv.org/pdf/2507.20794)</td><td>◆ 将一维热弹性模型中的Fisher信息泛函扩展到多维（二维和三维环面）情况，提出了新的泛函分析方法。  
+◆ 利用该泛函证明了在小初始数据下全局正则解的存在唯一性，以及大初始数据下的局部解存在性。  
+◆ 首次系统分析了多维热弹性系统长时间渐近行为，揭示了温度场会稳定趋于恒定状态。  
+◆ 发现位移场的创新分解结构：可分解为无限振荡的散度自由分量（满足齐次波动方程）和收敛到零的旋度自由分量。  
+◆ 建立了拉梅算子情形下的平行理论结果，拓展了热弹性理论的应用范围。  
+◆ 通过非线性分析方法统一处理了存在性、唯一性和渐近性三大核心问题，为多维热弹性系统提供了完整理论框架。</td></tr>
+<tr><td>2025-07-28</td><td>Uni-Mapper: Unified Mapping Framework for Multi-modal LiDARs in Complex and Dynamic Environments</td><td>[2507.20538](http://arxiv.org/pdf/2507.20538)</td><td>◆ Uni-Mapper提出首个动态感知的多模态LiDAR地图统一框架，解决复杂动态环境中多传感器地图对齐难题。  
+◆ 采用粗到细的体素化自由空间哈希地图，通过时序占据不一致性检测并剔除动态物体，提升静态场景一致性。  
+◆ 创新融合动态物体剔除模块与LiDAR全局描述符，保留静态局部特征，实现动态环境下鲁棒的地点识别。  
+◆ 设计集中式锚节点策略优化位姿图，有效抑制地图合并时的会话内漂移误差，提升跨地图闭环精度。  
+◆ 支持异构LiDAR（如机械式与固态雷达）的跨模态闭环检测，在动态场景与多传感器条件下性能超越现有方法。  
+◆ 通过真实世界多场景验证，在动态物体处理、跨传感器回环和全局地图对齐精度上均展现显著优势。</td></tr>
+<tr><td>2025-07-27</td><td>Improvised Nuclear Weapons with 60%-Enriched Uranium</td><td>[2507.20390](http://arxiv.org/pdf/2507.20390)</td><td>◆ 首次量化分析表明，仅需40公斤60%浓缩铀即可制造千吨当量的简易核武器，突破了传统核武器设计对高纯度铀的需求认知。  
+◆ 提出60%丰度铀材料在非导弹运载场景下的实战应用可能性（如集装箱运输），拓展了核安全威胁的评估维度。  
+◆ 结合2025年伊朗核设施遇袭事件，首次公开论证秘密转移的中等丰度铀库存（408公斤）被恐怖组织截获的潜在风险。  
+◆ 创新性将&quot;小男孩&quot;枪式核弹设计原理适配于中等丰度铀材料，验证了非国家行为体制造核武器的技术可行性。  
+◆ 通过伊朗案例建立&quot;核材料快速转移-监管真空-恐怖组织利用&quot;的三阶段威胁模型，为国际核安全体系提供新的预警框架。</td></tr>
 <tr><td>2025-07-24</td><td>DSFormer: A Dual-Scale Cross-Learning Transformer for Visual Place Recognition</td><td>[2507.18444](http://arxiv.org/pdf/2507.18444)</td><td>◆ 提出DSFormer双尺度交叉学习Transformer模块，通过双向信息传递整合CNN最后两层的双尺度特征，同时捕捉语义丰富性和空间细节。  
 ◆ 设计自注意力机制处理单尺度内的长程依赖关系，并引入共享交叉注意力实现跨尺度学习，增强特征表示能力。  
 ◆ 创新性提出块聚类策略，从多视角重构SF-XL训练数据集的分区方式，优化数据组织以提升视角变化的鲁棒性。  
@@ -314,6 +357,31 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-28</td><td>$S^3$LAM: Surfel Splatting SLAM for Geometrically Accurate Tracking and Mapping</td><td>[2507.20854](http://arxiv.org/pdf/2507.20854)</td><td>◆ 提出S³LAM系统，采用2D面元（surfel）作为基本表示单元，相比传统3D高斯椭球体更高效地表征场景几何。  
+◆ 创新性地使用2D高斯面元进行场景重建，专注于物体表面几何，显著提升跟踪和建图的精度。  
+◆ 设计自适应表面渲染策略，有效解决有限视角下的实时优化问题，在保证计算效率的同时提高建图准确性。  
+◆ 首次从2D面元渲染公式中直接推导相机位姿雅可比矩阵，证明几何精确表示对提升跟踪收敛性的关键作用。  
+◆ 在合成和真实数据集上的实验验证了S³LAM的优越性，性能达到当前最优水平。</td></tr>
+<tr><td>2025-07-27</td><td>From Gallery to Wrist: Realistic 3D Bracelet Insertion in Videos</td><td>[2507.20331](http://arxiv.org/pdf/2507.20331)</td><td>这篇论文的核心贡献和创新点如下：
+
+◆ 提出了一种混合3D渲染与2D扩散模型的视频对象插入方法，结合了3D高斯泼溅（3DGS）的时间一致性和2D扩散模型的逼真光照优势。  
+◆ 首次将3D高斯泼溅技术应用于动态视频中的3D手镯插入，通过多帧加权优化确保时间连贯性。  
+◆ 设计了基于光照分解的管线，分离物体的固有属性（反照率、阴影、反射率），并分别优化阴影和sRGB图像以实现更逼真的光照效果。  
+◆ 开发了2D扩散增强模型，专门用于提升3DGS初始渲染结果的光照真实感，解决了传统3D渲染在光照逼真度上的不足。  
+◆ 针对动态手腕场景的特殊挑战（复杂运动、视角变化、光照变化），提供了完整的解决方案，在增强现实和虚拟试戴领域具有应用价值。  
+◆ 该方法首次实现了3D渲染与2D扩散模型的协同工作，为视频对象插入提供了既保持时间一致性又具备照片级真实感的新范式。</td></tr>
+<tr><td>2025-07-26</td><td>SonicGauss: Position-Aware Physical Sound Synthesis for 3D Gaussian Representations</td><td>[2507.19835](http://arxiv.org/pdf/2507.19835)</td><td>◆ 首次将3D高斯表示（3DGS）扩展到物理声音合成领域，填补了该技术在声音建模方面的空白。  
+◆ 提出SonicGauss框架，通过结合扩散模型和PointTransformer特征提取器，直接从高斯椭球体推断材料特性和空间-声学关联。  
+◆ 实现基于碰撞位置的动态声音合成，支持空间变化的声学反馈，增强了交互真实感。  
+◆ 方法具有强泛化能力，可适用于多种物体类别，无需针对特定对象进行单独训练。  
+◆ 在ObjectFolder数据集和真实录音上的实验证明，该方法能生成高保真且位置感知的听觉效果。  
+◆ 为3D视觉表示与交互式声音合成的跨模态关联提供了创新解决方案。</td></tr>
+<tr><td>2025-07-26</td><td>Taking Language Embedded 3D Gaussian Splatting into the Wild</td><td>[2507.19830](http://arxiv.org/pdf/2507.19830)</td><td>◆ 提出首个将语言嵌入3D高斯泼溅（3DGS）技术应用于开放场景理解的框架，支持从无约束照片集中进行开放词汇分割。  
+◆ 创新性地引入多视角外观CLIP特征提取方法，结合瞬态不确定性和外观不确定性两种语言特征不确定性图，优化3D场景理解。  
+◆ 设计瞬态不确定性感知自编码器，有效压缩和融合多视角语言特征，提升特征学习效率。  
+◆ 提出多外观语言场3DGS表示和后集成策略，增强语言特征在3D场景中的鲁棒性和一致性。  
+◆ 构建PT-OVS基准数据集，首次为无约束照片集的开放词汇分割任务提供量化评估标准。  
+◆ 实验证明该方法在开放词汇查询、建筑风格识别和3D场景编辑等应用中显著优于现有方法。</td></tr>
 <tr><td>2025-07-25</td><td>DINO-SLAM: DINO-informed RGB-D SLAM for Neural Implicit and Explicit Representations</td><td>[2507.19474](http://arxiv.org/pdf/2507.19474)</td><td>◆ 提出DINO-SLAM，一种基于DINO特征的设计策略，用于增强SLAM系统中神经隐式（NeRF）和显式（3DGS）表示的场景建模能力。  
 ◆ 引入场景结构编码器（SSE），将DINO特征升级为增强版EDINO，以捕捉场景的层次化元素和结构关系。  
 ◆ 开发了两种基于EDINO特征的基础范式，分别针对NeRF和3DGS的SLAM系统，实现更全面的场景表示。  
@@ -396,4 +464,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.28
+> 更新于: 2025.07.29
