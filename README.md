@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.07.29)
+# SLAM领域最新论文 (2025.07.30)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,23 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-29</td><td>Impact of Underwater Image Enhancement on Feature Matching</td><td>[2507.21715](http://arxiv.org/pdf/2507.21715)</td><td>◆ 提出了局部匹配稳定性和最远可匹配帧数两项量化指标，用于评估水下图像增强效果。  
+◆ 针对水下环境设计了一种新颖的评估框架，专门分析增强技术对帧匹配性能的影响。  
+◆ 通过指标驱动的分析方法，揭示了现有方法的优势、局限性和实际应用评估中的不足。  
+◆ 结合实用匹配策略，建立了首个面向水下场景的上下文感知增强方法基准测试体系。  
+◆ 首次验证了图像视觉质量提升与SLAM算法性能的直接关联，证明了框架在实际水下作业中的实用价值。  
+◆ 系统解决了水下光吸收、散射、生物附着等退化因素对特征匹配任务的干扰问题。</td></tr>
+<tr><td>2025-07-29</td><td>Adaptive Prior Scene-Object SLAM for Dynamic Environments</td><td>[2507.21709](http://arxiv.org/pdf/2507.21709)</td><td>◆ 提出基于场景-物体的可靠性评估框架，通过当前帧质量指标和与可靠参考帧的场景变化，全面评估SLAM系统的稳定性。  
+◆ 针对现有系统在姿态估计不可靠时缺乏纠错机制的问题，引入姿态优化策略，利用可靠帧信息优化相机位姿估计，有效减少动态干扰的影响。  
+◆ 在动态环境中显著提升了定位精度，尤其在视角突变和运动物体特征不明确的挑战性场景中表现突出。  
+◆ 通过结合当前帧质量与场景变化分析，增强了系统对动态干扰的鲁棒性，避免了传统SLAM因静态环境假设导致的定位漂移。  
+◆ 在TUM RGB-D数据集上的大量实验验证了该方法在动态场景中的优越性，定位准确性和系统鲁棒性均有显著提升。</td></tr>
+<tr><td>2025-07-29</td><td>Multi-robot LiDAR SLAM: a practical case study in underground tunnel environments</td><td>[2507.21553](http://arxiv.org/pdf/2507.21553)</td><td>◆ 针对多机器人LiDAR SLAM在隧道环境中的实际应用问题，论文系统分析了现有去中心化系统的技术瓶颈，首次明确指出&quot;回环检测误报率过高&quot;是导致系统失效的核心原因。  
+◆ 提出了一种新型启发式算法，通过优化回环检测机制显著降低了误报率，解决了地下隧道等极端场景下SLAM稳定性差的难题。  
+◆ 创新性地选择地下隧道作为验证环境，这种长走廊、低特征、高对称性的极端场景为SLAM研究提供了更具挑战性的测试基准。  
+◆ 揭示了当前多机器人SLAM系统在动态环境适应性方面的不足，为后续研究指明了改进方向。  
+◆ 通过实证研究发现了现有技术框架中未被充分探索的研究空白，特别是多机协同建图时的数据融合优化问题。  
+◆ 提出的解决方案不依赖额外硬件，仅通过算法改进即可提升系统鲁棒性，具有工程实用价值。</td></tr>
 <tr><td>2025-07-28</td><td>$S^3$LAM: Surfel Splatting SLAM for Geometrically Accurate Tracking and Mapping</td><td>[2507.20854](http://arxiv.org/pdf/2507.20854)</td><td>◆ 提出S³LAM系统，采用2D面元（surfel）作为基本单元，替代传统3D高斯椭球体，实现更高效的场景几何表示。  
 ◆ 创新性地利用2D高斯面元进行场景表面建模，专注于物体表面几何，显著提升重建质量和精度。  
 ◆ 设计自适应表面渲染策略，有效解决SLAM中视角受限下的实时优化问题，兼顾计算效率与建图准确性。  
@@ -192,6 +209,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-29</td><td>Horseshoe Forests for High-Dimensional Causal Survival Analysis</td><td>[2507.22004](http://arxiv.org/pdf/2507.22004)</td><td>◆提出新型贝叶斯树集成模型，专门针对高维协变量下的生存分析数据，解决传统方法在异质性处理效应估计中的局限性。  
+◆创新性地将马蹄先验直接施加于树结构的步高参数，而非依赖树结构本身实现稀疏性，实现自适应全局-局部收缩，提升噪声抑制能力。  
+◆开发了可逆跳转吉布斯采样器，首次在树集成框架中成功融合非共轭马蹄先验，解决了计算难题。  
+◆通过大量模拟实验验证，该方法在高维协变量、不同稀疏度及非线性处理效应场景下均保持优异估计精度。  
+◆在胰腺导管腺癌（PDAC）真实数据集的重分析中展示了实用价值，为癌症生存分析提供新工具。  
+◆整体方案突破了传统生存分析模型对线性假设和低维数据的依赖，为高维因果推断开辟了新路径。</td></tr>
+<tr><td>2025-07-28</td><td>Collaborative Perceiver: Elevating Vision-based 3D Object Detection via Local Density-Aware Spatial Occupancy</td><td>[2507.21358](http://arxiv.org/pdf/2507.21358)</td><td>◆ 提出多任务学习框架Collaborative Perceiver (CoP)，通过空间占用预测辅助3D目标检测，挖掘两者在结构和概念上的相似性，提升空间表征能力。  
+◆ 设计局部密度感知(LDO)的密集占用真值生成方法，结合局部密度信息重建精细环境结构，弥补传统BEV表征的环境上下文缺失问题。  
+◆ 创新体素高度引导采样(VHS)策略，根据目标特性差异蒸馏细粒度局部特征，增强对多样化物体的几何感知。  
+◆ 开发全局-局部协同特征融合(CFF)模块，动态整合目标检测与占用预测的互补知识，构建更鲁棒的BEV表征。  
+◆ 在nuScenes基准测试中实现49.5% mAP和59.2% NDS的SOTA性能，验证了方法对纯视觉3D检测的有效提升。  
+（全文共5条创新点，总计约300字）</td></tr>
 <tr><td>2025-07-28</td><td>Learning Transferable Facial Emotion Representations from Large-Scale Semantically Rich Captions</td><td>[2507.21015](http://arxiv.org/pdf/2507.21015)</td><td>◆ 提出EmoCap100K数据集，包含超过10万条富含情感语义的面部表情标注，涵盖全局情感状态和细粒度局部面部行为描述，解决了现有数据集中情感标签过于简化的问题。  
 ◆ 设计EmoCapCLIP框架，通过全局-局部对比学习联合训练，结合跨模态引导的正样本挖掘模块，充分利用多层次文本信息并捕捉相似表情的语义关联。  
 ◆ 首次系统性地探索自然语言描述作为监督信号的面部情感表征学习，突破了传统固定类别或维度标签的局限性，提升了模型的泛化能力和可解释性。  
@@ -394,12 +423,40 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-29</td><td>From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning</td><td>[2507.22028](http://arxiv.org/pdf/2507.22028)</td><td>这篇论文的核心贡献是提出了Seeing-to-Experiencing (S2E)框架，通过强化学习提升导航基础模型的交互能力，同时保持从大规模视频数据中学习到的泛化性。主要创新点包括：
+
+◆ 提出S2E框架，首次将视频预训练与仿真环境强化学习后训练相结合，解决了纯离线训练模型缺乏交互推理能力的问题。
+
+◆ 设计Anchor-Guided Distribution Matching策略，通过锚点引导的分布匹配稳定学习过程，并建模多样化的运动模式。
+
+◆ 开发Residual-Attention模块，在不破坏预训练知识的前提下，从仿真环境中学习反应式行为。
+
+◆ 构建NavBench-GS评估基准，基于真实场景的光照级3D高斯重建，系统评估导航模型的泛化性和安全性。
+
+实验表明S2E有效缓解了纯离线数据扩展的收益递减问题，并通过对比分析验证了强化学习相比监督微调在机器人学习中的优势。该研究强调了在线交互体验对扩展机器人基础模型的关键作用。</td></tr>
+<tr><td>2025-07-29</td><td>DISCOVERSE: Efficient Robot Simulation in Complex High-Fidelity Environments</td><td>[2507.21981](http://arxiv.org/pdf/2507.21981)</td><td>◆ 提出了首个基于3D高斯泼溅（3DGS）的统一、模块化开源仿真框架DISCOVERSE，专为Real2Sim2Real机器人学习设计。  
+◆ 开发了全流程Real2Sim管线，能高保真合成复杂真实场景的几何与外观，为分析并弥合Sim2Real差距提供新途径。  
+◆ 结合高斯泼溅与MuJoCo物理引擎，支持多传感器模态的并行仿真与高精度物理模拟，显著提升效率与真实性。  
+◆ 兼容现有3D资产、机器人模型及ROS插件，便于快速集成和大规模机器人学习任务，推动复杂机器人基准测试发展。  
+◆ 在模仿学习实验中实现零样本Sim2Real迁移的SOTA性能，验证了框架在真实场景中的优越泛化能力。</td></tr>
+<tr><td>2025-07-29</td><td>MultiEditor: Controllable Multimodal Object Editing for Driving Scenarios Using 3D Gaussian Splatting Priors</td><td>[2507.21872](http://arxiv.org/pdf/2507.21872)</td><td>◆ 提出MultiEditor，首个双分支潜在扩散框架，可联合编辑自动驾驶场景中的图像和LiDAR点云数据。  
+◆ 创新引入3D高斯泼溅（3DGS）作为目标物体的结构和外观先验，实现跨模态的高保真重建。  
+◆ 设计多级外观控制机制（像素级粘贴、语义级引导、多分支细化），精确控制编辑过程的外观一致性。  
+◆ 提出深度引导的可变形跨模态条件模块，利用3DGS渲染深度自适应协调模态间互导，显著提升跨模态一致性。  
+◆ 实验证明该方法在视觉/几何保真度、编辑可控性和跨模态一致性上优于现有技术。  
+◆ 生成稀有类别车辆数据可大幅提升感知模型对长尾类别的检测精度（如安全关键但少见的车辆类型）。</td></tr>
+<tr><td>2025-07-29</td><td>No Redundancy, No Stall: Lightweight Streaming 3D Gaussian Splatting for Real-time Rendering</td><td>[2507.21572](http://arxiv.org/pdf/2507.21572)</td><td>◆ 提出LS-Gaussian框架，通过算法与硬件协同设计实现轻量级实时3D高斯泼溅渲染，解决高帧率与边缘计算资源受限的挑战。  
+◆ 核心创新之一是视角变换算法，利用连续帧间的场景连续性进行稀疏渲染，避免逐帧独立计算带来的冗余开销。  
+◆ 针对并行渲染中图像分块负载不均导致的硬件停滞问题，提出基于视角变换的负载预测机制，实现更均衡的并行计算。  
+◆ 设计定制化3DGS硬件加速器，支持负载感知的实时任务映射，显著提升计算效率。  
+◆ 实验验证框架高效性：在边缘GPU上平均加速5.41倍，定制加速器下最高达17.3倍，且视觉质量损失极小。  
+◆ 为自动驾驶、具身智能等实时3D渲染场景提供低延迟、高能效的解决方案。</td></tr>
 <tr><td>2025-07-28</td><td>$S^3$LAM: Surfel Splatting SLAM for Geometrically Accurate Tracking and Mapping</td><td>[2507.20854](http://arxiv.org/pdf/2507.20854)</td><td>◆ 提出S³LAM系统，采用2D面元（surfel）作为基本表示单元，相比传统3D高斯椭球体更高效地表征场景几何。  
 ◆ 创新性地使用2D高斯面元进行场景重建，专注于物体表面几何，显著提升跟踪和建图的精度。  
 ◆ 设计自适应表面渲染策略，有效解决有限视角下的实时优化问题，在保证计算效率的同时提高建图准确性。  
 ◆ 首次从2D面元渲染公式中直接推导相机位姿雅可比矩阵，证明几何精确表示对提升跟踪收敛性的关键作用。  
 ◆ 在合成和真实数据集上的实验验证了S³LAM的优越性，性能达到当前最优水平。</td></tr>
-<tr><td>2025-07-27</td><td>From Gallery to Wrist: Realistic 3D Bracelet Insertion in Videos</td><td>[2507.20331](http://arxiv.org/pdf/2507.20331)</td><td>这篇论文的核心贡献和创新点如下：
+<tr><td>2025-07-29</td><td>From Gallery to Wrist: Realistic 3D Bracelet Insertion in Videos</td><td>[2507.20331](http://arxiv.org/pdf/2507.20331)</td><td>这篇论文的核心贡献和创新点如下：
 
 ◆ 提出了一种混合3D渲染与2D扩散模型的视频对象插入方法，结合了3D高斯泼溅（3DGS）的时间一致性和2D扩散模型的逼真光照优势。  
 ◆ 首次将3D高斯泼溅技术应用于动态视频中的3D手镯插入，通过多帧加权优化确保时间连贯性。  
@@ -507,6 +564,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-29</td><td>PanoSplatt3R: Leveraging Perspective Pretraining for Generalized Unposed Wide-Baseline Panorama Reconstruction</td><td>[2507.21960](http://arxiv.org/pdf/2507.21960)</td><td>◆ 提出PanoSplatt3R方法，首次实现无需精确位姿信息的宽基线全景图重建，突破传统方法对位姿依赖的限制。  
+◆ 创新性地将透视域预训练迁移至全景域，通过领域自适应实现强大的泛化能力，解决跨域重建难题。  
+◆ 设计RoPE滚动机制，在旋转位置编码中引入水平周期性建模，仅需最小改动即可适配全景图像特性。  
+◆ 在无位姿条件下，新方法在生成高质量新视角和深度估计精度上显著超越现有最优技术。  
+◆ 实验证明该方法具有实际应用潜力，为复杂场景下的沉浸式三维重建提供高效解决方案。</td></tr>
 <tr><td>2025-07-25</td><td>Event-Based De-Snowing for Autonomous Driving</td><td>[2507.20901](http://arxiv.org/pdf/2507.20901)</td><td>◆ 提出基于事件相机的去雪方法，利用其亚毫秒级延迟和高动态范围特性，有效解决传统图像或视频去雪中的伪影和帧率限制问题。  
 ◆ 创新性地发现雪花遮挡在事件数据时空表征中呈现独特条纹特征，并设计注意力模块专门捕捉这些条纹以判断背景遮挡时刻。  
 ◆ 开发DSEC-Snow数据集，通过绿幕技术将真实雪景叠加到驾驶数据集，提供精确的同步图像-事件流及真实标注。  
@@ -576,4 +638,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.29
+> 更新于: 2025.07.30
