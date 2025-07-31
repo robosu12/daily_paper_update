@@ -27,7 +27,7 @@ keywords:
     "Visual SLAM":
         filters: ["Visual SLAM", "Visual Odometry", "Visual-inertial Odometry"]
     "Loop Closure":
-        filters: ["Place recognition", "Relocalization", "Global Localization", "Loop Closure"]
+        filters: ["Place recognition", "Relocalization", "Loop Closure"]
     "Image Matching":
         filters: ["Keypoint Detection", "Feature Descriptor", "Image Matching", "Keypoint Matching", "Local Feature Matching"]
     "Depth Estimation":
