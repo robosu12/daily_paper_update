@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.07.30)
+# SLAM领域最新论文 (2025.07.31)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-30</td><td>Modality-Aware Feature Matching: A Comprehensive Review of Single- and Cross-Modality Techniques</td><td>[2507.22791](http://arxiv.org/pdf/2507.22791)</td><td>◆ 全面综述了单模态与跨模态特征匹配技术，涵盖RGB图像、深度图像、3D点云、LiDAR扫描、医学图像及视觉-语言交互等多种模态，填补了该领域系统性总结的空白。  
+◆ 对比传统手工方法（如Harris角点、SIFT和ORB描述子）与深度学习方法，指出后者在跨模态鲁棒性和适应性上的显著优势，例如CNN-based SuperPoint和Transformer-based LoFTR等无检测器策略。  
+◆ 提出“模态感知”创新方向，针对不同模态设计专用特征匹配方案，如深度图像的几何与深度感知描述子、3D点云的稀疏与稠密学习方法、LiDAR的注意力增强神经网络等。  
+◆ 重点分析了医学图像匹配的特殊性，引入MIND描述子等专用解决方案，解决复杂组织结构的匹配挑战。  
+◆ 强调跨模态应用的突破性进展，如医学图像配准和视觉-语言任务，展示了特征匹配技术在多模态数据交互中的前沿发展。</td></tr>
+<tr><td>2025-07-30</td><td>UAVScenes: A Multi-Modal Dataset for UAVs</td><td>[2507.22412](http://arxiv.org/pdf/2507.22412)</td><td>◆ 提出了首个支持多模态（相机图像和LiDAR点云）帧级标注的大规模无人机数据集UAVScenes，填补了现有数据集仅支持定位或地图级语义分割的空白。  
+◆ 基于MARS-LVIG数据集进行升级，新增了人工标注的逐帧图像和点云语义标签，以及高精度6自由度位姿数据，显著扩展了数据用途。  
+◆ 首次支持无人机场景下的多任务联合评测，包括分割、深度估计、6-DoF定位、地点识别和新视角合成等高级场景理解任务。  
+◆ 提供了严格校准的多模态传感器数据（相机+LiDAR），解决了现有无人机数据集中模态对齐不足的问题。  
+◆ 通过开源数据集和基准任务，为无人机多模态感知研究提供了标准化评测平台，推动该领域技术发展。  
+◆ 特别关注实际无人机应用场景的需求，数据采集涵盖复杂环境，增强了数据集的实用性和泛化能力。</td></tr>
 <tr><td>2025-07-29</td><td>Impact of Underwater Image Enhancement on Feature Matching</td><td>[2507.21715](http://arxiv.org/pdf/2507.21715)</td><td>◆ 提出了局部匹配稳定性和最远可匹配帧数两项量化指标，用于评估水下图像增强效果。  
 ◆ 针对水下环境设计了一种新颖的评估框架，专门分析增强技术对帧匹配性能的影响。  
 ◆ 通过指标驱动的分析方法，揭示了现有方法的优势、局限性和实际应用评估中的不足。  
@@ -33,7 +44,7 @@
 ◆ 在动态环境中显著提升了定位精度，尤其在视角突变和运动物体特征不明确的挑战性场景中表现突出。  
 ◆ 通过结合当前帧质量与场景变化分析，增强了系统对动态干扰的鲁棒性，避免了传统SLAM因静态环境假设导致的定位漂移。  
 ◆ 在TUM RGB-D数据集上的大量实验验证了该方法在动态场景中的优越性，定位准确性和系统鲁棒性均有显著提升。</td></tr>
-<tr><td>2025-07-29</td><td>Multi-robot LiDAR SLAM: a practical case study in underground tunnel environments</td><td>[2507.21553](http://arxiv.org/pdf/2507.21553)</td><td>◆ 针对多机器人LiDAR SLAM在隧道环境中的实际应用问题，论文系统分析了现有去中心化系统的技术瓶颈，首次明确指出&quot;回环检测误报率过高&quot;是导致系统失效的核心原因。  
+<tr><td>2025-07-30</td><td>Multi-robot LiDAR SLAM: a practical case study in underground tunnel environments</td><td>[2507.21553](http://arxiv.org/pdf/2507.21553)</td><td>◆ 针对多机器人LiDAR SLAM在隧道环境中的实际应用问题，论文系统分析了现有去中心化系统的技术瓶颈，首次明确指出&quot;回环检测误报率过高&quot;是导致系统失效的核心原因。  
 ◆ 提出了一种新型启发式算法，通过优化回环检测机制显著降低了误报率，解决了地下隧道等极端场景下SLAM稳定性差的难题。  
 ◆ 创新性地选择地下隧道作为验证环境，这种长走廊、低特征、高对称性的极端场景为SLAM研究提供了更具挑战性的测试基准。  
 ◆ 揭示了当前多机器人SLAM系统在动态环境适应性方面的不足，为后续研究指明了改进方向。  
@@ -205,6 +216,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-30</td><td>UAVScenes: A Multi-Modal Dataset for UAVs</td><td>[2507.22412](http://arxiv.org/pdf/2507.22412)</td><td>◆ 提出了首个面向无人机多模态感知的大规模数据集UAVScenes，填补了现有数据集在高级场景理解任务上的空白。  
+◆ 基于MARS-LVIG数据集进行扩展，首次为逐帧图像和LiDAR点云提供人工标注的语义标签，支持精细场景解析。  
+◆ 引入精确的6自由度位姿数据，使数据集能同时支持2D和3D模态的多种任务评测。  
+◆ 覆盖五大核心任务：语义分割、深度估计、6-DoF定位、地点识别和新型视图合成，拓展了无人机感知研究边界。  
+◆ 通过严格的传感器标定和跨模态数据对齐，确保多模态数据的时间同步与空间一致性。  
+◆ 开源数据集并建立标准化评测基准，推动无人机多模态感知技术的协同发展。</td></tr>
 <tr><td>2025-07-29</td><td>Horseshoe Forests for High-Dimensional Causal Survival Analysis</td><td>[2507.22004](http://arxiv.org/pdf/2507.22004)</td><td>◆提出新型贝叶斯树集成模型，专门针对高维协变量下的生存分析数据，解决传统方法在异质性处理效应估计中的局限性。  
 ◆创新性地将马蹄先验直接施加于树结构的步高参数，而非依赖树结构本身实现稀疏性，实现自适应全局-局部收缩，提升噪声抑制能力。  
 ◆开发了可逆跳转吉布斯采样器，首次在树集成框架中成功融合非共轭马蹄先验，解决了计算难题。  
@@ -349,6 +366,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-30</td><td>Modality-Aware Feature Matching: A Comprehensive Review of Single- and Cross-Modality Techniques</td><td>[2507.22791](http://arxiv.org/pdf/2507.22791)</td><td>◆ 全面综述了单模态和跨模态特征匹配技术，涵盖RGB图像、深度图像、3D点云、LiDAR扫描、医学图像及视觉-语言交互等多种模态，填补了该领域系统性总结的空白。  
+◆ 对比分析了传统手工方法（如Harris角点、SIFT和ORB描述子）与深度学习方法（如SuperPoint和LoFTR）的优劣，指出后者在跨模态鲁棒性和适应性上的显著提升。  
+◆ 重点介绍了模态感知技术的最新进展，例如针对深度图像的几何与深度专用描述子、3D点云的稀疏与稠密学习方法，以及LiDAR扫描中基于注意力增强的神经网络。  
+◆ 强调了跨模态应用的突破，如医学图像配准中的MIND描述子和视觉-语言任务中的交互匹配技术，展示了特征匹配在多样化数据交互中的潜力。  
+◆ 系统总结了当前挑战与未来方向，为跨模态特征匹配的研究提供了清晰的路线图，推动该领域向更复杂场景扩展。</td></tr>
 <tr><td>2025-07-25</td><td>Cross Spatial Temporal Fusion Attention for Remote Sensing Object Detection via Image Feature Matching</td><td>[2507.19118](http://arxiv.org/pdf/2507.19118)</td><td>◆提出跨时空融合注意力机制(CSTF)，通过独立检测参考图和查询图中的尺度不变关键点来增强特征表示，解决多模态遥感图像几何和辐射差异大的问题。  
 ◆创新性地构建对应图，同时利用多图像区域信息，提升跨模态特征匹配能力。  
 ◆将相似性匹配重新定义为分类任务，结合SoftMax和全卷积网络(FCN)层，兼顾局部特征敏感性和全局上下文信息。  
@@ -415,6 +437,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-30</td><td>UFV-Splatter: Pose-Free Feed-Forward 3D Gaussian Splatting Adapted to Unfavorable Views</td><td>[2507.22342](http://arxiv.org/pdf/2507.22342)</td><td>◆ 提出首个无需相机位姿的前馈式3D高斯泼溅框架，专门针对不利视角输入进行优化，突破传统方法仅适用于固定视角的限制。  
+◆ 创新性地采用低秩自适应（LoRA）层增强预训练模型，通过图像重定心技术将不利视角转换为模型可处理的伪有利视角。  
+◆ 设计高斯适配器模块，显著提升重定心输入生成的高斯分布几何一致性，解决视角变换导致的几何失真问题。  
+◆ 开发高斯对齐方法，精确生成训练所需的目标视图渲染，为模型提供高质量监督信号。  
+◆ 提出仅需有利视角图像的全新训练策略，利用现成数据集实现模型优化，无需额外采集不利视角数据。  
+◆ 在Google Scanned Objects合成数据和OmniObject3D真实数据上验证有效性，显著提升不利视角下的渲染质量。</td></tr>
 <tr><td>2025-07-29</td><td>From Seeing to Experiencing: Scaling Navigation Foundation Models with Reinforcement Learning</td><td>[2507.22028](http://arxiv.org/pdf/2507.22028)</td><td>这篇论文的核心贡献是提出了Seeing-to-Experiencing (S2E)框架，通过强化学习提升导航基础模型的交互能力，同时保持从大规模视频数据中学习到的泛化性。主要创新点包括：
 
 ◆ 提出S2E框架，首次将视频预训练与仿真环境强化学习后训练相结合，解决了纯离线训练模型缺乏交互推理能力的问题。
@@ -431,13 +459,13 @@
 ◆ 结合高斯泼溅与MuJoCo物理引擎，支持多传感器模态的并行仿真与高精度物理模拟，显著提升效率与真实性。  
 ◆ 兼容现有3D资产、机器人模型及ROS插件，便于快速集成和大规模机器人学习任务，推动复杂机器人基准测试发展。  
 ◆ 在模仿学习实验中实现零样本Sim2Real迁移的SOTA性能，验证了框架在真实场景中的优越泛化能力。</td></tr>
-<tr><td>2025-07-29</td><td>MultiEditor: Controllable Multimodal Object Editing for Driving Scenarios Using 3D Gaussian Splatting Priors</td><td>[2507.21872](http://arxiv.org/pdf/2507.21872)</td><td>◆ 提出MultiEditor，首个双分支潜在扩散框架，可联合编辑自动驾驶场景中的图像和LiDAR点云数据。  
+<tr><td>2025-07-30</td><td>MultiEditor: Controllable Multimodal Object Editing for Driving Scenarios Using 3D Gaussian Splatting Priors</td><td>[2507.21872](http://arxiv.org/pdf/2507.21872)</td><td>◆ 提出MultiEditor，首个双分支潜在扩散框架，可联合编辑自动驾驶场景中的图像和LiDAR点云数据。  
 ◆ 创新引入3D高斯泼溅（3DGS）作为目标物体的结构和外观先验，实现跨模态的高保真重建。  
 ◆ 设计多级外观控制机制（像素级粘贴、语义级引导、多分支细化），精确控制编辑过程的外观一致性。  
 ◆ 提出深度引导的可变形跨模态条件模块，利用3DGS渲染深度自适应协调模态间互导，显著提升跨模态一致性。  
 ◆ 实验证明该方法在视觉/几何保真度、编辑可控性和跨模态一致性上优于现有技术。  
 ◆ 生成稀有类别车辆数据可大幅提升感知模型对长尾类别的检测精度（如安全关键但少见的车辆类型）。</td></tr>
-<tr><td>2025-07-29</td><td>No Redundancy, No Stall: Lightweight Streaming 3D Gaussian Splatting for Real-time Rendering</td><td>[2507.21572](http://arxiv.org/pdf/2507.21572)</td><td>◆ 提出LS-Gaussian框架，通过算法与硬件协同设计实现轻量级实时3D高斯泼溅渲染，解决高帧率与边缘计算资源受限的挑战。  
+<tr><td>2025-07-30</td><td>No Redundancy, No Stall: Lightweight Streaming 3D Gaussian Splatting for Real-time Rendering</td><td>[2507.21572](http://arxiv.org/pdf/2507.21572)</td><td>◆ 提出LS-Gaussian框架，通过算法与硬件协同设计实现轻量级实时3D高斯泼溅渲染，解决高帧率与边缘计算资源受限的挑战。  
 ◆ 核心创新之一是视角变换算法，利用连续帧间的场景连续性进行稀疏渲染，避免逐帧独立计算带来的冗余开销。  
 ◆ 针对并行渲染中图像分块负载不均导致的硬件停滞问题，提出基于视角变换的负载预测机制，实现更均衡的并行计算。  
 ◆ 设计定制化3DGS硬件加速器，支持负载感知的实时任务映射，显著提升计算效率。  
@@ -554,6 +582,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-30</td><td>Modality-Aware Feature Matching: A Comprehensive Review of Single- and Cross-Modality Techniques</td><td>[2507.22791](http://arxiv.org/pdf/2507.22791)</td><td>◆ 全面综述了单模态和跨模态特征匹配技术，涵盖RGB图像、深度图像、3D点云、LiDAR扫描、医学图像及视觉-语言交互等多种模态，填补了该领域系统性总结的空白。  
+◆ 对比分析了传统手工方法（如Harris角点、SIFT和ORB描述子）与深度学习方法（如SuperPoint和LoFTR），指出后者在跨模态鲁棒性和适应性上的显著优势。  
+◆ 重点介绍了模态感知的创新技术，包括针对深度图像的几何与深度专用描述子、3D点云的稀疏与稠密学习方法，以及LiDAR扫描的注意力增强神经网络。  
+◆ 提出医学图像匹配的专用解决方案（如MIND描述子），解决了复杂模态下的特征匹配挑战。  
+◆ 强调了跨模态应用（如医学图像配准和视觉-语言任务）的前沿进展，展示了特征匹配技术处理多样化数据交互的潜力。</td></tr>
+<tr><td>2025-07-30</td><td>A Dual-Feature Extractor Framework for Accurate Back Depth and Spine Morphology Estimation from Monocular RGB Images</td><td>[2507.22691](http://arxiv.org/pdf/2507.22691)</td><td>◆ 提出了一种新颖的双特征提取器框架，通过单目RGB图像准确估计背部深度和脊柱形态，解决了传统X射线评估脊柱侧弯的辐射和可及性问题。  
+◆ 设计了自适应多尺度特征学习网络（GAMA-Net），通过双编码器分别提取局部块级和全局特征，显著提升了背部细微深度变化的捕捉能力。  
+◆ 创新性地引入基于块的混合注意力模块（PBHA），有效交互局部和全局特征，增强了模型对复杂背部表面特征的表达能力。  
+◆ 开发了自适应多尺度特征融合模块（AMFF），动态解码并融合多尺度信息，进一步优化了深度估计的精度。  
+◆ 首次将表面信息和预测深度信息相结合用于脊柱形态估计，显著提高了脊柱曲线生成的准确性，验证了深度信息对2D图像局限性的补偿作用。  
+◆ 在三个不同评估指标上分别达到78.2%、93.6%和97.5%的高精度，脊柱形态估计性能最高达97%，为临床提供了一种安全、可及的替代方案。</td></tr>
+<tr><td>2025-07-30</td><td>UAVScenes: A Multi-Modal Dataset for UAVs</td><td>[2507.22412](http://arxiv.org/pdf/2507.22412)</td><td>◆ 提出了UAVScenes数据集，填补了无人机多模态感知领域缺乏同时支持2D和3D高级场景理解任务的空白。  
+◆ 基于MARS-LVIG数据集进行扩展，首次为无人机多模态数据（相机图像和LiDAR点云）提供逐帧语义标注，突破了现有数据集仅支持定位或地图级分割的限制。  
+◆ 新增精确的6自由度位姿信息，支持更丰富的任务场景，如6-DoF定位、位姿识别和新型视图合成（NVS）。  
+◆ 数据集设计兼顾多种感知任务，包括语义分割、深度估计、场景识别等，为无人机多模态算法开发提供统一基准。  
+◆ 公开了完整标注的大规模数据集，促进无人机领域多模态感知研究的进一步发展。</td></tr>
 <tr><td>2025-07-29</td><td>PanoSplatt3R: Leveraging Perspective Pretraining for Generalized Unposed Wide-Baseline Panorama Reconstruction</td><td>[2507.21960](http://arxiv.org/pdf/2507.21960)</td><td>◆ 提出PanoSplatt3R方法，首次实现无需精确位姿信息的宽基线全景图重建，突破传统方法对位姿依赖的限制。  
 ◆ 创新性地将透视域预训练迁移至全景域，通过领域自适应实现强大的泛化能力，解决跨域重建难题。  
 ◆ 设计RoPE滚动机制，在旋转位置编码中引入水平周期性建模，仅需最小改动即可适配全景图像特性。  
@@ -626,4 +670,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.30
+> 更新于: 2025.07.31
