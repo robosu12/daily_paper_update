@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.07.31)
+# SLAM领域最新论文 (2025.08.01)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-31</td><td>Stereo 3D Gaussian Splatting SLAM for Outdoor Urban Scenes</td><td>[2507.23677](http://arxiv.org/pdf/2507.23677)</td><td>◆ 提出了首个面向户外场景的双目3D高斯泼溅SLAM系统（BGS-SLAM），填补了现有3DGS-SLAM技术主要针对室内环境且依赖主动深度传感器的空白。  
+◆ 仅需RGB立体图像对即可运行，无需LiDAR或主动传感器，降低了硬件成本和复杂度。  
+◆ 利用预训练深度立体网络的深度估计指导3D高斯优化，结合多损失策略提升几何一致性与视觉质量。  
+◆ 针对复杂户外环境设计了高效的系统架构，在跟踪精度和建图性能上超越现有基于3DGS的解决方案。  
+◆ 通过多数据集实验验证了系统在大型户外场景中的鲁棒性和优越性，为户外SLAM提供了新范式。</td></tr>
+<tr><td>2025-07-31</td><td>DRACo-SLAM2: Distributed Robust Acoustic Communication-efficient SLAM for Imaging Sonar EquippedUnderwater Robot Teams with Object Graph Matching</td><td>[2507.23629](http://arxiv.org/pdf/2507.23629)</td><td>◆ 提出DRACo-SLAM2框架，改进原有系统，专为配备多波束成像声纳的水下机器人团队设计，实现分布式SLAM。  
+◆ 创新性地将声纳地图表示为物体图，通过物体图匹配实现高效跨机器人回环检测，无需依赖先验几何信息。  
+◆ 针对水下扫描匹配特点，提出增量式群组一致测量集最大化（GCM）方法，改进原有PCM算法，有效处理相邻跨机器人回环共享相似配准误差的场景。  
+◆ 通过物体图匹配显著提升跨机器人回环检测的时间效率，解决了水下环境中传统方法的计算瓶颈。  
+◆ 在仿真和真实数据集上进行广泛对比实验，验证了所提方法的优越性和实用性。</td></tr>
+<tr><td>2025-07-31</td><td>GSFusion:Globally Optimized LiDAR-Inertial-Visual Mapping for Gaussian Splatting</td><td>[2507.23273](http://arxiv.org/pdf/2507.23273)</td><td>◆ 提出GSFusion系统，首次将激光雷达（LiDAR）、惯性测量单元（IMU）和视觉传感器融合到3D高斯泼溅（3DGS）框架中，实现高精度实时建图。  
+◆ 引入全局位姿图优化中的面元到面元（surfel-to-surfel）约束，显著提升地图的全局一致性和对齐精度，解决传统3DGS因累积误差导致的失真问题。  
+◆ 设计像素感知的高斯初始化策略，有效利用稀疏LiDAR数据快速生成高质量高斯表示，大幅降低优化时间。  
+◆ 提出有界Sigmoid约束机制，防止高斯分布因数据稀疏性导致的过度扩散，提升重建稳定性和渲染质量。  
+◆ 在公开和自建数据集上验证，系统在渲染质量和建图效率上均优于现有3DGS SLAM方案，尤其在弱纹理或光照不足环境中表现突出。</td></tr>
 <tr><td>2025-07-30</td><td>Modality-Aware Feature Matching: A Comprehensive Review of Single- and Cross-Modality Techniques</td><td>[2507.22791](http://arxiv.org/pdf/2507.22791)</td><td>◆ 全面综述了单模态与跨模态特征匹配技术，涵盖RGB图像、深度图像、3D点云、LiDAR扫描、医学图像及视觉-语言交互等多种模态，填补了该领域系统性总结的空白。  
 ◆ 对比传统手工方法（如Harris角点、SIFT和ORB描述子）与深度学习方法，指出后者在跨模态鲁棒性和适应性上的显著优势，例如CNN-based SuperPoint和Transformer-based LoFTR等无检测器策略。  
 ◆ 提出“模态感知”创新方向，针对不同模态设计专用特征匹配方案，如深度图像的几何与深度感知描述子、3D点云的稀疏与稠密学习方法、LiDAR的注意力增强神经网络等。  
@@ -220,6 +235,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-31</td><td>DRACo-SLAM2: Distributed Robust Acoustic Communication-efficient SLAM for Imaging Sonar EquippedUnderwater Robot Teams with Object Graph Matching</td><td>[2507.23629](http://arxiv.org/pdf/2507.23629)</td><td>◆ 提出DRACo-SLAM2框架，为配备多波束成像声纳的水下机器人团队设计分布式SLAM系统，扩展了原有DRACo-SLAM的功能。  
+◆ 创新性地将声纳地图表示为对象图，通过对象图匹配实现高效跨机器人回环检测，无需依赖先验几何信息。  
+◆ 针对水下扫描匹配特点，改进PCM算法为增量式GCM（Group-wise Consistent Measurement Set Maximization），有效处理相邻跨机器人回环共享相似配准误差的场景。  
+◆ 提出的对象图匹配方法显著提升了跨机器人回环检测的时间效率，适用于水下通信受限环境。  
+◆ 通过大量仿真和真实数据集验证了方法的优越性，展示了在复杂水下环境中的鲁棒性和实用性。</td></tr>
+<tr><td>2025-07-31</td><td>Designing Dynamic Pricing for Bike-sharing Systems via Differentiable Agent-based Simulation</td><td>[2507.23344](http://arxiv.org/pdf/2507.23344)</td><td>◆ 提出了一种基于可微分代理模拟的新方法，用于快速设计共享单车系统的动态定价策略，有效解决时空需求不均导致的库存失衡问题。  
+◆ 该方法能够处理用户背景多样性和概率性选择行为，相比传统方法显著提升了计算效率和准确性。  
+◆ 在包含25个单车站点和5个时间段的实验中，损失减少了73%-78%，收敛速度提高了100倍以上。  
+◆ 在大规模城市共享单车系统（289个站点）的验证中，证明所获定价策略无需人工调度即可实现库存自然平衡。  
+◆ 发现通过设置合适的初始条件，可以最小化诱导库存平衡所需的折扣成本，为实际运营提供经济性优化方案。  
+◆ 结合仿真与参数优化，首次实现了动态定价策略的端到端高效设计，为共享交通系统管理提供了新工具。</td></tr>
 <tr><td>2025-07-30</td><td>UAVScenes: A Multi-Modal Dataset for UAVs</td><td>[2507.22412](http://arxiv.org/pdf/2507.22412)</td><td>◆ 提出了首个面向无人机多模态感知的大规模数据集UAVScenes，填补了现有数据集在高级场景理解任务上的空白。  
 ◆ 基于MARS-LVIG数据集进行扩展，首次为逐帧图像和LiDAR点云提供人工标注的语义标签，支持精细场景解析。  
 ◆ 引入精确的6自由度位姿数据，使数据集能同时支持2D和3D模态的多种任务评测。  
@@ -372,6 +398,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-31</td><td>Mitigating Resolution-Drift in Federated Learning: Case of Keypoint Detection</td><td>[2507.23461](http://arxiv.org/pdf/2507.23461)</td><td>◆ 首次在联邦学习中提出并系统研究了&quot;分辨率漂移&quot;问题，揭示了分辨率差异作为非独立同分布数据的新维度对关键点检测任务的影响。  
+◆ 提出分辨率自适应联邦学习（RAF）方法，通过基于热图的多分辨率知识蒸馏技术，在高分辨率教师模型和低分辨率学生模型间传递知识。  
+◆ RAF创新性地实现了分辨率鲁棒性提升，避免了过拟合问题，且无需修改现有联邦学习框架即可直接集成。  
+◆ 通过理论分析和大量实验验证，证明RAF能有效缓解分辨率漂移，在人体姿态估计任务上取得显著性能提升。  
+◆ 虽然以姿态估计为案例，但t-SNE分析揭示了分类任务与高分辨率表征任务的特征差异，表明RAF可推广至其他需要保持空间细节的任务领域。  
+◆ 填补了联邦学习在非分类任务（特别是涉及空间信息的视觉任务）中的研究空白，为处理分辨率异构性提供了新思路。</td></tr>
+<tr><td>2025-07-31</td><td>VMatcher: State-Space Semi-Dense Local Feature Matching</td><td>[2507.23371](http://arxiv.org/pdf/2507.23371)</td><td>◆ 提出VMatcher，一种结合Mamba和Transformer的混合网络，用于图像对的半稠密特征匹配，兼顾性能和效率。  
+◆ 首次将选择性状态空间模型（SSM）引入特征匹配任务，利用Mamba的线性复杂度显著降低计算成本，突破传统Transformer二次方复杂度的瓶颈。  
+◆ 设计混合架构，融合Mamba的长序列高效处理能力和Transformer的注意力机制，在保持高精度的同时提升计算效率。  
+◆ 提出多种层次化网络配置，通过不同深度和模块组合优化匹配效果，在多个基准测试中达到最优性能。  
+◆ 强调实时应用场景的实用性，模型在快速推理需求下仍保持鲁棒性，为实际部署提供高效解决方案。  
+◆ 开源代码促进后续研究，为特征匹配领域提供新的技术路线和可复现的基准。</td></tr>
 <tr><td>2025-07-30</td><td>Modality-Aware Feature Matching: A Comprehensive Review of Single- and Cross-Modality Techniques</td><td>[2507.22791](http://arxiv.org/pdf/2507.22791)</td><td>◆ 全面综述了单模态和跨模态特征匹配技术，涵盖RGB图像、深度图像、3D点云、LiDAR扫描、医学图像及视觉-语言交互等多种模态，填补了该领域系统性总结的空白。  
 ◆ 对比分析了传统手工方法（如Harris角点、SIFT和ORB描述子）与深度学习方法（如SuperPoint和LoFTR）的优劣，指出后者在跨模态鲁棒性和适应性上的显著提升。  
 ◆ 重点介绍了模态感知技术的最新进展，例如针对深度图像的几何与深度专用描述子、3D点云的稀疏与稠密学习方法，以及LiDAR扫描中基于注意力增强的神经网络。  
@@ -445,6 +483,42 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-31</td><td>SeqAffordSplat: Scene-level Sequential Affordance Reasoning on 3D Gaussian Splatting</td><td>[2507.23772](http://arxiv.org/pdf/2507.23772)</td><td>◆ 提出首个面向3D高斯泼溅(3DGS)场景的序列化功能推理任务，突破现有单物体单步骤交互的局限，支持长时序多物体复杂任务。  
+◆ 构建SeqAffordSplat大规模基准数据集，包含1800+复杂场景，为3DGS环境下的长时序功能理解研究提供支撑。  
+◆ 设计端到端框架SeqSplatNet，首次实现从自然语言指令到3D功能掩码序列的直接映射，通过LLM自回归生成含分割标记的文本指导解码。  
+◆ 创新提出条件几何重建预训练策略，通过从已知几何观测重建完整功能区域掩码，建立强几何先验以应对复杂场景结构。  
+◆ 开发多尺度特征注入机制，从2D视觉基础模型提取语义特征并融合至3D解码器，有效解决语义模糊性问题。  
+实验表明该方法在复杂场景级序列任务上达到最优性能，将功能推理能力从单步骤提升至长时序交互水平。</td></tr>
+<tr><td>2025-07-31</td><td>Stereo 3D Gaussian Splatting SLAM for Outdoor Urban Scenes</td><td>[2507.23677](http://arxiv.org/pdf/2507.23677)</td><td>◆ 提出了首个面向户外场景的双目3D高斯泼溅SLAM系统（BGS-SLAM），填补了现有3DGS-SLAM技术主要局限于室内环境的空白。  
+◆ 仅依赖RGB双目图像，无需LiDAR或主动深度传感器，降低了硬件成本和使用门槛。  
+◆ 利用预训练深度立体网络的深度估计指导3D高斯优化，结合多损失策略提升几何一致性和视觉质量。  
+◆ 针对复杂户外环境设计了专门的解决方案，在多个数据集上验证了其优越性。  
+◆ 相比其他基于3DGS的SLAM方法，BGS-SLAM在跟踪精度和建图性能方面表现更优。  
+◆ 为大规模户外场景的高效、高保真三维重建提供了新的技术路径。</td></tr>
+<tr><td>2025-07-31</td><td>Gaussian Splatting Feature Fields for Privacy-Preserving Visual Localization</td><td>[2507.23569](http://arxiv.org/pdf/2507.23569)</td><td>◆ 提出Gaussian Splatting Feature Fields (GSFFs)，将显式几何模型（3DGS）与隐式特征场结合，构建新型视觉定位场景表示。  
+◆ 利用3DGS的密集几何信息和可微分光栅化算法，学习基于3D空间的鲁棒特征表示，提升定位精度。  
+◆ 通过对比学习框架，将3D尺度感知特征场与2D特征编码器对齐到统一嵌入空间，增强特征一致性。  
+◆ 引入3D结构感知聚类方法，正则化表征学习并自动生成分割结果，支持隐私保护定位（如使用分割替代原始图像）。  
+◆ 提出基于特征图或分割对齐的姿态优化方法，实现隐私保护与非隐私保护双模式定位，在多个真实数据集上达到SOTA性能。</td></tr>
+<tr><td>2025-07-31</td><td>NeRF Is a Valuable Assistant for 3D Gaussian Splatting</td><td>[2507.23374](http://arxiv.org/pdf/2507.23374)</td><td>◆ 提出NeRF-GS框架，首次联合优化NeRF（神经辐射场）和3D高斯泼溅（3DGS），实现两种技术的优势互补。  
+◆ 利用NeRF的连续空间表征能力，有效解决3DGS对高斯初始化敏感、空间感知弱和高斯间关联性不足的固有缺陷。  
+◆ 通过渐进式对齐3DGS与NeRF的空间特征，使两者能基于共享的3D空间信息协同优化，提升场景表示精度。  
+◆ 创新性地优化隐式特征和高斯位置的残差向量，弥合两种方法的理论差异，增强3DGS的个性化建模能力。  
+◆ 在基准数据集上实现SOTA性能，验证了NeRF与3DGS的互补性，为混合式3D场景建模提供了新思路。</td></tr>
+<tr><td>2025-07-31</td><td>MagicRoad: Semantic-Aware 3D Road Surface Reconstruction via Obstacle Inpainting</td><td>[2507.23340](http://arxiv.org/pdf/2507.23340)</td><td>这篇论文的核心贡献是通过语义感知的障碍物修复技术实现鲁棒的3D路面重建，主要创新点如下：
+
+◆ 提出融合遮挡感知2D高斯面元与语义引导色彩增强的框架，解决动态遮挡和静态障碍物干扰问题  
+◆ 采用平面自适应高斯表示方法，实现高效的大规模路面建模  
+◆ 创新性地结合分割引导的视频修复技术，可同时消除动态和静态前景物体  
+◆ 在HSV色彩空间进行语义感知校正，显著提升光照和天气变化下的颜色一致性  
+◆ 实验证明该方法在复杂城市场景中重建效果优于现有技术，几何精度和视觉连贯性更优  
+
+该方法为自动驾驶提供了更可靠的高精度路面重建方案，有效应对现实环境中的各种挑战。</td></tr>
+<tr><td>2025-07-31</td><td>GSFusion:Globally Optimized LiDAR-Inertial-Visual Mapping for Gaussian Splatting</td><td>[2507.23273](http://arxiv.org/pdf/2507.23273)</td><td>◆ 提出GSFusion系统，首次将激光雷达（LiDAR）、惯性测量单元（IMU）和视觉传感器融合到3D高斯泼溅（3DGS）建图中，解决了传统纯视觉方法在弱纹理、光照差或远距离场景中的局限性。  
+◆ 引入全局优化的面元到面元（surfel-to-surfel）约束，通过位姿图优化实现高精度地图一致性，显著提升建图质量。  
+◆ 设计像素感知的高斯初始化策略，有效处理激光雷达稀疏数据，提升高斯表示的效率和准确性。  
+◆ 提出有界Sigmoid约束机制，防止高斯分布无控制增长，优化计算资源利用率并缩短优化时间。  
+◆ 在公开和自建数据集上的实验表明，该系统在渲染质量和建图效率上均优于现有3DGS SLAM方案，尤其在复杂环境中表现突出。</td></tr>
 <tr><td>2025-07-30</td><td>UFV-Splatter: Pose-Free Feed-Forward 3D Gaussian Splatting Adapted to Unfavorable Views</td><td>[2507.22342](http://arxiv.org/pdf/2507.22342)</td><td>◆ 提出首个无需相机位姿的前馈式3D高斯泼溅框架，专门针对不利视角输入进行优化，突破传统方法仅适用于固定视角的限制。  
 ◆ 创新性地采用低秩自适应（LoRA）层增强预训练模型，通过图像重定心技术将不利视角转换为模型可处理的伪有利视角。  
 ◆ 设计高斯适配器模块，显著提升重定心输入生成的高斯分布几何一致性，解决视角变换导致的几何失真问题。  
@@ -467,7 +541,7 @@
 ◆ 结合高斯泼溅与MuJoCo物理引擎，支持多传感器模态的并行仿真与高精度物理模拟，显著提升效率与真实性。  
 ◆ 兼容现有3D资产、机器人模型及ROS插件，便于快速集成和大规模机器人学习任务，推动复杂机器人基准测试发展。  
 ◆ 在模仿学习实验中实现零样本Sim2Real迁移的SOTA性能，验证了框架在真实场景中的优越泛化能力。</td></tr>
-<tr><td>2025-07-30</td><td>MultiEditor: Controllable Multimodal Object Editing for Driving Scenarios Using 3D Gaussian Splatting Priors</td><td>[2507.21872](http://arxiv.org/pdf/2507.21872)</td><td>◆ 提出MultiEditor，首个双分支潜在扩散框架，可联合编辑自动驾驶场景中的图像和LiDAR点云数据。  
+<tr><td>2025-07-31</td><td>MultiEditor: Controllable Multimodal Object Editing for Driving Scenarios Using 3D Gaussian Splatting Priors</td><td>[2507.21872](http://arxiv.org/pdf/2507.21872)</td><td>◆ 提出MultiEditor，首个双分支潜在扩散框架，可联合编辑自动驾驶场景中的图像和LiDAR点云数据。  
 ◆ 创新引入3D高斯泼溅（3DGS）作为目标物体的结构和外观先验，实现跨模态的高保真重建。  
 ◆ 设计多级外观控制机制（像素级粘贴、语义级引导、多分支细化），精确控制编辑过程的外观一致性。  
 ◆ 提出深度引导的可变形跨模态条件模块，利用3DGS渲染深度自适应协调模态间互导，显著提升跨模态一致性。  
@@ -592,6 +666,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-31</td><td>Stereo 3D Gaussian Splatting SLAM for Outdoor Urban Scenes</td><td>[2507.23677](http://arxiv.org/pdf/2507.23677)</td><td>◆ 首次提出针对户外场景的双目3D高斯泼溅SLAM系统（BGS-SLAM），填补了现有3DGS-SLAM技术主要局限于室内环境的空白。  
+◆ 仅依赖RGB立体图像对，无需LiDAR或主动深度传感器，降低了硬件成本与使用门槛。  
+◆ 创新性地利用预训练深度立体网络的深度估计结果，指导3D高斯优化过程，提升几何一致性。  
+◆ 提出多损失策略，同时优化几何精度与视觉质量，在复杂户外环境中实现高保真重建。  
+◆ 通过多数据集验证，系统在跟踪精度和建图性能上优于现有基于3DGS的解决方案，尤其适应大尺度动态场景。  
+◆ 为户外SLAM提供了一种高效且轻量化的新范式，结合了神经渲染与传统SLAM的优势。</td></tr>
 <tr><td>2025-07-30</td><td>Modality-Aware Feature Matching: A Comprehensive Review of Single- and Cross-Modality Techniques</td><td>[2507.22791](http://arxiv.org/pdf/2507.22791)</td><td>◆ 全面综述了单模态和跨模态特征匹配技术，涵盖RGB图像、深度图像、3D点云、LiDAR扫描、医学图像及视觉-语言交互等多种模态，填补了该领域系统性总结的空白。  
 ◆ 对比分析了传统手工方法（如Harris角点、SIFT和ORB描述子）与深度学习方法（如SuperPoint和LoFTR），指出后者在跨模态鲁棒性和适应性上的显著优势。  
 ◆ 重点介绍了模态感知的创新技术，包括针对深度图像的几何与深度专用描述子、3D点云的稀疏与稠密学习方法，以及LiDAR扫描的注意力增强神经网络。  
@@ -682,4 +762,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.07.31
+> 更新于: 2025.08.01
