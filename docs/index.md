@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.08.03)
+# SLAM领域最新论文 (2025.08.04)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-07-31</td><td>The Monado SLAM Dataset for Egocentric Visual-Inertial Tracking</td><td>[2508.00088](http://arxiv.org/pdf/2508.00088)</td><td>◆ 提出了Monado SLAM数据集，专门针对头戴式设备的视觉-惯性跟踪挑战，填补了现有数据集的空白。  
+◆ 数据集包含真实场景下的多序列数据，覆盖了高动态运动、动态遮挡、长时间跟踪等复杂场景。  
+◆ 解决了现有数据集在低纹理区域、恶劣光照条件和传感器饱和等问题上的不足。  
+◆ 数据来源于多款虚拟现实头显设备，更贴近实际应用场景。  
+◆ 采用CC BY 4.0许可协议公开数据集，推动VIO/SLAM领域的研究与发展。  
+◆ 通过真实数据验证了当前先进跟踪系统在实际应用中的局限性，为改进算法提供了重要参考。</td></tr>
 <tr><td>2025-07-31</td><td>Stereo 3D Gaussian Splatting SLAM for Outdoor Urban Scenes</td><td>[2507.23677](http://arxiv.org/pdf/2507.23677)</td><td>◆ 提出了首个面向户外场景的双目3D高斯泼溅SLAM系统（BGS-SLAM），填补了现有3DGS-SLAM技术主要针对室内环境且依赖主动深度传感器的空白。  
 ◆ 仅需RGB立体图像对即可运行，无需LiDAR或主动传感器，降低了硬件成本和复杂度。  
 ◆ 利用预训练深度立体网络的深度估计指导3D高斯优化，结合多损失策略提升几何一致性与视觉质量。  
@@ -59,7 +65,7 @@
 ◆ 在动态环境中显著提升了定位精度，尤其在视角突变和运动物体特征不明确的挑战性场景中表现突出。  
 ◆ 通过结合当前帧质量与场景变化分析，增强了系统对动态干扰的鲁棒性，避免了传统SLAM因静态环境假设导致的定位漂移。  
 ◆ 在TUM RGB-D数据集上的大量实验验证了该方法在动态场景中的优越性，定位准确性和系统鲁棒性均有显著提升。</td></tr>
-<tr><td>2025-07-30</td><td>Multi-robot LiDAR SLAM: a practical case study in underground tunnel environments</td><td>[2507.21553](http://arxiv.org/pdf/2507.21553)</td><td>◆ 针对多机器人LiDAR SLAM在隧道环境中的实际应用问题，论文系统分析了现有去中心化系统的技术瓶颈，首次明确指出&quot;回环检测误报率过高&quot;是导致系统失效的核心原因。  
+<tr><td>2025-08-01</td><td>Multi-robot LiDAR SLAM: a practical case study in underground tunnel environments</td><td>[2507.21553](http://arxiv.org/pdf/2507.21553)</td><td>◆ 针对多机器人LiDAR SLAM在隧道环境中的实际应用问题，论文系统分析了现有去中心化系统的技术瓶颈，首次明确指出&quot;回环检测误报率过高&quot;是导致系统失效的核心原因。  
 ◆ 提出了一种新型启发式算法，通过优化回环检测机制显著降低了误报率，解决了地下隧道等极端场景下SLAM稳定性差的难题。  
 ◆ 创新性地选择地下隧道作为验证环境，这种长走廊、低特征、高对称性的极端场景为SLAM研究提供了更具挑战性的测试基准。  
 ◆ 揭示了当前多机器人SLAM系统在动态环境适应性方面的不足，为后续研究指明了改进方向。  
@@ -156,6 +162,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-01</td><td>CoProU-VO: Combining Projected Uncertainty for End-to-End Unsupervised Monocular Visual Odometry</td><td>[2508.00568](http://arxiv.org/pdf/2508.00568)</td><td>◆ 提出CoProU-VO模型，首次将跨帧不确定性传播与融合引入无监督单目视觉里程计，通过概率公式结合当前帧与参考帧的不确定性，有效识别动态场景中的不可靠区域。  
+◆ 设计基于视觉Transformer的端到端框架，同时学习深度、不确定性估计和相机位姿，无需地面真值标签或显式运动分割。  
+◆ 创新性地利用投影机制将参考帧的不确定性传递至目标帧，克服传统方法仅依赖单帧不确定性的局限，显著提升动态物体干扰下的鲁棒性。  
+◆ 在KITTI和nuScenes数据集上验证性能，尤其在高速公路等动态场景中表现优异，超越现有无监督单目两帧方法。  
+◆ 通过详尽的消融实验证明跨帧不确定性传播的有效性，为动态环境下的视觉里程计提供新解决方案。</td></tr>
 <tr><td>2025-07-25</td><td>A Fast and Light-weight Non-Iterative Visual Odometry with RGB-D Cameras</td><td>[2507.18886](http://arxiv.org/pdf/2507.18886)</td><td>◆ 提出了一种解耦的非迭代式视觉里程计方法，将6自由度位姿估计分为旋转和平移两步计算，避免了传统迭代优化的计算负担。  
 ◆ 创新性地利用场景中的重叠平面特征直接计算旋转矩阵，简化了旋转估计流程。  
 ◆ 采用核互相关器(KCC)计算平移量，省去了传统特征提取与匹配的耗时步骤。  
@@ -475,6 +486,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-01</td><td>IGL-Nav: Incremental 3D Gaussian Localization for Image-goal Navigation</td><td>[2508.00823](http://arxiv.org/pdf/2508.00823)</td><td>◆ 提出IGL-Nav框架，首次将可渲染的3D高斯表示（3DGS）应用于图像目标导航任务，实现3D几何感知的精准定位。  
+◆ 采用增量式场景更新策略，通过单目预测实时优化3DGS表示，显著降低计算开销，解决传统3DGS优化效率低的问题。  
+◆ 设计两阶段定位方法：先利用几何信息进行粗粒度离散空间匹配（等效于高效3D卷积），再通过可微分渲染优化细粒度目标位姿。  
+◆ 突破传统方法依赖拓扑图或BEV地图的局限，直接建模探索环境与目标图像的3D几何关系，支持自由视角目标图像定位。  
+◆ 在多种实验配置下大幅超越现有SOTA方法，并验证了在真实机器人平台的应用潜力（仅需手机任意姿态拍摄目标图像）。</td></tr>
+<tr><td>2025-08-01</td><td>Omni-Scan: Creating Visually-Accurate Digital Twin Object Models Using a Bimanual Robot with Handover and Gaussian Splat Merging</td><td>[2508.00354](http://arxiv.org/pdf/2508.00354)</td><td>◆ 提出Omni-Scan系统，利用双机械臂协作抓取和旋转物体，配合固定摄像头实现全视角扫描，突破传统扫描设备的工作空间限制。  
+◆ 结合DepthAnything、Segment Anything和RAFT光流模型，自动分割并去除机械夹爪和背景干扰，精准提取目标物体图像数据。  
+◆ 改进3D高斯泼溅（3DGS）训练流程，支持处理含夹爪遮挡的拼接数据集，生成360度无死角的高质量数字孪生模型。  
+◆ 首次将双机械臂物体交接技术应用于3D扫描领域，通过二次抓取解决单次扫描的遮挡问题，显著提升模型完整性。  
+◆ 在工业零件缺陷检测任务中验证有效性，对12种不同物体实现平均83%的缺陷识别准确率，展示实际应用潜力。  
+◆ 提供开源交互式3DGS模型展示，推动数字孪生技术在仿真、VR等领域的应用发展。</td></tr>
 <tr><td>2025-07-31</td><td>SeqAffordSplat: Scene-level Sequential Affordance Reasoning on 3D Gaussian Splatting</td><td>[2507.23772](http://arxiv.org/pdf/2507.23772)</td><td>◆ 提出首个面向3D高斯泼溅(3DGS)场景的序列化功能推理任务，突破现有单物体单步骤交互的局限，支持长时序多物体复杂任务。  
 ◆ 构建SeqAffordSplat大规模基准数据集，包含1800+复杂场景，为3DGS环境下的长时序功能理解研究提供支撑。  
 ◆ 设计端到端框架SeqSplatNet，首次实现从自然语言指令到3D功能掩码序列的直接映射，通过LLM自回归生成含分割标记的文本指导解码。  
@@ -656,6 +678,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-01</td><td>Can Large Pretrained Depth Estimation Models Help With Image Dehazing?</td><td>[2508.00698](http://arxiv.org/pdf/2508.00698)</td><td>◆ 首次系统研究了预训练深度估计模型在图像去雾任务中的泛化能力，发现深度特征在不同雾浓度下具有显著一致性。  
+◆ 提出了一种即插即用的RGB-D融合模块，可灵活适配多种去雾网络架构，无需重新训练。  
+◆ 通过大规模实验验证了深度特征先验对提升去雾效果的普适性，突破了传统方法架构特定的局限性。  
+◆ 揭示了跨任务知识迁移的新视角，证明预训练深度模型能有效捕捉雾浓度与场景深度的物理关联。  
+◆ 提出的融合模块在多个基准测试中均显著提升现有去雾方法的性能，兼顾效率与精度需求。</td></tr>
 <tr><td>2025-07-31</td><td>Stereo 3D Gaussian Splatting SLAM for Outdoor Urban Scenes</td><td>[2507.23677](http://arxiv.org/pdf/2507.23677)</td><td>◆ 首次提出针对户外场景的双目3D高斯泼溅SLAM系统（BGS-SLAM），填补了现有3DGS-SLAM技术主要局限于室内环境的空白。  
 ◆ 仅依赖RGB立体图像对，无需LiDAR或主动深度传感器，降低了硬件成本与使用门槛。  
 ◆ 创新性地利用预训练深度立体网络的深度估计结果，指导3D高斯优化过程，提升几何一致性。  
@@ -750,4 +777,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.03
+> 更新于: 2025.08.04
