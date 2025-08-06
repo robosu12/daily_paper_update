@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.08.05)
+# SLAM领域最新论文 (2025.08.06)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-05</td><td>Inland-LOAM: Voxel-Based Structural Semantic Mapping for Inland Waterways</td><td>[2508.03672](http://arxiv.org/pdf/2508.03672)</td><td>◆ 提出Inland-LOAM框架，针对内河航道环境优化LiDAR SLAM，解决传统方法在垂直漂移和语义缺失上的局限性。  
+◆ 改进特征提取方法并引入水面平面约束，有效抑制SLAM系统的垂直漂移问题。  
+◆ 创新性采用体素化几何分析流程，将3D点云实时转换为结构化2D语义地图，支持桥梁净空等导航参数计算。  
+◆ 开发自动化模块提取岸线轮廓，并输出轻量化、兼容内河电子航道图(IENC)的标准格式。  
+◆ 实测验证表明，该系统定位精度优于现有先进方法，生成的语义地图与岸线数据符合真实场景需求。  
+◆ 公开代码与数据集，为内河自主航行提供可靠的环境感知解决方案。</td></tr>
 <tr><td>2025-08-04</td><td>A Moment Matching-Based Method for Sparse and Noisy Point Cloud Registration</td><td>[2508.02187](http://arxiv.org/pdf/2508.02187)</td><td>◆ 提出基于矩匹配的点云配准框架，将点云视为同分布独立采样点，通过匹配广义高斯径向基矩估计刚体变换，避免传统方法在稀疏噪声场景下的性能下降。  
 ◆ 无需显式建立点云间的点对点对应关系，克服了ICP等依赖对应点匹配的局限性，提升了算法鲁棒性。  
 ◆ 理论证明了方法的收敛一致性，为算法可靠性提供数学保障。  
@@ -252,6 +258,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-04</td><td>A Reinforcement Learning Framework for Mobility Control of gNBs in Dynamic Radio Access Networks</td><td>[2508.02960](http://arxiv.org/pdf/2508.02960)</td><td>◆ 提出CONVERGE Chamber Simulator (CC-SIM)，这是一个3D仿真环境，用于开发和验证移动gNB的智能控制算法，能够模拟用户移动、障碍物动态和射频传播行为。  
+◆ CC-SIM支持离线强化学习和实时测试，通过与OpenAirInterface (OAI)射频模拟器的紧密集成，实现了在真实网络条件下的算法验证。  
+◆ 开发了一种基于深度Q网络（DQN）的智能体，能够主动调整gNB位置以应对动态环境变化，显著提升网络性能。  
+◆ 实验结果表明，该智能体在三种典型应用场景中，能够将视距（LoS）阻塞时间减少高达42%，优于静态部署方案。  
+◆ 该研究为下一代自适应无线网络中的移动基站智能控制提供了有效的学习框架和验证平台。</td></tr>
 <tr><td>2025-08-04</td><td>Understanding Heterogeneity in Adaptation to Intermittent Water Supply: Clustering Household Types in Amman, Jordan</td><td>[2508.02569](http://arxiv.org/pdf/2508.02569)</td><td>◆ 提出了一种标准化分析框架，结合层次聚类分析（HCA）和Welch双样本t检验，用于研究间歇性供水（IWS）下家庭适应的异质性。  
 ◆ 首次在约旦安曼的实证研究中识别出三类具有不同特征的家庭集群，包括收入、供水时长、社会网络等多元因素，突破了以往仅关注收入差异的局限。  
 ◆ 揭示了家庭适应策略与多维特征（如水质问题、搬迁经历）之间的非线性关联，填补了现有研究对数据多维性分析的不足。  
@@ -508,7 +519,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-08-04</td><td>Low-Frequency First: Eliminating Floating Artifacts in 3D Gaussian Splatting</td><td>[2508.02493](http://arxiv.org/pdf/2508.02493)</td><td>◆ 首次从频域角度分析3D高斯泼溅（3DGS）中漂浮伪影的成因，发现未充分优化的高斯分布是主要来源。  
+<tr><td>2025-08-05</td><td>Duplex-GS: Proxy-Guided Weighted Blending for Real-Time Order-Independent Gaussian Splatting</td><td>[2508.03180](http://arxiv.org/pdf/2508.03180)</td><td>◆ 提出Duplex-GS双层次框架，结合代理高斯表示与顺序无关渲染技术，在保持实时性能的同时实现照片级真实感渲染。  
+◆ 引入单元代理机制管理局部高斯分布，并通过单元搜索光栅化加速渲染，显著降低视图自适应基数排序的开销。  
+◆ 创新性地将框架与顺序无关透明度（OIT）技术结合，开发物理启发的加权求和渲染方法，同步消除“闪烁”和“透明度”伪影。  
+◆ 提出基于单元的局部高斯管理策略，使基数排序开销降低52.2%至86.9%，且不损失渲染质量。  
+◆ 在多样化真实场景数据集上验证了方法的鲁棒性，包括多尺度训练视图和大规模环境，渲染速度比现有OIT方法提升1.5至4倍。  
+◆ 首次系统论证了顺序无关渲染范式在高斯泼溅技术中的优势，为实时高质量3D渲染提供了新思路。</td></tr>
+<tr><td>2025-08-05</td><td>RobustGS: Unified Boosting of Feedforward 3D Gaussian Splatting under Low-Quality Conditions</td><td>[2508.03077](http://arxiv.org/pdf/2508.03077)</td><td>◆ 提出RobustGS模块，增强前馈式3D高斯泼溅（3DGS）在低质量输入条件下的鲁棒性，解决现有方法依赖高质量多视图图像的局限性。  
+◆ 设计通用退化学习器（Generalized Degradation Learner），从多视图输入中提取多种退化的通用表示和分布，提升模型对退化类型的感知能力。  
+◆ 引入语义感知状态空间模型，利用退化表示在特征空间增强受损输入，并通过语义感知策略聚合多视图间的相似信息。  
+◆ 采用即插即用设计，无需重新训练即可无缝集成到现有预训练流程中，显著提升重建质量。  
+◆ 在多种退化条件下（如噪声、低光、雨雾）的实验表明，该方法始终达到最先进的3D重建效果。</td></tr>
+<tr><td>2025-08-05</td><td>SA-3DGS: A Self-Adaptive Compression Method for 3D Gaussian Splatting</td><td>[2508.03017](http://arxiv.org/pdf/2508.03017)</td><td>◆ SA-3DGS提出了一种自适应的3D高斯点重要性评分机制，能够自动识别场景中最不重要的高斯点，从而实现高效剪枝和冗余降低。  
+◆ 该方法设计了重要性感知的聚类模块，将高斯属性更精准地压缩到码本中，在减小模型大小的同时提升了码本的表征能力。  
+◆ 创新性地引入码本修复模块，利用场景上下文信息修复码本，有效缓解信息丢失导致的渲染质量下降问题。  
+◆ 实验表明该方法在多个基准数据集上实现了高达66倍的压缩率，同时保持甚至提升了渲染质量。  
+◆ 所提出的高斯剪枝策略不仅自适应性强，还能改进其他基于剪枝的方法（如LightGaussian），展现出优异的性能和泛化能力。  
+◆ 整体方案解决了现有方法难以准确识别无关高斯点导致压缩质量下降的痛点，为3D高斯泼溅技术的实际部署提供了高效解决方案。</td></tr>
+<tr><td>2025-08-05</td><td>Low-Frequency First: Eliminating Floating Artifacts in 3D Gaussian Splatting</td><td>[2508.02493](http://arxiv.org/pdf/2508.02493)</td><td>◆ 首次从频域角度分析3D高斯泼溅（3DGS）中漂浮伪影的成因，发现未充分优化的高斯分布是主要来源。  
 ◆ 提出EFA-GS方法，通过选择性扩展未优化高斯分布，优先学习准确的低频信息，从根源抑制伪影。  
 ◆ 引入深度和尺度双策略动态优化高斯扩展过程，避免高频细节被过度平滑。  
 ◆ 在合成与真实数据集上验证有效性，PSNR指标提升1.68dB（RWLQ数据集），同时保持高频细节。  
@@ -738,13 +766,29 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-05</td><td>Monocular Depth Estimation with Global-Aware Discretization and Local Context Modeling</td><td>[2508.03186](http://arxiv.org/pdf/2508.03186)</td><td>◆ 提出Gated Large Kernel Attention Module (GLKAM)，通过大核卷积和门控机制有效捕捉多尺度局部结构信息，提升深度估计的局部上下文建模能力。  
+◆ 设计Global Bin Prediction Module (GBPM)，预测全局深度区间分布，为深度回归提供结构化指导，增强网络的全局感知能力。  
+◆ 结合局部与全局线索的创新框架，解决了单目深度估计中因单视图投影歧义导致的精度瓶颈问题。  
+◆ 在NYU-V2和KITTI数据集上验证了方法的有效性，性能优于现有方法，证明了各模块的协同优势。  
+◆ 通过门控机制优化大核卷积计算效率，平衡了模型精度与计算开销。</td></tr>
+<tr><td>2025-08-04</td><td>VRSight: An AI-Driven Scene Description System to Improve Virtual Reality Accessibility for Blind People</td><td>[2508.02958](http://arxiv.org/pdf/2508.02958)</td><td>◆ 提出VRSight系统，首个无需开发者干预的端到端解决方案，通过AI模型实时解析VR场景并生成空间音频反馈，直接提升盲人用户的VR可访问性。  
+◆ 创新性地整合多模态AI技术（物体检测、深度估计、LLM氛围理解），将虚拟场景转化为音调化空间音频，实现非视觉交互。  
+◆ 开发DISCOVR专用数据集，包含17款社交VR应用的30类虚拟物体，填补了VR领域缺乏适用训练数据的空白。  
+◆ 首次实现主流VR应用（如Rec Room）的&quot;事后可访问化&quot;，用户可直接使用未经改造的商用VR应用。  
+◆ 通过9名用户实验验证系统有效性，证明其能支持社交任务（如识别虚拟座位、感知他人虚拟形象）。  
+◆ 突破传统依赖开发者集成辅助功能的模式，通过外部系统实现无障碍化，推动行业降低可访问性实施门槛。</td></tr>
+<tr><td>2025-08-04</td><td>Elucidating the Role of Feature Normalization in IJEPA</td><td>[2508.02829](http://arxiv.org/pdf/2508.02829)</td><td>◆ 揭示了IJEPA模型中特征归一化（LN）的负面影响：LN破坏了视觉token的自然能量层级，导致高能量token（对应语义重要区域）无法被优先学习。  
+◆ 提出LN的替代方案DynTanh激活函数：该方案能保留token能量分布，使高能量token对预测损失贡献更大。  
+◆ 解决了LN导致的损失图棋盘格伪影问题：使用DynTanh后损失分布呈现长尾特性，伪影现象消失。  
+◆ 显著提升模型性能：在ImageNet线性探测任务中，ViT-Small准确率从38%提升至42.7%；在NYU深度估计任务中RMSE降低0.08。  
+◆ 验证了保留token自然能量对自监督视觉表征学习的重要性：为后续研究提供了新的优化方向。</td></tr>
 <tr><td>2025-08-04</td><td>Rethinking Transparent Object Grasping: Depth Completion with Monocular Depth Estimation and Instance Mask</td><td>[2508.02507](http://arxiv.org/pdf/2508.02507)</td><td>◆ 提出ReMake框架，通过实例掩膜和单目深度估计引导透明物体深度补全，解决传统RGB-D输入隐含推理的局限性。  
 ◆ 利用实例掩膜显式区分透明与非透明区域，使模型能针对性学习透明区域的深度估计，减少对隐含推理的依赖。  
 ◆ 结合单目深度估计提供透明物体与周围环境的深度上下文，提升深度预测的准确性。  
 ◆ 通过显式监督机制增强模型在真实复杂光照场景中的泛化能力，克服传统方法在真实场景中失效的问题。  
 ◆ 在基准数据集和真实场景实验中验证了方法的优越性，显著超越现有方法。  
 ◆ 公开代码和视频，推动透明物体抓取研究的可复现性。</td></tr>
-<tr><td>2025-08-02</td><td>3DRot: 3D Rotation Augmentation for RGB-Based 3D Tasks</td><td>[2508.01423](http://arxiv.org/pdf/2508.01423)</td><td>◆ 提出3DRot，一种即插即用的数据增强方法，通过绕相机光心旋转和镜像图像，同步更新RGB图像、相机内参、物体位姿和3D标注，保持投影几何一致性。  
+<tr><td>2025-08-05</td><td>3DRot: 3D Rotation Augmentation for RGB-Based 3D Tasks</td><td>[2508.01423](http://arxiv.org/pdf/2508.01423)</td><td>◆ 提出3DRot，一种即插即用的数据增强方法，通过绕相机光心旋转和镜像图像，同步更新RGB图像、相机内参、物体位姿和3D标注，保持投影几何一致性。  
 ◆ 解决了传统图像变换（如旋转和缩放）破坏几何一致性的问题，无需依赖场景深度即可实现几何一致的旋转和反射。  
 ◆ 在单目3D检测任务中验证有效性，在SUN RGB-D数据集上将IoU3D从43.21提升至44.51，旋转误差从22.91°降至20.93°，mAP0.5从35.70提升至38.11。  
 ◆ 相比同类方法Cube R-CNN（需结合多个数据集），3DRot仅使用单一数据集即实现更显著的性能提升，且计算成本更低。  
@@ -869,4 +913,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.05
+> 更新于: 2025.08.06
