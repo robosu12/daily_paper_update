@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.08.06)
+# SLAM领域最新论文 (2025.08.07)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-06</td><td>Pseudo Depth Meets Gaussian: A Feed-forward RGB SLAM Baseline</td><td>[2508.04597](http://arxiv.org/pdf/2508.04597)</td><td>◆ 提出了一种基于3D高斯映射的RGB SLAM方法，通过结合深度估计器和3D高斯重建技术，解决了传统方法在长序列处理中的几何细节不准确问题。  
+◆ 引入前馈循环预测模块，直接从光流推断相机位姿，替代了耗时的测试时优化，使跟踪速度提升90%以上。  
+◆ 设计了局部图渲染技术，增强了前馈位姿预测的鲁棒性，提高了系统在复杂场景中的稳定性。  
+◆ 在Replica和TUM-RGBD数据集上的实验表明，该方法性能与当前最先进的SplaTAM相当，同时大幅降低了计算开销。  
+◆ 通过实际部署验证了方法的实用性，展示了其在实时3D重建中的高效性和可靠性。</td></tr>
 <tr><td>2025-08-05</td><td>Inland-LOAM: Voxel-Based Structural Semantic Mapping for Inland Waterways</td><td>[2508.03672](http://arxiv.org/pdf/2508.03672)</td><td>◆ 提出Inland-LOAM框架，针对内河航道环境优化LiDAR SLAM，解决传统方法在垂直漂移和语义缺失上的局限性。  
 ◆ 改进特征提取方法并引入水面平面约束，有效抑制SLAM系统的垂直漂移问题。  
 ◆ 创新性采用体素化几何分析流程，将3D点云实时转换为结构化2D语义地图，支持桥梁净空等导航参数计算。  
@@ -180,6 +185,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-06</td><td>Pseudo Depth Meets Gaussian: A Feed-forward RGB SLAM Baseline</td><td>[2508.04597](http://arxiv.org/pdf/2508.04597)</td><td>◆ 提出了一种基于3D高斯映射的RGB SLAM方法，通过结合深度估计器和3D高斯技术，解决了传统方法在长序列处理中的几何细节不准确问题。  
+◆ 引入前馈循环预测模块，直接从光流推断相机位姿，替代了耗时的测试时优化，将跟踪速度提升90%以上。  
+◆ 设计了局部图渲染技术，增强了前馈位姿预测的鲁棒性，提高了系统在复杂场景中的稳定性。  
+◆ 在Replica和TUM-RGBD数据集上的实验表明，该方法性能与当前最先进的SplaTAM相当，同时大幅降低了计算开销。  
+◆ 通过实际部署验证了方法的实用性，展示了其在实时3D重建中的高效性和可靠性。</td></tr>
 <tr><td>2025-08-01</td><td>CoProU-VO: Combining Projected Uncertainty for End-to-End Unsupervised Monocular Visual Odometry</td><td>[2508.00568](http://arxiv.org/pdf/2508.00568)</td><td>◆ 提出CoProU-VO模型，首次将跨帧不确定性传播与融合引入无监督单目视觉里程计，通过概率公式结合当前帧与参考帧的不确定性，有效识别动态场景中的不可靠区域。  
 ◆ 设计基于视觉Transformer的端到端框架，同时学习深度、不确定性估计和相机位姿，无需地面真值标签或显式运动分割。  
 ◆ 创新性地利用投影机制将参考帧的不确定性传递至目标帧，克服传统方法仅依赖单帧不确定性的局限，显著提升动态物体干扰下的鲁棒性。  
@@ -262,6 +272,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-06</td><td>Behaviorally Adaptive Multi-Robot Hazard Localization in Failure-Prone, Communication-Denied Environments</td><td>[2508.04537](http://arxiv.org/pdf/2508.04537)</td><td>◆ 提出基于行为熵（BE）的新型信息理论规划框架，将香农熵（SE）扩展为能捕捉类人不确定性评估的通用指标，解决了传统熵度量在复杂环境中的局限性。  
+◆ 开发行为自适应路径规划（BAPP）框架，通过可调风险敏感参数动态调整信息采集策略，实现风险与探索效率的平衡。  
+◆ 设计两种算法：BAPP-TID通过智能触发高精度机器人加速熵减，BAPP-SIG在高风险下优先保障机器人存活率，信息损失最小化。  
+◆ 理论证明BAPP框架的信息有效性，并通过单/多机器人仿真验证其优越性，性能显著优于香农熵基准和随机策略。  
+◆ 提出多机器人协同的空间分区、移动基站重定位和角色异构机制，确保系统在通信中断环境中的可扩展性。  
+◆ 首次将行为自适应规划与风险敏感探索结合，为灾害响应、行星探测等高风险任务提供鲁棒解决方案。</td></tr>
+<tr><td>2025-08-06</td><td>Radar-Based NLoS Pedestrian Localization for Darting-Out Scenarios Near Parked Vehicles with Camera-Assisted Point Cloud Interpretation</td><td>[2508.04033](http://arxiv.org/pdf/2508.04033)</td><td>◆ 提出了一种结合单目摄像头和2D雷达点云数据的NLoS行人定位框架，解决路边停车导致的盲区安全问题。  
+◆ 通过图像分割检测停放车辆，并利用深度估计初步推断空间特征，克服了传统方法依赖预定义空间信息的局限性。  
+◆ 利用2D雷达点云数据对初步空间信息进行细化，实现更精确的实时空间推断，适应动态变化的道路环境。  
+◆ 针对行人从停放车辆间突然出现的场景（darting-out），优化了毫米波雷达的衍射和反射信号处理能力。  
+◆ 实验验证表明，该方法在真实城市道路环境中能显著提升行人早期检测效果，增强道路安全性。</td></tr>
 <tr><td>2025-08-04</td><td>A Reinforcement Learning Framework for Mobility Control of gNBs in Dynamic Radio Access Networks</td><td>[2508.02960](http://arxiv.org/pdf/2508.02960)</td><td>◆ 提出CONVERGE Chamber Simulator (CC-SIM)，这是一个3D仿真环境，用于开发和验证移动gNB的智能控制算法，能够模拟用户移动、障碍物动态和射频传播行为。  
 ◆ CC-SIM支持离线强化学习和实时测试，通过与OpenAirInterface (OAI)射频模拟器的紧密集成，实现了在真实网络条件下的算法验证。  
 ◆ 开发了一种基于深度Q网络（DQN）的智能体，能够主动调整gNB位置以应对动态环境变化，显著提升网络性能。  
@@ -527,6 +548,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-06</td><td>Radiance Fields in XR: A Survey on How Radiance Fields are Envisioned and Addressed for XR Research</td><td>[2508.04326](http://arxiv.org/pdf/2508.04326)</td><td>◆ 系统梳理了365篇辐射场（RF）相关研究，聚焦其在XR领域的应用潜力与现状，填补了RF与XR交叉研究的综述空白。  
+◆ 首次提出三维分析框架：从XR应用愿景（i）、现有技术实现（ii）和研究缺口（iii）三个维度解析RF对XR的贡献。  
+◆ 深入分析66篇核心论文，揭示RF技术（如3DGS、NeRF）如何具体推动XR的光照真实感视图合成与交互体验革新。  
+◆ 将XR特有的RF研究问题置于更广阔的RF学术版图中，明确其跨学科定位（涉及计算机视觉、图形学、机器人等6大领域）。  
+◆ 为XR研究者提供结构化资源导航，帮助快速追踪RF技术动态，并指出未来研究方向以弥合理论与应用间的差距。</td></tr>
+<tr><td>2025-08-06</td><td>DET-GS: Depth- and Edge-Aware Regularization for High-Fidelity 3D Gaussian Splatting</td><td>[2508.04099](http://arxiv.org/pdf/2508.04099)</td><td>◆ 提出DET-GS框架，首次在3D高斯泼溅（3DGS）中统一集成深度与边缘感知正则化，解决稀疏视角下几何重建不精确的问题。  
+◆ 设计分层几何深度监督机制，自适应强化多层级几何一致性，显著提升结构保真度并降低深度估计噪声的敏感性。  
+◆ 创新性地引入基于Canny边缘检测的语义掩码指导边缘感知深度正则化，有效保护场景边界不被过度平滑。  
+◆ 提出RGB引导的边缘保持总变分损失（TV Loss），选择性平滑同质区域的同时严格保留高频细节和纹理。  
+◆ 在稀疏视角新视图合成基准测试中，DET-GS在几何精度与视觉保真度上均超越现有最优方法，验证了框架的有效性。</td></tr>
+<tr><td>2025-08-06</td><td>RLGS: Reinforcement Learning-Based Adaptive Hyperparameter Tuning for Gaussian Splatting</td><td>[2508.04078](http://arxiv.org/pdf/2508.04078)</td><td>◆ 提出RLGS框架，首次将强化学习引入3D高斯泼溅（3DGS）的超参数自适应优化，替代传统人工调参流程。  
+◆ 设计轻量级策略模块，动态调整学习率和致密化阈值等关键参数，无需修改现有3DGS架构即可即插即用。  
+◆ 实现模型无关性，验证了在Taming-3DGS、3DGS-MCMC等多种先进变体上的泛化能力。  
+◆ 在固定高斯数量约束下显著提升渲染质量，例如在TNT数据集上使Taming-3DGS的PSNR提升0.7dB。  
+◆ 突破基线性能瓶颈，在传统方法饱和时仍能持续获得质量增益，展现强鲁棒性。  
+◆ 为3DGS训练提供首个通用自动化调参方案，填补了强化学习在该领域的应用空白。</td></tr>
 <tr><td>2025-08-05</td><td>Duplex-GS: Proxy-Guided Weighted Blending for Real-Time Order-Independent Gaussian Splatting</td><td>[2508.03180](http://arxiv.org/pdf/2508.03180)</td><td>◆ 提出Duplex-GS双层次框架，结合代理高斯表示与顺序无关渲染技术，在保持实时性能的同时实现照片级真实感渲染。  
 ◆ 引入单元代理机制管理局部高斯分布，并通过单元搜索光栅化加速渲染，显著降低视图自适应基数排序的开销。  
 ◆ 创新性地将框架与顺序无关透明度（OIT）技术结合，开发物理启发的加权求和渲染方法，同步消除“闪烁”和“透明度”伪影。  
@@ -550,7 +587,7 @@
 ◆ 在合成与真实数据集上验证有效性，PSNR指标提升1.68dB（RWLQ数据集），同时保持高频细节。  
 ◆ 首次证明该方法可提升下游3D编辑任务质量，具有应用扩展价值。  
 ◆ 开源实现将促进相关研究，为解决3DGS伪影问题提供新思路。</td></tr>
-<tr><td>2025-08-04</td><td>GR-Gaussian: Graph-Based Radiative Gaussian Splatting for Sparse-View CT Reconstruction</td><td>[2508.02408](http://arxiv.org/pdf/2508.02408)</td><td>GR-Gaussian论文针对稀疏视角CT重建中3D高斯泼溅技术存在的针状伪影问题，提出了一种基于图结构的创新解决方案。其核心贡献和创新点如下：
+<tr><td>2025-08-06</td><td>GR-Gaussian: Graph-Based Radiative Gaussian Splatting for Sparse-View CT Reconstruction</td><td>[2508.02408](http://arxiv.org/pdf/2508.02408)</td><td>GR-Gaussian论文针对稀疏视角CT重建中3D高斯泼溅技术存在的针状伪影问题，提出了一种基于图结构的创新解决方案。其核心贡献和创新点如下：
 
 ◆ 提出首个结合图结构的3D高斯泼溅框架GR-Gaussian，有效抑制稀疏视角下的针状伪影，提升重建精度。
 
@@ -776,6 +813,29 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-06</td><td>OmniDepth: Bridging Monocular and Stereo Reasoning with Latent Alignment</td><td>[2508.04611](http://arxiv.org/pdf/2508.04611)</td><td>◆提出OmniDepth统一框架，首次实现单目与立体深度估计的潜在表征双向迭代对齐，突破传统方法割裂使用的局限。  
+◆创新性引入跨注意力对齐机制，动态融合单目上下文先验与立体几何假设，在推理过程中实现双向特征同步。  
+◆通过单目结构先验有效解决立体匹配在反光/透明表面的固有歧义，同时利用立体几何优化单目深度预测精度。  
+◆在单一网络中完成两种模态的协同优化，无需后处理融合，显著提升模型效率与端到端可训练性。  
+◆在Middlebury和ETH3D数据集上实现零样本泛化误差降低40%以上，大幅改善透明/反光表面等传统难题。  
+◆开源框架为多模态3D感知提供新范式，通过几何约束与语义上下文的深度融合超越单一模态的性能瓶颈。</td></tr>
+<tr><td>2025-08-06</td><td>Pseudo Depth Meets Gaussian: A Feed-forward RGB SLAM Baseline</td><td>[2508.04597](http://arxiv.org/pdf/2508.04597)</td><td>◆ 提出了一种基于3D高斯映射的RGB SLAM方法，通过结合深度估计器和3D高斯技术，解决了传统方法在长序列处理中的几何细节不准确问题。  
+◆ 引入前馈循环预测模块，直接从光流推断相机位姿，替代了耗时的测试时优化，使跟踪速度提升90%以上。  
+◆ 采用局部图渲染技术，增强了前馈位姿预测的鲁棒性，提高了系统在复杂场景中的稳定性。  
+◆ 在Replica和TUM-RGBD数据集上的实验表明，该方法性能与当前最优的SplaTAM相当，同时大幅降低了计算开销。  
+◆ 通过实际部署验证了方法的实用性，展示了其在实时3D重建中的高效性和可靠性。</td></tr>
+<tr><td>2025-08-06</td><td>MuGS: Multi-Baseline Generalizable Gaussian Splatting Reconstruction</td><td>[2508.04297](http://arxiv.org/pdf/2508.04297)</td><td>◆ 提出MuGS方法，首次将多视角立体视觉（MVS）与单目深度估计（MDE）特征融合，增强多基线场景下的泛化重建能力。  
+◆ 设计投影-采样深度融合机制，通过精细概率体积构建指导特征图回归，提升深度估计精度。  
+◆ 引入参考视图损失函数，优化几何结构并显著提高训练效率。  
+◆ 采用3D高斯表示法，在加速训练/推理的同时提升渲染质量，平衡效率与效果。  
+◆ 在DTU、RealEstate10K等数据集上实现跨基线（小/大基线）和跨场景（物体/室内外）的SOTA性能。  
+◆ 展示零样本泛化能力，在LLFF和Mip-NeRF 360等未训练数据集上表现优异。</td></tr>
+<tr><td>2025-08-06</td><td>DET-GS: Depth- and Edge-Aware Regularization for High-Fidelity 3D Gaussian Splatting</td><td>[2508.04099](http://arxiv.org/pdf/2508.04099)</td><td>◆ 提出DET-GS框架，首次将深度与边缘感知正则化统一集成到3D高斯泼溅（3DGS）中，解决稀疏视图下几何重建不精确的问题。  
+◆ 设计分层几何深度监督机制，自适应强化多层级几何一致性，显著提升结构保真度并降低深度估计噪声的敏感性。  
+◆ 创新性地引入基于Canny边缘检测的语义掩码指导边缘感知深度正则化，有效保护场景边界不被过度平滑。  
+◆ 提出RGB引导的边缘保持总变分损失（TV Loss），选择性平滑同质区域的同时严格保留高频细节和纹理。  
+◆ 在稀疏视图新视角合成任务上全面超越现有SOTA方法，实验证明其几何精度与视觉保真度均有显著提升。  
+（全文共5条创新点，总计约300字）</td></tr>
 <tr><td>2025-08-05</td><td>Monocular Depth Estimation with Global-Aware Discretization and Local Context Modeling</td><td>[2508.03186](http://arxiv.org/pdf/2508.03186)</td><td>◆ 提出Gated Large Kernel Attention Module (GLKAM)，通过大核卷积和门控机制有效捕捉多尺度局部结构信息，提升深度估计的局部上下文建模能力。  
 ◆ 设计Global Bin Prediction Module (GBPM)，预测全局深度区间分布，为深度回归提供结构化指导，增强网络的全局感知能力。  
 ◆ 结合局部与全局线索的创新框架，解决了单目深度估计中因单视图投影歧义导致的精度瓶颈问题。  
@@ -925,4 +985,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.06
+> 更新于: 2025.08.07
