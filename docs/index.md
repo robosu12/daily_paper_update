@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.08.07)
+# SLAM领域最新论文 (2025.08.08)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-07</td><td>Speech LLMs in Low-Resource Scenarios: Data Volume Requirements and the Impact of Pretraining on High-Resource Languages</td><td>[2508.05149](http://arxiv.org/pdf/2508.05149)</td><td>◆ 研究了语音大语言模型(Speech LLMs)在低资源自动语音识别(ASR)场景下的数据量需求，填补了该领域的研究空白。  
+◆ 提出采用SLAM-ASR框架（轻量级可训练投影器连接语音编码器与大模型），验证了即使小规模训练数据也能达到Whisper-only模型的性能基准。  
+◆ 首次证明利用高资源语言预训练的单一或多语言投影器能显著缓解数据稀缺问题，尤其在极小训练集时效果更突出。  
+◆ 通过多语言大模型(EuroLLM/Salamandra)与whisper-large-v3-turbo的组合实验，为低资源语言的跨语言迁移提供了实证依据。  
+◆ 在多个公开基准测试中系统评估性能，为优化低资源多语言语音LLMs的研究方向提供了新见解。</td></tr>
 <tr><td>2025-08-06</td><td>Pseudo Depth Meets Gaussian: A Feed-forward RGB SLAM Baseline</td><td>[2508.04597](http://arxiv.org/pdf/2508.04597)</td><td>◆ 提出了一种基于3D高斯映射的RGB SLAM方法，通过结合深度估计器和3D高斯重建技术，解决了传统方法在长序列处理中的几何细节不准确问题。  
 ◆ 引入前馈循环预测模块，直接从光流推断相机位姿，替代了耗时的测试时优化，使跟踪速度提升90%以上。  
 ◆ 设计了局部图渲染技术，增强了前馈位姿预测的鲁棒性，提高了系统在复杂场景中的稳定性。  
@@ -451,6 +456,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-07</td><td>Head Anchor Enhanced Detection and Association for Crowded Pedestrian Tracking</td><td>[2508.05514](http://arxiv.org/pdf/2508.05514)</td><td>◆ 提出了一种增强的跟踪框架，结合目标检测器的回归和分类分支特征，将空间和位置信息直接嵌入特征表示中，提升特征丰富性。  
+◆ 引入头部关键点检测模型，利用头部不易被遮挡的特性，有效缓解严重遮挡场景下的跟踪失效问题。  
+◆ 设计了一种迭代卡尔曼滤波方法，与现代检测器假设对齐，结合3D先验信息，优化复杂场景下的运动轨迹补全。  
+◆ 综合外观和运动建模的创新，在拥挤且遮挡严重的多目标跟踪场景中提供更鲁棒的解决方案。  
+◆ 通过实验验证，该方法在遮挡频繁的 pedestrian tracking 任务中显著优于传统依赖全身框特征和匀速运动假设的方法。</td></tr>
+<tr><td>2025-08-07</td><td>Refining Gaussian Splatting: A Volumetric Densification Approach</td><td>[2508.05187](http://arxiv.org/pdf/2508.05187)</td><td>◆ 提出基于惯性体积的新型密度控制方法，利用高斯函数的惯性体积指导3D高斯分布的精细化过程，改进了原始3DGS的密度控制策略。  
+◆ 系统研究了传统运动恢复结构(SfM)和深度图像匹配(DIM)两种点云初始化方法对3DGS性能的影响，为初始化选择提供依据。  
+◆ 在Mip-NeRF 360数据集上的大量实验表明，该方法在重建质量上优于原始3DGS，在不同场景中均表现出色。  
+◆ 通过更智能的密度控制机制，解决了原始3DGS自适应密度控制(ADC)在点基元管理上的不足。  
+◆ 该方法保持了3DGS的高效渲染特性，同时显著提升了新视角合成的质量。</td></tr>
 <tr><td>2025-08-04</td><td>SGAD: Semantic and Geometric-aware Descriptor for Local Feature Matching</td><td>[2508.02278](http://arxiv.org/pdf/2508.02278)</td><td>◆ 提出SGAD网络，通过生成高区分度的区域描述符，直接实现区域匹配，避免传统低效的像素级比较和复杂图优化，显著提升匹配精度与效率。  
 ◆ 创新性地将区域匹配任务分解为分类和排序子任务，通过新型监督策略进一步提升匹配性能。  
 ◆ 设计层次包容冗余过滤器（HCRF），基于包容图分析消除重叠区域，优化匹配结构。  
@@ -540,7 +555,48 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-08-06</td><td>Radiance Fields in XR: A Survey on How Radiance Fields are Envisioned and Addressed for XR Research</td><td>[2508.04326](http://arxiv.org/pdf/2508.04326)</td><td>◆ 系统梳理了365篇辐射场（RF）相关研究，聚焦其在XR领域的应用潜力与现状，填补了RF与XR交叉研究的综述空白。  
+<tr><td>2025-08-07</td><td>GAP: Gaussianize Any Point Clouds with Text Guidance</td><td>[2508.05631](http://arxiv.org/pdf/2508.05631)</td><td>◆ 提出GAP方法，首次实现从无色点云到高质量3D高斯分布的转换，填补了该领域的技术空白。  
+◆ 创新性地采用多视角优化框架，结合深度感知的图像扩散模型，确保不同视角下外观的一致性。  
+◆ 设计表面锚定机制，在优化过程中将高斯分布精准约束在3D形状表面，保证几何精度。  
+◆ 引入基于扩散模型的修复策略，专门针对难以观测的区域进行补全，提升整体完整性。  
+◆ 方法具有广泛适用性，验证场景涵盖合成点云、复杂真实扫描和大规模场景，展现强大泛化能力。  
+◆ 通过文本引导实现可控的高斯化过程，为点云处理提供了新的交互方式和应用可能性。</td></tr>
+<tr><td>2025-08-07</td><td>3DGabSplat: 3D Gabor Splatting for Frequency-adaptive Radiance Field Rendering</td><td>[2508.05343](http://arxiv.org/pdf/2508.05343)</td><td>◆ 提出3D Gabor Splatting（3DGabSplat），采用基于3D Gabor的新型基元，通过多方向3D频率响应增强辐射场表示能力，突破传统3D高斯函数仅能低通滤波的局限。  
+◆ 设计包含多频率3D Gabor核的滤波器组，显著提升对场景高频细节的捕捉灵活性与效率，减少冗余基元数量。  
+◆ 开发高效CUDA光栅化器，将3D Gabor基元的多方向频率分量投影至2D图像平面，实现实时新颖视角渲染。  
+◆ 引入频率自适应机制，动态联合优化基元参数，进一步提升训练与渲染效率，同时降低内存开销。  
+◆ 提出模块化设计，3DGabSplat可作为即插即用核无缝集成现有3DGS框架，兼容性优异。  
+实验表明，该方法在真实与合成场景中均达到SOTA渲染质量，PSNR最高提升1.35dB，且基元数量和内存占用显著降低。</td></tr>
+<tr><td>2025-08-07</td><td>CF3: Compact and Fast 3D Feature Fields</td><td>[2508.05254](http://arxiv.org/pdf/2508.05254)</td><td>◆ 提出了一种自上而下的流程CF3，用于构建紧凑快速的3D高斯特征场，避免了传统自下而上优化方法的高计算成本。  
+◆ 采用快速加权融合方法，将多视角2D特征与预训练高斯模型结合，直接在高斯域训练自动编码器，而非传统的2D域训练，使特征分布更匹配。  
+◆ 引入自适应稀疏化方法，在优化高斯特征场属性的同时剪枝和合并冗余高斯，显著减少高斯数量（仅需Feature-3DGS的5%）。  
+◆ 通过高斯域自动编码器训练，提升了特征表示的紧凑性和效率，同时保留了几何细节。  
+◆ 整体方案在计算效率和特征质量上达到竞争性表现，适用于实时或资源受限的应用场景。</td></tr>
+<tr><td>2025-08-07</td><td>Refining Gaussian Splatting: A Volumetric Densification Approach</td><td>[2508.05187](http://arxiv.org/pdf/2508.05187)</td><td>◆ 提出基于惯性体积的新型密度控制方法，利用高斯函数的惯性体积指导3D高斯分布的细化过程，改进了原始3DGS的密度控制策略。  
+◆ 系统研究了传统运动恢复结构(SfM)与深度图像匹配(DIM)两种点云初始化方法对重建质量的影响，为初始化选择提供依据。  
+◆ 在Mip-NeRF 360数据集上的实验表明，该方法在重建质量上优于原始3DGS，并在多样化场景中展现出稳定性能。  
+◆ 针对原始3DGS自适应密度控制(ADC)的不足，通过体积感知的细化机制有效提升了新视角合成的质量。  
+◆ 通过引入几何感知的密度调控，解决了原始方法在复杂场景中分布不均匀导致的渲染缺陷问题。</td></tr>
+<tr><td>2025-08-07</td><td>UGOD: Uncertainty-Guided Differentiable Opacity and Soft Dropout for Enhanced Sparse-View 3DGS</td><td>[2508.04968](http://arxiv.org/pdf/2508.04968)</td><td>◆ 提出不确定性引导的自适应高斯权重机制，通过学习的隐式不确定性优化3D高斯溅射的渲染质量。  
+◆ 设计可微分的不透明度更新方法，在保持3DGS流程完整性的同时实现高斯权重的动态调整。  
+◆ 创新性地提出软可微分丢弃正则化技术，将不确定性转化为连续丢弃概率以控制渲染过程。  
+◆ 在稀疏视角场景中显著降低过拟合风险，相比DropGaussian等方法在MipNeRF 360数据集上PSNR提升3.27%。  
+◆ 实现更少高斯数量下的高质量重建，在多个主流数据集上超越现有稀疏视角3D合成方案。  
+◆ 首次系统研究高斯权重分配对渲染质量的影响机制，为3DGS优化提供新理论视角。</td></tr>
+<tr><td>2025-08-07</td><td>Laplacian Analysis Meets Dynamics Modelling: Gaussian Splatting for 4D Reconstruction</td><td>[2508.04966](http://arxiv.org/pdf/2508.04966)</td><td>这篇论文的核心贡献是针对动态场景重建中3D高斯泼溅（3DGS）技术的局限性提出创新解决方案。现有动态3DGS方法存在低频分解导致过度平滑或高维网格采样引发特征冲突的问题，本质是运动细节保留与形变一致性之间的频谱矛盾。
+
+◆ 提出混合显隐式函数框架，首次将拉普拉斯分析与动态建模结合，解决频谱冲突问题  
+◆ 设计频谱感知的拉普拉斯编码架构，融合哈希编码与拉普拉斯模块，实现多频运动灵活控制  
+◆ 创新增强型高斯动态属性，通过补偿几何形变引起的光度畸变提升重建精度  
+◆ 开发基于KDTree的自适应高斯分裂策略，优化动态区域查询与计算效率  
+
+实验表明该方法在复杂动态场景重建中达到最先进水平，显著提升重建保真度。</td></tr>
+<tr><td>2025-08-07</td><td>Perceive-Sample-Compress: Towards Real-Time 3D Gaussian Splatting</td><td>[2508.04965](http://arxiv.org/pdf/2508.04965)</td><td>◆提出感知-采样-压缩框架，解决传统3D高斯泼溅在大规模场景管理和存储效率上的瓶颈。  
+◆设计场景感知补偿算法，动态优化高斯参数，优先保障关键区域的视觉保真度并提升资源利用率。  
+◆引入金字塔采样表示法，通过分层级管理高斯基元，实现复杂场景的高效组织与渲染。  
+◆开发广义高斯混合模型压缩算法，显著降低存储需求（高压缩比）同时保持视觉质量无损。  
+◆实验验证该方法在实时渲染速度下，大幅提升内存效率与视觉质量，适用于资源受限环境。</td></tr>
+<tr><td>2025-08-07</td><td>Radiance Fields in XR: A Survey on How Radiance Fields are Envisioned and Addressed for XR Research</td><td>[2508.04326](http://arxiv.org/pdf/2508.04326)</td><td>◆ 系统梳理了365篇辐射场（RF）相关研究，聚焦其在XR领域的应用潜力与现状，填补了RF与XR交叉研究的综述空白。  
 ◆ 首次提出三维分析框架：从XR应用愿景（i）、现有技术实现（ii）和研究缺口（iii）三个维度解析RF对XR的贡献。  
 ◆ 深入分析66篇核心论文，揭示RF技术（如3DGS、NeRF）如何具体推动XR的光照真实感视图合成与交互体验革新。  
 ◆ 将XR特有的RF研究问题置于更广阔的RF学术版图中，明确其跨学科定位（涉及计算机视觉、图形学、机器人等6大领域）。  
@@ -803,6 +859,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-07</td><td>Propagating Sparse Depth via Depth Foundation Model for Out-of-Distribution Depth Completion</td><td>[2508.04984](http://arxiv.org/pdf/2508.04984)</td><td>◆ 提出了一种新型深度补全框架，利用深度基础模型增强模型在分布外（OOD）场景下的鲁棒性，无需大规模训练。  
+◆ 创新性地利用深度基础模型从RGB图像中提取环境线索（如结构和语义上下文），指导稀疏深度信息向缺失区域的传播。  
+◆ 设计了无参的双空间传播方法，在3D和2D空间中同步传播稀疏深度，有效保持几何结构和局部一致性。  
+◆ 引入可学习的校正模块，逐步调整深度预测值以优化复杂结构的细节。  
+◆ 在NYUv2和KITTI数据集上训练，并在16个其他数据集上验证，显著优于现有深度补全方法，尤其在OOD场景中表现突出。</td></tr>
+<tr><td>2025-08-06</td><td>Extending Foundational Monocular Depth Estimators to Fisheye Cameras with Calibration Tokens</td><td>[2508.04928](http://arxiv.org/pdf/2508.04928)</td><td>◆ 提出一种无需重新训练或微调的方法，将基于透视图像训练的基础单目深度估计器（FMDEs）直接扩展到鱼眼相机。  
+◆ 引入轻量级的“校准令牌”机制，通过调制潜在嵌入空间来对齐鱼眼图像与透视图像的分布差异，解决协变量偏移问题。  
+◆ 利用FMDEs已有的高表达能力潜在空间，避免传统方法中图像空间重校准或投影带来的伪影和信息损失。  
+◆ 采用自监督学习框架，仅需公开的大规模透视图像数据集，通过模拟鱼眼图像校准实现训练，无需真实鱼眼图像标注。  
+◆ 在室内外多场景测试中，仅用一组校准令牌即显著超越现有方法，兼容多种FMDEs模型，展现强泛化性。</td></tr>
 <tr><td>2025-08-06</td><td>OmniDepth: Bridging Monocular and Stereo Reasoning with Latent Alignment</td><td>[2508.04611](http://arxiv.org/pdf/2508.04611)</td><td>◆提出OmniDepth统一框架，首次实现单目与立体深度估计的潜在表征双向迭代对齐，突破传统方法割裂使用的局限。  
 ◆创新性引入跨注意力对齐机制，动态融合单目上下文先验与立体几何假设，在推理过程中实现双向特征同步。  
 ◆通过单目结构先验有效解决立体匹配在反光/透明表面的固有歧义，同时利用立体几何优化单目深度预测精度。  
@@ -973,4 +1039,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.07
+> 更新于: 2025.08.08
