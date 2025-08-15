@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.08.14)
+# SLAM领域最新论文 (2025.08.15)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-14</td><td>Super LiDAR Reflectance for Robotic Perception</td><td>[2508.10398](http://arxiv.org/pdf/2508.10398)</td><td>◆ 提出了一种创新框架，能够从稀疏LiDAR数据生成密集的反射率图像，解决了低成本LiDAR因数据稀疏性导致的应用受限问题。  
+◆ 针对非重复扫描LiDAR（NRS-LiDAR）的特性，设计了专用的稠密化网络，优化了反射率图像的生成效果。  
+◆ 解决了反射率校准和从静态场景到动态场景转换的关键技术难题，实现了真实场景下的密集反射率图像重建。  
+◆ 构建了一个全面的LiDAR反射率图像稠密化数据集，为后续研究提供了重要基础。  
+◆ 展示了稠密反射率图像在闭环检测和交通车道检测等多种机器人感知任务中的实际应用价值。  
+◆ 通过主动光学感知重新定义了视觉边界，为机器人感知领域提供了新的技术思路和方法。</td></tr>
 <tr><td>2025-08-12</td><td>Transient Noise Removal via Diffusion-based Speech Inpainting</td><td>[2508.08890](http://arxiv.org/pdf/2508.08890)</td><td>◆ 提出PGDI框架，基于扩散模型实现语音修复，能有效恢复长达1秒的严重受损或缺失语音段。  
 ◆ 突破传统方法局限，在保持说话人身份、韵律和环境因素（如混响）的同时，处理不同说话人和长间隙的挑战。  
 ◆ 引入分类器引导机制，特别是音素级引导，显著提升重建保真度。  
@@ -293,6 +299,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-14</td><td>Super LiDAR Reflectance for Robotic Perception</td><td>[2508.10398](http://arxiv.org/pdf/2508.10398)</td><td>◆ 提出了一种创新框架，能够从稀疏的非重复扫描LiDAR（NRS-LiDAR）数据生成密集的LiDAR反射率图像，解决了低成本LiDAR数据稀疏性的问题。  
+◆ 解决了反射率校准和从静态到动态场景转换的关键技术挑战，实现了真实场景中密集反射率图像的重建。  
+◆ 构建了一个全面的LiDAR反射率图像稠密化数据集，为后续研究提供了重要资源。  
+◆ 设计了一个专为NRS-LiDAR定制的稠密化网络，显著提升了稀疏数据的利用效率。  
+◆ 展示了稠密反射率图像在机器人感知任务中的多样化应用，如闭环检测和交通车道检测，验证了其实际价值。  
+◆ 通过主动光学传感重新定义了视觉的边界，推动了主动视觉的新发展。</td></tr>
 <tr><td>2025-08-12</td><td>A Pseudo Global Fusion Paradigm-Based Cross-View Network for LiDAR-Based Place Recognition</td><td>[2508.08917](http://arxiv.org/pdf/2508.08917)</td><td>◆ 提出基于伪全局融合范式的跨视角网络，通过多模态分支协同学习统一语义空间特征，解决传统方法忽略特征空间内在结构的问题。  
 ◆ 创新性地引入伪全局信息引导机制，有效协调不同模态分支的特征学习，增强复杂环境下的表征能力。  
 ◆ 设计流形适应与成对方差-局部性学习度量，构建对称正定(SPD)矩阵计算马氏距离，取代传统欧氏距离度量。  
@@ -520,6 +532,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-14</td><td>Revisiting Cross-View Localization from Image Matching</td><td>[2508.10716](http://arxiv.org/pdf/2508.10716)</td><td>◆ 提出基于跨视角图像匹配的新框架，将定位问题转化为匹配问题，突破传统直接位姿回归或BEV特征对齐的局限性。  
+◆ 创新设计Surface Model精确建模地面视角可见区域，实现更准确的鸟瞰图投影，解决几何不一致问题。  
+◆ 提出SimRefiner模块，通过局部-全局残差校正优化相似度矩阵，无需RANSAC后处理即可获得精细匹配。  
+◆ 构建首个像素级标注的跨视角匹配基准数据集CVFM（含32,509对图像），填补领域空白。  
+◆ 实验证明该方法在极端视角差异下显著提升定位精度（最高达30%）和匹配质量，建立新基线。  
+核心贡献在于通过几何建模与相似度优化双创新，首次实现严格跨视角对应关系，增强定位结果可解释性。</td></tr>
+<tr><td>2025-08-14</td><td>A Sub-Pixel Multimodal Optical Remote Sensing Images Matching Method</td><td>[2508.10294](http://arxiv.org/pdf/2508.10294)</td><td>◆ 提出了一种基于相位一致性加权最小绝对偏差（PCWLAD）的亚像素模板匹配方法，显著提高了多模态光学图像的匹配精度。  
+◆ 采用两阶段匹配策略：先通过结构相似性指数（SSIM）进行粗匹配，再利用WLAD进行精细匹配，兼顾效率和精度。  
+◆ 在粗匹配阶段保留原始结构细节（不进行噪声过滤），通过SSIM增强对非线性辐射差异的鲁棒性。  
+◆ 在精细匹配阶段引入辐射和几何变换模型，结合互结构滤波抑制噪声对结构一致性的影响，提升亚像素偏移估计的准确性。  
+◆ 在可见光-红外Landsat、可见光-近红外近距离及无人机图像三类数据集上验证，平均匹配精度达0.4像素，优于现有8种先进方法。  
+◆ 公开了算法软件和测试数据集，促进后续研究与应用。</td></tr>
 <tr><td>2025-08-13</td><td>Stable Diffusion Models are Secretly Good at Visual In-Context Learning</td><td>[2508.09949](http://arxiv.org/pdf/2508.09949)</td><td>◆ 揭示了现成Stable Diffusion模型具备视觉上下文学习(V-ICL)潜力，无需额外训练即可适应多任务。  
 ◆ 提出原位注意力重计算机制，通过改造自注意力层显式融合查询与示例提示的上下文关系。  
 ◆ 首次实现单一预训练扩散模型在六种视觉任务（如分割、检测、着色等）的零样本迁移。  
@@ -648,6 +672,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-13</td><td>EntropyGS: An Efficient Entropy Coding on 3D Gaussian Splatting</td><td>[2508.10227](http://arxiv.org/pdf/2508.10227)</td><td>◆ 揭示了3D高斯泼溅(3DGS)中球谐AC属性严格遵循拉普拉斯分布的重要统计规律，同时发现旋转、缩放和不透明度属性可用混合高斯分布近似建模。  
+◆ 首次系统分析了3DGS各属性间的相关性，发现球谐AC属性除色彩空间继承的关联外，与其他属性仅存在弱相关性。  
+◆ 提出基于参数化分布估计的因子化熵编码方法EntropyGS，针对不同高斯属性类型自适应调整量化策略。  
+◆ 设计了一套完整的编码流程：先估计各属性的分布参数，再基于参数进行熵编码，实现高效压缩。  
+◆ 在保持同等渲染质量的前提下，相比原始3DGS数据实现了约30倍的压缩率提升，且编解码速度快。  
+◆ 该工作为3DGS模型的存储与传输提供了首个系统性的压缩解决方案，填补了该领域的空白。</td></tr>
 <tr><td>2025-08-13</td><td>A Survey on 3D Gaussian Splatting Applications: Segmentation, Editing, and Generation</td><td>[2508.09977](http://arxiv.org/pdf/2508.09977)</td><td>◆ 全面综述了3D高斯泼溅（3DGS）在分割、编辑和生成等下游应用的最新进展，填补了该领域系统性调研的空白。  
 ◆ 首次将2D基础模型与3DGS结合，分析了语义理解和控制的关键技术支持，为3D场景理解提供了新思路。  
 ◆ 系统对比了NeRF与3DGS方法的异同，揭示了3DGS在显式表示和实时性方面的独特优势。  
@@ -1084,7 +1114,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-08-13</td><td>Iterative Volume Fusion for Asymmetric Stereo Matching</td><td>[2508.09543](http://arxiv.org/pdf/2508.09543)</td><td>◆ 针对非对称双目视觉系统（如长焦-广角相机）中的立体匹配难题，首次系统分析了两种经典代价体积构建方法在视觉不对称场景下的匹配代价分布特性。  
+<tr><td>2025-08-14</td><td>Self-Supervised Stereo Matching with Multi-Baseline Contrastive Learning</td><td>[2508.10838](http://arxiv.org/pdf/2508.10838)</td><td>◆ 提出BaCon-Stereo框架，通过多基线对比学习解决自监督立体匹配中遮挡区域的难题，突破传统光度一致性假设的局限性。  
+◆ 采用师生学习范式，师生网络共享参考视图但目标视图不同，利用教师网络在遮挡区域的可见性优势生成更可靠的监督信号。  
+◆ 引入基线缩放技术，将教师网络的预测结果调整至学生网络基线尺度，实现跨基线知识迁移。  
+◆ 设计遮挡感知注意力图，动态指导学生网络学习遮挡补全，提升遮挡区域预测精度。  
+◆ 构建合成数据集BaCon-20k支持多基线训练，实验证明该方法在KITTI基准上超越现有自监督方法，兼具强泛化性与鲁棒性。</td></tr>
+<tr><td>2025-08-14</td><td>SC-Lane: Slope-aware and Consistent Road Height Estimation Framework for 3D Lane Detection</td><td>[2508.10411](http://arxiv.org/pdf/2508.10411)</td><td>◆ SC-Lane提出了一种新颖的坡度感知与时序一致的高度图估计框架，用于3D车道线检测，解决了传统方法依赖固定坡度锚点的问题。  
+◆ 创新性地设计了坡度自适应特征模块（Slope-Aware Adaptive Feature），通过动态预测权重融合多坡度特征，提升了对多样化道路几何的鲁棒性。  
+◆ 引入高度一致性模块（Height Consistency Module），通过强制时序连贯性，确保连续帧间高度估计的稳定性，适用于实际驾驶场景。  
+◆ 首次将MAE、RMSE和阈值精度等标准指标系统化应用于道路高度评估，填补了该领域评估方法的空白。  
+◆ 在OpenLane基准测试中取得显著突破，F-score达64.3%，大幅超越现有方法，确立了3D车道检测的新标杆。  
+◆ 基于LiDAR高度图数据集的实验验证了框架有效性，为后续研究提供了严谨的对比基准。</td></tr>
+<tr><td>2025-08-14</td><td>Iterative Volume Fusion for Asymmetric Stereo Matching</td><td>[2508.09543](http://arxiv.org/pdf/2508.09543)</td><td>◆ 针对非对称双目视觉系统（如长焦-广角相机）中的立体匹配难题，首次系统分析了两种经典代价体积构建方法在视觉不对称场景下的匹配代价分布特性。  
 ◆ 发现不同代价体积会遭受不同类型的信息失真，提出必须综合利用两种体积才能有效解决非对称匹配问题，突破了传统对称匹配的思维局限。  
 ◆ 提出两阶段迭代体积融合网络IVF-AStereo：第一阶段通过聚合拼接体积优化相关性体积，第二阶段融合两种体积以增强细节恢复能力。  
 ◆ 该方法专门针对分辨率差异和色彩退化等视觉不对称问题设计，在极端不对称条件下仍保持强鲁棒性。  
@@ -1337,4 +1378,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.14
+> 更新于: 2025.08.15
