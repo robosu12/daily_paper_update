@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.08.17)
+# SLAM领域最新论文 (2025.08.18)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -532,6 +532,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-13</td><td>Topological Structure Description for Artcode Detection Using the Shape of Orientation Histogram</td><td>[2508.10942](http://arxiv.org/pdf/2508.10942)</td><td>这篇论文的核心贡献和创新点可总结如下：
+
+◆ 提出了一种新型特征描述符——方向直方图形状（shape of orientation histogram），用于描述Artcode的通用拓扑结构，解决了传统方法难以捕捉拓扑相似但几何和语义差异大的物体的问题。
+
+◆ 将Artcode识别问题重新定义为Artcode提案检测任务，这是计算机视觉领域的一个新任务，专注于分类拓扑相似但外观差异大的物体。
+
+◆ 开发了基于该特征描述符的Artcode检测系统，并通过实验验证了其可行性，为拓扑物体检测提供了新思路。
+
+◆ 收集并构建了专门的数据集，为后续研究提供了基准测试平台。
+
+◆ 这项工作为AR/VR环境中拓扑物体的检测开辟了新途径，有望推动人机交互和数字标记识别技术的发展。</td></tr>
 <tr><td>2025-08-14</td><td>Revisiting Cross-View Localization from Image Matching</td><td>[2508.10716](http://arxiv.org/pdf/2508.10716)</td><td>◆ 提出基于跨视角图像匹配的新框架，将定位问题转化为匹配问题，突破传统直接位姿回归或BEV特征对齐的局限性。  
 ◆ 创新设计Surface Model精确建模地面视角可见区域，实现更准确的鸟瞰图投影，解决几何不一致问题。  
 ◆ 提出SimRefiner模块，通过局部-全局残差校正优化相似度矩阵，无需RANSAC后处理即可获得精细匹配。  
@@ -1114,6 +1125,28 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-15</td><td>DashCam Video: A complementary low-cost data stream for on-demand forest-infrastructure system monitoring</td><td>[2508.11591](http://arxiv.org/pdf/2508.11591)</td><td>◆ 提出了一种低成本、可复制的框架，利用车载摄像头（行车记录仪）视频数据进行实时、物体级别的路边植被和基础设施结构评估与地理定位。  
+◆ 开发了端到端的处理流程，结合单目深度估计、深度误差校正和几何三角测量，从街景视频流中生成精确的空间和结构数据。  
+◆ 采用梯度提升回归框架校正单目深度模型的低估问题（尤其在远距离物体上），显著提升了深度估计精度（R2=0.92，MAE=0.31）。  
+◆ 首次整合单目深度建模、基于GPS三角测量的地理定位和实时结构评估，为消费级视频数据在城市植被与基础设施监测中的应用提供新方法。  
+◆ 通过实验验证了不同摄像头位置和车速下的性能，最佳配置（低速+车内摄像头）下地理定位误差均值2.83米，树木高度估计MAE为2.09米，杆状物0.88米。  
+◆ 为电力公司和城市规划者提供了一种补充传统遥感（如LiDAR）的实时、低成本解决方案，适用于动态城市环境中可扩展的频繁评估需求。</td></tr>
+<tr><td>2025-08-15</td><td>Unifying Scale-Aware Depth Prediction and Perceptual Priors for Monocular Endoscope Pose Estimation and Tissue Reconstruction</td><td>[2508.11282](http://arxiv.org/pdf/2508.11282)</td><td>◆提出统一框架，整合尺度感知深度预测与时序约束的感知优化，解决单目内窥镜姿态估计和组织重建中的深度模糊、组织形变等挑战。  
+◆创新设计MAPIS-Depth模块，结合Depth Pro初始化与Depth Anything的逐帧深度预测，通过L-BFGS-B优化生成伪度量深度估计。  
+◆引入基于RAFT的光流像素对应与时序融合策略，利用LPIPS感知相似性自适应加权帧间变形，有效减少组织形变和运动导致的伪影。  
+◆开发WEMA-RTDL模块，通过联合优化旋转和平移参数，实现合成伪RGBD帧的精准配准，提升位姿估计精度。  
+◆采用截断符号距离函数（TSDF）体素融合与移动立方体算法，生成完整3D组织表面网格，支持临床导航需求。  
+◆在HEVD和SCARED数据集上验证，消融实验与对比分析表明框架鲁棒性优于现有方法，尤其在动态组织场景中表现突出。</td></tr>
+<tr><td>2025-08-15</td><td>CHARM3R: Towards Unseen Camera Height Robust Monocular 3D Detector</td><td>[2508.11185](http://arxiv.org/pdf/2508.11185)</td><td>◆ 首次系统分析了相机高度变化对单目3D检测模型性能的影响，发现深度估计是主要影响因素。  
+◆ 通过数学证明和实验验证，揭示了回归深度模型和基于地面的深度模型在相机高度变化下的误差趋势相反。  
+◆ 提出CHARM3R模型，创新性地融合两种深度估计结果（回归深度与地面深度），显著提升模型鲁棒性。  
+◆ 在CARLA数据集上，CHARM3R对未见相机高度的泛化能力提升超过45%，达到当前最优性能。  
+◆ 开源代码和模型，为后续研究提供重要基准。</td></tr>
+<tr><td>2025-08-12</td><td>Vision-Only Gaussian Splatting for Collaborative Semantic Occupancy Prediction</td><td>[2508.10936](http://arxiv.org/pdf/2508.10936)</td><td>◆ 提出首个基于稀疏3D语义高斯泼溅的协作3D语义占据预测方法，突破传统密集体素或2D特征方案的局限性。  
+◆ 采用邻域跨智能体融合机制，有效消除重复高斯基元并抑制噪声/不一致数据，提升协作感知鲁棒性。  
+◆ 在单个高斯基元中联合编码几何与语义信息，减少对深度监督的依赖，仅需简单刚性对齐即可实现高效融合。  
+◆ 设计稀疏且以物体为中心的消息传递机制，在保留结构信息的同时显著降低通信开销（仅需34.6%通信量）。  
+◆ 实验验证性能优势：相比单智能体与基线协作方法，mIoU分别提升8.42和3.28点，IoU提升5.11和22.41点，在低通信预算下仍保持性能领先。</td></tr>
 <tr><td>2025-08-14</td><td>Self-Supervised Stereo Matching with Multi-Baseline Contrastive Learning</td><td>[2508.10838](http://arxiv.org/pdf/2508.10838)</td><td>◆ 提出BaCon-Stereo框架，通过多基线对比学习解决自监督立体匹配中遮挡区域的难题，突破传统光度一致性假设的局限性。  
 ◆ 采用师生学习范式，师生网络共享参考视图但目标视图不同，利用教师网络在遮挡区域的可见性优势生成更可靠的监督信号。  
 ◆ 引入基线缩放技术，将教师网络的预测结果调整至学生网络基线尺度，实现跨基线知识迁移。  
@@ -1378,4 +1411,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.17
+> 更新于: 2025.08.18
