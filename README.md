@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.08.18)
+# SLAM领域最新论文 (2025.08.19)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -299,6 +299,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-16</td><td>SPIDER: Scalable Probabilistic Inference for Differential Earthquake Relocation</td><td>[2508.12117](http://arxiv.org/pdf/2508.12117)</td><td>◆ 提出了SPIDER框架，首次实现了可扩展的贝叶斯双差震源定位方法，解决了传统方法无法处理百万级参数的高维问题。  
+◆ 结合物理信息神经网络Eikonal求解器与随机梯度朗之万动力学采样器，实现了高效的后验分布采样。  
+◆ 支持多GPU并行计算，显著提升了大规模地震目录联合反演的计算效率。  
+◆ 开发了针对高维后验分布的分析方法，为科学解释和结果评估提供了新工具。  
+◆ 在加州和日本的真实地震目录及合成数据上验证了方法的有效性和实用性。  
+◆ 为地震学领域提供了首个能同时处理不确定性量化与超大规模数据集的概率性定位解决方案。</td></tr>
 <tr><td>2025-08-14</td><td>Super LiDAR Reflectance for Robotic Perception</td><td>[2508.10398](http://arxiv.org/pdf/2508.10398)</td><td>◆ 提出了一种创新框架，能够从稀疏的非重复扫描LiDAR（NRS-LiDAR）数据生成密集的LiDAR反射率图像，解决了低成本LiDAR数据稀疏性的问题。  
 ◆ 解决了反射率校准和从静态到动态场景转换的关键技术挑战，实现了真实场景中密集反射率图像的重建。  
 ◆ 构建了一个全面的LiDAR反射率图像稠密化数据集，为后续研究提供了重要资源。  
@@ -317,7 +323,7 @@
 ◆ 实现几何拓扑无关的网格自适应能力，可处理复杂多尺度网格结构，显著提升计算效率与模拟精度  
 ◆ 实验证明该方法在多种PDE（如Navier-Stokes、波动方程）和异构网格上均优于现有方法，误差降低达35%  
 ◆ 首次在网格移动领域同时达成无监督训练、多物理场泛化和几何独立性三大突破，为科学计算提供新范式</td></tr>
-<tr><td>2025-08-11</td><td>A Fast GRASP Metaheuristic for the Trigger Arc TSP with MIP-Based Construction and Multi-Neighborhood Local Search</td><td>[2508.08477](http://arxiv.org/pdf/2508.08477)</td><td>◆ 提出了一种基于GRASP的元启发式算法，用于解决动态弧成本变化的Trigger Arc TSP问题，扩展了经典TSP的应用场景。  
+<tr><td>2025-08-17</td><td>A Fast GRASP Metaheuristic for the Trigger Arc TSP with MIP-Based Construction and Multi-Neighborhood Local Search</td><td>[2508.08477](http://arxiv.org/pdf/2508.08477)</td><td>◆ 提出了一种基于GRASP的元启发式算法，用于解决动态弧成本变化的Trigger Arc TSP问题，扩展了经典TSP的应用场景。  
 ◆ 在构造阶段创新性地使用混合整数规划（MIP）技术，将TA-TSP转化为一系列定制化的TSP实例，提升了求解效率。  
 ◆ 改进阶段结合了多种邻域搜索操作（2-Opt、Swap和Relocate），增强了局部搜索能力，提高了解的质量。  
 ◆ 在MESS 2024竞赛实例中，算法在60秒内实现了平均0.77%和0.40%的最优性差距，表现优于已知最优解。  
@@ -532,6 +538,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-17</td><td>Splat Feature Solver</td><td>[2508.12216](http://arxiv.org/pdf/2508.12216)</td><td>◆ 提出了一种统一且与核函数及特征无关的特征提升问题建模方法，将其转化为稀疏线性逆问题，并能通过闭式解高效求解。  
+◆ 在凸损失函数下，该方法提供了全局最优误差的可证明上界，确保提升后的特征具有高质量。  
+◆ 针对多视角图像中的不一致性和噪声问题，提出了两种互补的正则化策略：Tikhonov Guidance通过软对角占优保证数值稳定性，Post-Lifting Aggregation通过特征聚类过滤噪声输入。  
+◆ 在开放词汇3D分割基准测试中取得了最先进的性能，显著优于基于训练、分组和启发式的前沿基线方法。  
+◆ 实现了分钟级的特征提升效率，同时开源了代码和项目页面以供社区使用。</td></tr>
 <tr><td>2025-08-13</td><td>Topological Structure Description for Artcode Detection Using the Shape of Orientation Histogram</td><td>[2508.10942](http://arxiv.org/pdf/2508.10942)</td><td>这篇论文的核心贡献和创新点可总结如下：
 
 ◆ 提出了一种新型特征描述符——方向直方图形状（shape of orientation histogram），用于描述Artcode的通用拓扑结构，解决了传统方法难以捕捉拓扑相似但几何和语义差异大的物体的问题。
@@ -577,7 +588,7 @@
 ◆设计跨模态特征增强模块，采用无监督的跨模态互独立性损失，分离模态共享与模态特定特征，提升特征解耦能力。  
 ◆无需真实标签即可优化特征空间，增强SAR与光学图像间的匹配鲁棒性。  
 ◆实验表明，该方法性能超越现有半监督方法，并与全监督SOTA方法相当，具有实际应用潜力。</td></tr>
-<tr><td>2025-08-09</td><td>AugLift: Boosting Generalization in Lifting-based 3D Human Pose Estimation</td><td>[2508.07112](http://arxiv.org/pdf/2508.07112)</td><td>◆ 提出AugLift方法，通过简单但有效的输入增强改进基于2D关键点提升的3D人体姿态估计（HPE）的泛化性能，无需额外数据或传感器。  
+<tr><td>2025-08-16</td><td>AugLift: Boosting Generalization in Lifting-based 3D Human Pose Estimation</td><td>[2508.07112](http://arxiv.org/pdf/2508.07112)</td><td>◆ 提出AugLift方法，通过简单但有效的输入增强改进基于2D关键点提升的3D人体姿态估计（HPE）的泛化性能，无需额外数据或传感器。  
 ◆ 创新性地在标准2D关键点坐标(x,y)基础上稀疏增强两个信号：关键点检测置信度c和单目深度估计d，利用预训练模型的泛化能力提升跨数据集表现。  
 ◆ 方法具有模块化特性，可无缝集成到现有任何提升架构中，无需修改模型结构。  
 ◆ 实验证明在四个数据集上平均提升跨数据集性能10.1%，同时内部数据集性能也提升4.0%，且在不同架构中表现一致。  
@@ -683,6 +694,23 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-18</td><td>Quantifying and Alleviating Co-Adaptation in Sparse-View 3D Gaussian Splatting</td><td>[2508.12720](http://arxiv.org/pdf/2508.12720)</td><td>◆ 揭示了稀疏视角下3D高斯泼溅（3DGS）出现伪影的核心原因：高斯点之间过度相互依赖（共适应），导致过度拟合训练视角而忽视真实场景外观分布。  
+◆ 提出量化高斯点共适应程度的创新指标Co-Adaptation Score（CA），通过同一视角下不同高斯子集渲染的像素方差计算共适应强度。  
+◆ 发现训练视角数量增加会自然缓解共适应现象，为稀疏视角优化提供了理论依据。  
+◆ 提出两种轻量级解决方案：随机高斯丢弃和透明度乘性噪声注入，均支持即插即用且无需额外训练。  
+◆ 实验验证了所提方法在多种基准测试中的有效性，显著改善了稀疏视角下的新视角合成质量。  
+◆ 首次系统分析了3DGS的共适应效应，为后续稀疏视角研究提供了新方向。</td></tr>
+<tr><td>2025-08-17</td><td>Improving Densification in 3D Gaussian Splatting for High-Fidelity Rendering</td><td>[2508.12313](http://arxiv.org/pdf/2508.12313)</td><td>◆提出Edge-Aware Score（边缘感知评分），通过分析高斯分布的边缘特征，更精准地筛选需要分裂的候选高斯，优化了&quot;何时进行致密化&quot;的决策机制。  
+◆设计Long-Axis Split（长轴分裂）策略，沿高斯分布最长几何轴进行分裂，显著减少传统克隆/分裂操作导致的几何畸变，改进&quot;如何致密化&quot;的核心操作。  
+◆提出Recovery-Aware Pruning（恢复感知剪枝）技术，结合多步更新机制（Multi-step Update）和生长控制（Growth Control），有效抑制训练过拟合问题。  
+◆整套方法在不增加训练/推理计算开销的前提下，以更少的高斯数量实现更高保真度的渲染效果。  
+◆通过三阶段优化（时机选择-操作改进-过拟合抑制），系统性重构了3DGS的致密化流程，在渲染质量上达到SOTA水平。</td></tr>
+<tr><td>2025-08-16</td><td>ComplicitSplat: Downstream Models are Vulnerable to Blackbox Attacks by 3D Gaussian Splat Camouflages</td><td>[2508.11854](http://arxiv.org/pdf/2508.11854)</td><td>◆首次提出利用3D高斯泼溅(3DGS)着色方法创建视角特异性伪装的黑盒攻击方法ComplicitSplat，无需知晓下游模型架构或参数。  
+◆通过设计随视角变化的颜色纹理，在特定视角下嵌入对抗内容，实现物理世界和合成场景的双重攻击。  
+◆验证了攻击对单阶段、多阶段及基于Transformer的多种流行检测器均有效，展现强泛化能力。  
+◆揭示了3DGS在自动驾驶等安全关键任务中的新型安全隐患，首次暴露下游检测器的视角依赖攻击风险。  
+◆提出方法不依赖白盒设定，仅需标准3DGS渲染流程即可实现跨模型攻击，突破传统对抗攻击限制。  
+◆实验涵盖真实物体捕捉与合成场景，证实攻击在物理世界中的可实现性。</td></tr>
 <tr><td>2025-08-13</td><td>EntropyGS: An Efficient Entropy Coding on 3D Gaussian Splatting</td><td>[2508.10227](http://arxiv.org/pdf/2508.10227)</td><td>◆ 揭示了3D高斯泼溅(3DGS)中球谐AC属性严格遵循拉普拉斯分布的重要统计规律，同时发现旋转、缩放和不透明度属性可用混合高斯分布近似建模。  
 ◆ 首次系统分析了3DGS各属性间的相关性，发现球谐AC属性除色彩空间继承的关联外，与其他属性仅存在弱相关性。  
 ◆ 提出基于参数化分布估计的因子化熵编码方法EntropyGS，针对不同高斯属性类型自适应调整量化策略。  
@@ -1125,6 +1153,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-18</td><td>DMS:Diffusion-Based Multi-Baseline Stereo Generation for Improving Self-Supervised Depth Estimation</td><td>[2508.13091](http://arxiv.org/pdf/2508.13091)</td><td>◆ 提出DMS方法，利用扩散模型生成多基线立体视图，解决自监督深度估计中因遮挡和出框区域导致的像素对应缺失问题。  
+◆ 通过微调Stable Diffusion模型，沿极线方向合成关键位置的新视角（左-左视图、右-右视图及中间视图），补充遮挡像素以建立显式光度对应关系。  
+◆ 方法具有模型无关性，无需额外标注数据，仅需未标注的立体图像对即可完成训练和合成。  
+◆ 设计为“即插即用”的免费增强模块，可无缝提升现有自监督立体匹配和单目深度估计模型的性能。  
+◆ 在多个基准数据集上验证了有效性，异常值减少高达35%，达到当前最优性能。</td></tr>
+<tr><td>2025-08-15</td><td>Towards Understanding 3D Vision: the Role of Gaussian Curvature</td><td>[2508.11825](http://arxiv.org/pdf/2508.11825)</td><td>◆ 提出高斯曲率在3D视觉中的关键作用，弥补了当前数据驱动方法缺乏显式几何模型的缺陷。  
+◆ 证明高斯曲率具有观测不变性，可作为稀疏紧凑的3D表面描述符，提升建模效率。  
+◆ 发现现有单目/立体视觉方法虽隐含利用高斯曲率，但无法提取显式模块，揭示了理论空白。  
+◆ 将高斯曲率发展为几何先验，能主动指导并优化3D表面重建任务。  
+◆ 提出高斯曲率作为立体视觉的无监督评估指标，为方法性能分析提供新工具。  
+◆ 基于Middlebury数据集的实验验证了高斯曲率在多任务中的普适价值，推动可解释3D视觉研究。</td></tr>
 <tr><td>2025-08-15</td><td>DashCam Video: A complementary low-cost data stream for on-demand forest-infrastructure system monitoring</td><td>[2508.11591](http://arxiv.org/pdf/2508.11591)</td><td>◆ 提出了一种低成本、可复制的框架，利用车载摄像头（行车记录仪）视频数据进行实时、物体级别的路边植被和基础设施结构评估与地理定位。  
 ◆ 开发了端到端的处理流程，结合单目深度估计、深度误差校正和几何三角测量，从街景视频流中生成精确的空间和结构数据。  
 ◆ 采用梯度提升回归框架校正单目深度模型的低估问题（尤其在远距离物体上），显著提升了深度估计精度（R2=0.92，MAE=0.31）。  
@@ -1411,4 +1450,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.18
+> 更新于: 2025.08.19
