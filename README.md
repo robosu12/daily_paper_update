@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.08.20)
+# SLAM领域最新论文 (2025.08.21)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-19</td><td>SLAM-based Safe Indoor Exploration Strategy</td><td>[2508.14235](http://arxiv.org/pdf/2508.14235)</td><td>本文提出了一种基于SLAM的室内安全探索策略，主要面向具有圆形底盘的差速驱动机器人。其核心贡献在于将安全性作为最高优先级，同时兼顾未知空间的高效探索。
+◆ 针对非点式且无法瞬时调整位姿的圆形机器人，设计了专用的安全探索框架。
+◆ 采用多传感器融合方案，结合IMU、3D-LiDAR和RGB-D相机，通过RTAB-SLAM实现精准定位与建图。
+◆ 提出了基于“安全骨架”的路径规划方法，使机器人始终尽可能远离静态障碍物。
+◆ 探索过程中朝向空间中的开放区域前进，优先保障安全，再最大化探索未测区域。
+实验通过ROS移动机器人平台验证了该策略的有效性与实用性。</td></tr>
 <tr><td>2025-08-19</td><td>Online 3D Gaussian Splatting Modeling with Novel View Selection</td><td>[2508.14014](http://arxiv.org/pdf/2508.14014)</td><td>该研究针对仅使用RGB图像序列进行在线3D高斯泼溅（3DGS）建模的挑战，提出了创新解决方案。  
 ◆ 提出了自适应视图选择新机制，通过在线分析重建质量，智能选取最优的非关键帧进行补充训练。  
 ◆ 突破了传统方法仅依赖关键帧的局限，通过融合关键帧和精选的非关键帧，从多视角优化不完整区域。  
@@ -310,6 +316,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-19</td><td>SLAM-based Safe Indoor Exploration Strategy</td><td>[2508.14235](http://arxiv.org/pdf/2508.14235)</td><td>该论文提出了一种基于SLAM的室内安全探索策略，专为具有圆形轮廓的非完整移动机器人设计。  
+◆ 针对非点式且无法瞬时调整位姿的圆形机器人，设计了安全的探索控制方法。  
+◆ 提出一种基于“安全骨架”的路径规划策略，使机器人始终尽可能远离静态障碍物。  
+◆ 探索过程中优先朝向空间中的开放区域前进，兼顾安全性与探索效率。  
+◆ 整合多传感器信息（IMU、3D-LiDAR和RGB-D相机），采用RTAB-SLAM实现实时建图与闭环检测。  
+◆ 通过ROS平台进行了实验验证，展示了该方法在复杂室内环境中的有效性与安全性。</td></tr>
 <tr><td>2025-08-19</td><td>A Screw Approach to the Approximation of the Local Geometry of the Configuration Space and of the set of Configurations of Certain Rank of Lower Pair Linkages</td><td>[2508.13802](http://arxiv.org/pdf/2508.13802)</td><td>本文提出了一种基于旋量理论的低副多环机构高阶局部运动学分析方法。  
 ◆ 引入了基于几何约束映射高阶泰勒展开的通用方法，摆脱了传统方法依赖运动平滑性的假设限制。  
 ◆ 提出了用关节旋量递归表达的代数形式，实现了对约束映射高阶微分的系统化计算。  
@@ -717,6 +729,25 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-20</td><td>GeMS: Efficient Gaussian Splatting for Extreme Motion Blur</td><td>[2508.14682](http://arxiv.org/pdf/2508.14682)</td><td>GeMS是首个直接从极端运动模糊图像中进行3D高斯溅射(3DGS)重建的框架，无需依赖任何清晰图像。  
+◆ 提出VGGSfM，一种基于深度学习的运动恢复结构(SfM)方法，直接从模糊输入中估计相机位姿并生成点云。  
+◆ 引入3DGS-MCMC方法，将高斯分布视为概率分布样本进行稳健初始化，避免了传统启发式的 densification 和 pruning 操作。  
+◆ 联合优化相机轨迹与高斯参数，实现更稳定的场景重建。  
+◆ 进一步提出GeMS-E增强版本，集成事件相机数据，通过事件双积分去模糊(EDI)技术生成更清晰图像以优化重建流程。  
+该框架在合成与真实数据集上均实现了最先进的性能，突破了极端运动模糊下3D重建的瓶颈。</td></tr>
+<tr><td>2025-08-20</td><td>Reconstruction Using the Invisible: Intuition from NIR and Metadata for Enhanced 3D Gaussian Splatting</td><td>[2508.14443](http://arxiv.org/pdf/2508.14443)</td><td>该论文的核心贡献是提出了一种基于近红外（NIR）和元数据的增强型3D高斯溅射方法，以解决农业场景三维重建中的独特挑战。  
+◆ 创建了一个新颖的多模态数据集NIRPlant，集成了近红外、RGB、深度、LiDAR及文本元数据，覆盖多种室内外光照条件。  
+◆ 首次将植被指数（如NDVI、NDWI）等文本元数据引入3D重建，为农业环境提供了超越可见光谱的植物学上下文信息。  
+◆ 提出了一种名为NIRSplat的新型多模态高斯溅射架构，采用基于3D点的位置编码和交叉注意力机制，有效融合多源数据以获取稳健的几何先验。  
+◆ 在极具挑战性的农业场景中，该方法在重建性能上显著优于3DGS、CoR-GS和InstantSplat等现有代表性方法。  
+该工作为农业领域的精准三维感知和分析提供了新的解决方案和数据基础。</td></tr>
+<tr><td>2025-08-19</td><td>GALA: Guided Attention with Language Alignment for Open Vocabulary Gaussian Splatting</td><td>[2508.14278](http://arxiv.org/pdf/2508.14278)</td><td>GALA提出了一种用于开放词汇3D场景理解的新框架，其核心贡献与创新点如下：
+
+◆ 提出了一种新颖的跨注意力模块，并引入了两个可学习的码本，用于编码与视角无关的语义嵌入，从而构建了通用的语言特征场。
+◆ 通过自监督对比学习蒸馏出场景特定的3D实例特征场，确保了实例内特征的高度相似性。
+◆ 该设计同时支持无缝的2D和3D开放词汇查询，实现了对细粒度、语言感知的3D表征的捕获。
+◆ 避免了为每个高斯点学习高维特征，显著降低了内存消耗，提升了方法的实用性。
+◆ 在真实数据集上的大量实验证明了GALA在2D和3D开放词汇任务上的卓越性能。</td></tr>
 <tr><td>2025-08-19</td><td>Distilled-3DGS:Distilled 3D Gaussian Splatting</td><td>[2508.14037](http://arxiv.org/pdf/2508.14037)</td><td>该论文提出了首个针对3D高斯泼溅（3DGS）的知识蒸馏框架Distilled-3DGS，旨在解决其高内存和存储消耗的核心问题。
 
 ◆ 首次将知识蒸馏思想引入3DGS领域，通过集成多个教师模型（包括原始3DGS、噪声增强和丢弃正则化版本）的输出来指导一个轻量级学生模型的优化。
@@ -1205,6 +1236,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-20</td><td>FOCUS: Frequency-Optimized Conditioning of DiffUSion Models for mitigating catastrophic forgetting during Test-Time Adaptation</td><td>[2508.14437](http://arxiv.org/pdf/2508.14437)</td><td>该论文提出FOCUS方法，通过频率优化的扩散模型条件化机制解决测试时适应中的灾难性遗忘问题。  
+◆创新性地利用空间自适应频率先验，在扩散去噪过程中通过条件化反向步骤保留任务相关的语义信息。  
+◆设计了轻量级Y形频率预测网络（Y-FPN），有效解耦噪声图像中的高低频信息以降低计算成本。  
+◆提出FrequencyMix数据增强方法，通过扰动多频带图像提升模型对多种损坏类型的鲁棒性。  
+实验表明其在15种损坏类型和三个数据集上的语义分割与深度估计任务中达到最优平均性能。  
+◆能够生成伪标签辅助现有模型适应方法，在有限监督下有效缓解灾难性遗忘问题。</td></tr>
 <tr><td>2025-08-19</td><td>ROVR-Open-Dataset: A Large-Scale Depth Dataset for Autonomous Driving</td><td>[2508.13977](http://arxiv.org/pdf/2508.13977)</td><td>该论文的核心贡献是推出了一个面向自动驾驶的大规模、多样化深度估计数据集ROVR-Open-Dataset，以解决现有数据集在多样性和可扩展性上的不足。
 ◆ 构建了大规模且帧间连续的深度数据集，包含2万帧动态户外驾驶场景图像，支持模型训练与评估。
 ◆ 采用轻量化数据采集方案，以低成本实现了广泛的场景覆盖，提升了数据集的经济性和可扩展性。
@@ -1513,4 +1550,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.20
+> 更新于: 2025.08.21
