@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.08.21)
+# SLAM领域最新论文 (2025.08.22)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -573,6 +573,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-21</td><td>Mag-Match: Magnetic Vector Field Features for Map Matching and Registration</td><td>[2508.15300](http://arxiv.org/pdf/2508.15300)</td><td>Mag-Match提出了一种利用三维地磁场矢量特征进行地图匹配与注册的新方法。其核心贡献与创新点包括：
+
+◆ 首次引入基于地磁场高阶导数的特征描述子，该描述子对全局方向具有不变性，无需依赖重力对齐的初始映射。
+◆ 利用物理信息高斯过程，从离散的磁力计数据中高效、递归地推断整个地图的磁场及其导数，实现了对磁场的连续化建模。
+◆ 所提出的方法在充满烟雾或灰尘等视觉或激光传感器失效的恶劣环境中依然保持鲁棒性能。
+◆ 在仿真和真实实验中验证了该方法在地图-地图、机器人-地图以及机器人-机器人之间变换的准确性，性能优于传统的SIFT方法。</td></tr>
 <tr><td>2025-08-17</td><td>Splat Feature Solver</td><td>[2508.12216](http://arxiv.org/pdf/2508.12216)</td><td>◆ 提出了一种统一且与核函数及特征无关的特征提升问题建模方法，将其转化为稀疏线性逆问题，并能通过闭式解高效求解。  
 ◆ 在凸损失函数下，该方法提供了全局最优误差的可证明上界，确保提升后的特征具有高质量。  
 ◆ 针对多视角图像中的不一致性和噪声问题，提出了两种互补的正则化策略：Tikhonov Guidance通过软对角占优保证数值稳定性，Post-Lifting Aggregation通过特征聚类过滤噪声输入。  
@@ -729,6 +735,23 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-21</td><td>Enhancing Novel View Synthesis from extremely sparse views with SfM-free 3D Gaussian Splatting Framework</td><td>[2508.15457](http://arxiv.org/pdf/2508.15457)</td><td>该论文针对3D高斯泼溅（3DGS）在极端稀疏视角（如仅2个训练视图）下因运动恢复结构（SfM）初始化失败导致的渲染质量下降问题，提出了一种无需SfM的端到端解决方案。其核心创新点包括：
+◆ 提出一个密集立体模块，替代传统的SfM方法，联合优化相机姿态估计与全局密集点云重建，为3DGS提供稳健初始化。
+◆ 设计一致性视图插值模块，通过插值训练视角之间的相机位姿并生成视角一致的内容，为训练提供额外的强监督信号，缓解稀疏输入的信息稀缺问题。
+◆ 引入多尺度拉普拉斯一致性正则化与自适应空间感知的多尺度几何正则化，有效增强几何结构的准确性和渲染内容的高频细节。
+实验表明，该方法在极端稀疏条件下显著优于现有技术，PSNR指标提升达2.75dB，合成图像畸变小且细节丰富。</td></tr>
+<tr><td>2025-08-21</td><td>Image-Conditioned 3D Gaussian Splat Quantization</td><td>[2508.15372](http://arxiv.org/pdf/2508.15372)</td><td>该论文提出了ICGS-Quantizer，旨在解决3D高斯溅射（3DGS）模型在压缩存储和长期归档后适应场景变化的两大难题。  
+◆ 通过联合利用高斯点间和属性间的相关性，并采用跨所有训练场景的共享码本，大幅提升了量化效率，消除了传统方法中每个场景都需独立码本的开销。  
+◆ 将压缩后的3DGS模型存储需求从兆字节级成功降低到千字节级，同时保持了高质量的视觉保真度。  
+◆ 创新性地引入图像条件解码机制，使得模型在解码时能依据实时捕获的图像自适应地更新场景，从而支持归档后的场景变化。  
+◆ 通过端到端的联合训练，确保了量化后的场景代码能有效用于这种条件解码过程。  
+实验证明，该方法在压缩效率和场景更新适应性上均优于现有最先进技术。</td></tr>
+<tr><td>2025-08-21</td><td>MeSS: City Mesh-Guided Outdoor Scene Generation with Cross-View Consistent Diffusion</td><td>[2508.15169](http://arxiv.org/pdf/2508.15169)</td><td>该论文提出了MeSS方法，利用城市网格模型作为几何先验，生成高质量且风格一致的室外场景。其核心创新包括：
+◆ 提出级联外绘ControlNet，生成几何一致的稀疏视角图像，确保初始视图与3D网格对齐。
+◆ 设计AGInpaint模块进行中间视图传播，有效增加视角密度并保持内容连贯性。
+◆ 引入GCAlign模块全局优化视觉不一致问题（如曝光差异），提升跨视图一致性。
+◆ 结合3D高斯泼溅（3DGS）技术，在网格表面初始化高斯点以实时重建可渲染3D场景。
+该方法在几何对齐度和生成质量上优于现有技术，支持通过重照明和风格转换实现多样化渲染。</td></tr>
 <tr><td>2025-08-20</td><td>GeMS: Efficient Gaussian Splatting for Extreme Motion Blur</td><td>[2508.14682](http://arxiv.org/pdf/2508.14682)</td><td>GeMS是首个直接从极端运动模糊图像中进行3D高斯溅射(3DGS)重建的框架，无需依赖任何清晰图像。  
 ◆ 提出VGGSfM，一种基于深度学习的运动恢复结构(SfM)方法，直接从模糊输入中估计相机位姿并生成点云。  
 ◆ 引入3DGS-MCMC方法，将高斯分布视为概率分布样本进行稳健初始化，避免了传统启发式的 densification 和 pruning 操作。  
@@ -741,14 +764,14 @@
 ◆ 提出了一种名为NIRSplat的新型多模态高斯溅射架构，采用基于3D点的位置编码和交叉注意力机制，有效融合多源数据以获取稳健的几何先验。  
 ◆ 在极具挑战性的农业场景中，该方法在重建性能上显著优于3DGS、CoR-GS和InstantSplat等现有代表性方法。  
 该工作为农业领域的精准三维感知和分析提供了新的解决方案和数据基础。</td></tr>
-<tr><td>2025-08-19</td><td>GALA: Guided Attention with Language Alignment for Open Vocabulary Gaussian Splatting</td><td>[2508.14278](http://arxiv.org/pdf/2508.14278)</td><td>GALA提出了一种用于开放词汇3D场景理解的新框架，其核心贡献与创新点如下：
+<tr><td>2025-08-21</td><td>GALA: Guided Attention with Language Alignment for Open Vocabulary Gaussian Splatting</td><td>[2508.14278](http://arxiv.org/pdf/2508.14278)</td><td>GALA提出了一种用于开放词汇3D场景理解的新框架，其核心贡献与创新点如下：
 
 ◆ 提出了一种新颖的跨注意力模块，并引入了两个可学习的码本，用于编码与视角无关的语义嵌入，从而构建了通用的语言特征场。
 ◆ 通过自监督对比学习蒸馏出场景特定的3D实例特征场，确保了实例内特征的高度相似性。
 ◆ 该设计同时支持无缝的2D和3D开放词汇查询，实现了对细粒度、语言感知的3D表征的捕获。
 ◆ 避免了为每个高斯点学习高维特征，显著降低了内存消耗，提升了方法的实用性。
 ◆ 在真实数据集上的大量实验证明了GALA在2D和3D开放词汇任务上的卓越性能。</td></tr>
-<tr><td>2025-08-19</td><td>Distilled-3DGS:Distilled 3D Gaussian Splatting</td><td>[2508.14037](http://arxiv.org/pdf/2508.14037)</td><td>该论文提出了首个针对3D高斯泼溅（3DGS）的知识蒸馏框架Distilled-3DGS，旨在解决其高内存和存储消耗的核心问题。
+<tr><td>2025-08-19</td><td>Distilled-3DGS:Distilled 3D Gaussian Splatting</td><td>[2508.14037](http://arxiv.org/pdf/2508.14037)<br><a href=''>[代码]</a></td><td>该论文提出了首个针对3D高斯泼溅（3DGS）的知识蒸馏框架Distilled-3DGS，旨在解决其高内存和存储消耗的核心问题。
 
 ◆ 首次将知识蒸馏思想引入3DGS领域，通过集成多个教师模型（包括原始3DGS、噪声增强和丢弃正则化版本）的输出来指导一个轻量级学生模型的优化。
 ◆ 提出了一种结构相似性损失（structural similarity loss），专门用于蒸馏隐藏的几何结构，以增强学生模型与教师模型在空间几何分布上的一致性。
@@ -1550,4 +1573,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.21
+> 更新于: 2025.08.22
