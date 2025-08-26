@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.08.25)
+# SLAM领域最新论文 (2025.08.26)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,33 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-24</td><td>SEER-VAR: Semantic Egocentric Environment Reasoner for Vehicle Augmented Reality</td><td>[2508.17255](http://arxiv.org/pdf/2508.17255)</td><td>SEER-VAR提出了一个用于车载增强现实（AR）的创新框架，其核心贡献在于将语义理解、环境感知SLAM与大语言模型推荐系统进行了统一。  
+◆首创了通过深度引导的视觉-语言基础模型，动态分离车辆驾驶舱与外部道路场景，解决了传统系统假设静态或单一视角的局限。  
+◆设计了双分支的上下文感知SLAM（CASB），分别对舱内和车外环境进行自我运动跟踪，提升了复杂驾驶情境下的空间对齐鲁棒性。  
+◆引入基于GPT的推荐模块，生成情境感知的AR叠加内容，如仪表盘提示和危险警报，增强了信息的实用性和场景贴合度。  
+◆发布了一个名为EgoSLAM-Drive的真实世界数据集，包含同步的自中心视角图像、6DoF真实姿态和多样驾驶场景下的AR标注，支持系统评估与后续研究。  
+该框架在实验中表现出优越的空间对齐能力和AR渲染一致性，并通过用户研究验证了其在提升场景理解、信息相关性和驾驶舒适度方面的有效性。</td></tr>
+<tr><td>2025-08-24</td><td>VROOM - Visual Reconstruction over Onboard Multiview</td><td>[2508.17172](http://arxiv.org/pdf/2508.17172)</td><td>VROOM提出了一种仅依靠F1赛车上车载摄像头视频来重建赛道三维模型的系统。
+◆ 创新性地利用真实世界高速运动场景（2023年摩纳哥大奖赛）的极端车载视频数据，应对高动态和镜头骤变的挑战。
+◆ 系统化地分析并融合了多种先进方法（如DROID-SLAM、AnyCam、Monst3r），构建了一个完整的处理流程。
+◆ 开发了针对性的预处理技术，包括多种掩蔽方法、时间分块和分辨率缩放，以处理剧烈运动并满足计算限制。
+实验表明，VROOM能在复杂环境中部分恢复赛道和车辆轨迹，验证了仅用车载视频进行可扩展4D重建的现实可行性。</td></tr>
+<tr><td>2025-08-23</td><td>DualReg: Dual-Space Filtering and Reinforcement for Rigid Registration</td><td>[2508.17034](http://arxiv.org/pdf/2508.17034)</td><td>本文提出了一种新颖的双空间刚性配准方法DualReg，有效结合了基于特征匹配和局部几何匹配的优势。  
+◆ 创新性地引入双空间范式，协同利用特征匹配处理大变换差异和几何匹配实现精细对齐的能力。  
+◆ 设计高效过滤机制，采用轻量级单点RANSAC算法与细化模块，快速剔除不可靠的特征对应关系。  
+◆ 提出将过滤后的对应点作为锚点，提取几何代理并构建高效目标函数，配合定制求解器优化变换估计。  
+◆ 在KITTI数据集上实现最高32倍CPU时间加速，且在保持精度的同时显著提升计算效率。  
+该方法为噪声环境下部分重叠数据的实时刚性配准提供了实用解决方案。</td></tr>
+<tr><td>2025-08-23</td><td>A Workflow for Map Creation in Autonomous Vehicle Simulations</td><td>[2508.16856](http://arxiv.org/pdf/2508.16856)</td><td>本文针对自动驾驶仿真中高精度地图创建困难且耗时的问题，提出了一套定制化工作流。其核心贡献与创新点包括：
+◆ 设计了一个简化且高效的制图流程，显著降低了创建仿真就绪地图的难度和资源消耗。
+◆ 以CARLA等主流仿真器为应用背景，成功生成了安大略理工大学停车场的3D地图实例，验证了工作流的可行性。
+◆ 该工作流为开发者提供了更灵活的解决方案，减少了对特定仿真平台或昂贵计算资源的依赖。
+未来研究方向包括集成SLAM技术、提升多仿真器兼容性以及优化经纬度数据处理精度。</td></tr>
+<tr><td>2025-08-22</td><td>COSMO-Bench: A Benchmark for Collaborative SLAM Optimization</td><td>[2508.16731](http://arxiv.org/pdf/2508.16731)</td><td>该论文的核心贡献是创建并发布了首个专门用于评估多机器人协同SLAM优化算法的基准测试套件COSMO-Bench。其创新点包括：
+◆ 填补了多机器人协同SLAM领域缺乏标准评估基准的空白，解决了该领域研究难以公平比较的痛点。
+◆ 提供了24个高质量数据集，这些数据源自真实世界的LiDAR数据和最先进的C-SLAM前端算法，确保了数据的真实性和可靠性。
+◆ 所有数据集均开源，并配有永久可访问的DOI，极大地方便了研究社区的使用和后续研究。
+该基准的发布有望像传统单机器人SLAM基准那样，推动多机器人协同SLAM优化算法的标准化测试和性能提升。</td></tr>
 <tr><td>2025-08-22</td><td>GPL-SLAM: A Laser SLAM Framework with Gaussian Process Based Extended Landmarks</td><td>[2508.16459](http://arxiv.org/pdf/2508.16459)</td><td>本文提出了一种基于高斯过程（GP）地标的新型激光SLAM框架GPL-SLAM。  
 ◆ 采用高斯过程对环境中物体的轮廓进行建模，替代传统的栅格地图或点云配准方法。  
 ◆ 提出在线递归更新方案，能够高效更新轮廓并显著减少内存使用。  
@@ -597,7 +624,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-08-22</td><td>HOSt3R: Keypoint-free Hand-Object 3D Reconstruction from RGB images</td><td>[2508.16465](http://arxiv.org/pdf/2508.16465)</td><td>该论文提出了一种无需关键点检测的手-物体三维重建新方法HOSt3R，其核心贡献与创新点如下：
+<tr><td>2025-08-25</td><td>DroneKey: Drone 3D Pose Estimation in Image Sequences using Gated Key-representation and Pose-adaptive Learning</td><td>[2508.17746](http://arxiv.org/pdf/2508.17746)</td><td>该论文提出了一种专门针对无人机的三维姿态估计框架DroneKey，解决了无人机螺旋桨作为关键点检测困难的问题。  
+◆ 设计了双关键表示机制（中间表示和紧凑表示），并通过门控求和进行优化融合，提升了关键点特征的判别能力。  
+◆ 提出姿态自适应的马氏距离损失函数，增强极端姿态下关键点预测的稳定性和准确性。  
+◆ 构建并公开了无人机二维关键点与三维姿态的新数据集，为后续研究提供重要基础。  
+实验表明，该方法在关键点检测中达到99.68% AP（OKS指标），三维姿态估计角度误差仅10.62度，同时支持44 FPS实时处理，显著优于现有方法。</td></tr>
+<tr><td>2025-08-25</td><td>HOSt3R: Keypoint-free Hand-Object 3D Reconstruction from RGB images</td><td>[2508.16465](http://arxiv.org/pdf/2508.16465)</td><td>该论文提出了一种无需关键点检测的手-物体三维重建新方法HOSt3R，其核心贡献与创新点如下：
 ◆ 摒弃了传统依赖关键点检测（如运动恢复结构和手部关键点优化）的范式，解决了弱纹理、复杂几何和严重遮挡下的失效问题。
 ◆ 提出了一种直接从单目运动视频中估计手-物体三维变换的鲁棒方法，实现了对未知物体的通用重建。
 ◆ 将单目变换估计与多视图三维重建流程相结合，实现了高精度的手-物体三维形状恢复。
@@ -765,6 +797,29 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-25</td><td>GSVisLoc: Generalizable Visual Localization for Gaussian Splatting Scene Representations</td><td>[2508.18242](http://arxiv.org/pdf/2508.18242)</td><td>GSVisLoc提出了一种专为3D高斯泼溅（3DGS）场景表示设计的通用视觉定位方法。  
+◆ 首次实现了无需任何修改或重训练，直接利用原始3DGS模型进行视觉定位，无需额外参考图像。  
+◆ 通过下采样和编码3D高斯来提取场景特征，并与查询图像特征进行鲁棒匹配，有效结合了显式3D表示的优点。  
+◆ 采用由粗到精的三步定位流程：粗匹配、精细匹配和姿态优化，确保了高精度相机位姿估计。  
+◆ 在室内外标准基准测试中均表现出 competitive 的定位性能，显著优于现有基于3DGS的基线方法。  
+◆ 展示了强大的泛化能力，能够直接应用于未见过的全新场景，无需针对特定场景进行额外训练。</td></tr>
+<tr><td>2025-08-25</td><td>Camera Pose Refinement via 3D Gaussian Splatting</td><td>[2508.17876](http://arxiv.org/pdf/2508.17876)</td><td>该论文提出了一种基于3D高斯泼溅（3DGS）的新型相机位姿优化框架GS-SMC，显著提升了初始位姿估计的精度。  
+◆ 利用广泛应用的3DGS模型直接渲染新视角，无需针对不同场景重新训练或微调，实现了轻量化的跨场景适配能力。  
+◆ 通过查询图像与多个渲染图像之间的对极几何约束进行迭代优化，有效结合了几何约束与渲染灵活性。  
+◆ 支持灵活选择特征提取器和匹配器来建立约束，摆脱了传统方法对特定描述符或专用网络的依赖。  
+实验证明，该方法在7-Scenes和Cambridge数据集上均优于现有最优方法，其中位姿中值误差降低最高达56.9%（旋转）和53.3%（平移）。</td></tr>
+<tr><td>2025-08-25</td><td>IDU: Incremental Dynamic Update of Existing 3D Virtual Environments with New Imagery Data</td><td>[2508.17579](http://arxiv.org/pdf/2508.17579)</td><td>该论文提出了IDU增量动态更新流程，用于高效更新军事场景中的现有3D虚拟环境。  
+◆ 通过少量新图像实现现有3D高斯溅射模型（3DGS）的增量更新，避免全场景重建的高成本。  
+◆ 结合相机位姿估计与新图像配准，确保新增数据与原有模型的空间一致性。  
+◆ 采用变化检测技术精准定位场景中的动态变化（如新增或消失物体）。  
+◆ 利用3D生成式AI模型创建高质量新资产，并通过人工指导实现精确的对象识别与放置。  
+实验证明该方法大幅降低了3D场景更新的时间和人力成本，为动态军事环境提供了高效维护方案。</td></tr>
+<tr><td>2025-08-23</td><td>Align 3D Representation and Text Embedding for 3D Content Personalization</td><td>[2508.16932](http://arxiv.org/pdf/2508.16932)</td><td>该论文提出了一种名为Invert3D的新型框架，旨在解决3D内容高效个性化这一关键挑战。其核心贡献与创新点如下：
+
+◆ 提出了一个将3D表示与文本嵌入空间对齐的创新框架，解决了因结构差异而无法将2D视觉-语言模型直接应用于3D内容的根本问题。
+◆ 设计了一种相机条件化的3D到文本逆向映射机制，能够将3D内容投影到与文本嵌入对齐的3D嵌入空间中。
+◆ 实现了通过自然语言提示对3D内容进行高效操作和个性化定制，无需依赖基于知识蒸馏的、计算昂贵的重新训练过程。
+◆ 所提出的方法在保持高质量合成的同时，显著提升了3D内容个性化的效率和便捷性。</td></tr>
 <tr><td>2025-08-22</td><td>Arbitrary-Scale 3D Gaussian Super-Resolution</td><td>[2508.16467](http://arxiv.org/pdf/2508.16467)</td><td>本文提出了一种支持任意尺度3D高斯超分辨率的新框架，解决了现有方法局限于固定倍数和效率低下的问题。  
 ◆ 构建了集成式框架，首次实现单一模型支持任意尺度（包括非整数倍）的超分辨率渲染。  
 ◆ 引入尺度感知渲染机制，有效避免了直接上采样带来的混叠伪影问题。  
@@ -787,7 +842,7 @@
 ◆ 创新性地引入图像条件解码机制，使得模型在解码时能依据实时捕获的图像自适应地更新场景，从而支持归档后的场景变化。  
 ◆ 通过端到端的联合训练，确保了量化后的场景代码能有效用于这种条件解码过程。  
 实验证明，该方法在压缩效率和场景更新适应性上均优于现有最先进技术。</td></tr>
-<tr><td>2025-08-21</td><td>MeSS: City Mesh-Guided Outdoor Scene Generation with Cross-View Consistent Diffusion</td><td>[2508.15169](http://arxiv.org/pdf/2508.15169)</td><td>该论文提出了MeSS方法，利用城市网格模型作为几何先验，生成高质量且风格一致的室外场景。其核心创新包括：
+<tr><td>2025-08-25</td><td>MeSS: City Mesh-Guided Outdoor Scene Generation with Cross-View Consistent Diffusion</td><td>[2508.15169](http://arxiv.org/pdf/2508.15169)</td><td>该论文提出了MeSS方法，利用城市网格模型作为几何先验，生成高质量且风格一致的室外场景。其核心创新包括：
 ◆ 提出级联外绘ControlNet，生成几何一致的稀疏视角图像，确保初始视图与3D网格对齐。
 ◆ 设计AGInpaint模块进行中间视图传播，有效增加视角密度并保持内容连贯性。
 ◆ 引入GCAlign模块全局优化视觉不一致问题（如曝光差异），提升跨视图一致性。
@@ -1300,6 +1355,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-25</td><td>EndoUFM: Utilizing Foundation Models for Monocular depth estimation of endoscopic images</td><td>[2508.17916](http://arxiv.org/pdf/2508.17916)</td><td>该论文提出了EndoUFM框架，用于解决内窥镜图像单目深度估计中因复杂纹理和光照变化导致的性能受限问题。其核心贡献在于创新性地融合双基础模型并引入多项技术改进以提升模型性能与适应性。  
+◆ 首次将双基础模型集成于内窥镜深度估计框架，利用预训练先验知识增强模型泛化能力。  
+◆ 提出基于随机向量低秩自适应（RVLoRA）的自适应微调策略，显著提升模型对手术场景的域适应能力。  
+◆ 设计基于深度可分离卷积的残差块（Res-DSC），强化对局部细微特征的捕捉效率。  
+◆ 引入掩码引导平滑性损失函数，确保解剖组织内部深度的一致性。  
+实验表明，该方法在多个数据集上达到最优性能，同时保持较小模型规模，有望增强手术中的空间感知能力。</td></tr>
+<tr><td>2025-08-23</td><td>Balanced Sharpness-Aware Minimization for Imbalanced Regression</td><td>[2508.16973](http://arxiv.org/pdf/2508.16973)</td><td>该论文针对回归任务中数据分布不平衡的问题，提出了一种平衡锐度感知最小化方法（BSAM），其核心贡献与创新点如下：
+
+◆ 将不平衡回归问题重新定义为不平衡泛化问题，从泛化能力的角度分析模型性能差异。  
+◆ 提出通过损失锐度来衡量模型在不同目标值观测空间中的泛化能力，关注参数扰动对各类样本损失变化的影响。  
+◆ 设计了一种新颖的目标重加权策略，使模型在整个观测空间中具有均匀的泛化能力，而非直接调整样本权重。  
+◆ 从理论角度证明了所提方法能够提供更好的泛化误差上界保证，增强了方法的理论可靠性。  
+◆ 在年龄估计、深度估计等多个视觉回归任务上进行了广泛实验，验证了BSAM相比现有方法的持续优越性。</td></tr>
 <tr><td>2025-08-20</td><td>FOCUS: Frequency-Optimized Conditioning of DiffUSion Models for mitigating catastrophic forgetting during Test-Time Adaptation</td><td>[2508.14437](http://arxiv.org/pdf/2508.14437)</td><td>该论文提出FOCUS方法，通过频率优化的扩散模型条件化机制解决测试时适应中的灾难性遗忘问题。  
 ◆创新性地利用空间自适应频率先验，在扩散去噪过程中通过条件化反向步骤保留任务相关的语义信息。  
 ◆设计了轻量级Y形频率预测网络（Y-FPN），有效解耦噪声图像中的高低频信息以降低计算成本。  
@@ -1614,4 +1682,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.25
+> 更新于: 2025.08.26
