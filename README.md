@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.08.28)
+# SLAM领域最新论文 (2025.08.29)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-28</td><td>Adam SLAM - the last mile of camera calibration with 3DGS</td><td>[2508.20526](http://arxiv.org/pdf/2508.20526)</td><td>该论文提出了一种利用3D高斯泼溅（3DGS）模型优化相机标定的新方法。  
+◆ 首创通过新视图合成的颜色损失反向传播，直接优化相机参数（如位姿和焦距），突破了传统标定依赖专用采集流程的限制。  
+◆ 将标定问题转化为可微分优化问题，无需真实场景真值，仅依靠渲染图像质量即可评估和提升标定精度。  
+◆ 在3DGS标准数据集上实现了平均0.4 dB的PSNR提升，显著提高了新视图合成质量。  
+该方法尤其适用于对标定精度要求极高的参考场景（如Mip-NeRF 360），虽计算耗时较长，但为高精度神经渲染提供了关键技术支持。</td></tr>
 <tr><td>2025-08-24</td><td>SEER-VAR: Semantic Egocentric Environment Reasoner for Vehicle Augmented Reality</td><td>[2508.17255](http://arxiv.org/pdf/2508.17255)</td><td>SEER-VAR提出了一个用于车载增强现实（AR）的创新框架，其核心贡献在于将语义理解、环境感知SLAM与大语言模型推荐系统进行了统一。  
 ◆首创了通过深度引导的视觉-语言基础模型，动态分离车辆驾驶舱与外部道路场景，解决了传统系统假设静态或单一视角的局限。  
 ◆设计了双分支的上下文感知SLAM（CASB），分别对舱内和车外环境进行自我运动跟踪，提升了复杂驾驶情境下的空间对齐鲁棒性。  
@@ -355,6 +360,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-28</td><td>Mixture of Contexts for Long Video Generation</td><td>[2508.21058](http://arxiv.org/pdf/2508.21058)</td><td>该论文针对长视频生成中的长上下文记忆难题，提出了一种高效且可学习的解决方案。  
+◆ 将长视频生成重新定义为内部信息检索任务，突破了传统方法的计算瓶颈。  
+◆ 提出Mixture of Contexts（MoC）模块，通过可学习的稀疏注意力路由动态选择关键信息块（如字幕、局部窗口）进行关注。  
+◆ 采用因果路由机制防止循环闭合，确保时序一致性和内容稳定性。  
+◆ 实现了近线性的计算缩放，显著降低了内存和计算成本，使分钟级长视频的训练和生成变得可行。  
+◆ 模型能够有效保留身份、动作和场景信息，生成内容在长时间范围内保持连贯性。</td></tr>
 <tr><td>2025-08-22</td><td>Stochastic modelling reveals that chromatin folding buffers epigenetic landscapes against sirtuin depletion during DNA damage</td><td>[2508.16548](http://arxiv.org/pdf/2508.16548)</td><td>该论文通过结合染色质架构的随机模型，揭示了染色质折叠在DNA损伤期间对抗表观遗传景观失稳的保护机制。  
 ◆ 开发了组蛋白修饰动力学与染色质三维结构整合的随机模型，用于研究DNA损伤下表观遗传的响应机制。  
 ◆ 发现局部sirtuin（组蛋白去乙酰化酶）的耗竭会引发表观遗传景观的侵蚀，这一发现与实验观察一致。  
@@ -624,6 +635,11 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-28</td><td>Estimating 2D Keypoints of Surgical Tools Using Vision-Language Models with Low-Rank Adaptation</td><td>[2508.20830](http://arxiv.org/pdf/2508.20830)</td><td>本文提出了一种利用视觉语言模型（VLM）进行手术工具二维关键点检测的新方法。  
+◆ 创新性地采用预训练视觉语言模型（VLM），并通过低秩自适应（LoRA）技术进行微调，有效缓解了在小型医疗数据集上传统CNN或Transformer模型容易过拟合的问题。  
+◆ 设计了专门的提示词构建指令微调数据集，将视觉特征与语义关键点描述进行对齐，增强了模型对手术工具的结构理解。  
+◆ 仅需两个训练周期即可达到优异性能，显著降低了计算资源和数据量的需求，适用于低资源场景。  
+该方法在关键点检测精度上优于基线模型，并为未来三维手术器械及手部姿态估计奠定了基础。</td></tr>
 <tr><td>2025-08-25</td><td>DroneKey: Drone 3D Pose Estimation in Image Sequences using Gated Key-representation and Pose-adaptive Learning</td><td>[2508.17746](http://arxiv.org/pdf/2508.17746)</td><td>该论文提出了一种专门针对无人机的三维姿态估计框架DroneKey，解决了无人机螺旋桨作为关键点检测困难的问题。  
 ◆ 设计了双关键表示机制（中间表示和紧凑表示），并通过门控求和进行优化融合，提升了关键点特征的判别能力。  
 ◆ 提出姿态自适应的马氏距离损失函数，增强极端姿态下关键点预测的稳定性和准确性。  
@@ -797,6 +813,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-28</td><td>Adam SLAM - the last mile of camera calibration with 3DGS</td><td>[2508.20526](http://arxiv.org/pdf/2508.20526)</td><td>该论文提出了一种利用3D高斯泼溅（3DGS）模型优化相机标定的新方法。  
+◆ 创新性地通过新视图颜色损失的反向传播来精细调整相机参数，突破了传统标定方法的精度限制。  
+◆ 该方法无需真实场景的地面真值，仅依靠合成视图的质量作为标定优劣的评价标准。  
+◆ 在3DGS基准数据集上，仅通过标定优化就实现了平均0.4 dB PSNR的性能提升。  
+◆ 虽然优化过程耗时较长，但对参考场景（如Mip-NeRF 360）的标定具有重要意义，因为新视图质量是此类场景的核心评价指标。  
+该方法为相机标定提供了更高精度的解决方案，尤其适用于对重建质量要求极高的应用场景。</td></tr>
 <tr><td>2025-08-27</td><td>MAPo : Motion-Aware Partitioning of Deformable 3D Gaussian Splatting for High-Fidelity Dynamic Scene Reconstruction</td><td>[2508.19786](http://arxiv.org/pdf/2508.19786)</td><td>该论文针对基于变形的3D高斯泼溅动态场景重建中，复杂运动区域易出现模糊和细节丢失的问题，提出了MAPo框架。其核心贡献与创新点包括：
 ◆ 提出了一种动态的基于得分的分割策略，能够自动区分高动态和低动态的高斯点。
 ◆ 对高动态高斯点采用递归时间分割，并为每个新时段复制独立的变形网络，以精细化建模复杂运动细节。
@@ -1383,6 +1405,11 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-08-28</td><td>Enhancing Pseudo-Boxes via Data-Level LiDAR-Camera Fusion for Unsupervised 3D Object Detection</td><td>[2508.20530](http://arxiv.org/pdf/2508.20530)</td><td>本文提出了一种数据级LiDAR-相机融合框架，用于无监督3D目标检测，核心贡献在于显著提升了伪标签质量。  
+◆ 提出数据级双向融合机制，将2D图像实例分割和深度估计信息与3D点云深度融合，实现点云类别标注和点云密度增强。  
+◆ 设计局部与全局滤波方法，通过局部半径滤波抑制深度估计噪声，通过全局统计滤波去除分割异常值，有效提升数据质量。  
+◆ 引入基于数据级融合的动态自进化策略，通过密集表示迭代优化伪边界框，显著提高定位精度。  
+在nuScenes数据集上的实验表明，该方法达到28.4% mAP，大幅优于现有无监督方法。</td></tr>
 <tr><td>2025-08-27</td><td>OpenM3D: Open Vocabulary Multi-view Indoor 3D Object Detection without Human Annotations</td><td>[2508.20063](http://arxiv.org/pdf/2508.20063)</td><td>OpenM3D是一种无需人工标注、仅使用多视角图像进行开放词汇室内3D物体检测的新方法。其核心贡献在于首次实现了基于图像的单阶段开放词汇3D检测，并在训练速度和精度上均超越了现有方法。  
 ◆提出了一种基于图嵌入技术的3D伪标签生成方法，能将2D图像分割结果融合为高质量且连贯的3D结构，其伪框的精确度和召回率优于之前的最佳方法。  
 ◆设计了一种联合训练目标，结合了无需类别信息的3D定位损失和基于CLIP特征的多视角体素-语义对齐损失，有效实现了开放词汇能力。  
@@ -1727,4 +1754,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.08.28
+> 更新于: 2025.08.29
