@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.04)
+# SLAM领域最新论文 (2025.09.05)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-04</td><td>Stitching the Story: Creating Panoramic Incident Summaries from Body-Worn Footage</td><td>[2509.04370](http://arxiv.org/pdf/2509.04370)</td><td>该论文的核心贡献是开发了一个自动化计算机视觉流程，将执法或急救人员佩戴的相机所拍摄的长视频，转化为简洁的全景图像摘要，以支持快速态势感知和事件分析。
+
+◆ 提出利用单目SLAM技术从视频中估计相机运动轨迹并重建场景空间布局，为创建空间连贯的摘要奠定基础。
+◆ 通过沿相机轨迹对位姿进行聚类来识别关键视点，确保摘要能全面覆盖场景的重要区域。
+◆ 从每个视点簇中选取代表性帧，并采用多帧图像拼接技术将其融合成高质量、信息丰富的全景图像。
+◆ 最终生成的全景摘要图像能直观展示复杂事件现场的全貌，显著提升了视频审查和决策效率。</td></tr>
 <tr><td>2025-09-03</td><td>Efficient Active Training for Deep LiDAR Odometry</td><td>[2509.03211](http://arxiv.org/pdf/2509.03211)</td><td>本文提出了一种用于深度激光雷达里程计的高效主动训练框架，核心贡献在于显著减少训练数据需求的同时提升模型泛化能力。  
 ◆ 设计了主动训练框架，通过选择性提取多样化环境中的数据来降低训练负担。  
 ◆ 提出初始训练集选择策略（ITSS），通过分析通用天气下的运动序列节点和边缘来构建多样性丰富的初始数据集。  
@@ -340,6 +346,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-04</td><td>Odometry Calibration and Pose Estimation of a 4WIS4WID Mobile Wall Climbing Robot</td><td>[2509.04016](http://arxiv.org/pdf/2509.04016)</td><td>本文针对4WIS4WID爬壁机器人在复杂建筑立面上定位困难的问题，提出了一种基于多传感器融合的位姿估计解决方案。
+◆ 设计了一种融合轮式里程计、视觉里程计和IMU数据的位姿估计器，采用EKF和UKF滤波器进行多模态信息融合。
+◆ 针对机器人系统误差，综合应用了非线性优化和Levenberg-Marquardt等确定性方法进行标定。
+◆ 同时采用了遗传算法和粒子群算法等随机优化方法进行运动学参数校准，提升了标定精度和鲁棒性。
+◆ 整套标定与位姿估计系统在实验爬壁机器人平台上得到了详细实验验证，证明了其有效性和实用性。
+该研究为无GPS环境下爬壁机器人的高精度定位提供了可靠的技术途径。</td></tr>
 <tr><td>2025-09-01</td><td>ViSTA-SLAM: Visual SLAM with Symmetric Two-view Association</td><td>[2509.01584](http://arxiv.org/pdf/2509.01584)</td><td>ViSTA-SLAM的核心贡献是提出了一种无需已知相机内参即可实时运行的单目视觉SLAM系统，其性能在相机跟踪和稠密三维重建质量上均优于现有方法。
 
 ◆ 采用轻量级对称双视图关联（STA）模型作为前端，仅需两张RGB图像即可同时估计相对相机位姿并回归局部点云图。
@@ -763,6 +775,11 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-04</td><td>Dual-Scale Volume Priors with Wasserstein-Based Consistency for Semi-Supervised Medical Image Segmentation</td><td>[2509.04273](http://arxiv.org/pdf/2509.04273)</td><td>本文提出了一种用于半监督医学图像分割的新框架，其核心贡献是创新性地整合了双重尺度体积先验和基于Wasserstein距离的一致性约束。  
+◆ 首次将源自变分模型的强显式图像尺度体积先验与Threshold Dynamics空间正则化方法集成到分割网络主干中。  
+◆ 设计了一个回归网络来估计未标注图像的目标区域体积，并通过图像尺度的Wasserstein距离约束，确保分割结果的类别比例与回归预测一致。  
+◆ 引入了一个基于弱隐式体积先验的数据集尺度Wasserstein距离损失函数，强制未标注数据集的分割体积分布与标注数据集相似。  
+◆ 在多个公开数据集（ACDC、PROMISE12和大腿肌肉MR）上的实验结果表明，该方法性能优越，验证了其有效性。</td></tr>
 <tr><td>2025-08-28</td><td>Estimating 2D Keypoints of Surgical Tools Using Vision-Language Models with Low-Rank Adaptation</td><td>[2508.20830](http://arxiv.org/pdf/2508.20830)</td><td>本文提出了一种利用视觉语言模型（VLM）进行手术工具二维关键点检测的新方法。  
 ◆ 创新性地采用预训练视觉语言模型（VLM），并通过低秩自适应（LoRA）技术进行微调，有效缓解了在小型医疗数据集上传统CNN或Transformer模型容易过拟合的问题。  
 ◆ 设计了专门的提示词构建指令微调数据集，将视觉特征与语义关键点描述进行对齐，增强了模型对手术工具的结构理解。  
@@ -939,6 +956,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-03</td><td>ContraGS: Codebook-Condensed and Trainable Gaussian Splatting for Fast, Memory-Efficient Reconstruction</td><td>[2509.03775](http://arxiv.org/pdf/2509.03775)</td><td>该论文的核心贡献是提出了ContraGS方法，在保持高渲染质量的同时显著提升了3D高斯泼溅（3DGS）的训练和渲染效率，并大幅降低了内存消耗。  
+◆ 引入码本（codebook）对3D高斯参数进行压缩存储，无需减少高斯数量即可降低内存占用。  
+◆ 首次实现了在码本压缩表示下的直接端到端训练，解决了非可微参数的优化难题。  
+◆ 通过贝叶斯推断框架将参数估计转化为后验分布采样问题，并采用MCMC方法进行高效求解。  
+◆ 在训练峰值内存上平均降低3.49倍，训练和渲染速度分别提升1.36倍和1.88倍，且模型质量接近原始SOTA水平。  
+该方法为内存受限设备上的高质量3D重建提供了实用解决方案。</td></tr>
 <tr><td>2025-09-02</td><td>GRMM: Real-Time High-Fidelity Gaussian Morphable Head Model with Learned Residuals</td><td>[2509.02141](http://arxiv.org/pdf/2509.02141)</td><td>GRMM是首个基于高斯溅射的全头部三维可变形模型，实现了高保真且实时的头部渲染与操控。  
 ◆ 提出在传统网格3DMM基础上，引入残差几何与外观组件，以恢复皱纹、皮肤纹理和发际线等高频细节。  
 ◆ 通过解耦的低维参数（如身份形状、表情）控制基础模型，并独立建模主体与表情特有的残差细节，提升表达能力。  
@@ -1960,4 +1983,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.04
+> 更新于: 2025.09.05
