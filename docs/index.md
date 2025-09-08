@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.07)
+# SLAM领域最新论文 (2025.09.08)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -455,6 +455,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-05</td><td>Towards an Accurate and Effective Robot Vision (The Problem of Topological Localization for Mobile Robots)</td><td>[2509.04948](http://arxiv.org/pdf/2509.04948)</td><td>该论文针对移动机器人在办公室环境中的拓扑定位问题，提出了一种仅依赖单目彩色相机图像且不利用时序连续性的视觉定位方法。  
+◆ 系统性地评估并比较了多种先进视觉描述符，包括颜色直方图、SIFT、ASIFT、RGB-SIFT以及基于词袋模型的方法。  
+◆ 对不同特征描述符、距离度量方式和分类器组合进行了定量分析与性能对比，扩展了已有实验范围。  
+◆ 采用标准评估指标和可视化方法验证了不同配置方案在定位准确性和有效性上的优势。  
+◆ 所提出系统在ImageCLEF评测任务中成功验证了其在实际图像序列位置识别中的有效性。  
+未来工作将聚焦于层次模型和特征组合以提升系统鲁棒性，同时降低计算复杂度。</td></tr>
 <tr><td>2025-09-03</td><td>IL-SLAM: Intelligent Line-assisted SLAM Based on Feature Awareness for Dynamic Environments</td><td>[2509.02972](http://arxiv.org/pdf/2509.02972)</td><td>本文提出了一种基于特征感知的智能线辅助动态SLAM系统IL-SLAM，其核心贡献在于解决了动态环境下特征不足与计算效率的平衡问题。
 ◆ 提出了一种特征感知机制，动态评估当前特征是否充足，以此智能决定是否需引入线特征辅助，避免了现有方法持续引入额外特征带来的问题。
 ◆ 仅在必要时激活线特征支持，显著降低了因持续引入额外特征而产生的计算开销，提升了系统效率。
@@ -1590,6 +1596,11 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-05</td><td>FloodVision: Urban Flood Depth Estimation Using Foundation Vision-Language Models and Domain Knowledge Graph</td><td>[2509.04772](http://arxiv.org/pdf/2509.04772)</td><td>本文提出了FloodVision框架，用于零样本城市洪水深度估计。其核心贡献在于结合基础视觉-语言模型与领域知识图谱，显著提升了泛化能力和精度。  
+◆创新性地利用GPT-4o进行语义推理，动态识别图像中的参考物体（如车辆、行人等），避免依赖固定检测器。  
+◆引入结构化领域知识图谱，编码常见城市物体的真实物理尺寸，有效减少模型幻觉并增强现实 grounding。  
+◆通过淹没比例估计和统计离群值过滤计算水深，提升了测量的鲁棒性和准确性。  
+在110张真实图像上验证，平均绝对误差降至8.17厘米，较基线提升20.5%，且具备近实时处理能力，适用于智慧城市应急应用。</td></tr>
 <tr><td>2025-09-03</td><td>Uncertainty-aware Test-Time Training (UT$^3$) for Efficient On-the-fly Domain Adaptive Dense Regression</td><td>[2509.03012](http://arxiv.org/pdf/2509.03012)</td><td>该论文提出了一种不确定性感知的测试时训练框架UT³，用于解决密集回归任务中的实时域自适应问题。其核心贡献与创新点如下：
 ◆ 提出不确定性感知的自监督任务，利用量化不确定性选择性地触发测试时训练，大幅减少计算开销。
 ◆ 显著降低推理时间，通过选择性训练避免对每个样本都进行多次前向和反向传播，更适合资源受限的硬件。
@@ -1983,4 +1994,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.07
+> 更新于: 2025.09.08
