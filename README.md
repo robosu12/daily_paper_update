@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.08)
+# SLAM领域最新论文 (2025.09.09)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,29 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-08</td><td>Co-Located VR with Hybrid SLAM-based HMD Tracking and Motion Capture Synchronization</td><td>[2509.06582](http://arxiv.org/pdf/2509.06582)</td><td>该论文提出了一种多用户协同定位VR框架，通过混合跟踪与同步技术实现高精度共享沉浸体验。  
+◆结合外部动捕系统与SLAM内置跟踪，兼顾高帧率、低延迟与长期稳定性，克服传统外追延迟或单次校准漂移问题。  
+◆动态重对齐机制在保持SLAM本地响应速度的同时，支持按需与外部系统实时校正，消除累积误差。  
+◆实现跨设备实时姿态共享，确保多用户间空间对齐一致性与交互自然性。  
+◆系统在评估中展现出优于现有方案的舒适性、可扩展性与鲁棒性，满足自然多用户交互的空间精度需求。</td></tr>
+<tr><td>2025-09-08</td><td>Real-time Photorealistic Mapping for Situational Awareness in Robot Teleoperation</td><td>[2509.06433](http://arxiv.org/pdf/2509.06433)</td><td>该论文核心贡献是提出了一种实时逼真地图构建系统，显著提升了机器人在未知环境中的远程遥操作效率。  
+◆ 创新性地将高斯溅射SLAM技术与在线地图遥操作系统进行模块化集成  
+◆ 采用基于GPU的高效计算架构，解决了传统方法计算成本高的问题  
+◆ 实现了实时生成视觉精确的3D地图，克服了现有系统实时性差的缺陷  
+◆ 通过真实无人机实验验证了系统能提升决策速度和环境交互准确性  
+◆ 为陌生环境下的远程操作提供了沉浸式视觉反馈和情境感知支持</td></tr>
+<tr><td>2025-09-07</td><td>DVLO4D: Deep Visual-Lidar Odometry with Sparse Spatial-temporal Fusion</td><td>[2509.06023](http://arxiv.org/pdf/2509.06023)</td><td>DVLO4D提出了一种新颖的视觉-激光雷达里程计框架，通过稀疏时空融合显著提升了定位的精度与鲁棒性。其核心创新点包括：
+◆ 提出稀疏查询融合方法，利用稀疏的LiDAR查询实现高效的多模态数据融合。
+◆ 设计了时序交互与更新模块，将历史预测位姿与当前帧数据融合，为位姿估计提供更优初始值，有效抑制累积误差。
+◆ 引入时序片段训练策略和集体平均损失机制，通过多帧损失聚合实现全局优化，减少长序列中的尺度漂移。
+该框架在KITTI和Argoverse数据集上实现了最先进的性能，同时具备高效推理能力（82毫秒/帧），为实时部署提供了可能。</td></tr>
+<tr><td>2025-09-06</td><td>LiDAR-BIND-T: Improving SLAM with Temporally Consistent Cross-Modal LiDAR Reconstruction</td><td>[2509.05728](http://arxiv.org/pdf/2509.05728)</td><td>本文提出了LiDAR-BIND-T，通过增强时间一致性改进了多模态融合SLAM系统。其核心贡献与创新点包括：
+◆ 引入时间嵌入相似性机制，显式对齐连续时刻的潜在特征以保持时序连贯。
+◆ 提出运动对齐变换损失函数，确保预测点云与真实LiDAR点云之间的位移一致性。
+◆ 设计专用时序融合模块，采用窗口时序融合策略整合历史信息。
+◆ 优化模型架构以更好地保留空间结构，提升跨模态（雷达/声纳到LiDAR）重建质量。
+◆ 提出基于Frèchet视频运动距离（FVMD）和相关峰值距离的实用时序评价指标，为SLAM性能提供量化依据。
+该系统保持即插即用的多模态融合能力，显著提升了下游SLAM的轨迹精度和地图构建鲁棒性。</td></tr>
 <tr><td>2025-09-04</td><td>Stitching the Story: Creating Panoramic Incident Summaries from Body-Worn Footage</td><td>[2509.04370](http://arxiv.org/pdf/2509.04370)</td><td>该论文的核心贡献是开发了一个自动化计算机视觉流程，将执法或急救人员佩戴的相机所拍摄的长视频，转化为简洁的全景图像摘要，以支持快速态势感知和事件分析。
 
 ◆ 提出利用单目SLAM技术从视频中估计相机运动轨迹并重建场景空间布局，为创建空间连贯的摘要奠定基础。
@@ -459,6 +482,24 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-08</td><td>Influence of Boundary Conditions and Heating Modes on the Onset of Columnar Convection in Rotating Spherical Shells</td><td>[2509.06632](http://arxiv.org/pdf/2509.06632)</td><td>该论文研究了旋转球壳中热对流失稳的线性临界问题，系统揭示了边界条件和加热方式的关键影响。  
+◆ 首次系统证明最优边界条件（无滑移或应力自由）的选择并非固定，而是取决于壳的厚径比和普朗特数，特别是在厚壳或高Pr时，无滑移外边界因Ekman层失稳反而更易触发对流。  
+◆ 详细比较了不同加热模式，发现内部加热普遍提高临界瑞利数，使对流以更高波数和频率起始，并将临界柱位置移出切线圆柱区域。  
+◆ 揭示了混合边界条件（内无滑移、外应力自由）的临界行为与全应力自由条件相似，表明外边界在控制对流失稳中占主导地位。  
+◆ 通过宽参数范围（中埃克曼数、多种Pr和厚径比）的谱方法计算，为行星和恒星内部对流模型提供了关键定量依据。  
+这些发现强调边界条件与加热机制在旋转球壳对流起始中起着核心控制作用。</td></tr>
+<tr><td>2025-09-08</td><td>Toward Alternative Earths&#x27; Habitability of Solar System Bodies at Earth&#x27;s Orbit</td><td>[2509.06259](http://arxiv.org/pdf/2509.06259)</td><td>该论文首次系统性地评估了太阳系天体若位于地球轨道（1 AU）时的潜在宜居性。
+
+◆ 提出了首个结构化评估框架，采用行星尺寸与重力、大气保留能力、挥发性物质可获取性等多元标准进行分析。
+◆ 否定了多数天体的可行性：水星和月球缺乏挥发物与大气层，气态和冰巨星无固体表面，金星则受困于极端温室效应。
+◆ 明确火星为最优候选，因其兼具资源可获取性与挥发性物质平衡。
+◆ 发现土卫六（Titan）具长期潜力，其浓厚大气与丰富有机物在1 AU下可能转化为水基循环系统。
+◆ 为行星改造和人类长期生存策略提供了新的理论路径与科学依据。</td></tr>
+<tr><td>2025-09-06</td><td>Multi-LVI-SAM: A Robust LiDAR-Visual-Inertial Odometry for Multiple Fisheye Cameras</td><td>[2509.05740](http://arxiv.org/pdf/2509.05740)</td><td>本文提出了一种多相机LiDAR-视觉-惯性里程计框架Multi-LVI-SAM，通过融合多个鱼眼相机、LiDAR和IMU的数据实现高精度和鲁棒的状态估计。
+◆ 提出全景视觉特征模型，将多相机观测统一为单一表示，实现了高效且一致的多源视觉信息融合。
+◆ 该模型作为全局几何优化框架，整合多视角约束，支持无缝闭环检测和全局位姿优化，同时简化了系统设计。
+◆ 针对相机帧与全景模型帧未对准导致的三角化不一致问题，提出外参补偿方法，显著减少三角化和优化误差。
+◆ 将全景模型紧密集成于基于因子图的LiDAR-视觉-惯性系统，在公开数据集上验证了其优于现有多相机融合系统的精度和鲁棒性。</td></tr>
 <tr><td>2025-09-05</td><td>Towards an Accurate and Effective Robot Vision (The Problem of Topological Localization for Mobile Robots)</td><td>[2509.04948](http://arxiv.org/pdf/2509.04948)</td><td>该论文针对移动机器人在办公室环境中的拓扑定位问题，提出了一种仅依赖单目彩色相机图像且不利用时序连续性的视觉定位方法。  
 ◆ 系统性地评估并比较了多种先进视觉描述符，包括颜色直方图、SIFT、ASIFT、RGB-SIFT以及基于词袋模型的方法。  
 ◆ 对不同特征描述符、距离度量方式和分类器组合进行了定量分析与性能对比，扩展了已有实验范围。  
@@ -787,6 +828,11 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-08</td><td>Back To The Drawing Board: Rethinking Scene-Level Sketch-Based Image Retrieval</td><td>[2509.06566](http://arxiv.org/pdf/2509.06566)</td><td>本文针对场景级草图检索任务，重新审视了真实手绘草图中固有的模糊性和噪声问题，并提出了一种更鲁棒的训练方案。
+◆ 强调处理真实草图的模糊性和噪声，而非仅改进模型结构。
+◆ 设计了一种显式的训练目标，专门提升对草图多样性的鲁棒性。
+◆ 通过结合适当的预训练策略、编码器架构和损失函数，在不增加模型复杂度的前提下实现最优性能。
+◆ 在FS-COCO和SketchyCOCO数据集上验证了方法的有效性，并指出评估场景需进一步改进。</td></tr>
 <tr><td>2025-09-04</td><td>Dual-Scale Volume Priors with Wasserstein-Based Consistency for Semi-Supervised Medical Image Segmentation</td><td>[2509.04273](http://arxiv.org/pdf/2509.04273)</td><td>本文提出了一种用于半监督医学图像分割的新框架，其核心贡献是创新性地整合了双重尺度体积先验和基于Wasserstein距离的一致性约束。  
 ◆ 首次将源自变分模型的强显式图像尺度体积先验与Threshold Dynamics空间正则化方法集成到分割网络主干中。  
 ◆ 设计了一个回归网络来估计未标注图像的目标区域体积，并通过图像尺度的Wasserstein距离约束，确保分割结果的类别比例与回归预测一致。  
@@ -970,6 +1016,11 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-08</td><td>3DOF+Quantization: 3DGS quantization for large scenes with limited Degrees of Freedom</td><td>[2509.06400](http://arxiv.org/pdf/2509.06400)</td><td>该论文针对大场景下3D高斯泼溅（3DGS）模型的量化问题提出了创新性解决方案。其核心贡献在于分析了相机位置自由度受限（3DoF+）场景下的量化误差特性，并设计了相应的优化方案。
+◆ 首次明确提出了“3DoF+”概念，将大场景重建问题聚焦于相机位置仅有小范围偏移的自由度受限场景。
+◆ 通过理论分析揭示了投影误差与投影点距离平方的倒数成正比的关键规律，为量化方案设计提供了理论依据。
+◆ 创新性地提出了一种基于球坐标的新型量化方案，该方案能根据点与相机的距离自适应调整量化精度。
+◆ 在著名的Garden场景上验证了所提方法的率失真性能，证明了其有效性。</td></tr>
 <tr><td>2025-09-03</td><td>ContraGS: Codebook-Condensed and Trainable Gaussian Splatting for Fast, Memory-Efficient Reconstruction</td><td>[2509.03775](http://arxiv.org/pdf/2509.03775)</td><td>该论文的核心贡献是提出了ContraGS方法，在保持高渲染质量的同时显著提升了3D高斯泼溅（3DGS）的训练和渲染效率，并大幅降低了内存消耗。  
 ◆ 引入码本（codebook）对3D高斯参数进行压缩存储，无需减少高斯数量即可降低内存占用。  
 ◆ 首次实现了在码本压缩表示下的直接端到端训练，解决了非可微参数的优化难题。  
@@ -1606,6 +1657,34 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-08</td><td>Event Spectroscopy: Event-based Multispectral and Depth Sensing using Structured Light</td><td>[2509.06741](http://arxiv.org/pdf/2509.06741)</td><td>该论文提出了一种新型事件光谱系统，用于无人机在复杂森林环境中的感知与数据采集。  
+◆ 首次将事件相机与结构化光结合，实现了基于事件的多光谱成像与深度感知一体化。  
+◆ 通过调制投影结构光的波长，在650–850 nm波段内同步获取高分辨率光谱信息与深度数据。  
+◆ 在深度重建方面，相比商用深度传感器显著降低约60%的RMSE误差，且光谱精度与专业光谱仪及多光谱相机相当。  
+◆ 系统在真实雨林环境中验证了RGB重建与材料区分能力，结合深度数据后材料分类准确率比纯颜色方法提升30%以上。  
+◆ 提供了一种轻量化、低延迟、抗环境光干扰的解决方案，为无人机在自然场景中的鲁棒感知开辟了新途径。</td></tr>
+<tr><td>2025-09-08</td><td>VIM-GS: Visual-Inertial Monocular Gaussian Splatting via Object-level Guidance in Large Scenes</td><td>[2509.06685](http://arxiv.org/pdf/2509.06685)</td><td>VIM-GS是一种用于大场景新颖视图合成的视觉-惯性单目高斯溅射框架。其核心贡献是解决了单目图像因缺乏准确深度信息而导致渲染质量差的问题。  
+◆ 提出了一种新颖的深度生成框架，巧妙地融合了来自视觉-惯性SLAM的稀疏但精确的深度，与来自大型基础模型的稠密但粗糙的深度。  
+◆ 设计了一种基于对象分割的深度传播算法，通过渲染结构化物体的像素深度，有效弥合了稀疏输入与稠密输出之间的鸿沟。  
+◆ 开发了一个动态深度优化模块，专门处理动态物体导致的SLAM深度残缺问题，并进一步优化来自基础模型的粗糙深度。  
+◆ 整个方法仅需单目图像和惯性测量单元(IMU)数据，即可生成高质量深度图以引导高斯溅射，实现了在大场景中的高清渲染。  
+实验结果表明，该方法在公开和定制数据集上均优于现有方法。</td></tr>
+<tr><td>2025-09-07</td><td>S-LAM3D: Segmentation-Guided Monocular 3D Object Detection via Feature Space Fusion</td><td>[2509.05999](http://arxiv.org/pdf/2509.05999)</td><td>该论文提出了一种融合分割先验的单目3D目标检测新方法S-LAM3D。  
+◆ 采用解耦策略注入预计算的分割信息先验，直接与特征空间融合以指导检测。  
+◆ 无需扩展检测模型或联合学习先验，避免了增加预测分支的复杂度。  
+◆ 重点评估了分割信息对现有检测管道的增强效果，无需额外传感器或训练数据。  
+在KITTI基准测试中，该方法在行人、骑行者等小物体检测上显著优于仅依赖RGB特征的模型。  
+证明了通过理解输入数据本身可弥补单目深度缺失的固有挑战。</td></tr>
+<tr><td>2025-09-06</td><td>Stereovision Image Processing for Planetary Navigation Maps with Semi-Global Matching and Superpixel Segmentation</td><td>[2509.05645](http://arxiv.org/pdf/2509.05645)</td><td>本文针对火星探测中立体视觉匹配的难题，提出了一种结合半全局匹配与超像素分割的地形建模新方法。  
+◆ 采用半全局匹配（SGM）替代传统局部块匹配，通过多路径一维优化聚合全局信息，显著提升低纹理区域和遮挡区域的匹配鲁棒性。  
+◆ 引入超像素分割作为后处理步骤，利用图像结构信息对初始视差图进行优化，有效减少块效应并恢复细节，增强场景结构一致性。  
+◆ 在多个数据集（包括火星模拟环境）上验证了方法的有效性，结果表明其在斜坡、岩石遮挡等复杂区域能生成更连贯、更精确的深度图。  
+◆ 所提出的完整地形建模流程，从特征匹配到导航图生成，具备较高的实用性和集成可行性，更适合未来行星探测任务中的自主导航需求。</td></tr>
+<tr><td>2025-09-06</td><td>MonoGlass3D: Monocular 3D Glass Detection with Plane Regression and Adaptive Feature Fusion</td><td>[2509.05599](http://arxiv.org/pdf/2509.05599)</td><td>该论文的核心贡献是提出了首个针对单目3D玻璃检测的专用数据集和方法MonoGlass3D，解决了玻璃表面因透明特性难以感知的难题。  
+◆ 创建了一个包含多种真实场景和精确3D标注的玻璃数据集，填补了该领域真实数据匮乏的空白。  
+◆ 设计了自适应特征融合模块，使网络能有效适应玻璃外观模糊和上下文多样性的挑战，增强了对环境信息的捕捉能力。  
+◆ 提出了平面回归管道，显式利用玻璃的平面几何先验，将几何属性无缝集成到检测框架中。  
+实验表明，该方法在玻璃分割和单目深度估计任务上均优于现有技术，证明了结合几何与上下文信息对透明表面理解的有效性。</td></tr>
 <tr><td>2025-09-05</td><td>FloodVision: Urban Flood Depth Estimation Using Foundation Vision-Language Models and Domain Knowledge Graph</td><td>[2509.04772](http://arxiv.org/pdf/2509.04772)</td><td>本文提出了FloodVision框架，用于零样本城市洪水深度估计。其核心贡献在于结合基础视觉-语言模型与领域知识图谱，显著提升了泛化能力和精度。  
 ◆创新性地利用GPT-4o进行语义推理，动态识别图像中的参考物体（如车辆、行人等），避免依赖固定检测器。  
 ◆引入结构化领域知识图谱，编码常见城市物体的真实物理尺寸，有效减少模型幻觉并增强现实 grounding。  
@@ -2006,4 +2085,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.08
+> 更新于: 2025.09.09
