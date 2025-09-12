@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.11)
+# SLAM领域最新论文 (2025.09.12)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-11</td><td>SMapper: A Multi-Modal Data Acquisition Platform for SLAM Benchmarking</td><td>[2509.09509](http://arxiv.org/pdf/2509.09509)</td><td>SMapper的核心贡献是提出了一种专为SLAM研究设计的开源多模态数据采集平台，以解决现有数据集在传感器多样性、环境覆盖和实验可复现性方面的不足。其创新点包括：
+◆ 采用开放式硬件设计，集成了同步的LiDAR、多相机和惯性测量单元，提供了丰富的多模态传感能力。
+◆ 提供了一套可靠的标定与同步流程，确保了跨模态数据在时空上的精确对齐。
+◆ 平台设计兼具手持和机器人搭载的灵活性，支持研究社区扩展硬件功能并复现实验。
+◆ 公开发布了名为SMapper-light的数据集，包含室内外典型场景的多模态同步数据及高精度真值轨迹。
+◆ 基于该数据集对主流LiDAR与视觉SLAM算法进行了性能评估，为算法开发与评测提供了坚实基础。</td></tr>
+<tr><td>2025-09-11</td><td>S-BEVLoc: BEV-based Self-supervised Framework for Large-scale LiDAR Global Localization</td><td>[2509.09110](http://arxiv.org/pdf/2509.09110)</td><td>S-BEVLoc提出了一种基于鸟瞰图（BEV）的自监督激光雷达全局定位框架，其核心贡献在于摆脱了对高精度真值位姿的依赖。  
+◆ 首次构建了无需地面真值位姿的自监督学习框架，通过利用关键点之间的已知地理距离构建训练三元组，大幅降低了数据采集成本。  
+◆ 提出基于BEV图像的单帧数据构造三元组的方法，利用以关键点为中心的BEV图像块之间的空间距离关系生成监督信号。  
+◆ 采用CNN提取局部特征并结合NetVLAD聚合全局描述符，有效提升了特征表达能力和检索效率。  
+◆ 创新性地引入SoftCos损失函数，优化三元组学习过程，增强了模型对相似场景的区分能力。  
+在KITTI和NCLT大规模数据集上的实验表明，该框架在位置识别、回环检测和全局定位任务上达到了领先性能，同时展现出极强的可扩展性。</td></tr>
 <tr><td>2025-09-10</td><td>Behaviorally Heterogeneous Multi-Agent Exploration Using Distributed Task Allocation</td><td>[2509.08242](http://arxiv.org/pdf/2509.08242)</td><td>本文针对行为异构多机器人系统，提出了一种分布式探索与任务分配框架。  
 ◆ 引入行为熵（BE）量化机器人探索前沿区域（AoI）的异构效用，有效融合了不同机器人的行为偏好。  
 ◆ 将任务分配问题转化为非合作博弈，并设计分布式算法d-PRGRA收敛至纳什均衡，证明该均衡即最优分配方案。  
@@ -402,6 +414,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-11</td><td>SMapper: A Multi-Modal Data Acquisition Platform for SLAM Benchmarking</td><td>[2509.09509](http://arxiv.org/pdf/2509.09509)</td><td>SMapper的核心贡献是提出了一种专为SLAM研究设计的开源多模态数据采集平台，以解决现有数据集在传感器多样性、环境覆盖和实验可复现性方面的不足。其创新点包括：
+◆ 采用开源硬件设计，集成了同步的LiDAR、多相机和惯性传感系统，支持手持和机器人搭载多种场景。
+◆ 提供了强大的标定与同步流程，确保了多模态数据在时空上的精确对齐。
+◆ 发布了名为SMapper-light的公开数据集，包含室内外典型场景的多模态同步数据和高精度真值轨迹。
+◆ 基于该数据集对主流LiDAR与视觉SLAM算法进行了性能评测，为算法开发与评估提供可靠基准。
+◆ 通过开放且可复现的设计，显著提升了SLAM研究的可比性和可重复性。</td></tr>
 <tr><td>2025-09-10</td><td>Good Deep Features to Track: Self-Supervised Feature Extraction and Tracking in Visual Odometry</td><td>[2509.08333](http://arxiv.org/pdf/2509.08333)</td><td>该论文针对视觉里程计中因光照变化、动态场景等导致特征提取与跟踪性能下降的问题，提出了一种自监督的深度特征提取与跟踪方法。  
 ◆ 通过自监督学习结合任务特定反馈，增强深度特征的稳定性和信息量。  
 ◆ 提升了在挑战性环境（如大尺度户外场景和长期运行）中的泛化能力和可靠性。  
@@ -530,6 +548,17 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-11</td><td>μFork: Supporting POSIX fork Within a Single-Address-Space OS</td><td>[2509.09439](http://arxiv.org/pdf/2509.09439)</td><td>该论文提出了μFork，一种在单地址空间操作系统中支持POSIX fork的创新设计，解决了传统单地址空间OS与多进程POSIX应用的不兼容问题。  
+◆ 首次在单地址空间OS中完整实现POSIX fork语义，无需依赖多地址空间，突破了原有设计限制。  
+◆ 采用内存复制与重定位技术，通过将子进程内存复制到同一地址空间的不同位置来模拟传统fork行为。  
+◆ 利用CHERI硬件能力高效解决子进程内存绝对地址引用（指针）重定向问题，确保正确性。  
+◆ 在保持单地址空间轻量级优势的同时，通过硬件辅助实现用户/内核及进程间隔离，兼顾安全与性能。  
+实验表明，μFork在Redis、Nginx等实际场景中性能显著提升，fork速度比传统系统快3.7倍，且FaaS吞吐量提高24%。</td></tr>
+<tr><td>2025-09-11</td><td>S-BEVLoc: BEV-based Self-supervised Framework for Large-scale LiDAR Global Localization</td><td>[2509.09110](http://arxiv.org/pdf/2509.09110)</td><td>S-BEVLoc提出了一种基于鸟瞰图（BEV）的激光雷达全局定位自监督框架，其核心贡献在于摆脱了对高成本真值位姿的依赖。  
+◆首创了自监督训练范式，仅利用单张BEV图像和已知地理距离构建训练三元组，无需任何GPS或SLAM提供的位姿真值监督。  
+◆设计了基于关键点中心BEV图像块的局部特征提取与NetVLAD全局描述子聚合的网络架构，有效捕获场景特征。  
+◆引入了SoftCos损失函数，优化三元组学习过程，提升特征表达的判别力和鲁棒性。  
+实验证明，该框架在大规模KITTI和NCLT数据集上实现了与全监督方法相当甚至更优的闭环检测和全局定位性能，同时展现出极强的可扩展性。</td></tr>
 <tr><td>2025-09-08</td><td>Influence of Boundary Conditions and Heating Modes on the Onset of Columnar Convection in Rotating Spherical Shells</td><td>[2509.06632](http://arxiv.org/pdf/2509.06632)</td><td>该论文研究了旋转球壳中热对流失稳的线性临界问题，系统揭示了边界条件和加热方式的关键影响。  
 ◆ 首次系统证明最优边界条件（无滑移或应力自由）的选择并非固定，而是取决于壳的厚径比和普朗特数，特别是在厚壳或高Pr时，无滑移外边界因Ekman层失稳反而更易触发对流。  
 ◆ 详细比较了不同加热模式，发现内部加热普遍提高临界瑞利数，使对流以更高波数和频率起始，并将临界柱位置移出切线圆柱区域。  
@@ -876,6 +905,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-11</td><td>ObjectReact: Learning Object-Relative Control for Visual Navigation</td><td>[2509.09594](http://arxiv.org/pdf/2509.09594)</td><td>该论文提出了一种基于物体相对控制的视觉导航新范式ObjectReact，以解决传统图像相对方法在泛化性和适应性方面的局限。  
+◆ 创新性地采用“物体相对”控制替代主流“图像相对”方法，利用物体作为地图固有属性，摆脱对智能体位姿和具体形态的严格依赖。  
+◆ 设计了基于“相对3D场景图”的拓扑-度量混合地图表示，能够生成更鲁棒的物体级全局路径规划代价。  
+◆ 提出直接以高层“WayObject Costmap”为输入条件的局部控制器，无需显式RGB输入，将控制预测与图像匹配问题解耦。  
+◆ 在跨形态部署（如传感器高度变化）和反向轨迹导航等任务中展现出显著优势，仅通过仿真训练即可泛化至真实室内环境。  
+该方法突破了传统视觉导航对经验模仿和严格位姿一致性的要求，实现了更高的泛化能力和跨场景适应性。</td></tr>
 <tr><td>2025-09-10</td><td>Handling Multiple Hypotheses in Coarse-to-Fine Dense Image Matching</td><td>[2509.08805](http://arxiv.org/pdf/2509.08805)</td><td>该论文针对稠密图像匹配中因单假设传播导致的误匹配问题，提出了一种多假设处理的创新方法。  
 ◆ 提出在粗到细的匹配过程中为每个源图像位置生成多个对应点假设，而非传统单一假设。  
 ◆ 引入束搜索（beam search）策略，在每一尺度上传播和保留多个最优假设。  
@@ -2195,4 +2230,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.11
+> 更新于: 2025.09.12
