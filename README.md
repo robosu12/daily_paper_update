@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.15)
+# SLAM领域最新论文 (2025.09.16)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-15</td><td>Adaptive Motorized LiDAR Scanning Control for Robust Localization with OpenStreetMap</td><td>[2509.11742](http://arxiv.org/pdf/2509.11742)</td><td>本文提出了一种结合OpenStreetMap（OSM）先验的自适应激光雷达扫描控制方法，旨在提升机器人在不完整或过时地图环境中的定位鲁棒性。其核心贡献与创新点如下：
+
+◆ 首次将OSM全局先验信息与局部可观测性预测相结合，构建了主动感知框架，优化了激光雷达扫描策略。  
+◆ 提出了一种基于不确定性感知的模型预测控制方法，其中创新地加入了OSM感知项，实现了扫描资源按需分配。  
+◆ 通过场景依赖的可观测性与OSM特征空间分布的自适应协调，有效减少特征稀疏区域的扫描浪费，提升定位精度。  
+◆ 在校园、室内走廊和城市等多种真实场景中验证了该方法，相比恒定转速基线显著降低了轨迹误差，同时保持了扫描完整性。  
+◆ 该工作展示了开源地图与自适应感知硬件协同的潜力，为复杂环境下实现高效、鲁棒的定位提供了新思路。</td></tr>
+<tr><td>2025-09-15</td><td>See What I Mean? Mobile Eye-Perspective Rendering for Optical See-through Head-mounted Displays</td><td>[2509.11653](http://arxiv.org/pdf/2509.11653)</td><td>本文针对光学透射头显（OST HMD）中因世界相机与用户视角未对准导致的注册偏差问题，提出了移动式眼视角渲染（EPR）技术框架。  
+◆ 实现并系统评估了三种基于软件的EPR方法：平面代理、网格代理和新型注视代理渲染。  
+◆ 创新性地提出注视深度对齐的Gaze-Proxy EPR方法，通过眼动追踪动态适配用户注视深度。  
+◆ 在商用设备HoloLens 2上实现无需额外硬件的轻量化解决方案，显著提升虚实注册精度。  
+◆ 通过用户研究验证了精确EPR在真实任务中的重要性，证明注视代理法可作为几何重建方法的有效替代方案。  
+◆ 开源完整的EPR框架，为后续研究提供重要技术基础。</td></tr>
+<tr><td>2025-09-15</td><td>Gaussian-Plus-SDF SLAM: High-fidelity 3D Reconstruction at 150+ fps</td><td>[2509.11574](http://arxiv.org/pdf/2509.11574)</td><td>本文提出了一种结合高斯模型与符号距离场（SDF）的混合表示方法，用于实现高速高保真RGB-D SLAM。其核心贡献在于显著提升了三维重建的效率和实时性。  
+◆ 提出高斯-SDF混合场景表示，利用SDF表达平滑几何与外观，再以高斯模型补充细节，兼顾重建质量与计算效率。  
+◆ 通过SDF辅助减少高斯模型数量，比现有方法减少50%的高斯元件，降低计算和存储开销。  
+◆ 优化过程仅针对高斯模型进行外观细化，所需迭代次数减少75%，大幅加速优化过程。  
+◆ 基于该表示构建了GPS-SLAM系统，在真实Azure Kinect序列上达到150+ fps，相比现有方法提速一个数量级，同时保持相当的重建质量。  
+该系统为实时高质量三维重建提供了新的解决方案，代码和数据将开源以促进后续研究。</td></tr>
+<tr><td>2025-09-13</td><td>FastTrack: GPU-Accelerated Tracking for Visual SLAM</td><td>[2509.10757](http://arxiv.org/pdf/2509.10757)</td><td>该论文的核心贡献是提出了一种利用GPU加速来显著提升视觉-惯性SLAM系统跟踪模块性能的新方法FastTrack。  
+◆ 创新性地利用GPU并行计算能力来加速跟踪过程中最耗时的组件，包括立体特征匹配和局部地图跟踪。  
+◆ 在主流开源SLAM系统ORB-SLAM3的跟踪流程中实现了基于CUDA的GPU加速设计方案。  
+◆ 在立体-惯性模式下，使用EuRoC和TUM-VI等标准数据集进行验证，在桌面平台和Jetson Xavier NX嵌入式平台上均实现了最高2.8倍的跟踪性能提升。  
+◆ 通过GPU加速有效减少了每帧处理时间，从而降低了系统延迟与跟踪丢失风险，提升了SLAM系统的实时性与鲁棒性。</td></tr>
 <tr><td>2025-09-12</td><td>Robust Localization in Modern Cellular Networks using Global Map Features</td><td>[2509.10433](http://arxiv.org/pdf/2509.10433)</td><td>该论文提出了一种增强型多路径同时定位与建图（MP-SLAM）方法，旨在利用现代蜂窝网络实现复杂环境下的高精度鲁棒定位。  
 ◆ 引入全局地图特征（GMF）存储库，整合历史遍历过程中收集的高质量地图特征（如虚拟锚点），提升系统对环境的全局感知能力。  
 ◆ 通过概率假设密度（PHD）滤波器将GMF动态集成到SLAM框架中，实现地图特征强度函数的时序传播与融合。  
@@ -419,6 +443,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-13</td><td>FastTrack: GPU-Accelerated Tracking for Visual SLAM</td><td>[2509.10757](http://arxiv.org/pdf/2509.10757)</td><td>该论文的核心贡献是提出了一种利用GPU加速来显著提升视觉-惯性SLAM系统跟踪模块性能的新方法FastTrack。  
+◆ 创新性地利用GPU并行计算能力来加速跟踪过程中最耗时的两个组件：立体特征匹配和局部地图跟踪。  
+◆ 将所提出的加速设计集成到了主流的ORB-SLAM3框架的跟踪流程中，并使用CUDA进行实现。  
+◆ 在桌面平台和Jetson Xavier NX嵌入式平台上均实现了性能提升，验证了其有效性与实用性。  
+◆ 在EuRoC和TUM-VI等标准数据集上的实验表明，在立体-惯性模式下，跟踪性能整体提升了最高2.8倍。  
+这项工作通过硬件加速有效解决了SLAM跟踪的实时性瓶颈，避免了因处理延迟导致的定位漂移或跟踪丢失问题。</td></tr>
 <tr><td>2025-09-11</td><td>SMapper: A Multi-Modal Data Acquisition Platform for SLAM Benchmarking</td><td>[2509.09509](http://arxiv.org/pdf/2509.09509)</td><td>SMapper的核心贡献是提出了一种专为SLAM研究设计的开源多模态数据采集平台，以解决现有数据集在传感器多样性、环境覆盖和实验可复现性方面的不足。其创新点包括：
 ◆ 采用开源硬件设计，集成了同步的LiDAR、多相机和惯性传感系统，支持手持和机器人搭载多种场景。
 ◆ 提供了强大的标定与同步流程，确保了多模态数据在时空上的精确对齐。
@@ -553,7 +583,14 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-09-11</td><td>μFork: Supporting POSIX fork Within a Single-Address-Space OS</td><td>[2509.09439](http://arxiv.org/pdf/2509.09439)</td><td>该论文提出了μFork，一种在单地址空间操作系统中支持POSIX fork的创新设计，解决了传统单地址空间OS与多进程POSIX应用的不兼容问题。  
+<tr><td>2025-09-15</td><td>Learning to Generate 4D LiDAR Sequences</td><td>[2509.11959](http://arxiv.org/pdf/2509.11959)</td><td>本文提出了LiDARCrafter，一个通过自由文本生成可编辑4D激光雷达序列的统一框架。其核心贡献与创新点包括：
+◆ 首次将自由形式语言描述转化为可编辑的4D激光雷达序列，实现了高水平的可控生成。
+◆ 设计了一种三分支扩散模型，将指令解析为以自我为中心的场景图，并分别生成对象布局、轨迹和形状，确保了结构合理性。
+◆ 采用范围图像扩散模型生成初始扫描，并通过自回归模块扩展为时间一致的序列，有效保障了时序稳定性。
+◆ 提供了显式的布局设计，支持在对象级别进行编辑操作，如插入或重新定位物体。
+◆ 推出了EvalSuite评估基准，涵盖场景、对象和序列级别的多维度指标，为公平评估激光雷达生成质量建立了标准。
+该框架在nuScenes数据集上实现了最优的保真度、可控性和时序一致性，为激光雷达仿真与数据增强奠定了基础。</td></tr>
+<tr><td>2025-09-15</td><td>μFork: Supporting POSIX fork Within a Single-Address-Space OS</td><td>[2509.09439](http://arxiv.org/pdf/2509.09439)</td><td>该论文提出了μFork，一种在单地址空间操作系统中支持POSIX fork的创新设计，解决了传统单地址空间OS与多进程POSIX应用的不兼容问题。  
 ◆ 首次在单地址空间OS中完整实现POSIX fork语义，无需依赖多地址空间，突破了原有设计限制。  
 ◆ 采用内存复制与重定位技术，通过将子进程内存复制到同一地址空间的不同位置来模拟传统fork行为。  
 ◆ 利用CHERI硬件能力高效解决子进程内存绝对地址引用（指针）重定向问题，确保正确性。  
@@ -910,6 +947,17 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-15</td><td>Bridging the Gap Between Sparsity and Redundancy: A Dual-Decoding Framework with Global Context for Map Inference</td><td>[2509.11731](http://arxiv.org/pdf/2509.11731)</td><td>该论文提出DGMap框架，旨在解决轨迹地图推断中稀疏区域道路断裂和密集区域冗余段的问题。其核心贡献与创新点包括：
+◆ 提出双解码框架，整合全局语义上下文与局部几何特征，提升地图推断的整体一致性。
+◆ 设计多尺度网格编码，有效捕捉不同密度区域的轨迹模式，增强特征表达能力。
+◆ 引入掩码增强关键点提取机制，提高稀疏区域关键点检测精度，减少道路断裂。
+◆ 开发全局上下文感知关系预测模块，通过建模长轨迹依赖抑制密集区域的错误连接。
+实验表明，DGMap在三个真实数据集上APLS指标优于现有方法5%，尤其在滴滴轨迹数据上表现突出。</td></tr>
+<tr><td>2025-09-14</td><td>A Geometrically Consistent Matching Framework for Side-Scan Sonar Mapping</td><td>[2509.11255](http://arxiv.org/pdf/2509.11255)</td><td>本文提出了一种针对侧扫声纳图像几何一致匹配的新框架，有效解决了因视角依赖、阴影和几何失真导致的匹配难题。  
+◆ 通过自监督多分支网络，基于物理反射模型将原始图像解耦为海底反射率、地形高程和声波路径损耗，显著提升了特征表示的稳定性。  
+◆ 引入反射率图作为稳定匹配域，并结合无训练匹配流程（SuperPoint与MINIMA LightGlue），增强跨视角对应关系的准确性。  
+◆ 提出几何感知的异常匹配剔除机制，综合利用地形高程和物理阴影图，有效抑制声学遮挡和地形不一致区域的错误匹配。  
+实验表明，该方法在匹配误差、几何一致性和视角鲁棒性上均优于传统及基于CNN与Transformer的先进方法，为复杂海底环境提供了高精度、数据高效且物理解释性强的匹配解决方案。</td></tr>
 <tr><td>2025-09-11</td><td>Fine-Grained Cross-View Localization via Local Feature Matching and Monocular Depth Priors</td><td>[2509.09792](http://arxiv.org/pdf/2509.09792)</td><td>本文提出了一种精细化的跨视角定位方法，通过结合局部特征匹配与单目深度先验，实现了地面图像与航空图像之间的高精度位姿估计。  
 ◆ 直接建立地面与航空图像间的局部特征对应关系，避免了传统方法中将整张图像转换为鸟瞰图所造成的信息损失。  
 ◆ 引入单目深度先验，仅将匹配成功的关键点提升至鸟瞰空间，支持使用度量深度和相对深度两种模式，提升了方法的适应性和鲁棒性。  
@@ -1128,6 +1176,36 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-15</td><td>Segmentation-Driven Initialization for Sparse-view 3D Gaussian Splatting</td><td>[2509.11853](http://arxiv.org/pdf/2509.11853)</td><td>该论文针对稀疏视图合成中3D高斯泼溅（3DGS）方法存在的高内存消耗和低效初始化问题，提出了一种基于分割驱动的初始化方法（SDI-GS）。其核心贡献与创新点包括：
+
+◆ 提出利用区域分割技术识别结构显著区域，替代传统依赖运动恢复结构（SfM）或多视图立体（MVS）的初始化方式；
+◆ 通过选择性下采样稠密点云，大幅减少3D高斯数量，在保持场景保真度的同时降低内存占用；
+◆ 在多个基准测试中实现高达50%的高斯数量削减，并保持可比甚至更优的渲染质量（PSNR/SSIM指标）；
+◆ 显著提升训练速度并降低计算资源需求，推动了3DGS在有限视图场景中的实用化。</td></tr>
+<tr><td>2025-09-14</td><td>ROSGS: Relightable Outdoor Scenes With Gaussian Splatting</td><td>[2509.11275](http://arxiv.org/pdf/2509.11275)</td><td>ROSGS提出了一种基于高斯泼溅表示的两阶段流程，用于高效重建可重光照的户外无界场景。  
+◆ 采用紧凑的二维高斯泼溅（2DGS）表示结合单目法向先验，显著提升了几何重建的效率和精度。  
+◆ 设计混合光照模型，分别用球面高斯函数捕捉阳光的高频方向性成分，以及用球谐系数建模天光的低频漫射光照。  
+◆ 克服了NeRF方法计算开销大和传统低频光照表示精度不足的问题，实现了更优的光照分解与渲染效果。  
+实验表明，该方法在户外场景重光照任务中达到了最先进的性能，同时兼具高渲染效率和卓越的重光照准确性。</td></tr>
+<tr><td>2025-09-14</td><td>SPHERE: Semantic-PHysical Engaged REpresentation for 3D Semantic Scene Completion</td><td>[2509.11171](http://arxiv.org/pdf/2509.11171)</td><td>SPHERE提出了一种用于相机3D语义场景补全（SSC）的新表征方法，旨在同时提升场景的语义准确性和几何细节的真实性。其核心贡献与创新点如下：
+
+◆ 提出了一种体素与高斯表征相融合的新范式，协同利用语义和物理信息，以解决现有方法在几何细节或语义精度上的不足。
+◆ 设计了语义引导的高斯初始化（SGI）模块，利用双分支3D场景表征定位焦点体素作为锚点，从而指导高效的高斯初始化，提升了处理效率。
+◆ 开发了物理感知的球谐增强（PHE）模块，通过引入语义球谐函数来建模物理上下文细节，并通过焦点分布对齐促进语义与几何的一致性，生成具有逼真细节的结果。
+◆ 该方法在保持高语义精度的同时，显著改善了复杂大尺度驾驶场景中几何细节的还原质量，克服了NeRF等方法计算成本高、收敛慢的缺点。
+◆ 在主流数据集SemanticKITTI和SSCBench-KITTI-360上的大量实验验证了其有效性与优越性。</td></tr>
+<tr><td>2025-09-14</td><td>SVR-GS: Spatially Variant Regularization for Probabilistic Masks in 3D Gaussian Splatting</td><td>[2509.11116](http://arxiv.org/pdf/2509.11116)</td><td>本文提出SVR-GS方法，针对3D高斯泼溅（3DGS）中掩码修剪的优化问题进行了创新。  
+◆ 引入了空间变异正则化器，通过计算每个高斯沿光线方向的有效贡献生成逐像素空间掩码，取代传统全局均值正则化方法。  
+◆ 设计了三种空间掩码聚合策略，并通过梯度分析优化最终方案，实现更精准的稀疏性控制。  
+◆ 在CUDA上实现高效计算，显著提升处理效率。  
+实验表明，该方法在三大数据集上平均将高斯数量减少至MaskGS的1.79倍和3DGS的5.63倍，仅带来0.50 dB和0.40 dB的PSNR下降。  
+最终模型更小、更快且内存效率更高，适用于机器人、AR/VR等实时应用场景。</td></tr>
+<tr><td>2025-09-13</td><td>AD-GS: Alternating Densification for Sparse-Input 3D Gaussian Splatting</td><td>[2509.11003](http://arxiv.org/pdf/2509.11003)</td><td>AD-GS提出了一种新颖的交替致密化框架，旨在解决稀疏输入下3D高斯泼溅（3DGS）的过拟合和几何失真问题。其核心贡献在于通过交替的高、低致密化阶段，实现了对模型容量增长的精细控制。  
+◆ 创新性地引入了交替致密化流程，将激进的几何增长与严格的修剪正则化阶段交错进行。  
+◆ 在高致密化阶段，通过积极增加高斯原语并结合光度损失训练，以捕捉场景细节。  
+◆ 在低致密化阶段，执行激进的透明度修剪，并结合伪视角一致性和边缘感知深度平滑约束来正则化几何形状。  
+◆ 该机制有效抑制了因无控制 densification 产生的浮游物和错误几何，显著提升了渲染质量和几何一致性。  
+实验证明，该方法在极具挑战性的稀疏数据集上优于现有方法。</td></tr>
 <tr><td>2025-09-09</td><td>SplatFill: 3D Scene Inpainting via Depth-Guided Gaussian Splatting</td><td>[2509.07809](http://arxiv.org/pdf/2509.07809)</td><td>该论文提出了一种名为SplatFill的新方法，用于基于3D高斯泼溅（3DGS）的3D场景修复。其核心贡献在于解决了现有方法在修复缺失区域时常见的模糊、伪影和几何不一致问题。  
 ◆ 结合了基于深度和基于物体的联合监督机制，确保修复的高斯点能够精确放置在3D空间中并与周围几何对齐。  
 ◆ 提出了一种一致性感知的精化方案，能够选择性地识别并修正不一致的区域，同时避免破坏场景的其他部分。  
@@ -1796,6 +1874,24 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-15</td><td>BREA-Depth: Bronchoscopy Realistic Airway-geometric Depth Estimation</td><td>[2509.11885](http://arxiv.org/pdf/2509.11885)</td><td>该论文提出了一种用于支气管镜真实气道几何深度估计的新框架BREA-Depth，其核心贡献在于显著提升了单目深度估计在复杂支气管环境中的解剖结构感知能力和准确性。  
+◆创新性地提出将气道特异性几何先验知识集成到基础模型适应中，以增强对全局气道结构的理解。  
+◆设计了深度感知的CycleGAN，有效弥合了真实支气管图像与来自解剖数据的气道几何形状之间的域差距。  
+◆引入了气道结构感知损失函数，在保持平滑过渡和结构完整性的同时，确保了气道管腔内深度的一致性。  
+◆提出了一个新的评估指标“气道深度结构评估”（Airway Depth Structure Evaluation），用于衡量深度图的结构一致性和解剖真实性。  
+该方法在离体人肺数据集和公开支气管镜数据集上均优于现有方法，能生成更鲁棒、准确的三维气道重建结果。</td></tr>
+<tr><td>2025-09-14</td><td>In-Vivo Skin 3-D Surface Reconstruction and Wrinkle Depth Estimation using Handheld High Resolution Tactile Sensing</td><td>[2509.11385](http://arxiv.org/pdf/2509.11385)</td><td>本文开发了一种基于高分辨率触觉成像的手持式皮肤三维重建系统，首次实现了在体、多部位、微米级精度的皱纹深度量化评估。  
+◆ 提出一种结合定制弹性凝胶和基于学习算法的GelSight触觉成像探头，实现了微米级精度的皮肤三维表面重建。  
+◆ 设计集成力传感的手持式探头，确保测量时接触力一致，提升重建结果的稳定性和可靠性。  
+◆ 在无皮肤病受试者中首次实现了多身体区域（如面部、手臂等）皱纹深度的有效验证与定量分析。  
+◆ 系统在仿皱纹测试物体上达到12.55微米的平均绝对误差，并成功监测到使用普通保湿霜后三个部位皱纹深度的统计学显著下降。  
+该技术为临床皮肤诊断、化妆品功效评价和治疗监测提供了可靠的量化工具。</td></tr>
+<tr><td>2025-09-14</td><td>The System Description of CPS Team for Track on Driving with Language of CVPR 2024 Autonomous Grand Challenge</td><td>[2509.11071](http://arxiv.org/pdf/2509.11071)</td><td>该论文核心贡献是开发了一套基于视觉语言模型的系统，在CVPR 2024自动驾驶挑战赛的“语言驾驶”赛道中取得了第一名。其创新点主要包括：
+◆ 专门使用DriveLM-nuScenes数据集进行训练，确保了数据针对性。
+◆ 基于LLaVA模型，并采用LoRA和DoRA微调方法进行增强，提升了模型适应能力。
+◆ 集成开源深度估计模型提供的深度信息，丰富了训练和推理过程的环境感知。
+◆ 在推理阶段引入思维链（Chain-of-Thought）推理方法，有效提高了多项选择和判断题的准确性。
+这套综合方法使该系统在验证集上获得了0.7799的最高分，位列排行榜榜首。</td></tr>
 <tr><td>2025-09-12</td><td>Self-supervised Learning Of Visual Pose Estimation Without Pose Labels By Classifying LED States</td><td>[2509.10405](http://arxiv.org/pdf/2509.10405)</td><td>该论文提出了一种无需姿态标签的自监督视觉位姿估计方法，其核心创新如下：
 ◆ 利用LED状态分类作为代理任务，使模型从零开始学习单目RGB图像的相对位姿估计，无需任何位姿标签或机器人外观先验知识。
 ◆ 仅需训练时已知LED状态和大致视角方向，推理时LED状态可任意且不影响性能，实现了硬件约束与算法解耦。
@@ -2253,4 +2349,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.15
+> 更新于: 2025.09.16
