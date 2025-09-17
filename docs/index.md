@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.16)
+# SLAM领域最新论文 (2025.09.17)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-16</td><td>MATTER: Multiscale Attention for Registration Error Regression</td><td>[2509.12924](http://arxiv.org/pdf/2509.12924)</td><td>◆ Point cloud registration (PCR) is crucial for many downstream tasks, such as simultaneous localization and mapping (SLAM) and object tracking.
+◆ This makes detecting and quantifying registration misalignment, i.e.,~{\it PCR quality validation}, an important task.
+◆ All existing methods treat validation as a classification task, aiming to assign the PCR quality to a few classes.</td></tr>
+<tr><td>2025-09-16</td><td>Match Chat: Real Time Generative AI and Generative Computing for Tennis</td><td>[2509.12592](http://arxiv.org/pdf/2509.12592)</td><td>◆ We present Match Chat, a real-time, agent-driven assistant designed to enhance the tennis fan experience by delivering instant, accurate responses to match-related queries.
+◆ Match Chat integrates Generative Artificial Intelligence (GenAI) with Generative Computing (GenComp) techniques to synthesize key insights during live tennis singles matches.
+◆ The system debuted at the 2025 Wimbledon Championships and the 2025 US Open, where it provided about 1 million users with seamless access to streaming and static data through natural language queries.</td></tr>
 <tr><td>2025-09-15</td><td>Adaptive Motorized LiDAR Scanning Control for Robust Localization with OpenStreetMap</td><td>[2509.11742](http://arxiv.org/pdf/2509.11742)</td><td>本文提出了一种结合OpenStreetMap（OSM）先验的自适应激光雷达扫描控制方法，旨在提升机器人在不完整或过时地图环境中的定位鲁棒性。其核心贡献与创新点如下：
 
 ◆ 首次将OSM全局先验信息与局部可观测性预测相结合，构建了主动感知框架，优化了激光雷达扫描策略。  
@@ -579,6 +585,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-15</td><td>On the (Im)possibility of Electrically Charged Planck Relics</td><td>[2509.12520](http://arxiv.org/pdf/2509.12520)</td><td>◆ I revisit whether black-hole remnants, from sub-Planckian compact objects to Planck relics and up to (super)massive black holes, can preserve Standard-Model (SM) electric charge.
+◆ Two exterior-field mechanisms -- Coulomb-focused capture from ambient media and QED Schwinger pair production -- robustly neutralize such objects across cosmic history.
+◆ I first derive the general capture rate including both Coulomb and gravitational focusing, and sum the stepwise discharge time in closed form via the trigamma function, exhibiting transparent Coulomb- and gravity-dominated limits.</td></tr>
 <tr><td>2025-09-15</td><td>Learning to Generate 4D LiDAR Sequences</td><td>[2509.11959](http://arxiv.org/pdf/2509.11959)</td><td>本文提出了LiDARCrafter，一个通过自由文本生成可编辑4D激光雷达序列的统一框架。其核心贡献与创新点包括：
 ◆ 首次将自由形式语言描述转化为可编辑的4D激光雷达序列，实现了高水平的可控生成。
 ◆ 设计了一种三分支扩散模型，将指令解析为以自我为中心的场景图，并分别生成对象布局、轨迹和形状，确保了结构合理性。
@@ -1168,6 +1177,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-16</td><td>Dream3DAvatar: Text-Controlled 3D Avatar Reconstruction from a Single Image</td><td>[2509.13013](http://arxiv.org/pdf/2509.13013)</td><td>◆ With the rapid advancement of 3D representation techniques and generative models, substantial progress has been made in reconstructing full-body 3D avatars from a single image.
+◆ However, this task remains fundamentally ill-posedness due to the limited information available from monocular input, making it difficult to control the geometry and texture of occluded regions during generation.
+◆ To address these challenges, we redesign the reconstruction pipeline and propose Dream3DAvatar, an efficient and text-controllable two-stage framework for 3D avatar generation.</td></tr>
+<tr><td>2025-09-16</td><td>Beyond Averages: Open-Vocabulary 3D Scene Understanding with Gaussian Splatting and Bag of Embeddings</td><td>[2509.12938](http://arxiv.org/pdf/2509.12938)</td><td>◆ Novel view synthesis has seen significant advancements with 3D Gaussian Splatting (3DGS), enabling real-time photorealistic rendering.
+◆ However, the inherent fuzziness of Gaussian Splatting presents challenges for 3D scene understanding, restricting its broader applications in AR/VR and robotics.
+◆ While recent works attempt to learn semantics via 2D foundation model distillation, they inherit fundamental limitations: alpha blending averages semantics across objects, making 3D-level understanding impossible.</td></tr>
+<tr><td>2025-09-16</td><td>A-TDOM: Active TDOM via On-the-Fly 3DGS</td><td>[2509.12759](http://arxiv.org/pdf/2509.12759)</td><td>◆ True Digital Orthophoto Map (TDOM) serves as a crucial geospatial product in various fields such as urban management, city planning, land surveying, etc.
+◆ However, traditional TDOM generation methods generally rely on a complex offline photogrammetric pipeline, resulting in delays that hinder real-time applications.
+◆ Moreover, the quality of TDOM may degrade due to various challenges, such as inaccurate camera poses or Digital Surface Model (DSM) and scene occlusions.</td></tr>
 <tr><td>2025-09-15</td><td>Segmentation-Driven Initialization for Sparse-view 3D Gaussian Splatting</td><td>[2509.11853](http://arxiv.org/pdf/2509.11853)</td><td>该论文针对稀疏视图合成中3D高斯泼溅（3DGS）方法存在的高内存消耗和低效初始化问题，提出了一种基于分割驱动的初始化方法（SDI-GS）。其核心贡献与创新点包括：
 
 ◆ 提出利用区域分割技术识别结构显著区域，替代传统依赖运动恢复结构（SfM）或多视图立体（MVS）的初始化方式；
@@ -1864,6 +1882,12 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-16</td><td>ROOM: A Physics-Based Continuum Robot Simulator for Photorealistic Medical Datasets Generation</td><td>[2509.13177](http://arxiv.org/pdf/2509.13177)</td><td>◆ Continuum robots are advancing bronchoscopy procedures by accessing complex lung airways and enabling targeted interventions.
+◆ However, their development is limited by the lack of realistic training and test environments: Real data is difficult to collect due to ethical constraints and patient safety concerns, and developing autonomy algorithms requires realistic imaging and physical feedback.
+◆ We present ROOM (Realistic Optical Observation in Medicine), a comprehensive simulation framework designed for generating photorealistic bronchoscopy training data.</td></tr>
+<tr><td>2025-09-16</td><td>StereoCarla: A High-Fidelity Driving Dataset for Generalizable Stereo</td><td>[2509.12683](http://arxiv.org/pdf/2509.12683)</td><td>◆ Stereo matching plays a crucial role in enabling depth perception for autonomous driving and robotics.
+◆ While recent years have witnessed remarkable progress in stereo matching algorithms, largely driven by learning-based methods and synthetic datasets, the generalization performance of these models remains constrained by the limited diversity of existing training data.
+◆ To address these challenges, we present StereoCarla, a high-fidelity synthetic stereo dataset specifically designed for autonomous driving scenarios.</td></tr>
 <tr><td>2025-09-15</td><td>BREA-Depth: Bronchoscopy Realistic Airway-geometric Depth Estimation</td><td>[2509.11885](http://arxiv.org/pdf/2509.11885)</td><td>该论文提出了一种用于支气管镜真实气道几何深度估计的新框架BREA-Depth，其核心贡献在于显著提升了单目深度估计在复杂支气管环境中的解剖结构感知能力和准确性。  
 ◆创新性地提出将气道特异性几何先验知识集成到基础模型适应中，以增强对全局气道结构的理解。  
 ◆设计了深度感知的CycleGAN，有效弥合了真实支气管图像与来自解剖数据的气道几何形状之间的域差距。  
@@ -2337,4 +2361,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.16
+> 更新于: 2025.09.17
