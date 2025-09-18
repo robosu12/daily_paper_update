@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.17)
+# SLAM领域最新论文 (2025.09.18)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-17</td><td>MCGS-SLAM: A Multi-Camera SLAM Framework Using Gaussian Splatting for High-Fidelity Mapping</td><td>[2509.14191](http://arxiv.org/pdf/2509.14191)</td><td>◆ Recent progress in dense SLAM has primarily targeted monocular setups, often at the expense of robustness and geometric coverage.
+◆ We present MCGS-SLAM, the first purely RGB-based multi-camera SLAM system built on 3D Gaussian Splatting (3DGS).
+◆ Unlike prior methods relying on sparse maps or inertial data, MCGS-SLAM fuses dense RGB inputs from multiple viewpoints into a unified, continuously optimized Gaussian map.</td></tr>
+<tr><td>2025-09-17</td><td>BIM Informed Visual SLAM for Construction Monitoring</td><td>[2509.13972](http://arxiv.org/pdf/2509.13972)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is a key tool for monitoring construction sites, where aligning the evolving as-built state with the as-planned design enables early error detection and reduces costly rework.
+◆ LiDAR-based SLAM achieves high geometric precision, but its sensors are typically large and power-demanding, limiting their use on portable platforms.
+◆ Visual SLAM offers a practical alternative with lightweight cameras already embedded in most mobile devices.</td></tr>
+<tr><td>2025-09-16</td><td>Semantic 3D Reconstructions with SLAM for Central Airway Obstruction</td><td>[2509.13541](http://arxiv.org/pdf/2509.13541)</td><td>◆ Central airway obstruction (CAO) is a life-threatening condition with increasing incidence, caused by tumors in and outside of the airway.
+◆ Traditional treatment methods such as bronchoscopy and electrocautery can be used to remove the tumor completely; however, these methods carry a high risk of complications.
+◆ Recent advances allow robotic interventions with lesser risk.</td></tr>
+<tr><td>2025-09-16</td><td>MemGS: Memory-Efficient Gaussian Splatting for Real-Time SLAM</td><td>[2509.13536](http://arxiv.org/pdf/2509.13536)</td><td>◆ Recent advancements in 3D Gaussian Splatting (3DGS) have made a significant impact on rendering and reconstruction techniques.
+◆ Current research predominantly focuses on improving rendering performance and reconstruction quality using high-performance desktop GPUs, largely overlooking applications for embedded platforms like micro air vehicles (MAVs).
+◆ These devices, with their limited computational resources and memory, often face a trade-off between system performance and reconstruction quality.</td></tr>
 <tr><td>2025-09-16</td><td>MATTER: Multiscale Attention for Registration Error Regression</td><td>[2509.12924](http://arxiv.org/pdf/2509.12924)</td><td>◆ Point cloud registration (PCR) is crucial for many downstream tasks, such as simultaneous localization and mapping (SLAM) and object tracking.
 ◆ This makes detecting and quantifying registration misalignment, i.e.,~{\it PCR quality validation}, an important task.
 ◆ All existing methods treat validation as a classification task, aiming to assign the PCR quality to a few classes.</td></tr>
@@ -449,6 +461,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-17</td><td>BIM Informed Visual SLAM for Construction Monitoring</td><td>[2509.13972](http://arxiv.org/pdf/2509.13972)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is a key tool for monitoring construction sites, where aligning the evolving as-built state with the as-planned design enables early error detection and reduces costly rework.
+◆ LiDAR-based SLAM achieves high geometric precision, but its sensors are typically large and power-demanding, limiting their use on portable platforms.
+◆ Visual SLAM offers a practical alternative with lightweight cameras already embedded in most mobile devices.</td></tr>
+<tr><td>2025-09-17</td><td>UM-Depth : Uncertainty Masked Self-Supervised Monocular Depth Estimation with Visual Odometry</td><td>[2509.13713](http://arxiv.org/pdf/2509.13713)</td><td>◆ Monocular depth estimation has been increasingly adopted in robotics and autonomous driving for its ability to infer scene geometry from a single camera.
+◆ In self-supervised monocular depth estimation frameworks, the network jointly generates and exploits depth and pose estimates during training, thereby eliminating the need for depth labels.
+◆ However, these methods remain challenged by uncertainty in the input data, such as low-texture or dynamic regions, which can cause reduced depth accuracy.</td></tr>
+<tr><td>2025-09-17</td><td>Barometer-Aided Attitude Estimation</td><td>[2509.13649](http://arxiv.org/pdf/2509.13649)</td><td>◆ Accurate and robust attitude estimation is a central challenge for autonomous vehicles operating in GNSS-denied or highly dynamic environments.
+◆ In such cases, Inertial Measurement Units (IMUs) alone are insufficient for reliable tilt estimation due to the ambiguity between gravitational and inertial accelerations.
+◆ While auxiliary velocity sensors, such as GNSS, Pitot tubes, Doppler radar, or visual odometry, are often used, they can be unavailable, intermittent, or costly.</td></tr>
 <tr><td>2025-09-13</td><td>FastTrack: GPU-Accelerated Tracking for Visual SLAM</td><td>[2509.10757](http://arxiv.org/pdf/2509.10757)</td><td>该论文的核心贡献是提出了一种利用GPU加速来显著提升视觉-惯性SLAM系统跟踪模块性能的新方法FastTrack。  
 ◆ 创新性地利用GPU并行计算能力来加速跟踪过程中最耗时的两个组件：立体特征匹配和局部地图跟踪。  
 ◆ 将所提出的加速设计集成到了主流的ORB-SLAM3框架的跟踪流程中，并使用CUDA进行实现。  
@@ -589,6 +610,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-16</td><td>Semantic-Enhanced Cross-Modal Place Recognition for Robust Robot Localization</td><td>[2509.13474](http://arxiv.org/pdf/2509.13474)</td><td>◆ Ensuring accurate localization of robots in environments without GPS capability is a challenging task.
+◆ Visual Place Recognition (VPR) techniques can potentially achieve this goal, but existing RGB-based methods are sensitive to changes in illumination, weather, and other seasonal changes.
+◆ Existing cross-modal localization methods leverage the geometric properties of RGB images and 3D LiDAR maps to reduce the sensitivity issues highlighted above.</td></tr>
 <tr><td>2025-09-15</td><td>On the (Im)possibility of Electrically Charged Planck Relics</td><td>[2509.12520](http://arxiv.org/pdf/2509.12520)</td><td>◆ I revisit whether black-hole remnants, from sub-Planckian compact objects to Planck relics and up to (super)massive black holes, can preserve Standard-Model (SM) electric charge.
 ◆ Two exterior-field mechanisms -- Coulomb-focused capture from ambient media and QED Schwinger pair production -- robustly neutralize such objects across cosmic history.
 ◆ I first derive the general capture rate including both Coulomb and gravitational focusing, and sum the stepwise discharge time in closed form via the trigamma function, exhibiting transparent Coulomb- and gravity-dominated limits.</td></tr>
@@ -1185,6 +1209,18 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-17</td><td>MCGS-SLAM: A Multi-Camera SLAM Framework Using Gaussian Splatting for High-Fidelity Mapping</td><td>[2509.14191](http://arxiv.org/pdf/2509.14191)</td><td>◆ Recent progress in dense SLAM has primarily targeted monocular setups, often at the expense of robustness and geometric coverage.
+◆ We present MCGS-SLAM, the first purely RGB-based multi-camera SLAM system built on 3D Gaussian Splatting (3DGS).
+◆ Unlike prior methods relying on sparse maps or inertial data, MCGS-SLAM fuses dense RGB inputs from multiple viewpoints into a unified, continuously optimized Gaussian map.</td></tr>
+<tr><td>2025-09-17</td><td>Plug-and-Play PDE Optimization for 3D Gaussian Splatting: Toward High-Quality Rendering and Reconstruction</td><td>[2509.13938](http://arxiv.org/pdf/2509.13938)</td><td>◆ 3D Gaussian Splatting (3DGS) has revolutionized radiance field reconstruction by achieving high-quality novel view synthesis with fast rendering speed, introducing 3D Gaussian primitives to represent the scene.
+◆ However, 3DGS encounters blurring and floaters when applied to complex scenes, caused by the reconstruction of redundant and ambiguous geometric structures.
+◆ We attribute this issue to the unstable optimization of the Gaussians.</td></tr>
+<tr><td>2025-09-16</td><td>MemGS: Memory-Efficient Gaussian Splatting for Real-Time SLAM</td><td>[2509.13536](http://arxiv.org/pdf/2509.13536)</td><td>◆ Recent advancements in 3D Gaussian Splatting (3DGS) have made a significant impact on rendering and reconstruction techniques.
+◆ Current research predominantly focuses on improving rendering performance and reconstruction quality using high-performance desktop GPUs, largely overlooking applications for embedded platforms like micro air vehicles (MAVs).
+◆ These devices, with their limited computational resources and memory, often face a trade-off between system performance and reconstruction quality.</td></tr>
+<tr><td>2025-09-16</td><td>Improving 3D Gaussian Splatting Compression by Scene-Adaptive Lattice Vector Quantization</td><td>[2509.13482](http://arxiv.org/pdf/2509.13482)</td><td>◆ 3D Gaussian Splatting (3DGS) is rapidly gaining popularity for its photorealistic rendering quality and real-time performance, but it generates massive amounts of data.
+◆ Hence compressing 3DGS data is necessary for the cost effectiveness of 3DGS models.
+◆ Recently, several anchor-based neural compression methods have been proposed, achieving good 3DGS compression performance.</td></tr>
 <tr><td>2025-09-16</td><td>Dream3DAvatar: Text-Controlled 3D Avatar Reconstruction from a Single Image</td><td>[2509.13013](http://arxiv.org/pdf/2509.13013)</td><td>◆ With the rapid advancement of 3D representation techniques and generative models, substantial progress has been made in reconstructing full-body 3D avatars from a single image.
 ◆ However, this task remains fundamentally ill-posedness due to the limited information available from monocular input, making it difficult to control the geometry and texture of occluded regions during generation.
 ◆ To address these challenges, we redesign the reconstruction pipeline and propose Dream3DAvatar, an efficient and text-controllable two-stage framework for 3D avatar generation.</td></tr>
@@ -1892,6 +1928,24 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-16</td><td>\textsc{Gen2Real}: Towards Demo-Free Dexterous Manipulation by Harnessing Generated Video</td><td>[2509.14178](http://arxiv.org/pdf/2509.14178)</td><td>◆ Dexterous manipulation remains a challenging robotics problem, largely due to the difficulty of collecting extensive human demonstrations for learning.
+◆ In this paper, we introduce \textsc{Gen2Real}, which replaces costly human demos with one generated video and drives robot skill from it: it combines demonstration generation that leverages video generation with pose and depth estimation to yield hand-object trajectories, trajectory optimization that uses Physics-aware Interaction Optimization Model (PIOM) to impose physics consistency, and demonstration learning that retargets human motions to a robot hand and stabilizes control with an anchor-based residual Proximal Policy Optimization (PPO) policy.
+◆ Using only generated videos, the learned policy achieves a 77.3\% success rate on grasping tasks in simulation and demonstrates coherent executions on a real robot.</td></tr>
+<tr><td>2025-09-17</td><td>UM-Depth : Uncertainty Masked Self-Supervised Monocular Depth Estimation with Visual Odometry</td><td>[2509.13713](http://arxiv.org/pdf/2509.13713)</td><td>◆ Monocular depth estimation has been increasingly adopted in robotics and autonomous driving for its ability to infer scene geometry from a single camera.
+◆ In self-supervised monocular depth estimation frameworks, the network jointly generates and exploits depth and pose estimates during training, thereby eliminating the need for depth labels.
+◆ However, these methods remain challenged by uncertainty in the input data, such as low-texture or dynamic regions, which can cause reduced depth accuracy.</td></tr>
+<tr><td>2025-09-17</td><td>Gaussian Alignment for Relative Camera Pose Estimation via Single-View Reconstruction</td><td>[2509.13652](http://arxiv.org/pdf/2509.13652)</td><td>◆ Estimating metric relative camera pose from a pair of images is of great importance for 3D reconstruction and localisation.
+◆ However, conventional two-view pose estimation methods are not metric, with camera translation known only up to a scale, and struggle with wide baselines and textureless or reflective surfaces.
+◆ This paper introduces GARPS, a training-free framework that casts this problem as the direct alignment of two independently reconstructed 3D scenes.</td></tr>
+<tr><td>2025-09-16</td><td>ColonCrafter: A Depth Estimation Model for Colonoscopy Videos Using Diffusion Priors</td><td>[2509.13525](http://arxiv.org/pdf/2509.13525)</td><td>◆ Three-dimensional (3D) scene understanding in colonoscopy presents significant challenges that necessitate automated methods for accurate depth estimation.
+◆ However, existing depth estimation models for endoscopy struggle with temporal consistency across video sequences, limiting their applicability for 3D reconstruction.
+◆ We present ColonCrafter, a diffusion-based depth estimation model that generates temporally consistent depth maps from monocular colonoscopy videos.</td></tr>
+<tr><td>2025-09-16</td><td>MINGLE: VLMs for Semantically Complex Region Detection in Urban Scenes</td><td>[2509.13484](http://arxiv.org/pdf/2509.13484)</td><td>◆ Understanding group-level social interactions in public spaces is crucial for urban planning, informing the design of socially vibrant and inclusive environments.
+◆ Detecting such interactions from images involves interpreting subtle visual cues such as relations, proximity, and co-movement - semantically complex signals that go beyond traditional object detection.
+◆ To address this challenge, we introduce a social group region detection task, which requires inferring and spatially grounding visual regions defined by abstract interpersonal relations.</td></tr>
+<tr><td>2025-09-16</td><td>MapAnything: Universal Feed-Forward Metric 3D Reconstruction</td><td>[2509.13414](http://arxiv.org/pdf/2509.13414)</td><td>◆ We introduce MapAnything, a unified transformer-based feed-forward model that ingests one or more images along with optional geometric inputs such as camera intrinsics, poses, depth, or partial reconstructions, and then directly regresses the metric 3D scene geometry and cameras.
+◆ MapAnything leverages a factored representation of multi-view scene geometry, i.e., a collection of depth maps, local ray maps, camera poses, and a metric scale factor that effectively upgrades local reconstructions into a globally consistent metric frame.
+◆ Standardizing the supervision and training across diverse datasets, along with flexible input augmentation, enables MapAnything to address a broad range of 3D vision tasks in a single feed-forward pass, including uncalibrated structure-from-motion, calibrated multi-view stereo, monocular depth estimation, camera localization, depth completion, and more.</td></tr>
 <tr><td>2025-09-16</td><td>ROOM: A Physics-Based Continuum Robot Simulator for Photorealistic Medical Datasets Generation</td><td>[2509.13177](http://arxiv.org/pdf/2509.13177)</td><td>◆ Continuum robots are advancing bronchoscopy procedures by accessing complex lung airways and enabling targeted interventions.
 ◆ However, their development is limited by the lack of realistic training and test environments: Real data is difficult to collect due to ethical constraints and patient safety concerns, and developing autonomy algorithms requires realistic imaging and physical feedback.
 ◆ We present ROOM (Realistic Optical Observation in Medicine), a comprehensive simulation framework designed for generating photorealistic bronchoscopy training data.</td></tr>
@@ -2373,4 +2427,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.17
+> 更新于: 2025.09.18
