@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.18)
+# SLAM领域最新论文 (2025.09.19)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-18</td><td>Human Interaction for Collaborative Semantic SLAM using Extended Reality</td><td>[2509.14949](http://arxiv.org/pdf/2509.14949)</td><td>◆ Semantic SLAM (Simultaneous Localization and Mapping) systems enrich robot maps with structural and semantic information, enabling robots to operate more effectively in complex environments.
+◆ However, these systems struggle in real-world scenarios with occlusions, incomplete data, or ambiguous geometries, as they cannot fully leverage the higher-level spatial and semantic knowledge humans naturally apply.
+◆ We introduce HICS-SLAM, a Human-in-the-Loop semantic SLAM framework that uses a shared extended reality environment for real-time collaboration.</td></tr>
+<tr><td>2025-09-18</td><td>Event-LAB: Towards Standardized Evaluation of Neuromorphic Localization Methods</td><td>[2509.14516](http://arxiv.org/pdf/2509.14516)</td><td>◆ Event-based localization research and datasets are a rapidly growing area of interest, with a tenfold increase in the cumulative total number of published papers on this topic over the past 10 years.
+◆ Whilst the rapid expansion in the field is exciting, it brings with it an associated challenge: a growth in the variety of required code and package dependencies as well as data formats, making comparisons difficult and cumbersome for researchers to implement reliably.
+◆ To address this challenge, we present Event-LAB: a new and unified framework for running several event-based localization methodologies across multiple datasets.</td></tr>
 <tr><td>2025-09-17</td><td>MCGS-SLAM: A Multi-Camera SLAM Framework Using Gaussian Splatting for High-Fidelity Mapping</td><td>[2509.14191](http://arxiv.org/pdf/2509.14191)</td><td>◆ Recent progress in dense SLAM has primarily targeted monocular setups, often at the expense of robustness and geometric coverage.
 ◆ We present MCGS-SLAM, the first purely RGB-based multi-camera SLAM system built on 3D Gaussian Splatting (3DGS).
 ◆ Unlike prior methods relying on sparse maps or inertial data, MCGS-SLAM fuses dense RGB inputs from multiple viewpoints into a unified, continuously optimized Gaussian map.</td></tr>
@@ -34,7 +40,7 @@
 <tr><td>2025-09-16</td><td>MemGS: Memory-Efficient Gaussian Splatting for Real-Time SLAM</td><td>[2509.13536](http://arxiv.org/pdf/2509.13536)</td><td>◆ Recent advancements in 3D Gaussian Splatting (3DGS) have made a significant impact on rendering and reconstruction techniques.
 ◆ Current research predominantly focuses on improving rendering performance and reconstruction quality using high-performance desktop GPUs, largely overlooking applications for embedded platforms like micro air vehicles (MAVs).
 ◆ These devices, with their limited computational resources and memory, often face a trade-off between system performance and reconstruction quality.</td></tr>
-<tr><td>2025-09-16</td><td>MATTER: Multiscale Attention for Registration Error Regression</td><td>[2509.12924](http://arxiv.org/pdf/2509.12924)</td><td>◆ Point cloud registration (PCR) is crucial for many downstream tasks, such as simultaneous localization and mapping (SLAM) and object tracking.
+<tr><td>2025-09-18</td><td>MATTER: Multiscale Attention for Registration Error Regression</td><td>[2509.12924](http://arxiv.org/pdf/2509.12924)</td><td>◆ Point cloud registration (PCR) is crucial for many downstream tasks, such as simultaneous localization and mapping (SLAM) and object tracking.
 ◆ This makes detecting and quantifying registration misalignment, i.e.,~{\it PCR quality validation}, an important task.
 ◆ All existing methods treat validation as a classification task, aiming to assign the PCR quality to a few classes.</td></tr>
 <tr><td>2025-09-16</td><td>Match Chat: Real Time Generative AI and Generative Computing for Tennis</td><td>[2509.12592](http://arxiv.org/pdf/2509.12592)</td><td>◆ We present Match Chat, a real-time, agent-driven assistant designed to enhance the tennis fan experience by delivering instant, accurate responses to match-related queries.
@@ -459,6 +465,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-18</td><td>BEV-ODOM2: Enhanced BEV-based Monocular Visual Odometry with PV-BEV Fusion and Dense Flow Supervision for Ground Robots</td><td>[2509.14636](http://arxiv.org/pdf/2509.14636)</td><td>◆ Bird&#x27;s-Eye-View (BEV) representation offers a metric-scaled planar workspace, facilitating the simplification of 6-DoF ego-motion to a more robust 3-DoF model for monocular visual odometry (MVO) in intelligent transportation systems.
+◆ However, existing BEV methods suffer from sparse supervision signals and information loss during perspective-to-BEV projection.
+◆ We present BEV-ODOM2, an enhanced framework addressing both limitations without additional annotations.</td></tr>
 <tr><td>2025-09-17</td><td>BIM Informed Visual SLAM for Construction Monitoring</td><td>[2509.13972](http://arxiv.org/pdf/2509.13972)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is a key tool for monitoring construction sites, where aligning the evolving as-built state with the as-planned design enables early error detection and reduces costly rework.
 ◆ LiDAR-based SLAM achieves high geometric precision, but its sensors are typically large and power-demanding, limiting their use on portable platforms.
 ◆ Visual SLAM offers a practical alternative with lightweight cameras already embedded in most mobile devices.</td></tr>
@@ -606,6 +615,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-18</td><td>Event-LAB: Towards Standardized Evaluation of Neuromorphic Localization Methods</td><td>[2509.14516](http://arxiv.org/pdf/2509.14516)</td><td>◆ Event-based localization research and datasets are a rapidly growing area of interest, with a tenfold increase in the cumulative total number of published papers on this topic over the past 10 years.
+◆ Whilst the rapid expansion in the field is exciting, it brings with it an associated challenge: a growth in the variety of required code and package dependencies as well as data formats, making comparisons difficult and cumbersome for researchers to implement reliably.
+◆ To address this challenge, we present Event-LAB: a new and unified framework for running several event-based localization methodologies across multiple datasets.</td></tr>
 <tr><td>2025-09-16</td><td>Semantic-Enhanced Cross-Modal Place Recognition for Robust Robot Localization</td><td>[2509.13474](http://arxiv.org/pdf/2509.13474)</td><td>◆ Ensuring accurate localization of robots in environments without GPS capability is a challenging task.
 ◆ Visual Place Recognition (VPR) techniques can potentially achieve this goal, but existing RGB-based methods are sensitive to changes in illumination, weather, and other seasonal changes.
 ◆ Existing cross-modal localization methods leverage the geometric properties of RGB images and 3D LiDAR maps to reduce the sensitivity issues highlighted above.</td></tr>
@@ -974,6 +986,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-18</td><td>RoboEye: Enhancing 2D Robotic Object Identification with Selective 3D Geometric Keypoint Matching</td><td>[2509.14966](http://arxiv.org/pdf/2509.14966)</td><td>◆ The rapidly growing number of product categories in large-scale e-commerce makes accurate object identification for automated packing in warehouses substantially more difficult.
+◆ As the catalog grows, intra-class variability and a long tail of rare or visually similar items increase, and when combined with diverse packaging, cluttered containers, frequent occlusion, and large viewpoint changes-these factors amplify discrepancies between query and reference images, causing sharp performance drops for methods that rely solely on 2D appearance features.
+◆ Thus, we propose RoboEye, a two-stage identification framework that dynamically augments 2D semantic features with domain-adapted 3D reasoning and lightweight adapters to bridge training deployment gaps.</td></tr>
 <tr><td>2025-09-15</td><td>Bridging the Gap Between Sparsity and Redundancy: A Dual-Decoding Framework with Global Context for Map Inference</td><td>[2509.11731](http://arxiv.org/pdf/2509.11731)</td><td>该论文提出DGMap框架，旨在解决轨迹地图推断中稀疏区域道路断裂和密集区域冗余段的问题。其核心贡献与创新点包括：
 ◆ 提出双解码框架，整合全局语义上下文与局部几何特征，提升地图推断的整体一致性。
 ◆ 设计多尺度网格编码，有效捕捉不同密度区域的轨迹模式，增强特征表达能力。
@@ -1201,6 +1216,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-17</td><td>Perception-Integrated Safety Critical Control via Analytic Collision Cone Barrier Functions on 3D Gaussian Splatting</td><td>[2509.14421](http://arxiv.org/pdf/2509.14421)</td><td>◆ We present a perception-driven safety filter that converts each 3D Gaussian Splat (3DGS) into a closed-form forward collision cone, which in turn yields a first-order control barrier function (CBF) embedded within a quadratic program (QP).
+◆ By exploiting the analytic geometry of splats, our formulation provides a continuous, closed-form representation of collision constraints that is both simple and computationally efficient.
+◆ Unlike distance-based CBFs, which tend to activate reactively only when an obstacle is already close, our collision-cone CBF activates proactively, allowing the robot to adjust earlier and thereby produce smoother and safer avoidance maneuvers at lower computational cost.</td></tr>
 <tr><td>2025-09-17</td><td>MCGS-SLAM: A Multi-Camera SLAM Framework Using Gaussian Splatting for High-Fidelity Mapping</td><td>[2509.14191](http://arxiv.org/pdf/2509.14191)</td><td>◆ Recent progress in dense SLAM has primarily targeted monocular setups, often at the expense of robustness and geometric coverage.
 ◆ We present MCGS-SLAM, the first purely RGB-based multi-camera SLAM system built on 3D Gaussian Splatting (3DGS).
 ◆ Unlike prior methods relying on sparse maps or inertial data, MCGS-SLAM fuses dense RGB inputs from multiple viewpoints into a unified, continuously optimized Gaussian map.</td></tr>
@@ -1219,7 +1237,7 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <tr><td>2025-09-16</td><td>Beyond Averages: Open-Vocabulary 3D Scene Understanding with Gaussian Splatting and Bag of Embeddings</td><td>[2509.12938](http://arxiv.org/pdf/2509.12938)</td><td>◆ Novel view synthesis has seen significant advancements with 3D Gaussian Splatting (3DGS), enabling real-time photorealistic rendering.
 ◆ However, the inherent fuzziness of Gaussian Splatting presents challenges for 3D scene understanding, restricting its broader applications in AR/VR and robotics.
 ◆ While recent works attempt to learn semantics via 2D foundation model distillation, they inherit fundamental limitations: alpha blending averages semantics across objects, making 3D-level understanding impossible.</td></tr>
-<tr><td>2025-09-16</td><td>A-TDOM: Active TDOM via On-the-Fly 3DGS</td><td>[2509.12759](http://arxiv.org/pdf/2509.12759)</td><td>◆ True Digital Orthophoto Map (TDOM) serves as a crucial geospatial product in various fields such as urban management, city planning, land surveying, etc.
+<tr><td>2025-09-18</td><td>A-TDOM: Active TDOM via On-the-Fly 3DGS</td><td>[2509.12759](http://arxiv.org/pdf/2509.12759)</td><td>◆ True Digital Orthophoto Map (TDOM) serves as a crucial geospatial product in various fields such as urban management, city planning, land surveying, etc.
 ◆ However, traditional TDOM generation methods generally rely on a complex offline photogrammetric pipeline, resulting in delays that hinder real-time applications.
 ◆ Moreover, the quality of TDOM may degrade due to various challenges, such as inaccurate camera poses or Digital Surface Model (DSM) and scene occlusions.</td></tr>
 <tr><td>2025-09-15</td><td>Segmentation-Driven Initialization for Sparse-view 3D Gaussian Splatting</td><td>[2509.11853](http://arxiv.org/pdf/2509.11853)</td><td>该论文针对稀疏视图合成中3D高斯泼溅（3DGS）方法存在的高内存消耗和低效初始化问题，提出了一种基于分割驱动的初始化方法（SDI-GS）。其核心贡献与创新点包括：
@@ -1918,6 +1936,18 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-18</td><td>Depth AnyEvent: A Cross-Modal Distillation Paradigm for Event-Based Monocular Depth Estimation</td><td>[2509.15224](http://arxiv.org/pdf/2509.15224)</td><td>◆ Event cameras capture sparse, high-temporal-resolution visual information, making them particularly suitable for challenging environments with high-speed motion and strongly varying lighting conditions.
+◆ However, the lack of large datasets with dense ground-truth depth annotations hinders learning-based monocular depth estimation from event data.
+◆ To address this limitation, we propose a cross-modal distillation paradigm to generate dense proxy labels leveraging a Vision Foundation Model (VFM).</td></tr>
+<tr><td>2025-09-18</td><td>Lightweight and Accurate Multi-View Stereo with Confidence-Aware Diffusion Model</td><td>[2509.15220](http://arxiv.org/pdf/2509.15220)</td><td>◆ To reconstruct the 3D geometry from calibrated images, learning-based multi-view stereo (MVS) methods typically perform multi-view depth estimation and then fuse depth maps into a mesh or point cloud.
+◆ To improve the computational efficiency, many methods initialize a coarse depth map and then gradually refine it in higher resolutions.
+◆ Recently, diffusion models achieve great success in generation tasks.</td></tr>
+<tr><td>2025-09-18</td><td>UCorr: Wire Detection and Depth Estimation for Autonomous Drones</td><td>[2509.14989](http://arxiv.org/pdf/2509.14989)</td><td>◆ In the realm of fully autonomous drones, the accurate detection of obstacles is paramount to ensure safe navigation and prevent collisions.
+◆ Among these challenges, the detection of wires stands out due to their slender profile, which poses a unique and intricate problem.
+◆ To address this issue, we present an innovative solution in the form of a monocular end-to-end model for wire segmentation and depth estimation.</td></tr>
+<tr><td>2025-09-18</td><td>MapAnything: Mapping Urban Assets using Single Street-View Images</td><td>[2509.14839](http://arxiv.org/pdf/2509.14839)</td><td>◆ To maintain an overview of urban conditions, city administrations manage databases of objects like traffic signs and trees, complete with their geocoordinates.
+◆ Incidents such as graffiti or road damage are also relevant.
+◆ As digitization increases, so does the need for more data and up-to-date databases, requiring significant manual effort.</td></tr>
 <tr><td>2025-09-16</td><td>\textsc{Gen2Real}: Towards Demo-Free Dexterous Manipulation by Harnessing Generated Video</td><td>[2509.14178](http://arxiv.org/pdf/2509.14178)</td><td>◆ Dexterous manipulation remains a challenging robotics problem, largely due to the difficulty of collecting extensive human demonstrations for learning.
 ◆ In this paper, we introduce \textsc{Gen2Real}, which replaces costly human demos with one generated video and drives robot skill from it: it combines demonstration generation that leverages video generation with pose and depth estimation to yield hand-object trajectories, trajectory optimization that uses Physics-aware Interaction Optimization Model (PIOM) to impose physics consistency, and demonstration learning that retargets human motions to a robot hand and stabilizes control with an anchor-based residual Proximal Policy Optimization (PPO) policy.
 ◆ Using only generated videos, the learned policy achieves a 77.3\% success rate on grasping tasks in simulation and demonstrates coherent executions on a real robot.</td></tr>
@@ -1930,7 +1960,7 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <tr><td>2025-09-16</td><td>ColonCrafter: A Depth Estimation Model for Colonoscopy Videos Using Diffusion Priors</td><td>[2509.13525](http://arxiv.org/pdf/2509.13525)</td><td>◆ Three-dimensional (3D) scene understanding in colonoscopy presents significant challenges that necessitate automated methods for accurate depth estimation.
 ◆ However, existing depth estimation models for endoscopy struggle with temporal consistency across video sequences, limiting their applicability for 3D reconstruction.
 ◆ We present ColonCrafter, a diffusion-based depth estimation model that generates temporally consistent depth maps from monocular colonoscopy videos.</td></tr>
-<tr><td>2025-09-16</td><td>MINGLE: VLMs for Semantically Complex Region Detection in Urban Scenes</td><td>[2509.13484](http://arxiv.org/pdf/2509.13484)</td><td>◆ Understanding group-level social interactions in public spaces is crucial for urban planning, informing the design of socially vibrant and inclusive environments.
+<tr><td>2025-09-18</td><td>MINGLE: VLMs for Semantically Complex Region Detection in Urban Scenes</td><td>[2509.13484](http://arxiv.org/pdf/2509.13484)</td><td>◆ Understanding group-level social interactions in public spaces is crucial for urban planning, informing the design of socially vibrant and inclusive environments.
 ◆ Detecting such interactions from images involves interpreting subtle visual cues such as relations, proximity, and co-movement - semantically complex signals that go beyond traditional object detection.
 ◆ To address this challenge, we introduce a social group region detection task, which requires inferring and spatially grounding visual regions defined by abstract interpersonal relations.</td></tr>
 <tr><td>2025-09-16</td><td>MapAnything: Universal Feed-Forward Metric 3D Reconstruction</td><td>[2509.13414](http://arxiv.org/pdf/2509.13414)</td><td>◆ We introduce MapAnything, a unified transformer-based feed-forward model that ingests one or more images along with optional geometric inputs such as camera intrinsics, poses, depth, or partial reconstructions, and then directly regresses the metric 3D scene geometry and cameras.
@@ -2415,4 +2445,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.18
+> 更新于: 2025.09.19
