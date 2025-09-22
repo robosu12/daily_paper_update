@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.21)
+# SLAM领域最新论文 (2025.09.22)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-19</td><td>SLaM-DiMM: Shared Latent Modeling for Diffusion Based Missing Modality Synthesis in MRI</td><td>[2509.16019](http://arxiv.org/pdf/2509.16019)</td><td>◆ Brain MRI scans are often found in four modalities, consisting of T1-weighted with and without contrast enhancement (T1ce and T1w), T2-weighted imaging (T2w), and Flair.
+◆ Leveraging complementary information from these different modalities enables models to learn richer, more discriminative features for understanding brain anatomy, which could be used in downstream tasks such as anomaly detection.
+◆ However, in clinical practice, not all MRI modalities are always available due to various reasons.</td></tr>
+<tr><td>2025-09-19</td><td>Omni-LIVO: Robust RGB-Colored Multi-Camera Visual-Inertial-LiDAR Odometry via Photometric Migration and ESIKF Fusion</td><td>[2509.15673](http://arxiv.org/pdf/2509.15673)</td><td>◆ Wide field-of-view (FoV) LiDAR sensors provide dense geometry across large environments, but most existing LiDAR-inertial-visual odometry (LIVO) systems rely on a single camera, leading to limited spatial coverage and degraded robustness.
+◆ We present Omni-LIVO, the first tightly coupled multi-camera LIVO system that bridges the FoV mismatch between wide-angle LiDAR and conventional cameras.
+◆ Omni-LIVO introduces a Cross-View direct tracking strategy that maintains photometric consistency across non-overlapping views, and extends the Error-State Iterated Kalman Filter (ESIKF) with multi-view updates and adaptive covariance weighting.</td></tr>
 <tr><td>2025-09-18</td><td>Human Interaction for Collaborative Semantic SLAM using Extended Reality</td><td>[2509.14949](http://arxiv.org/pdf/2509.14949)</td><td>◆ Semantic SLAM (Simultaneous Localization and Mapping) systems enrich robot maps with structural and semantic information, enabling robots to operate more effectively in complex environments.
 ◆ However, these systems struggle in real-world scenarios with occlusions, incomplete data, or ambiguous geometries, as they cannot fully leverage the higher-level spatial and semantic knowledge humans naturally apply.
 ◆ We introduce HICS-SLAM, a Human-in-the-Loop semantic SLAM framework that uses a shared extended reality environment for real-time collaboration.</td></tr>
@@ -465,6 +471,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-19</td><td>Omni-LIVO: Robust RGB-Colored Multi-Camera Visual-Inertial-LiDAR Odometry via Photometric Migration and ESIKF Fusion</td><td>[2509.15673](http://arxiv.org/pdf/2509.15673)</td><td>◆ Wide field-of-view (FoV) LiDAR sensors provide dense geometry across large environments, but most existing LiDAR-inertial-visual odometry (LIVO) systems rely on a single camera, leading to limited spatial coverage and degraded robustness.
+◆ We present Omni-LIVO, the first tightly coupled multi-camera LIVO system that bridges the FoV mismatch between wide-angle LiDAR and conventional cameras.
+◆ Omni-LIVO introduces a Cross-View direct tracking strategy that maintains photometric consistency across non-overlapping views, and extends the Error-State Iterated Kalman Filter (ESIKF) with multi-view updates and adaptive covariance weighting.</td></tr>
 <tr><td>2025-09-18</td><td>BEV-ODOM2: Enhanced BEV-based Monocular Visual Odometry with PV-BEV Fusion and Dense Flow Supervision for Ground Robots</td><td>[2509.14636](http://arxiv.org/pdf/2509.14636)</td><td>◆ Bird&#x27;s-Eye-View (BEV) representation offers a metric-scaled planar workspace, facilitating the simplification of 6-DoF ego-motion to a more robust 3-DoF model for monocular visual odometry (MVO) in intelligent transportation systems.
 ◆ However, existing BEV methods suffer from sparse supervision signals and information loss during perspective-to-BEV projection.
 ◆ We present BEV-ODOM2, an enhanced framework addressing both limitations without additional annotations.</td></tr>
@@ -986,6 +995,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-19</td><td>DistillMatch: Leveraging Knowledge Distillation from Vision Foundation Model for Multimodal Image Matching</td><td>[2509.16017](http://arxiv.org/pdf/2509.16017)</td><td>◆ Multimodal image matching seeks pixel-level correspondences between images of different modalities, crucial for cross-modal perception, fusion and analysis.
+◆ However, the significant appearance differences between modalities make this task challenging.
+◆ Due to the scarcity of high-quality annotated datasets, existing deep learning methods that extract modality-common features for matching perform poorly and lack adaptability to diverse scenarios.</td></tr>
 <tr><td>2025-09-18</td><td>RoboEye: Enhancing 2D Robotic Object Identification with Selective 3D Geometric Keypoint Matching</td><td>[2509.14966](http://arxiv.org/pdf/2509.14966)</td><td>◆ The rapidly growing number of product categories in large-scale e-commerce makes accurate object identification for automated packing in warehouses substantially more difficult.
 ◆ As the catalog grows, intra-class variability and a long tail of rare or visually similar items increase, and when combined with diverse packaging, cluttered containers, frequent occlusion, and large viewpoint changes-these factors amplify discrepancies between query and reference images, causing sharp performance drops for methods that rely solely on 2D appearance features.
 ◆ Thus, we propose RoboEye, a two-stage identification framework that dynamically augments 2D semantic features with domain-adapted 3D reasoning and lightweight adapters to bridge training deployment gaps.</td></tr>
@@ -1216,6 +1228,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-19</td><td>RadarGaussianDet3D: An Efficient and Effective Gaussian-based 3D Detector with 4D Automotive Radars</td><td>[2509.16119](http://arxiv.org/pdf/2509.16119)</td><td>◆ 4D automotive radars have gained increasing attention for autonomous driving due to their low cost, robustness, and inherent velocity measurement capability.
+◆ However, existing 4D radar-based 3D detectors rely heavily on pillar encoders for BEV feature extraction, where each point contributes to only a single BEV grid, resulting in sparse feature maps and degraded representation quality.
+◆ In addition, they also optimize bounding box attributes independently, leading to sub-optimal detection accuracy.</td></tr>
+<tr><td>2025-09-19</td><td>Zero-Shot Visual Grounding in 3D Gaussians via View Retrieval</td><td>[2509.15871](http://arxiv.org/pdf/2509.15871)</td><td>◆ 3D Visual Grounding (3DVG) aims to locate objects in 3D scenes based on text prompts, which is essential for applications such as robotics.
+◆ However, existing 3DVG methods encounter two main challenges: first, they struggle to handle the implicit representation of spatial textures in 3D Gaussian Splatting (3DGS), making per-scene training indispensable; second, they typically require larges amounts of labeled data for effective training.
+◆ To this end, we propose \underline{G}rounding via \underline{V}iew \underline{R}etrieval (GVR), a novel zero-shot visual grounding framework for 3DGS to transform 3DVG as a 2D retrieval task that leverages object-level view retrieval to collect grounding clues from multiple views, which not only avoids the costly process of 3D annotation, but also eliminates the need for per-scene training.</td></tr>
+<tr><td>2025-09-19</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
+◆ Although recent adaptations of Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) have improved in these areas, they tend to oversmooth and are prone to overfitting.
+◆ In this paper, we present MS-GS, a novel framework designed with Multi-appearance capabilities in Sparse-view scenarios using 3DGS.</td></tr>
 <tr><td>2025-09-17</td><td>Perception-Integrated Safety Critical Control via Analytic Collision Cone Barrier Functions on 3D Gaussian Splatting</td><td>[2509.14421](http://arxiv.org/pdf/2509.14421)</td><td>◆ We present a perception-driven safety filter that converts each 3D Gaussian Splat (3DGS) into a closed-form forward collision cone, which in turn yields a first-order control barrier function (CBF) embedded within a quadratic program (QP).
 ◆ By exploiting the analytic geometry of splats, our formulation provides a continuous, closed-form representation of collision constraints that is both simple and computationally efficient.
 ◆ Unlike distance-based CBFs, which tend to activate reactively only when an obstacle is already close, our collision-cone CBF activates proactively, allowing the robot to adjust earlier and thereby produce smoother and safer avoidance maneuvers at lower computational cost.</td></tr>
@@ -1936,6 +1957,18 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-19</td><td>Towards Sharper Object Boundaries in Self-Supervised Depth Estimation</td><td>[2509.15987](http://arxiv.org/pdf/2509.15987)</td><td>◆ Accurate monocular depth estimation is crucial for 3D scene understanding, but existing methods often blur depth at object boundaries, introducing spurious intermediate 3D points.
+◆ While achieving sharp edges usually requires very fine-grained supervision, our method produces crisp depth discontinuities using only self-supervision.
+◆ Specifically, we model per-pixel depth as a mixture distribution, capturing multiple plausible depths and shifting uncertainty from direct regression to the mixture weights.</td></tr>
+<tr><td>2025-09-19</td><td>Shedding Light on Depth: Explainability Assessment in Monocular Depth Estimation</td><td>[2509.15980](http://arxiv.org/pdf/2509.15980)</td><td>◆ Explainable artificial intelligence is increasingly employed to understand the decision-making process of deep learning models and create trustworthiness in their adoption.
+◆ However, the explainability of Monocular Depth Estimation (MDE) remains largely unexplored despite its wide deployment in real-world applications.
+◆ In this work, we study how to analyze MDE networks to map the input image to the predicted depth map.</td></tr>
+<tr><td>2025-09-19</td><td>Global Regulation and Excitation via Attention Tuning for Stereo Matching</td><td>[2509.15891](http://arxiv.org/pdf/2509.15891)</td><td>◆ Stereo matching achieves significant progress with iterative algorithms like RAFT-Stereo and IGEV-Stereo.
+◆ However, these methods struggle in ill-posed regions with occlusions, textureless, or repetitive patterns, due to a lack of global context and geometric information for effective iterative refinement.
+◆ To enable the existing iterative approaches to incorporate global context, we propose the Global Regulation and Excitation via Attention Tuning (GREAT) framework which encompasses three attention modules.</td></tr>
+<tr><td>2025-09-19</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
+◆ Although recent adaptations of Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) have improved in these areas, they tend to oversmooth and are prone to overfitting.
+◆ In this paper, we present MS-GS, a novel framework designed with Multi-appearance capabilities in Sparse-view scenarios using 3DGS.</td></tr>
 <tr><td>2025-09-18</td><td>Depth AnyEvent: A Cross-Modal Distillation Paradigm for Event-Based Monocular Depth Estimation</td><td>[2509.15224](http://arxiv.org/pdf/2509.15224)</td><td>◆ Event cameras capture sparse, high-temporal-resolution visual information, making them particularly suitable for challenging environments with high-speed motion and strongly varying lighting conditions.
 ◆ However, the lack of large datasets with dense ground-truth depth annotations hinders learning-based monocular depth estimation from event data.
 ◆ To address this limitation, we propose a cross-modal distillation paradigm to generate dense proxy labels leveraging a Vision Foundation Model (VFM).</td></tr>
@@ -2445,4 +2478,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.21
+> 更新于: 2025.09.22
