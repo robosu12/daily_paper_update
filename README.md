@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.22)
+# SLAM领域最新论文 (2025.09.23)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-22</td><td>ProDyG: Progressive Dynamic Scene Reconstruction via Gaussian Splatting from Monocular Videos</td><td>[2509.17864](http://arxiv.org/pdf/2509.17864)</td><td>◆ Achieving truly practical dynamic 3D reconstruction requires online operation, global pose and map consistency, detailed appearance modeling, and the flexibility to handle both RGB and RGB-D inputs.
+◆ However, existing SLAM methods typically merely remove the dynamic parts or require RGB-D input, while offline methods are not scalable to long video sequences, and current transformer-based feedforward methods lack global consistency and appearance details.
+◆ To this end, we achieve online dynamic scene reconstruction by disentangling the static and dynamic parts within a SLAM system.</td></tr>
+<tr><td>2025-09-21</td><td>SLAM-Former: Putting SLAM into One Transformer</td><td>[2509.16909](http://arxiv.org/pdf/2509.16909)</td><td>◆ We present SLAM-Former, a novel neural approach that integrates full SLAM capabilities into a single transformer.
+◆ Similar to traditional SLAM systems, SLAM-Former comprises both a frontend and a backend that operate in tandem.
+◆ The frontend processes sequential monocular images in real-time for incremental mapping and tracking, while the backend performs global refinement to ensure a geometrically consistent result.</td></tr>
+<tr><td>2025-09-21</td><td>ConfidentSplat: Confidence-Weighted Depth Fusion for Accurate 3D Gaussian Splatting SLAM</td><td>[2509.16863](http://arxiv.org/pdf/2509.16863)</td><td>◆ We introduce ConfidentSplat, a novel 3D Gaussian Splatting (3DGS)-based SLAM system for robust, highfidelity RGB-only reconstruction.
+◆ Addressing geometric inaccuracies in existing RGB-only 3DGS SLAM methods that stem from unreliable depth estimation, ConfidentSplat incorporates a core innovation: a confidence-weighted fusion mechanism.
+◆ This mechanism adaptively integrates depth cues from multiview geometry with learned monocular priors (Omnidata ViT), dynamically weighting their contributions based on explicit reliability estimates-derived predominantly from multi-view geometric consistency-to generate high-fidelity proxy depth for map supervision.</td></tr>
 <tr><td>2025-09-19</td><td>SLaM-DiMM: Shared Latent Modeling for Diffusion Based Missing Modality Synthesis in MRI</td><td>[2509.16019](http://arxiv.org/pdf/2509.16019)</td><td>◆ Brain MRI scans are often found in four modalities, consisting of T1-weighted with and without contrast enhancement (T1ce and T1w), T2-weighted imaging (T2w), and Flair.
 ◆ Leveraging complementary information from these different modalities enables models to learn richer, more discriminative features for understanding brain anatomy, which could be used in downstream tasks such as anomaly detection.
 ◆ However, in clinical practice, not all MRI modalities are always available due to various reasons.</td></tr>
@@ -473,6 +482,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-21</td><td>ConfidentSplat: Confidence-Weighted Depth Fusion for Accurate 3D Gaussian Splatting SLAM</td><td>[2509.16863](http://arxiv.org/pdf/2509.16863)</td><td>◆ We introduce ConfidentSplat, a novel 3D Gaussian Splatting (3DGS)-based SLAM system for robust, highfidelity RGB-only reconstruction.
+◆ Addressing geometric inaccuracies in existing RGB-only 3DGS SLAM methods that stem from unreliable depth estimation, ConfidentSplat incorporates a core innovation: a confidence-weighted fusion mechanism.
+◆ This mechanism adaptively integrates depth cues from multiview geometry with learned monocular priors (Omnidata ViT), dynamically weighting their contributions based on explicit reliability estimates-derived predominantly from multi-view geometric consistency-to generate high-fidelity proxy depth for map supervision.</td></tr>
 <tr><td>2025-09-19</td><td>Omni-LIVO: Robust RGB-Colored Multi-Camera Visual-Inertial-LiDAR Odometry via Photometric Migration and ESIKF Fusion</td><td>[2509.15673](http://arxiv.org/pdf/2509.15673)</td><td>◆ Wide field-of-view (FoV) LiDAR sensors provide dense geometry across large environments, but most existing LiDAR-inertial-visual odometry (LIVO) systems rely on a single camera, leading to limited spatial coverage and degraded robustness.
 ◆ We present Omni-LIVO, the first tightly coupled multi-camera LIVO system that bridges the FoV mismatch between wide-angle LiDAR and conventional cameras.
 ◆ Omni-LIVO introduces a Cross-View direct tracking strategy that maintains photometric consistency across non-overlapping views, and extends the Error-State Iterated Kalman Filter (ESIKF) with multi-view updates and adaptive covariance weighting.</td></tr>
@@ -628,6 +640,18 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-21</td><td>A game played by tandem-running ants: Hint of procedural rationality</td><td>[2509.17147](http://arxiv.org/pdf/2509.17147)</td><td>◆ Navigation through narrow passages during colony relocation by the tandem-running ants, $\textit{Diacamma}$ $\textit{indicum}$, is a tour de force of biological traffic coordination.
+◆ Even on one-lane paths, the ants tactfully manage a bidirectional flow: Informed individuals (termed leaders) guide nest-mates (termed followers) from a suboptimal nest to a new optimal nest, and then return to recruit additional followers.
+◆ We propose that encounters between the ants moving in opposite directions can be modelled within the framework of game theory leading to an understanding of the mechanism behind observed behaviours.</td></tr>
+<tr><td>2025-09-21</td><td>ConfidentSplat: Confidence-Weighted Depth Fusion for Accurate 3D Gaussian Splatting SLAM</td><td>[2509.16863](http://arxiv.org/pdf/2509.16863)</td><td>◆ We introduce ConfidentSplat, a novel 3D Gaussian Splatting (3DGS)-based SLAM system for robust, highfidelity RGB-only reconstruction.
+◆ Addressing geometric inaccuracies in existing RGB-only 3DGS SLAM methods that stem from unreliable depth estimation, ConfidentSplat incorporates a core innovation: a confidence-weighted fusion mechanism.
+◆ This mechanism adaptively integrates depth cues from multiview geometry with learned monocular priors (Omnidata ViT), dynamically weighting their contributions based on explicit reliability estimates-derived predominantly from multi-view geometric consistency-to generate high-fidelity proxy depth for map supervision.</td></tr>
+<tr><td>2025-09-20</td><td>Ductile fracture of HDPE thin films: failure mechanisms and tuning of fracture properties by bonding a rubber layer</td><td>[2509.16731](http://arxiv.org/pdf/2509.16731)</td><td>◆ High-density polyethylene (HDPE) thin films, while inherently ductile, exhibit poor flaw tolerance.
+◆ Our experiments show that they fail prematurely not at the point of maximum stretch, but at the boundary of a necked region or notch-tip plastic zone.
+◆ This study investigates this counter-intuitive failure mechanism and demonstrates how an elastomeric interlayer can mitigate it to enhance toughness.</td></tr>
+<tr><td>2025-09-19</td><td>Dynamic Objects Relocalization in Changing Environments with Flow Matching</td><td>[2509.16398](http://arxiv.org/pdf/2509.16398)</td><td>◆ Task and motion planning are long-standing challenges in robotics, especially when robots have to deal with dynamic environments exhibiting long-term dynamics, such as households or warehouses.
+◆ In these environments, long-term dynamics mostly stem from human activities, since previously detected objects can be moved or removed from the scene.
+◆ This adds the necessity to find such objects again before completing the designed task, increasing the risk of failure due to missed relocalizations.</td></tr>
 <tr><td>2025-09-18</td><td>Event-LAB: Towards Standardized Evaluation of Neuromorphic Localization Methods</td><td>[2509.14516](http://arxiv.org/pdf/2509.14516)</td><td>◆ Event-based localization research and datasets are a rapidly growing area of interest, with a tenfold increase in the cumulative total number of published papers on this topic over the past 10 years.
 ◆ Whilst the rapid expansion in the field is exciting, it brings with it an associated challenge: a growth in the variety of required code and package dependencies as well as data formats, making comparisons difficult and cumbersome for researchers to implement reliably.
 ◆ To address this challenge, we present Event-LAB: a new and unified framework for running several event-based localization methodologies across multiple datasets.</td></tr>
@@ -1001,6 +1025,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-22</td><td>Emergent 3D Correspondence from Neural Shape Representation</td><td>[2509.17431](http://arxiv.org/pdf/2509.17431)</td><td>◆ This paper presents a new approach to estimate accurate and robust 3D semantic correspondence with the hierarchical neural semantic representation.
+◆ Our work has three key contributions.
+◆ First, we design the hierarchical neural semantic representation (HNSR), which consists of a global semantic feature to capture high-level structure and multi-resolution local geometric features to preserve fine details, by carefully harnessing 3D priors from pre-trained 3D generative models.</td></tr>
+<tr><td>2025-09-20</td><td>PM25Vision: A Large-Scale Benchmark Dataset for Visual Estimation of Air Quality</td><td>[2509.16519](http://arxiv.org/pdf/2509.16519)</td><td>◆ We introduce PM25Vision (PM25V), the largest and most comprehensive dataset to date for estimating air quality - specifically PM2.5 concentrations - from street-level images.
+◆ The dataset contains over 11,114 images matched with timestamped and geolocated PM2.5 readings across 3,261 AQI monitoring stations and 11 years, significantly exceeding the scale of previous benchmarks.
+◆ The spatial accuracy of this dataset has reached 5 kilometers, far exceeding the city-level accuracy of many datasets.</td></tr>
 <tr><td>2025-09-19</td><td>DistillMatch: Leveraging Knowledge Distillation from Vision Foundation Model for Multimodal Image Matching</td><td>[2509.16017](http://arxiv.org/pdf/2509.16017)</td><td>◆ Multimodal image matching seeks pixel-level correspondences between images of different modalities, crucial for cross-modal perception, fusion and analysis.
 ◆ However, the significant appearance differences between modalities make this task challenging.
 ◆ Due to the scarcity of high-quality annotated datasets, existing deep learning methods that extract modality-common features for matching perform poorly and lack adaptability to diverse scenarios.</td></tr>
@@ -1236,13 +1266,31 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-22</td><td>From Restoration to Reconstruction: Rethinking 3D Gaussian Splatting for Underwater Scenes</td><td>[2509.17789](http://arxiv.org/pdf/2509.17789)</td><td>◆ Underwater image degradation poses significant challenges for 3D reconstruction, where simplified physical models often fail in complex scenes.
+◆ We propose \textbf{R-Splatting}, a unified framework that bridges underwater image restoration (UIR) with 3D Gaussian Splatting (3DGS) to improve both rendering quality and geometric fidelity.
+◆ Our method integrates multiple enhanced views produced by diverse UIR models into a single reconstruction pipeline.</td></tr>
+<tr><td>2025-09-22</td><td>Neural-MMGS: Multi-modal Neural Gaussian Splats for Large-Scale Scene Reconstruction</td><td>[2509.17762](http://arxiv.org/pdf/2509.17762)</td><td>◆ This paper proposes Neural-MMGS, a novel neural 3DGS framework for multimodal large-scale scene reconstruction that fuses multiple sensing modalities in a per-gaussian compact, learnable embedding.
+◆ While recent works focusing on large-scale scene reconstruction have incorporated LiDAR data to provide more accurate geometric constraints, we argue that LiDAR&#x27;s rich physical properties remain underexplored.
+◆ Similarly, semantic information has been used for object retrieval, but could provide valuable high-level context for scene reconstruction.</td></tr>
+<tr><td>2025-09-22</td><td>FGGS-LiDAR: Ultra-Fast, GPU-Accelerated Simulation from General 3DGS Models to LiDAR</td><td>[2509.17390](http://arxiv.org/pdf/2509.17390)</td><td>◆ While 3D Gaussian Splatting (3DGS) has revolutionized photorealistic rendering, its vast ecosystem of assets remains incompatible with high-performance LiDAR simulation, a critical tool for robotics and autonomous driving.
+◆ We present \textbf{FGGS-LiDAR}, a framework that bridges this gap with a truly plug-and-play approach.
+◆ Our method converts \textit{any} pretrained 3DGS model into a high-fidelity, watertight mesh without requiring LiDAR-specific supervision or architectural alterations.</td></tr>
+<tr><td>2025-09-21</td><td>HyRF: Hybrid Radiance Fields for Memory-efficient and High-quality Novel View Synthesis</td><td>[2509.17083](http://arxiv.org/pdf/2509.17083)</td><td>◆ Recently, 3D Gaussian Splatting (3DGS) has emerged as a powerful alternative to NeRF-based approaches, enabling real-time, high-quality novel view synthesis through explicit, optimizable 3D Gaussians.
+◆ However, 3DGS suffers from significant memory overhead due to its reliance on per-Gaussian parameters to model view-dependent effects and anisotropic shapes.
+◆ While recent works propose compressing 3DGS with neural fields, these methods struggle to capture high-frequency spatial variations in Gaussian properties, leading to degraded reconstruction of fine details.</td></tr>
+<tr><td>2025-09-21</td><td>PGSTalker: Real-Time Audio-Driven Talking Head Generation via 3D Gaussian Splatting with Pixel-Aware Density Control</td><td>[2509.16922](http://arxiv.org/pdf/2509.16922)</td><td>◆ Audio-driven talking head generation is crucial for applications in virtual reality, digital avatars, and film production.
+◆ While NeRF-based methods enable high-fidelity reconstruction, they suffer from low rendering efficiency and suboptimal audio-visual synchronization.
+◆ This work presents PGSTalker, a real-time audio-driven talking head synthesis framework based on 3D Gaussian Splatting (3DGS).</td></tr>
+<tr><td>2025-09-21</td><td>ConfidentSplat: Confidence-Weighted Depth Fusion for Accurate 3D Gaussian Splatting SLAM</td><td>[2509.16863](http://arxiv.org/pdf/2509.16863)</td><td>◆ We introduce ConfidentSplat, a novel 3D Gaussian Splatting (3DGS)-based SLAM system for robust, highfidelity RGB-only reconstruction.
+◆ Addressing geometric inaccuracies in existing RGB-only 3DGS SLAM methods that stem from unreliable depth estimation, ConfidentSplat incorporates a core innovation: a confidence-weighted fusion mechanism.
+◆ This mechanism adaptively integrates depth cues from multiview geometry with learned monocular priors (Omnidata ViT), dynamically weighting their contributions based on explicit reliability estimates-derived predominantly from multi-view geometric consistency-to generate high-fidelity proxy depth for map supervision.</td></tr>
 <tr><td>2025-09-19</td><td>RadarGaussianDet3D: An Efficient and Effective Gaussian-based 3D Detector with 4D Automotive Radars</td><td>[2509.16119](http://arxiv.org/pdf/2509.16119)</td><td>◆ 4D automotive radars have gained increasing attention for autonomous driving due to their low cost, robustness, and inherent velocity measurement capability.
 ◆ However, existing 4D radar-based 3D detectors rely heavily on pillar encoders for BEV feature extraction, where each point contributes to only a single BEV grid, resulting in sparse feature maps and degraded representation quality.
 ◆ In addition, they also optimize bounding box attributes independently, leading to sub-optimal detection accuracy.</td></tr>
 <tr><td>2025-09-19</td><td>Zero-Shot Visual Grounding in 3D Gaussians via View Retrieval</td><td>[2509.15871](http://arxiv.org/pdf/2509.15871)</td><td>◆ 3D Visual Grounding (3DVG) aims to locate objects in 3D scenes based on text prompts, which is essential for applications such as robotics.
 ◆ However, existing 3DVG methods encounter two main challenges: first, they struggle to handle the implicit representation of spatial textures in 3D Gaussian Splatting (3DGS), making per-scene training indispensable; second, they typically require larges amounts of labeled data for effective training.
 ◆ To this end, we propose \underline{G}rounding via \underline{V}iew \underline{R}etrieval (GVR), a novel zero-shot visual grounding framework for 3DGS to transform 3DVG as a 2D retrieval task that leverages object-level view retrieval to collect grounding clues from multiple views, which not only avoids the costly process of 3D annotation, but also eliminates the need for per-scene training.</td></tr>
-<tr><td>2025-09-19</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
+<tr><td>2025-09-22</td><td>MS-GS: Multi-Appearance Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2509.15548](http://arxiv.org/pdf/2509.15548)</td><td>◆ In-the-wild photo collections often contain limited volumes of imagery and exhibit multiple appearances, e.g., taken at different times of day or seasons, posing significant challenges to scene reconstruction and novel view synthesis.
 ◆ Although recent adaptations of Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) have improved in these areas, they tend to oversmooth and are prone to overfitting.
 ◆ In this paper, we present MS-GS, a novel framework designed with Multi-appearance capabilities in Sparse-view scenarios using 3DGS.</td></tr>
 <tr><td>2025-09-17</td><td>Perception-Integrated Safety Critical Control via Analytic Collision Cone Barrier Functions on 3D Gaussian Splatting</td><td>[2509.14421](http://arxiv.org/pdf/2509.14421)</td><td>◆ We present a perception-driven safety filter that converts each 3D Gaussian Splat (3DGS) into a closed-form forward collision cone, which in turn yields a first-order control barrier function (CBF) embedded within a quadratic program (QP).
@@ -1967,6 +2015,27 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-22</td><td>RadarSFD: Single-Frame Diffusion with Pretrained Priors for Radar Point Clouds</td><td>[2509.18068](http://arxiv.org/pdf/2509.18068)</td><td>◆ Millimeter-wave radar provides perception robust to fog, smoke, dust, and low light, making it attractive for size, weight, and power constrained robotic platforms.
+◆ Current radar imaging methods, however, rely on synthetic aperture or multi-frame aggregation to improve resolution, which is impractical for small aerial, inspection, or wearable systems.
+◆ We present RadarSFD, a conditional latent diffusion framework that reconstructs dense LiDAR-like point clouds from a single radar frame without motion or SAR.</td></tr>
+<tr><td>2025-09-22</td><td>Predicting Depth Maps from Single RGB Images and Addressing Missing Information in Depth Estimation</td><td>[2509.17686](http://arxiv.org/pdf/2509.17686)</td><td>◆ Depth imaging is a crucial area in Autonomous Driving Systems (ADS), as it plays a key role in detecting and measuring objects in the vehicle&#x27;s surroundings.
+◆ However, a significant challenge in this domain arises from missing information in Depth images, where certain points are not measurable due to gaps or inconsistencies in pixel data.
+◆ Our research addresses two key tasks to overcome this challenge.</td></tr>
+<tr><td>2025-09-22</td><td>Evict3R: Training-Free Token Eviction for Memory-Bounded Streaming Visual Geometry Transformers</td><td>[2509.17650](http://arxiv.org/pdf/2509.17650)</td><td>◆ Streaming visual transformers like StreamVGGT achieve strong 3D perception but suffer from unbounded growth of key value (KV) memory, which limits scalability.
+◆ We propose a training-free, inference-time token eviction policy that bounds memory by discarding redundant tokens while keeping the most informative ones.
+◆ Our method uses significantly less memory with little to no drop in accuracy: on 7-Scenes with long sequences it reduces peak memory from 18.63 GB to 9.39 GB while accuracy and completeness drop by only 0.003.</td></tr>
+<tr><td>2025-09-22</td><td>GPS Denied IBVS-Based Navigation and Collision Avoidance of UAV Using a Low-Cost RGB Camera</td><td>[2509.17435](http://arxiv.org/pdf/2509.17435)</td><td>◆ This paper proposes an image-based visual servoing (IBVS) framework for UAV navigation and collision avoidance using only an RGB camera.
+◆ While UAV navigation has been extensively studied, it remains challenging to apply IBVS in missions involving multiple visual targets and collision avoidance.
+◆ The proposed method achieves navigation without explicit path planning, and collision avoidance is realized through AI-based monocular depth estimation from RGB images.</td></tr>
+<tr><td>2025-09-21</td><td>ConfidentSplat: Confidence-Weighted Depth Fusion for Accurate 3D Gaussian Splatting SLAM</td><td>[2509.16863](http://arxiv.org/pdf/2509.16863)</td><td>◆ We introduce ConfidentSplat, a novel 3D Gaussian Splatting (3DGS)-based SLAM system for robust, highfidelity RGB-only reconstruction.
+◆ Addressing geometric inaccuracies in existing RGB-only 3DGS SLAM methods that stem from unreliable depth estimation, ConfidentSplat incorporates a core innovation: a confidence-weighted fusion mechanism.
+◆ This mechanism adaptively integrates depth cues from multiview geometry with learned monocular priors (Omnidata ViT), dynamically weighting their contributions based on explicit reliability estimates-derived predominantly from multi-view geometric consistency-to generate high-fidelity proxy depth for map supervision.</td></tr>
+<tr><td>2025-09-19</td><td>3D Gaussian Flats: Hybrid 2D/3D Photometric Scene Reconstruction</td><td>[2509.16423](http://arxiv.org/pdf/2509.16423)</td><td>◆ Recent advances in radiance fields and novel view synthesis enable creation of realistic digital twins from photographs.
+◆ However, current methods struggle with flat, texture-less surfaces, creating uneven and semi-transparent reconstructions, due to an ill-conditioned photometric reconstruction objective.
+◆ Surface reconstruction methods solve this issue but sacrifice visual quality.</td></tr>
+<tr><td>2025-09-19</td><td>StereoAdapter: Adapting Stereo Depth Estimation to Underwater Scenes</td><td>[2509.16415](http://arxiv.org/pdf/2509.16415)</td><td>◆ Underwater stereo depth estimation provides accurate 3D geometry for robotics tasks such as navigation, inspection, and mapping, offering metric depth from low-cost passive cameras while avoiding the scale ambiguity of monocular methods.
+◆ However, existing approaches face two critical challenges: (i) parameter-efficiently adapting large vision foundation encoders to the underwater domain without extensive labeled data, and (ii) tightly fusing globally coherent but scale-ambiguous monocular priors with locally metric yet photometrically fragile stereo correspondences.
+◆ To address these challenges, we propose StereoAdapter, a parameter-efficient self-supervised framework that integrates a LoRA-adapted monocular foundation encoder with a recurrent stereo refinement module.</td></tr>
 <tr><td>2025-09-19</td><td>Towards Sharper Object Boundaries in Self-Supervised Depth Estimation</td><td>[2509.15987](http://arxiv.org/pdf/2509.15987)</td><td>◆ Accurate monocular depth estimation is crucial for 3D scene understanding, but existing methods often blur depth at object boundaries, introducing spurious intermediate 3D points.
 ◆ While achieving sharp edges usually requires very fine-grained supervision, our method produces crisp depth discontinuities using only self-supervision.
 ◆ Specifically, we model per-pixel depth as a mixture distribution, capturing multiple plausible depths and shifting uncertainty from direct regression to the mixture weights.</td></tr>
@@ -2490,4 +2559,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.22
+> 更新于: 2025.09.23
