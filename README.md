@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.24)
+# SLAM领域最新论文 (2025.09.25)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-24</td><td>Optical Ocean Recipes: Creating Realistic Datasets to Facilitate Underwater Vision Research</td><td>[2509.20171](http://arxiv.org/pdf/2509.20171)</td><td>◆ The development and evaluation of machine vision in underwater environments remains challenging, often relying on trial-and-error-based testing tailored to specific applications.
+◆ This is partly due to the lack of controlled, ground-truthed testing environments that account for the optical challenges, such as color distortion from spectrally variant light attenuation, reduced contrast and blur from backscatter and volume scattering, and dynamic light patterns from natural or artificial illumination.
+◆ Additionally, the appearance of ocean water in images varies significantly across regions, depths, and seasons.</td></tr>
+<tr><td>2025-09-23</td><td>Bioinspired SLAM Approach for Unmanned Surface Vehicle</td><td>[2509.19522](http://arxiv.org/pdf/2509.19522)</td><td>◆ This paper presents OpenRatSLAM2, a new version of OpenRatSLAM - a bioinspired SLAM framework based on computational models of the rodent hippocampus.
+◆ OpenRatSLAM2 delivers low-computation-cost visual-inertial based SLAM, suitable for GPS-denied environments.
+◆ Our contributions include a ROS2-based architecture, experimental results on new waterway datasets, and insights into system parameter tuning.</td></tr>
+<tr><td>2025-09-23</td><td>CU-Multi: A Dataset for Multi-Robot Collaborative Perception</td><td>[2509.19463](http://arxiv.org/pdf/2509.19463)</td><td>◆ A central challenge for multi-robot systems is fusing independently gathered perception data into a unified representation.
+◆ Despite progress in Collaborative SLAM (C-SLAM), benchmarking remains hindered by the scarcity of dedicated multi-robot datasets.
+◆ Many evaluations instead partition single-robot trajectories, a practice that may only partially reflect true multi-robot operations and, more critically, lacks standardization, leading to results that are difficult to interpret or compare across studies.</td></tr>
 <tr><td>2025-09-23</td><td>Towards Robust LiDAR Localization: Deep Learning-based Uncertainty Estimation</td><td>[2509.18954](http://arxiv.org/pdf/2509.18954)</td><td>◆ LiDAR-based localization and SLAM often rely on iterative matching algorithms, particularly the Iterative Closest Point (ICP) algorithm, to align sensor data with pre-existing maps or previous scans.
 ◆ However, ICP is prone to errors in featureless environments and dynamic scenes, leading to inaccurate pose estimation.
 ◆ Accurately predicting the uncertainty associated with ICP is crucial for robust state estimation but remains challenging, as existing approaches often rely on handcrafted models or simplified assumptions.</td></tr>
@@ -488,6 +497,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-24</td><td>Optical Ocean Recipes: Creating Realistic Datasets to Facilitate Underwater Vision Research</td><td>[2509.20171](http://arxiv.org/pdf/2509.20171)</td><td>◆ The development and evaluation of machine vision in underwater environments remains challenging, often relying on trial-and-error-based testing tailored to specific applications.
+◆ This is partly due to the lack of controlled, ground-truthed testing environments that account for the optical challenges, such as color distortion from spectrally variant light attenuation, reduced contrast and blur from backscatter and volume scattering, and dynamic light patterns from natural or artificial illumination.
+◆ Additionally, the appearance of ocean water in images varies significantly across regions, depths, and seasons.</td></tr>
 <tr><td>2025-09-21</td><td>ConfidentSplat: Confidence-Weighted Depth Fusion for Accurate 3D Gaussian Splatting SLAM</td><td>[2509.16863](http://arxiv.org/pdf/2509.16863)</td><td>◆ We introduce ConfidentSplat, a novel 3D Gaussian Splatting (3DGS)-based SLAM system for robust, highfidelity RGB-only reconstruction.
 ◆ Addressing geometric inaccuracies in existing RGB-only 3DGS SLAM methods that stem from unreliable depth estimation, ConfidentSplat incorporates a core innovation: a confidence-weighted fusion mechanism.
 ◆ This mechanism adaptively integrates depth cues from multiview geometry with learned monocular priors (Omnidata ViT), dynamically weighting their contributions based on explicit reliability estimates-derived predominantly from multi-view geometric consistency-to generate high-fidelity proxy depth for map supervision.</td></tr>
@@ -646,6 +658,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-24</td><td>Projective Kolmogorov Arnold Neural Networks (P-KANs): Entropy-Driven Functional Space Discovery for Interpretable Machine Learning</td><td>[2509.20049](http://arxiv.org/pdf/2509.20049)</td><td>◆ Kolmogorov-Arnold Networks (KANs) relocate learnable nonlinearities from nodes to edges, demonstrating remarkable capabilities in scientific machine learning and interpretable modeling.
+◆ However, current KAN implementations suffer from fundamental inefficiencies due to redundancy in high-dimensional spline parameter spaces, where numerous distinct parameterisations yield functionally equivalent behaviors.
+◆ This redundancy manifests as a &quot;nuisance space&quot; in the model&#x27;s Jacobian, leading to susceptibility to overfitting and poor generalization.</td></tr>
+<tr><td>2025-09-23</td><td>CU-Multi: A Dataset for Multi-Robot Collaborative Perception</td><td>[2509.19463](http://arxiv.org/pdf/2509.19463)</td><td>◆ A central challenge for multi-robot systems is fusing independently gathered perception data into a unified representation.
+◆ Despite progress in Collaborative SLAM (C-SLAM), benchmarking remains hindered by the scarcity of dedicated multi-robot datasets.
+◆ Many evaluations instead partition single-robot trajectories, a practice that may only partially reflect true multi-robot operations and, more critically, lacks standardization, leading to results that are difficult to interpret or compare across studies.</td></tr>
 <tr><td>2025-09-23</td><td>CAR-Flow: Condition-Aware Reparameterization Aligns Source and Target for Better Flow Matching</td><td>[2509.19300](http://arxiv.org/pdf/2509.19300)</td><td>◆ Conditional generative modeling aims to learn a conditional data distribution from samples containing data-condition pairs.
 ◆ For this, diffusion and flow-based methods have attained compelling results.
 ◆ These methods use a learned (flow) model to transport an initial standard Gaussian noise that ignores the condition to the conditional data distribution.</td></tr>
@@ -1275,6 +1293,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-24</td><td>GS-RoadPatching: Inpainting Gaussians via 3D Searching and Placing for Driving Scenes</td><td>[2509.19937](http://arxiv.org/pdf/2509.19937)</td><td>◆ This paper presents GS-RoadPatching, an inpainting method for driving scene completion by referring to completely reconstructed regions, which are represented by 3D Gaussian Splatting (3DGS).
+◆ Unlike existing 3DGS inpainting methods that perform generative completion relying on 2D perspective-view-based diffusion or GAN models to predict limited appearance or depth cues for missing regions, our approach enables substitutional scene inpainting and editing directly through the 3DGS modality, extricating it from requiring spatial-temporal consistency of 2D cross-modals and eliminating the need for time-intensive retraining of Gaussians.
+◆ Our key insight is that the highly repetitive patterns in driving scenes often share multi-modal similarities within the implicit 3DGS feature space and are particularly suitable for structural matching to enable effective 3DGS-based substitutional inpainting.</td></tr>
+<tr><td>2025-09-24</td><td>Aerial-Ground Image Feature Matching via 3D Gaussian Splatting-based Intermediate View Rendering</td><td>[2509.19898](http://arxiv.org/pdf/2509.19898)</td><td>◆ The integration of aerial and ground images has been a promising solution in 3D modeling of complex scenes, which is seriously restricted by finding reliable correspondences.
+◆ The primary contribution of this study is a feature matching algorithm for aerial and ground images, whose core idea is to generate intermediate views to alleviate perspective distortions caused by the extensive viewpoint changes.
+◆ First, by using aerial images only, sparse models are reconstructed through an incremental SfM (Structure from Motion) engine due to their large scene coverage.</td></tr>
+<tr><td>2025-09-24</td><td>PolGS: Polarimetric Gaussian Splatting for Fast Reflective Surface Reconstruction</td><td>[2509.19726](http://arxiv.org/pdf/2509.19726)</td><td>◆ Efficient shape reconstruction for surfaces with complex reflectance properties is crucial for real-time virtual reality.
+◆ While 3D Gaussian Splatting (3DGS)-based methods offer fast novel view rendering by leveraging their explicit surface representation, their reconstruction quality lags behind that of implicit neural representations, particularly in the case of recovering surfaces with complex reflective reflectance.
+◆ To address these problems, we propose PolGS, a Polarimetric Gaussian Splatting model allowing fast reflective surface reconstruction in 10 minutes.</td></tr>
 <tr><td>2025-09-23</td><td>VolSplat: Rethinking Feed-Forward 3D Gaussian Splatting with Voxel-Aligned Prediction</td><td>[2509.19297](http://arxiv.org/pdf/2509.19297)</td><td>◆ Feed-forward 3D Gaussian Splatting (3DGS) has emerged as a highly effective solution for novel view synthesis.
 ◆ Existing methods predominantly rely on a pixel-aligned Gaussian prediction paradigm, where each 2D pixel is mapped to a 3D Gaussian.
 ◆ We rethink this widely adopted formulation and identify several inherent limitations: it renders the reconstructed 3D models heavily dependent on the number of input views, leads to view-biased density distributions, and introduces alignment errors, particularly when source views contain occlusions or low texture.</td></tr>
@@ -2039,7 +2066,16 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-09-23</td><td>An on-chip Pixel Processing Approach with 2.4μs latency for Asynchronous Read-out of SPAD-based dToF Flash LiDARs</td><td>[2509.19192](http://arxiv.org/pdf/2509.19192)</td><td>◆ We propose a fully asynchronous peak detection approach for SPAD-based direct time-of-flight (dToF) flash LiDAR, enabling pixel-wise event-driven depth acquisition without global synchronization.
+<tr><td>2025-09-24</td><td>BiTAA: A Bi-Task Adversarial Attack for Object Detection and Depth Estimation via 3D Gaussian Splatting</td><td>[2509.19793](http://arxiv.org/pdf/2509.19793)</td><td>◆ Camera-based perception is critical to autonomous driving yet remains vulnerable to task-specific adversarial manipulations in object detection and monocular depth estimation.
+◆ Most existing 2D/3D attacks are developed in task silos, lack mechanisms to induce controllable depth bias, and offer no standardized protocol to quantify cross-task transfer, leaving the interaction between detection and depth underexplored.
+◆ We present BiTAA, a bi-task adversarial attack built on 3D Gaussian Splatting that yields a single perturbation capable of simultaneously degrading detection and biasing monocular depth.</td></tr>
+<tr><td>2025-09-24</td><td>VIMD: Monocular Visual-Inertial Motion and Depth Estimation</td><td>[2509.19713](http://arxiv.org/pdf/2509.19713)</td><td>◆ Accurate and efficient dense metric depth estimation is crucial for 3D visual perception in robotics and XR.
+◆ In this paper, we develop a monocular visual-inertial motion and depth (VIMD) learning framework to estimate dense metric depth by leveraging accurate and efficient MSCKF-based monocular visual-inertial motion tracking.
+◆ At the core the proposed VIMD is to exploit multi-view information to iteratively refine per-pixel scale, instead of globally fitting an invariant affine model as in the prior work.</td></tr>
+<tr><td>2025-09-24</td><td>Enhancing Transformer-Based Vision Models: Addressing Feature Map Anomalies Through Novel Optimization Strategies</td><td>[2509.19687](http://arxiv.org/pdf/2509.19687)</td><td>◆ Vision Transformers (ViTs) have demonstrated superior performance across a wide range of computer vision tasks.
+◆ However, structured noise artifacts in their feature maps hinder downstream applications such as segmentation and depth estimation.
+◆ We propose two novel and lightweight optimisation techniques- Structured Token Augmentation (STA) and Adaptive Noise Filtering (ANF)- to improve interpretability and mitigate these artefacts.</td></tr>
+<tr><td>2025-09-24</td><td>An on-chip Pixel Processing Approach with 2.4μs latency for Asynchronous Read-out of SPAD-based dToF Flash LiDARs</td><td>[2509.19192](http://arxiv.org/pdf/2509.19192)</td><td>◆ We propose a fully asynchronous peak detection approach for SPAD-based direct time-of-flight (dToF) flash LiDAR, enabling pixel-wise event-driven depth acquisition without global synchronization.
 ◆ By allowing pixels to independently report depth once a sufficient signal-to-noise ratio is achieved, the method reduces latency, mitigates motion blur, and increases effective frame rate compared to frame-based systems.
 ◆ The framework is validated under two hardware implementations: an offline 256$\times$128 SPAD array with PC based processing and a real-time FPGA proof-of-concept prototype with 2.4$\upmu$s latency for on-chip integration.</td></tr>
 <tr><td>2025-09-23</td><td>RoSe: Robust Self-supervised Stereo Matching under Adverse Weather Conditions</td><td>[2509.19165](http://arxiv.org/pdf/2509.19165)</td><td>◆ Recent self-supervised stereo matching methods have made significant progress, but their performance significantly degrades under adverse weather conditions such as night, rain, and fog.
@@ -2595,4 +2631,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.24
+> 更新于: 2025.09.25
