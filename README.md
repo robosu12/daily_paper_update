@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.25)
+# SLAM领域最新论文 (2025.09.26)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-25</td><td>AnywhereVLA: Language-Conditioned Exploration and Mobile Manipulation</td><td>[2509.21006](http://arxiv.org/pdf/2509.21006)</td><td>◆ We address natural language pick-and-place in unseen, unpredictable indoor environments with AnywhereVLA, a modular framework for mobile manipulation.
+◆ A user text prompt serves as an entry point and is parsed into a structured task graph that conditions classical SLAM with LiDAR and cameras, metric semantic mapping, and a task-aware frontier exploration policy.
+◆ An approach planner then selects visibility and reachability aware pre grasp base poses.</td></tr>
+<tr><td>2025-09-25</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
+◆ Recent advancements in feed-forward neural network-based pointmap regression have demonstrated the potential to recover high-fidelity 3D scene geometry directly from images, leveraging learned spatial priors to overcome limitations of traditional multi-view geometry methods.
+◆ However, the widely validated advantages of probabilistic multi-sensor information fusion are often discarded in these pipelines.</td></tr>
+<tr><td>2025-09-25</td><td>SLAM-Free Visual Navigation with Hierarchical Vision-Language Perception and Coarse-to-Fine Semantic Topological Planning</td><td>[2509.20739](http://arxiv.org/pdf/2509.20739)</td><td>◆ Conventional SLAM pipelines for legged robot navigation are fragile under rapid motion, calibration demands, and sensor drift, while offering limited semantic reasoning for task-driven exploration.
+◆ To deal with these issues, we propose a vision-only, SLAM-free navigation framework that replaces dense geometry with semantic reasoning and lightweight topological representations.
+◆ A hierarchical vision-language perception module fuses scene-level context with object-level cues for robust semantic inference.</td></tr>
 <tr><td>2025-09-24</td><td>Optical Ocean Recipes: Creating Realistic Datasets to Facilitate Underwater Vision Research</td><td>[2509.20171](http://arxiv.org/pdf/2509.20171)</td><td>◆ The development and evaluation of machine vision in underwater environments remains challenging, often relying on trial-and-error-based testing tailored to specific applications.
 ◆ This is partly due to the lack of controlled, ground-truthed testing environments that account for the optical challenges, such as color distortion from spectrally variant light attenuation, reduced contrast and blur from backscatter and volume scattering, and dynamic light patterns from natural or artificial illumination.
 ◆ Additionally, the appearance of ocean water in images varies significantly across regions, depths, and seasons.</td></tr>
@@ -497,6 +506,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-25</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
+◆ Recent advancements in feed-forward neural network-based pointmap regression have demonstrated the potential to recover high-fidelity 3D scene geometry directly from images, leveraging learned spatial priors to overcome limitations of traditional multi-view geometry methods.
+◆ However, the widely validated advantages of probabilistic multi-sensor information fusion are often discarded in these pipelines.</td></tr>
 <tr><td>2025-09-24</td><td>Optical Ocean Recipes: Creating Realistic Datasets to Facilitate Underwater Vision Research</td><td>[2509.20171](http://arxiv.org/pdf/2509.20171)</td><td>◆ The development and evaluation of machine vision in underwater environments remains challenging, often relying on trial-and-error-based testing tailored to specific applications.
 ◆ This is partly due to the lack of controlled, ground-truthed testing environments that account for the optical challenges, such as color distortion from spectrally variant light attenuation, reduced contrast and blur from backscatter and volume scattering, and dynamic light patterns from natural or artificial illumination.
 ◆ Additionally, the appearance of ocean water in images varies significantly across regions, depths, and seasons.</td></tr>
@@ -658,6 +670,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-25</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
+◆ Recent advancements in feed-forward neural network-based pointmap regression have demonstrated the potential to recover high-fidelity 3D scene geometry directly from images, leveraging learned spatial priors to overcome limitations of traditional multi-view geometry methods.
+◆ However, the widely validated advantages of probabilistic multi-sensor information fusion are often discarded in these pipelines.</td></tr>
 <tr><td>2025-09-24</td><td>Projective Kolmogorov Arnold Neural Networks (P-KANs): Entropy-Driven Functional Space Discovery for Interpretable Machine Learning</td><td>[2509.20049](http://arxiv.org/pdf/2509.20049)</td><td>◆ Kolmogorov-Arnold Networks (KANs) relocate learnable nonlinearities from nodes to edges, demonstrating remarkable capabilities in scientific machine learning and interpretable modeling.
 ◆ However, current KAN implementations suffer from fundamental inefficiencies due to redundancy in high-dimensional spline parameter spaces, where numerous distinct parameterisations yield functionally equivalent behaviors.
 ◆ This redundancy manifests as a &quot;nuisance space&quot; in the model&#x27;s Jacobian, leading to susceptibility to overfitting and poor generalization.</td></tr>
@@ -1293,6 +1308,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-23</td><td>SeHDR: Single-Exposure HDR Novel View Synthesis via 3D Gaussian Bracketing</td><td>[2509.20400](http://arxiv.org/pdf/2509.20400)</td><td>◆ This paper presents SeHDR, a novel high dynamic range 3D Gaussian Splatting (HDR-3DGS) approach for generating HDR novel views given multi-view LDR images.
+◆ Unlike existing methods that typically require the multi-view LDR input images to be captured from different exposures, which are tedious to capture and more likely to suffer from errors (e.g., object motion blurs and calibration/alignment inaccuracies), our approach learns the HDR scene representation from multi-view LDR images of a single exposure.
+◆ Our key insight to this ill-posed problem is that by first estimating Bracketed 3D Gaussians (i.e., with different exposures) from single-exposure multi-view LDR images, we may then be able to merge these bracketed 3D Gaussians into an HDR scene representation.</td></tr>
 <tr><td>2025-09-24</td><td>GS-RoadPatching: Inpainting Gaussians via 3D Searching and Placing for Driving Scenes</td><td>[2509.19937](http://arxiv.org/pdf/2509.19937)</td><td>◆ This paper presents GS-RoadPatching, an inpainting method for driving scene completion by referring to completely reconstructed regions, which are represented by 3D Gaussian Splatting (3DGS).
 ◆ Unlike existing 3DGS inpainting methods that perform generative completion relying on 2D perspective-view-based diffusion or GAN models to predict limited appearance or depth cues for missing regions, our approach enables substitutional scene inpainting and editing directly through the 3DGS modality, extricating it from requiring spatial-temporal consistency of 2D cross-modals and eliminating the need for time-intensive retraining of Gaussians.
 ◆ Our key insight is that the highly repetitive patterns in driving scenes often share multi-modal similarities within the implicit 3DGS feature space and are particularly suitable for structural matching to enable effective 3DGS-based substitutional inpainting.</td></tr>
@@ -2066,6 +2084,12 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-25</td><td>Finding 3D Positions of Distant Objects from Noisy Camera Movement and Semantic Segmentation Sequences</td><td>[2509.20906](http://arxiv.org/pdf/2509.20906)</td><td>◆ 3D object localisation based on a sequence of camera measurements is essential for safety-critical surveillance tasks, such as drone-based wildfire monitoring.
+◆ Localisation of objects detected with a camera can typically be solved with dense depth estimation or 3D scene reconstruction.
+◆ However, in the context of distant objects or tasks limited by the amount of available computational resources, neither solution is feasible.</td></tr>
+<tr><td>2025-09-24</td><td>Shared Neural Space: Unified Precomputed Feature Encoding for Multi-Task and Cross Domain Vision</td><td>[2509.20481](http://arxiv.org/pdf/2509.20481)</td><td>◆ The majority of AI models in imaging and vision are customized to perform on specific high-precision task.
+◆ However, this strategy is inefficient for applications with a series of modular tasks, since each requires a mapping into a disparate latent domain.
+◆ To address this inefficiency, we proposed a universal Neural Space (NS), where an encoder-decoder framework pre-computes features across vision and imaging tasks.</td></tr>
 <tr><td>2025-09-24</td><td>BiTAA: A Bi-Task Adversarial Attack for Object Detection and Depth Estimation via 3D Gaussian Splatting</td><td>[2509.19793](http://arxiv.org/pdf/2509.19793)</td><td>◆ Camera-based perception is critical to autonomous driving yet remains vulnerable to task-specific adversarial manipulations in object detection and monocular depth estimation.
 ◆ Most existing 2D/3D attacks are developed in task silos, lack mechanisms to induce controllable depth bias, and offer no standardized protocol to quantify cross-task transfer, leaving the interaction between detection and depth underexplored.
 ◆ We present BiTAA, a bi-task adversarial attack built on 3D Gaussian Splatting that yields a single perturbation capable of simultaneously degrading detection and biasing monocular depth.</td></tr>
@@ -2631,4 +2655,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.25
+> 更新于: 2025.09.26
