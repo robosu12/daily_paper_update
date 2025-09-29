@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.28)
+# SLAM领域最新论文 (2025.09.29)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-26</td><td>IMU-Preintegrated Radar Factors for Asynchronous Radar-LiDAR-Inertial SLAM</td><td>[2509.22288](http://arxiv.org/pdf/2509.22288)</td><td>◆ Fixed-lag Radar-LiDAR-Inertial smoothers conventionally create one factor graph node per measurement to compensate for the lack of time synchronization between radar and LiDAR.
+◆ For a radar-LiDAR sensor pair with equal rates, this strategy results in a state creation rate of twice the individual sensor frequencies.
+◆ This doubling of the number of states per second yields high optimization costs, inhibiting real-time performance on resource-constrained hardware.</td></tr>
+<tr><td>2025-09-26</td><td>An Adaptive ICP LiDAR Odometry Based on Reliable Initial Pose</td><td>[2509.22058](http://arxiv.org/pdf/2509.22058)</td><td>◆ As a key technology for autonomous navigation and positioning in mobile robots, light detection and ranging (LiDAR) odometry is widely used in autonomous driving applications.
+◆ The Iterative Closest Point (ICP)-based methods have become the core technique in LiDAR odometry due to their efficient and accurate point cloud registration capability.
+◆ However, some existing ICP-based methods do not consider the reliability of the initial pose, which may cause the method to converge to a local optimum.</td></tr>
+<tr><td>2025-09-25</td><td>Real-Time Indoor Object SLAM with LLM-Enhanced Priors</td><td>[2509.21602](http://arxiv.org/pdf/2509.21602)</td><td>◆ Object-level Simultaneous Localization and Mapping (SLAM), which incorporates semantic information for high-level scene understanding, faces challenges of under-constrained optimization due to sparse observations.
+◆ Prior work has introduced additional constraints using commonsense knowledge, but obtaining such priors has traditionally been labor-intensive and lacks generalizability across diverse object categories.
+◆ We address this limitation by leveraging large language models (LLMs) to provide commonsense knowledge of object geometric attributes, specifically size and orientation, as prior factors in a graph-based SLAM framework.</td></tr>
 <tr><td>2025-09-25</td><td>AnywhereVLA: Language-Conditioned Exploration and Mobile Manipulation</td><td>[2509.21006](http://arxiv.org/pdf/2509.21006)</td><td>◆ We address natural language pick-and-place in unseen, unpredictable indoor environments with AnywhereVLA, a modular framework for mobile manipulation.
 ◆ A user text prompt serves as an entry point and is parsed into a structured task graph that conditions classical SLAM with LiDAR and cameras, metric semantic mapping, and a task-aware frontier exploration policy.
 ◆ An approach planner then selects visibility and reachability aware pre grasp base poses.</td></tr>
@@ -666,6 +675,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-26</td><td>Vector Resonant Relaxation and Statistical Closure Theory. II. One-loop Closure</td><td>[2509.22164](http://arxiv.org/pdf/2509.22164)</td><td>◆ We use stellar dynamics as a testbed for statistical closure theory.
+◆ We focus on the process of &quot;Vector Resonant Relaxation,&quot; a long-range, non-linear, and correlated relaxation mechanism that drives the reorientation of stellar orbital planes around a supermassive black hole.
+◆ This process provides a natural setting to evaluate the predictive power of generic statistical closure schemes for dynamical correlation functions, in the fully non-linear and non-perturbative regime.</td></tr>
+<tr><td>2025-09-25</td><td>Guiding Audio Editing with Audio Language Model</td><td>[2509.21625](http://arxiv.org/pdf/2509.21625)</td><td>◆ Audio editing plays a central role in VR/AR immersion, virtual conferencing, sound design, and other interactive media.
+◆ However, recent generative audio editing models depend on template-like instruction formats and are restricted to mono-channel audio.
+◆ These models fail to deal with declarative audio editing, where the user declares what the desired outcome should be, while leaving the details of editing operations to the system.</td></tr>
 <tr><td>2025-09-25</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
 ◆ Recent advancements in feed-forward neural network-based pointmap regression have demonstrated the potential to recover high-fidelity 3D scene geometry directly from images, leveraging learned spatial priors to overcome limitations of traditional multi-view geometry methods.
 ◆ However, the widely validated advantages of probabilistic multi-sensor information fusion are often discarded in these pipelines.</td></tr>
@@ -1061,6 +1076,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-26</td><td>PANICL: Mitigating Over-Reliance on Single Prompt in Visual In-Context Learning</td><td>[2509.21926](http://arxiv.org/pdf/2509.21926)</td><td>◆ Visual In-Context Learning (VICL) uses input-output image pairs, referred to as in-context pairs (or examples), as prompts alongside query images to guide models in performing diverse vision tasks.
+◆ However, VICL often suffers from over-reliance on a single in-context pair, which can lead to biased and unstable predictions.
+◆ We introduce PAtch-based $k$-Nearest neighbor visual In-Context Learning (PANICL), a general training-free framework that mitigates this issue by leveraging multiple in-context pairs.</td></tr>
 <tr><td>2025-09-23</td><td>Hierarchical Neural Semantic Representation for 3D Semantic Correspondence</td><td>[2509.17431](http://arxiv.org/pdf/2509.17431)</td><td>◆ This paper presents a new approach to estimate accurate and robust 3D semantic correspondence with the hierarchical neural semantic representation.
 ◆ Our work has three key contributions.
 ◆ First, we design the hierarchical neural semantic representation (HNSR), which consists of a global semantic feature to capture high-level structure and multi-resolution local geometric features to preserve fine details, by carefully harnessing 3D priors from pre-trained 3D generative models.</td></tr>
@@ -1300,6 +1318,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-26</td><td>Polysemous Language Gaussian Splatting via Matching-based Mask Lifting</td><td>[2509.22225](http://arxiv.org/pdf/2509.22225)</td><td>◆ Lifting 2D open-vocabulary understanding into 3D Gaussian Splatting (3DGS) scenes is a critical challenge.
+◆ However, mainstream methods suffer from three key flaws: (i) their reliance on costly per-scene retraining prevents plug-and-play application; (ii) their restrictive monosemous design fails to represent complex, multi-concept semantics; and (iii) their vulnerability to cross-view semantic inconsistencies corrupts the final semantic representation.
+◆ To overcome these limitations, we introduce MUSplat, a training-free framework that abandons feature optimization entirely.</td></tr>
+<tr><td>2025-09-25</td><td>PowerGS: Display-Rendering Power Co-Optimization for Neural Rendering in Power-Constrained XR Systems</td><td>[2509.21702](http://arxiv.org/pdf/2509.21702)</td><td>◆ 3D Gaussian Splatting (3DGS) combines classic image-based rendering, pointbased graphics, and modern differentiable techniques, and offers an interesting alternative to traditional physically-based rendering.
+◆ 3DGS-family models are far from efficient for power-constrained Extended Reality (XR) devices, which need to operate at a Watt-level.
+◆ This paper introduces PowerGS, the first framework to jointly minimize the rendering and display power in 3DGS under a quality constraint.</td></tr>
 <tr><td>2025-09-23</td><td>SeHDR: Single-Exposure HDR Novel View Synthesis via 3D Gaussian Bracketing</td><td>[2509.20400](http://arxiv.org/pdf/2509.20400)</td><td>◆ This paper presents SeHDR, a novel high dynamic range 3D Gaussian Splatting (HDR-3DGS) approach for generating HDR novel views given multi-view LDR images.
 ◆ Unlike existing methods that typically require the multi-view LDR input images to be captured from different exposures, which are tedious to capture and more likely to suffer from errors (e.g., object motion blurs and calibration/alignment inaccuracies), our approach learns the HDR scene representation from multi-view LDR images of a single exposure.
 ◆ Our key insight to this ill-posed problem is that by first estimating Bracketed 3D Gaussians (i.e., with different exposures) from single-exposure multi-view LDR images, we may then be able to merge these bracketed 3D Gaussians into an HDR scene representation.</td></tr>
@@ -2074,6 +2098,15 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-26</td><td>CCNeXt: An Effective Self-Supervised Stereo Depth Estimation Approach</td><td>[2509.22627](http://arxiv.org/pdf/2509.22627)</td><td>◆ Depth Estimation plays a crucial role in recent applications in robotics, autonomous vehicles, and augmented reality.
+◆ These scenarios commonly operate under constraints imposed by computational power.
+◆ Stereo image pairs offer an effective solution for depth estimation since it only needs to estimate the disparity of pixels in image pairs to determine the depth in a known rectified system.</td></tr>
+<tr><td>2025-09-26</td><td>EfficientDepth: A Fast and Detail-Preserving Monocular Depth Estimation Model</td><td>[2509.22527](http://arxiv.org/pdf/2509.22527)</td><td>◆ Monocular depth estimation (MDE) plays a pivotal role in various computer vision applications, such as robotics, augmented reality, and autonomous driving.
+◆ Despite recent advancements, existing methods often fail to meet key requirements for 3D reconstruction and view synthesis, including geometric consistency, fine details, robustness to real-world challenges like reflective surfaces, and efficiency for edge devices.
+◆ To address these challenges, we introduce a novel MDE system, called EfficientDepth, which combines a transformer architecture with a lightweight convolutional decoder, as well as a bimodal density head that allows the network to estimate detailed depth maps.</td></tr>
+<tr><td>2025-09-26</td><td>DualFocus: Depth from Focus with Spatio-Focal Dual Variational Constraints</td><td>[2509.21992](http://arxiv.org/pdf/2509.21992)</td><td>◆ Depth-from-Focus (DFF) enables precise depth estimation by analyzing focus cues across a stack of images captured at varying focal lengths.
+◆ While recent learning-based approaches have advanced this field, they often struggle in complex scenes with fine textures or abrupt depth changes, where focus cues may become ambiguous or misleading.
+◆ We present DualFocus, a novel DFF framework that leverages the focal stack&#x27;s unique gradient patterns induced by focus variation, jointly modeling focus changes over spatial and focal dimensions.</td></tr>
 <tr><td>2025-09-25</td><td>Finding 3D Positions of Distant Objects from Noisy Camera Movement and Semantic Segmentation Sequences</td><td>[2509.20906](http://arxiv.org/pdf/2509.20906)</td><td>◆ 3D object localisation based on a sequence of camera measurements is essential for safety-critical surveillance tasks, such as drone-based wildfire monitoring.
 ◆ Localisation of objects detected with a camera can typically be solved with dense depth estimation or 3D scene reconstruction.
 ◆ However, in the context of distant objects or tasks limited by the amount of available computational resources, neither solution is feasible.</td></tr>
@@ -2643,4 +2676,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.28
+> 更新于: 2025.09.29
