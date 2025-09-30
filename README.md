@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.29)
+# SLAM领域最新论文 (2025.09.30)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-29</td><td>PROFusion: Robust and Accurate Dense Reconstruction via Camera Pose Regression and Optimization</td><td>[2509.24236](http://arxiv.org/pdf/2509.24236)</td><td>◆ Real-time dense scene reconstruction during unstable camera motions is crucial for robotics, yet current RGB-D SLAM systems fail when cameras experience large viewpoint changes, fast motions, or sudden shaking.
+◆ Classical optimization-based methods deliver high accuracy but fail with poor initialization during large motions, while learning-based approaches provide robustness but lack sufficient accuracy for dense reconstruction.
+◆ We address this challenge through a combination of learning-based initialization with optimization-based refinement.</td></tr>
+<tr><td>2025-09-28</td><td>GRS-SLAM3R: Real-Time Dense SLAM with Gated Recurrent State</td><td>[2509.23737](http://arxiv.org/pdf/2509.23737)</td><td>◆ DUSt3R-based end-to-end scene reconstruction has recently shown promising results in dense visual SLAM.
+◆ However, most existing methods only use image pairs to estimate pointmaps, overlooking spatial memory and global consistency.To this end, we introduce GRS-SLAM3R, an end-to-end SLAM framework for dense scene reconstruction and pose estimation from RGB images without any prior knowledge of the scene or camera parameters.
+◆ Unlike existing DUSt3R-based frameworks, which operate on all image pairs and predict per-pair point maps in local coordinate frames, our method supports sequentialized input and incrementally estimates metric-scale point clouds in the global coordinate.</td></tr>
+<tr><td>2025-09-28</td><td>From Fields to Splats: A Cross-Domain Survey of Real-Time Neural Scene Representations</td><td>[2509.23555](http://arxiv.org/pdf/2509.23555)</td><td>◆ Neural scene representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have transformed how 3D environments are modeled, rendered, and interpreted.
+◆ NeRF introduced view-consistent photorealism via volumetric rendering; 3DGS has rapidly emerged as an explicit, efficient alternative that supports high-quality rendering, faster optimization, and integration into hybrid pipelines for enhanced photorealism and task-driven scene understanding.
+◆ This survey examines how 3DGS is being adopted across SLAM, telepresence and teleoperation, robotic manipulation, and 3D content generation.</td></tr>
+<tr><td>2025-09-27</td><td>EKF-Based Fusion of Wi-Fi/LiDAR/IMU for Indoor Localization and Navigation</td><td>[2509.23118](http://arxiv.org/pdf/2509.23118)</td><td>◆ Conventional Wi-Fi received signal strength indicator (RSSI) fingerprinting cannot meet the growing demand for accurate indoor localization and navigation due to its lower accuracy, while solutions based on light detection and ranging (LiDAR) can provide better localization performance but is limited by their higher deployment cost and complexity.
+◆ To address these issues, we propose a novel indoor localization and navigation framework integrating Wi-Fi RSSI fingerprinting, LiDAR-based simultaneous localization and mapping (SLAM), and inertial measurement unit (IMU) navigation based on an extended Kalman filter (EKF).
+◆ Specifically, coarse localization by deep neural network (DNN)-based Wi-Fi RSSI fingerprinting is refined by IMU-based dynamic positioning using a Gmapping-based SLAM to generate an occupancy grid map and output high-frequency attitude estimates, which is followed by EKF prediction-update integrating sensor information while effectively suppressing Wi-Fi-induced noise and IMU drift errors.</td></tr>
+<tr><td>2025-09-26</td><td>Good Weights: Proactive, Adaptive Dead Reckoning Fusion for Continuous and Robust Visual SLAM</td><td>[2509.22910](http://arxiv.org/pdf/2509.22910)</td><td>◆ Given that Visual SLAM relies on appearance cues for localization and scene understanding, texture-less or visually degraded environments (e.g., plain walls or low lighting) lead to poor pose estimation and track loss.
+◆ However, robots are typically equipped with sensors that provide some form of dead reckoning odometry with reasonable short-time performance but unreliable long-time performance.
+◆ The Good Weights (GW) algorithm described here provides a framework to adaptively integrate dead reckoning (DR) with passive visual SLAM for continuous and accurate frame-level pose estimation.</td></tr>
 <tr><td>2025-09-26</td><td>IMU-Preintegrated Radar Factors for Asynchronous Radar-LiDAR-Inertial SLAM</td><td>[2509.22288](http://arxiv.org/pdf/2509.22288)</td><td>◆ Fixed-lag Radar-LiDAR-Inertial smoothers conventionally create one factor graph node per measurement to compensate for the lack of time synchronization between radar and LiDAR.
 ◆ For a radar-LiDAR sensor pair with equal rates, this strategy results in a state creation rate of twice the individual sensor frequencies.
 ◆ This doubling of the number of states per second yields high optimization costs, inhibiting real-time performance on resource-constrained hardware.</td></tr>
@@ -34,7 +49,7 @@
 <tr><td>2025-09-25</td><td>AnywhereVLA: Language-Conditioned Exploration and Mobile Manipulation</td><td>[2509.21006](http://arxiv.org/pdf/2509.21006)</td><td>◆ We address natural language pick-and-place in unseen, unpredictable indoor environments with AnywhereVLA, a modular framework for mobile manipulation.
 ◆ A user text prompt serves as an entry point and is parsed into a structured task graph that conditions classical SLAM with LiDAR and cameras, metric semantic mapping, and a task-aware frontier exploration policy.
 ◆ An approach planner then selects visibility and reachability aware pre grasp base poses.</td></tr>
-<tr><td>2025-09-25</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
+<tr><td>2025-09-29</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
 ◆ Recent advancements in feed-forward neural network-based pointmap regression have demonstrated the potential to recover high-fidelity 3D scene geometry directly from images, leveraging learned spatial priors to overcome limitations of traditional multi-view geometry methods.
 ◆ However, the widely validated advantages of probabilistic multi-sensor information fusion are often discarded in these pipelines.</td></tr>
 <tr><td>2025-09-25</td><td>SLAM-Free Visual Navigation with Hierarchical Vision-Language Perception and Coarse-to-Fine Semantic Topological Planning</td><td>[2509.20739](http://arxiv.org/pdf/2509.20739)</td><td>◆ Conventional SLAM pipelines for legged robot navigation are fragile under rapid motion, calibration demands, and sensor drift, while offering limited semantic reasoning for task-driven exploration.
@@ -515,7 +530,13 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-09-25</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
+<tr><td>2025-09-28</td><td>GRS-SLAM3R: Real-Time Dense SLAM with Gated Recurrent State</td><td>[2509.23737](http://arxiv.org/pdf/2509.23737)</td><td>◆ DUSt3R-based end-to-end scene reconstruction has recently shown promising results in dense visual SLAM.
+◆ However, most existing methods only use image pairs to estimate pointmaps, overlooking spatial memory and global consistency.To this end, we introduce GRS-SLAM3R, an end-to-end SLAM framework for dense scene reconstruction and pose estimation from RGB images without any prior knowledge of the scene or camera parameters.
+◆ Unlike existing DUSt3R-based frameworks, which operate on all image pairs and predict per-pair point maps in local coordinate frames, our method supports sequentialized input and incrementally estimates metric-scale point clouds in the global coordinate.</td></tr>
+<tr><td>2025-09-26</td><td>Good Weights: Proactive, Adaptive Dead Reckoning Fusion for Continuous and Robust Visual SLAM</td><td>[2509.22910](http://arxiv.org/pdf/2509.22910)</td><td>◆ Given that Visual SLAM relies on appearance cues for localization and scene understanding, texture-less or visually degraded environments (e.g., plain walls or low lighting) lead to poor pose estimation and track loss.
+◆ However, robots are typically equipped with sensors that provide some form of dead reckoning odometry with reasonable short-time performance but unreliable long-time performance.
+◆ The Good Weights (GW) algorithm described here provides a framework to adaptively integrate dead reckoning (DR) with passive visual SLAM for continuous and accurate frame-level pose estimation.</td></tr>
+<tr><td>2025-09-29</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
 ◆ Recent advancements in feed-forward neural network-based pointmap regression have demonstrated the potential to recover high-fidelity 3D scene geometry directly from images, leveraging learned spatial priors to overcome limitations of traditional multi-view geometry methods.
 ◆ However, the widely validated advantages of probabilistic multi-sensor information fusion are often discarded in these pipelines.</td></tr>
 <tr><td>2025-09-24</td><td>Optical Ocean Recipes: Creating Realistic Datasets to Facilitate Underwater Vision Research</td><td>[2509.20171](http://arxiv.org/pdf/2509.20171)</td><td>◆ The development and evaluation of machine vision in underwater environments remains challenging, often relying on trial-and-error-based testing tailored to specific applications.
@@ -679,13 +700,16 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-28</td><td>Prepare for Warp Speed: Sub-millisecond Visual Place Recognition Using Event Cameras</td><td>[2509.24094](http://arxiv.org/pdf/2509.24094)</td><td>◆ Visual Place Recognition (VPR) enables systems to identify previously visited locations within a map, a fundamental task for autonomous navigation.
+◆ Prior works have developed VPR solutions using event cameras, which asynchronously measure per-pixel brightness changes with microsecond temporal resolution.
+◆ However, these approaches rely on dense representations of the inherently sparse camera output and require tens to hundreds of milliseconds of event data to predict a place.</td></tr>
 <tr><td>2025-09-26</td><td>Vector Resonant Relaxation and Statistical Closure Theory. II. One-loop Closure</td><td>[2509.22164](http://arxiv.org/pdf/2509.22164)</td><td>◆ We use stellar dynamics as a testbed for statistical closure theory.
 ◆ We focus on the process of &quot;Vector Resonant Relaxation,&quot; a long-range, non-linear, and correlated relaxation mechanism that drives the reorientation of stellar orbital planes around a supermassive black hole.
 ◆ This process provides a natural setting to evaluate the predictive power of generic statistical closure schemes for dynamical correlation functions, in the fully non-linear and non-perturbative regime.</td></tr>
 <tr><td>2025-09-25</td><td>Guiding Audio Editing with Audio Language Model</td><td>[2509.21625](http://arxiv.org/pdf/2509.21625)</td><td>◆ Audio editing plays a central role in VR/AR immersion, virtual conferencing, sound design, and other interactive media.
 ◆ However, recent generative audio editing models depend on template-like instruction formats and are restricted to mono-channel audio.
 ◆ These models fail to deal with declarative audio editing, where the user declares what the desired outcome should be, while leaving the details of editing operations to the system.</td></tr>
-<tr><td>2025-09-25</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
+<tr><td>2025-09-29</td><td>MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM</td><td>[2509.20757](http://arxiv.org/pdf/2509.20757)</td><td>◆ Visual SLAM is a cornerstone technique in robotics, autonomous driving and extended reality (XR), yet classical systems often struggle with low-texture environments, scale ambiguity, and degraded performance under challenging visual conditions.
 ◆ Recent advancements in feed-forward neural network-based pointmap regression have demonstrated the potential to recover high-fidelity 3D scene geometry directly from images, leveraging learned spatial priors to overcome limitations of traditional multi-view geometry methods.
 ◆ However, the widely validated advantages of probabilistic multi-sensor information fusion are often discarded in these pipelines.</td></tr>
 <tr><td>2025-09-24</td><td>Projective Kolmogorov Arnold Neural Networks (P-KANs): Entropy-Driven Functional Space Discovery for Interpretable Machine Learning</td><td>[2509.20049](http://arxiv.org/pdf/2509.20049)</td><td>◆ Kolmogorov-Arnold Networks (KANs) relocate learnable nonlinearities from nodes to edges, demonstrating remarkable capabilities in scientific machine learning and interpretable modeling.
@@ -1108,7 +1132,7 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 ◆ 引入反射率图作为稳定匹配域，并结合无训练匹配流程（SuperPoint与MINIMA LightGlue），增强跨视角对应关系的准确性。  
 ◆ 提出几何感知的异常匹配剔除机制，综合利用地形高程和物理阴影图，有效抑制声学遮挡和地形不一致区域的错误匹配。  
 实验表明，该方法在匹配误差、几何一致性和视角鲁棒性上均优于传统及基于CNN与Transformer的先进方法，为复杂海底环境提供了高精度、数据高效且物理解释性强的匹配解决方案。</td></tr>
-<tr><td>2025-09-11</td><td>Fine-Grained Cross-View Localization via Local Feature Matching and Monocular Depth Priors</td><td>[2509.09792](http://arxiv.org/pdf/2509.09792)</td><td>本文提出了一种精细化的跨视角定位方法，通过结合局部特征匹配与单目深度先验，实现了地面图像与航空图像之间的高精度位姿估计。  
+<tr><td>2025-09-29</td><td>Loc$^2$: Interpretable Cross-View Localization via Depth-Lifted Local Feature Matching</td><td>[2509.09792](http://arxiv.org/pdf/2509.09792)</td><td>本文提出了一种精细化的跨视角定位方法，通过结合局部特征匹配与单目深度先验，实现了地面图像与航空图像之间的高精度位姿估计。  
 ◆ 直接建立地面与航空图像间的局部特征对应关系，避免了传统方法中将整张图像转换为鸟瞰图所造成的信息损失。  
 ◆ 引入单目深度先验，仅将匹配成功的关键点提升至鸟瞰空间，支持使用度量深度和相对深度两种模式，提升了方法的适应性和鲁棒性。  
 ◆ 提出一种尺度感知的普氏对齐算法，能够从对应关系中估计相机位姿，并在使用相对深度时恢复尺度信息。  
@@ -1326,6 +1350,27 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-29</td><td>Triangle Splatting+: Differentiable Rendering with Opaque Triangles</td><td>[2509.25122](http://arxiv.org/pdf/2509.25122)</td><td>◆ Reconstructing 3D scenes and synthesizing novel views has seen rapid progress in recent years.
+◆ Neural Radiance Fields demonstrated that continuous volumetric radiance fields can achieve high-quality image synthesis, but their long training and rendering times limit practicality.
+◆ 3D Gaussian Splatting (3DGS) addressed these issues by representing scenes with millions of Gaussians, enabling real-time rendering and fast optimization.</td></tr>
+<tr><td>2025-09-29</td><td>GEM: 3D Gaussian Splatting for Efficient and Accurate Cryo-EM Reconstruction</td><td>[2509.25075](http://arxiv.org/pdf/2509.25075)</td><td>◆ Cryo-electron microscopy (cryo-EM) has become a central tool for high-resolution structural biology, yet the massive scale of datasets (often exceeding 100k particle images) renders 3D reconstruction both computationally expensive and memory intensive.
+◆ Traditional Fourier-space methods are efficient but lose fidelity due to repeated transforms, while recent real-space approaches based on neural radiance fields (NeRFs) improve accuracy but incur cubic memory and computation overhead.
+◆ Therefore, we introduce GEM, a novel cryo-EM reconstruction framework built on 3D Gaussian Splatting (3DGS) that operates directly in real-space while maintaining high efficiency.</td></tr>
+<tr><td>2025-09-29</td><td>DWGS: Enhancing Sparse-View Gaussian Splatting with Hybrid-Loss Depth Estimation and Bidirectional Warping</td><td>[2509.24893](http://arxiv.org/pdf/2509.24893)</td><td>◆ Novel View Synthesis (NVS) from sparse views remains a core challenge in 3D reconstruction, typically suffering from overfitting, geometric distortion, and incomplete scene recovery due to limited multi-view constraints.
+◆ Although 3D Gaussian Splatting (3DGS) enables real-time, high-fidelity rendering, it suffers from floating artifacts and structural inconsistencies under sparse-input settings.
+◆ To address these issues, we propose DWGS, a novel unified framework that enhances 3DGS for sparse-view synthesis by integrating robust structural cues, virtual view constraints, and occluded region completion.</td></tr>
+<tr><td>2025-09-29</td><td>ExGS: Extreme 3D Gaussian Compression with Diffusion Priors</td><td>[2509.24758](http://arxiv.org/pdf/2509.24758)</td><td>◆ Neural scene representations, such as 3D Gaussian Splatting (3DGS), have enabled high-quality neural rendering; however, their large storage and transmission costs hinder deployment in resource-constrained environments.
+◆ Existing compression methods either rely on costly optimization, which is slow and scene-specific, or adopt training-free pruning and quantization, which degrade rendering quality under high compression ratios.
+◆ In contrast, recent data-driven approaches provide a promising direction to overcome this trade-off, enabling efficient compression while preserving high rendering quality.</td></tr>
+<tr><td>2025-09-29</td><td>Proxy-GS: Efficient 3D Gaussian Splatting via Proxy Mesh</td><td>[2509.24421](http://arxiv.org/pdf/2509.24421)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as an efficient approach for achieving photorealistic rendering.
+◆ Recent MLP-based variants further improve visual fidelity but introduce substantial decoding overhead during rendering.
+◆ To alleviate computation cost, several pruning strategies and level-of-detail (LOD) techniques have been introduced, aiming to effectively reduce the number of Gaussian primitives in large-scale scenes.</td></tr>
+<tr><td>2025-09-28</td><td>From Fields to Splats: A Cross-Domain Survey of Real-Time Neural Scene Representations</td><td>[2509.23555](http://arxiv.org/pdf/2509.23555)</td><td>◆ Neural scene representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have transformed how 3D environments are modeled, rendered, and interpreted.
+◆ NeRF introduced view-consistent photorealism via volumetric rendering; 3DGS has rapidly emerged as an explicit, efficient alternative that supports high-quality rendering, faster optimization, and integration into hybrid pipelines for enhanced photorealism and task-driven scene understanding.
+◆ This survey examines how 3DGS is being adopted across SLAM, telepresence and teleoperation, robotic manipulation, and 3D content generation.</td></tr>
+<tr><td>2025-09-26</td><td>Learning Unified Representation of 3D Gaussian Splatting</td><td>[2509.22917](http://arxiv.org/pdf/2509.22917)</td><td>◆ A well-designed vectorized representation is crucial for the learning systems natively based on 3D Gaussian Splatting.
+◆ While 3DGS enables efficient and explicit 3D reconstruction, its parameter-based representation remains hard to learn as features, especially for neural-network-based models.
+◆ Directly feeding raw Gaussian parameters into learning frameworks fails to address the non-unique and heterogeneous nature of the Gaussian parameterization, yielding highly data-dependent models.</td></tr>
 <tr><td>2025-09-26</td><td>Polysemous Language Gaussian Splatting via Matching-based Mask Lifting</td><td>[2509.22225](http://arxiv.org/pdf/2509.22225)</td><td>◆ Lifting 2D open-vocabulary understanding into 3D Gaussian Splatting (3DGS) scenes is a critical challenge.
 ◆ However, mainstream methods suffer from three key flaws: (i) their reliance on costly per-scene retraining prevents plug-and-play application; (ii) their restrictive monosemous design fails to represent complex, multi-concept semantics; and (iii) their vulnerability to cross-view semantic inconsistencies corrupts the final semantic representation.
 ◆ To overcome these limitations, we introduce MUSplat, a training-free framework that abandons feature optimization entirely.</td></tr>
@@ -2108,6 +2153,24 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-29</td><td>Fast Feature Field ($\text{F}^3$): A Predictive Representation of Events</td><td>[2509.25146](http://arxiv.org/pdf/2509.25146)</td><td>◆ This paper develops a mathematical argument and algorithms for building representations of data from event-based cameras, that we call Fast Feature Field ($\text{F}^3$).
+◆ We learn this representation by predicting future events from past events and show that it preserves scene structure and motion information.
+◆ $\text{F}^3$ exploits the sparsity of event data and is robust to noise and variations in event rates.</td></tr>
+<tr><td>2025-09-29</td><td>BRIDGE -- Building Reinforcement-Learning Depth-to-Image Data Generation Engine for Monocular Depth Estimation</td><td>[2509.25077](http://arxiv.org/pdf/2509.25077)</td><td>◆ Monocular Depth Estimation (MDE) is a foundational task for computer vision.
+◆ Traditional methods are limited by data scarcity and quality, hindering their robustness.
+◆ To overcome this, we propose BRIDGE, an RL-optimized depth-to-image (D2I) generation framework that synthesizes over 20M realistic and geometrically accurate RGB images, each intrinsically paired with its ground truth depth, from diverse source depth maps.</td></tr>
+<tr><td>2025-09-29</td><td>DWGS: Enhancing Sparse-View Gaussian Splatting with Hybrid-Loss Depth Estimation and Bidirectional Warping</td><td>[2509.24893](http://arxiv.org/pdf/2509.24893)</td><td>◆ Novel View Synthesis (NVS) from sparse views remains a core challenge in 3D reconstruction, typically suffering from overfitting, geometric distortion, and incomplete scene recovery due to limited multi-view constraints.
+◆ Although 3D Gaussian Splatting (3DGS) enables real-time, high-fidelity rendering, it suffers from floating artifacts and structural inconsistencies under sparse-input settings.
+◆ To address these issues, we propose DWGS, a novel unified framework that enhances 3DGS for sparse-view synthesis by integrating robust structural cues, virtual view constraints, and occluded region completion.</td></tr>
+<tr><td>2025-09-28</td><td>RPG360: Robust 360 Depth Estimation with Perspective Foundation Models and Graph Optimization</td><td>[2509.23991](http://arxiv.org/pdf/2509.23991)</td><td>◆ The increasing use of 360 images across various domains has emphasized the need for robust depth estimation techniques tailored for omnidirectional images.
+◆ However, obtaining large-scale labeled datasets for 360 depth estimation remains a significant challenge.
+◆ In this paper, we propose RPG360, a training-free robust 360 monocular depth estimation method that leverages perspective foundation models and graph optimization.</td></tr>
+<tr><td>2025-09-28</td><td>FastViDAR: Real-Time Omnidirectional Depth Estimation via Alternative Hierarchical Attention</td><td>[2509.23733](http://arxiv.org/pdf/2509.23733)</td><td>◆ In this paper we propose FastViDAR, a novel framework that takes four fisheye camera inputs and produces a full $360^\circ$ depth map along with per-camera depth, fusion depth, and confidence estimates.
+◆ Our main contributions are: (1) We introduce Alternative Hierarchical Attention (AHA) mechanism that efficiently fuses features across views through separate intra-frame and inter-frame windowed self-attention, achieving cross-view feature mixing with reduced overhead.
+◆ (2) We propose a novel ERP fusion approach that projects multi-view depth estimates to a shared equirectangular coordinate system to obtain the final fusion depth.</td></tr>
+<tr><td>2025-09-28</td><td>Efficient Domain-Adaptive Multi-Task Dense Prediction with Vision Foundation Models</td><td>[2509.23626](http://arxiv.org/pdf/2509.23626)</td><td>◆ Multi-task dense prediction, which aims to jointly solve tasks like semantic segmentation and depth estimation, is crucial for robotics applications but suffers from domain shift when deploying models in new environments.
+◆ While unsupervised domain adaptation (UDA) addresses this challenge for single tasks, existing multi-task UDA methods primarily rely on adversarial learning approaches that are less effective than recent self-training techniques.
+◆ In this paper, we introduce FAMDA, a simple yet effective UDA framework that bridges this gap by leveraging Vision Foundation Models (VFMs) as powerful teachers.</td></tr>
 <tr><td>2025-09-26</td><td>CCNeXt: An Effective Self-Supervised Stereo Depth Estimation Approach</td><td>[2509.22627](http://arxiv.org/pdf/2509.22627)</td><td>◆ Depth Estimation plays a crucial role in recent applications in robotics, autonomous vehicles, and augmented reality.
 ◆ These scenarios commonly operate under constraints imposed by computational power.
 ◆ Stereo image pairs offer an effective solution for depth estimation since it only needs to estimate the disparity of pixels in image pairs to determine the depth in a known rectified system.</td></tr>
@@ -2688,4 +2751,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.29
+> 更新于: 2025.09.30
