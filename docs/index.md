@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.09.30)
+# SLAM领域最新论文 (2025.10.01)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-30</td><td>Benchmarking Egocentric Visual-Inertial SLAM at City Scale</td><td>[2509.26639](http://arxiv.org/pdf/2509.26639)</td><td>◆ Precise 6-DoF simultaneous localization and mapping (SLAM) from onboard sensors is critical for wearable devices capturing egocentric data, which exhibits specific challenges, such as a wider diversity of motions and viewpoints, prevalent dynamic visual content, or long sessions affected by time-varying sensor calibration.
+◆ While recent progress on SLAM has been swift, academic research is still driven by benchmarks that do not reflect these challenges or do not offer sufficiently accurate ground truth poses.
+◆ In this paper, we introduce a new dataset and benchmark for visual-inertial SLAM with egocentric, multi-modal data.</td></tr>
+<tr><td>2025-09-30</td><td>Graphite: A GPU-Accelerated Mixed-Precision Graph Optimization Framework</td><td>[2509.26581](http://arxiv.org/pdf/2509.26581)</td><td>◆ We present Graphite, a GPU-accelerated nonlinear graph optimization framework.
+◆ It provides a CUDA C++ interface to enable the sharing of code between a realtime application, such as a SLAM system, and its optimization tasks.
+◆ The framework supports techniques to reduce memory usage, including in-place optimization, support for multiple floating point types and mixed-precision modes, and dynamically computed Jacobians.</td></tr>
+<tr><td>2025-09-30</td><td>Radio-based Multi-Robot Odometry and Relative Localization</td><td>[2509.26558](http://arxiv.org/pdf/2509.26558)</td><td>◆ Radio-based methods such as Ultra-Wideband (UWB) and RAdio Detection And Ranging (radar), which have traditionally seen limited adoption in robotics, are experiencing a boost in popularity thanks to their robustness to harsh environmental conditions and cluttered environments.
+◆ This work proposes a multi-robot UGV-UAV localization system that leverages the two technologies with inexpensive and readily-available sensors, such as Inertial Measurement Units (IMUs) and wheel encoders, to estimate the relative position of an aerial robot with respect to a ground robot.
+◆ The first stage of the system pipeline includes a nonlinear optimization framework to trilaterate the location of the aerial platform based on UWB range data, and a radar pre-processing module with loosely coupled ego-motion estimation which has been adapted for a multi-robot scenario.</td></tr>
+<tr><td>2025-09-30</td><td>DEPTHOR++: Robust Depth Enhancement from a Real-World Lightweight dToF and RGB Guidance</td><td>[2509.26498](http://arxiv.org/pdf/2509.26498)</td><td>◆ Depth enhancement, which converts raw dToF signals into dense depth maps using RGB guidance, is crucial for improving depth perception in high-precision tasks such as 3D reconstruction and SLAM.
+◆ However, existing methods often assume ideal dToF inputs and perfect dToF-RGB alignment, overlooking calibration errors and anomalies, thus limiting real-world applicability.
+◆ This work systematically analyzes the noise characteristics of real-world lightweight dToF sensors and proposes a practical and novel depth completion framework, DEPTHOR++, which enhances robustness to noisy dToF inputs from three key aspects.</td></tr>
+<tr><td>2025-09-30</td><td>Side Scan Sonar-based SLAM for Autonomous Algae Farm Monitoring</td><td>[2509.26121](http://arxiv.org/pdf/2509.26121)</td><td>◆ The transition of seaweed farming to an alternative food source on an industrial scale relies on automating its processes through smart farming, equivalent to land agriculture.
+◆ Key to this process are autonomous underwater vehicles (AUVs) via their capacity to automate crop and structural inspections.
+◆ However, the current bottleneck for their deployment is ensuring safe navigation within farms, which requires an accurate, online estimate of the AUV pose and map of the infrastructure.</td></tr>
+<tr><td>2025-09-30</td><td>User-Centric Communication Service Provision for Edge-Assisted Mobile Augmented Reality</td><td>[2509.25905](http://arxiv.org/pdf/2509.25905)</td><td>◆ Future 6G networks are envisioned to facilitate edge-assisted mobile augmented reality (MAR) via strengthening the collaboration between MAR devices and edge servers.
+◆ In order to provide immersive user experiences, MAR devices must timely upload camera frames to an edge server for simultaneous localization and mapping (SLAM)-based device pose tracking.
+◆ In this paper, to cope with user-specific and non-stationary uplink data traffic, we develop a digital twin (DT)-based approach for user-centric communication service provision for MAR.</td></tr>
 <tr><td>2025-09-29</td><td>PROFusion: Robust and Accurate Dense Reconstruction via Camera Pose Regression and Optimization</td><td>[2509.24236](http://arxiv.org/pdf/2509.24236)</td><td>◆ Real-time dense scene reconstruction during unstable camera motions is crucial for robotics, yet current RGB-D SLAM systems fail when cameras experience large viewpoint changes, fast motions, or sudden shaking.
 ◆ Classical optimization-based methods deliver high accuracy but fail with poor initialization during large motions, while learning-based approaches provide robustness but lack sufficient accuracy for dense reconstruction.
 ◆ We address this challenge through a combination of learning-based initialization with optimization-based refinement.</td></tr>
@@ -696,6 +714,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-30</td><td>An Agent-Based Simulation of Ageing Societies: Accessibility and Care Dynamics in Remote Areas</td><td>[2509.26496](http://arxiv.org/pdf/2509.26496)</td><td>◆ This paper presents an agent-based simulation of accessibility and care dynamics in ageing societies, applied to the Italian inner area of Premeno (VB).
+◆ The model integrates census and municipal data, drone-derived elevation models, GIS road networks, and survey-based caregiving information to generate synthetic populations of older adults and their caregivers.
+◆ Agents are organized into dyads with socio-economic and mobility attributes, enabling the simulation of both micro-scale accessibility and meso-scale caregiving outcomes.</td></tr>
+<tr><td>2025-09-30</td><td>SAGE: Spatial-visual Adaptive Graph Exploration for Visual Place Recognition</td><td>[2509.25723](http://arxiv.org/pdf/2509.25723)</td><td>◆ Visual Place Recognition (VPR) requires robust retrieval of geotagged images despite large appearance, viewpoint, and environmental variation.
+◆ Prior methods focus on descriptor fine-tuning or fixed sampling strategies yet neglect the dynamic interplay between spatial context and visual similarity during training.
+◆ We present SAGE (Spatial-visual Adaptive Graph Exploration), a unified training pipeline that enhances granular spatial-visual discrimination by jointly improving local feature aggregation, organize samples during training, and hard sample mining.</td></tr>
 <tr><td>2025-09-28</td><td>Prepare for Warp Speed: Sub-millisecond Visual Place Recognition Using Event Cameras</td><td>[2509.24094](http://arxiv.org/pdf/2509.24094)</td><td>◆ Visual Place Recognition (VPR) enables systems to identify previously visited locations within a map, a fundamental task for autonomous navigation.
 ◆ Prior works have developed VPR solutions using event cameras, which asynchronously measure per-pixel brightness changes with microsecond temporal resolution.
 ◆ However, these approaches rely on dense representations of the inherently sparse camera output and require tens to hundreds of milliseconds of event data to predict a place.</td></tr>
@@ -1342,6 +1366,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-30</td><td>LLM-Powered Code Analysis and Optimization for Gaussian Splatting Kernels</td><td>[2509.25626](http://arxiv.org/pdf/2509.25626)</td><td>◆ 3D Gaussian splatting (3DGS) is a transformative technique with profound implications on novel view synthesis and real-time rendering.
+◆ Given its importance, there have been many attempts to improve its performance.
+◆ However, with the increasing complexity of GPU architectures and the vast search space of performance-tuning parameters, it is a challenging task.</td></tr>
+<tr><td>2025-09-29</td><td>GaussianLens: Localized High-Resolution Reconstruction via On-Demand Gaussian Densification</td><td>[2509.25603](http://arxiv.org/pdf/2509.25603)</td><td>◆ We perceive our surroundings with an active focus, paying more attention to regions of interest, such as the shelf labels in a grocery store.
+◆ When it comes to scene reconstruction, this human perception trait calls for spatially varying degrees of detail ready for closer inspection in critical regions, preferably reconstructed on demand.
+◆ While recent works in 3D Gaussian Splatting (3DGS) achieve fast, generalizable reconstruction from sparse views, their uniform resolution output leads to high computational costs unscalable to high-resolution training.</td></tr>
+<tr><td>2025-09-29</td><td>VGGT-X: When VGGT Meets Dense Novel View Synthesis</td><td>[2509.25191](http://arxiv.org/pdf/2509.25191)</td><td>◆ We study the problem of applying 3D Foundation Models (3DFMs) to dense Novel View Synthesis (NVS).
+◆ Despite significant progress in Novel View Synthesis powered by NeRF and 3DGS, current approaches remain reliant on accurate 3D attributes (e.g., camera poses and point clouds) acquired from Structure-from-Motion (SfM), which is often slow and fragile in low-texture or low-overlap captures.
+◆ Recent 3DFMs showcase orders of magnitude speedup over the traditional pipeline and great potential for online NVS.</td></tr>
 <tr><td>2025-09-29</td><td>Triangle Splatting+: Differentiable Rendering with Opaque Triangles</td><td>[2509.25122](http://arxiv.org/pdf/2509.25122)</td><td>◆ Reconstructing 3D scenes and synthesizing novel views has seen rapid progress in recent years.
 ◆ Neural Radiance Fields demonstrated that continuous volumetric radiance fields can achieve high-quality image synthesis, but their long training and rendering times limit practicality.
 ◆ 3D Gaussian Splatting (3DGS) addressed these issues by representing scenes with millions of Gaussians, enabling real-time rendering and fast optimization.</td></tr>
@@ -2143,10 +2176,25 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-30</td><td>DA$^2$: Depth Anything in Any Direction</td><td>[2509.26618](http://arxiv.org/pdf/2509.26618)</td><td>◆ Panorama has a full FoV (360$^\circ\times$180$^\circ$), offering a more complete visual description than perspective images.
+◆ Thanks to this characteristic, panoramic depth estimation is gaining increasing traction in 3D vision.
+◆ However, due to the scarcity of panoramic data, previous methods are often restricted to in-domain settings, leading to poor zero-shot generalization.</td></tr>
+<tr><td>2025-09-30</td><td>DEPTHOR++: Robust Depth Enhancement from a Real-World Lightweight dToF and RGB Guidance</td><td>[2509.26498](http://arxiv.org/pdf/2509.26498)</td><td>◆ Depth enhancement, which converts raw dToF signals into dense depth maps using RGB guidance, is crucial for improving depth perception in high-precision tasks such as 3D reconstruction and SLAM.
+◆ However, existing methods often assume ideal dToF inputs and perfect dToF-RGB alignment, overlooking calibration errors and anomalies, thus limiting real-world applicability.
+◆ This work systematically analyzes the noise characteristics of real-world lightweight dToF sensors and proposes a practical and novel depth completion framework, DEPTHOR++, which enhances robustness to noisy dToF inputs from three key aspects.</td></tr>
+<tr><td>2025-09-30</td><td>EasyOcc: 3D Pseudo-Label Supervision for Fully Self-Supervised Semantic Occupancy Prediction Models</td><td>[2509.26087](http://arxiv.org/pdf/2509.26087)</td><td>◆ Self-supervised models have recently achieved notable advancements, particularly in the domain of semantic occupancy prediction.
+◆ These models utilize sophisticated loss computation strategies to compensate for the absence of ground-truth labels.
+◆ For instance, techniques such as novel view synthesis, cross-view rendering, and depth estimation have been explored to address the issue of semantic and depth ambiguity.</td></tr>
+<tr><td>2025-09-30</td><td>PFDepth: Heterogeneous Pinhole-Fisheye Joint Depth Estimation via Distortion-aware Gaussian-Splatted Volumetric Fusion</td><td>[2509.26008](http://arxiv.org/pdf/2509.26008)</td><td>◆ In this paper, we present the first pinhole-fisheye framework for heterogeneous multi-view depth estimation, PFDepth.
+◆ Our key insight is to exploit the complementary characteristics of pinhole and fisheye imagery (undistorted vs.
+◆ distorted, small vs.</td></tr>
+<tr><td>2025-09-29</td><td>DepthLM: Metric Depth From Vision Language Models</td><td>[2509.25413](http://arxiv.org/pdf/2509.25413)</td><td>◆ Vision language models (VLMs) can flexibly address various vision tasks through text interactions.
+◆ Although successful in semantic understanding, state-of-the-art VLMs including GPT-5 still struggle in understanding 3D from 2D inputs.
+◆ On the other hand, expert pure vision models achieve super-human accuracy in metric depth estimation, a key 3D understanding task.</td></tr>
 <tr><td>2025-09-29</td><td>Fast Feature Field ($\text{F}^3$): A Predictive Representation of Events</td><td>[2509.25146](http://arxiv.org/pdf/2509.25146)</td><td>◆ This paper develops a mathematical argument and algorithms for building representations of data from event-based cameras, that we call Fast Feature Field ($\text{F}^3$).
 ◆ We learn this representation by predicting future events from past events and show that it preserves scene structure and motion information.
 ◆ $\text{F}^3$ exploits the sparsity of event data and is robust to noise and variations in event rates.</td></tr>
-<tr><td>2025-09-29</td><td>BRIDGE -- Building Reinforcement-Learning Depth-to-Image Data Generation Engine for Monocular Depth Estimation</td><td>[2509.25077](http://arxiv.org/pdf/2509.25077)</td><td>◆ Monocular Depth Estimation (MDE) is a foundational task for computer vision.
+<tr><td>2025-09-30</td><td>BRIDGE -- Building Reinforcement-Learning Depth-to-Image Data Generation Engine for Monocular Depth Estimation</td><td>[2509.25077](http://arxiv.org/pdf/2509.25077)</td><td>◆ Monocular Depth Estimation (MDE) is a foundational task for computer vision.
 ◆ Traditional methods are limited by data scarcity and quality, hindering their robustness.
 ◆ To overcome this, we propose BRIDGE, an RL-optimized depth-to-image (D2I) generation framework that synthesizes over 20M realistic and geometrically accurate RGB images, each intrinsically paired with its ground truth depth, from diverse source depth maps.</td></tr>
 <tr><td>2025-09-29</td><td>DWGS: Enhancing Sparse-View Gaussian Splatting with Hybrid-Loss Depth Estimation and Bidirectional Warping</td><td>[2509.24893](http://arxiv.org/pdf/2509.24893)</td><td>◆ Novel View Synthesis (NVS) from sparse views remains a core challenge in 3D reconstruction, typically suffering from overfitting, geometric distortion, and incomplete scene recovery due to limited multi-view constraints.
@@ -2739,4 +2787,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.09.30
+> 更新于: 2025.10.01
