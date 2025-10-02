@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.01)
+# SLAM领域最新论文 (2025.10.02)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -1387,7 +1387,7 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <tr><td>2025-09-29</td><td>ExGS: Extreme 3D Gaussian Compression with Diffusion Priors</td><td>[2509.24758](http://arxiv.org/pdf/2509.24758)</td><td>◆ Neural scene representations, such as 3D Gaussian Splatting (3DGS), have enabled high-quality neural rendering; however, their large storage and transmission costs hinder deployment in resource-constrained environments.
 ◆ Existing compression methods either rely on costly optimization, which is slow and scene-specific, or adopt training-free pruning and quantization, which degrade rendering quality under high compression ratios.
 ◆ In contrast, recent data-driven approaches provide a promising direction to overcome this trade-off, enabling efficient compression while preserving high rendering quality.</td></tr>
-<tr><td>2025-09-29</td><td>Proxy-GS: Efficient 3D Gaussian Splatting via Proxy Mesh</td><td>[2509.24421](http://arxiv.org/pdf/2509.24421)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as an efficient approach for achieving photorealistic rendering.
+<tr><td>2025-10-01</td><td>Proxy-GS: Efficient 3D Gaussian Splatting via Proxy Mesh</td><td>[2509.24421](http://arxiv.org/pdf/2509.24421)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as an efficient approach for achieving photorealistic rendering.
 ◆ Recent MLP-based variants further improve visual fidelity but introduce substantial decoding overhead during rendering.
 ◆ To alleviate computation cost, several pruning strategies and level-of-detail (LOD) techniques have been introduced, aiming to effectively reduce the number of Gaussian primitives in large-scale scenes.</td></tr>
 <tr><td>2025-09-28</td><td>From Fields to Splats: A Cross-Domain Survey of Real-Time Neural Scene Representations</td><td>[2509.23555](http://arxiv.org/pdf/2509.23555)</td><td>◆ Neural scene representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have transformed how 3D environments are modeled, rendered, and interpreted.
@@ -2188,7 +2188,7 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <tr><td>2025-09-30</td><td>PFDepth: Heterogeneous Pinhole-Fisheye Joint Depth Estimation via Distortion-aware Gaussian-Splatted Volumetric Fusion</td><td>[2509.26008](http://arxiv.org/pdf/2509.26008)</td><td>◆ In this paper, we present the first pinhole-fisheye framework for heterogeneous multi-view depth estimation, PFDepth.
 ◆ Our key insight is to exploit the complementary characteristics of pinhole and fisheye imagery (undistorted vs.
 ◆ distorted, small vs.</td></tr>
-<tr><td>2025-09-29</td><td>DepthLM: Metric Depth From Vision Language Models</td><td>[2509.25413](http://arxiv.org/pdf/2509.25413)</td><td>◆ Vision language models (VLMs) can flexibly address various vision tasks through text interactions.
+<tr><td>2025-10-01</td><td>DepthLM: Metric Depth From Vision Language Models</td><td>[2509.25413](http://arxiv.org/pdf/2509.25413)</td><td>◆ Vision language models (VLMs) can flexibly address various vision tasks through text interactions.
 ◆ Although successful in semantic understanding, state-of-the-art VLMs including GPT-5 still struggle in understanding 3D from 2D inputs.
 ◆ On the other hand, expert pure vision models achieve super-human accuracy in metric depth estimation, a key 3D understanding task.</td></tr>
 <tr><td>2025-09-29</td><td>Fast Feature Field ($\text{F}^3$): A Predictive Representation of Events</td><td>[2509.25146](http://arxiv.org/pdf/2509.25146)</td><td>◆ This paper develops a mathematical argument and algorithms for building representations of data from event-based cameras, that we call Fast Feature Field ($\text{F}^3$).
@@ -2787,4 +2787,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.01
+> 更新于: 2025.10.02
