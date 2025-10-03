@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.02)
+# SLAM领域最新论文 (2025.10.03)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-02</td><td>EC3R-SLAM: Efficient and Consistent Monocular Dense SLAM with Feed-Forward 3D Reconstruction</td><td>[2510.02080](http://arxiv.org/pdf/2510.02080)</td><td>◆ The application of monocular dense Simultaneous Localization and Mapping (SLAM) is often hindered by high latency, large GPU memory consumption, and reliance on camera calibration.
+◆ To relax this constraint, we propose EC3R-SLAM, a novel calibration-free monocular dense SLAM framework that jointly achieves high localization and mapping accuracy, low latency, and low GPU memory consumption.
+◆ This enables the framework to achieve efficiency through the coupling of a tracking module, which maintains a sparse map of feature points, and a mapping module based on a feed-forward 3D reconstruction model that simultaneously estimates camera intrinsics.</td></tr>
+<tr><td>2025-10-02</td><td>Non-Rigid Structure-from-Motion via Differential Geometry with Recoverable Conformal Scale</td><td>[2510.01665](http://arxiv.org/pdf/2510.01665)</td><td>◆ Non-rigid structure-from-motion (NRSfM), a promising technique for addressing the mapping challenges in monocular visual deformable simultaneous localization and mapping (SLAM), has attracted growing attention.
+◆ We introduce a novel method, called Con-NRSfM, for NRSfM under conformal deformations, encompassing isometric deformations as a subset.
+◆ Our approach performs point-wise reconstruction using 2D selected image warps optimized through a graph-based framework.</td></tr>
+<tr><td>2025-10-01</td><td>Instant4D: 4D Gaussian Splatting in Minutes</td><td>[2510.01119](http://arxiv.org/pdf/2510.01119)</td><td>◆ Dynamic view synthesis has seen significant advances, yet reconstructing scenes from uncalibrated, casual video remains challenging due to slow optimization and complex parameter estimation.
+◆ In this work, we present Instant4D, a monocular reconstruction system that leverages native 4D representation to efficiently process casual video sequences within minutes, without calibrated cameras or depth sensors.
+◆ Our method begins with geometric recovery through deep visual SLAM, followed by grid pruning to optimize scene representation.</td></tr>
+<tr><td>2025-10-01</td><td>Semantic Visual Simultaneous Localization and Mapping: A Survey on State of the Art, Challenges, and Future Directions</td><td>[2510.00783](http://arxiv.org/pdf/2510.00783)</td><td>◆ Semantic Simultaneous Localization and Mapping (SLAM) is a critical area of research within robotics and computer vision, focusing on the simultaneous localization of robotic systems and associating semantic information to construct the most accurate and complete comprehensive model of the surrounding environment.
+◆ Since the first foundational work in Semantic SLAM appeared more than two decades ago, this field has received increasing attention across various scientific communities.
+◆ Despite its significance, the field lacks comprehensive surveys encompassing recent advances and persistent challenges.</td></tr>
 <tr><td>2025-09-30</td><td>Benchmarking Egocentric Visual-Inertial SLAM at City Scale</td><td>[2509.26639](http://arxiv.org/pdf/2509.26639)</td><td>◆ Precise 6-DoF simultaneous localization and mapping (SLAM) from onboard sensors is critical for wearable devices capturing egocentric data, which exhibits specific challenges, such as a wider diversity of motions and viewpoints, prevalent dynamic visual content, or long sessions affected by time-varying sensor calibration.
 ◆ While recent progress on SLAM has been swift, academic research is still driven by benchmarks that do not reflect these challenges or do not offer sufficiently accurate ground truth poses.
 ◆ In this paper, we introduce a new dataset and benchmark for visual-inertial SLAM with egocentric, multi-modal data.</td></tr>
@@ -548,6 +560,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-01</td><td>Instant4D: 4D Gaussian Splatting in Minutes</td><td>[2510.01119](http://arxiv.org/pdf/2510.01119)</td><td>◆ Dynamic view synthesis has seen significant advances, yet reconstructing scenes from uncalibrated, casual video remains challenging due to slow optimization and complex parameter estimation.
+◆ In this work, we present Instant4D, a monocular reconstruction system that leverages native 4D representation to efficiently process casual video sequences within minutes, without calibrated cameras or depth sensors.
+◆ Our method begins with geometric recovery through deep visual SLAM, followed by grid pruning to optimize scene representation.</td></tr>
+<tr><td>2025-10-01</td><td>Semantic Visual Simultaneous Localization and Mapping: A Survey on State of the Art, Challenges, and Future Directions</td><td>[2510.00783](http://arxiv.org/pdf/2510.00783)</td><td>◆ Semantic Simultaneous Localization and Mapping (SLAM) is a critical area of research within robotics and computer vision, focusing on the simultaneous localization of robotic systems and associating semantic information to construct the most accurate and complete comprehensive model of the surrounding environment.
+◆ Since the first foundational work in Semantic SLAM appeared more than two decades ago, this field has received increasing attention across various scientific communities.
+◆ Despite its significance, the field lacks comprehensive surveys encompassing recent advances and persistent challenges.</td></tr>
 <tr><td>2025-09-28</td><td>GRS-SLAM3R: Real-Time Dense SLAM with Gated Recurrent State</td><td>[2509.23737](http://arxiv.org/pdf/2509.23737)</td><td>◆ DUSt3R-based end-to-end scene reconstruction has recently shown promising results in dense visual SLAM.
 ◆ However, most existing methods only use image pairs to estimate pointmaps, overlooking spatial memory and global consistency.To this end, we introduce GRS-SLAM3R, an end-to-end SLAM framework for dense scene reconstruction and pose estimation from RGB images without any prior knowledge of the scene or camera parameters.
 ◆ Unlike existing DUSt3R-based frameworks, which operate on all image pairs and predict per-pair point maps in local coordinate frames, our method supports sequentialized input and incrementally estimates metric-scale point clouds in the global coordinate.</td></tr>
@@ -718,6 +736,30 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-02</td><td>EC3R-SLAM: Efficient and Consistent Monocular Dense SLAM with Feed-Forward 3D Reconstruction</td><td>[2510.02080](http://arxiv.org/pdf/2510.02080)</td><td>◆ The application of monocular dense Simultaneous Localization and Mapping (SLAM) is often hindered by high latency, large GPU memory consumption, and reliance on camera calibration.
+◆ To relax this constraint, we propose EC3R-SLAM, a novel calibration-free monocular dense SLAM framework that jointly achieves high localization and mapping accuracy, low latency, and low GPU memory consumption.
+◆ This enables the framework to achieve efficiency through the coupling of a tracking module, which maintains a sparse map of feature points, and a mapping module based on a feed-forward 3D reconstruction model that simultaneously estimates camera intrinsics.</td></tr>
+<tr><td>2025-10-02</td><td>SoK: Measuring What Matters for Closed-Loop Security Agents</td><td>[2510.01654](http://arxiv.org/pdf/2510.01654)</td><td>◆ Cybersecurity is a relentless arms race, with AI driven offensive systems evolving faster than traditional defenses can adapt.
+◆ Research and tooling remain fragmented across isolated defensive functions, creating blind spots that adversaries exploit.
+◆ Autonomous agents capable of integrating, exploit confirmation, remediation, and validation into a single closed loop offer promise, but the field lacks three essentials: a framework defining the agentic capabilities of security systems across security life cycle, a principled method for evaluating closed loop agents, and a benchmark for measuring their performance in practice.</td></tr>
+<tr><td>2025-10-01</td><td>Kilometer-Scale GNSS-Denied UAV Navigation via Heightmap Gradients: A Winning System from the SPRIN-D Challenge</td><td>[2510.01348](http://arxiv.org/pdf/2510.01348)</td><td>◆ Reliable long-range flight of unmanned aerial vehicles (UAVs) in GNSS-denied environments is challenging: integrating odometry leads to drift, loop closures are unavailable in previously unseen areas and embedded platforms provide limited computational power.
+◆ We present a fully onboard UAV system developed for the SPRIN-D Funke Fully Autonomous Flight Challenge, which required 9 km long-range waypoint navigation below 25 m AGL (Above Ground Level) without GNSS or prior dense mapping.
+◆ The system integrates perception, mapping, planning, and control with a lightweight drift-correction method that matches LiDAR-derived local heightmaps to a prior geo-data heightmap via gradient-template matching and fuses the evidence with odometry in a clustered particle filter.</td></tr>
+<tr><td>2025-10-01</td><td>EvoWorld: Evolving Panoramic World Generation with Explicit 3D Memory</td><td>[2510.01183](http://arxiv.org/pdf/2510.01183)</td><td>◆ Humans possess a remarkable ability to mentally explore and replay 3D environments they have previously experienced.
+◆ Inspired by this mental process, we present EvoWorld: a world model that bridges panoramic video generation with evolving 3D memory to enable spatially consistent long-horizon exploration.
+◆ Given a single panoramic image as input, EvoWorld first generates future video frames by leveraging a video generator with fine-grained view control, then evolves the scene&#x27;s 3D reconstruction using a feedforward plug-and-play transformer, and finally synthesizes futures by conditioning on geometric reprojections from this evolving explicit 3D memory.</td></tr>
+<tr><td>2025-10-01</td><td>A Scene is Worth a Thousand Features: Feed-Forward Camera Localization from a Collection of Image Features</td><td>[2510.00978](http://arxiv.org/pdf/2510.00978)</td><td>◆ Visually localizing an image, i.e., estimating its camera pose, requires building a scene representation that serves as a visual map.
+◆ The representation we choose has direct consequences towards the practicability of our system.
+◆ Even when starting from mapping images with known camera poses, state-of-the-art approaches still require hours of mapping time in the worst case, and several minutes in the best.</td></tr>
+<tr><td>2025-10-01</td><td>Semantic Visual Simultaneous Localization and Mapping: A Survey on State of the Art, Challenges, and Future Directions</td><td>[2510.00783](http://arxiv.org/pdf/2510.00783)</td><td>◆ Semantic Simultaneous Localization and Mapping (SLAM) is a critical area of research within robotics and computer vision, focusing on the simultaneous localization of robotic systems and associating semantic information to construct the most accurate and complete comprehensive model of the surrounding environment.
+◆ Since the first foundational work in Semantic SLAM appeared more than two decades ago, this field has received increasing attention across various scientific communities.
+◆ Despite its significance, the field lacks comprehensive surveys encompassing recent advances and persistent challenges.</td></tr>
+<tr><td>2025-10-01</td><td>RELATE-Sim: Leveraging Turning Point Theory and LLM Agents to Predict and Understand Long-Term Relationship Dynamics through Interactive Narrative Simulations</td><td>[2510.00414](http://arxiv.org/pdf/2510.00414)</td><td>◆ Most dating technologies optimize for getting together, not staying together.
+◆ We present RELATE-Sim, a theory-grounded simulator that models how couples behave at consequential turning points-exclusivity talks, conflict-and-repair episodes, relocations-rather than static traits.
+◆ Two persona-aligned LLM agents (one per partner) interact under a centralized Scene Master that frames each turning point as a compact set of realistic options, advances the narrative, and infers interpretable state changes and an auditable commitment estimate after each scene.</td></tr>
+<tr><td>2025-09-30</td><td>Dynamic Necklace Splitting</td><td>[2510.00162](http://arxiv.org/pdf/2510.00162)</td><td>◆ The necklace splitting problem is a classic problem in fair division with many applications, including data-informed fair hash maps.
+◆ We extend necklace splitting to a dynamic setting, allowing for relocation, insertion, and deletion of beads.
+◆ We present linear-time, optimal algorithms for the two-color case that support all dynamic updates.</td></tr>
 <tr><td>2025-09-30</td><td>An Agent-Based Simulation of Ageing Societies: Accessibility and Care Dynamics in Remote Areas</td><td>[2509.26496](http://arxiv.org/pdf/2509.26496)</td><td>◆ This paper presents an agent-based simulation of accessibility and care dynamics in ageing societies, applied to the Italian inner area of Premeno (VB).
 ◆ The model integrates census and municipal data, drone-derived elevation models, GIS road networks, and survey-based caregiving information to generate synthetic populations of older adults and their caregivers.
 ◆ Agents are organized into dyads with socio-economic and mobility attributes, enabling the simulation of both micro-scale accessibility and meso-scale caregiving outcomes.</td></tr>
@@ -1130,6 +1172,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-09-30</td><td>Enhancing Certifiable Semantic Robustness via Robust Pruning of Deep Neural Networks</td><td>[2510.00083](http://arxiv.org/pdf/2510.00083)</td><td>◆ Deep neural networks have been widely adopted in many vision and robotics applications with visual inputs.
+◆ It is essential to verify its robustness against semantic transformation perturbations, such as brightness and contrast.
+◆ However, current certified training and robustness certification methods face the challenge of over-parameterization, which hinders the tightness and scalability due to the over-complicated neural networks.</td></tr>
 <tr><td>2025-09-26</td><td>PANICL: Mitigating Over-Reliance on Single Prompt in Visual In-Context Learning</td><td>[2509.21926](http://arxiv.org/pdf/2509.21926)</td><td>◆ Visual In-Context Learning (VICL) uses input-output image pairs, referred to as in-context pairs (or examples), as prompts alongside query images to guide models in performing diverse vision tasks.
 ◆ However, VICL often suffers from over-reliance on a single in-context pair, which can lead to biased and unstable predictions.
 ◆ We introduce PAtch-based $k$-Nearest neighbor visual In-Context Learning (PANICL), a general training-free framework that mitigates this issue by leveraging multiple in-context pairs.</td></tr>
@@ -1374,6 +1419,18 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-02</td><td>StealthAttack: Robust 3D Gaussian Splatting Poisoning via Density-Guided Illusions</td><td>[2510.02314](http://arxiv.org/pdf/2510.02314)</td><td>◆ 3D scene representation methods like Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have significantly advanced novel view synthesis.
+◆ As these methods become prevalent, addressing their vulnerabilities becomes critical.
+◆ We analyze 3DGS robustness against image-level poisoning attacks and propose a novel density-guided poisoning method.</td></tr>
+<tr><td>2025-10-02</td><td>GaussianMorphing: Mesh-Guided 3D Gaussians for Semantic-Aware Object Morphing</td><td>[2510.02034](http://arxiv.org/pdf/2510.02034)</td><td>◆ We introduce GaussianMorphing, a novel framework for semantic-aware 3D shape and texture morphing from multi-view images.
+◆ Previous approaches usually rely on point clouds or require pre-defined homeomorphic mappings for untextured data.
+◆ Our method overcomes these limitations by leveraging mesh-guided 3D Gaussian Splatting (3DGS) for high-fidelity geometry and appearance modeling.</td></tr>
+<tr><td>2025-10-02</td><td>ROI-GS: Interest-based Local Quality 3D Gaussian Splatting</td><td>[2510.01978](http://arxiv.org/pdf/2510.01978)</td><td>◆ We tackle the challenge of efficiently reconstructing 3D scenes with high detail on objects of interest.
+◆ Existing 3D Gaussian Splatting (3DGS) methods allocate resources uniformly across the scene, limiting fine detail to Regions Of Interest (ROIs) and leading to inflated model size.
+◆ We propose ROI-GS, an object-aware framework that enhances local details through object-guided camera selection, targeted Object training, and seamless integration of high-fidelity object of interest reconstructions into the global scene.</td></tr>
+<tr><td>2025-10-02</td><td>LOBE-GS: Load-Balanced and Efficient 3D Gaussian Splatting for Large-Scale Scene Reconstruction</td><td>[2510.01767](http://arxiv.org/pdf/2510.01767)</td><td>◆ 3D Gaussian Splatting (3DGS) has established itself as an efficient representation for real-time, high-fidelity 3D scene reconstruction.
+◆ However, scaling 3DGS to large and unbounded scenes such as city blocks remains difficult.
+◆ Existing divide-and-conquer methods alleviate memory pressure by partitioning the scene into blocks, but introduce new bottlenecks: (i) partitions suffer from severe load imbalance since uniform or heuristic splits do not reflect actual computational demands, and (ii) coarse-to-fine pipelines fail to exploit the coarse stage efficiently, often reloading the entire model and incurring high overhead.</td></tr>
 <tr><td>2025-09-30</td><td>LLM-Powered Code Analysis and Optimization for Gaussian Splatting Kernels</td><td>[2509.25626](http://arxiv.org/pdf/2509.25626)</td><td>◆ 3D Gaussian splatting (3DGS) is a transformative technique with profound implications on novel view synthesis and real-time rendering.
 ◆ Given its importance, there have been many attempts to improve its performance.
 ◆ However, with the increasing complexity of GPU architectures and the vast search space of performance-tuning parameters, it is a challenging task.</td></tr>
@@ -1386,7 +1443,7 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <tr><td>2025-09-29</td><td>Triangle Splatting+: Differentiable Rendering with Opaque Triangles</td><td>[2509.25122](http://arxiv.org/pdf/2509.25122)</td><td>◆ Reconstructing 3D scenes and synthesizing novel views has seen rapid progress in recent years.
 ◆ Neural Radiance Fields demonstrated that continuous volumetric radiance fields can achieve high-quality image synthesis, but their long training and rendering times limit practicality.
 ◆ 3D Gaussian Splatting (3DGS) addressed these issues by representing scenes with millions of Gaussians, enabling real-time rendering and fast optimization.</td></tr>
-<tr><td>2025-09-29</td><td>GEM: 3D Gaussian Splatting for Efficient and Accurate Cryo-EM Reconstruction</td><td>[2509.25075](http://arxiv.org/pdf/2509.25075)</td><td>◆ Cryo-electron microscopy (cryo-EM) has become a central tool for high-resolution structural biology, yet the massive scale of datasets (often exceeding 100k particle images) renders 3D reconstruction both computationally expensive and memory intensive.
+<tr><td>2025-10-02</td><td>GEM: 3D Gaussian Splatting for Efficient and Accurate Cryo-EM Reconstruction</td><td>[2509.25075](http://arxiv.org/pdf/2509.25075)</td><td>◆ Cryo-electron microscopy (cryo-EM) has become a central tool for high-resolution structural biology, yet the massive scale of datasets (often exceeding 100k particle images) renders 3D reconstruction both computationally expensive and memory intensive.
 ◆ Traditional Fourier-space methods are efficient but lose fidelity due to repeated transforms, while recent real-space approaches based on neural radiance fields (NeRFs) improve accuracy but incur cubic memory and computation overhead.
 ◆ Therefore, we introduce GEM, a novel cryo-EM reconstruction framework built on 3D Gaussian Splatting (3DGS) that operates directly in real-space while maintaining high efficiency.</td></tr>
 <tr><td>2025-09-29</td><td>DWGS: Enhancing Sparse-View Gaussian Splatting with Hybrid-Loss Depth Estimation and Bidirectional Warping</td><td>[2509.24893](http://arxiv.org/pdf/2509.24893)</td><td>◆ Novel View Synthesis (NVS) from sparse views remains a core challenge in 3D reconstruction, typically suffering from overfitting, geometric distortion, and incomplete scene recovery due to limited multi-view constraints.
@@ -2186,6 +2243,12 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-02</td><td>Non-Rigid Structure-from-Motion via Differential Geometry with Recoverable Conformal Scale</td><td>[2510.01665](http://arxiv.org/pdf/2510.01665)</td><td>◆ Non-rigid structure-from-motion (NRSfM), a promising technique for addressing the mapping challenges in monocular visual deformable simultaneous localization and mapping (SLAM), has attracted growing attention.
+◆ We introduce a novel method, called Con-NRSfM, for NRSfM under conformal deformations, encompassing isometric deformations as a subset.
+◆ Our approach performs point-wise reconstruction using 2D selected image warps optimized through a graph-based framework.</td></tr>
+<tr><td>2025-10-01</td><td>Temporal Score Rescaling for Temperature Sampling in Diffusion and Flow Models</td><td>[2510.01184](http://arxiv.org/pdf/2510.01184)</td><td>◆ We present a mechanism to steer the sampling diversity of denoising diffusion and flow matching models, allowing users to sample from a sharper or broader distribution than the training distribution.
+◆ We build on the observation that these models leverage (learned) score functions of noisy data distributions for sampling and show that rescaling these allows one to effectively control a `local&#x27; sampling temperature.
+◆ Notably, this approach does not require any finetuning or alterations to training strategy, and can be applied to any off-the-shelf model and is compatible with both deterministic and stochastic samplers.</td></tr>
 <tr><td>2025-09-30</td><td>DA$^2$: Depth Anything in Any Direction</td><td>[2509.26618](http://arxiv.org/pdf/2509.26618)</td><td>◆ Panorama has a full FoV (360$^\circ\times$180$^\circ$), offering a more complete visual description than perspective images.
 ◆ Thanks to this characteristic, panoramic depth estimation is gaining increasing traction in 3D vision.
 ◆ However, due to the scarcity of panoramic data, previous methods are often restricted to in-domain settings, leading to poor zero-shot generalization.</td></tr>
@@ -2799,4 +2862,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.02
+> 更新于: 2025.10.03
