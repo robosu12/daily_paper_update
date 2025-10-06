@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.05)
+# SLAM领域最新论文 (2025.10.06)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-02</td><td>RSV-SLAM: Toward Real-Time Semantic Visual SLAM in Indoor Dynamic Environments</td><td>[2510.02616](http://arxiv.org/pdf/2510.02616)</td><td>◆ Simultaneous Localization and Mapping (SLAM) plays an important role in many robotics fields, including social robots.
+◆ Many of the available visual SLAM methods are based on the assumption of a static world and struggle in dynamic environments.
+◆ In the current study, we introduce a real-time semantic RGBD SLAM approach designed specifically for dynamic environments.</td></tr>
 <tr><td>2025-10-02</td><td>EC3R-SLAM: Efficient and Consistent Monocular Dense SLAM with Feed-Forward 3D Reconstruction</td><td>[2510.02080](http://arxiv.org/pdf/2510.02080)</td><td>◆ The application of monocular dense Simultaneous Localization and Mapping (SLAM) is often hindered by high latency, large GPU memory consumption, and reliance on camera calibration.
 ◆ To relax this constraint, we propose EC3R-SLAM, a novel calibration-free monocular dense SLAM framework that jointly achieves high localization and mapping accuracy, low latency, and low GPU memory consumption.
 ◆ This enables the framework to achieve efficiency through the coupling of a tracking module, which maintains a sparse map of feature points, and a mapping module based on a feed-forward 3D reconstruction model that simultaneously estimates camera intrinsics.</td></tr>
@@ -558,6 +561,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-02</td><td>RSV-SLAM: Toward Real-Time Semantic Visual SLAM in Indoor Dynamic Environments</td><td>[2510.02616](http://arxiv.org/pdf/2510.02616)</td><td>◆ Simultaneous Localization and Mapping (SLAM) plays an important role in many robotics fields, including social robots.
+◆ Many of the available visual SLAM methods are based on the assumption of a static world and struggle in dynamic environments.
+◆ In the current study, we introduce a real-time semantic RGBD SLAM approach designed specifically for dynamic environments.</td></tr>
 <tr><td>2025-10-01</td><td>Instant4D: 4D Gaussian Splatting in Minutes</td><td>[2510.01119](http://arxiv.org/pdf/2510.01119)</td><td>◆ Dynamic view synthesis has seen significant advances, yet reconstructing scenes from uncalibrated, casual video remains challenging due to slow optimization and complex parameter estimation.
 ◆ In this work, we present Instant4D, a monocular reconstruction system that leverages native 4D representation to efficiently process casual video sequences within minutes, without calibrated cameras or depth sensors.
 ◆ Our method begins with geometric recovery through deep visual SLAM, followed by grid pruning to optimize scene representation.</td></tr>
@@ -732,6 +738,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-03</td><td>Novel UWB Synthetic Aperture Radar Imaging for Mobile Robot Mapping</td><td>[2510.02874](http://arxiv.org/pdf/2510.02874)</td><td>◆ Traditional exteroceptive sensors in mobile robots, such as LiDARs and cameras often struggle to perceive the environment in poor visibility conditions.
+◆ Recently, radar technologies, such as ultra-wideband (UWB) have emerged as potential alternatives due to their ability to see through adverse environmental conditions (e.g.
+◆ dust, smoke and rain).</td></tr>
 <tr><td>2025-10-02</td><td>EC3R-SLAM: Efficient and Consistent Monocular Dense SLAM with Feed-Forward 3D Reconstruction</td><td>[2510.02080](http://arxiv.org/pdf/2510.02080)</td><td>◆ The application of monocular dense Simultaneous Localization and Mapping (SLAM) is often hindered by high latency, large GPU memory consumption, and reliance on camera calibration.
 ◆ To relax this constraint, we propose EC3R-SLAM, a novel calibration-free monocular dense SLAM framework that jointly achieves high localization and mapping accuracy, low latency, and low GPU memory consumption.
 ◆ This enables the framework to achieve efficiency through the coupling of a tracking module, which maintains a sparse map of feature points, and a mapping module based on a feed-forward 3D reconstruction model that simultaneously estimates camera intrinsics.</td></tr>
@@ -2233,6 +2242,12 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-03</td><td>Test-Time Defense Against Adversarial Attacks via Stochastic Resonance of Latent Ensembles</td><td>[2510.03224](http://arxiv.org/pdf/2510.03224)</td><td>◆ We propose a test-time defense mechanism against adversarial attacks: imperceptible image perturbations that significantly alter the predictions of a model.
+◆ Unlike existing methods that rely on feature filtering or smoothing, which can lead to information loss, we propose to &quot;combat noise with noise&quot; by leveraging stochastic resonance to enhance robustness while minimizing information loss.
+◆ Our approach introduces small translational perturbations to the input image, aligns the transformed feature embeddings, and aggregates them before mapping back to the original reference image.</td></tr>
+<tr><td>2025-10-03</td><td>Whisker-based Tactile Flight for Tiny Drones</td><td>[2510.03119](http://arxiv.org/pdf/2510.03119)</td><td>◆ Tiny flying robots hold great potential for search-and-rescue, safety inspections, and environmental monitoring, but their small size limits conventional sensing-especially with poor-lighting, smoke, dust or reflective obstacles.
+◆ Inspired by nature, we propose a lightweight, 3.2-gram, whisker-based tactile sensing apparatus for tiny drones, enabling them to navigate and explore through gentle physical interaction.
+◆ Just as rats and moles use whiskers to perceive surroundings, our system equips drones with tactile perception in flight, allowing obstacle sensing even in pitch-dark conditions.</td></tr>
 <tr><td>2025-10-02</td><td>Non-Rigid Structure-from-Motion via Differential Geometry with Recoverable Conformal Scale</td><td>[2510.01665](http://arxiv.org/pdf/2510.01665)</td><td>◆ Non-rigid structure-from-motion (NRSfM), a promising technique for addressing the mapping challenges in monocular visual deformable simultaneous localization and mapping (SLAM), has attracted growing attention.
 ◆ We introduce a novel method, called Con-NRSfM, for NRSfM under conformal deformations, encompassing isometric deformations as a subset.
 ◆ Our approach performs point-wise reconstruction using 2D selected image warps optimized through a graph-based framework.</td></tr>
@@ -2850,4 +2865,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.05
+> 更新于: 2025.10.06
