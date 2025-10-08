@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.07)
+# SLAM领域最新论文 (2025.10.08)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-07</td><td>Human3R: Everyone Everywhere All at Once</td><td>[2510.06219](http://arxiv.org/pdf/2510.06219)</td><td>◆ We present Human3R, a unified, feed-forward framework for online 4D human-scene reconstruction, in the world frame, from casually captured monocular videos.
+◆ Unlike previous approaches that rely on multi-stage pipelines, iterative contact-aware refinement between humans and scenes, and heavy dependencies, e.g., human detection, depth estimation, and SLAM pre-processing, Human3R jointly recovers global multi-person SMPL-X bodies (&quot;everyone&quot;), dense 3D scene (&quot;everywhere&quot;), and camera trajectories in a single forward pass (&quot;all-at-once&quot;).
+◆ Our method builds upon the 4D online reconstruction model CUT3R, and uses parameter-efficient visual prompt tuning, to strive to preserve CUT3R&#x27;s rich spatiotemporal priors, while enabling direct readout of multiple SMPL-X bodies.</td></tr>
+<tr><td>2025-10-07</td><td>Dropping the D: RGB-D SLAM Without the Depth Sensor</td><td>[2510.06216](http://arxiv.org/pdf/2510.06216)</td><td>◆ We present DropD-SLAM, a real-time monocular SLAM system that achieves RGB-D-level accuracy without relying on depth sensors.
+◆ The system replaces active depth input with three pretrained vision modules: a monocular metric depth estimator, a learned keypoint detector, and an instance segmentation network.
+◆ Dynamic objects are suppressed using dilated instance masks, while static keypoints are assigned predicted depth values and backprojected into 3D to form metrically scaled features.</td></tr>
+<tr><td>2025-10-07</td><td>Coordinate-Consistent Localization via Continuous-Time Calibration and Fusion of UWB and SLAM Observations</td><td>[2510.05992](http://arxiv.org/pdf/2510.05992)</td><td>◆ Onboard simultaneous localization and mapping (SLAM) methods are commonly used to provide accurate localization information for autonomous robots.
+◆ However, the coordinate origin of SLAM estimate often resets for each run.
+◆ On the other hand, UWB-based localization with fixed anchors can ensure a consistent coordinate reference across sessions; however, it requires an accurate assignment of the anchor nodes&#x27; coordinates.</td></tr>
 <tr><td>2025-10-06</td><td>OKVIS2-X: Open Keyframe-based Visual-Inertial SLAM Configurable with Dense Depth or LiDAR, and GNSS</td><td>[2510.04612](http://arxiv.org/pdf/2510.04612)</td><td>◆ To empower mobile robots with usable maps as well as highest state estimation accuracy and robustness, we present OKVIS2-X: a state-of-the-art multi-sensor Simultaneous Localization and Mapping (SLAM) system building dense volumetric occupancy maps, while scalable to large environments and operating in realtime.
 ◆ Our unified SLAM framework seamlessly integrates different sensor modalities: visual, inertial, measured or learned depth, LiDAR and Global Navigation Satellite System (GNSS) measurements.
 ◆ Unlike most state-of-the-art SLAM systems, we advocate using dense volumetric map representations when leveraging depth or range-sensing capabilities.</td></tr>
@@ -751,6 +760,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-07</td><td>The DISTANT Design for Remote Transmission and Steering Systems for Planetary Robotics</td><td>[2510.05981](http://arxiv.org/pdf/2510.05981)</td><td>◆ Planetary exploration missions require robust locomotion systems capable of operating in extreme environments over extended periods.
+◆ This paper presents the DISTANT (Distant Transmission and Steering Systems) design, a novel approach for relocating rover traction and steering actuators from wheel-mounted positions to a thermally protected warm box within the rover body.
+◆ The design addresses critical challenges in long-distance traversal missions by protecting sensitive components from thermal cycling, dust contamination, and mechanical wear.</td></tr>
 <tr><td>2025-10-05</td><td>Flexible and Efficient Spatio-Temporal Transformer for Sequential Visual Place Recognition</td><td>[2510.04282](http://arxiv.org/pdf/2510.04282)</td><td>◆ Sequential Visual Place Recognition (Seq-VPR) leverages transformers to capture spatio-temporal features effectively; however, existing approaches prioritize performance at the expense of flexibility and efficiency.
 ◆ In practice, a transformer-based Seq-VPR model should be flexible to the number of frames per sequence (seq-length), deliver fast inference, and have low memory usage to meet real-time constraints.
 ◆ To our knowledge, no existing transformer-based Seq-VPR method achieves both flexibility and efficiency.</td></tr>
@@ -1446,6 +1458,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-07</td><td>ArchitectHead: Continuous Level of Detail Control for 3D Gaussian Head Avatars</td><td>[2510.05488](http://arxiv.org/pdf/2510.05488)</td><td>◆ 3D Gaussian Splatting (3DGS) has enabled photorealistic and real-time rendering of 3D head avatars.
+◆ Existing 3DGS-based avatars typically rely on tens of thousands of 3D Gaussian points (Gaussians), with the number of Gaussians fixed after training.
+◆ However, many practical applications require adjustable levels of detail (LOD) to balance rendering efficiency and visual quality.</td></tr>
 <tr><td>2025-10-02</td><td>StealthAttack: Robust 3D Gaussian Splatting Poisoning via Density-Guided Illusions</td><td>[2510.02314](http://arxiv.org/pdf/2510.02314)</td><td>◆ 3D scene representation methods like Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have significantly advanced novel view synthesis.
 ◆ As these methods become prevalent, addressing their vulnerabilities becomes critical.
 ◆ We analyze 3DGS robustness against image-level poisoning attacks and propose a novel density-guided poisoning method.</td></tr>
@@ -2270,6 +2285,21 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-07</td><td>Human3R: Everyone Everywhere All at Once</td><td>[2510.06219](http://arxiv.org/pdf/2510.06219)</td><td>◆ We present Human3R, a unified, feed-forward framework for online 4D human-scene reconstruction, in the world frame, from casually captured monocular videos.
+◆ Unlike previous approaches that rely on multi-stage pipelines, iterative contact-aware refinement between humans and scenes, and heavy dependencies, e.g., human detection, depth estimation, and SLAM pre-processing, Human3R jointly recovers global multi-person SMPL-X bodies (&quot;everyone&quot;), dense 3D scene (&quot;everywhere&quot;), and camera trajectories in a single forward pass (&quot;all-at-once&quot;).
+◆ Our method builds upon the 4D online reconstruction model CUT3R, and uses parameter-efficient visual prompt tuning, to strive to preserve CUT3R&#x27;s rich spatiotemporal priors, while enabling direct readout of multiple SMPL-X bodies.</td></tr>
+<tr><td>2025-10-07</td><td>EgoNight: Towards Egocentric Vision Understanding at Night with a Challenging Benchmark</td><td>[2510.06218](http://arxiv.org/pdf/2510.06218)</td><td>◆ Most existing benchmarks for egocentric vision understanding focus primarily on daytime scenarios, overlooking the low-light conditions that are inevitable in real-world applications.
+◆ To investigate this gap, we present EgoNight, the first comprehensive benchmark for nighttime egocentric vision, with visual question answering (VQA) as the core task.
+◆ A key feature of EgoNight is the introduction of day-night aligned videos, which enhance night annotation quality using the daytime data and reveal clear performance gaps between lighting conditions.</td></tr>
+<tr><td>2025-10-07</td><td>Dropping the D: RGB-D SLAM Without the Depth Sensor</td><td>[2510.06216](http://arxiv.org/pdf/2510.06216)</td><td>◆ We present DropD-SLAM, a real-time monocular SLAM system that achieves RGB-D-level accuracy without relying on depth sensors.
+◆ The system replaces active depth input with three pretrained vision modules: a monocular metric depth estimator, a learned keypoint detector, and an instance segmentation network.
+◆ Dynamic objects are suppressed using dilated instance masks, while static keypoints are assigned predicted depth values and backprojected into 3D to form metrically scaled features.</td></tr>
+<tr><td>2025-10-07</td><td>DeLTa: Demonstration and Language-Guided Novel Transparent Object Manipulation</td><td>[2510.05662](http://arxiv.org/pdf/2510.05662)</td><td>◆ Despite the prevalence of transparent object interactions in human everyday life, transparent robotic manipulation research remains limited to short-horizon tasks and basic grasping capabilities.Although some methods have partially addressed these issues, most of them have limitations in generalizability to novel objects and are insufficient for precise long-horizon robot manipulation.
+◆ To address this limitation, we propose DeLTa (Demonstration and Language-Guided Novel Transparent Object Manipulation), a novel framework that integrates depth estimation, 6D pose estimation, and vision-language planning for precise long-horizon manipulation of transparent objects guided by natural task instructions.
+◆ A key advantage of our method is its single-demonstration approach, which generalizes 6D trajectories to novel transparent objects without requiring category-level priors or additional training.</td></tr>
+<tr><td>2025-10-07</td><td>Human Action Recognition from Point Clouds over Time</td><td>[2510.05506](http://arxiv.org/pdf/2510.05506)</td><td>◆ Recent research into human action recognition (HAR) has focused predominantly on skeletal action recognition and video-based methods.
+◆ With the increasing availability of consumer-grade depth sensors and Lidar instruments, there is a growing opportunity to leverage dense 3D data for action recognition, to develop a third way.
+◆ This paper presents a novel approach for recognizing actions from 3D videos by introducing a pipeline that segments human point clouds from the background of a scene, tracks individuals over time, and performs body part segmentation.</td></tr>
 <tr><td>2025-10-06</td><td>HybridFlow: Quantification of Aleatoric and Epistemic Uncertainty with a Single Hybrid Model</td><td>[2510.05054](http://arxiv.org/pdf/2510.05054)</td><td>◆ Uncertainty quantification is critical for ensuring robustness in high-stakes machine learning applications.
 ◆ We introduce HybridFlow, a modular hybrid architecture that unifies the modeling of aleatoric and epistemic uncertainty by combining a Conditional Masked Autoregressive normalizing flow for estimating aleatoric uncertainty with a flexible probabilistic predictor for epistemic uncertainty.
 ◆ The framework supports integration with any probabilistic model class, allowing users to easily adapt HybridFlow to existing architectures without sacrificing predictive performance.</td></tr>
@@ -2904,4 +2934,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.07
+> 更新于: 2025.10.08
