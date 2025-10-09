@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.08)
+# SLAM领域最新论文 (2025.10.09)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-08</td><td>RTGS: Real-Time 3D Gaussian Splatting SLAM via Multi-Level Redundancy Reduction</td><td>[2510.06644](http://arxiv.org/pdf/2510.06644)</td><td>◆ 3D Gaussian Splatting (3DGS) based Simultaneous Localization and Mapping (SLAM) systems can largely benefit from 3DGS&#x27;s state-of-the-art rendering efficiency and accuracy, but have not yet been adopted in resource-constrained edge devices due to insufficient speed.
+◆ Addressing this, we identify notable redundancies across the SLAM pipeline for acceleration.
+◆ While conceptually straightforward, practical approaches are required to minimize the overhead associated with identifying and eliminating these redundancies.</td></tr>
 <tr><td>2025-10-07</td><td>Human3R: Everyone Everywhere All at Once</td><td>[2510.06219](http://arxiv.org/pdf/2510.06219)</td><td>◆ We present Human3R, a unified, feed-forward framework for online 4D human-scene reconstruction, in the world frame, from casually captured monocular videos.
 ◆ Unlike previous approaches that rely on multi-stage pipelines, iterative contact-aware refinement between humans and scenes, and heavy dependencies, e.g., human detection, depth estimation, and SLAM pre-processing, Human3R jointly recovers global multi-person SMPL-X bodies (&quot;everyone&quot;), dense 3D scene (&quot;everywhere&quot;), and camera trajectories in a single forward pass (&quot;all-at-once&quot;).
 ◆ Our method builds upon the 4D online reconstruction model CUT3R, and uses parameter-efficient visual prompt tuning, to strive to preserve CUT3R&#x27;s rich spatiotemporal priors, while enabling direct readout of multiple SMPL-X bodies.</td></tr>
@@ -1208,6 +1211,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-08</td><td>StyleKeeper: Prevent Content Leakage using Negative Visual Query Guidance</td><td>[2510.06827](http://arxiv.org/pdf/2510.06827)</td><td>◆ In the domain of text-to-image generation, diffusion models have emerged as powerful tools.
+◆ Recently, studies on visual prompting, where images are used as prompts, have enabled more precise control over style and content.
+◆ However, existing methods often suffer from content leakage, where undesired elements of the visual style prompt are transferred along with the intended style.</td></tr>
+<tr><td>2025-10-08</td><td>Efficient Discriminative Joint Encoders for Large Scale Vision-Language Reranking</td><td>[2510.06820](http://arxiv.org/pdf/2510.06820)</td><td>◆ Multimodal retrieval still leans on embedding-based models like CLIP for fast vector search over pre-computed image embeddings.
+◆ Yet, unlike text retrieval, where joint-encoder rerankers are standard, comparable vision--language rerankers are largely absent.
+◆ We find that seminal joint encoders such as BLIP are severely bottlenecked by an expensive visual feature-extraction stage, preventing practical deployment at scale.</td></tr>
 <tr><td>2025-10-06</td><td>SegMASt3R: Geometry Grounded Segment Matching</td><td>[2510.05051](http://arxiv.org/pdf/2510.05051)</td><td>◆ Segment matching is an important intermediate task in computer vision that establishes correspondences between semantically or geometrically coherent regions across images.
 ◆ Unlike keypoint matching, which focuses on localized features, segment matching captures structured regions, offering greater robustness to occlusions, lighting variations, and viewpoint changes.
 ◆ In this paper, we leverage the spatial understanding of 3D foundation models to tackle wide-baseline segment matching, a challenging setting involving extreme viewpoint shifts.</td></tr>
@@ -1458,6 +1467,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-08</td><td>RTGS: Real-Time 3D Gaussian Splatting SLAM via Multi-Level Redundancy Reduction</td><td>[2510.06644](http://arxiv.org/pdf/2510.06644)</td><td>◆ 3D Gaussian Splatting (3DGS) based Simultaneous Localization and Mapping (SLAM) systems can largely benefit from 3DGS&#x27;s state-of-the-art rendering efficiency and accuracy, but have not yet been adopted in resource-constrained edge devices due to insufficient speed.
+◆ Addressing this, we identify notable redundancies across the SLAM pipeline for acceleration.
+◆ While conceptually straightforward, practical approaches are required to minimize the overhead associated with identifying and eliminating these redundancies.</td></tr>
 <tr><td>2025-10-07</td><td>ArchitectHead: Continuous Level of Detail Control for 3D Gaussian Head Avatars</td><td>[2510.05488](http://arxiv.org/pdf/2510.05488)</td><td>◆ 3D Gaussian Splatting (3DGS) has enabled photorealistic and real-time rendering of 3D head avatars.
 ◆ Existing 3DGS-based avatars typically rely on tens of thousands of 3D Gaussian points (Gaussians), with the number of Gaussians fixed after training.
 ◆ However, many practical applications require adjustable levels of detail (LOD) to balance rendering efficiency and visual quality.</td></tr>
@@ -1479,7 +1491,7 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <tr><td>2025-09-29</td><td>GaussianLens: Localized High-Resolution Reconstruction via On-Demand Gaussian Densification</td><td>[2509.25603](http://arxiv.org/pdf/2509.25603)</td><td>◆ We perceive our surroundings with an active focus, paying more attention to regions of interest, such as the shelf labels in a grocery store.
 ◆ When it comes to scene reconstruction, this human perception trait calls for spatially varying degrees of detail ready for closer inspection in critical regions, preferably reconstructed on demand.
 ◆ While recent works in 3D Gaussian Splatting (3DGS) achieve fast, generalizable reconstruction from sparse views, their uniform resolution output leads to high computational costs unscalable to high-resolution training.</td></tr>
-<tr><td>2025-09-29</td><td>VGGT-X: When VGGT Meets Dense Novel View Synthesis</td><td>[2509.25191](http://arxiv.org/pdf/2509.25191)</td><td>◆ We study the problem of applying 3D Foundation Models (3DFMs) to dense Novel View Synthesis (NVS).
+<tr><td>2025-10-08</td><td>VGGT-X: When VGGT Meets Dense Novel View Synthesis</td><td>[2509.25191](http://arxiv.org/pdf/2509.25191)</td><td>◆ We study the problem of applying 3D Foundation Models (3DFMs) to dense Novel View Synthesis (NVS).
 ◆ Despite significant progress in Novel View Synthesis powered by NeRF and 3DGS, current approaches remain reliant on accurate 3D attributes (e.g., camera poses and point clouds) acquired from Structure-from-Motion (SfM), which is often slow and fragile in low-texture or low-overlap captures.
 ◆ Recent 3DFMs showcase orders of magnitude speedup over the traditional pipeline and great potential for online NVS.</td></tr>
 <tr><td>2025-09-29</td><td>Triangle Splatting+: Differentiable Rendering with Opaque Triangles</td><td>[2509.25122](http://arxiv.org/pdf/2509.25122)</td><td>◆ Reconstructing 3D scenes and synthesizing novel views has seen rapid progress in recent years.
@@ -2285,6 +2297,12 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-08</td><td>Pixel-Perfect Depth with Semantics-Prompted Diffusion Transformers</td><td>[2510.07316](http://arxiv.org/pdf/2510.07316)</td><td>◆ This paper presents Pixel-Perfect Depth, a monocular depth estimation model based on pixel-space diffusion generation that produces high-quality, flying-pixel-free point clouds from estimated depth maps.
+◆ Current generative depth estimation models fine-tune Stable Diffusion and achieve impressive performance.
+◆ However, they require a VAE to compress depth maps into latent space, which inevitably introduces \textit{flying pixels} at edges and details.</td></tr>
+<tr><td>2025-10-08</td><td>MV-Performer: Taming Video Diffusion Model for Faithful and Synchronized Multi-view Performer Synthesis</td><td>[2510.07190](http://arxiv.org/pdf/2510.07190)</td><td>◆ Recent breakthroughs in video generation, powered by large-scale datasets and diffusion techniques, have shown that video diffusion models can function as implicit 4D novel view synthesizers.
+◆ Nevertheless, current methods primarily concentrate on redirecting camera trajectory within the front view while struggling to generate 360-degree viewpoint changes.
+◆ In this paper, we focus on human-centric subdomain and present MV-Performer, an innovative framework for creating synchronized novel view videos from monocular full-body captures.</td></tr>
 <tr><td>2025-10-07</td><td>Human3R: Everyone Everywhere All at Once</td><td>[2510.06219](http://arxiv.org/pdf/2510.06219)</td><td>◆ We present Human3R, a unified, feed-forward framework for online 4D human-scene reconstruction, in the world frame, from casually captured monocular videos.
 ◆ Unlike previous approaches that rely on multi-stage pipelines, iterative contact-aware refinement between humans and scenes, and heavy dependencies, e.g., human detection, depth estimation, and SLAM pre-processing, Human3R jointly recovers global multi-person SMPL-X bodies (&quot;everyone&quot;), dense 3D scene (&quot;everywhere&quot;), and camera trajectories in a single forward pass (&quot;all-at-once&quot;).
 ◆ Our method builds upon the 4D online reconstruction model CUT3R, and uses parameter-efficient visual prompt tuning, to strive to preserve CUT3R&#x27;s rich spatiotemporal priors, while enabling direct readout of multiple SMPL-X bodies.</td></tr>
@@ -2297,7 +2315,7 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <tr><td>2025-10-07</td><td>DeLTa: Demonstration and Language-Guided Novel Transparent Object Manipulation</td><td>[2510.05662](http://arxiv.org/pdf/2510.05662)</td><td>◆ Despite the prevalence of transparent object interactions in human everyday life, transparent robotic manipulation research remains limited to short-horizon tasks and basic grasping capabilities.Although some methods have partially addressed these issues, most of them have limitations in generalizability to novel objects and are insufficient for precise long-horizon robot manipulation.
 ◆ To address this limitation, we propose DeLTa (Demonstration and Language-Guided Novel Transparent Object Manipulation), a novel framework that integrates depth estimation, 6D pose estimation, and vision-language planning for precise long-horizon manipulation of transparent objects guided by natural task instructions.
 ◆ A key advantage of our method is its single-demonstration approach, which generalizes 6D trajectories to novel transparent objects without requiring category-level priors or additional training.</td></tr>
-<tr><td>2025-10-07</td><td>Human Action Recognition from Point Clouds over Time</td><td>[2510.05506](http://arxiv.org/pdf/2510.05506)</td><td>◆ Recent research into human action recognition (HAR) has focused predominantly on skeletal action recognition and video-based methods.
+<tr><td>2025-10-08</td><td>Human Action Recognition from Point Clouds over Time</td><td>[2510.05506](http://arxiv.org/pdf/2510.05506)</td><td>◆ Recent research into human action recognition (HAR) has focused predominantly on skeletal action recognition and video-based methods.
 ◆ With the increasing availability of consumer-grade depth sensors and Lidar instruments, there is a growing opportunity to leverage dense 3D data for action recognition, to develop a third way.
 ◆ This paper presents a novel approach for recognizing actions from 3D videos by introducing a pipeline that segments human point clouds from the background of a scene, tracks individuals over time, and performs body part segmentation.</td></tr>
 <tr><td>2025-10-06</td><td>HybridFlow: Quantification of Aleatoric and Epistemic Uncertainty with a Single Hybrid Model</td><td>[2510.05054](http://arxiv.org/pdf/2510.05054)</td><td>◆ Uncertainty quantification is critical for ensuring robustness in high-stakes machine learning applications.
@@ -2934,4 +2952,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.08
+> 更新于: 2025.10.09
