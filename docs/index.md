@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.09)
+# SLAM领域最新论文 (2025.10.10)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,7 +22,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-10-08</td><td>RTGS: Real-Time 3D Gaussian Splatting SLAM via Multi-Level Redundancy Reduction</td><td>[2510.06644](http://arxiv.org/pdf/2510.06644)</td><td>◆ 3D Gaussian Splatting (3DGS) based Simultaneous Localization and Mapping (SLAM) systems can largely benefit from 3DGS&#x27;s state-of-the-art rendering efficiency and accuracy, but have not yet been adopted in resource-constrained edge devices due to insufficient speed.
+<tr><td>2025-10-09</td><td>ARTDECO: Towards Efficient and High-Fidelity On-the-Fly 3D Reconstruction with Structured Scene Representation</td><td>[2510.08551](http://arxiv.org/pdf/2510.08551)</td><td>◆ On-the-fly 3D reconstruction from monocular image sequences is a long-standing challenge in computer vision, critical for applications such as real-to-sim, AR/VR, and robotics.
+◆ Existing methods face a major tradeoff: per-scene optimization yields high fidelity but is computationally expensive, whereas feed-forward foundation models enable real-time inference but struggle with accuracy and robustness.
+◆ In this work, we propose ARTDECO, a unified framework that combines the efficiency of feed-forward models with the reliability of SLAM-based pipelines.</td></tr>
+<tr><td>2025-10-09</td><td>RTGS: Real-Time 3D Gaussian Splatting SLAM via Multi-Level Redundancy Reduction</td><td>[2510.06644](http://arxiv.org/pdf/2510.06644)</td><td>◆ 3D Gaussian Splatting (3DGS) based Simultaneous Localization and Mapping (SLAM) systems can largely benefit from 3DGS&#x27;s state-of-the-art rendering efficiency and accuracy, but have not yet been adopted in resource-constrained edge devices due to insufficient speed.
 ◆ Addressing this, we identify notable redundancies across the SLAM pipeline for acceleration.
 ◆ While conceptually straightforward, practical approaches are required to minimize the overhead associated with identifying and eliminating these redundancies.</td></tr>
 <tr><td>2025-10-07</td><td>Human3R: Everyone Everywhere All at Once</td><td>[2510.06219](http://arxiv.org/pdf/2510.06219)</td><td>◆ We present Human3R, a unified, feed-forward framework for online 4D human-scene reconstruction, in the world frame, from casually captured monocular videos.
@@ -759,6 +762,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-09</td><td>Pursuing decarbonization and competitiveness: a narrow corridor for European green industrial transformation</td><td>[2510.08199](http://arxiv.org/pdf/2510.08199)</td><td>◆ This study analyzes how Europe can decarbonize its industrial sector while remaining competitive.
+◆ Using the open-source model PyPSA-Eur, it examines key energy- and emission-intensive industries, including steel, cement, methanol, ammonia, and high-value chemicals.
+◆ Two development paths are explored: a continued decline in industrial activity and a reindustrialization driven by competitiveness policies.</td></tr>
+<tr><td>2025-10-09</td><td>InstructUDrag: Joint Text Instructions and Object Dragging for Interactive Image Editing</td><td>[2510.08181](http://arxiv.org/pdf/2510.08181)</td><td>◆ Text-to-image diffusion models have shown great potential for image editing, with techniques such as text-based and object-dragging methods emerging as key approaches.
+◆ However, each of these methods has inherent limitations: text-based methods struggle with precise object positioning, while object dragging methods are confined to static relocation.
+◆ To address these issues, we propose InstructUDrag, a diffusion-based framework that combines text instructions with object dragging, enabling simultaneous object dragging and text-based image editing.</td></tr>
 <tr><td>2025-10-07</td><td>The DISTANT Design for Remote Transmission and Steering Systems for Planetary Robotics</td><td>[2510.05981](http://arxiv.org/pdf/2510.05981)</td><td>◆ Planetary exploration missions require robust locomotion systems capable of operating in extreme environments over extended periods.
 ◆ This paper presents the DISTANT (Distant Transmission and Steering Systems) design, a novel approach for relocating rover traction and steering actuators from wheel-mounted positions to a thermally protected warm box within the rover body.
 ◆ The design addresses critical challenges in long-distance traversal missions by protecting sensitive components from thermal cycling, dust contamination, and mechanical wear.</td></tr>
@@ -1459,7 +1468,19 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-10-08</td><td>RTGS: Real-Time 3D Gaussian Splatting SLAM via Multi-Level Redundancy Reduction</td><td>[2510.06644](http://arxiv.org/pdf/2510.06644)</td><td>◆ 3D Gaussian Splatting (3DGS) based Simultaneous Localization and Mapping (SLAM) systems can largely benefit from 3DGS&#x27;s state-of-the-art rendering efficiency and accuracy, but have not yet been adopted in resource-constrained edge devices due to insufficient speed.
+<tr><td>2025-10-09</td><td>D$^2$GS: Depth-and-Density Guided Gaussian Splatting for Stable and Accurate Sparse-View Reconstruction</td><td>[2510.08566](http://arxiv.org/pdf/2510.08566)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) enable real-time, high-fidelity novel view synthesis (NVS) with explicit 3D representations.
+◆ However, performance degradation and instability remain significant under sparse-view conditions.
+◆ In this work, we identify two key failure modes under sparse-view conditions: overfitting in regions with excessive Gaussian density near the camera, and underfitting in distant areas with insufficient Gaussian coverage.</td></tr>
+<tr><td>2025-10-09</td><td>Efficient Label Refinement for Face Parsing Under Extreme Poses Using 3D Gaussian Splatting</td><td>[2510.08096](http://arxiv.org/pdf/2510.08096)</td><td>◆ Accurate face parsing under extreme viewing angles remains a significant challenge due to limited labeled data in such poses.
+◆ Manual annotation is costly and often impractical at scale.
+◆ We propose a novel label refinement pipeline that leverages 3D Gaussian Splatting (3DGS) to generate accurate segmentation masks from noisy multiview predictions.</td></tr>
+<tr><td>2025-10-09</td><td>PrismGS: Physically-Grounded Anti-Aliasing for High-Fidelity Large-Scale 3D Gaussian Splatting</td><td>[2510.07830](http://arxiv.org/pdf/2510.07830)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently enabled real-time photorealistic rendering in compact scenes, but scaling to large urban environments introduces severe aliasing artifacts and optimization instability, especially under high-resolution (e.g., 4K) rendering.
+◆ These artifacts, manifesting as flickering textures and jagged edges, arise from the mismatch between Gaussian primitives and the multi-scale nature of urban geometry.
+◆ While existing ``divide-and-conquer&#x27;&#x27; pipelines address scalability, they fail to resolve this fidelity gap.</td></tr>
+<tr><td>2025-10-09</td><td>DEGS: Deformable Event-based 3D Gaussian Splatting from RGB and Event Stream</td><td>[2510.07752](http://arxiv.org/pdf/2510.07752)</td><td>◆ Reconstructing Dynamic 3D Gaussian Splatting (3DGS) from low-framerate RGB videos is challenging.
+◆ This is because large inter-frame motions will increase the uncertainty of the solution space.
+◆ For example, one pixel in the first frame might have more choices to reach the corresponding pixel in the second frame.</td></tr>
+<tr><td>2025-10-09</td><td>RTGS: Real-Time 3D Gaussian Splatting SLAM via Multi-Level Redundancy Reduction</td><td>[2510.06644](http://arxiv.org/pdf/2510.06644)</td><td>◆ 3D Gaussian Splatting (3DGS) based Simultaneous Localization and Mapping (SLAM) systems can largely benefit from 3DGS&#x27;s state-of-the-art rendering efficiency and accuracy, but have not yet been adopted in resource-constrained edge devices due to insufficient speed.
 ◆ Addressing this, we identify notable redundancies across the SLAM pipeline for acceleration.
 ◆ While conceptually straightforward, practical approaches are required to minimize the overhead associated with identifying and eliminating these redundancies.</td></tr>
 <tr><td>2025-10-07</td><td>ArchitectHead: Continuous Level of Detail Control for 3D Gaussian Head Avatars</td><td>[2510.05488](http://arxiv.org/pdf/2510.05488)</td><td>◆ 3D Gaussian Splatting (3DGS) has enabled photorealistic and real-time rendering of 3D head avatars.
@@ -2287,6 +2308,15 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-09</td><td>RayFusion: Ray Fusion Enhanced Collaborative Visual Perception</td><td>[2510.08017](http://arxiv.org/pdf/2510.08017)</td><td>◆ Collaborative visual perception methods have gained widespread attention in the autonomous driving community in recent years due to their ability to address sensor limitation problems.
+◆ However, the absence of explicit depth information often makes it difficult for camera-based perception systems, e.g., 3D object detection, to generate accurate predictions.
+◆ To alleviate the ambiguity in depth estimation, we propose RayFusion, a ray-based fusion method for collaborative visual perception.</td></tr>
+<tr><td>2025-10-09</td><td>CVD-STORM: Cross-View Video Diffusion with Spatial-Temporal Reconstruction Model for Autonomous Driving</td><td>[2510.07944](http://arxiv.org/pdf/2510.07944)</td><td>◆ Generative models have been widely applied to world modeling for environment simulation and future state prediction.
+◆ With advancements in autonomous driving, there is a growing demand not only for high-fidelity video generation under various controls, but also for producing diverse and meaningful information such as depth estimation.
+◆ To address this, we propose CVD-STORM, a cross-view video diffusion model utilizing a spatial-temporal reconstruction Variational Autoencoder (VAE) that generates long-term, multi-view videos with 4D reconstruction capabilities under various control inputs.</td></tr>
+<tr><td>2025-10-09</td><td>An End-to-End Room Geometry Constrained Depth Estimation Framework for Indoor Panorama Images</td><td>[2510.07817](http://arxiv.org/pdf/2510.07817)</td><td>◆ Predicting spherical pixel depth from monocular $360^{\circ}$ indoor panoramas is critical for many vision applications.
+◆ However, existing methods focus on pixel-level accuracy, causing oversmoothed room corners and noise sensitivity.
+◆ In this paper, we propose a depth estimation framework based on room geometry constraints, which extracts room geometry information through layout prediction and integrates those information into the depth estimation process through background segmentation mechanism.</td></tr>
 <tr><td>2025-10-08</td><td>Pixel-Perfect Depth with Semantics-Prompted Diffusion Transformers</td><td>[2510.07316](http://arxiv.org/pdf/2510.07316)</td><td>◆ This paper presents Pixel-Perfect Depth, a monocular depth estimation model based on pixel-space diffusion generation that produces high-quality, flying-pixel-free point clouds from estimated depth maps.
 ◆ Current generative depth estimation models fine-tune Stable Diffusion and achieve impressive performance.
 ◆ However, they require a VAE to compress depth maps into latent space, which inevitably introduces \textit{flying pixels} at edges and details.</td></tr>
@@ -2305,7 +2335,7 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <tr><td>2025-10-07</td><td>DeLTa: Demonstration and Language-Guided Novel Transparent Object Manipulation</td><td>[2510.05662](http://arxiv.org/pdf/2510.05662)</td><td>◆ Despite the prevalence of transparent object interactions in human everyday life, transparent robotic manipulation research remains limited to short-horizon tasks and basic grasping capabilities.Although some methods have partially addressed these issues, most of them have limitations in generalizability to novel objects and are insufficient for precise long-horizon robot manipulation.
 ◆ To address this limitation, we propose DeLTa (Demonstration and Language-Guided Novel Transparent Object Manipulation), a novel framework that integrates depth estimation, 6D pose estimation, and vision-language planning for precise long-horizon manipulation of transparent objects guided by natural task instructions.
 ◆ A key advantage of our method is its single-demonstration approach, which generalizes 6D trajectories to novel transparent objects without requiring category-level priors or additional training.</td></tr>
-<tr><td>2025-10-08</td><td>Human Action Recognition from Point Clouds over Time</td><td>[2510.05506](http://arxiv.org/pdf/2510.05506)</td><td>◆ Recent research into human action recognition (HAR) has focused predominantly on skeletal action recognition and video-based methods.
+<tr><td>2025-10-09</td><td>Human Action Recognition from Point Clouds over Time</td><td>[2510.05506](http://arxiv.org/pdf/2510.05506)</td><td>◆ Recent research into human action recognition (HAR) has focused predominantly on skeletal action recognition and video-based methods.
 ◆ With the increasing availability of consumer-grade depth sensors and Lidar instruments, there is a growing opportunity to leverage dense 3D data for action recognition, to develop a third way.
 ◆ This paper presents a novel approach for recognizing actions from 3D videos by introducing a pipeline that segments human point clouds from the background of a scene, tracks individuals over time, and performs body part segmentation.</td></tr>
 <tr><td>2025-10-06</td><td>HybridFlow: Quantification of Aleatoric and Epistemic Uncertainty with a Single Hybrid Model</td><td>[2510.05054](http://arxiv.org/pdf/2510.05054)</td><td>◆ Uncertainty quantification is critical for ensuring robustness in high-stakes machine learning applications.
@@ -2940,4 +2970,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.09
+> 更新于: 2025.10.10
