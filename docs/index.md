@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.13)
+# SLAM领域最新论文 (2025.10.14)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-11</td><td>FORM: Fixed-Lag Odometry with Reparative Mapping utilizing Rotating LiDAR Sensors</td><td>[2510.09966](http://arxiv.org/pdf/2510.09966)</td><td>◆ Light Detection and Ranging (LiDAR) sensors have become a de-facto sensor for many robot state estimation tasks, spurring development of many LiDAR Odometry (LO) methods in recent years.
+◆ While some smoothing-based LO methods have been proposed, most require matching against multiple scans, resulting in sub-real-time performance.
+◆ Due to this, most prior works estimate a single state at a time and are ``submap&#x27;&#x27;-based.</td></tr>
 <tr><td>2025-10-09</td><td>ARTDECO: Towards Efficient and High-Fidelity On-the-Fly 3D Reconstruction with Structured Scene Representation</td><td>[2510.08551](http://arxiv.org/pdf/2510.08551)</td><td>◆ On-the-fly 3D reconstruction from monocular image sequences is a long-standing challenge in computer vision, critical for applications such as real-to-sim, AR/VR, and robotics.
 ◆ Existing methods face a major tradeoff: per-scene optimization yields high fidelity but is computationally expensive, whereas feed-forward foundation models enable real-time inference but struggle with accuracy and robustness.
 ◆ In this work, we propose ARTDECO, a unified framework that combines the efficiency of feed-forward models with the reliability of SLAM-based pipelines.</td></tr>
@@ -762,6 +765,18 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-13</td><td>Deterministic hBN bubbles as a versatile platform for studies on single-photon emitters</td><td>[2510.11610](http://arxiv.org/pdf/2510.11610)</td><td>◆ Single-photon emitters (SPEs) in two-dimensional materials are highly promising candidates for quantum technologies.
+◆ SPEs in hexagonal boron nitride (hBN) have been widely investigated, but mostly in exfoliated or powder samples that require an activation process, making it difficult to compare studies and reproduce results.
+◆ Here, we address this problem and propose a platform based on large-area metaloraganic vapour phase epitaxy (MOVPE)-grown hBN, which combines reproducibility and scalability with the ability to readily host SPEs without activation.</td></tr>
+<tr><td>2025-10-13</td><td>ACE-G: Improving Generalization of Scene Coordinate Regression Through Query Pre-Training</td><td>[2510.11605](http://arxiv.org/pdf/2510.11605)</td><td>◆ Scene coordinate regression (SCR) has established itself as a promising learning-based approach to visual relocalization.
+◆ After mere minutes of scene-specific training, SCR models estimate camera poses of query images with high accuracy.
+◆ Still, SCR methods fall short of the generalization capabilities of more classical feature-matching approaches.</td></tr>
+<tr><td>2025-10-11</td><td>Old is Gold: Optimizing Single-threaded Applications with Exgen-Malloc</td><td>[2510.10219](http://arxiv.org/pdf/2510.10219)</td><td>◆ Memory allocators hide beneath nearly every application stack, yet their performance footprint extends far beyond their code size.
+◆ Even small inefficiencies in the allocators ripple through caches and the rest of the memory hierarchy, collectively imposing what operators often call a &quot;datacenter tax&quot;.
+◆ At hyperscale, even a 1% improvement in allocator efficiency can unlock millions of dollars in savings and measurable reductions in datacenter energy consumption.</td></tr>
+<tr><td>2025-10-10</td><td>Robust Visual Teach-and-Repeat Navigation with Flexible Topo-metric Graph Map Representation</td><td>[2510.09089](http://arxiv.org/pdf/2510.09089)</td><td>◆ Visual Teach-and-Repeat Navigation is a direct solution for mobile robot to be deployed in unknown environments.
+◆ However, robust trajectory repeat navigation still remains challenged due to environmental changing and dynamic objects.
+◆ In this paper, we propose a novel visual teach-and-repeat navigation system, which consists of a flexible map representation, robust map matching and a map-less local navigation module.</td></tr>
 <tr><td>2025-10-09</td><td>Pursuing decarbonization and competitiveness: a narrow corridor for European green industrial transformation</td><td>[2510.08199](http://arxiv.org/pdf/2510.08199)</td><td>◆ This study analyzes how Europe can decarbonize its industrial sector while remaining competitive.
 ◆ Using the open-source model PyPSA-Eur, it examines key energy- and emission-intensive industries, including steel, cement, methanol, ammonia, and high-value chemicals.
 ◆ Two development paths are explored: a continued decline in industrial activity and a reindustrialization driven by competitiveness policies.</td></tr>
@@ -1468,6 +1483,27 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-12</td><td>High-Fidelity Simulated Data Generation for Real-World Zero-Shot Robotic Manipulation Learning with Gaussian Splatting</td><td>[2510.10637](http://arxiv.org/pdf/2510.10637)</td><td>◆ The scalability of robotic learning is fundamentally bottlenecked by the significant cost and labor of real-world data collection.
+◆ While simulated data offers a scalable alternative, it often fails to generalize to the real world due to significant gaps in visual appearance, physical properties, and object interactions.
+◆ To address this, we propose RoboSimGS, a novel Real2Sim2Real framework that converts multi-view real-world images into scalable, high-fidelity, and physically interactive simulation environments for robotic manipulation.</td></tr>
+<tr><td>2025-10-11</td><td>Opacity-Gradient Driven Density Control for Compact and Efficient Few-Shot 3D Gaussian Splatting</td><td>[2510.10257](http://arxiv.org/pdf/2510.10257)</td><td>◆ 3D Gaussian Splatting (3DGS) struggles in few-shot scenarios, where its standard adaptive density control (ADC) can lead to overfitting and bloated reconstructions.
+◆ While state-of-the-art methods like FSGS improve quality, they often do so by significantly increasing the primitive count.
+◆ This paper presents a framework that revises the core 3DGS optimization to prioritize efficiency.</td></tr>
+<tr><td>2025-10-11</td><td>Gesplat: Robust Pose-Free 3D Reconstruction via Geometry-Guided Gaussian Splatting</td><td>[2510.10097](http://arxiv.org/pdf/2510.10097)</td><td>◆ Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have advanced 3D reconstruction and novel view synthesis, but remain heavily dependent on accurate camera poses and dense viewpoint coverage.
+◆ These requirements limit their applicability in sparse-view settings, where pose estimation becomes unreliable and supervision is insufficient.
+◆ To overcome these challenges, we introduce Gesplat, a 3DGS-based framework that enables robust novel view synthesis and geometrically consistent reconstruction from unposed sparse images.</td></tr>
+<tr><td>2025-10-11</td><td>P-4DGS: Predictive 4D Gaussian Splatting with 90$\times$ Compression</td><td>[2510.10030](http://arxiv.org/pdf/2510.10030)</td><td>◆ 3D Gaussian Splatting (3DGS) has garnered significant attention due to its superior scene representation fidelity and real-time rendering performance, especially for dynamic 3D scene reconstruction (\textit{i.e.}, 4D reconstruction).
+◆ However, despite achieving promising results, most existing algorithms overlook the substantial temporal and spatial redundancies inherent in dynamic scenes, leading to prohibitive memory consumption.
+◆ To address this, we propose P-4DGS, a novel dynamic 3DGS representation for compact 4D scene modeling.</td></tr>
+<tr><td>2025-10-11</td><td>CLoD-GS: Continuous Level-of-Detail via 3D Gaussian Splatting</td><td>[2510.09997](http://arxiv.org/pdf/2510.09997)</td><td>◆ Level of Detail (LoD) is a fundamental technique in real-time computer graphics for managing the rendering costs of complex scenes while preserving visual fidelity.
+◆ Traditionally, LoD is implemented using discrete levels (DLoD), where multiple, distinct versions of a model are swapped out at different distances.
+◆ This long-standing paradigm, however, suffers from two major drawbacks: it requires significant storage for multiple model copies and causes jarring visual ``popping&quot; artifacts during transitions, degrading the user experience.</td></tr>
+<tr><td>2025-10-11</td><td>VG-Mapping: Variation-Aware 3D Gaussians for Online Semi-static Scene Mapping</td><td>[2510.09962](http://arxiv.org/pdf/2510.09962)</td><td>◆ Maintaining an up-to-date map that accurately reflects recent changes in the environment is crucial, especially for robots that repeatedly traverse the same space.
+◆ Failing to promptly update the changed regions can degrade map quality, resulting in poor localization, inefficient operations, and even lost robots.
+◆ 3D Gaussian Splatting (3DGS) has recently seen widespread adoption in online map reconstruction due to its dense, differentiable, and photorealistic properties, yet accurately and efficiently updating the regions of change remains a challenge.</td></tr>
+<tr><td>2025-10-10</td><td>Visibility-Aware Densification for 3D Gaussian Splatting in Dynamic Urban Scenes</td><td>[2510.09364](http://arxiv.org/pdf/2510.09364)</td><td>◆ 3D Gaussian splatting (3DGS) has demonstrated impressive performance in synthesizing high-fidelity novel views.
+◆ Nonetheless, its effectiveness critically depends on the quality of the initialized point cloud.
+◆ Specifically, achieving uniform and complete point coverage over the underlying scene structure requires overlapping observation frustums, an assumption that is often violated in unbounded, dynamic urban environments.</td></tr>
 <tr><td>2025-10-09</td><td>D$^2$GS: Depth-and-Density Guided Gaussian Splatting for Stable and Accurate Sparse-View Reconstruction</td><td>[2510.08566](http://arxiv.org/pdf/2510.08566)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) enable real-time, high-fidelity novel view synthesis (NVS) with explicit 3D representations.
 ◆ However, performance degradation and instability remain significant under sparse-view conditions.
 ◆ In this work, we identify two key failure modes under sparse-view conditions: overfitting in regions with excessive Gaussian density near the camera, and underfitting in distant areas with insufficient Gaussian coverage.</td></tr>
@@ -2308,6 +2344,24 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-13</td><td>Evaluating the effects of preprocessing, method selection, and hyperparameter tuning on SAR-based flood mapping and water depth estimation</td><td>[2510.11305](http://arxiv.org/pdf/2510.11305)</td><td>◆ Flood mapping and water depth estimation from Synthetic Aperture Radar (SAR) imagery are crucial for calibrating and validating hydraulic models.
+◆ This study uses SAR imagery to evaluate various preprocessing (especially speckle noise reduction), flood mapping, and water depth estimation methods.
+◆ The impact of the choice of method at different steps and its hyperparameters is studied by considering an ensemble of preprocessed images, flood maps, and water depth fields.</td></tr>
+<tr><td>2025-10-11</td><td>Gesplat: Robust Pose-Free 3D Reconstruction via Geometry-Guided Gaussian Splatting</td><td>[2510.10097](http://arxiv.org/pdf/2510.10097)</td><td>◆ Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have advanced 3D reconstruction and novel view synthesis, but remain heavily dependent on accurate camera poses and dense viewpoint coverage.
+◆ These requirements limit their applicability in sparse-view settings, where pose estimation becomes unreliable and supervision is insufficient.
+◆ To overcome these challenges, we introduce Gesplat, a 3DGS-based framework that enables robust novel view synthesis and geometrically consistent reconstruction from unposed sparse images.</td></tr>
+<tr><td>2025-10-10</td><td>Fast Self-Supervised depth and mask aware Association for Multi-Object Tracking</td><td>[2510.09878](http://arxiv.org/pdf/2510.09878)</td><td>◆ Multi-object tracking (MOT) methods often rely on Intersection-over-Union (IoU) for association.
+◆ However, this becomes unreliable when objects are similar or occluded.
+◆ Also, computing IoU for segmentation masks is computationally expensive.</td></tr>
+<tr><td>2025-10-10</td><td>Hybrid-grained Feature Aggregation with Coarse-to-fine Language Guidance for Self-supervised Monocular Depth Estimation</td><td>[2510.09320](http://arxiv.org/pdf/2510.09320)</td><td>◆ Current self-supervised monocular depth estimation (MDE) approaches encounter performance limitations due to insufficient semantic-spatial knowledge extraction.
+◆ To address this challenge, we propose Hybrid-depth, a novel framework that systematically integrates foundation models (e.g., CLIP and DINO) to extract visual priors and acquire sufficient contextual information for MDE.
+◆ Our approach introduces a coarse-to-fine progressive learning framework: 1) Firstly, we aggregate multi-grained features from CLIP (global semantics) and DINO (local spatial details) under contrastive language guidance.</td></tr>
+<tr><td>2025-10-10</td><td>Online Video Depth Anything: Temporally-Consistent Depth Prediction with Low Memory Consumption</td><td>[2510.09182](http://arxiv.org/pdf/2510.09182)</td><td>◆ Depth estimation from monocular video has become a key component of many real-world computer vision systems.
+◆ Recently, Video Depth Anything (VDA) has demonstrated strong performance on long video sequences.
+◆ However, it relies on batch-processing which prohibits its use in an online setting.</td></tr>
+<tr><td>2025-10-08</td><td>Into the Rabbit Hull: From Task-Relevant Concepts in DINO to Minkowski Geometry</td><td>[2510.08638](http://arxiv.org/pdf/2510.08638)</td><td>◆ DINOv2 is routinely deployed to recognize objects, scenes, and actions; yet the nature of what it perceives remains unknown.
+◆ As a working baseline, we adopt the Linear Representation Hypothesis (LRH) and operationalize it using SAEs, producing a 32,000-unit dictionary that serves as the interpretability backbone of our study, which unfolds in three parts.
+◆ In the first part, we analyze how different downstream tasks recruit concepts from our learned dictionary, revealing functional specialization: classification exploits &quot;Elsewhere&quot; concepts that fire everywhere except on target objects, implementing learned negations; segmentation relies on boundary detectors forming coherent subspaces; depth estimation draws on three distinct monocular depth cues matching visual neuroscience principles.</td></tr>
 <tr><td>2025-10-09</td><td>RayFusion: Ray Fusion Enhanced Collaborative Visual Perception</td><td>[2510.08017](http://arxiv.org/pdf/2510.08017)</td><td>◆ Collaborative visual perception methods have gained widespread attention in the autonomous driving community in recent years due to their ability to address sensor limitation problems.
 ◆ However, the absence of explicit depth information often makes it difficult for camera-based perception systems, e.g., 3D object detection, to generate accurate predictions.
 ◆ To alleviate the ambiguity in depth estimation, we propose RayFusion, a ray-based fusion method for collaborative visual perception.</td></tr>
@@ -2970,4 +3024,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.13
+> 更新于: 2025.10.14
