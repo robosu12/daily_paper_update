@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.14)
+# SLAM领域最新论文 (2025.10.15)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -582,6 +582,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-14</td><td>SPORTS: Simultaneous Panoptic Odometry, Rendering, Tracking and Segmentation for Urban Scenes Understanding</td><td>[2510.12749](http://arxiv.org/pdf/2510.12749)</td><td>◆ The scene perception, understanding, and simulation are fundamental techniques for embodied-AI agents, while existing solutions are still prone to segmentation deficiency, dynamic objects&#x27; interference, sensor data sparsity, and view-limitation problems.
+◆ This paper proposes a novel framework, named SPORTS, for holistic scene understanding via tightly integrating Video Panoptic Segmentation (VPS), Visual Odometry (VO), and Scene Rendering (SR) tasks into an iterative and unified perspective.
+◆ Firstly, VPS designs an adaptive attention-based geometric fusion mechanism to align cross-frame features via enrolling the pose, depth, and optical flow modality, which automatically adjust feature maps for different decoding stages.</td></tr>
+<tr><td>2025-10-14</td><td>PolygMap: A Perceptive Locomotion Framework for Humanoid Robot Stair Climbing</td><td>[2510.12346](http://arxiv.org/pdf/2510.12346)</td><td>◆ Recently, biped robot walking technology has been significantly developed, mainly in the context of a bland walking scheme.
+◆ To emulate human walking, robots need to step on the positions they see in unknown spaces accurately.
+◆ In this paper, we present PolyMap, a perception-based locomotion planning framework for humanoid robots to climb stairs.</td></tr>
 <tr><td>2025-10-06</td><td>OKVIS2-X: Open Keyframe-based Visual-Inertial SLAM Configurable with Dense Depth or LiDAR, and GNSS</td><td>[2510.04612](http://arxiv.org/pdf/2510.04612)</td><td>◆ To empower mobile robots with usable maps as well as highest state estimation accuracy and robustness, we present OKVIS2-X: a state-of-the-art multi-sensor Simultaneous Localization and Mapping (SLAM) system building dense volumetric occupancy maps, while scalable to large environments and operating in realtime.
 ◆ Our unified SLAM framework seamlessly integrates different sensor modalities: visual, inertial, measured or learned depth, LiDAR and Global Navigation Satellite System (GNSS) measurements.
 ◆ Unlike most state-of-the-art SLAM systems, we advocate using dense volumetric map representations when leveraging depth or range-sensing capabilities.</td></tr>
@@ -765,6 +771,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-14</td><td>Scene Coordinate Reconstruction Priors</td><td>[2510.12387](http://arxiv.org/pdf/2510.12387)</td><td>◆ Scene coordinate regression (SCR) models have proven to be powerful implicit scene representations for 3D vision, enabling visual relocalization and structure-from-motion.
+◆ SCR models are trained specifically for one scene.
+◆ If training images imply insufficient multi-view constraints SCR models degenerate.</td></tr>
 <tr><td>2025-10-13</td><td>Deterministic hBN bubbles as a versatile platform for studies on single-photon emitters</td><td>[2510.11610](http://arxiv.org/pdf/2510.11610)</td><td>◆ Single-photon emitters (SPEs) in two-dimensional materials are highly promising candidates for quantum technologies.
 ◆ SPEs in hexagonal boron nitride (hBN) have been widely investigated, but mostly in exfoliated or powder samples that require an activation process, making it difficult to compare studies and reproduce results.
 ◆ Here, we address this problem and propose a platform based on large-area metaloraganic vapour phase epitaxy (MOVPE)-grown hBN, which combines reproducibility and scalability with the ability to readily host SPEs without activation.</td></tr>
@@ -1483,6 +1492,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-14</td><td>BSGS: Bi-stage 3D Gaussian Splatting for Camera Motion Deblurring</td><td>[2510.12493](http://arxiv.org/pdf/2510.12493)</td><td>◆ 3D Gaussian Splatting has exhibited remarkable capabilities in 3D scene reconstruction.However, reconstructing high-quality 3D scenes from motion-blurred images caused by camera motion poses a significant challenge.The performance of existing 3DGS-based deblurring methods are limited due to their inherent mechanisms, such as extreme dependence on the accuracy of camera poses and inability to effectively control erroneous Gaussian primitives densification caused by motion blur.To solve these problems, we introduce a novel framework, Bi-Stage 3D Gaussian Splatting, to accurately reconstruct 3D scenes from motion-blurred images.BSGS contains two stages.
+◆ First, Camera Pose Refinement roughly optimizes camera poses to reduce motion-induced distortions.
+◆ Second, with fixed rough camera poses, Global RigidTransformation further corrects motion-induced blur distortions.To alleviate multi-subframe gradient conflicts, we propose a subframe gradient aggregation strategy to optimize both stages.Furthermore, a space-time bi-stage optimization strategy is introduced to dynamically adjust primitive densification thresholds and prevent premature noisy Gaussian generation in blurred regions.</td></tr>
 <tr><td>2025-10-12</td><td>High-Fidelity Simulated Data Generation for Real-World Zero-Shot Robotic Manipulation Learning with Gaussian Splatting</td><td>[2510.10637](http://arxiv.org/pdf/2510.10637)</td><td>◆ The scalability of robotic learning is fundamentally bottlenecked by the significant cost and labor of real-world data collection.
 ◆ While simulated data offers a scalable alternative, it often fails to generalize to the real world due to significant gaps in visual appearance, physical properties, and object interactions.
 ◆ To address this, we propose RoboSimGS, a novel Real2Sim2Real framework that converts multi-view real-world images into scalable, high-fidelity, and physically interactive simulation environments for robotic manipulation.</td></tr>
@@ -2344,6 +2356,15 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-14</td><td>E-MoFlow: Learning Egomotion and Optical Flow from Event Data via Implicit Regularization</td><td>[2510.12753](http://arxiv.org/pdf/2510.12753)</td><td>◆ The estimation of optical flow and 6-DoF ego-motion, two fundamental tasks in 3D vision, has typically been addressed independently.
+◆ For neuromorphic vision (e.g., event cameras), however, the lack of robust data association makes solving the two problems separately an ill-posed challenge, especially in the absence of supervision via ground truth.
+◆ Existing works mitigate this ill-posedness by either enforcing the smoothness of the flow field via an explicit variational regularizer or leveraging explicit structure-and-motion priors in the parametrization to improve event alignment.</td></tr>
+<tr><td>2025-10-14</td><td>Spatial Forcing: Implicit Spatial Representation Alignment for Vision-language-action Model</td><td>[2510.12276](http://arxiv.org/pdf/2510.12276)</td><td>◆ Vision-language-action (VLA) models have recently shown strong potential in enabling robots to follow language instructions and execute precise actions.
+◆ However, most VLAs are built upon vision-language models pretrained solely on 2D data, which lack accurate spatial awareness and hinder their ability to operate in the 3D physical world.
+◆ Existing solutions attempt to incorporate explicit 3D sensor inputs such as depth maps or point clouds, but these approaches face challenges due to sensor noise, hardware heterogeneity, and incomplete depth coverage in existing datasets.</td></tr>
+<tr><td>2025-10-13</td><td>Enhancing the Quality of 3D Lunar Maps Using JAXA&#x27;s Kaguya Imagery</td><td>[2510.11817](http://arxiv.org/pdf/2510.11817)</td><td>◆ As global efforts to explore the Moon intensify, the need for high-quality 3D lunar maps becomes increasingly critical-particularly for long-distance missions such as NASA&#x27;s Endurance mission concept, in which a rover aims to traverse 2,000 km across the South Pole-Aitken basin.
+◆ Kaguya TC (Terrain Camera) images, though globally available at 10 m/pixel, suffer from altitude inaccuracies caused by stereo matching errors and JPEG-based compression artifacts.
+◆ This paper presents a method to improve the quality of 3D maps generated from Kaguya TC images, focusing on mitigating the effects of compression-induced noise in disparity maps.</td></tr>
 <tr><td>2025-10-13</td><td>Evaluating the effects of preprocessing, method selection, and hyperparameter tuning on SAR-based flood mapping and water depth estimation</td><td>[2510.11305](http://arxiv.org/pdf/2510.11305)</td><td>◆ Flood mapping and water depth estimation from Synthetic Aperture Radar (SAR) imagery are crucial for calibrating and validating hydraulic models.
 ◆ This study uses SAR imagery to evaluate various preprocessing (especially speckle noise reduction), flood mapping, and water depth estimation methods.
 ◆ The impact of the choice of method at different steps and its hyperparameters is studied by considering an ensemble of preprocessed images, flood maps, and water depth fields.</td></tr>
@@ -3024,4 +3045,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.14
+> 更新于: 2025.10.15
