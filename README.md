@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.15)
+# SLAM领域最新论文 (2025.10.16)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-15</td><td>Accelerated Feature Detectors for Visual SLAM: A Comparative Study of FPGA vs GPU</td><td>[2510.13546](http://arxiv.org/pdf/2510.13546)</td><td>◆ Feature detection is a common yet time-consuming module in Simultaneous Localization and Mapping (SLAM) implementations, which are increasingly deployed on power-constrained platforms, such as drones.
+◆ Graphics Processing Units (GPUs) have been a popular accelerator for computer vision in general, and feature detection and SLAM in particular.
+◆ On the other hand, System-on-Chips (SoCs) with integrated Field Programmable Gate Array (FPGA) are also widely available.</td></tr>
+<tr><td>2025-10-15</td><td>Through the Lens of Doubt: Robust and Efficient Uncertainty Estimation for Visual Place Recognition</td><td>[2510.13464](http://arxiv.org/pdf/2510.13464)</td><td>◆ Visual Place Recognition (VPR) enables robots and autonomous vehicles to identify previously visited locations by matching current observations against a database of known places.
+◆ However, VPR systems face significant challenges when deployed across varying visual environments, lighting conditions, seasonal changes, and viewpoints changes.
+◆ Failure-critical VPR applications, such as loop closure detection in simultaneous localization and mapping (SLAM) pipelines, require robust estimation of place matching uncertainty.</td></tr>
+<tr><td>2025-10-15</td><td>DAMM-LOAM: Degeneracy Aware Multi-Metric LiDAR Odometry and Mapping</td><td>[2510.13287](http://arxiv.org/pdf/2510.13287)</td><td>◆ LiDAR Simultaneous Localization and Mapping (SLAM) systems are essential for enabling precise navigation and environmental reconstruction across various applications.
+◆ Although current point-to-plane ICP algorithms perform effec- tively in structured, feature-rich environments, they struggle in scenarios with sparse features, repetitive geometric structures, and high-frequency motion.
+◆ This leads to degeneracy in 6- DOF pose estimation.</td></tr>
 <tr><td>2025-10-11</td><td>FORM: Fixed-Lag Odometry with Reparative Mapping utilizing Rotating LiDAR Sensors</td><td>[2510.09966](http://arxiv.org/pdf/2510.09966)</td><td>◆ Light Detection and Ranging (LiDAR) sensors have become a de-facto sensor for many robot state estimation tasks, spurring development of many LiDAR Odometry (LO) methods in recent years.
 ◆ While some smoothing-based LO methods have been proposed, most require matching against multiple scans, resulting in sub-real-time performance.
 ◆ Due to this, most prior works estimate a single state at a time and are ``submap&#x27;&#x27;-based.</td></tr>
@@ -584,6 +593,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-15</td><td>Accelerated Feature Detectors for Visual SLAM: A Comparative Study of FPGA vs GPU</td><td>[2510.13546](http://arxiv.org/pdf/2510.13546)</td><td>◆ Feature detection is a common yet time-consuming module in Simultaneous Localization and Mapping (SLAM) implementations, which are increasingly deployed on power-constrained platforms, such as drones.
+◆ Graphics Processing Units (GPUs) have been a popular accelerator for computer vision in general, and feature detection and SLAM in particular.
+◆ On the other hand, System-on-Chips (SoCs) with integrated Field Programmable Gate Array (FPGA) are also widely available.</td></tr>
 <tr><td>2025-10-14</td><td>SPORTS: Simultaneous Panoptic Odometry, Rendering, Tracking and Segmentation for Urban Scenes Understanding</td><td>[2510.12749](http://arxiv.org/pdf/2510.12749)</td><td>◆ The scene perception, understanding, and simulation are fundamental techniques for embodied-AI agents, while existing solutions are still prone to segmentation deficiency, dynamic objects&#x27; interference, sensor data sparsity, and view-limitation problems.
 ◆ This paper proposes a novel framework, named SPORTS, for holistic scene understanding via tightly integrating Video Panoptic Segmentation (VPS), Visual Odometry (VO), and Scene Rendering (SR) tasks into an iterative and unified perspective.
 ◆ Firstly, VPS designs an adaptive attention-based geometric fusion mechanism to align cross-frame features via enrolling the pose, depth, and optical flow modality, which automatically adjust feature maps for different decoding stages.</td></tr>
@@ -775,6 +787,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-15</td><td>Investigating Web Content Delivery Performance over Starlink</td><td>[2510.13710](http://arxiv.org/pdf/2510.13710)</td><td>◆ Low Earth Orbit (LEO) satellite ISPs promise universal Internet connectivity, yet their interaction with content delivery remains poorly understood.
+◆ We present the first comprehensive measurement study decomposing Starlink&#x27;s web content delivery performance decomposed across Point of Presence (PoP), DNS, and CDN layers.
+◆ Through two years of measurements combining 225K Cloudflare AIM tests, M-Lab data, and active probing from 99 RIPE Atlas and controlled Starlink probes, we collect 6.1M traceroutes and 10.8M DNS queries to quantify how satellite architecture disrupts terrestrial CDN assumptions.</td></tr>
+<tr><td>2025-10-15</td><td>Through the Lens of Doubt: Robust and Efficient Uncertainty Estimation for Visual Place Recognition</td><td>[2510.13464](http://arxiv.org/pdf/2510.13464)</td><td>◆ Visual Place Recognition (VPR) enables robots and autonomous vehicles to identify previously visited locations by matching current observations against a database of known places.
+◆ However, VPR systems face significant challenges when deployed across varying visual environments, lighting conditions, seasonal changes, and viewpoints changes.
+◆ Failure-critical VPR applications, such as loop closure detection in simultaneous localization and mapping (SLAM) pipelines, require robust estimation of place matching uncertainty.</td></tr>
+<tr><td>2025-10-15</td><td>DAMM-LOAM: Degeneracy Aware Multi-Metric LiDAR Odometry and Mapping</td><td>[2510.13287](http://arxiv.org/pdf/2510.13287)</td><td>◆ LiDAR Simultaneous Localization and Mapping (SLAM) systems are essential for enabling precise navigation and environmental reconstruction across various applications.
+◆ Although current point-to-plane ICP algorithms perform effec- tively in structured, feature-rich environments, they struggle in scenarios with sparse features, repetitive geometric structures, and high-frequency motion.
+◆ This leads to degeneracy in 6- DOF pose estimation.</td></tr>
 <tr><td>2025-10-14</td><td>Scene Coordinate Reconstruction Priors</td><td>[2510.12387](http://arxiv.org/pdf/2510.12387)</td><td>◆ Scene coordinate regression (SCR) models have proven to be powerful implicit scene representations for 3D vision, enabling visual relocalization and structure-from-motion.
 ◆ SCR models are trained specifically for one scene.
 ◆ If training images imply insufficient multi-view constraints SCR models degenerate.</td></tr>
@@ -1500,6 +1521,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-15</td><td>Leveraging 2D Priors and SDF Guidance for Dynamic Urban Scene Rendering</td><td>[2510.13381](http://arxiv.org/pdf/2510.13381)</td><td>◆ Dynamic scene rendering and reconstruction play a crucial role in computer vision and augmented reality.
+◆ Recent methods based on 3D Gaussian Splatting (3DGS), have enabled accurate modeling of dynamic urban scenes, but for urban scenes they require both camera and LiDAR data, ground-truth 3D segmentations and motion data in the form of tracklets or pre-defined object templates such as SMPL.
+◆ In this work, we explore whether a combination of 2D object agnostic priors in the form of depth and point tracking coupled with a signed distance function (SDF) representation for dynamic objects can be used to relax some of these requirements.</td></tr>
+<tr><td>2025-10-14</td><td>SimULi: Real-Time LiDAR and Camera Simulation with Unscented Transforms</td><td>[2510.12901](http://arxiv.org/pdf/2510.12901)</td><td>◆ Rigorous testing of autonomous robots, such as self-driving vehicles, is essential to ensure their safety in real-world deployments.
+◆ This requires building high-fidelity simulators to test scenarios beyond those that can be safely or exhaustively collected in the real-world.
+◆ Existing neural rendering methods based on NeRF and 3DGS hold promise but suffer from low rendering speeds or can only render pinhole camera models, hindering their suitability to applications that commonly require high-distortion lenses and LiDAR data.</td></tr>
 <tr><td>2025-10-14</td><td>BSGS: Bi-stage 3D Gaussian Splatting for Camera Motion Deblurring</td><td>[2510.12493](http://arxiv.org/pdf/2510.12493)</td><td>◆ 3D Gaussian Splatting has exhibited remarkable capabilities in 3D scene reconstruction.However, reconstructing high-quality 3D scenes from motion-blurred images caused by camera motion poses a significant challenge.The performance of existing 3DGS-based deblurring methods are limited due to their inherent mechanisms, such as extreme dependence on the accuracy of camera poses and inability to effectively control erroneous Gaussian primitives densification caused by motion blur.To solve these problems, we introduce a novel framework, Bi-Stage 3D Gaussian Splatting, to accurately reconstruct 3D scenes from motion-blurred images.BSGS contains two stages.
 ◆ First, Camera Pose Refinement roughly optimizes camera poses to reduce motion-induced distortions.
 ◆ Second, with fixed rough camera poses, Global RigidTransformation further corrects motion-induced blur distortions.To alleviate multi-subframe gradient conflicts, we propose a subframe gradient aggregation strategy to optimize both stages.Furthermore, a space-time bi-stage optimization strategy is introduced to dynamically adjust primitive densification thresholds and prevent premature noisy Gaussian generation in blurred regions.</td></tr>
@@ -2366,6 +2393,12 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-15</td><td>XD-RCDepth: Lightweight Radar-Camera Depth Estimation with Explainability-Aligned and Distribution-Aware Distillation</td><td>[2510.13565](http://arxiv.org/pdf/2510.13565)</td><td>◆ Depth estimation remains central to autonomous driving, and radar-camera fusion offers robustness in adverse conditions by providing complementary geometric cues.
+◆ In this paper, we present XD-RCDepth, a lightweight architecture that reduces the parameters by 29.7% relative to the state-of-the-art lightweight baseline while maintaining comparable accuracy.
+◆ To preserve performance under compression and enhance interpretability, we introduce two knowledge-distillation strategies: an explainability-aligned distillation that transfers the teacher&#x27;s saliency structure to the student, and a depth-distribution distillation that recasts depth regression as soft classification over discretized bins.</td></tr>
+<tr><td>2025-10-15</td><td>FlyAwareV2: A Multimodal Cross-Domain UAV Dataset for Urban Scene Understanding</td><td>[2510.13243](http://arxiv.org/pdf/2510.13243)</td><td>◆ The development of computer vision algorithms for Unmanned Aerial Vehicle (UAV) applications in urban environments heavily relies on the availability of large-scale datasets with accurate annotations.
+◆ However, collecting and annotating real-world UAV data is extremely challenging and costly.
+◆ To address this limitation, we present FlyAwareV2, a novel multimodal dataset encompassing both real and synthetic UAV imagery tailored for urban scene understanding tasks.</td></tr>
 <tr><td>2025-10-14</td><td>E-MoFlow: Learning Egomotion and Optical Flow from Event Data via Implicit Regularization</td><td>[2510.12753](http://arxiv.org/pdf/2510.12753)</td><td>◆ The estimation of optical flow and 6-DoF ego-motion, two fundamental tasks in 3D vision, has typically been addressed independently.
 ◆ For neuromorphic vision (e.g., event cameras), however, the lack of robust data association makes solving the two problems separately an ill-posed challenge, especially in the absence of supervision via ground truth.
 ◆ Existing works mitigate this ill-posedness by either enforcing the smoothness of the flow field via an explicit variational regularizer or leveraging explicit structure-and-motion priors in the parametrization to improve event alignment.</td></tr>
@@ -3057,4 +3090,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.15
+> 更新于: 2025.10.16
