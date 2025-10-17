@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.16)
+# SLAM领域最新论文 (2025.10.17)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-16</td><td>3D Scene Prompting for Scene-Consistent Camera-Controllable Video Generation</td><td>[2510.14945](http://arxiv.org/pdf/2510.14945)</td><td>◆ We present 3DScenePrompt, a framework that generates the next video chunk from arbitrary-length input while enabling precise camera control and preserving scene consistency.
+◆ Unlike methods conditioned on a single image or a short clip, we employ dual spatio-temporal conditioning that reformulates context-view referencing across the input video.
+◆ Our approach conditions on both temporally adjacent frames for motion continuity and spatially adjacent content for scene consistency.</td></tr>
 <tr><td>2025-10-15</td><td>Accelerated Feature Detectors for Visual SLAM: A Comparative Study of FPGA vs GPU</td><td>[2510.13546](http://arxiv.org/pdf/2510.13546)</td><td>◆ Feature detection is a common yet time-consuming module in Simultaneous Localization and Mapping (SLAM) implementations, which are increasingly deployed on power-constrained platforms, such as drones.
 ◆ Graphics Processing Units (GPUs) have been a popular accelerator for computer vision in general, and feature detection and SLAM in particular.
 ◆ On the other hand, System-on-Chips (SoCs) with integrated Field Programmable Gate Array (FPGA) are also widely available.</td></tr>
@@ -1513,10 +1516,16 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-16</td><td>Leveraging Learned Image Prior for 3D Gaussian Compression</td><td>[2510.14705](http://arxiv.org/pdf/2510.14705)</td><td>◆ Compression techniques for 3D Gaussian Splatting (3DGS) have recently achieved considerable success in minimizing storage overhead for 3D Gaussians while preserving high rendering quality.
+◆ Despite the impressive storage reduction, the lack of learned priors restricts further advances in the rate-distortion trade-off for 3DGS compression tasks.
+◆ To address this, we introduce a novel 3DGS compression framework that leverages the powerful representational capacity of learned image priors to recover compression-induced quality degradation.</td></tr>
+<tr><td>2025-10-16</td><td>BalanceGS: Algorithm-System Co-design for Efficient 3D Gaussian Splatting Training on GPU</td><td>[2510.14564](http://arxiv.org/pdf/2510.14564)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a promising 3D reconstruction technique.
+◆ The traditional 3DGS training pipeline follows three sequential steps: Gaussian densification, Gaussian projection, and color splatting.
+◆ Despite its promising reconstruction quality, this conventional approach suffers from three critical inefficiencies: (1) Skewed density allocation during Gaussian densification, (2) Imbalanced computation workload during Gaussian projection and (3) Fragmented memory access during color splatting.</td></tr>
 <tr><td>2025-10-15</td><td>Leveraging 2D Priors and SDF Guidance for Dynamic Urban Scene Rendering</td><td>[2510.13381](http://arxiv.org/pdf/2510.13381)</td><td>◆ Dynamic scene rendering and reconstruction play a crucial role in computer vision and augmented reality.
 ◆ Recent methods based on 3D Gaussian Splatting (3DGS), have enabled accurate modeling of dynamic urban scenes, but for urban scenes they require both camera and LiDAR data, ground-truth 3D segmentations and motion data in the form of tracklets or pre-defined object templates such as SMPL.
 ◆ In this work, we explore whether a combination of 2D object agnostic priors in the form of depth and point tracking coupled with a signed distance function (SDF) representation for dynamic objects can be used to relax some of these requirements.</td></tr>
-<tr><td>2025-10-14</td><td>SimULi: Real-Time LiDAR and Camera Simulation with Unscented Transforms</td><td>[2510.12901](http://arxiv.org/pdf/2510.12901)</td><td>◆ Rigorous testing of autonomous robots, such as self-driving vehicles, is essential to ensure their safety in real-world deployments.
+<tr><td>2025-10-16</td><td>SimULi: Real-Time LiDAR and Camera Simulation with Unscented Transforms</td><td>[2510.12901](http://arxiv.org/pdf/2510.12901)</td><td>◆ Rigorous testing of autonomous robots, such as self-driving vehicles, is essential to ensure their safety in real-world deployments.
 ◆ This requires building high-fidelity simulators to test scenarios beyond those that can be safely or exhaustively collected in the real-world.
 ◆ Existing neural rendering methods based on NeRF and 3DGS hold promise but suffer from low rendering speeds or can only render pinhole camera models, hindering their suitability to applications that commonly require high-distortion lenses and LiDAR data.</td></tr>
 <tr><td>2025-10-14</td><td>BSGS: Bi-stage 3D Gaussian Splatting for Camera Motion Deblurring</td><td>[2510.12493](http://arxiv.org/pdf/2510.12493)</td><td>◆ 3D Gaussian Splatting has exhibited remarkable capabilities in 3D scene reconstruction.However, reconstructing high-quality 3D scenes from motion-blurred images caused by camera motion poses a significant challenge.The performance of existing 3DGS-based deblurring methods are limited due to their inherent mechanisms, such as extreme dependence on the accuracy of camera poses and inability to effectively control erroneous Gaussian primitives densification caused by motion blur.To solve these problems, we introduce a novel framework, Bi-Stage 3D Gaussian Splatting, to accurately reconstruct 3D scenes from motion-blurred images.BSGS contains two stages.
@@ -2383,6 +2392,15 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-16</td><td>C4D: 4D Made from 3D through Dual Correspondences</td><td>[2510.14960](http://arxiv.org/pdf/2510.14960)</td><td>◆ Recovering 4D from monocular video, which jointly estimates dynamic geometry and camera poses, is an inevitably challenging problem.
+◆ While recent pointmap-based 3D reconstruction methods (e.g., DUSt3R) have made great progress in reconstructing static scenes, directly applying them to dynamic scenes leads to inaccurate results.
+◆ This discrepancy arises because moving objects violate multi-view geometric constraints, disrupting the reconstruction.</td></tr>
+<tr><td>2025-10-16</td><td>Multi-modal video data-pipelines for machine learning with minimal human supervision</td><td>[2510.14862](http://arxiv.org/pdf/2510.14862)</td><td>◆ The real-world is inherently multi-modal at its core.
+◆ Our tools observe and take snapshots of it, in digital form, such as videos or sounds, however much of it is lost.
+◆ Similarly for actions and information passing between humans, languages are used as a written form of communication.</td></tr>
+<tr><td>2025-10-16</td><td>MatchAttention: Matching the Relative Positions for High-Resolution Cross-View Matching</td><td>[2510.14260](http://arxiv.org/pdf/2510.14260)</td><td>◆ Cross-view matching is fundamentally achieved through cross-attention mechanisms.
+◆ However, matching of high-resolution images remains challenging due to the quadratic complexity and lack of explicit matching constraints in the existing cross-attention.
+◆ This paper proposes an attention mechanism, MatchAttention, that dynamically matches relative positions.</td></tr>
 <tr><td>2025-10-15</td><td>XD-RCDepth: Lightweight Radar-Camera Depth Estimation with Explainability-Aligned and Distribution-Aware Distillation</td><td>[2510.13565](http://arxiv.org/pdf/2510.13565)</td><td>◆ Depth estimation remains central to autonomous driving, and radar-camera fusion offers robustness in adverse conditions by providing complementary geometric cues.
 ◆ In this paper, we present XD-RCDepth, a lightweight architecture that reduces the parameters by 29.7% relative to the state-of-the-art lightweight baseline while maintaining comparable accuracy.
 ◆ To preserve performance under compression and enhance interpretability, we introduce two knowledge-distillation strategies: an explainability-aligned distillation that transfers the teacher&#x27;s saliency structure to the student, and a depth-distribution distillation that recasts depth regression as soft classification over discretized bins.</td></tr>
@@ -3078,4 +3096,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.16
+> 更新于: 2025.10.17
