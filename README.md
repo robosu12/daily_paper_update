@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.19)
+# SLAM领域最新论文 (2025.10.20)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-17</td><td>Dynamic Recalibration in LiDAR SLAM: Integrating AI and Geometric Methods with Real-Time Feedback Using INAF Fusion</td><td>[2510.15803](http://arxiv.org/pdf/2510.15803)</td><td>◆ This paper presents a novel fusion technique for LiDAR Simultaneous Localization and Mapping (SLAM), aimed at improving localization and 3D mapping using LiDAR sensor.
+◆ Our approach centers on the Inferred Attention Fusion (INAF) module, which integrates AI with geometric odometry.
+◆ Utilizing the KITTI dataset&#x27;s LiDAR data, INAF dynamically adjusts attention weights based on environmental feedback, enhancing the system&#x27;s adaptability and measurement accuracy.</td></tr>
+<tr><td>2025-10-17</td><td>LVI-Q: Robust LiDAR-Visual-Inertial-Kinematic Odometry for Quadruped Robots Using Tightly-Coupled and Efficient Alternating Optimization</td><td>[2510.15220](http://arxiv.org/pdf/2510.15220)</td><td>◆ Autonomous navigation for legged robots in complex and dynamic environments relies on robust simultaneous localization and mapping (SLAM) systems to accurately map surroundings and localize the robot, ensuring safe and efficient operation.
+◆ While prior sensor fusion-based SLAM approaches have integrated various sensor modalities to improve their robustness, these algorithms are still susceptible to estimation drift in challenging environments due to their reliance on unsuitable fusion strategies.
+◆ Therefore, we propose a robust LiDAR-visual-inertial-kinematic odometry system that integrates information from multiple sensors, such as a camera, LiDAR, inertial measurement unit (IMU), and joint encoders, for visual and LiDAR-based odometry estimation.</td></tr>
 <tr><td>2025-10-16</td><td>3D Scene Prompting for Scene-Consistent Camera-Controllable Video Generation</td><td>[2510.14945](http://arxiv.org/pdf/2510.14945)</td><td>◆ We present 3DScenePrompt, a framework that generates the next video chunk from arbitrary-length input while enabling precise camera control and preserving scene consistency.
 ◆ Unlike methods conditioned on a single image or a short clip, we employ dual spatio-temporal conditioning that reformulates context-view referencing across the input video.
 ◆ Our approach conditions on both temporally adjacent frames for motion continuity and spatially adjacent content for scene consistency.</td></tr>
@@ -1524,6 +1530,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-17</td><td>Fix False Transparency by Noise Guided Splatting</td><td>[2510.15736](http://arxiv.org/pdf/2510.15736)</td><td>◆ Opaque objects reconstructed by 3DGS often exhibit a falsely transparent surface, leading to inconsistent background and internal patterns under camera motion in interactive viewing.
+◆ This issue stems from the ill-posed optimization in 3DGS.
+◆ During training, background and foreground Gaussians are blended via alpha-compositing and optimized solely against the input RGB images using a photometric loss.</td></tr>
+<tr><td>2025-10-17</td><td>PFGS: Pose-Fused 3D Gaussian Splatting for Complete Multi-Pose Object Reconstruction</td><td>[2510.15386](http://arxiv.org/pdf/2510.15386)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled high-quality, real-time novel-view synthesis from multi-view images.
+◆ However, most existing methods assume the object is captured in a single, static pose, resulting in incomplete reconstructions that miss occluded or self-occluded regions.
+◆ We introduce PFGS, a pose-aware 3DGS framework that addresses the practical challenge of reconstructing complete objects from multi-pose image captures.</td></tr>
+<tr><td>2025-10-16</td><td>SaLon3R: Structure-aware Long-term Generalizable 3D Reconstruction from Unposed Images</td><td>[2510.15072](http://arxiv.org/pdf/2510.15072)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled generalizable, on-the-fly reconstruction of sequential input views.
+◆ However, existing methods often predict per-pixel Gaussians and combine Gaussians from all views as the scene representation, leading to substantial redundancies and geometric inconsistencies in long-duration video sequences.
+◆ To address this, we propose SaLon3R, a novel framework for Structure-aware, Long-term 3DGS Reconstruction.</td></tr>
 <tr><td>2025-10-16</td><td>Leveraging Learned Image Prior for 3D Gaussian Compression</td><td>[2510.14705](http://arxiv.org/pdf/2510.14705)</td><td>◆ Compression techniques for 3D Gaussian Splatting (3DGS) have recently achieved considerable success in minimizing storage overhead for 3D Gaussians while preserving high rendering quality.
 ◆ Despite the impressive storage reduction, the lack of learned priors restricts further advances in the rate-distortion trade-off for 3DGS compression tasks.
 ◆ To address this, we introduce a novel 3DGS compression framework that leverages the powerful representational capacity of learned image priors to recover compression-induced quality degradation.</td></tr>
@@ -1536,7 +1551,7 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <tr><td>2025-10-16</td><td>SimULi: Real-Time LiDAR and Camera Simulation with Unscented Transforms</td><td>[2510.12901](http://arxiv.org/pdf/2510.12901)</td><td>◆ Rigorous testing of autonomous robots, such as self-driving vehicles, is essential to ensure their safety in real-world deployments.
 ◆ This requires building high-fidelity simulators to test scenarios beyond those that can be safely or exhaustively collected in the real-world.
 ◆ Existing neural rendering methods based on NeRF and 3DGS hold promise but suffer from low rendering speeds or can only render pinhole camera models, hindering their suitability to applications that commonly require high-distortion lenses and LiDAR data.</td></tr>
-<tr><td>2025-10-14</td><td>BSGS: Bi-stage 3D Gaussian Splatting for Camera Motion Deblurring</td><td>[2510.12493](http://arxiv.org/pdf/2510.12493)</td><td>◆ 3D Gaussian Splatting has exhibited remarkable capabilities in 3D scene reconstruction.However, reconstructing high-quality 3D scenes from motion-blurred images caused by camera motion poses a significant challenge.The performance of existing 3DGS-based deblurring methods are limited due to their inherent mechanisms, such as extreme dependence on the accuracy of camera poses and inability to effectively control erroneous Gaussian primitives densification caused by motion blur.To solve these problems, we introduce a novel framework, Bi-Stage 3D Gaussian Splatting, to accurately reconstruct 3D scenes from motion-blurred images.BSGS contains two stages.
+<tr><td>2025-10-17</td><td>BSGS: Bi-stage 3D Gaussian Splatting for Camera Motion Deblurring</td><td>[2510.12493](http://arxiv.org/pdf/2510.12493)</td><td>◆ 3D Gaussian Splatting has exhibited remarkable capabilities in 3D scene reconstruction.However, reconstructing high-quality 3D scenes from motion-blurred images caused by camera motion poses a significant challenge.The performance of existing 3DGS-based deblurring methods are limited due to their inherent mechanisms, such as extreme dependence on the accuracy of camera poses and inability to effectively control erroneous Gaussian primitives densification caused by motion blur.To solve these problems, we introduce a novel framework, Bi-Stage 3D Gaussian Splatting, to accurately reconstruct 3D scenes from motion-blurred images.BSGS contains two stages.
 ◆ First, Camera Pose Refinement roughly optimizes camera poses to reduce motion-induced distortions.
 ◆ Second, with fixed rough camera poses, Global RigidTransformation further corrects motion-induced blur distortions.To alleviate multi-subframe gradient conflicts, we propose a subframe gradient aggregation strategy to optimize both stages.Furthermore, a space-time bi-stage optimization strategy is introduced to dynamically adjust primitive densification thresholds and prevent premature noisy Gaussian generation in blurred regions.</td></tr>
 <tr><td>2025-10-12</td><td>High-Fidelity Simulated Data Generation for Real-World Zero-Shot Robotic Manipulation Learning with Gaussian Splatting</td><td>[2510.10637](http://arxiv.org/pdf/2510.10637)</td><td>◆ The scalability of robotic learning is fundamentally bottlenecked by the significant cost and labor of real-world data collection.
@@ -2402,6 +2417,9 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-16</td><td>SaLon3R: Structure-aware Long-term Generalizable 3D Reconstruction from Unposed Images</td><td>[2510.15072](http://arxiv.org/pdf/2510.15072)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled generalizable, on-the-fly reconstruction of sequential input views.
+◆ However, existing methods often predict per-pixel Gaussians and combine Gaussians from all views as the scene representation, leading to substantial redundancies and geometric inconsistencies in long-duration video sequences.
+◆ To address this, we propose SaLon3R, a novel framework for Structure-aware, Long-term 3DGS Reconstruction.</td></tr>
 <tr><td>2025-10-16</td><td>C4D: 4D Made from 3D through Dual Correspondences</td><td>[2510.14960](http://arxiv.org/pdf/2510.14960)</td><td>◆ Recovering 4D from monocular video, which jointly estimates dynamic geometry and camera poses, is an inevitably challenging problem.
 ◆ While recent pointmap-based 3D reconstruction methods (e.g., DUSt3R) have made great progress in reconstructing static scenes, directly applying them to dynamic scenes leads to inaccurate results.
 ◆ This discrepancy arises because moving objects violate multi-view geometric constraints, disrupting the reconstruction.</td></tr>
@@ -2420,7 +2438,7 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <tr><td>2025-10-14</td><td>E-MoFlow: Learning Egomotion and Optical Flow from Event Data via Implicit Regularization</td><td>[2510.12753](http://arxiv.org/pdf/2510.12753)</td><td>◆ The estimation of optical flow and 6-DoF ego-motion, two fundamental tasks in 3D vision, has typically been addressed independently.
 ◆ For neuromorphic vision (e.g., event cameras), however, the lack of robust data association makes solving the two problems separately an ill-posed challenge, especially in the absence of supervision via ground truth.
 ◆ Existing works mitigate this ill-posedness by either enforcing the smoothness of the flow field via an explicit variational regularizer or leveraging explicit structure-and-motion priors in the parametrization to improve event alignment.</td></tr>
-<tr><td>2025-10-14</td><td>Spatial Forcing: Implicit Spatial Representation Alignment for Vision-language-action Model</td><td>[2510.12276](http://arxiv.org/pdf/2510.12276)</td><td>◆ Vision-language-action (VLA) models have recently shown strong potential in enabling robots to follow language instructions and execute precise actions.
+<tr><td>2025-10-17</td><td>Spatial Forcing: Implicit Spatial Representation Alignment for Vision-language-action Model</td><td>[2510.12276](http://arxiv.org/pdf/2510.12276)</td><td>◆ Vision-language-action (VLA) models have recently shown strong potential in enabling robots to follow language instructions and execute precise actions.
 ◆ However, most VLAs are built upon vision-language models pretrained solely on 2D data, which lack accurate spatial awareness and hinder their ability to operate in the 3D physical world.
 ◆ Existing solutions attempt to incorporate explicit 3D sensor inputs such as depth maps or point clouds, but these approaches face challenges due to sensor noise, hardware heterogeneity, and incomplete depth coverage in existing datasets.</td></tr>
 <tr><td>2025-10-13</td><td>Enhancing the Quality of 3D Lunar Maps Using JAXA&#x27;s Kaguya Imagery</td><td>[2510.11817](http://arxiv.org/pdf/2510.11817)</td><td>◆ As global efforts to explore the Moon intensify, the need for high-quality 3D lunar maps becomes increasingly critical-particularly for long-distance missions such as NASA&#x27;s Endurance mission concept, in which a rover aims to traverse 2,000 km across the South Pole-Aitken basin.
@@ -3108,4 +3126,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.19
+> 更新于: 2025.10.20
