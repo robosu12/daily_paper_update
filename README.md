@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.20)
+# SLAM领域最新论文 (2025.10.21)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-20</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
+◆ Traditional detectors (SIFT, SURF, ORB, BRISK, etc.) and learning based methods (SuperPoint, R2D2, LF-Net, D2-Net, etc.) have shown strong performance yet suffer from key limitations: sensitivity to photometric changes, low keypoint density and repeatability, limited adaptability to challenging scenes, and lack of semantic understanding, often failing to prioritize visually important regions.
+◆ We present DeepDetect, an intelligent, all-in-one, dense keypoint detector that unifies the strengths of classical detectors using deep learning.</td></tr>
+<tr><td>2025-10-18</td><td>LightGlueStick: a Fast and Robust Glue for Joint Point-Line Matching</td><td>[2510.16438](http://arxiv.org/pdf/2510.16438)</td><td>◆ Lines and points are complementary local features, whose combination has proven effective for applications such as SLAM and Structure-from-Motion.
+◆ The backbone of these pipelines are the local feature matchers, establishing correspondences across images.
+◆ Traditionally, point and line matching have been treated as independent tasks.</td></tr>
+<tr><td>2025-10-17</td><td>VAR-SLAM: Visual Adaptive and Robust SLAM for Dynamic Environments</td><td>[2510.16205](http://arxiv.org/pdf/2510.16205)</td><td>◆ Visual SLAM in dynamic environments remains challenging, as several existing methods rely on semantic filtering that only handles known object classes, or use fixed robust kernels that cannot adapt to unknown moving objects, leading to degraded accuracy when they appear in the scene.
+◆ We present VAR-SLAM (Visual Adaptive and Robust SLAM), an ORB-SLAM3-based system that combines a lightweight semantic keypoint filter to deal with known moving objects, with Barron&#x27;s adaptive robust loss to handle unknown ones.
+◆ The shape parameter of the robust kernel is estimated online from residuals, allowing the system to automatically adjust between Gaussian and heavy-tailed behavior.</td></tr>
 <tr><td>2025-10-17</td><td>Dynamic Recalibration in LiDAR SLAM: Integrating AI and Geometric Methods with Real-Time Feedback Using INAF Fusion</td><td>[2510.15803](http://arxiv.org/pdf/2510.15803)</td><td>◆ This paper presents a novel fusion technique for LiDAR Simultaneous Localization and Mapping (SLAM), aimed at improving localization and 3D mapping using LiDAR sensor.
 ◆ Our approach centers on the Inferred Attention Fusion (INAF) module, which integrates AI with geometric odometry.
 ◆ Utilizing the KITTI dataset&#x27;s LiDAR data, INAF dynamically adjusts attention weights based on environmental feedback, enhancing the system&#x27;s adaptability and measurement accuracy.</td></tr>
@@ -602,6 +611,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-20</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
+◆ Traditional detectors (SIFT, SURF, ORB, BRISK, etc.) and learning based methods (SuperPoint, R2D2, LF-Net, D2-Net, etc.) have shown strong performance yet suffer from key limitations: sensitivity to photometric changes, low keypoint density and repeatability, limited adaptability to challenging scenes, and lack of semantic understanding, often failing to prioritize visually important regions.
+◆ We present DeepDetect, an intelligent, all-in-one, dense keypoint detector that unifies the strengths of classical detectors using deep learning.</td></tr>
+<tr><td>2025-10-17</td><td>VAR-SLAM: Visual Adaptive and Robust SLAM for Dynamic Environments</td><td>[2510.16205](http://arxiv.org/pdf/2510.16205)</td><td>◆ Visual SLAM in dynamic environments remains challenging, as several existing methods rely on semantic filtering that only handles known object classes, or use fixed robust kernels that cannot adapt to unknown moving objects, leading to degraded accuracy when they appear in the scene.
+◆ We present VAR-SLAM (Visual Adaptive and Robust SLAM), an ORB-SLAM3-based system that combines a lightweight semantic keypoint filter to deal with known moving objects, with Barron&#x27;s adaptive robust loss to handle unknown ones.
+◆ The shape parameter of the robust kernel is estimated online from residuals, allowing the system to automatically adjust between Gaussian and heavy-tailed behavior.</td></tr>
 <tr><td>2025-10-15</td><td>Accelerated Feature Detectors for Visual SLAM: A Comparative Study of FPGA vs GPU</td><td>[2510.13546](http://arxiv.org/pdf/2510.13546)</td><td>◆ Feature detection is a common yet time-consuming module in Simultaneous Localization and Mapping (SLAM) implementations, which are increasingly deployed on power-constrained platforms, such as drones.
 ◆ Graphics Processing Units (GPUs) have been a popular accelerator for computer vision in general, and feature detection and SLAM in particular.
 ◆ On the other hand, System-on-Chips (SoCs) with integrated Field Programmable Gate Array (FPGA) are also widely available.</td></tr>
@@ -796,6 +811,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-20</td><td>Joint Multi-Condition Representation Modelling via Matrix Factorisation for Visual Place Recognition</td><td>[2510.17739](http://arxiv.org/pdf/2510.17739)</td><td>◆ We address multi-reference visual place recognition (VPR), where reference sets captured under varying conditions are used to improve localisation performance.
+◆ While deep learning with large-scale training improves robustness, increasing data diversity and model complexity incur extensive computational cost during training and deployment.
+◆ Descriptor-level fusion via voting or aggregation avoids training, but often targets multi-sensor setups or relies on heuristics with limited gains under appearance and viewpoint change.</td></tr>
+<tr><td>2025-10-14</td><td>CE$ν$NS Search with Cryogenic Sapphire Detectors at MINER: Results from the TRIGA reactor data and Future Sensitivity at HFIR</td><td>[2510.15999](http://arxiv.org/pdf/2510.15999)</td><td>◆ We report on a search for coherent elastic neutrino--nucleus scattering (CE$\nu$NS) using cryogenic sapphire (Al$_2$O$_3$) detectors deployed at the Mitchell Institute Neutrino Experiment at Reactor (MINER), located near the 1~MW$_\text{th}$ TRIGA research reactor at Texas A\&amp;M University.
+◆ The experiment operated with a primary detector mass of 72~g and achieved a baseline energy resolution of $\sim 40$~eV.
+◆ Using exposures of 158~g-days (reactor-on) and 381~g-days (reactor-off), we performed a statistical background subtraction in the energy region of 0.25--3~keV.</td></tr>
 <tr><td>2025-10-15</td><td>Investigating Web Content Delivery Performance over Starlink</td><td>[2510.13710](http://arxiv.org/pdf/2510.13710)</td><td>◆ Low Earth Orbit (LEO) satellite ISPs promise universal Internet connectivity, yet their interaction with content delivery remains poorly understood.
 ◆ We present the first comprehensive measurement study decomposing Starlink&#x27;s web content delivery performance decomposed across Point of Presence (PoP), DNS, and CDN layers.
 ◆ Through two years of measurements combining 225K Cloudflare AIM tests, M-Lab data, and active probing from 99 RIPE Atlas and controlled Starlink probes, we collect 6.1M traceroutes and 10.8M DNS queries to quantify how satellite architecture disrupts terrestrial CDN assumptions.</td></tr>
@@ -1274,6 +1295,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-20</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
+◆ Traditional detectors (SIFT, SURF, ORB, BRISK, etc.) and learning based methods (SuperPoint, R2D2, LF-Net, D2-Net, etc.) have shown strong performance yet suffer from key limitations: sensitivity to photometric changes, low keypoint density and repeatability, limited adaptability to challenging scenes, and lack of semantic understanding, often failing to prioritize visually important regions.
+◆ We present DeepDetect, an intelligent, all-in-one, dense keypoint detector that unifies the strengths of classical detectors using deep learning.</td></tr>
 <tr><td>2025-10-08</td><td>StyleKeeper: Prevent Content Leakage using Negative Visual Query Guidance</td><td>[2510.06827](http://arxiv.org/pdf/2510.06827)</td><td>◆ In the domain of text-to-image generation, diffusion models have emerged as powerful tools.
 ◆ Recently, studies on visual prompting, where images are used as prompts, have enabled more precise control over style and content.
 ◆ However, existing methods often suffer from content leakage, where undesired elements of the visual style prompt are transferred along with the intended style.</td></tr>
@@ -1530,6 +1554,21 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-20</td><td>Raindrop GS: A Benchmark for 3D Gaussian Splatting under Raindrop Conditions</td><td>[2510.17719](http://arxiv.org/pdf/2510.17719)</td><td>◆ 3D Gaussian Splatting (3DGS) under raindrop conditions suffers from severe occlusions and optical distortions caused by raindrop contamination on the camera lens, substantially degrading reconstruction quality.
+◆ Existing benchmarks typically evaluate 3DGS using synthetic raindrop images with known camera poses (constrained images), assuming ideal conditions.
+◆ However, in real-world scenarios, raindrops often interfere with accurate camera pose estimation and point cloud initialization.</td></tr>
+<tr><td>2025-10-20</td><td>Initialize to Generalize: A Stronger Initialization Pipeline for Sparse-View 3DGS</td><td>[2510.17479](http://arxiv.org/pdf/2510.17479)</td><td>◆ Sparse-view 3D Gaussian Splatting (3DGS) often overfits to the training views, leading to artifacts like blurring in novel view rendering.
+◆ Prior work addresses it either by enhancing the initialization (\emph{i.e.}, the point cloud from Structure-from-Motion (SfM)) or by adding training-time constraints (regularization) to the 3DGS optimization.
+◆ Yet our controlled ablations reveal that initialization is the decisive factor: it determines the attainable performance band in sparse-view 3DGS, while training-time constraints yield only modest within-band improvements at extra cost.</td></tr>
+<tr><td>2025-10-19</td><td>2DGS-R: Revisiting the Normal Consistency Regularization in 2D Gaussian Splatting</td><td>[2510.16837](http://arxiv.org/pdf/2510.16837)</td><td>◆ Recent advancements in 3D Gaussian Splatting (3DGS) have greatly influenced neural fields, as it enables high-fidelity rendering with impressive visual quality.
+◆ However, 3DGS has difficulty accurately representing surfaces.
+◆ In contrast, 2DGS transforms the 3D volume into a collection of 2D planar Gaussian disks.</td></tr>
+<tr><td>2025-10-19</td><td>GS2POSE: Marry Gaussian Splatting to 6D Object Pose Estimation</td><td>[2510.16777](http://arxiv.org/pdf/2510.16777)</td><td>◆ Accurate 6D pose estimation of 3D objects is a fundamental task in computer vision, and current research typically predicts the 6D pose by establishing correspondences between 2D image features and 3D model features.
+◆ However, these methods often face difficulties with textureless objects and varying illumination conditions.
+◆ To overcome these limitations, we propose GS2POSE, a novel approach for 6D object pose estimation.</td></tr>
+<tr><td>2025-10-18</td><td>HGC-Avatar: Hierarchical Gaussian Compression for Streamable Dynamic 3D Avatars</td><td>[2510.16463](http://arxiv.org/pdf/2510.16463)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled fast, photorealistic rendering of dynamic 3D scenes, showing strong potential in immersive communication.
+◆ However, in digital human encoding and transmission, the compression methods based on general 3DGS representations are limited by the lack of human priors, resulting in suboptimal bitrate efficiency and reconstruction quality at the decoder side, which hinders their application in streamable 3D avatar systems.
+◆ We propose HGC-Avatar, a novel Hierarchical Gaussian Compression framework designed for efficient transmission and high-quality rendering of dynamic avatars.</td></tr>
 <tr><td>2025-10-17</td><td>Fix False Transparency by Noise Guided Splatting</td><td>[2510.15736](http://arxiv.org/pdf/2510.15736)</td><td>◆ Opaque objects reconstructed by 3DGS often exhibit a falsely transparent surface, leading to inconsistent background and internal patterns under camera motion in interactive viewing.
 ◆ This issue stems from the ill-posed optimization in 3DGS.
 ◆ During training, background and foreground Gaussians are blended via alpha-compositing and optimized solely against the input RGB images using a photometric loss.</td></tr>
@@ -2417,6 +2456,21 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-20</td><td>PAGE-4D: Disentangled Pose and Geometry Estimation for 4D Perception</td><td>[2510.17568](http://arxiv.org/pdf/2510.17568)</td><td>◆ Recent 3D feed-forward models, such as the Visual Geometry Grounded Transformer (VGGT), have shown strong capability in inferring 3D attributes of static scenes.
+◆ However, since they are typically trained on static datasets, these models often struggle in real-world scenarios involving complex dynamic elements, such as moving humans or deformable objects like umbrellas.
+◆ To address this limitation, we introduce PAGE-4D, a feedforward model that extends VGGT to dynamic scenes, enabling camera pose estimation, depth prediction, and point cloud reconstruction -- all without post-processing.</td></tr>
+<tr><td>2025-10-19</td><td>How Universal Are SAM2 Features?</td><td>[2510.17051](http://arxiv.org/pdf/2510.17051)</td><td>◆ The trade-off between general-purpose foundation vision models and their specialized counterparts is critical for efficient feature coding design and is not yet fully understood.
+◆ We investigate this trade-off by comparing the feature versatility of the general-purpose Hiera encoder against the segmentation-specialized Segment Anything Model 2 (SAM2).
+◆ Using a lightweight, trainable neck to probe the adaptability of their frozen features, we quantify the information-theoretic cost of specialization.</td></tr>
+<tr><td>2025-10-18</td><td>Self-Supervised Learning to Fly using Efficient Semantic Segmentation and Metric Depth Estimation for Low-Cost Autonomous UAVs</td><td>[2510.16624](http://arxiv.org/pdf/2510.16624)</td><td>◆ This paper presents a vision-only autonomous flight system for small UAVs operating in controlled indoor environments.
+◆ The system combines semantic segmentation with monocular depth estimation to enable obstacle avoidance, scene exploration, and autonomous safe landing operations without requiring GPS or expensive sensors such as LiDAR.
+◆ A key innovation is an adaptive scale factor algorithm that converts non-metric monocular depth predictions into accurate metric distance measurements by leveraging semantic ground plane detection and camera intrinsic parameters, achieving a mean distance error of 14.4 cm.</td></tr>
+<tr><td>2025-10-18</td><td>OOS-DSD: Improving Out-of-stock Detection in Retail Images using Auxiliary Tasks</td><td>[2510.16508](http://arxiv.org/pdf/2510.16508)</td><td>◆ Out-of-stock (OOS) detection is a very important retail verification process that aims to infer the unavailability of products in their designated areas on the shelf.
+◆ In this paper, we introduce OOS-DSD, a novel deep learning-based method that advances OOS detection through auxiliary learning.
+◆ In particular, we extend a well-established YOLOv8 object detection architecture with additional convolutional branches to simultaneously detect OOS, segment products, and estimate scene depth.</td></tr>
+<tr><td>2025-10-15</td><td>Decision-focused Sensing and Forecasting for Adaptive and Rapid Flood Response: An Implicit Learning Approach</td><td>[2510.16015](http://arxiv.org/pdf/2510.16015)</td><td>◆ Timely and reliable decision-making is vital for flood emergency response, yet it remains severely hindered by limited and imprecise situational awareness due to various budget and data accessibility constraints.
+◆ Traditional flood management systems often rely on in-situ sensors to calibrate remote sensing-based large-scale flood depth forecasting models, and further take flood depth estimates to optimize flood response decisions.
+◆ However, these approaches often take fixed, decision task-agnostic strategies to decide where to put in-situ sensors (e.g., maximize overall information gain) and train flood forecasting models (e.g., minimize average forecasting errors), but overlook that systems with the same sensing gain and average forecasting errors may lead to distinct decisions.</td></tr>
 <tr><td>2025-10-16</td><td>SaLon3R: Structure-aware Long-term Generalizable 3D Reconstruction from Unposed Images</td><td>[2510.15072](http://arxiv.org/pdf/2510.15072)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled generalizable, on-the-fly reconstruction of sequential input views.
 ◆ However, existing methods often predict per-pixel Gaussians and combine Gaussians from all views as the scene representation, leading to substantial redundancies and geometric inconsistencies in long-duration video sequences.
 ◆ To address this, we propose SaLon3R, a novel framework for Structure-aware, Long-term 3DGS Reconstruction.</td></tr>
@@ -3126,4 +3180,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.20
+> 更新于: 2025.10.21
