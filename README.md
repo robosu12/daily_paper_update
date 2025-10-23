@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.22)
+# SLAM领域最新论文 (2025.10.23)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-21</td><td>Underwater Dense Mapping with the First Compact 3D Sonar</td><td>[2510.18991](http://arxiv.org/pdf/2510.18991)</td><td>◆ In the past decade, the adoption of compact 3D range sensors, such as LiDARs, has driven the developments of robust state-estimation pipelines, making them a standard sensor for aerial, ground, and space autonomy.
+◆ Unfortunately, poor propagation of electromagnetic waves underwater, has limited the visibility-independent sensing options of underwater state-estimation to acoustic range sensors, which provide 2D information including, at-best, spatially ambiguous information.
+◆ This paper, to the best of our knowledge, is the first study examining the performance, capacity, and opportunities arising from the recent introduction of the first compact 3D sonar.</td></tr>
 <tr><td>2025-10-21</td><td>DeepDetect: Learning All-in-One Dense Keypoints</td><td>[2510.17422](http://arxiv.org/pdf/2510.17422)</td><td>◆ Keypoint detection is the foundation of many computer vision tasks, including image registration, structure-from motion, 3D reconstruction, visual odometry, and SLAM.
 ◆ Traditional detectors (SIFT, SURF, ORB, BRISK, etc.) and learning based methods (SuperPoint, R2D2, LF-Net, D2-Net, etc.) have shown strong performance yet suffer from key limitations: sensitivity to photometric changes, low keypoint density and repeatability, limited adaptability to challenging scenes, and lack of semantic understanding, often failing to prioritize visually important regions.
 ◆ We present DeepDetect, an intelligent, all-in-one, dense keypoint detector that unifies the strengths of classical detectors using deep learning.</td></tr>
@@ -1557,6 +1560,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-22</td><td>Advances in 4D Representation: Geometry, Motion, and Interaction</td><td>[2510.19255](http://arxiv.org/pdf/2510.19255)</td><td>◆ We present a survey on 4D generation and reconstruction, a fast-evolving subfield of computer graphics whose developments have been propelled by recent advances in neural fields, geometric and motion deep learning, as well 3D generative artificial intelligence (GenAI).
+◆ While our survey is not the first of its kind, we build our coverage of the domain from a unique and distinctive perspective of 4D representations\/}, to model 3D geometry evolving over time while exhibiting motion and interaction.
+◆ Specifically, instead of offering an exhaustive enumeration of many works, we take a more selective approach by focusing on representative works to highlight both the desirable properties and ensuing challenges of each representation under different computation, application, and data scenarios.</td></tr>
 <tr><td>2025-10-21</td><td>Moving Light Adaptive Colonoscopy Reconstruction via Illumination-Attenuation-Aware 3D Gaussian Splatting</td><td>[2510.18739](http://arxiv.org/pdf/2510.18739)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a pivotal technique for real-time view synthesis in colonoscopy, enabling critical applications such as virtual colonoscopy and lesion tracking.
 ◆ However, the vanilla 3DGS assumes static illumination and that observed appearance depends solely on viewing angle, which causes incompatibility with the photometric variations in colonoscopic scenes induced by dynamic light source/camera.
 ◆ This mismatch forces most 3DGS methods to introduce structure-violating vaporous Gaussian blobs between the camera and tissues to compensate for illumination attenuation, ultimately degrading the quality of 3D reconstructions.</td></tr>
@@ -2465,13 +2471,16 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-22</td><td>How to Evaluate Monocular Depth Estimation?</td><td>[2510.19814](http://arxiv.org/pdf/2510.19814)</td><td>◆ Monocular depth estimation is an important task with rapid progress, but how to evaluate it remains an open question, as evidenced by a lack of standardization in existing literature and a large selection of evaluation metrics whose trade-offs and behaviors are not well understood.
+◆ This paper contributes a novel, quantitative analysis of existing metrics in terms of their sensitivity to various types of perturbations of ground truth, emphasizing comparison to human judgment.
+◆ Our analysis reveals that existing metrics are severely under-sensitive to curvature perturbation such as making flat surfaces wavy.</td></tr>
 <tr><td>2025-10-21</td><td>PLANA3R: Zero-shot Metric Planar 3D Reconstruction via Feed-Forward Planar Splatting</td><td>[2510.18714](http://arxiv.org/pdf/2510.18714)</td><td>◆ This paper addresses metric 3D reconstruction of indoor scenes by exploiting their inherent geometric regularities with compact representations.
 ◆ Using planar 3D primitives - a well-suited representation for man-made environments - we introduce PLANA3R, a pose-free framework for metric Planar 3D Reconstruction from unposed two-view images.
 ◆ Our approach employs Vision Transformers to extract a set of sparse planar primitives, estimate relative camera poses, and supervise geometry learning via planar splatting, where gradients are propagated through high-resolution rendered depth and normal maps of primitives.</td></tr>
 <tr><td>2025-10-21</td><td>GeoDiff: Geometry-Guided Diffusion for Metric Depth Estimation</td><td>[2510.18291](http://arxiv.org/pdf/2510.18291)</td><td>◆ We introduce a novel framework for metric depth estimation that enhances pretrained diffusion-based monocular depth estimation (DB-MDE) models with stereo vision guidance.
 ◆ While existing DB-MDE methods excel at predicting relative depth, estimating absolute metric depth remains challenging due to scale ambiguities in single-image scenarios.
 ◆ To address this, we reframe depth estimation as an inverse problem, leveraging pretrained latent diffusion models (LDMs) conditioned on RGB images, combined with stereo-based geometric constraints, to learn scale and shift for accurate depth recovery.</td></tr>
-<tr><td>2025-10-20</td><td>PAGE-4D: Disentangled Pose and Geometry Estimation for 4D Perception</td><td>[2510.17568](http://arxiv.org/pdf/2510.17568)</td><td>◆ Recent 3D feed-forward models, such as the Visual Geometry Grounded Transformer (VGGT), have shown strong capability in inferring 3D attributes of static scenes.
+<tr><td>2025-10-21</td><td>PAGE-4D: Disentangled Pose and Geometry Estimation for 4D Perception</td><td>[2510.17568](http://arxiv.org/pdf/2510.17568)</td><td>◆ Recent 3D feed-forward models, such as the Visual Geometry Grounded Transformer (VGGT), have shown strong capability in inferring 3D attributes of static scenes.
 ◆ However, since they are typically trained on static datasets, these models often struggle in real-world scenarios involving complex dynamic elements, such as moving humans or deformable objects like umbrellas.
 ◆ To address this limitation, we introduce PAGE-4D, a feedforward model that extends VGGT to dynamic scenes, enabling camera pose estimation, depth prediction, and point cloud reconstruction -- all without post-processing.</td></tr>
 <tr><td>2025-10-19</td><td>How Universal Are SAM2 Features?</td><td>[2510.17051](http://arxiv.org/pdf/2510.17051)</td><td>◆ The trade-off between general-purpose foundation vision models and their specialized counterparts is critical for efficient feature coding design and is not yet fully understood.
@@ -3195,4 +3204,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.22
+> 更新于: 2025.10.23
