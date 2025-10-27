@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.26)
+# SLAM领域最新论文 (2025.10.27)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-24</td><td>Underwater Visual-Inertial-Acoustic-Depth SLAM with DVL Preintegration for Degraded Environments</td><td>[2510.21215](http://arxiv.org/pdf/2510.21215)</td><td>◆ Visual degradation caused by limited visibility, insufficient lighting, and feature scarcity in underwater environments presents significant challenges to visual-inertial simultaneous localization and mapping (SLAM) systems.
+◆ To address these challenges, this paper proposes a graph-based visual-inertial-acoustic-depth SLAM system that integrates a stereo camera, an inertial measurement unit (IMU), the Doppler velocity log (DVL), and a pressure sensor.
+◆ The key innovation lies in the tight integration of four distinct sensor modalities to ensure reliable operation, even under degraded visual conditions.</td></tr>
 <tr><td>2025-10-23</td><td>Deep Learning-Powered Visual SLAM Aimed at Assisting Visually Impaired Navigation</td><td>[2510.20549](http://arxiv.org/pdf/2510.20549)</td><td>◆ Despite advancements in SLAM technologies, robust operation under challenging conditions such as low-texture, motion-blur, or challenging lighting remains an open challenge.
 ◆ Such conditions are common in applications such as assistive navigation for the visually impaired.
 ◆ These challenges undermine localization accuracy and tracking stability, reducing navigation reliability and safety.</td></tr>
@@ -816,6 +819,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-24</td><td>Parsley&#x27;s Group Size Study</td><td>[2510.21348](http://arxiv.org/pdf/2510.21348)</td><td>◆ Parsley is a resilient group-based Distributed Hash Table that incorporates a preemptive peer relocation technique and a dynamic data sharding mechanism to enhance robustness and balance.
+◆ In addition to the hard limits on group size, defined by minimum and maximum thresholds, Parsley introduces two soft limits that define a target interval for maintaining stable group sizes.
+◆ These soft boundaries allow the overlay to take proactive measures to prevent violations of the hard limits, improving system stability under churn.</td></tr>
 <tr><td>2025-10-20</td><td>Joint Multi-Condition Representation Modelling via Matrix Factorisation for Visual Place Recognition</td><td>[2510.17739](http://arxiv.org/pdf/2510.17739)</td><td>◆ We address multi-reference visual place recognition (VPR), where reference sets captured under varying conditions are used to improve localisation performance.
 ◆ While deep learning with large-scale training improves robustness, increasing data diversity and model complexity incur extensive computational cost during training and deployment.
 ◆ Descriptor-level fusion via voting or aggregation avoids training, but often targets multi-sensor setups or relies on heuristics with limited gains under appearance and viewpoint change.</td></tr>
@@ -1310,7 +1316,7 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <tr><td>2025-10-08</td><td>Efficient Discriminative Joint Encoders for Large Scale Vision-Language Reranking</td><td>[2510.06820](http://arxiv.org/pdf/2510.06820)</td><td>◆ Multimodal retrieval still leans on embedding-based models like CLIP for fast vector search over pre-computed image embeddings.
 ◆ Yet, unlike text retrieval, where joint-encoder rerankers are standard, comparable vision--language rerankers are largely absent.
 ◆ We find that seminal joint encoders such as BLIP are severely bottlenecked by an expensive visual feature-extraction stage, preventing practical deployment at scale.</td></tr>
-<tr><td>2025-10-06</td><td>SegMASt3R: Geometry Grounded Segment Matching</td><td>[2510.05051](http://arxiv.org/pdf/2510.05051)</td><td>◆ Segment matching is an important intermediate task in computer vision that establishes correspondences between semantically or geometrically coherent regions across images.
+<tr><td>2025-10-24</td><td>SegMASt3R: Geometry Grounded Segment Matching</td><td>[2510.05051](http://arxiv.org/pdf/2510.05051)</td><td>◆ Segment matching is an important intermediate task in computer vision that establishes correspondences between semantically or geometrically coherent regions across images.
 ◆ Unlike keypoint matching, which focuses on localized features, segment matching captures structured regions, offering greater robustness to occlusions, lighting variations, and viewpoint changes.
 ◆ In this paper, we leverage the spatial understanding of 3D foundation models to tackle wide-baseline segment matching, a challenging setting involving extreme viewpoint shifts.</td></tr>
 <tr><td>2025-09-30</td><td>Enhancing Certifiable Semantic Robustness via Robust Pruning of Deep Neural Networks</td><td>[2510.00083](http://arxiv.org/pdf/2510.00083)</td><td>◆ Deep neural networks have been widely adopted in many vision and robotics applications with visual inputs.
@@ -1558,6 +1564,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-24</td><td>Towards Physically Executable 3D Gaussian for Embodied Navigation</td><td>[2510.21307](http://arxiv.org/pdf/2510.21307)</td><td>◆ 3D Gaussian Splatting (3DGS), a 3D representation method with photorealistic real-time rendering capabilities, is regarded as an effective tool for narrowing the sim-to-real gap.
+◆ However, it lacks fine-grained semantics and physical executability for Visual-Language Navigation (VLN).
+◆ To address this, we propose SAGE-3D (Semantically and Physically Aligned Gaussian Environments for 3D Navigation), a new paradigm that upgrades 3DGS into an executable, semantically and physically aligned environment.</td></tr>
 <tr><td>2025-10-23</td><td>Dino-Diffusion Modular Designs Bridge the Cross-Domain Gap in Autonomous Parking</td><td>[2510.20335](http://arxiv.org/pdf/2510.20335)</td><td>◆ Parking is a critical pillar of driving safety.
 ◆ While recent end-to-end (E2E) approaches have achieved promising in-domain results, robustness under domain shifts (e.g., weather and lighting changes) remains a key challenge.
 ◆ Rather than relying on additional data, in this paper, we propose Dino-Diffusion Parking (DDP), a domain-agnostic autonomous parking pipeline that integrates visual foundation models with diffusion-based planning to enable generalized perception and robust motion planning under distribution shifts.</td></tr>
@@ -3207,4 +3216,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.26
+> 更新于: 2025.10.27
