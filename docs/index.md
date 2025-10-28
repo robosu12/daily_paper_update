@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.27)
+# SLAM领域最新论文 (2025.10.28)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-26</td><td>TWC-SLAM: Multi-Agent Cooperative SLAM with Text Semantics and WiFi Features Integration for Similar Indoor Environments</td><td>[2510.22754](http://arxiv.org/pdf/2510.22754)</td><td>◆ Multi-agent cooperative SLAM often encounters challenges in similar indoor environments characterized by repetitive structures, such as corridors and rooms.
+◆ These challenges can lead to significant inaccuracies in shared location identification when employing point cloud-based techniques.
+◆ To mitigate these issues, we introduce TWC-SLAM, a multi-agent cooperative SLAM framework that integrates text semantics and WiFi signal features to enhance location identification and loop closure detection.</td></tr>
+<tr><td>2025-10-26</td><td>Policies over Poses: Reinforcement Learning based Distributed Pose-Graph Optimization for Multi-Robot SLAM</td><td>[2510.22740](http://arxiv.org/pdf/2510.22740)</td><td>◆ We consider the distributed pose-graph optimization (PGO) problem, which is fundamental in accurate trajectory estimation in multi-robot simultaneous localization and mapping (SLAM).
+◆ Conventional iterative approaches linearize a highly non-convex optimization objective, requiring repeated solving of normal equations, which often converge to local minima and thus produce suboptimal estimates.
+◆ We propose a scalable, outlier-robust distributed planar PGO framework using Multi-Agent Reinforcement Learning (MARL).</td></tr>
+<tr><td>2025-10-26</td><td>LVD-GS: Gaussian Splatting SLAM for Dynamic Scenes via Hierarchical Explicit-Implicit Representation Collaboration Rendering</td><td>[2510.22669](http://arxiv.org/pdf/2510.22669)</td><td>◆ 3D Gaussian Splatting SLAM has emerged as a widely used technique for high-fidelity mapping in spatial intelligence.
+◆ However, existing methods often rely on a single representation scheme, which limits their performance in large-scale dynamic outdoor scenes and leads to cumulative pose errors and scale ambiguity.
+◆ To address these challenges, we propose \textbf{LVD-GS}, a novel LiDAR-Visual 3D Gaussian Splatting SLAM system.</td></tr>
+<tr><td>2025-10-26</td><td>RoGER-SLAM: A Robust Gaussian Splatting SLAM System for Noisy and Low-light Environment Resilience</td><td>[2510.22600](http://arxiv.org/pdf/2510.22600)</td><td>◆ The reliability of Simultaneous Localization and Mapping (SLAM) is severely constrained in environments where visual inputs suffer from noise and low illumination.
+◆ Although recent 3D Gaussian Splatting (3DGS) based SLAM frameworks achieve high-fidelity mapping under clean conditions, they remain vulnerable to compounded degradations that degrade mapping and tracking performance.
+◆ A key observation underlying our work is that the original 3DGS rendering pipeline inherently behaves as an implicit low-pass filter, attenuating high-frequency noise but also risking over-smoothing.</td></tr>
+<tr><td>2025-10-26</td><td>UltraVoice: Scaling Fine-Grained Style-Controlled Speech Conversations for Spoken Dialogue Models</td><td>[2510.22588](http://arxiv.org/pdf/2510.22588)</td><td>◆ Spoken dialogue models currently lack the ability for fine-grained speech style control, a critical capability for human-like interaction that is often overlooked in favor of purely functional capabilities like reasoning and question answering.
+◆ To address this limitation, we introduce UltraVoice, the first large-scale speech dialogue dataset engineered for multiple fine-grained speech style control.
+◆ Encompassing over 830 hours of speech dialogues, UltraVoice provides instructions across six key speech stylistic dimensions: emotion, speed, volume, accent, language, and composite styles.</td></tr>
+<tr><td>2025-10-26</td><td>Bag-of-Word-Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing</td><td>[2510.22529](http://arxiv.org/pdf/2510.22529)</td><td>◆ Loop closure is critical in Simultaneous Localization and Mapping (SLAM) systems to reduce accumulative drift and ensure global mapping consistency.
+◆ However, conventional methods struggle in perceptually aliased environments, such as narrow pipes, due to vector quantization, feature sparsity, and repetitive textures, while existing solutions often incur high computational costs.
+◆ This paper presents Bag-of-Word-Groups (BoWG), a novel loop closure detection method that achieves superior precision-recall, robustness, and computational efficiency.</td></tr>
 <tr><td>2025-10-24</td><td>Underwater Visual-Inertial-Acoustic-Depth SLAM with DVL Preintegration for Degraded Environments</td><td>[2510.21215](http://arxiv.org/pdf/2510.21215)</td><td>◆ Visual degradation caused by limited visibility, insufficient lighting, and feature scarcity in underwater environments presents significant challenges to visual-inertial simultaneous localization and mapping (SLAM) systems.
 ◆ To address these challenges, this paper proposes a graph-based visual-inertial-acoustic-depth SLAM system that integrates a stereo camera, an inertial measurement unit (IMU), the Doppler velocity log (DVL), and a pressure sensor.
 ◆ The key innovation lies in the tight integration of four distinct sensor modalities to ensure reliable operation, even under degraded visual conditions.</td></tr>
@@ -819,6 +837,21 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-27</td><td>Language Server CLI Empowers Language Agents with Process Rewards</td><td>[2510.22907](http://arxiv.org/pdf/2510.22907)</td><td>◆ Large language models routinely hallucinate APIs and mislocalize edits, while language servers compute verified, IDE-grade facts about real code.
+◆ We present Lanser-CLI, a CLI-first orchestration layer that pins and mediates a Language Server Protocol (LSP) server for coding agents and CI, exposing deterministic, replayable workflows.
+◆ Our position is that language servers provide not only structural information (definitions, references, types, diagnostics) but also an actionable process reward: machine-checked, step-wise signals that align an agent&#x27;s planning loop with program reality.</td></tr>
+<tr><td>2025-10-26</td><td>TWC-SLAM: Multi-Agent Cooperative SLAM with Text Semantics and WiFi Features Integration for Similar Indoor Environments</td><td>[2510.22754](http://arxiv.org/pdf/2510.22754)</td><td>◆ Multi-agent cooperative SLAM often encounters challenges in similar indoor environments characterized by repetitive structures, such as corridors and rooms.
+◆ These challenges can lead to significant inaccuracies in shared location identification when employing point cloud-based techniques.
+◆ To mitigate these issues, we introduce TWC-SLAM, a multi-agent cooperative SLAM framework that integrates text semantics and WiFi signal features to enhance location identification and loop closure detection.</td></tr>
+<tr><td>2025-10-26</td><td>Bag-of-Word-Groups (BoWG): A Robust and Efficient Loop Closure Detection Method Under Perceptual Aliasing</td><td>[2510.22529](http://arxiv.org/pdf/2510.22529)</td><td>◆ Loop closure is critical in Simultaneous Localization and Mapping (SLAM) systems to reduce accumulative drift and ensure global mapping consistency.
+◆ However, conventional methods struggle in perceptually aliased environments, such as narrow pipes, due to vector quantization, feature sparsity, and repetitive textures, while existing solutions often incur high computational costs.
+◆ This paper presents Bag-of-Word-Groups (BoWG), a novel loop closure detection method that achieves superior precision-recall, robustness, and computational efficiency.</td></tr>
+<tr><td>2025-10-25</td><td>Efficient Large-Deformation Medical Image Registration via Recurrent Dynamic Correlation</td><td>[2510.22380](http://arxiv.org/pdf/2510.22380)</td><td>◆ Deformable image registration estimates voxel-wise correspondences between images through spatial transformations, and plays a key role in medical imaging.
+◆ While deep learning methods have significantly reduced runtime, efficiently handling large deformations remains a challenging task.
+◆ Convolutional networks aggregate local features but lack direct modeling of voxel correspondences, promoting recent works to explore explicit feature matching.</td></tr>
+<tr><td>2025-10-24</td><td>Emerging correlations between diffusing particles evolving via simultaneous resetting with memory</td><td>[2510.21972](http://arxiv.org/pdf/2510.21972)</td><td>◆ We study the emergence of correlations between $N$ components of the position of a diffusive walker in $N$ dimensions that starts at the origin and resets to previously visited sites with certain probabilities.
+◆ This is equivalent to $N$ independent one-dimensional diffusive processes starting from the origin and being subject to simultaneous resetting to positions visited in the past.
+◆ Resetting follows a memory kernel that interpolates between resetting to the origin only, and the preferential relocation model, a path-dependent process which is highly non-Markov.</td></tr>
 <tr><td>2025-10-24</td><td>Parsley&#x27;s Group Size Study</td><td>[2510.21348](http://arxiv.org/pdf/2510.21348)</td><td>◆ Parsley is a resilient group-based Distributed Hash Table that incorporates a preemptive peer relocation technique and a dynamic data sharding mechanism to enhance robustness and balance.
 ◆ In addition to the hard limits on group size, defined by minimum and maximum thresholds, Parsley introduces two soft limits that define a target interval for maintaining stable group sizes.
 ◆ These soft boundaries allow the overlay to take proactive measures to prevent violations of the hard limits, improving system stability under churn.</td></tr>
@@ -1304,6 +1337,18 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-27</td><td>The MDW Hα Sky Survey: Data Release 1</td><td>[2510.22900](http://arxiv.org/pdf/2510.22900)</td><td>◆ The Mittelman-di Cicco-Walker (MDW) H$\alpha$ Sky Survey is an autonomously-operated all-sky narrow-band (3nm) H$\alpha$ imaging survey.
+◆ The survey was founded by amateur astronomers and the northern sky (Decl.
+◆ $\geq$ 0$^\circ$) is presented here in its second stage of refinement for academic use.</td></tr>
+<tr><td>2025-10-26</td><td>FairJudge: MLLM Judging for Social Attributes and Prompt Image Alignment</td><td>[2510.22827](http://arxiv.org/pdf/2510.22827)</td><td>◆ Text-to-image (T2I) systems lack simple, reproducible ways to evaluate how well images match prompts and how models treat social attributes.
+◆ Common proxies -- face classifiers and contrastive similarity -- reward surface cues, lack calibrated abstention, and miss attributes only weakly visible (for example, religion, culture, disability).
+◆ We present FairJudge, a lightweight protocol that treats instruction-following multimodal LLMs as fair judges.</td></tr>
+<tr><td>2025-10-26</td><td>Cross-Species Transfer Learning in Agricultural AI: Evaluating ZebraPose Adaptation for Dairy Cattle Pose Estimation</td><td>[2510.22618](http://arxiv.org/pdf/2510.22618)</td><td>◆ Pose estimation serves as a cornerstone of computer vision for understanding animal posture, behavior, and welfare.
+◆ Yet, agricultural applications remain constrained by the scarcity of large, annotated datasets for livestock, especially dairy cattle.
+◆ This study evaluates the potential and limitations of cross-species transfer learning by adapting ZebraPose - a vision transformer-based model trained on synthetic zebra imagery - for 27-keypoint detection in dairy cows under real barn conditions.</td></tr>
+<tr><td>2025-10-25</td><td>SemiETPicker: Fast and Label-Efficient Particle Picking for CryoET Tomography Using Semi-Supervised Learning</td><td>[2510.22454](http://arxiv.org/pdf/2510.22454)</td><td>◆ Cryogenic Electron Tomography (CryoET) combined with sub-volume averaging (SVA) is the only imaging modality capable of resolving protein structures inside cells at molecular resolution.
+◆ Particle picking, the task of localizing and classifying target proteins in 3D CryoET volumes, remains the main bottleneck.
+◆ Due to the reliance on time-consuming manual labels, the vast reserve of unlabeled tomograms remains underutilized.</td></tr>
 <tr><td>2025-10-21</td><td>GBlobs: Local LiDAR Geometry for Improved Sensor Placement Generalization</td><td>[2510.18539](http://arxiv.org/pdf/2510.18539)</td><td>◆ This technical report outlines the top-ranking solution for RoboSense 2025: Track 3, achieving state-of-the-art performance on 3D object detection under various sensor placements.
 ◆ Our submission utilizes GBlobs, a local point cloud feature descriptor specifically designed to enhance model generalization across diverse LiDAR configurations.
 ◆ Current LiDAR-based 3D detectors often suffer from a \enquote{geometric shortcut} when trained on conventional global features (\ie, absolute Cartesian coordinates).</td></tr>
@@ -1564,6 +1609,21 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-27</td><td>Explicit Memory through Online 3D Gaussian Splatting Improves Class-Agnostic Video Segmentation</td><td>[2510.23521](http://arxiv.org/pdf/2510.23521)</td><td>◆ Remembering where object segments were predicted in the past is useful for improving the accuracy and consistency of class-agnostic video segmentation algorithms.
+◆ Existing video segmentation algorithms typically use either no object-level memory (e.g.
+◆ FastSAM) or they use implicit memories in the form of recurrent neural network features (e.g.</td></tr>
+<tr><td>2025-10-27</td><td>EndoWave: Rational-Wavelet 4D Gaussian Splatting for Endoscopic Reconstruction</td><td>[2510.23087](http://arxiv.org/pdf/2510.23087)</td><td>◆ In robot-assisted minimally invasive surgery, accurate 3D reconstruction from endoscopic video is vital for downstream tasks and improved outcomes.
+◆ However, endoscopic scenarios present unique challenges, including photometric inconsistencies, non-rigid tissue motion, and view-dependent highlights.
+◆ Most 3DGS-based methods that rely solely on appearance constraints for optimizing 3DGS are often insufficient in this context, as these dynamic visual artifacts can mislead the optimization process and lead to inaccurate reconstructions.</td></tr>
+<tr><td>2025-10-26</td><td>Region-Adaptive Learned Hierarchical Encoding for 3D Gaussian Splatting Data</td><td>[2510.22812](http://arxiv.org/pdf/2510.22812)</td><td>◆ We introduce Region-Adaptive Learned Hierarchical Encoding (RALHE) for 3D Gaussian Splatting (3DGS) data.
+◆ While 3DGS has recently become popular for novel view synthesis, the size of trained models limits its deployment in bandwidth-constrained applications such as volumetric media streaming.
+◆ To address this, we propose a learned hierarchical latent representation that builds upon the principles of &quot;overfitted&quot; learned image compression (e.g., Cool-Chic and C3) to efficiently encode 3DGS attributes.</td></tr>
+<tr><td>2025-10-26</td><td>RoGER-SLAM: A Robust Gaussian Splatting SLAM System for Noisy and Low-light Environment Resilience</td><td>[2510.22600](http://arxiv.org/pdf/2510.22600)</td><td>◆ The reliability of Simultaneous Localization and Mapping (SLAM) is severely constrained in environments where visual inputs suffer from noise and low illumination.
+◆ Although recent 3D Gaussian Splatting (3DGS) based SLAM frameworks achieve high-fidelity mapping under clean conditions, they remain vulnerable to compounded degradations that degrade mapping and tracking performance.
+◆ A key observation underlying our work is that the original 3DGS rendering pipeline inherently behaves as an implicit low-pass filter, attenuating high-frequency noise but also risking over-smoothing.</td></tr>
+<tr><td>2025-10-25</td><td>STG-Avatar: Animatable Human Avatars via Spacetime Gaussian</td><td>[2510.22140](http://arxiv.org/pdf/2510.22140)</td><td>◆ Realistic animatable human avatars from monocular videos are crucial for advancing human-robot interaction and enhancing immersive virtual experiences.
+◆ While recent research on 3DGS-based human avatars has made progress, it still struggles with accurately representing detailed features of non-rigid objects (e.g., clothing deformations) and dynamic regions (e.g., rapidly moving limbs).
+◆ To address these challenges, we present STG-Avatar, a 3DGS-based framework for high-fidelity animatable human avatar reconstruction.</td></tr>
 <tr><td>2025-10-24</td><td>Towards Physically Executable 3D Gaussian for Embodied Navigation</td><td>[2510.21307](http://arxiv.org/pdf/2510.21307)</td><td>◆ 3D Gaussian Splatting (3DGS), a 3D representation method with photorealistic real-time rendering capabilities, is regarded as an effective tool for narrowing the sim-to-real gap.
 ◆ However, it lacks fine-grained semantics and physical executability for Visual-Language Navigation (VLN).
 ◆ To address this, we propose SAGE-3D (Semantically and Physically Aligned Gaussian Environments for 3D Navigation), a new paradigm that upgrades 3DGS into an executable, semantically and physically aligned environment.</td></tr>
@@ -2482,6 +2542,18 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-27</td><td>More Than Generation: Unifying Generation and Depth Estimation via Text-to-Image Diffusion Models</td><td>[2510.23574](http://arxiv.org/pdf/2510.23574)</td><td>◆ Generative depth estimation methods leverage the rich visual priors stored in pre-trained text-to-image diffusion models, demonstrating astonishing zero-shot capability.
+◆ However, parameter updates during training lead to catastrophic degra- dation in the image generation capability of the pre-trained model.
+◆ We introduce MERGE, a unified model for image generation and depth estimation, starting from a fixed pre-trained text-to-image model.</td></tr>
+<tr><td>2025-10-27</td><td>Seq-DeepIPC: Sequential Sensing for End-to-End Control in Legged Robot Navigation</td><td>[2510.23057](http://arxiv.org/pdf/2510.23057)</td><td>◆ We present Seq-DeepIPC, a sequential end-to-end perception-to-control model for legged robot navigation in realworld environments.
+◆ Seq-DeepIPC advances intelligent sensing for autonomous legged navigation by tightly integrating multi-modal perception (RGB-D + GNSS) with temporal fusion and control.
+◆ The model jointly predicts semantic segmentation and depth estimation, giving richer spatial features for planning and control.</td></tr>
+<tr><td>2025-10-25</td><td>EndoSfM3D: Learning to 3D Reconstruct Any Endoscopic Surgery Scene using Self-supervised Foundation Model</td><td>[2510.22359](http://arxiv.org/pdf/2510.22359)</td><td>◆ 3D reconstruction of endoscopic surgery scenes plays a vital role in enhancing scene perception, enabling AR visualization, and supporting context-aware decision-making in image-guided surgery.
+◆ A critical yet challenging step in this process is the accurate estimation of the endoscope&#x27;s intrinsic parameters.
+◆ In real surgical settings, intrinsic calibration is hindered by sterility constraints and the use of specialized endoscopes with continuous zoom and telescope rotation.</td></tr>
+<tr><td>2025-10-25</td><td>CogStereo: Neural Stereo Matching with Implicit Spatial Cognition Embedding</td><td>[2510.22119](http://arxiv.org/pdf/2510.22119)</td><td>◆ Deep stereo matching has advanced significantly on benchmark datasets through fine-tuning but falls short of the zero-shot generalization seen in foundation models in other vision tasks.
+◆ We introduce CogStereo, a novel framework that addresses challenging regions, such as occlusions or weak textures, without relying on dataset-specific priors.
+◆ CogStereo embeds implicit spatial cognition into the refinement process by using monocular depth features as priors, capturing holistic scene understanding beyond local correspondences.</td></tr>
 <tr><td>2025-10-23</td><td>PPMStereo: Pick-and-Play Memory Construction for Consistent Dynamic Stereo Matching</td><td>[2510.20178](http://arxiv.org/pdf/2510.20178)</td><td>◆ Temporally consistent depth estimation from stereo video is critical for real-world applications such as augmented reality, where inconsistent depth estimation disrupts the immersion of users.
 ◆ Despite its importance, this task remains challenging due to the difficulty in modeling long-term temporal consistency in a computationally efficient manner.
 ◆ Previous methods attempt to address this by aggregating spatio-temporal information but face a fundamental trade-off: limited temporal modeling provides only modest gains, whereas capturing long-range dependencies significantly increases computational cost.</td></tr>
@@ -3216,4 +3288,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.27
+> 更新于: 2025.10.28
