@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.28)
+# SLAM领域最新论文 (2025.10.29)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-28</td><td>Spatiotemporal Calibration of Doppler Velocity Logs for Underwater Robots</td><td>[2510.24571](http://arxiv.org/pdf/2510.24571)</td><td>◆ The calibration of extrinsic parameters and clock offsets between sensors for high-accuracy performance in underwater SLAM systems remains insufficiently explored.
+◆ Existing methods for Doppler Velocity Log (DVL) calibration are either constrained to specific sensor configurations or rely on oversimplified assumptions, and none jointly estimate translational extrinsics and time offsets.
+◆ We propose a Unified Iterative Calibration (UIC) framework for general DVL sensor setups, formulated as a Maximum A Posteriori (MAP) estimation with a Gaussian Process (GP) motion prior for high-fidelity motion interpolation.</td></tr>
+<tr><td>2025-10-28</td><td>GeVI-SLAM: Gravity-Enhanced Stereo Visua Inertial SLAM for Underwater Robots</td><td>[2510.24533](http://arxiv.org/pdf/2510.24533)</td><td>◆ Accurate visual inertial simultaneous localization and mapping (VI SLAM) for underwater robots remains a significant challenge due to frequent visual degeneracy and insufficient inertial measurement unit (IMU) motion excitation.
+◆ In this paper, we present GeVI-SLAM, a gravity-enhanced stereo VI SLAM system designed to address these issues.
+◆ By leveraging the stereo camera&#x27;s direct depth estimation ability, we eliminate the need to estimate scale during IMU initialization, enabling stable operation even under low acceleration dynamics.</td></tr>
+<tr><td>2025-10-28</td><td>A Survey on Collaborative SLAM with 3D Gaussian Splatting</td><td>[2510.23988](http://arxiv.org/pdf/2510.23988)</td><td>◆ This survey comprehensively reviews the evolving field of multi-robot collaborative Simultaneous Localization and Mapping (SLAM) using 3D Gaussian Splatting (3DGS).
+◆ As an explicit scene representation, 3DGS has enabled unprecedented real-time, high-fidelity rendering, ideal for robotics.
+◆ However, its use in multi-robot systems introduces significant challenges in maintaining global consistency, managing communication, and fusing data from heterogeneous sources.</td></tr>
 <tr><td>2025-10-26</td><td>TWC-SLAM: Multi-Agent Cooperative SLAM with Text Semantics and WiFi Features Integration for Similar Indoor Environments</td><td>[2510.22754](http://arxiv.org/pdf/2510.22754)</td><td>◆ Multi-agent cooperative SLAM often encounters challenges in similar indoor environments characterized by repetitive structures, such as corridors and rooms.
 ◆ These challenges can lead to significant inaccuracies in shared location identification when employing point cloud-based techniques.
 ◆ To mitigate these issues, we introduce TWC-SLAM, a multi-agent cooperative SLAM framework that integrates text semantics and WiFi signal features to enhance location identification and loop closure detection.</td></tr>
@@ -837,6 +846,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-28</td><td>GroundLoc: Efficient Large-Scale Outdoor LiDAR-Only Localization</td><td>[2510.24623](http://arxiv.org/pdf/2510.24623)</td><td>◆ In this letter, we introduce GroundLoc, a LiDAR-only localization pipeline designed to localize a mobile robot in large-scale outdoor environments using prior maps.
+◆ GroundLoc employs a Bird&#x27;s-Eye View (BEV) image projection focusing on the perceived ground area and utilizes the place recognition network R2D2, or alternatively, the non-learning approach Scale-Invariant Feature Transform (SIFT), to identify and select keypoints for BEV image map registration.
+◆ Our results demonstrate that GroundLoc outperforms state-of-the-art methods on the SemanticKITTI and HeLiPR datasets across various sensors.</td></tr>
 <tr><td>2025-10-27</td><td>Language Server CLI Empowers Language Agents with Process Rewards</td><td>[2510.22907](http://arxiv.org/pdf/2510.22907)</td><td>◆ Large language models routinely hallucinate APIs and mislocalize edits, while language servers compute verified, IDE-grade facts about real code.
 ◆ We present Lanser-CLI, a CLI-first orchestration layer that pins and mediates a Language Server Protocol (LSP) server for coding agents and CI, exposing deterministic, replayable workflows.
 ◆ Our position is that language servers provide not only structural information (definitions, references, types, diagnostics) but also an actionable process reward: machine-checked, step-wise signals that align an agent&#x27;s planning loop with program reality.</td></tr>
@@ -1609,6 +1621,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-28</td><td>A Survey on Collaborative SLAM with 3D Gaussian Splatting</td><td>[2510.23988](http://arxiv.org/pdf/2510.23988)</td><td>◆ This survey comprehensively reviews the evolving field of multi-robot collaborative Simultaneous Localization and Mapping (SLAM) using 3D Gaussian Splatting (3DGS).
+◆ As an explicit scene representation, 3DGS has enabled unprecedented real-time, high-fidelity rendering, ideal for robotics.
+◆ However, its use in multi-robot systems introduces significant challenges in maintaining global consistency, managing communication, and fusing data from heterogeneous sources.</td></tr>
+<tr><td>2025-10-27</td><td>PlanarGS: High-Fidelity Indoor 3D Gaussian Splatting Guided by Vision-Language Planar Priors</td><td>[2510.23930](http://arxiv.org/pdf/2510.23930)</td><td>◆ Three-dimensional Gaussian Splatting (3DGS) has recently emerged as an efficient representation for novel-view synthesis, achieving impressive visual quality.
+◆ However, in scenes dominated by large and low-texture regions, common in indoor environments, the photometric loss used to optimize 3DGS yields ambiguous geometry and fails to recover high-fidelity 3D surfaces.
+◆ To overcome this limitation, we introduce PlanarGS, a 3DGS-based framework tailored for indoor scene reconstruction.</td></tr>
 <tr><td>2025-10-27</td><td>Explicit Memory through Online 3D Gaussian Splatting Improves Class-Agnostic Video Segmentation</td><td>[2510.23521](http://arxiv.org/pdf/2510.23521)</td><td>◆ Remembering where object segments were predicted in the past is useful for improving the accuracy and consistency of class-agnostic video segmentation algorithms.
 ◆ Existing video segmentation algorithms typically use either no object-level memory (e.g.
 ◆ FastSAM) or they use implicit memories in the form of recurrent neural network features (e.g.</td></tr>
@@ -2542,6 +2560,9 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-28</td><td>GeVI-SLAM: Gravity-Enhanced Stereo Visua Inertial SLAM for Underwater Robots</td><td>[2510.24533](http://arxiv.org/pdf/2510.24533)</td><td>◆ Accurate visual inertial simultaneous localization and mapping (VI SLAM) for underwater robots remains a significant challenge due to frequent visual degeneracy and insufficient inertial measurement unit (IMU) motion excitation.
+◆ In this paper, we present GeVI-SLAM, a gravity-enhanced stereo VI SLAM system designed to address these issues.
+◆ By leveraging the stereo camera&#x27;s direct depth estimation ability, we eliminate the need to estimate scale during IMU initialization, enabling stable operation even under low acceleration dynamics.</td></tr>
 <tr><td>2025-10-27</td><td>More Than Generation: Unifying Generation and Depth Estimation via Text-to-Image Diffusion Models</td><td>[2510.23574](http://arxiv.org/pdf/2510.23574)</td><td>◆ Generative depth estimation methods leverage the rich visual priors stored in pre-trained text-to-image diffusion models, demonstrating astonishing zero-shot capability.
 ◆ However, parameter updates during training lead to catastrophic degra- dation in the image generation capability of the pre-trained model.
 ◆ We introduce MERGE, a unified model for image generation and depth estimation, starting from a fixed pre-trained text-to-image model.</td></tr>
@@ -3288,4 +3309,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.28
+> 更新于: 2025.10.29
