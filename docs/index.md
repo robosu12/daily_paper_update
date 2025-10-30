@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.29)
+# SLAM领域最新论文 (2025.10.30)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -645,6 +645,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-29</td><td>EA3D: Online Open-World 3D Object Extraction from Streaming Videos</td><td>[2510.25146](http://arxiv.org/pdf/2510.25146)</td><td>◆ Current 3D scene understanding methods are limited by offline-collected multi-view data or pre-constructed 3D geometry.
+◆ In this paper, we present ExtractAnything3D (EA3D), a unified online framework for open-world 3D object extraction that enables simultaneous geometric reconstruction and holistic scene understanding.
+◆ Given a streaming video, EA3D dynamically interprets each frame using vision-language and 2D vision foundation encoders to extract object-level knowledge.</td></tr>
 <tr><td>2025-10-23</td><td>Deep Learning-Powered Visual SLAM Aimed at Assisting Visually Impaired Navigation</td><td>[2510.20549](http://arxiv.org/pdf/2510.20549)</td><td>◆ Despite advancements in SLAM technologies, robust operation under challenging conditions such as low-texture, motion-blur, or challenging lighting remains an open challenge.
 ◆ Such conditions are common in applications such as assistive navigation for the visually impaired.
 ◆ These challenges undermine localization accuracy and tracking stability, reducing navigation reliability and safety.</td></tr>
@@ -2560,6 +2563,12 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-29</td><td>SPADE: Sparsity Adaptive Depth Estimator for Zero-Shot, Real-Time, Monocular Depth Estimation in Underwater Environments</td><td>[2510.25463](http://arxiv.org/pdf/2510.25463)</td><td>◆ Underwater infrastructure requires frequent inspection and maintenance due to harsh marine conditions.
+◆ Current reliance on human divers or remotely operated vehicles is limited by perceptual and operational challenges, especially around complex structures or in turbid water.
+◆ Enhancing the spatial awareness of underwater vehicles is key to reducing piloting risks and enabling greater autonomy.</td></tr>
+<tr><td>2025-10-29</td><td>Seeing Clearly and Deeply: An RGBD Imaging Approach with a Bio-inspired Monocentric Design</td><td>[2510.25314](http://arxiv.org/pdf/2510.25314)</td><td>◆ Achieving high-fidelity, compact RGBD imaging presents a dual challenge: conventional compact optics struggle with RGB sharpness across the entire depth-of-field, while software-only Monocular Depth Estimation (MDE) is an ill-posed problem reliant on unreliable semantic priors.
+◆ While deep optics with elements like DOEs can encode depth, they introduce trade-offs in fabrication complexity and chromatic aberrations, compromising simplicity.
+◆ To address this, we first introduce a novel bio-inspired all-spherical monocentric lens, around which we build the Bionic Monocentric Imaging (BMI) framework, a holistic co-design.</td></tr>
 <tr><td>2025-10-28</td><td>GeVI-SLAM: Gravity-Enhanced Stereo Visua Inertial SLAM for Underwater Robots</td><td>[2510.24533](http://arxiv.org/pdf/2510.24533)</td><td>◆ Accurate visual inertial simultaneous localization and mapping (VI SLAM) for underwater robots remains a significant challenge due to frequent visual degeneracy and insufficient inertial measurement unit (IMU) motion excitation.
 ◆ In this paper, we present GeVI-SLAM, a gravity-enhanced stereo VI SLAM system designed to address these issues.
 ◆ By leveraging the stereo camera&#x27;s direct depth estimation ability, we eliminate the need to estimate scale during IMU initialization, enabling stable operation even under low acceleration dynamics.</td></tr>
@@ -3309,4 +3318,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.29
+> 更新于: 2025.10.30
