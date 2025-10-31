@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.10.30)
+# SLAM领域最新论文 (2025.10.31)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-30</td><td>AgriGS-SLAM: Orchard Mapping Across Seasons via Multi-View Gaussian Splatting SLAM</td><td>[2510.26358](http://arxiv.org/pdf/2510.26358)</td><td>◆ Autonomous robots in orchards require real-time 3D scene understanding despite repetitive row geometry, seasonal appearance changes, and wind-driven foliage motion.
+◆ We present AgriGS-SLAM, a Visual--LiDAR SLAM framework that couples direct LiDAR odometry and loop closures with multi-camera 3D Gaussian Splatting (3DGS) rendering.
+◆ Batch rasterization across complementary viewpoints recovers orchard structure under occlusions, while a unified gradient-driven map lifecycle executed between keyframes preserves fine details and bounds memory.</td></tr>
+<tr><td>2025-10-30</td><td>Exploring Object-Aware Attention Guided Frame Association for RGB-D SLAM</td><td>[2510.26131](http://arxiv.org/pdf/2510.26131)</td><td>◆ Attention models have recently emerged as a powerful approach, demonstrating significant progress in various fields.
+◆ Visualization techniques, such as class activation mapping, provide visual insights into the reasoning of convolutional neural networks (CNNs).
+◆ Using network gradients, it is possible to identify regions where the network pays attention during image recognition tasks.</td></tr>
 <tr><td>2025-10-28</td><td>Spatiotemporal Calibration of Doppler Velocity Logs for Underwater Robots</td><td>[2510.24571](http://arxiv.org/pdf/2510.24571)</td><td>◆ The calibration of extrinsic parameters and clock offsets between sensors for high-accuracy performance in underwater SLAM systems remains insufficiently explored.
 ◆ Existing methods for Doppler Velocity Log (DVL) calibration are either constrained to specific sensor configurations or rely on oversimplified assumptions, and none jointly estimate translational extrinsics and time offsets.
 ◆ We propose a Unified Iterative Calibration (UIC) framework for general DVL sensor setups, formulated as a Maximum A Posteriori (MAP) estimation with a Gaussian Process (GP) motion prior for high-fidelity motion interpolation.</td></tr>
@@ -853,6 +859,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-30</td><td>AgriGS-SLAM: Orchard Mapping Across Seasons via Multi-View Gaussian Splatting SLAM</td><td>[2510.26358](http://arxiv.org/pdf/2510.26358)</td><td>◆ Autonomous robots in orchards require real-time 3D scene understanding despite repetitive row geometry, seasonal appearance changes, and wind-driven foliage motion.
+◆ We present AgriGS-SLAM, a Visual--LiDAR SLAM framework that couples direct LiDAR odometry and loop closures with multi-camera 3D Gaussian Splatting (3DGS) rendering.
+◆ Batch rasterization across complementary viewpoints recovers orchard structure under occlusions, while a unified gradient-driven map lifecycle executed between keyframes preserves fine details and bounds memory.</td></tr>
 <tr><td>2025-10-28</td><td>GroundLoc: Efficient Large-Scale Outdoor LiDAR-Only Localization</td><td>[2510.24623](http://arxiv.org/pdf/2510.24623)</td><td>◆ In this letter, we introduce GroundLoc, a LiDAR-only localization pipeline designed to localize a mobile robot in large-scale outdoor environments using prior maps.
 ◆ GroundLoc employs a Bird&#x27;s-Eye View (BEV) image projection focusing on the perceived ground area and utilizes the place recognition network R2D2, or alternatively, the non-learning approach Scale-Invariant Feature Transform (SIFT), to identify and select keypoints for BEV image map registration.
 ◆ Our results demonstrate that GroundLoc outperforms state-of-the-art methods on the SemanticKITTI and HeLiPR datasets across various sensors.</td></tr>
@@ -1632,6 +1641,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-30</td><td>The Impact and Outlook of 3D Gaussian Splatting</td><td>[2510.26694](http://arxiv.org/pdf/2510.26694)</td><td>◆ Since its introduction, 3D Gaussian Splatting (3DGS) has rapidly transformed the landscape of 3D scene representations, inspiring an extensive body of associated research.
+◆ Follow-up work includes analyses and contributions that enhance the efficiency, scalability, and real-world applicability of 3DGS.
+◆ In this summary, we present an overview of several key directions that have emerged in the wake of 3DGS.</td></tr>
+<tr><td>2025-10-30</td><td>AgriGS-SLAM: Orchard Mapping Across Seasons via Multi-View Gaussian Splatting SLAM</td><td>[2510.26358](http://arxiv.org/pdf/2510.26358)</td><td>◆ Autonomous robots in orchards require real-time 3D scene understanding despite repetitive row geometry, seasonal appearance changes, and wind-driven foliage motion.
+◆ We present AgriGS-SLAM, a Visual--LiDAR SLAM framework that couples direct LiDAR odometry and loop closures with multi-camera 3D Gaussian Splatting (3DGS) rendering.
+◆ Batch rasterization across complementary viewpoints recovers orchard structure under occlusions, while a unified gradient-driven map lifecycle executed between keyframes preserves fine details and bounds memory.</td></tr>
 <tr><td>2025-10-28</td><td>A Survey on Collaborative SLAM with 3D Gaussian Splatting</td><td>[2510.23988](http://arxiv.org/pdf/2510.23988)</td><td>◆ This survey comprehensively reviews the evolving field of multi-robot collaborative Simultaneous Localization and Mapping (SLAM) using 3D Gaussian Splatting (3DGS).
 ◆ As an explicit scene representation, 3DGS has enabled unprecedented real-time, high-fidelity rendering, ideal for robotics.
 ◆ However, its use in multi-robot systems introduces significant challenges in maintaining global consistency, managing communication, and fusing data from heterogeneous sources.</td></tr>
@@ -3330,4 +3345,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.10.30
+> 更新于: 2025.10.31
