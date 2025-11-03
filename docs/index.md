@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.02)
+# SLAM领域最新论文 (2025.11.03)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-31</td><td>WildfireX-SLAM: A Large-scale Low-altitude RGB-D Dataset for Wildfire SLAM and Beyond</td><td>[2510.27133](http://arxiv.org/pdf/2510.27133)</td><td>◆ 3D Gaussian splatting (3DGS) and its subsequent variants have led to remarkable progress in simultaneous localization and mapping (SLAM).
+◆ While most recent 3DGS-based SLAM works focus on small-scale indoor scenes, developing 3DGS-based SLAM methods for large-scale forest scenes holds great potential for many real-world applications, especially for wildfire emergency response and forest management.
+◆ However, this line of research is impeded by the absence of a comprehensive and high-quality dataset, and collecting such a dataset over real-world scenes is costly and technically infeasible.</td></tr>
 <tr><td>2025-10-30</td><td>AgriGS-SLAM: Orchard Mapping Across Seasons via Multi-View Gaussian Splatting SLAM</td><td>[2510.26358](http://arxiv.org/pdf/2510.26358)</td><td>◆ Autonomous robots in orchards require real-time 3D scene understanding despite repetitive row geometry, seasonal appearance changes, and wind-driven foliage motion.
 ◆ We present AgriGS-SLAM, a Visual--LiDAR SLAM framework that couples direct LiDAR odometry and loop closures with multi-camera 3D Gaussian Splatting (3DGS) rendering.
 ◆ Batch rasterization across complementary viewpoints recovers orchard structure under occlusions, while a unified gradient-driven map lifecycle executed between keyframes preserves fine details and bounds memory.</td></tr>
@@ -855,6 +858,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-31</td><td>Dual-Scale Antenna Deployment for Pinching Antenna Systems</td><td>[2510.27185](http://arxiv.org/pdf/2510.27185)</td><td>◆ A dual-scale deployment (DSD) framework for pinching antenna systems (PASS) is proposed.
+◆ 1) In the first coarse stage, the pinching antenna (PA) is transferred over a large-scale range at the waveguide level.
+◆ 2) The refinement stage performs small-scale relocation of the PA with high precision.</td></tr>
 <tr><td>2025-10-30</td><td>AgriGS-SLAM: Orchard Mapping Across Seasons via Multi-View Gaussian Splatting SLAM</td><td>[2510.26358](http://arxiv.org/pdf/2510.26358)</td><td>◆ Autonomous robots in orchards require real-time 3D scene understanding despite repetitive row geometry, seasonal appearance changes, and wind-driven foliage motion.
 ◆ We present AgriGS-SLAM, a Visual--LiDAR SLAM framework that couples direct LiDAR odometry and loop closures with multi-camera 3D Gaussian Splatting (3DGS) rendering.
 ◆ Batch rasterization across complementary viewpoints recovers orchard structure under occlusions, while a unified gradient-driven map lifecycle executed between keyframes preserves fine details and bounds memory.</td></tr>
@@ -1633,6 +1639,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-10-31</td><td>SAGS: Self-Adaptive Alias-Free Gaussian Splatting for Dynamic Surgical Endoscopic Reconstruction</td><td>[2510.27318](http://arxiv.org/pdf/2510.27318)</td><td>◆ Surgical reconstruction of dynamic tissues from endoscopic videos is a crucial technology in robot-assisted surgery.
+◆ The development of Neural Radiance Fields (NeRFs) has greatly advanced deformable tissue reconstruction, achieving high-quality results from video and image sequences.
+◆ However, reconstructing deformable endoscopic scenes remains challenging due to aliasing and artifacts caused by tissue movement, which can significantly degrade visualization quality.</td></tr>
+<tr><td>2025-10-31</td><td>WildfireX-SLAM: A Large-scale Low-altitude RGB-D Dataset for Wildfire SLAM and Beyond</td><td>[2510.27133](http://arxiv.org/pdf/2510.27133)</td><td>◆ 3D Gaussian splatting (3DGS) and its subsequent variants have led to remarkable progress in simultaneous localization and mapping (SLAM).
+◆ While most recent 3DGS-based SLAM works focus on small-scale indoor scenes, developing 3DGS-based SLAM methods for large-scale forest scenes holds great potential for many real-world applications, especially for wildfire emergency response and forest management.
+◆ However, this line of research is impeded by the absence of a comprehensive and high-quality dataset, and collecting such a dataset over real-world scenes is costly and technically infeasible.</td></tr>
 <tr><td>2025-10-30</td><td>The Impact and Outlook of 3D Gaussian Splatting</td><td>[2510.26694](http://arxiv.org/pdf/2510.26694)</td><td>◆ Since its introduction, 3D Gaussian Splatting (3DGS) has rapidly transformed the landscape of 3D scene representations, inspiring an extensive body of associated research.
 ◆ Follow-up work includes analyses and contributions that enhance the efficiency, scalability, and real-world applicability of 3DGS.
 ◆ In this summary, we present an overview of several key directions that have emerged in the wake of 3DGS.</td></tr>
@@ -2602,7 +2614,7 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <tr><td>2025-10-23</td><td>PPMStereo: Pick-and-Play Memory Construction for Consistent Dynamic Stereo Matching</td><td>[2510.20178](http://arxiv.org/pdf/2510.20178)</td><td>◆ Temporally consistent depth estimation from stereo video is critical for real-world applications such as augmented reality, where inconsistent depth estimation disrupts the immersion of users.
 ◆ Despite its importance, this task remains challenging due to the difficulty in modeling long-term temporal consistency in a computationally efficient manner.
 ◆ Previous methods attempt to address this by aggregating spatio-temporal information but face a fundamental trade-off: limited temporal modeling provides only modest gains, whereas capturing long-range dependencies significantly increases computational cost.</td></tr>
-<tr><td>2025-10-22</td><td>How to Evaluate Monocular Depth Estimation?</td><td>[2510.19814](http://arxiv.org/pdf/2510.19814)</td><td>◆ Monocular depth estimation is an important task with rapid progress, but how to evaluate it remains an open question, as evidenced by a lack of standardization in existing literature and a large selection of evaluation metrics whose trade-offs and behaviors are not well understood.
+<tr><td>2025-10-30</td><td>How Should One Evaluate Monocular Depth Estimation?</td><td>[2510.19814](http://arxiv.org/pdf/2510.19814)</td><td>◆ Monocular depth estimation is an important task with rapid progress, but how to evaluate it remains an open question, as evidenced by a lack of standardization in existing literature and a large selection of evaluation metrics whose trade-offs and behaviors are not well understood.
 ◆ This paper contributes a novel, quantitative analysis of existing metrics in terms of their sensitivity to various types of perturbations of ground truth, emphasizing comparison to human judgment.
 ◆ Our analysis reveals that existing metrics are severely under-sensitive to curvature perturbation such as making flat surfaces wavy.</td></tr>
 <tr><td>2025-10-21</td><td>PLANA3R: Zero-shot Metric Planar 3D Reconstruction via Feed-Forward Planar Splatting</td><td>[2510.18714](http://arxiv.org/pdf/2510.18714)</td><td>◆ This paper addresses metric 3D reconstruction of indoor scenes by exploiting their inherent geometric regularities with compact representations.
@@ -3333,4 +3345,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.02
+> 更新于: 2025.11.03
