@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.04)
+# SLAM领域最新论文 (2025.11.05)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-04</td><td>Self-Supervised Moving Object Segmentation of Sparse and Noisy Radar Point Clouds</td><td>[2511.02395](http://arxiv.org/pdf/2511.02395)</td><td>◆ Moving object segmentation is a crucial task for safe and reliable autonomous mobile systems like self-driving cars, improving the reliability and robustness of subsequent tasks like SLAM or path planning.
+◆ While the segmentation of camera or LiDAR data is widely researched and achieves great results, it often introduces an increased latency by requiring the accumulation of temporal sequences to gain the necessary temporal context.
+◆ Radar sensors overcome this problem with their ability to provide a direct measurement of a point&#x27;s Doppler velocity, which can be exploited for single-scan moving object segmentation.</td></tr>
+<tr><td>2025-11-03</td><td>TurboMap: GPU-Accelerated Local Mapping for Visual SLAM</td><td>[2511.02036](http://arxiv.org/pdf/2511.02036)</td><td>◆ This paper presents TurboMap, a GPU-accelerated and CPU-optimized local mapping module for visual SLAM systems.
+◆ We identify key performance bottlenecks in the local mapping process for visual SLAM and address them through targeted GPU and CPU optimizations.
+◆ Specifically, we offload map point triangulation and fusion to the GPU, accelerate redundant keyframe culling on the CPU, and integrate a GPU-accelerated solver to speed up local bundle adjustment.</td></tr>
+<tr><td>2025-11-03</td><td>CM-LIUW-Odometry: Robust and High-Precision LiDAR-Inertial-UWB-Wheel Odometry for Extreme Degradation Coal Mine Tunnels</td><td>[2511.01379](http://arxiv.org/pdf/2511.01379)</td><td>◆ Simultaneous Localization and Mapping (SLAM) in large-scale, complex, and GPS-denied underground coal mine environments presents significant challenges.
+◆ Sensors must contend with abnormal operating conditions: GPS unavailability impedes scene reconstruction and absolute geographic referencing, uneven or slippery terrain degrades wheel odometer accuracy, and long, feature-poor tunnels reduce LiDAR effectiveness.
+◆ To address these issues, we propose CoalMine-LiDAR-IMU-UWB-Wheel-Odometry (CM-LIUW-Odometry), a multimodal SLAM framework based on the Iterated Error-State Kalman Filter (IESKF).</td></tr>
+<tr><td>2025-11-03</td><td>Tackling the Kidnapped Robot Problem via Sparse Feasible Hypothesis Sampling and Reliable Batched Multi-Stage Inference</td><td>[2511.01219](http://arxiv.org/pdf/2511.01219)</td><td>◆ This paper addresses the Kidnapped Robot Problem (KRP), a core localization challenge of relocalizing a robot in a known map without prior pose estimate when localization loss or at SLAM initialization.
+◆ For this purpose, a passive 2-D global relocalization framework is proposed.
+◆ It estimates the global pose efficiently and reliably from a single LiDAR scan and an occupancy grid map while the robot remains stationary, thereby enhancing the long-term autonomy of mobile robots.</td></tr>
+<tr><td>2025-11-01</td><td>Multi-Mapcher: Loop Closure Detection-Free Heterogeneous LiDAR Multi-Session SLAM Leveraging Outlier-Robust Registration for Autonomous Vehicles</td><td>[2511.00635](http://arxiv.org/pdf/2511.00635)</td><td>◆ As various 3D light detection and ranging (LiDAR) sensors have been introduced to the market, research on multi-session simultaneous localization and mapping (MSS) using heterogeneous LiDAR sensors has been actively conducted.
+◆ Existing MSS methods mostly rely on loop closure detection for inter-session alignment; however, the performance of loop closure detection can be potentially degraded owing to the differences in the density and field of view (FoV) of the sensors used in different sessions.
+◆ In this study, we challenge the existing paradigm that relies heavily on loop detection modules and propose a novel MSS framework, called Multi-Mapcher, that employs large-scale map-to-map registration to perform inter-session initial alignment, which is commonly assumed to be infeasible, by leveraging outlier-robust 3D point cloud registration.</td></tr>
 <tr><td>2025-10-31</td><td>WildfireX-SLAM: A Large-scale Low-altitude RGB-D Dataset for Wildfire SLAM and Beyond</td><td>[2510.27133](http://arxiv.org/pdf/2510.27133)</td><td>◆ 3D Gaussian splatting (3DGS) and its subsequent variants have led to remarkable progress in simultaneous localization and mapping (SLAM).
 ◆ While most recent 3DGS-based SLAM works focus on small-scale indoor scenes, developing 3DGS-based SLAM methods for large-scale forest scenes holds great potential for many real-world applications, especially for wildfire emergency response and forest management.
 ◆ However, this line of research is impeded by the absence of a comprehensive and high-quality dataset, and collecting such a dataset over real-world scenes is costly and technically infeasible.</td></tr>
@@ -656,6 +671,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-03</td><td>TurboMap: GPU-Accelerated Local Mapping for Visual SLAM</td><td>[2511.02036](http://arxiv.org/pdf/2511.02036)</td><td>◆ This paper presents TurboMap, a GPU-accelerated and CPU-optimized local mapping module for visual SLAM systems.
+◆ We identify key performance bottlenecks in the local mapping process for visual SLAM and address them through targeted GPU and CPU optimizations.
+◆ Specifically, we offload map point triangulation and fusion to the GPU, accelerate redundant keyframe culling on the CPU, and integrate a GPU-accelerated solver to speed up local bundle adjustment.</td></tr>
+<tr><td>2025-11-03</td><td>LiDAR-VGGT: Cross-Modal Coarse-to-Fine Fusion for Globally Consistent and Metric-Scale Dense Mapping</td><td>[2511.01186](http://arxiv.org/pdf/2511.01186)</td><td>◆ Reconstructing large-scale colored point clouds is an important task in robotics, supporting perception, navigation, and scene understanding.
+◆ Despite advances in LiDAR inertial visual odometry (LIVO), its performance remains highly sensitive to extrinsic calibration.
+◆ Meanwhile, 3D vision foundation models, such as VGGT, suffer from limited scalability in large environments and inherently lack metric scale.</td></tr>
 <tr><td>2025-10-29</td><td>EA3D: Online Open-World 3D Object Extraction from Streaming Videos</td><td>[2510.25146](http://arxiv.org/pdf/2510.25146)</td><td>◆ Current 3D scene understanding methods are limited by offline-collected multi-view data or pre-constructed 3D geometry.
 ◆ In this paper, we present ExtractAnything3D (EA3D), a unified online framework for open-world 3D object extraction that enables simultaneous geometric reconstruction and holistic scene understanding.
 ◆ Given a streaming video, EA3D dynamically interprets each frame using vision-language and 2D vision foundation encoders to extract object-level knowledge.</td></tr>
@@ -862,6 +883,24 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-03</td><td>MO-SeGMan: Rearrangement Planning Framework for Multi Objective Sequential and Guided Manipulation in Constrained Environments</td><td>[2511.01476](http://arxiv.org/pdf/2511.01476)</td><td>◆ In this work, we introduce MO-SeGMan, a Multi-Objective Sequential and Guided Manipulation planner for highly constrained rearrangement problems.
+◆ MO-SeGMan generates object placement sequences that minimize both replanning per object and robot travel distance while preserving critical dependency structures with a lazy evaluation method.
+◆ To address highly cluttered, non-monotone scenarios, we propose a Selective Guided Forward Search (SGFS) that efficiently relocates only critical obstacles and to feasible relocation points.</td></tr>
+<tr><td>2025-11-03</td><td>Tackling the Kidnapped Robot Problem via Sparse Feasible Hypothesis Sampling and Reliable Batched Multi-Stage Inference</td><td>[2511.01219](http://arxiv.org/pdf/2511.01219)</td><td>◆ This paper addresses the Kidnapped Robot Problem (KRP), a core localization challenge of relocalizing a robot in a known map without prior pose estimate when localization loss or at SLAM initialization.
+◆ For this purpose, a passive 2-D global relocalization framework is proposed.
+◆ It estimates the global pose efficiently and reliably from a single LiDAR scan and an occupancy grid map while the robot remains stationary, thereby enhancing the long-term autonomy of mobile robots.</td></tr>
+<tr><td>2025-11-04</td><td>Towards classification-based representation learning for place recognition on LiDAR scans</td><td>[2511.00738](http://arxiv.org/pdf/2511.00738)</td><td>◆ Place recognition is a crucial task in autonomous driving, allowing vehicles to determine their position using sensor data.
+◆ While most existing methods rely on contrastive learning, we explore an alternative approach by framing place recognition as a multi-class classification problem.
+◆ Our method assigns discrete location labels to LiDAR scans and trains an encoder-decoder model to classify each scan&#x27;s position directly.</td></tr>
+<tr><td>2025-11-01</td><td>Multi-Mapcher: Loop Closure Detection-Free Heterogeneous LiDAR Multi-Session SLAM Leveraging Outlier-Robust Registration for Autonomous Vehicles</td><td>[2511.00635](http://arxiv.org/pdf/2511.00635)</td><td>◆ As various 3D light detection and ranging (LiDAR) sensors have been introduced to the market, research on multi-session simultaneous localization and mapping (MSS) using heterogeneous LiDAR sensors has been actively conducted.
+◆ Existing MSS methods mostly rely on loop closure detection for inter-session alignment; however, the performance of loop closure detection can be potentially degraded owing to the differences in the density and field of view (FoV) of the sensors used in different sessions.
+◆ In this study, we challenge the existing paradigm that relies heavily on loop detection modules and propose a novel MSS framework, called Multi-Mapcher, that employs large-scale map-to-map registration to perform inter-session initial alignment, which is commonly assumed to be infeasible, by leveraging outlier-robust 3D point cloud registration.</td></tr>
+<tr><td>2025-11-01</td><td>Treat-through OLED Displays: Dosimetry and performance of OLED AVATAR screens for Megavoltage Radiotherapy</td><td>[2511.00331](http://arxiv.org/pdf/2511.00331)</td><td>◆ The AVATAR system utilizes a radiolucent video display to help relax and immobilize pediatric patients during radiotherapy.
+◆ This study investigates the use of OLED (Organic Light Emitting Diode) displays, which offer superior image quality and faster alignment compared to traditional projector-based systems, albeit with slightly increased thickness.
+◆ The dose perturbations caused by these screens were assessed to evaluate their suitability for radiotherapy.</td></tr>
+<tr><td>2025-10-31</td><td>Which Top Energy-Intensive Manufacturing Countries Can Compete in a Renewable Energy Future?</td><td>[2511.00242](http://arxiv.org/pdf/2511.00242)</td><td>◆ In a world increasingly powered by renewables and aiming for greenhouse gas-neutral industrial production, the future competitiveness of todays top manufacturing countries is questioned.
+◆ This study applies detailed energy system modeling to quantify the Renewable Pull, an incentive for industry relocation exerted by countries with favorable renewable conditions.
+◆ Results reveal that the Renewable Pull is not a cross-industrial phenomenon but strongly depends on the relationship between energy costs and transport costs.</td></tr>
 <tr><td>2025-10-31</td><td>Dual-Scale Antenna Deployment for Pinching Antenna Systems</td><td>[2510.27185](http://arxiv.org/pdf/2510.27185)</td><td>◆ A dual-scale deployment (DSD) framework for pinching antenna systems (PASS) is proposed.
 ◆ 1) In the first coarse stage, the pinching antenna (PA) is transferred over a large-scale range at the waveguide level.
 ◆ 2) The refinement stage performs small-scale relocation of the PA with high precision.</td></tr>
@@ -1373,6 +1412,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-04</td><td>Object Detection as an Optional Basis: A Graph Matching Network for Cross-View UAV Localization</td><td>[2511.02489](http://arxiv.org/pdf/2511.02489)</td><td>◆ With the rapid growth of the low-altitude economy, UAVs have become crucial for measurement and tracking in patrol systems.
+◆ However, in GNSS-denied areas, satellite-based localization methods are prone to failure.
+◆ This paper presents a cross-view UAV localization framework that performs map matching via object detection, aimed at effectively addressing cross-temporal, cross-view, heterogeneous aerial image matching.</td></tr>
 <tr><td>2025-10-27</td><td>The MDW Hα Sky Survey: Data Release 1</td><td>[2510.22900](http://arxiv.org/pdf/2510.22900)</td><td>◆ The Mittelman-di Cicco-Walker (MDW) H$\alpha$ Sky Survey is an autonomously-operated all-sky narrow-band (3nm) H$\alpha$ imaging survey.
 ◆ The survey was founded by amateur astronomers and the northern sky (Decl.
 ◆ $\geq$ 0$^\circ$) is presented here in its second stage of refinement for academic use.</td></tr>
@@ -1647,6 +1689,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-04</td><td>Object-Centric 3D Gaussian Splatting for Strawberry Plant Reconstruction and Phenotyping</td><td>[2511.02207](http://arxiv.org/pdf/2511.02207)</td><td>◆ Strawberries are among the most economically significant fruits in the United States, generating over $2 billion in annual farm-gate sales and accounting for approximately 13% of the total fruit production value.
+◆ Plant phenotyping plays a vital role in selecting superior cultivars by characterizing plant traits such as morphology, canopy structure, and growth dynamics.
+◆ However, traditional plant phenotyping methods are time-consuming, labor-intensive, and often destructive.</td></tr>
 <tr><td>2025-10-31</td><td>SAGS: Self-Adaptive Alias-Free Gaussian Splatting for Dynamic Surgical Endoscopic Reconstruction</td><td>[2510.27318](http://arxiv.org/pdf/2510.27318)</td><td>◆ Surgical reconstruction of dynamic tissues from endoscopic videos is a crucial technology in robot-assisted surgery.
 ◆ The development of Neural Radiance Fields (NeRFs) has greatly advanced deformable tissue reconstruction, achieving high-quality results from video and image sequences.
 ◆ However, reconstructing deformable endoscopic scenes remains challenging due to aliasing and artifacts caused by tissue movement, which can significantly degrade visualization quality.</td></tr>
@@ -2600,6 +2645,12 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-04</td><td>Monocular absolute depth estimation from endoscopy via domain-invariant feature learning and latent consistency</td><td>[2511.02247](http://arxiv.org/pdf/2511.02247)</td><td>◆ Monocular depth estimation (MDE) is a critical task to guide autonomous medical robots.
+◆ However, obtaining absolute (metric) depth from an endoscopy camera in surgical scenes is difficult, which limits supervised learning of depth on real endoscopic images.
+◆ Current image-level unsupervised domain adaptation methods translate synthetic images with known depth maps into the style of real endoscopic frames and train depth networks using these translated images with their corresponding depth maps.</td></tr>
+<tr><td>2025-11-03</td><td>Opto-Electronic Convolutional Neural Network Design Via Direct Kernel Optimization</td><td>[2511.02065](http://arxiv.org/pdf/2511.02065)</td><td>◆ Opto-electronic neural networks integrate optical front-ends with electronic back-ends to enable fast and energy-efficient vision.
+◆ However, conventional end-to-end optimization of both the optical and electronic modules is limited by costly simulations and large parameter spaces.
+◆ We introduce a two-stage strategy for designing opto-electronic convolutional neural networks (CNNs): first, train a standard electronic CNN, then realize the optical front-end implemented as a metasurface array through direct kernel optimization of its first convolutional layer.</td></tr>
 <tr><td>2025-10-29</td><td>SPADE: Sparsity Adaptive Depth Estimator for Zero-Shot, Real-Time, Monocular Depth Estimation in Underwater Environments</td><td>[2510.25463](http://arxiv.org/pdf/2510.25463)</td><td>◆ Underwater infrastructure requires frequent inspection and maintenance due to harsh marine conditions.
 ◆ Current reliance on human divers or remotely operated vehicles is limited by perceptual and operational challenges, especially around complex structures or in turbid water.
 ◆ Enhancing the spatial awareness of underwater vehicles is key to reducing piloting risks and enabling greater autonomy.</td></tr>
@@ -3357,4 +3408,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.04
+> 更新于: 2025.11.05
