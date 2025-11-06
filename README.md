@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.05)
+# SLAM领域最新论文 (2025.11.06)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -1412,6 +1412,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-05</td><td>Robust Alignment of the Human Embryo in 3D Ultrasound using PCA and an Ensemble of Heuristic, Atlas-based and Learning-based Classifiers Evaluated on the Rotterdam Periconceptional Cohort</td><td>[2511.03416](http://arxiv.org/pdf/2511.03416)</td><td>◆ Standardized alignment of the embryo in three-dimensional (3D) ultrasound images aids prenatal growth monitoring by facilitating standard plane detection, improving visualization of landmarks and accentuating differences between different scans.
+◆ In this work, we propose an automated method for standardizing this alignment.
+◆ Given a segmentation mask of the embryo, Principal Component Analysis (PCA) is applied to the mask extracting the embryo&#x27;s principal axes, from which four candidate orientations are derived.</td></tr>
 <tr><td>2025-11-04</td><td>Object Detection as an Optional Basis: A Graph Matching Network for Cross-View UAV Localization</td><td>[2511.02489](http://arxiv.org/pdf/2511.02489)</td><td>◆ With the rapid growth of the low-altitude economy, UAVs have become crucial for measurement and tracking in patrol systems.
 ◆ However, in GNSS-denied areas, satellite-based localization methods are prone to failure.
 ◆ This paper presents a cross-view UAV localization framework that performs map matching via object detection, aimed at effectively addressing cross-temporal, cross-view, heterogeneous aerial image matching.</td></tr>
@@ -1689,6 +1692,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-05</td><td>DentalSplat: Dental Occlusion Novel View Synthesis from Sparse Intra-Oral Photographs</td><td>[2511.03099](http://arxiv.org/pdf/2511.03099)</td><td>◆ In orthodontic treatment, particularly within telemedicine contexts, observing patients&#x27; dental occlusion from multiple viewpoints facilitates timely clinical decision-making.
+◆ Recent advances in 3D Gaussian Splatting (3DGS) have shown strong potential in 3D reconstruction and novel view synthesis.
+◆ However, conventional 3DGS pipelines typically rely on densely captured multi-view inputs and precisely initialized camera poses, limiting their practicality.</td></tr>
 <tr><td>2025-11-04</td><td>Object-Centric 3D Gaussian Splatting for Strawberry Plant Reconstruction and Phenotyping</td><td>[2511.02207](http://arxiv.org/pdf/2511.02207)</td><td>◆ Strawberries are among the most economically significant fruits in the United States, generating over $2 billion in annual farm-gate sales and accounting for approximately 13% of the total fruit production value.
 ◆ Plant phenotyping plays a vital role in selecting superior cultivars by characterizing plant traits such as morphology, canopy structure, and growth dynamics.
 ◆ However, traditional plant phenotyping methods are time-consuming, labor-intensive, and often destructive.</td></tr>
@@ -2645,6 +2651,9 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-04</td><td>EvtSlowTV - A Large and Diverse Dataset for Event-Based Depth Estimation</td><td>[2511.02953](http://arxiv.org/pdf/2511.02953)</td><td>◆ Event cameras, with their high dynamic range (HDR) and low latency, offer a promising alternative for robust depth estimation in challenging environments.
+◆ However, many event-based depth estimation approaches are constrained by small-scale annotated datasets, limiting their generalizability to real-world scenarios.
+◆ To bridge this gap, we introduce EvtSlowTV, a large-scale event camera dataset curated from publicly available YouTube footage, which contains more than 13B events across various environmental conditions and motions, including seasonal hiking, flying, scenic driving, and underwater exploration.</td></tr>
 <tr><td>2025-11-04</td><td>Monocular absolute depth estimation from endoscopy via domain-invariant feature learning and latent consistency</td><td>[2511.02247](http://arxiv.org/pdf/2511.02247)</td><td>◆ Monocular depth estimation (MDE) is a critical task to guide autonomous medical robots.
 ◆ However, obtaining absolute (metric) depth from an endoscopy camera in surgical scenes is difficult, which limits supervised learning of depth on real endoscopic images.
 ◆ Current image-level unsupervised domain adaptation methods translate synthetic images with known depth maps into the style of real endoscopic frames and train depth networks using these translated images with their corresponding depth maps.</td></tr>
@@ -3408,4 +3417,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.05
+> 更新于: 2025.11.06
