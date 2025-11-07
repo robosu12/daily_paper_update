@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.06)
+# SLAM领域最新论文 (2025.11.07)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-06</td><td>Synchronous Observer Design for Landmark-Inertial SLAM with Almost-Global Convergence</td><td>[2511.04531](http://arxiv.org/pdf/2511.04531)</td><td>◆ Landmark Inertial Simultaneous Localisation and Mapping (LI-SLAM) is the problem of estimating the locations of landmarks in the environment and the robot&#x27;s pose relative to those landmarks using landmark position measurements and measurements from Inertial Measurement Unit (IMU).
+◆ This paper proposes a nonlinear observer for LI-SLAM posed in continuous time and analyses the observer in a base space that encodes all the observable states of LI-SLAM.
+◆ The local exponential stability and almost-global asymptotic stability of the error dynamics in base space is established in the proof section and validated using simulations.</td></tr>
+<tr><td>2025-11-06</td><td>PUL-SLAM: Path-Uncertainty Co-Optimization with Lightweight Stagnation Detection for Efficient Robotic Exploration</td><td>[2511.04180](http://arxiv.org/pdf/2511.04180)</td><td>◆ Existing Active SLAM methodologies face issues such as slow exploration speed and suboptimal paths.
+◆ To address these limitations, we propose a hybrid framework combining a Path-Uncertainty Co-Optimization Deep Reinforcement Learning framework and a Lightweight Stagnation Detection mechanism.
+◆ The Path-Uncertainty Co-Optimization framework jointly optimizes travel distance and map uncertainty through a dual-objective reward function, balancing exploration and exploitation.</td></tr>
+<tr><td>2025-11-04</td><td>Analytical modelling of a stop-less modular bus service with an application to charging strategies comparison</td><td>[2511.03754](http://arxiv.org/pdf/2511.03754)</td><td>◆ Buses are a vital component of metropolitan public transport, yet conventional bus services often struggle with inefficiencies including extended dwelling time, which increases in-vehicle travel time for non-alighting passengers.
+◆ A stop-less autonomous modular (SLAM) bus service has emerged as a solution, enabling dynamic capacity to reduce dwelling time.
+◆ Meanwhile, the electrification of buses is advancing as a strategy to mitigate greenhouse gas emissions and reduces operators&#x27; costs, but introduces new operational constraints due to charging requirements.</td></tr>
 <tr><td>2025-11-04</td><td>Self-Supervised Moving Object Segmentation of Sparse and Noisy Radar Point Clouds</td><td>[2511.02395](http://arxiv.org/pdf/2511.02395)</td><td>◆ Moving object segmentation is a crucial task for safe and reliable autonomous mobile systems like self-driving cars, improving the reliability and robustness of subsequent tasks like SLAM or path planning.
 ◆ While the segmentation of camera or LiDAR data is widely researched and achieves great results, it often introduces an increased latency by requiring the accumulation of temporal sequences to gain the necessary temporal context.
 ◆ Radar sensors overcome this problem with their ability to provide a direct measurement of a point&#x27;s Doppler velocity, which can be exploited for single-scan moving object segmentation.</td></tr>
@@ -1406,6 +1415,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-06</td><td>Automated Tennis Player and Ball Tracking with Court Keypoints Detection (Hawk Eye System)</td><td>[2511.04126](http://arxiv.org/pdf/2511.04126)</td><td>◆ This study presents a complete pipeline for automated tennis match analysis.
+◆ Our framework integrates multiple deep learning models to detect and track players and the tennis ball in real time, while also identifying court keypoints for spatial reference.
+◆ Using YOLOv8 for player detection, a custom-trained YOLOv5 model for ball tracking, and a ResNet50-based architecture for court keypoint detection, our system provides detailed analytics including player movement patterns, ball speed, shot accuracy, and player reaction times.</td></tr>
 <tr><td>2025-11-05</td><td>Robust Alignment of the Human Embryo in 3D Ultrasound using PCA and an Ensemble of Heuristic, Atlas-based and Learning-based Classifiers Evaluated on the Rotterdam Periconceptional Cohort</td><td>[2511.03416](http://arxiv.org/pdf/2511.03416)</td><td>◆ Standardized alignment of the embryo in three-dimensional (3D) ultrasound images aids prenatal growth monitoring by facilitating standard plane detection, improving visualization of landmarks and accentuating differences between different scans.
 ◆ In this work, we propose an automated method for standardizing this alignment.
 ◆ Given a segmentation mask of the embryo, Principal Component Analysis (PCA) is applied to the mask extracting the embryo&#x27;s principal axes, from which four candidate orientations are derived.</td></tr>
@@ -1684,6 +1696,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-06</td><td>FastGS: Training 3D Gaussian Splatting in 100 Seconds</td><td>[2511.04283](http://arxiv.org/pdf/2511.04283)</td><td>◆ The dominant 3D Gaussian splatting (3DGS) acceleration methods fail to properly regulate the number of Gaussians during training, causing redundant computational time overhead.
+◆ In this paper, we propose FastGS, a novel, simple, and general acceleration framework that fully considers the importance of each Gaussian based on multi-view consistency, efficiently solving the trade-off between training time and rendering quality.
+◆ We innovatively design a densification and pruning strategy based on multi-view consistency, dispensing with the budgeting mechanism.</td></tr>
 <tr><td>2025-11-05</td><td>DentalSplat: Dental Occlusion Novel View Synthesis from Sparse Intra-Oral Photographs</td><td>[2511.03099](http://arxiv.org/pdf/2511.03099)</td><td>◆ In orthodontic treatment, particularly within telemedicine contexts, observing patients&#x27; dental occlusion from multiple viewpoints facilitates timely clinical decision-making.
 ◆ Recent advances in 3D Gaussian Splatting (3DGS) have shown strong potential in 3D reconstruction and novel view synthesis.
 ◆ However, conventional 3DGS pipelines typically rely on densely captured multi-view inputs and precisely initialized camera poses, limiting their practicality.</td></tr>
@@ -2641,7 +2656,13 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-11-04</td><td>EvtSlowTV - A Large and Diverse Dataset for Event-Based Depth Estimation</td><td>[2511.02953](http://arxiv.org/pdf/2511.02953)</td><td>◆ Event cameras, with their high dynamic range (HDR) and low latency, offer a promising alternative for robust depth estimation in challenging environments.
+<tr><td>2025-11-06</td><td>BoRe-Depth: Self-supervised Monocular Depth Estimation with Boundary Refinement for Embedded Systems</td><td>[2511.04388](http://arxiv.org/pdf/2511.04388)</td><td>◆ Depth estimation is one of the key technologies for realizing 3D perception in unmanned systems.
+◆ Monocular depth estimation has been widely researched because of its low-cost advantage, but the existing methods face the challenges of poor depth estimation performance and blurred object boundaries on embedded systems.
+◆ In this paper, we propose a novel monocular depth estimation model, BoRe-Depth, which contains only 8.7M parameters.</td></tr>
+<tr><td>2025-11-06</td><td>Simple 3D Pose Features Support Human and Machine Social Scene Understanding</td><td>[2511.03988](http://arxiv.org/pdf/2511.03988)</td><td>◆ Humans can quickly and effortlessly extract a variety of information about others&#x27; social interactions from visual input, ranging from visuospatial cues like whether two people are facing each other to higher-level information.
+◆ Yet, the computations supporting these abilities remain poorly understood, and social interaction recognition continues to challenge even the most advanced AI vision systems.
+◆ Here, we hypothesized that humans rely on 3D visuospatial pose information to make social interaction judgments, which is absent in most AI vision models.</td></tr>
+<tr><td>2025-11-04</td><td>EvtSlowTV -- A Large and Diverse Dataset for Event-Based Depth Estimation</td><td>[2511.02953](http://arxiv.org/pdf/2511.02953)</td><td>◆ Event cameras, with their high dynamic range (HDR) and low latency, offer a promising alternative for robust depth estimation in challenging environments.
 ◆ However, many event-based depth estimation approaches are constrained by small-scale annotated datasets, limiting their generalizability to real-world scenarios.
 ◆ To bridge this gap, we introduce EvtSlowTV, a large-scale event camera dataset curated from publicly available YouTube footage, which contains more than 13B events across various environmental conditions and motions, including seasonal hiking, flying, scenic driving, and underwater exploration.</td></tr>
 <tr><td>2025-11-04</td><td>Monocular absolute depth estimation from endoscopy via domain-invariant feature learning and latent consistency</td><td>[2511.02247](http://arxiv.org/pdf/2511.02247)</td><td>◆ Monocular depth estimation (MDE) is a critical task to guide autonomous medical robots.
@@ -3405,4 +3426,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.06
+> 更新于: 2025.11.07
