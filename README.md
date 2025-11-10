@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.09)
+# SLAM领域最新论文 (2025.11.10)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-07</td><td>Multi-modal Loop Closure Detection with Foundation Models in Severely Unstructured Environments</td><td>[2511.05404](http://arxiv.org/pdf/2511.05404)</td><td>◆ Robust loop closure detection is a critical component of Simultaneous Localization and Mapping (SLAM) algorithms in GNSS-denied environments, such as in the context of planetary exploration.
+◆ In these settings, visual place recognition often fails due to aliasing and weak textures, while LiDAR-based methods suffer from sparsity and ambiguity.
+◆ This paper presents MPRF, a multimodal pipeline that leverages transformer-based foundation models for both vision and LiDAR modalities to achieve robust loop closure in severely unstructured environments.</td></tr>
 <tr><td>2025-11-06</td><td>Synchronous Observer Design for Landmark-Inertial SLAM with Almost-Global Convergence</td><td>[2511.04531](http://arxiv.org/pdf/2511.04531)</td><td>◆ Landmark Inertial Simultaneous Localisation and Mapping (LI-SLAM) is the problem of estimating the locations of landmarks in the environment and the robot&#x27;s pose relative to those landmarks using landmark position measurements and measurements from Inertial Measurement Unit (IMU).
 ◆ This paper proposes a nonlinear observer for LI-SLAM posed in continuous time and analyses the observer in a base space that encodes all the observable states of LI-SLAM.
 ◆ The local exponential stability and almost-global asymptotic stability of the error dynamics in base space is established in the proof section and validated using simulations.</td></tr>
@@ -892,6 +895,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-07</td><td>Galvanometer-scanning transient phase microscopy with balanced detection and arbitrary pump polarization</td><td>[2511.05443](http://arxiv.org/pdf/2511.05443)</td><td>◆ Transient absorption microscopy measures excited-state kinetics based on the imaginary part of the pump-induced perturbation to the complex refractive index, i.e.
+◆ $\Im \{\Delta\mathcal N\}$, with applications in both materials and biomedical sciences.
+◆ Its complement, transient phase microscopy, enabled by stable inline birefringent interferometry, measures the real part $\Re\{\Delta \mathcal N\}$.</td></tr>
+<tr><td>2025-11-07</td><td>Multi-modal Loop Closure Detection with Foundation Models in Severely Unstructured Environments</td><td>[2511.05404](http://arxiv.org/pdf/2511.05404)</td><td>◆ Robust loop closure detection is a critical component of Simultaneous Localization and Mapping (SLAM) algorithms in GNSS-denied environments, such as in the context of planetary exploration.
+◆ In these settings, visual place recognition often fails due to aliasing and weak textures, while LiDAR-based methods suffer from sparsity and ambiguity.
+◆ This paper presents MPRF, a multimodal pipeline that leverages transformer-based foundation models for both vision and LiDAR modalities to achieve robust loop closure in severely unstructured environments.</td></tr>
+<tr><td>2025-11-06</td><td>MDM: Manhattan Distance Mapping of DNN Weights for Parasitic-Resistance-Resilient Memristive Crossbars</td><td>[2511.04798](http://arxiv.org/pdf/2511.04798)</td><td>◆ Manhattan Distance Mapping (MDM) is a post-training deep neural network (DNN) weight mapping technique for memristive bit-sliced compute-in-memory (CIM) crossbars that reduces parasitic resistance (PR) nonidealities.
+◆ PR limits crossbar efficiency by mapping DNN matrices into small crossbar tiles, reducing CIM-based speedup.
+◆ Each crossbar executes one tile, requiring digital synchronization before the next layer.</td></tr>
 <tr><td>2025-11-03</td><td>MO-SeGMan: Rearrangement Planning Framework for Multi Objective Sequential and Guided Manipulation in Constrained Environments</td><td>[2511.01476](http://arxiv.org/pdf/2511.01476)</td><td>◆ In this work, we introduce MO-SeGMan, a Multi-Objective Sequential and Guided Manipulation planner for highly constrained rearrangement problems.
 ◆ MO-SeGMan generates object placement sequences that minimize both replanning per object and robot travel distance while preserving critical dependency structures with a lazy evaluation method.
 ◆ To address highly cluttered, non-monotone scenarios, we propose a Selective Guided Forward Search (SGFS) that efficiently relocates only critical obstacles and to feasible relocation points.</td></tr>
@@ -1704,6 +1716,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-07</td><td>4D3R: Motion-Aware Neural Reconstruction and Rendering of Dynamic Scenes from Monocular Videos</td><td>[2511.05229](http://arxiv.org/pdf/2511.05229)</td><td>◆ Novel view synthesis from monocular videos of dynamic scenes with unknown camera poses remains a fundamental challenge in computer vision and graphics.
+◆ While recent advances in 3D representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have shown promising results for static scenes, they struggle with dynamic content and typically rely on pre-computed camera poses.
+◆ We present 4D3R, a pose-free dynamic neural rendering framework that decouples static and dynamic components through a two-stage approach.</td></tr>
+<tr><td>2025-11-07</td><td>Efficient representation of 3D spatial data for defense-related applications</td><td>[2511.05109](http://arxiv.org/pdf/2511.05109)</td><td>◆ Geospatial sensor data is essential for modern defense and security, offering indispensable 3D information for situational awareness.
+◆ This data, gathered from sources like lidar sensors and optical cameras, allows for the creation of detailed models of operational environments.
+◆ In this paper, we provide a comparative analysis of traditional representation methods, such as point clouds, voxel grids, and triangle meshes, alongside modern neural and implicit techniques like Neural Radiance Fields (NeRFs) and 3D Gaussian Splatting (3DGS).</td></tr>
+<tr><td>2025-11-07</td><td>CLM: Removing the GPU Memory Barrier for 3D Gaussian Splatting</td><td>[2511.04951](http://arxiv.org/pdf/2511.04951)</td><td>◆ 3D Gaussian Splatting (3DGS) is an increasingly popular novel view synthesis approach due to its fast rendering time, and high-quality output.
+◆ However, scaling 3DGS to large (or intricate) scenes is challenging due to its large memory requirement, which exceed most GPU&#x27;s memory capacity.
+◆ In this paper, we describe CLM, a system that allows 3DGS to render large scenes using a single consumer-grade GPU, e.g., RTX4090.</td></tr>
 <tr><td>2025-11-06</td><td>FastGS: Training 3D Gaussian Splatting in 100 Seconds</td><td>[2511.04283](http://arxiv.org/pdf/2511.04283)</td><td>◆ The dominant 3D Gaussian splatting (3DGS) acceleration methods fail to properly regulate the number of Gaussians during training, causing redundant computational time overhead.
 ◆ In this paper, we propose FastGS, a novel, simple, and general acceleration framework that fully considers the importance of each Gaussian based on multi-view consistency, efficiently solving the trade-off between training time and rendering quality.
 ◆ We innovatively design a densification and pruning strategy based on multi-view consistency, dispensing with the budgeting mechanism.</td></tr>
@@ -2666,6 +2687,9 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-07</td><td>No Pose Estimation? No Problem: Pose-Agnostic and Instance-Aware Test-Time Adaptation for Monocular Depth Estimation</td><td>[2511.05055](http://arxiv.org/pdf/2511.05055)</td><td>◆ Monocular depth estimation (MDE), inferring pixel-level depths in single RGB images from a monocular camera, plays a crucial and pivotal role in a variety of AI applications demanding a three-dimensional (3D) topographical scene.
+◆ In the real-world scenarios, MDE models often need to be deployed in environments with different conditions from those for training.
+◆ Test-time (domain) adaptation (TTA) is one of the compelling and practical approaches to address the issue.</td></tr>
 <tr><td>2025-11-06</td><td>BoRe-Depth: Self-supervised Monocular Depth Estimation with Boundary Refinement for Embedded Systems</td><td>[2511.04388](http://arxiv.org/pdf/2511.04388)</td><td>◆ Depth estimation is one of the key technologies for realizing 3D perception in unmanned systems.
 ◆ Monocular depth estimation has been widely researched because of its low-cost advantage, but the existing methods face the challenges of poor depth estimation performance and blurred object boundaries on embedded systems.
 ◆ In this paper, we propose a novel monocular depth estimation model, BoRe-Depth, which contains only 8.7M parameters.</td></tr>
@@ -3438,4 +3462,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.09
+> 更新于: 2025.11.10
