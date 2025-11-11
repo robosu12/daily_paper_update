@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.10)
+# SLAM领域最新论文 (2025.11.11)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-10</td><td>Integration of Visual SLAM into Consumer-Grade Automotive Localization</td><td>[2511.06919](http://arxiv.org/pdf/2511.06919)</td><td>◆ Accurate ego-motion estimation in consumer-grade vehicles currently relies on proprioceptive sensors, i.e.
+◆ wheel odometry and IMUs, whose performance is limited by systematic errors and calibration.
+◆ While visual-inertial SLAM has become a standard in robotics, its integration into automotive ego-motion estimation remains largely unexplored.</td></tr>
+<tr><td>2025-11-10</td><td>Semi-distributed Cross-modal Air-Ground Relative Localization</td><td>[2511.06749](http://arxiv.org/pdf/2511.06749)</td><td>◆ Efficient, accurate, and flexible relative localization is crucial in air-ground collaborative tasks.
+◆ However, current approaches for robot relative localization are primarily realized in the form of distributed multi-robot SLAM systems with the same sensor configuration, which are tightly coupled with the state estimation of all robots, limiting both flexibility and accuracy.
+◆ To this end, we fully leverage the high capacity of Unmanned Ground Vehicle (UGV) to integrate multiple sensors, enabling a semi-distributed cross-modal air-ground relative localization framework.</td></tr>
+<tr><td>2025-11-08</td><td>ViTaMIn-B: A Reliable and Efficient Visuo-Tactile Bimanual Manipulation Interface</td><td>[2511.05858](http://arxiv.org/pdf/2511.05858)</td><td>◆ Handheld devices have opened up unprecedented opportunities to collect large-scale, high-quality demonstrations efficiently.
+◆ However, existing systems often lack robust tactile sensing or reliable pose tracking to handle complex interaction scenarios, especially for bimanual and contact-rich tasks.
+◆ In this work, we propose ViTaMIn-B, a more capable and efficient handheld data collection system for such tasks.</td></tr>
+<tr><td>2025-11-08</td><td>3D Mapping Using a Lightweight and Low-Power Monocular Camera Embedded inside a Gripper of Limbed Climbing Robots</td><td>[2511.05816](http://arxiv.org/pdf/2511.05816)</td><td>◆ Limbed climbing robots are designed to explore challenging vertical walls, such as the skylights of the Moon and Mars.
+◆ In such robots, the primary role of a hand-eye camera is to accurately estimate 3D positions of graspable points (i.e., convex terrain surfaces) thanks to its close-up views.
+◆ While conventional climbing robots often employ RGB-D cameras as hand-eye cameras to facilitate straightforward 3D terrain mapping and graspable point detection, RGB-D cameras are large and consume considerable power.</td></tr>
 <tr><td>2025-11-07</td><td>Multi-modal Loop Closure Detection with Foundation Models in Severely Unstructured Environments</td><td>[2511.05404](http://arxiv.org/pdf/2511.05404)</td><td>◆ Robust loop closure detection is a critical component of Simultaneous Localization and Mapping (SLAM) algorithms in GNSS-denied environments, such as in the context of planetary exploration.
 ◆ In these settings, visual place recognition often fails due to aliasing and weak textures, while LiDAR-based methods suffer from sparsity and ambiguity.
 ◆ This paper presents MPRF, a multimodal pipeline that leverages transformer-based foundation models for both vision and LiDAR modalities to achieve robust loop closure in severely unstructured environments.</td></tr>
@@ -681,6 +693,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-10</td><td>Integration of Visual SLAM into Consumer-Grade Automotive Localization</td><td>[2511.06919](http://arxiv.org/pdf/2511.06919)</td><td>◆ Accurate ego-motion estimation in consumer-grade vehicles currently relies on proprioceptive sensors, i.e.
+◆ wheel odometry and IMUs, whose performance is limited by systematic errors and calibration.
+◆ While visual-inertial SLAM has become a standard in robotics, its integration into automotive ego-motion estimation remains largely unexplored.</td></tr>
 <tr><td>2025-11-03</td><td>TurboMap: GPU-Accelerated Local Mapping for Visual SLAM</td><td>[2511.02036](http://arxiv.org/pdf/2511.02036)</td><td>◆ This paper presents TurboMap, a GPU-accelerated and CPU-optimized local mapping module for visual SLAM systems.
 ◆ We identify key performance bottlenecks in the local mapping process for visual SLAM and address them through targeted GPU and CPU optimizations.
 ◆ Specifically, we offload map point triangulation and fusion to the GPU, accelerate redundant keyframe culling on the CPU, and integrate a GPU-accelerated solver to speed up local bundle adjustment.</td></tr>
@@ -891,6 +906,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-10</td><td>Semi-distributed Cross-modal Air-Ground Relative Localization</td><td>[2511.06749](http://arxiv.org/pdf/2511.06749)</td><td>◆ Efficient, accurate, and flexible relative localization is crucial in air-ground collaborative tasks.
+◆ However, current approaches for robot relative localization are primarily realized in the form of distributed multi-robot SLAM systems with the same sensor configuration, which are tightly coupled with the state estimation of all robots, limiting both flexibility and accuracy.
+◆ To this end, we fully leverage the high capacity of Unmanned Ground Vehicle (UGV) to integrate multiple sensors, enabling a semi-distributed cross-modal air-ground relative localization framework.</td></tr>
+<tr><td>2025-11-09</td><td>EchoMark: Perceptual Acoustic Environment Transfer with Watermark-Embedded Room Impulse Response</td><td>[2511.06458](http://arxiv.org/pdf/2511.06458)</td><td>◆ Acoustic Environment Matching (AEM) is the task of transferring clean audio into a target acoustic environment, enabling engaging applications such as audio dubbing and auditory immersive virtual reality (VR).
+◆ Recovering similar room impulse response (RIR) directly from reverberant speech offers more accessible and flexible AEM solution.
+◆ However, this capability also introduces vulnerabilities of arbitrary ``relocation&quot; if misused by malicious user, such as facilitating advanced voice spoofing attacks or undermining the authenticity of recorded evidence.</td></tr>
+<tr><td>2025-11-08</td><td>Towards Implicit Aggregation: Robust Image Representation for Place Recognition in the Transformer Era</td><td>[2511.06024](http://arxiv.org/pdf/2511.06024)</td><td>◆ Visual place recognition (VPR) is typically regarded as a specific image retrieval task, whose core lies in representing images as global descriptors.
+◆ Over the past decade, dominant VPR methods (e.g., NetVLAD) have followed a paradigm that first extracts the patch features/tokens of the input image using a backbone, and then aggregates these patch features into a global descriptor via an aggregator.
+◆ This backbone-plus-aggregator paradigm has achieved overwhelming dominance in the CNN era and remains widely used in transformer-based models.</td></tr>
 <tr><td>2025-11-07</td><td>Galvanometer-scanning transient phase microscopy with balanced detection and arbitrary pump polarization</td><td>[2511.05443](http://arxiv.org/pdf/2511.05443)</td><td>◆ Transient absorption microscopy measures excited-state kinetics based on the imaginary part of the pump-induced perturbation to the complex refractive index, i.e.
 ◆ $\Im \{\Delta\mathcal N\}$, with applications in both materials and biomedical sciences.
 ◆ Its complement, transient phase microscopy, enabled by stable inline birefringent interferometry, measures the real part $\Re\{\Delta \mathcal N\}$.</td></tr>
@@ -1427,6 +1451,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-08</td><td>U(PM)$^2$:Unsupervised polygon matching with pre-trained models for challenging stereo images</td><td>[2511.05949](http://arxiv.org/pdf/2511.05949)</td><td>◆ Stereo image matching is a fundamental task in computer vision, photogrammetry and remote sensing, but there is an almost unexplored field, i.e., polygon matching, which faces the following challenges: disparity discontinuity, scale variation, training requirement, and generalization.
+◆ To address the above-mentioned issues, this paper proposes a novel U(PM)$^2$: low-cost unsupervised polygon matching with pre-trained models by uniting automatically learned and handcrafted features, of which pipeline is as follows: firstly, the detector leverages the pre-trained segment anything model to obtain masks; then, the vectorizer converts the masks to polygons and graphic structure; secondly, the global matcher addresses challenges from global viewpoint changes and scale variation based on bidirectional-pyramid strategy with pre-trained LoFTR; finally, the local matcher further overcomes local disparity discontinuity and topology inconsistency of polygon matching by local-joint geometry and multi-feature matching strategy with Hungarian algorithm.
+◆ We benchmark our U(PM)$^2$ on the ScanNet and SceneFlow datasets using our proposed new metric, which achieved state-of-the-art accuracy at a competitive speed and satisfactory generalization performance at low cost without any training requirement.</td></tr>
+<tr><td>2025-11-08</td><td>Hybrid second-order gradient histogram based global low-rank sparse regression for robust face recognition</td><td>[2511.05893](http://arxiv.org/pdf/2511.05893)</td><td>◆ Low-rank sparse regression models have been widely applied in the field of face recognition.
+◆ To further address the challenges caused by complex occlusions and illumination variations, this paper proposes a Hybrid Second-Order Gradient Histogram based Global Low-Rank Sparse Regression (H2H-GLRSR) model.
+◆ Specifically, a novel feature descriptor called the Hybrid Second-Order Gradient Histogram (H2H) is first designed to more effectively characterize the local structural features of facial images.</td></tr>
 <tr><td>2025-11-06</td><td>Automated Tennis Player and Ball Tracking with Court Keypoints Detection (Hawk Eye System)</td><td>[2511.04126](http://arxiv.org/pdf/2511.04126)</td><td>◆ This study presents a complete pipeline for automated tennis match analysis.
 ◆ Our framework integrates multiple deep learning models to detect and track players and the tennis ball in real time, while also identifying court keypoints for spatial reference.
 ◆ Using YOLOv8 for player detection, a custom-trained YOLOv5 model for ball tracking, and a ResNet50-based architecture for court keypoint detection, our system provides detailed analytics including player movement patterns, ball speed, shot accuracy, and player reaction times.</td></tr>
@@ -1708,6 +1738,24 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-10</td><td>GFix: Perceptually Enhanced Gaussian Splatting Video Compression</td><td>[2511.06953](http://arxiv.org/pdf/2511.06953)</td><td>◆ 3D Gaussian Splatting (3DGS) enhances 3D scene reconstruction through explicit representation and fast rendering, demonstrating potential benefits for various low-level vision tasks, including video compression.
+◆ However, existing 3DGS-based video codecs generally exhibit more noticeable visual artifacts and relatively low compression ratios.
+◆ In this paper, we specifically target the perceptual enhancement of 3DGS-based video compression, based on the assumption that artifacts from 3DGS rendering and quantization resemble noisy latents sampled during diffusion training.</td></tr>
+<tr><td>2025-11-10</td><td>ConeGS: Error-Guided Densification Using Pixel Cones for Improved Reconstruction with Fewer Primitives</td><td>[2511.06810](http://arxiv.org/pdf/2511.06810)</td><td>◆ 3D Gaussian Splatting (3DGS) achieves state-of-the-art image quality and real-time performance in novel view synthesis but often suffers from a suboptimal spatial distribution of primitives.
+◆ This issue stems from cloning-based densification, which propagates Gaussians along existing geometry, limiting exploration and requiring many primitives to adequately cover the scene.
+◆ We present ConeGS, an image-space-informed densification framework that is independent of existing scene geometry state.</td></tr>
+<tr><td>2025-11-10</td><td>Robust and High-Fidelity 3D Gaussian Splatting: Fusing Pose Priors and Geometry Constraints for Texture-Deficient Outdoor Scenes</td><td>[2511.06765](http://arxiv.org/pdf/2511.06765)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a key rendering pipeline for digital asset creation due to its balance between efficiency and visual quality.
+◆ To address the issues of unstable pose estimation and scene representation distortion caused by geometric texture inconsistency in large outdoor scenes with weak or repetitive textures, we approach the problem from two aspects: pose estimation and scene representation.
+◆ For pose estimation, we leverage LiDAR-IMU Odometry to provide prior poses for cameras in large-scale environments.</td></tr>
+<tr><td>2025-11-09</td><td>Inpaint360GS: Efficient Object-Aware 3D Inpainting via Gaussian Splatting for 360° Scenes</td><td>[2511.06457](http://arxiv.org/pdf/2511.06457)</td><td>◆ Despite recent advances in single-object front-facing inpainting using NeRF and 3D Gaussian Splatting (3DGS), inpainting in complex 360{\deg} scenes remains largely underexplored.
+◆ This is primarily due to three key challenges: (i) identifying target objects in the 3D field of 360{\deg} environments, (ii) dealing with severe occlusions in multi-object scenes, which makes it hard to define regions to inpaint, and (iii) maintaining consistent and high-quality appearance across views effectively.
+◆ To tackle these challenges, we propose Inpaint360GS, a flexible 360{\deg} editing framework based on 3DGS that supports multi-object removal and high-fidelity inpainting in 3D space.</td></tr>
+<tr><td>2025-11-09</td><td>Physics-Informed Deformable Gaussian Splatting: Towards Unified Constitutive Laws for Time-Evolving Material Field</td><td>[2511.06299](http://arxiv.org/pdf/2511.06299)</td><td>◆ Recently, 3D Gaussian Splatting (3DGS), an explicit scene representation technique, has shown significant promise for dynamic novel-view synthesis from monocular video input.
+◆ However, purely data-driven 3DGS often struggles to capture the diverse physics-driven motion patterns in dynamic scenes.
+◆ To fill this gap, we propose Physics-Informed Deformable Gaussian Splatting (PIDG), which treats each Gaussian particle as a Lagrangian material point with time-varying constitutive parameters and is supervised by 2D optical flow via motion projection.</td></tr>
+<tr><td>2025-11-08</td><td>StreamSTGS: Streaming Spatial and Temporal Gaussian Grids for Real-Time Free-Viewpoint Video</td><td>[2511.06046](http://arxiv.org/pdf/2511.06046)</td><td>◆ Streaming free-viewpoint video~(FVV) in real-time still faces significant challenges, particularly in training, rendering, and transmission efficiency.
+◆ Harnessing superior performance of 3D Gaussian Splatting~(3DGS), recent 3DGS-based FVV methods have achieved notable breakthroughs in both training and rendering.
+◆ However, the storage requirements of these methods can reach up to $10$MB per frame, making stream FVV in real-time impossible.</td></tr>
 <tr><td>2025-11-07</td><td>4D3R: Motion-Aware Neural Reconstruction and Rendering of Dynamic Scenes from Monocular Videos</td><td>[2511.05229](http://arxiv.org/pdf/2511.05229)</td><td>◆ Novel view synthesis from monocular videos of dynamic scenes with unknown camera poses remains a fundamental challenge in computer vision and graphics.
 ◆ While recent advances in 3D representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have shown promising results for static scenes, they struggle with dynamic content and typically rely on pre-computed camera poses.
 ◆ We present 4D3R, a pose-free dynamic neural rendering framework that decouples static and dynamic components through a two-stage approach.</td></tr>
@@ -2677,6 +2725,18 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-10</td><td>TiS-TSL: Image-Label Supervised Surgical Video Stereo Matching via Time-Switchable Teacher-Student Learning</td><td>[2511.06817](http://arxiv.org/pdf/2511.06817)</td><td>◆ Stereo matching in minimally invasive surgery (MIS) is essential for next-generation navigation and augmented reality.
+◆ Yet, dense disparity supervision is nearly impossible due to anatomical constraints, typically limiting annotations to only a few image-level labels acquired before the endoscope enters deep body cavities.
+◆ Teacher-Student Learning (TSL) offers a promising solution by leveraging a teacher trained on sparse labels to generate pseudo labels and associated confidence maps from abundant unlabeled surgical videos.</td></tr>
+<tr><td>2025-11-09</td><td>How Wide and How Deep? Mitigating Over-Squashing of GNNs via Channel Capacity Constrained Estimation</td><td>[2511.06443](http://arxiv.org/pdf/2511.06443)</td><td>◆ Existing graph neural networks typically rely on heuristic choices for hidden dimensions and propagation depths, which often lead to severe information loss during propagation, known as over-squashing.
+◆ To address this issue, we propose Channel Capacity Constrained Estimation (C3E), a novel framework that formulates the selection of hidden dimensions and depth as a nonlinear programming problem grounded in information theory.
+◆ Through modeling spectral graph neural networks as communication channels, our approach directly connects channel capacity to hidden dimensions, propagation depth, propagation mechanism, and graph structure.</td></tr>
+<tr><td>2025-11-09</td><td>Temporal-Guided Visual Foundation Models for Event-Based Vision</td><td>[2511.06238](http://arxiv.org/pdf/2511.06238)</td><td>◆ Event cameras offer unique advantages for vision tasks in challenging environments, yet processing asynchronous event streams remains an open challenge.
+◆ While existing methods rely on specialized architectures or resource-intensive training, the potential of leveraging modern Visual Foundation Models (VFMs) pretrained on image data remains under-explored for event-based vision.
+◆ To address this, we propose Temporal-Guided VFM (TGVFM), a novel framework that integrates VFMs with our temporal context fusion block seamlessly to bridge this gap.</td></tr>
+<tr><td>2025-11-08</td><td>Light-Field Dataset for Disparity Based Depth Estimation</td><td>[2511.05866](http://arxiv.org/pdf/2511.05866)</td><td>◆ A Light Field (LF) camera consists of an additional two-dimensional array of micro-lenses placed between the main lens and sensor, compared to a conventional camera.
+◆ The sensor pixels under each micro-lens receive light from a sub-aperture of the main lens.
+◆ This enables the image sensor to capture both spatial information and the angular resolution of a scene point.</td></tr>
 <tr><td>2025-11-07</td><td>No Pose Estimation? No Problem: Pose-Agnostic and Instance-Aware Test-Time Adaptation for Monocular Depth Estimation</td><td>[2511.05055](http://arxiv.org/pdf/2511.05055)</td><td>◆ Monocular depth estimation (MDE), inferring pixel-level depths in single RGB images from a monocular camera, plays a crucial and pivotal role in a variety of AI applications demanding a three-dimensional (3D) topographical scene.
 ◆ In the real-world scenarios, MDE models often need to be deployed in environments with different conditions from those for training.
 ◆ Test-time (domain) adaptation (TTA) is one of the compelling and practical approaches to address the issue.</td></tr>
@@ -3450,4 +3510,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.10
+> 更新于: 2025.11.11
