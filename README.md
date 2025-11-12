@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.11)
+# SLAM领域最新论文 (2025.11.12)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -346,6 +346,9 @@
 ◆ 支持多雷达传感器融合架构，增强系统感知能力和环境覆盖范围  
 ◆ 引入基于信息理论的特征筛选策略，优化计算效率并维持地图稀疏性  
 实验表明该方法在定位精度和鲁棒性方面优于现有技术，能够满足自动泊车对厘米级精度的严苛要求，同时支持在线校准以降低部署成本。</td></tr>
+<tr><td>2025-09-09</td><td>A Robust Approach for LiDAR-Inertial Odometry Without Sensor-Specific Modeling</td><td>[2509.06593](http://arxiv.org/pdf/2509.06593)</td><td>◆ Accurate odometry is a critical component in a robotic navigation stack, and subsequent modules such as planning and control often rely on an estimate of the robot&#x27;s motion.
+◆ Sensor-based odometry approaches should be robust across sensor types and deployable in different target domains, from solid-state LiDARs mounted on cars in urban-driving scenarios to spinning LiDARs on handheld packages used in unstructured natural environments.
+◆ In this paper, we propose a robust LiDAR-inertial odometry system that does not rely on sensor-specific modeling.</td></tr>
 <tr><td>2025-09-08</td><td>Co-Located VR with Hybrid SLAM-based HMD Tracking and Motion Capture Synchronization</td><td>[2509.06582](http://arxiv.org/pdf/2509.06582)</td><td>该论文提出了一种多用户协同定位VR框架，通过混合跟踪与同步技术实现高精度共享沉浸体验。  
 ◆结合外部动捕系统与SLAM内置跟踪，兼顾高帧率、低延迟与长期稳定性，克服传统外追延迟或单次校准漂移问题。  
 ◆动态重对齐机制在保持SLAM本地响应速度的同时，支持按需与外部系统实时校正，消除累积误差。  
@@ -898,6 +901,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 ◆ 在Replica室内数据集上实现了当前最优的跟踪性能，PSNR指标比现有方法提升28%。  
 ◆ 在大型户外Kimera-Multi数据集上，多智能体跟踪误差降低91%，渲染质量显著优于现有方法。  
 ◆ 通过可扩展的环境表示和协作式建图机制，为快速探索和重建大规模环境提供了新解决方案。</td></tr>
+<tr><td>2025-06-17</td><td>A Novel ViDAR Device With Visual Inertial Encoder Odometry and Reinforcement Learning-Based Active SLAM Method</td><td>[2506.13100](http://arxiv.org/pdf/2506.13100)</td><td>◆ In the field of multi-sensor fusion for simultaneous localization and mapping (SLAM), monocular cameras and IMUs are widely used to build simple and effective visual-inertial systems.
+◆ However, limited research has explored the integration of motor-encoder devices to enhance SLAM performance.
+◆ By incorporating such devices, it is possible to significantly improve active capability and field of view (FOV) with minimal additional cost and structural complexity.</td></tr>
 </tbody>
 </table>
 </div>
@@ -2389,7 +2395,7 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 ◆ 创新性引入FruitSplat技术，基于3D高斯泼溅（3DGS）构建高分辨率3D模型，首次实现水果损伤的精细化三维量化表征，解决了传统方法缺乏定量 rigor 或依赖昂贵设备的问题。  
 ◆ FruitSplat通过将2D水果掩膜和瘀伤分割掩膜蒸馏至3DGS表示，建立了模块化通用框架，可兼容任意2D模型，为水果损伤检测提供了可扩展的新范式。  
 ◆ 整套系统在三种高难度水果上验证了有效性，通过触觉与视觉的协同优化，为农业自动化中脆弱物体的精细操作与损伤评估树立了新标杆。</td></tr>
-<tr><td>2025-08-09</td><td>3DGS-VBench: A Comprehensive Video Quality Evaluation Benchmark for 3DGS Compression</td><td>[2508.07038](http://arxiv.org/pdf/2508.07038)</td><td>◆ 提出了首个针对3D高斯泼溅（3DGS）压缩视频质量评估的大规模基准3DGS-VBench，填补了该领域系统性研究的空白。  
+<tr><td>2025-08-12</td><td>3DGS-VBench: A Comprehensive Video Quality Evaluation Benchmark for 3DGS Compression</td><td>[2508.07038](http://arxiv.org/pdf/2508.07038)</td><td>◆ 提出了首个针对3D高斯泼溅（3DGS）压缩视频质量评估的大规模基准3DGS-VBench，填补了该领域系统性研究的空白。  
 ◆ 构建了包含660个压缩3DGS模型和视频序列的数据集，覆盖11个场景和6种先进压缩算法，并设计了系统化的参数等级。  
 ◆ 通过50名参与者的标注获得MOS分数，经过异常值处理和可靠性验证，为质量评估提供了可靠依据。  
 ◆ 首次对6种3DGS压缩算法在存储效率和视觉质量方面进行了全面基准测试，揭示了算法性能差异。  
@@ -2723,6 +2729,15 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 ◆ 解决了SDF方法在细节表现上的不足和3DGS方法在全局几何一致性上的缺陷，实现了两者优势互补。  
 ◆ 在DTU和MobileBrick数据集上，该方法在表面重建和新视角合成任务上超越了现有最先进方法。  
 ◆ 代码将开源，便于后续研究和应用。</td></tr>
+<tr><td>2025-07-01</td><td>ICP-3DGS: SfM-free 3D Gaussian Splatting for Large-scale Unbounded Scenes</td><td>[2506.21629](http://arxiv.org/pdf/2506.21629)</td><td>◆ In recent years, neural rendering methods such as NeRFs and 3D Gaussian Splatting (3DGS) have made significant progress in scene reconstruction and novel view synthesis.
+◆ However, they heavily rely on preprocessed camera poses and 3D structural priors from structure-from-motion (SfM), which are challenging to obtain in outdoor scenarios.
+◆ To address this challenge, we propose to incorporate Iterative Closest Point (ICP) with optimization-based refinement to achieve accurate camera pose estimation under large camera movements.</td></tr>
+<tr><td>2025-11-03</td><td>EF-3DGS: Event-Aided Free-Trajectory 3D Gaussian Splatting</td><td>[2410.15392](http://arxiv.org/pdf/2410.15392)</td><td>◆ Scene reconstruction from casually captured videos has wide applications in real-world scenarios.
+◆ With recent advancements in differentiable rendering techniques, several methods have attempted to simultaneously optimize scene representations (NeRF or 3DGS) and camera poses.
+◆ Despite recent progress, existing methods relying on traditional camera input tend to fail in high-speed (or equivalently low-frame-rate) scenarios.</td></tr>
+<tr><td>2025-08-22</td><td>3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt</td><td>[2409.12892](http://arxiv.org/pdf/2409.12892)</td><td>◆ We present 3DGS-LM, a new method that accelerates the reconstruction of 3D Gaussian Splatting (3DGS) by replacing its ADAM optimizer with a tailored Levenberg-Marquardt (LM).
+◆ Existing methods reduce the optimization time by decreasing the number of Gaussians or by improving the implementation of the differentiable rasterizer.
+◆ However, they still rely on the ADAM optimizer to fit Gaussian parameters of a scene in thousands of iterations, which can take up to an hour.</td></tr>
 </tbody>
 </table>
 </div>
@@ -3514,6 +3529,12 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 ◆ 在深度估计、表面法线估计和前景分割三个密集预测任务上达到与SOTA模型相当的精度。  
 ◆ 模型训练和推理成本仅为同精度基础模型的极小部分，显著提升效率。  
 ◆ 开源合成数据集与预训练模型，推动可解释、合规的AI发展。</td></tr>
+<tr><td>2025-08-19</td><td>Diving into the Fusion of Monocular Priors for Generalized Stereo Matching</td><td>[2505.14414](http://arxiv.org/pdf/2505.14414)</td><td>◆ The matching formulation makes it naturally hard for the stereo matching to handle ill-posed regions like occlusions and non-Lambertian surfaces.
+◆ Fusing monocular priors has been proven helpful for ill-posed matching, but the biased monocular prior learned from small stereo datasets constrains the generalization.
+◆ Recently, stereo matching has progressed by leveraging the unbiased monocular prior from the vision foundation model (VFM) to improve the generalization in ill-posed regions.</td></tr>
+<tr><td>2025-09-26</td><td>MonSter++: Unified Stereo Matching, Multi-view Stereo, and Real-time Stereo with Monodepth Priors</td><td>[2501.08643](http://arxiv.org/pdf/2501.08643)</td><td>◆ We introduce MonSter++, a geometric foundation model for multi-view depth estimation, unifying rectified stereo matching and unrectified multi-view stereo.
+◆ Both tasks fundamentally recover metric depth from correspondence search and consequently face the same dilemma: struggling to handle ill-posed regions with limited matching cues.
+◆ To address this, we propose MonSter++, a novel method that integrates monocular depth priors into multi-view depth estimation, effectively combining the complementary strengths of single-view and multi-view cues.</td></tr>
 </tbody>
 </table>
 </div>
@@ -3522,4 +3543,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.11
+> 更新于: 2025.11.12
