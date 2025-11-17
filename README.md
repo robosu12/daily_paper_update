@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.16)
+# SLAM领域最新论文 (2025.11.17)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-12</td><td>DualVision ArthroNav: Investigating Opportunities to Enhance Localization and Reconstruction in Image-based Arthroscopy Navigation via External Cameras</td><td>[2511.10699](http://arxiv.org/pdf/2511.10699)</td><td>◆ Arthroscopic procedures can greatly benefit from navigation systems that enhance spatial awareness, depth perception, and field of view.
+◆ However, existing optical tracking solutions impose strict workspace constraints and disrupt surgical workflow.
+◆ Vision-based alternatives, though less invasive, often rely solely on the monocular arthroscope camera, making them prone to drift, scale ambiguity, and sensitivity to rapid motion or occlusion.</td></tr>
 <tr><td>2025-11-12</td><td>Generation-Agnostic Zero-Energy Devices for Sustainable Connectivity, Sensing, and Localization</td><td>[2511.09372](http://arxiv.org/pdf/2511.09372)</td><td>◆ The massive scale of Internet of Things (IoT) connectivity expected in 6G networks raises unprecedented challenges in energy use, battery waste, and lifecycle sustainability.
 ◆ Current cellular IoT solutions remain bound to the lifetime of underlying network generations and rely on billions of disposable batteries, creating unsustainable economic and environmental costs.
 ◆ This article proposes generation-agnostic zero-energy devices (XG-ZEDs), a new class of backscatter based IoT devices that are battery-less, spectrum-agnostic, and future-proof across successive network generations.</td></tr>
@@ -716,6 +719,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-12</td><td>DualVision ArthroNav: Investigating Opportunities to Enhance Localization and Reconstruction in Image-based Arthroscopy Navigation via External Cameras</td><td>[2511.10699](http://arxiv.org/pdf/2511.10699)</td><td>◆ Arthroscopic procedures can greatly benefit from navigation systems that enhance spatial awareness, depth perception, and field of view.
+◆ However, existing optical tracking solutions impose strict workspace constraints and disrupt surgical workflow.
+◆ Vision-based alternatives, though less invasive, often rely solely on the monocular arthroscope camera, making them prone to drift, scale ambiguity, and sensitivity to rapid motion or occlusion.</td></tr>
 <tr><td>2025-11-12</td><td>UMIGen: A Unified Framework for Egocentric Point Cloud Generation and Cross-Embodiment Robotic Imitation Learning</td><td>[2511.09302](http://arxiv.org/pdf/2511.09302)</td><td>◆ Data-driven robotic learning faces an obvious dilemma: robust policies demand large-scale, high-quality demonstration data, yet collecting such data remains a major challenge owing to high operational costs, dependence on specialized hardware, and the limited spatial generalization capability of current methods.
 ◆ The Universal Manipulation Interface (UMI) relaxes the strict hardware requirements for data collection, but it is restricted to capturing only RGB images of a scene and omits the 3D geometric information on which many tasks rely.
 ◆ Inspired by DemoGen, we propose UMIGen, a unified framework that consists of two key components: (1) Cloud-UMI, a handheld data collection device that requires no visual SLAM and simultaneously records point cloud observation-action pairs; and (2) a visibility-aware optimization mechanism that extends the DemoGen pipeline to egocentric 3D observations by generating only points within the camera&#x27;s field of view.</td></tr>
@@ -955,6 +961,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-14</td><td>Computationally-efficient deep learning models for nowcasting of precipitation: A solution for the Weather4cast 2025 challenge</td><td>[2511.11197](http://arxiv.org/pdf/2511.11197)</td><td>◆ This study presents a transfer-learning framework based on Convolutional Gated Recurrent Units (ConvGRU) for short-term rainfall prediction in the Weather4Cast 2025 competition.
+◆ A single SEVIRI infrared channel (10.8 μm wavelength) is used as input, which consists of four observations over a one-hour period.
+◆ A two-stage training strategy is applied to generate rainfall estimates up to four hours ahead.</td></tr>
+<tr><td>2025-11-14</td><td>A Space-Time Transformer for Precipitation Forecasting</td><td>[2511.11090](http://arxiv.org/pdf/2511.11090)</td><td>◆ Meteorological agencies around the world rely on real-time flood guidance to issue live-saving advisories and warnings.
+◆ For decades traditional numerical weather prediction (NWP) models have been state-of-the-art for precipitation forecasting.
+◆ However, physically-parameterized models suffer from a few core limitations: first, solving PDEs to resolve atmospheric dynamics is computationally demanding, and second, these methods degrade in performance at nowcasting timescales (i.e., 0-4 hour lead-times).</td></tr>
+<tr><td>2025-11-12</td><td>DualVision ArthroNav: Investigating Opportunities to Enhance Localization and Reconstruction in Image-based Arthroscopy Navigation via External Cameras</td><td>[2511.10699](http://arxiv.org/pdf/2511.10699)</td><td>◆ Arthroscopic procedures can greatly benefit from navigation systems that enhance spatial awareness, depth perception, and field of view.
+◆ However, existing optical tracking solutions impose strict workspace constraints and disrupt surgical workflow.
+◆ Vision-based alternatives, though less invasive, often rely solely on the monocular arthroscope camera, making them prone to drift, scale ambiguity, and sensitivity to rapid motion or occlusion.</td></tr>
 <tr><td>2025-11-13</td><td>Trapped by Their Own Light: Deployable and Stealth Retroreflective Patch Attacks on Traffic Sign Recognition Systems</td><td>[2511.10050](http://arxiv.org/pdf/2511.10050)</td><td>◆ Traffic sign recognition plays a critical role in ensuring safe and efficient transportation of autonomous vehicles but remain vulnerable to adversarial attacks using stickers or laser projections.
 ◆ While existing attack vectors demonstrate security concerns, they suffer from visual detectability or implementation constraints, suggesting unexplored vulnerability surfaces in TSR systems.
 ◆ We introduce the Adversarial Retroreflective Patch (ARP), a novel attack vector that combines the high deployability of patch attacks with the stealthiness of laser projections by utilizing retroreflective materials activated only under victim headlight illumination.</td></tr>
@@ -1529,6 +1544,36 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-14</td><td>Bridging Hidden States in Vision-Language Models</td><td>[2511.11526](http://arxiv.org/pdf/2511.11526)</td><td>◆ Vision-Language Models (VLMs) are a new family of models that align image content with natural language.
+◆ Existing approaches typically fuse either (a) early: by mixing tokens/features inside the encoders, or (b) late: by comparing pooled embeddings.
+◆ Many methods also tie fusion to an autoregressive decoder.</td></tr>
+<tr><td>2025-11-14</td><td>Hi-DREAM: Brain Inspired Hierarchical Diffusion for fMRI Reconstruction via ROI Encoder and visuAl Mapping</td><td>[2511.11437](http://arxiv.org/pdf/2511.11437)</td><td>◆ Mapping human brain activity to natural images offers a new window into vision and cognition, yet current diffusion-based decoders face a core difficulty: most condition directly on fMRI features without analyzing how visual information is organized across the cortex.
+◆ This overlooks the brain&#x27;s hierarchical processing and blurs the roles of early, middle, and late visual areas.
+◆ We propose Hi-DREAM, a brain-inspired conditional diffusion framework that makes the cortical organization explicit.</td></tr>
+<tr><td>2025-11-14</td><td>The Persistence of Cultural Memory: Investigating Multimodal Iconicity in Diffusion Models</td><td>[2511.11435](http://arxiv.org/pdf/2511.11435)</td><td>◆ Our work addresses the ambiguity between generalization and memorization in text-to-image diffusion models, focusing on a specific case we term multimodal iconicity.
+◆ This refers to instances where images and texts evoke culturally shared associations, such as when a title recalls a familiar artwork or film scene.
+◆ While prior research on memorization and unlearning emphasizes forgetting, we examine what is remembered and how, focusing on the balance between recognizing cultural references and reproducing them.</td></tr>
+<tr><td>2025-11-14</td><td>Shrinking the Teacher: An Adaptive Teaching Paradigm for Asymmetric EEG-Vision Alignment</td><td>[2511.11422](http://arxiv.org/pdf/2511.11422)</td><td>◆ Decoding visual features from EEG signals is a central challenge in neuroscience, with cross-modal alignment as the dominant approach.
+◆ We argue that the relationship between visual and brain modalities is fundamentally asymmetric, characterized by two critical gaps: a Fidelity Gap (stemming from EEG&#x27;s inherent noise and signal degradation, vs.
+◆ vision&#x27;s high-fidelity features) and a Semantic Gap (arising from EEG&#x27;s shallow conceptual representation, vs.</td></tr>
+<tr><td>2025-11-14</td><td>Robust inverse material design with physical guarantees using the Voigt-Reuss Net</td><td>[2511.11388](http://arxiv.org/pdf/2511.11388)</td><td>◆ We propose a spectrally normalized surrogate for forward and inverse mechanical homogenization with hard physical guarantees.
+◆ Leveraging the Voigt-Reuss bounds, we factor their difference via a Cholesky-like operator and learn a dimensionless, symmetric positive semi-definite representation with eigenvalues in $[0,1]$; the inverse map returns symmetric positive-definite predictions that lie between the bounds in the Löwner sense.
+◆ In 3D linear elasticity on an open dataset of stochastic biphasic microstructures, a fully connected Voigt-Reuss net trained on $&gt;\!7.5\times 10^{5}$ FFT-based labels with 236 isotropy-invariant descriptors and three contrast parameters recovers the isotropic projection with near-perfect fidelity (isotropy-related entries: $R^2 \ge 0.998$), while anisotropy-revealing couplings are unidentifiable from $SO(3)$-invariant inputs.</td></tr>
+<tr><td>2025-11-14</td><td>Interpretable descriptors enable prediction of hydrogen-based superconductors at moderate pressures</td><td>[2511.11284](http://arxiv.org/pdf/2511.11284)</td><td>◆ Room temperature superconductivity remains elusive, and hydrogen-base compounds despite remarkable transition temperatures(Tc) typically require extreme pressures that hinder application.
+◆ To accelerate discovery under moderate pressures, an interpretable framework based on symbolic regression is developed to predict Tc in hydrogen-based superconductors.
+◆ A key descriptor is an integrated density of states (IDOS) within 1 eV of the Fermi level (EF), which exhibits greater robustness than conventional single-point DOS features.</td></tr>
+<tr><td>2025-11-14</td><td>Arcee: Differentiable Recurrent State Chain for Generative Vision Modeling with Mamba SSMs</td><td>[2511.11243](http://arxiv.org/pdf/2511.11243)</td><td>◆ State-space models (SSMs), Mamba in particular, are increasingly adopted for long-context sequence modeling, providing linear-time aggregation via an input-dependent, causal selective-scan operation.
+◆ Along this line, recent &quot;Mamba-for-vision&quot; variants largely explore multiple scan orders to relax strict causality for non-sequential signals (e.g., images).
+◆ Rather than preserving cross-block memory, the conventional formulation of the selective-scan operation in Mamba reinitializes each block&#x27;s state-space dynamics from zero, discarding the terminal state-space representation (SSR) from the previous block.</td></tr>
+<tr><td>2025-11-14</td><td>Parameter-Efficient MoE LoRA for Few-Shot Multi-Style Editing</td><td>[2511.11236](http://arxiv.org/pdf/2511.11236)</td><td>◆ In recent years, image editing has garnered growing attention.
+◆ However, general image editing models often fail to produce satisfactory results when confronted with new styles.
+◆ The challenge lies in how to effectively fine-tune general image editing models to new styles using only a limited amount of paired data.</td></tr>
+<tr><td>2025-11-14</td><td>Evaluating Latent Generative Paradigms for High-Fidelity 3D Shape Completion from a Single Depth Image</td><td>[2511.11074](http://arxiv.org/pdf/2511.11074)</td><td>◆ While generative models have seen significant adoption across a wide range of data modalities, including 3D data, a consensus on which model is best suited for which task has yet to be reached.
+◆ Further, conditional information such as text and images to steer the generation process are frequently employed, whereas others, like partial 3D data, have not been thoroughly evaluated.
+◆ In this work, we compare two of the most promising generative models--Denoising Diffusion Probabilistic Models and Autoregressive Causal Transformers--which we adapt for the tasks of generative shape modeling and completion.</td></tr>
+<tr><td>2025-11-14</td><td>Hyperbolic Hierarchical Alignment Reasoning Network for Text-3D Retrieval</td><td>[2511.11045](http://arxiv.org/pdf/2511.11045)</td><td>◆ With the daily influx of 3D data on the internet, text-3D retrieval has gained increasing attention.
+◆ However, current methods face two major challenges: Hierarchy Representation Collapse (HRC) and Redundancy-Induced Saliency Dilution (RISD).
+◆ HRC compresses abstract-to-specific and whole-to-part hierarchies in Euclidean embeddings, while RISD averages noisy fragments, obscuring critical semantic cues and diminishing the model&#x27;s ability to distinguish hard negatives.</td></tr>
 <tr><td>2025-11-13</td><td>One Small Step in Latent, One Giant Leap for Pixels: Fast Latent Upscale Adapter for Your Diffusion Models</td><td>[2511.10629](http://arxiv.org/pdf/2511.10629)</td><td>◆ Diffusion models struggle to scale beyond their training resolutions, as direct high-resolution sampling is slow and costly, while post-hoc image super-resolution (ISR) introduces artifacts and additional latency by operating after decoding.
 ◆ We present the Latent Upscaler Adapter (LUA), a lightweight module that performs super-resolution directly on the generator&#x27;s latent code before the final VAE decoding step.
 ◆ LUA integrates as a drop-in component, requiring no modifications to the base model or additional diffusion stages, and enables high-resolution synthesis through a single feed-forward pass in latent space.</td></tr>
@@ -1848,6 +1893,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-14</td><td>3D Gaussian and Diffusion-Based Gaze Redirection</td><td>[2511.11231](http://arxiv.org/pdf/2511.11231)</td><td>◆ High-fidelity gaze redirection is critical for generating augmented data to improve the generalization of gaze estimators.
+◆ 3D Gaussian Splatting (3DGS) models like GazeGaussian represent the state-of-the-art but can struggle with rendering subtle, continuous gaze shifts.
+◆ In this paper, we propose DiT-Gaze, a framework that enhances 3D gaze redirection models using a novel combination of Diffusion Transformer (DiT), weak supervision across gaze angles, and an orthogonality constraint loss.</td></tr>
+<tr><td>2025-11-14</td><td>RealisticDreamer: Guidance Score Distillation for Few-shot Gaussian Splatting</td><td>[2511.11213](http://arxiv.org/pdf/2511.11213)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently gained great attention in the 3D scene representation for its high-quality real-time rendering capabilities.
+◆ However, when the input comprises sparse training views, 3DGS is prone to overfitting, primarily due to the lack of intermediate-view supervision.
+◆ Inspired by the recent success of Video Diffusion Models (VDM), we propose a framework called Guidance Score Distillation (GSD) to extract the rich multi-view consistency priors from pretrained VDMs.</td></tr>
+<tr><td>2025-11-14</td><td>PINGS-X: Physics-Informed Normalized Gaussian Splatting with Axes Alignment for Efficient Super-Resolution of 4D Flow MRI</td><td>[2511.11048](http://arxiv.org/pdf/2511.11048)</td><td>◆ 4D flow magnetic resonance imaging (MRI) is a reliable, non-invasive approach for estimating blood flow velocities, vital for cardiovascular diagnostics.
+◆ Unlike conventional MRI focused on anatomical structures, 4D flow MRI requires high spatiotemporal resolution for early detection of critical conditions such as stenosis or aneurysms.
+◆ However, achieving such resolution typically results in prolonged scan times, creating a trade-off between acquisition speed and prediction accuracy.</td></tr>
 <tr><td>2025-11-13</td><td>AHA! Animating Human Avatars in Diverse Scenes with Gaussian Splatting</td><td>[2511.09827](http://arxiv.org/pdf/2511.09827)</td><td>◆ We present a novel framework for animating humans in 3D scenes using 3D Gaussian Splatting (3DGS), a neural scene representation that has recently achieved state-of-the-art photorealistic results for novel-view synthesis but remains under-explored for human-scene animation and interaction.
 ◆ Unlike existing animation pipelines that use meshes or point clouds as the underlying 3D representation, our approach introduces the use of 3DGS as the 3D representation to the problem of animating humans in scenes.
 ◆ By representing humans and scenes as Gaussians, our approach allows for geometry-consistent free-viewpoint rendering of humans interacting with 3D scenes.</td></tr>
@@ -2858,10 +2912,22 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-14</td><td>LARM: A Large Articulated-Object Reconstruction Model</td><td>[2511.11563](http://arxiv.org/pdf/2511.11563)</td><td>◆ Modeling 3D articulated objects with realistic geometry, textures, and kinematics is essential for a wide range of applications.
+◆ However, existing optimization-based reconstruction methods often require dense multi-view inputs and expensive per-instance optimization, limiting their scalability.
+◆ Recent feedforward approaches offer faster alternatives but frequently produce coarse geometry, lack texture reconstruction, and rely on brittle, complex multi-stage pipelines.</td></tr>
+<tr><td>2025-11-14</td><td>TrackHHL: A Quantum Computing Algorithm for Track Reconstruction at the LHCb</td><td>[2511.11458](http://arxiv.org/pdf/2511.11458)</td><td>◆ In the future high-luminosity LHC era, high-energy physics experiments face unprecedented computational challenges for event reconstruction.
+◆ Employing the LHCb vertex locator as a case study we investigate a novel approach for charged particle track reconstruction.
+◆ The algorithm hinges on minimizing an Ising-like Hamiltonian using matrix inversion.</td></tr>
+<tr><td>2025-11-14</td><td>Rethinking Autoregressive Models for Lossless Image Compression via Hierarchical Parallelism and Progressive Adaptation</td><td>[2511.10991](http://arxiv.org/pdf/2511.10991)</td><td>◆ Autoregressive (AR) models, the theoretical performance benchmark for learned lossless image compression, are often dismissed as impractical due to prohibitive computational cost.
+◆ This work re-thinks this paradigm, introducing a framework built on hierarchical parallelism and progressive adaptation that re-establishes pure autoregression as a top-performing and practical solution.
+◆ Our approach is embodied in the Hierarchical Parallel Autoregressive ConvNet (HPAC), an ultra-lightweight pre-trained model using a hierarchical factorized structure and content-aware convolutional gating to efficiently capture spatial dependencies.</td></tr>
+<tr><td>2025-11-14</td><td>Tracking EEG Thalamic and Cortical Focal Brain Activity using Standardized Kalman Filtering with Kinematics Modeling</td><td>[2511.10877](http://arxiv.org/pdf/2511.10877)</td><td>◆ Kalman filtering has proven to be effective for estimating brain activity using EEG recordings.
+◆ In particular, the introduced post hoc standardization step of the algorithm, inspired by the sLORETA time-invariant method, reduces the depth bias and thus allows the estimation to appear at the correct depth from the electrode surface.
+◆ In the current work, we propose first and second-order kinematic evolution models, where the state-space vector includes not only the dipolar source activity but also its velocity and acceleration.</td></tr>
 <tr><td>2025-11-13</td><td>Depth Anything 3: Recovering the Visual Space from Any Views</td><td>[2511.10647](http://arxiv.org/pdf/2511.10647)</td><td>◆ We present Depth Anything 3 (DA3), a model that predicts spatially consistent geometry from an arbitrary number of visual inputs, with or without known camera poses.
 ◆ In pursuit of minimal modeling, DA3 yields two key insights: a single plain transformer (e.g., vanilla DINO encoder) is sufficient as a backbone without architectural specialization, and a singular depth-ray prediction target obviates the need for complex multi-task learning.
 ◆ Through our teacher-student training paradigm, the model achieves a level of detail and generalization on par with Depth Anything 2 (DA2).</td></tr>
-<tr><td>2025-11-13</td><td>OmniVGGT: Omni-Modality Driven Visual Geometry Grounded</td><td>[2511.10560](http://arxiv.org/pdf/2511.10560)</td><td>◆ General 3D foundation models have started to lead the trend of unifying diverse vision tasks, yet most assume RGB-only inputs and ignore readily available geometric cues (e.g., camera intrinsics, poses, and depth maps).
+<tr><td>2025-11-14</td><td>OmniVGGT: Omni-Modality Driven Visual Geometry Grounded Transformer</td><td>[2511.10560](http://arxiv.org/pdf/2511.10560)</td><td>◆ General 3D foundation models have started to lead the trend of unifying diverse vision tasks, yet most assume RGB-only inputs and ignore readily available geometric cues (e.g., camera intrinsics, poses, and depth maps).
 ◆ To address this issue, we introduce OmniVGGT, a novel framework that can effectively benefit from an arbitrary number of auxiliary geometric modalities during both training and inference.
 ◆ In our framework, a GeoAdapter is proposed to encode depth and camera intrinsics/extrinsics into a spatial foundation model.</td></tr>
 <tr><td>2025-11-13</td><td>A scalable and accurate framework for self-calibrating null depth retrieval using neural posterior estimation</td><td>[2511.10455](http://arxiv.org/pdf/2511.10455)</td><td>◆ Accurate null depth retrieval is critical in nulling interferometry.
@@ -3681,4 +3747,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.16
+> 更新于: 2025.11.17
