@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.17)
+# SLAM领域最新论文 (2025.11.18)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-17</td><td>GaRLILEO: Gravity-aligned Radar-Leg-Inertial Enhanced Odometry</td><td>[2511.13216](http://arxiv.org/pdf/2511.13216)</td><td>◆ Deployment of legged robots for navigating challenging terrains (e.g., stairs, slopes, and unstructured environments) has gained increasing preference over wheel-based platforms.
+◆ In such scenarios, accurate odometry estimation is a preliminary requirement for stable locomotion, localization, and mapping.
+◆ Traditional proprioceptive approaches, which rely on leg kinematics sensor modalities and inertial sensing, suffer from irrepressible vertical drift caused by frequent contact impacts, foot slippage, and vibrations, particularly affected by inaccurate roll and pitch estimation.</td></tr>
+<tr><td>2025-11-16</td><td>DPVO-QAT++: Heterogeneous QAT and CUDA Kernel Fusion for High-Performance Deep Patch Visual Odometry</td><td>[2511.12653](http://arxiv.org/pdf/2511.12653)</td><td>◆ Deep learning-based Visual SLAM (vSLAM) systems exhibit exceptional geometric reasoning capabilities, yet their prohibitive computational overhead severely restricts deployment on resource-constrained autonomous platforms.
+◆ This paper presents a hierarchical quantization optimization framework, DPVO-QAT++ (DPVO-QAT++: Heterogeneous QAT and CUDA Kernel Fusion for High-Performance Deep Patch Visual Odometry).
+◆ Through the synergistic integration of learnable scale parameterization, a heterogeneous precision design for the Visual Odometry (VO) front-end and back-end (front-end floating-point fake quantization with FP16/FP32; back-end full precision), and GPU-native kernel fusion for fake quantization (custom CUDA kernels), our framework significantly reduces memory footprint and increases processing speed while preserving the trajectory accuracy of the original model.</td></tr>
+<tr><td>2025-11-14</td><td>Autonomous Underwater Cognitive System for Adaptive Navigation: A SLAM-Integrated Cognitive Architecture</td><td>[2511.11845](http://arxiv.org/pdf/2511.11845)</td><td>◆ Deep-sea exploration poses significant challenges, including disorientation, communication loss, and navigational failures in dynamic underwater environments.
+◆ This paper presents an Autonomous Underwater Cognitive System (AUCS) that integrates Simultaneous Localization and Mapping (SLAM) with a Soar-based cognitive architecture to enable adaptive navigation in complex oceanic conditions.
+◆ The system fuses multi-sensor data from SONAR, LiDAR, IMU, and DVL with cognitive reasoning modules for perception, attention, planning, and learning.</td></tr>
 <tr><td>2025-11-12</td><td>DualVision ArthroNav: Investigating Opportunities to Enhance Localization and Reconstruction in Image-based Arthroscopy Navigation via External Cameras</td><td>[2511.10699](http://arxiv.org/pdf/2511.10699)</td><td>◆ Arthroscopic procedures can greatly benefit from navigation systems that enhance spatial awareness, depth perception, and field of view.
 ◆ However, existing optical tracking solutions impose strict workspace constraints and disrupt surgical workflow.
 ◆ Vision-based alternatives, though less invasive, often rely solely on the monocular arthroscope camera, making them prone to drift, scale ambiguity, and sensitivity to rapid motion or occlusion.</td></tr>
@@ -717,6 +726,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-16</td><td>DPVO-QAT++: Heterogeneous QAT and CUDA Kernel Fusion for High-Performance Deep Patch Visual Odometry</td><td>[2511.12653](http://arxiv.org/pdf/2511.12653)</td><td>◆ Deep learning-based Visual SLAM (vSLAM) systems exhibit exceptional geometric reasoning capabilities, yet their prohibitive computational overhead severely restricts deployment on resource-constrained autonomous platforms.
+◆ This paper presents a hierarchical quantization optimization framework, DPVO-QAT++ (DPVO-QAT++: Heterogeneous QAT and CUDA Kernel Fusion for High-Performance Deep Patch Visual Odometry).
+◆ Through the synergistic integration of learnable scale parameterization, a heterogeneous precision design for the Visual Odometry (VO) front-end and back-end (front-end floating-point fake quantization with FP16/FP32; back-end full precision), and GPU-native kernel fusion for fake quantization (custom CUDA kernels), our framework significantly reduces memory footprint and increases processing speed while preserving the trajectory accuracy of the original model.</td></tr>
 <tr><td>2025-11-12</td><td>DualVision ArthroNav: Investigating Opportunities to Enhance Localization and Reconstruction in Image-based Arthroscopy Navigation via External Cameras</td><td>[2511.10699](http://arxiv.org/pdf/2511.10699)</td><td>◆ Arthroscopic procedures can greatly benefit from navigation systems that enhance spatial awareness, depth perception, and field of view.
 ◆ However, existing optical tracking solutions impose strict workspace constraints and disrupt surgical workflow.
 ◆ Vision-based alternatives, though less invasive, often rely solely on the monocular arthroscope camera, making them prone to drift, scale ambiguity, and sensitivity to rapid motion or occlusion.</td></tr>
@@ -957,6 +969,21 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-17</td><td>Making Evidence Actionable in Adaptive Learning Closing the Diagnostic Pedagogical Loop</td><td>[2511.13542](http://arxiv.org/pdf/2511.13542)</td><td>◆ Adaptive learning often diagnoses precisely yet intervenes weakly, producing help that is mistimed or misaligned.
+◆ This study presents evidence supporting an instructor-governed feedback loop that converts concept-level assessment evidence into vetted microinterventions.
+◆ The adaptive learning algorithm includes three safeguards: adequacy as a hard guarantee of gap closure, attention as a budgeted limit for time and redundancy, and diversity as protection against overfitting to a single resource.</td></tr>
+<tr><td>2025-11-17</td><td>HDW-SR: High-Frequency Guided Diffusion Model based on Wavelet Decomposition for Image Super-Resolution</td><td>[2511.13175](http://arxiv.org/pdf/2511.13175)</td><td>◆ Diffusion-based methods have shown great promise in single image super-resolution (SISR); however, existing approaches often produce blurred fine details due to insufficient guidance in the high-frequency domain.
+◆ To address this issue, we propose a High-Frequency Guided Diffusion Network based on Wavelet Decomposition (HDW-SR), which replaces the conventional U-Net backbone in diffusion frameworks.
+◆ Specifically, we perform diffusion only on the residual map, allowing the network to focus more effectively on high-frequency information restoration.</td></tr>
+<tr><td>2025-11-16</td><td>D$^{2}$-VPR: A Parameter-efficient Visual-foundation-model-based Visual Place Recognition Method via Knowledge Distillation and Deformable Aggregation</td><td>[2511.12528](http://arxiv.org/pdf/2511.12528)</td><td>◆ Visual Place Recognition (VPR) aims to determine the geographic location of a query image by retrieving its most visually similar counterpart from a geo-tagged reference database.
+◆ Recently, the emergence of the powerful visual foundation model, DINOv2, trained in a self-supervised manner on massive datasets, has significantly improved VPR performance.
+◆ This improvement stems from DINOv2&#x27;s exceptional feature generalization capabilities but is often accompanied by increased model complexity and computational overhead that impede deployment on resource-constrained devices.</td></tr>
+<tr><td>2025-11-14</td><td>Autonomous Underwater Cognitive System for Adaptive Navigation: A SLAM-Integrated Cognitive Architecture</td><td>[2511.11845](http://arxiv.org/pdf/2511.11845)</td><td>◆ Deep-sea exploration poses significant challenges, including disorientation, communication loss, and navigational failures in dynamic underwater environments.
+◆ This paper presents an Autonomous Underwater Cognitive System (AUCS) that integrates Simultaneous Localization and Mapping (SLAM) with a Soar-based cognitive architecture to enable adaptive navigation in complex oceanic conditions.
+◆ The system fuses multi-sensor data from SONAR, LiDAR, IMU, and DVL with cognitive reasoning modules for perception, attention, planning, and learning.</td></tr>
+<tr><td>2025-11-13</td><td>Understanding Mode Choice Behavior of People with Disabilities: A Case Study in Utah</td><td>[2511.11748](http://arxiv.org/pdf/2511.11748)</td><td>◆ Despite the growing recognition of the importance of inclusive transportation policies nationwide, there is still a gap, as the existing transportation models often fail to capture the unique travel behavior of people with disabilities.
+◆ This research study focuses on understanding the mode choice behavior of individuals with travel-limited disabilities and comparing the group with no such disability.
+◆ The study identified key factors influencing mode preferences for both groups by utilizing Utah&#x27;s household travel survey, simulation algorithm and Multinomial Logit model.</td></tr>
 <tr><td>2025-11-14</td><td>Computationally-efficient deep learning models for nowcasting of precipitation: A solution for the Weather4cast 2025 challenge</td><td>[2511.11197](http://arxiv.org/pdf/2511.11197)</td><td>◆ This study presents a transfer-learning framework based on Convolutional Gated Recurrent Units (ConvGRU) for short-term rainfall prediction in the Weather4Cast 2025 competition.
 ◆ A single SEVIRI infrared channel (10.8 μm wavelength) is used as input, which consists of four observations over a one-hour period.
 ◆ A two-stage training strategy is applied to generate rainfall estimates up to four hours ahead.</td></tr>
@@ -1538,6 +1565,36 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-17</td><td>Language-Guided Invariance Probing of Vision-Language Models</td><td>[2511.13494](http://arxiv.org/pdf/2511.13494)</td><td>◆ Recent vision-language models (VLMs) such as CLIP, OpenCLIP, EVA02-CLIP and SigLIP achieve strong zero-shot performance, but it is unclear how reliably they respond to controlled linguistic perturbations.
+◆ We introduce Language-Guided Invariance Probing (LGIP), a benchmark that measures (i) invariance to meaning-preserving paraphrases and (ii) sensitivity to meaning-changing semantic flips in image-text matching.
+◆ Using 40k MS COCO images with five human captions each, we automatically generate paraphrases and rule-based flips that alter object category, color or count, and summarize model behavior with an invariance error, a semantic sensitivity gap and a positive-rate statistic.</td></tr>
+<tr><td>2025-11-17</td><td>PDRs4All XX. Haute Couture: Spectral stitching of JWST MIRI-IFU cubes with matrix completion</td><td>[2511.13377](http://arxiv.org/pdf/2511.13377)</td><td>◆ MIRI is the imager and spectrograph covering wavelengths from $4.9$ to $27.9$ $μ$m onboard the James Webb Space Telescope (JWST).
+◆ The Medium-Resolution Spectrometer (MRS) consists of four integral field units (IFU), each of which has three sub-channels.
+◆ The twelve resulting spectral data cubes have different fields of view, spatial, and spectral resolutions.</td></tr>
+<tr><td>2025-11-17</td><td>Semi-Supervised Multi-Task Learning for Interpretable Quality As- sessment of Fundus Images</td><td>[2511.13353](http://arxiv.org/pdf/2511.13353)</td><td>◆ Retinal image quality assessment (RIQA) supports computer-aided diagnosis of eye diseases.
+◆ However, most tools classify only overall image quality, without indicating acquisition defects to guide recapture.
+◆ This gap is mainly due to the high cost of detailed annotations.</td></tr>
+<tr><td>2025-11-17</td><td>Referring Camouflaged Object Detection With Multi-Context Overlapped Windows Cross-Attention</td><td>[2511.13249](http://arxiv.org/pdf/2511.13249)</td><td>◆ Referring camouflaged object detection (Ref-COD) aims to identify hidden objects by incorporating reference information such as images and text descriptions.
+◆ Previous research has transformed reference images with salient objects into one-dimensional prompts, yielding significant results.
+◆ We explore ways to enhance performance through multi-context fusion of rich salient image features and camouflaged object features.</td></tr>
+<tr><td>2025-11-17</td><td>End-to-End Multi-Person Pose Estimation with Pose-Aware Video Transformer</td><td>[2511.13208](http://arxiv.org/pdf/2511.13208)</td><td>◆ Existing multi-person video pose estimation methods typically adopt a two-stage pipeline: detecting individuals in each frame, followed by temporal modeling for single-person pose estimation.
+◆ This design relies on heuristic operations such as detection, RoI cropping, and non-maximum suppression (NMS), limiting both accuracy and efficiency.
+◆ In this paper, we present a fully end-to-end framework for multi-person 2D pose estimation in videos, effectively eliminating heuristic operations.</td></tr>
+<tr><td>2025-11-17</td><td>GenTract: Generative Global Tractography</td><td>[2511.13183](http://arxiv.org/pdf/2511.13183)</td><td>◆ Tractography is the process of inferring the trajectories of white-matter pathways in the brain from diffusion magnetic resonance imaging (dMRI).
+◆ Local tractography methods, which construct streamlines by following local fiber orientation estimates stepwise through an image, are prone to error accumulation and high false positive rates, particularly on noisy or low-resolution data.
+◆ In contrast, global methods, which attempt to optimize a collection of streamlines to maximize compatibility with underlying fiber orientation estimates, are computationally expensive.</td></tr>
+<tr><td>2025-11-17</td><td>THIR: Topological Histopathological Image Retrieval</td><td>[2511.13170](http://arxiv.org/pdf/2511.13170)</td><td>◆ According to the World Health Organization, breast cancer claimed the lives of approximately 685,000 women in 2020.
+◆ Early diagnosis and accurate clinical decision making are critical in reducing this global burden.
+◆ In this study, we propose THIR, a novel Content-Based Medical Image Retrieval (CBMIR) framework that leverages topological data analysis specifically, Betti numbers derived from persistent homology to characterize and retrieve histopathological images based on their intrinsic structural patterns.</td></tr>
+<tr><td>2025-11-17</td><td>SOMA: Feature Gradient Enhanced Affine-Flow Matching for SAR-Optical Registration</td><td>[2511.13168](http://arxiv.org/pdf/2511.13168)</td><td>◆ Achieving pixel-level registration between SAR and optical images remains a challenging task due to their fundamentally different imaging mechanisms and visual characteristics.
+◆ Although deep learning has achieved great success in many cross-modal tasks, its performance on SAR-Optical registration tasks is still unsatisfactory.
+◆ Gradient-based information has traditionally played a crucial role in handcrafted descriptors by highlighting structural differences.</td></tr>
+<tr><td>2025-11-17</td><td>CapeNext: Rethinking and refining dynamic support information for category-agnostic pose estimation</td><td>[2511.13102](http://arxiv.org/pdf/2511.13102)</td><td>◆ Recent research in Category-Agnostic Pose Estimation (CAPE) has adopted fixed textual keypoint description as semantic prior for two-stage pose matching frameworks.
+◆ While this paradigm enhances robustness and flexibility by disentangling the dependency of support images, our critical analysis reveals two inherent limitations of static joint embedding: (1) polysemy-induced cross-category ambiguity during the matching process(e.g., the concept &quot;leg&quot; exhibiting divergent visual manifestations across humans and furniture), and (2) insufficient discriminability for fine-grained intra-category variations (e.g., posture and fur discrepancies between a sleeping white cat and a standing black cat).
+◆ To overcome these challenges, we propose a new framework that innovatively integrates hierarchical cross-modal interaction with dual-stream feature refinement, enhancing the joint embedding with both class-level and instance-specific cues from textual description and specific images.</td></tr>
+<tr><td>2025-11-17</td><td>SplatSearch: Instance Image Goal Navigation for Mobile Robots using 3D Gaussian Splatting and Diffusion Models</td><td>[2511.12972](http://arxiv.org/pdf/2511.12972)</td><td>◆ The Instance Image Goal Navigation (IIN) problem requires mobile robots deployed in unknown environments to search for specific objects or people of interest using only a single reference goal image of the target.
+◆ This problem can be especially challenging when: 1) the reference image is captured from an arbitrary viewpoint, and 2) the robot must operate with sparse-view scene reconstructions.
+◆ In this paper, we address the IIN problem, by introducing SplatSearch, a novel architecture that leverages sparse-view 3D Gaussian Splatting (3DGS) reconstructions.</td></tr>
 <tr><td>2025-11-14</td><td>Bridging Hidden States in Vision-Language Models</td><td>[2511.11526](http://arxiv.org/pdf/2511.11526)</td><td>◆ Vision-Language Models (VLMs) are a new family of models that align image content with natural language.
 ◆ Existing approaches typically fuse either (a) early: by mixing tokens/features inside the encoders, or (b) late: by comparing pooled embeddings.
 ◆ Many methods also tie fusion to an autoregressive decoder.</td></tr>
@@ -1885,6 +1942,30 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-17</td><td>Training-Free Multi-View Extension of IC-Light for Textual Position-Aware Scene Relighting</td><td>[2511.13684](http://arxiv.org/pdf/2511.13684)</td><td>◆ We introduce GS-Light, an efficient, textual position-aware pipeline for text-guided relighting of 3D scenes represented via Gaussian Splatting (3DGS).
+◆ GS-Light implements a training-free extension of a single-input diffusion model to handle multi-view inputs.
+◆ Given a user prompt that may specify lighting direction, color, intensity, or reference objects, we employ a large vision-language model (LVLM) to parse the prompt into lighting priors.</td></tr>
+<tr><td>2025-11-17</td><td>Opt3DGS: Optimizing 3D Gaussian Splatting with Adaptive Exploration and Curvature-Aware Exploitation</td><td>[2511.13571](http://arxiv.org/pdf/2511.13571)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a leading framework for novel view synthesis, yet its core optimization challenges remain underexplored.
+◆ We identify two key issues in 3DGS optimization: entrapment in suboptimal local optima and insufficient convergence quality.
+◆ To address these, we propose Opt3DGS, a robust framework that enhances 3DGS through a two-stage optimization process of adaptive exploration and curvature-guided exploitation.</td></tr>
+<tr><td>2025-11-17</td><td>SF-Recon: Simplification-Free Lightweight Building Reconstruction via 3D Gaussian Splatting</td><td>[2511.13278](http://arxiv.org/pdf/2511.13278)</td><td>◆ Lightweight building surface models are crucial for digital city, navigation, and fast geospatial analytics, yet conventional multi-view geometry pipelines remain cumbersome and quality-sensitive due to their reliance on dense reconstruction, meshing, and subsequent simplification.
+◆ This work presents SF-Recon, a method that directly reconstructs lightweight building surfaces from multi-view images without post-hoc mesh simplification.
+◆ We first train an initial 3D Gaussian Splatting (3DGS) field to obtain a view-consistent representation.</td></tr>
+<tr><td>2025-11-17</td><td>SymGS : Leveraging Local Symmetries for 3D Gaussian Splatting Compression</td><td>[2511.13264](http://arxiv.org/pdf/2511.13264)</td><td>◆ 3D Gaussian Splatting has emerged as a transformative technique in novel view synthesis, primarily due to its high rendering speed and photorealistic fidelity.
+◆ However, its memory footprint scales rapidly with scene complexity, often reaching several gigabytes.
+◆ Existing methods address this issue by introducing compression strategies that exploit primitive-level redundancy through similarity detection and quantization.</td></tr>
+<tr><td>2025-11-17</td><td>Beyond Darkness: Thermal-Supervised 3D Gaussian Splatting for Low-Light Novel View Synthesis</td><td>[2511.13011](http://arxiv.org/pdf/2511.13011)</td><td>◆ Under extremely low-light conditions, novel view synthesis (NVS) faces severe degradation in terms of geometry, color consistency, and radiometric stability.
+◆ Standard 3D Gaussian Splatting (3DGS) pipelines fail when applied directly to underexposed inputs, as independent enhancement across views causes illumination inconsistencies and geometric distortion.
+◆ To address this, we present DTGS, a unified framework that tightly couples Retinex-inspired illumination decomposition with thermal-guided 3D Gaussian Splatting for illumination-invariant reconstruction.</td></tr>
+<tr><td>2025-11-17</td><td>SplatSearch: Instance Image Goal Navigation for Mobile Robots using 3D Gaussian Splatting and Diffusion Models</td><td>[2511.12972](http://arxiv.org/pdf/2511.12972)</td><td>◆ The Instance Image Goal Navigation (IIN) problem requires mobile robots deployed in unknown environments to search for specific objects or people of interest using only a single reference goal image of the target.
+◆ This problem can be especially challenging when: 1) the reference image is captured from an arbitrary viewpoint, and 2) the robot must operate with sparse-view scene reconstructions.
+◆ In this paper, we address the IIN problem, by introducing SplatSearch, a novel architecture that leverages sparse-view 3D Gaussian Splatting (3DGS) reconstructions.</td></tr>
+<tr><td>2025-11-17</td><td>Neo: Real-Time On-Device 3D Gaussian Splatting with Reuse-and-Update Sorting Acceleration</td><td>[2511.12930](http://arxiv.org/pdf/2511.12930)</td><td>◆ 3D Gaussian Splatting (3DGS) rendering in real-time on resource-constrained devices is essential for delivering immersive augmented and virtual reality (AR/VR) experiences.
+◆ However, existing solutions struggle to achieve high frame rates, especially for high-resolution rendering.
+◆ Our analysis identifies the sorting stage in the 3DGS rendering pipeline as the major bottleneck due to its high memory bandwidth demand.</td></tr>
+<tr><td>2025-11-17</td><td>Reconstructing 3D Scenes in Native High Dynamic Range</td><td>[2511.12895](http://arxiv.org/pdf/2511.12895)</td><td>◆ High Dynamic Range (HDR) imaging is essential for professional digital media creation, e.g., filmmaking, virtual production, and photorealistic rendering.
+◆ However, 3D scene reconstruction has primarily focused on Low Dynamic Range (LDR) data, limiting its applicability to professional workflows.
+◆ Existing approaches that reconstruct HDR scenes from LDR observations rely on multi-exposure fusion or inverse tone-mapping, which increase capture complexity and depend on synthetic supervision.</td></tr>
 <tr><td>2025-11-14</td><td>3D Gaussian and Diffusion-Based Gaze Redirection</td><td>[2511.11231](http://arxiv.org/pdf/2511.11231)</td><td>◆ High-fidelity gaze redirection is critical for generating augmented data to improve the generalization of gaze estimators.
 ◆ 3D Gaussian Splatting (3DGS) models like GazeGaussian represent the state-of-the-art but can struggle with rendering subtle, continuous gaze shifts.
 ◆ In this paper, we propose DiT-Gaze, a framework that enhances 3D gaze redirection models using a novel combination of Diffusion Transformer (DiT), weak supervision across gaze angles, and an orthogonality constraint loss.</td></tr>
@@ -2902,6 +2983,24 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-17</td><td>Training-Free Multi-View Extension of IC-Light for Textual Position-Aware Scene Relighting</td><td>[2511.13684](http://arxiv.org/pdf/2511.13684)</td><td>◆ We introduce GS-Light, an efficient, textual position-aware pipeline for text-guided relighting of 3D scenes represented via Gaussian Splatting (3DGS).
+◆ GS-Light implements a training-free extension of a single-input diffusion model to handle multi-view inputs.
+◆ Given a user prompt that may specify lighting direction, color, intensity, or reference objects, we employ a large vision-language model (LVLM) to parse the prompt into lighting priors.</td></tr>
+<tr><td>2025-11-17</td><td>Towards Metric-Aware Multi-Person Mesh Recovery by Jointly Optimizing Human Crowd in Camera Space</td><td>[2511.13282](http://arxiv.org/pdf/2511.13282)</td><td>◆ Multi-person human mesh recovery from a single image is a challenging task, hindered by the scarcity of in-the-wild training data.
+◆ Prevailing in-the-wild human mesh pseudo-ground-truth (pGT) generation pipelines are single-person-centric, where each human is processed individually without joint optimization.
+◆ This oversight leads to a lack of scene-level consistency, producing individuals with conflicting depths and scales within the same image.</td></tr>
+<tr><td>2025-11-17</td><td>Difficulty-Aware Label-Guided Denoising for Monocular 3D Object Detection</td><td>[2511.13195](http://arxiv.org/pdf/2511.13195)</td><td>◆ Monocular 3D object detection is a cost-effective solution for applications like autonomous driving and robotics, but remains fundamentally ill-posed due to inherently ambiguous depth cues.
+◆ Recent DETR-based methods attempt to mitigate this through global attention and auxiliary depth prediction, yet they still struggle with inaccurate depth estimates.
+◆ Moreover, these methods often overlook instance-level detection difficulty, such as occlusion, distance, and truncation, leading to suboptimal detection performance.</td></tr>
+<tr><td>2025-11-16</td><td>QPU Micro-Kernels for Stencil Computation</td><td>[2511.12617](http://arxiv.org/pdf/2511.12617)</td><td>◆ We introduce QPU micro-kernels: shallow quantum circuits that perform a stencil node update and return a Monte Carlo estimate from repeated measurements.
+◆ We show how to use them to solve Partial Differential Equations (PDEs) explicitly discretized on a computational stencil.
+◆ From this point of view, the QPU serves as a sampling accelerator.</td></tr>
+<tr><td>2025-11-15</td><td>Quantum Amplitude-Amplification Eigensolver: A State-Learning-Assisted Approach beyond Energy-Gradient-Based Heuristics</td><td>[2511.12062](http://arxiv.org/pdf/2511.12062)</td><td>◆ Ground-state estimation lies at the heart of a broad range of quantum simulations.
+◆ Most near-term approaches are cast as variational energy minimization and thus inherit the challenges of problem-specific energy landscapes.
+◆ We develop the quantum amplitude-amplification eigensolver (QAAE), which departs from the variational paradigm and instead coherently drives a trial state toward the ground state via quantum amplitude amplification.</td></tr>
+<tr><td>2025-11-15</td><td>Real-Time Physics-Aware Battery Health Monitoring from Partial Charging Profiles via Physics-Informed Neural Networks</td><td>[2511.12053](http://arxiv.org/pdf/2511.12053)</td><td>◆ Monitoring battery health is essential for ensuring safe and efficient operation.
+◆ However, there is an inherent trade-off between assessment speed and diagnostic depth-specifically, between rapid overall health estimation and precise identification of internal degradation states.
+◆ Capturing detailed internal battery information efficiently remains a major challenge, yet such insights are key to understanding the various degradation mechanisms.</td></tr>
 <tr><td>2025-11-14</td><td>LARM: A Large Articulated-Object Reconstruction Model</td><td>[2511.11563](http://arxiv.org/pdf/2511.11563)</td><td>◆ Modeling 3D articulated objects with realistic geometry, textures, and kinematics is essential for a wide range of applications.
 ◆ However, existing optimization-based reconstruction methods often require dense multi-view inputs and expensive per-instance optimization, limiting their scalability.
 ◆ Recent feedforward approaches offer faster alternatives but frequently produce coarse geometry, lack texture reconstruction, and rely on brittle, complex multi-stage pipelines.</td></tr>
@@ -3735,4 +3834,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.17
+> 更新于: 2025.11.18
