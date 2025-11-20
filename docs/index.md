@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.19)
+# SLAM领域最新论文 (2025.11.20)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-19</td><td>Learning from Mistakes: Loss-Aware Memory Enhanced Continual Learning for LiDAR Place Recognition</td><td>[2511.15597](http://arxiv.org/pdf/2511.15597)</td><td>◆ LiDAR place recognition plays a crucial role in SLAM, robot navigation, and autonomous driving.
+◆ However, existing LiDAR place recognition methods often struggle to adapt to new environments without forgetting previously learned knowledge, a challenge widely known as catastrophic forgetting.
+◆ To address this issue, we propose KDF+, a novel continual learning framework for LiDAR place recognition that extends the KDF paradigm with a loss-aware sampling strategy and a rehearsal enhancement mechanism.</td></tr>
+<tr><td>2025-11-18</td><td>A visual study of ICP variants for Lidar Odometry</td><td>[2511.14919](http://arxiv.org/pdf/2511.14919)</td><td>◆ Odometry with lidar sensors is a state-of-the-art method to estimate the ego pose of a moving vehicle.
+◆ Many implementations of lidar odometry use variants of the Iterative Closest Point (ICP) algorithm.
+◆ Real-world effects such as dynamic objects, non-overlapping areas, and sensor noise diminish the accuracy of ICP.</td></tr>
 <tr><td>2025-11-18</td><td>SLAM-AGS: Slide-Label Aware Multi-Task Pretraining Using Adaptive Gradient Surgery in Computational Cytology</td><td>[2511.14639](http://arxiv.org/pdf/2511.14639)</td><td>◆ Computational cytology faces two major challenges: i) instance-level labels are unreliable and prohibitively costly to obtain, ii) witness rates are extremely low.
 ◆ We propose SLAM-AGS, a Slide-Label-Aware Multitask pretraining framework that jointly optimizes (i) a weakly supervised similarity objective on slide-negative patches and (ii) a self-supervised contrastive objective on slide-positive patches, yielding stronger performance on downstream tasks.
 ◆ To stabilize learning, we apply Adaptive Gradient Surgery to tackle conflicting task gradients and prevent model collapse.</td></tr>
@@ -741,6 +747,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-18</td><td>A visual study of ICP variants for Lidar Odometry</td><td>[2511.14919](http://arxiv.org/pdf/2511.14919)</td><td>◆ Odometry with lidar sensors is a state-of-the-art method to estimate the ego pose of a moving vehicle.
+◆ Many implementations of lidar odometry use variants of the Iterative Closest Point (ICP) algorithm.
+◆ Real-world effects such as dynamic objects, non-overlapping areas, and sensor noise diminish the accuracy of ICP.</td></tr>
 <tr><td>2025-11-18</td><td>iGaussian: Real-Time Camera Pose Estimation via Feed-Forward 3D Gaussian Splatting Inversion</td><td>[2511.14149](http://arxiv.org/pdf/2511.14149)</td><td>◆ Recent trends in SLAM and visual navigation have embraced 3D Gaussians as the preferred scene representation, highlighting the importance of estimating camera poses from a single image using a pre-built Gaussian model.
 ◆ However, existing approaches typically rely on an iterative \textit{render-compare-refine} loop, where candidate views are first rendered using NeRF or Gaussian Splatting, then compared against the target image, and finally, discrepancies are used to update the pose.
 ◆ This multi-round process incurs significant computational overhead, hindering real-time performance in robotics.</td></tr>
@@ -987,6 +996,18 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-19</td><td>First Frame Is the Place to Go for Video Content Customization</td><td>[2511.15700](http://arxiv.org/pdf/2511.15700)</td><td>◆ What role does the first frame play in video generation models?
+◆ Traditionally, it&#x27;s viewed as the spatial-temporal starting point of a video, merely a seed for subsequent animation.
+◆ In this work, we reveal a fundamentally different perspective: video models implicitly treat the first frame as a conceptual memory buffer that stores visual entities for later reuse during generation.</td></tr>
+<tr><td>2025-11-19</td><td>Catching the 2021 γ-ray flare in the blazar TXS 2013+370</td><td>[2511.15601](http://arxiv.org/pdf/2511.15601)</td><td>◆ The $γ$-ray-loud blazar TXS 2013+370, a powerful multiwavelength emitter at $z = 0.859$, underwent an exceptional GeV outburst in late 2020-early 2021.
+◆ In this work, we present full-polarization VLBI imaging at 22, 43, and 86 GHz together with contemporaneous single-dish monitoring (radio and $γ$-rays) to localize the high-energy dissipation site and probe the inner-jet structure and magnetic field topology.
+◆ The images revealed a compact near-core knot at $r \simeq 40$-$60~μ\mathrm{as}$ contemporaneously with the GeV flare and a flat, core-dominated spectrum ($α\gtrsim -0.5$).</td></tr>
+<tr><td>2025-11-19</td><td>Learning from Mistakes: Loss-Aware Memory Enhanced Continual Learning for LiDAR Place Recognition</td><td>[2511.15597](http://arxiv.org/pdf/2511.15597)</td><td>◆ LiDAR place recognition plays a crucial role in SLAM, robot navigation, and autonomous driving.
+◆ However, existing LiDAR place recognition methods often struggle to adapt to new environments without forgetting previously learned knowledge, a challenge widely known as catastrophic forgetting.
+◆ To address this issue, we propose KDF+, a novel continual learning framework for LiDAR place recognition that extends the KDF paradigm with a loss-aware sampling strategy and a rehearsal enhancement mechanism.</td></tr>
+<tr><td>2025-11-19</td><td>Text2Loc++: Generalizing 3D Point Cloud Localization from Natural Language</td><td>[2511.15308](http://arxiv.org/pdf/2511.15308)</td><td>◆ We tackle the problem of localizing 3D point cloud submaps using complex and diverse natural language descriptions, and present Text2Loc++, a novel neural network designed for effective cross-modal alignment between language and point clouds in a coarse-to-fine localization pipeline.
+◆ To support benchmarking, we introduce a new city-scale dataset covering both color and non-color point clouds from diverse urban scenes, and organize location descriptions into three levels of linguistic complexity.
+◆ In the global place recognition stage, Text2Loc++ combines a pretrained language model with a Hierarchical Transformer with Max pooling (HTM) for sentence-level semantics, and employs an attention-based point cloud encoder for spatial understanding.</td></tr>
 <tr><td>2025-11-18</td><td>A System Dynamics Approach to Evaluating Sludge Management Strategies in Vinasse Treatment: Cost-Benefit Analysis and Scenario Assessment</td><td>[2511.14607](http://arxiv.org/pdf/2511.14607)</td><td>◆ In the Chilean local alcohol industry (pisco indus- try), for one liter of alcohol produced 10-15 liters of vinasse as the main wastewater of the process.
 ◆ To comply with industrial waste regulations, vinasse must be stored, which enables evaporation, leaving behind a residual sludge.
 ◆ However, treating vinasse remains an environmental and industrial challenge, having a high nutrient concentration and acidity that can degrade soil quality and harm surrounding vegetation.</td></tr>
@@ -1002,7 +1023,7 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <tr><td>2025-11-18</td><td>Making Evidence Actionable in Adaptive Learning</td><td>[2511.14052](http://arxiv.org/pdf/2511.14052)</td><td>◆ Adaptive learning often diagnoses precisely yet intervenes weakly, yielding help that is mistimed or misaligned.
 ◆ This study presents evidence supporting an instructor-governed feedback loop that converts concept-level assessment evidence into vetted micro-interventions.
 ◆ The adaptive learning algorithm contains three safeguards: adequacy as a hard guarantee of gap closure, attention as a budgeted constraint for time and redundancy, and diversity as protection against overfitting to a single resource.</td></tr>
-<tr><td>2025-11-17</td><td>Making Evidence Actionable in Adaptive Learning Closing the Diagnostic Pedagogical Loop</td><td>[2511.13542](http://arxiv.org/pdf/2511.13542)</td><td>◆ Adaptive learning often diagnoses precisely yet intervenes weakly, producing help that is mistimed or misaligned.
+<tr><td>2025-11-19</td><td>Making Evidence Actionable in Adaptive Learning Closing the Diagnostic Pedagogical Loop</td><td>[2511.13542](http://arxiv.org/pdf/2511.13542)</td><td>◆ Adaptive learning often diagnoses precisely yet intervenes weakly, producing help that is mistimed or misaligned.
 ◆ This study presents evidence supporting an instructor-governed feedback loop that converts concept-level assessment evidence into vetted microinterventions.
 ◆ The adaptive learning algorithm includes three safeguards: adequacy as a hard guarantee of gap closure, attention as a budgeted limit for time and redundancy, and diversity as protection against overfitting to a single resource.</td></tr>
 <tr><td>2025-11-17</td><td>HDW-SR: High-Frequency Guided Diffusion Model based on Wavelet Decomposition for Image Super-Resolution</td><td>[2511.13175](http://arxiv.org/pdf/2511.13175)</td><td>◆ Diffusion-based methods have shown great promise in single image super-resolution (SISR); however, existing approaches often produce blurred fine details due to insufficient guidance in the high-frequency domain.
@@ -1598,6 +1619,24 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-19</td><td>RoMa v2: Harder Better Faster Denser Feature Matching</td><td>[2511.15706](http://arxiv.org/pdf/2511.15706)</td><td>◆ Dense feature matching aims to estimate all correspondences between two images of a 3D scene and has recently been established as the gold-standard due to its high accuracy and robustness.
+◆ However, existing dense matchers still fail or perform poorly for many hard real-world scenarios, and high-precision models are often slow, limiting their applicability.
+◆ In this paper, we attack these weaknesses on a wide front through a series of systematic improvements that together yield a significantly better model.</td></tr>
+<tr><td>2025-11-19</td><td>What Your Features Reveal: Data-Efficient Black-Box Feature Inversion Attack for Split DNNs</td><td>[2511.15316](http://arxiv.org/pdf/2511.15316)</td><td>◆ Split DNNs enable edge devices by offloading intensive computation to a cloud server, but this paradigm exposes privacy vulnerabilities, as the intermediate features can be exploited to reconstruct the private inputs via Feature Inversion Attack (FIA).
+◆ Existing FIA methods often produce limited reconstruction quality, making it difficult to assess the true extent of privacy leakage.
+◆ To reveal the privacy risk of the leaked features, we introduce FIA-Flow, a black-box FIA framework that achieves high-fidelity image reconstruction from intermediate features.</td></tr>
+<tr><td>2025-11-19</td><td>Magnetic signal scan imaging system based on giant magnetoimpedance (GMI) differential sensor</td><td>[2511.15209](http://arxiv.org/pdf/2511.15209)</td><td>◆ This paper presents the design and implementation of a magnetic signal scanning and imaging system based on the giant magnetoimpedance (GMI) effect.
+◆ The system employs a pair of performance-matched GMI sensing elements configured as a differential probe structure.
+◆ Through co-optimized low-noise electronic and probe design, the system effectively suppresses both intrinsic sensor common-mode drift and external environmental magnetic noise, enabling high signal-to-noise ratio detection of nono-tesla to micro-tesla-level magnetic signals without magnetic shielding.</td></tr>
+<tr><td>2025-11-19</td><td>BokehFlow: Depth-Free Controllable Bokeh Rendering via Flow Matching</td><td>[2511.15066](http://arxiv.org/pdf/2511.15066)</td><td>◆ Bokeh rendering simulates the shallow depth-of-field effect in photography, enhancing visual aesthetics and guiding viewer attention to regions of interest.
+◆ Although recent approaches perform well, rendering controllable bokeh without additional depth inputs remains a significant challenge.
+◆ Existing classical and neural controllable methods rely on accurate depth maps, while generative approaches often struggle with limited controllability and efficiency.</td></tr>
+<tr><td>2025-11-19</td><td>Computer Vision Modeling of the Development of Geometric and Numerical Concepts in Humans</td><td>[2511.15029](http://arxiv.org/pdf/2511.15029)</td><td>◆ Mathematical thinking is a fundamental aspect of human cognition.
+◆ Cognitive scientists have investigated the mechanisms that underlie our ability to thinking geometrically and numerically, to take two prominent examples, and developmental scientists have documented the trajectories of these abilities over the lifespan.
+◆ Prior research has shown that computer vision (CV) models trained on the unrelated task of image classification nevertheless learn latent representations of geometric and numerical concepts similar to those of adults.</td></tr>
+<tr><td>2025-11-18</td><td>LFreeDA: Label-Free Drift Adaptation for Windows Malware Detection</td><td>[2511.14963](http://arxiv.org/pdf/2511.14963)</td><td>◆ Machine learning (ML)-based malware detectors degrade over time as concept drift introduces new and evolving families unseen during training.
+◆ Retraining is limited by the cost and time of manual labeling or sandbox analysis.
+◆ Existing approaches mitigate this via drift detection and selective labeling, but fully label-free adaptation remains largely unexplored.</td></tr>
 <tr><td>2025-11-18</td><td>FlowRoI A Fast Optical Flow Driven Region of Interest Extraction Framework for High-Throughput Image Compression in Immune Cell Migration Analysis</td><td>[2511.14419](http://arxiv.org/pdf/2511.14419)</td><td>◆ Autonomous migration is essential for the function of immune cells such as neutrophils and plays a pivotal role in diverse diseases.
 ◆ Recently, we introduced ComplexEye, a multi-lens array microscope comprising 16 independent aberration-corrected glass lenses arranged at the pitch of a 96-well plate, capable of capturing high-resolution movies of migrating cells.
 ◆ This architecture enables high-throughput live-cell video microscopy for migration analysis, supporting routine quantification of autonomous motility with strong potential for clinical translation.</td></tr>
@@ -2005,13 +2044,16 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-19</td><td>Gaussian Blending: Rethinking Alpha Blending in 3D Gaussian Splatting</td><td>[2511.15102](http://arxiv.org/pdf/2511.15102)</td><td>◆ The recent introduction of 3D Gaussian Splatting (3DGS) has significantly advanced novel view synthesis.
+◆ Several studies have further improved the rendering quality of 3DGS, yet they still exhibit noticeable visual discrepancies when synthesizing views at sampling rates unseen during training.
+◆ Specifically, they suffer from (i) erosion-induced blurring artifacts when zooming in and (ii) dilation-induced staircase artifacts when zooming out.</td></tr>
 <tr><td>2025-11-18</td><td>IBGS: Image-Based Gaussian Splatting</td><td>[2511.14357](http://arxiv.org/pdf/2511.14357)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently emerged as a fast, high-quality method for novel view synthesis (NVS).
 ◆ However, its use of low-degree spherical harmonics limits its ability to capture spatially varying color and view-dependent effects such as specular highlights.
 ◆ Existing works augment Gaussians with either a global texture map, which struggles with complex scenes, or per-Gaussian texture maps, which introduces high storage overhead.</td></tr>
 <tr><td>2025-11-18</td><td>Dental3R: Geometry-Aware Pairing for Intraoral 3D Reconstruction from Sparse-View Photographs</td><td>[2511.14315](http://arxiv.org/pdf/2511.14315)</td><td>◆ Intraoral 3D reconstruction is fundamental to digital orthodontics, yet conventional methods like intraoral scanning are inaccessible for remote tele-orthodontics, which typically relies on sparse smartphone imagery.
 ◆ While 3D Gaussian Splatting (3DGS) shows promise for novel view synthesis, its application to the standard clinical triad of unposed anterior and bilateral buccal photographs is challenging.
 ◆ The large view baselines, inconsistent illumination, and specular surfaces common in intraoral settings can destabilize simultaneous pose and geometry estimation.</td></tr>
-<tr><td>2025-11-18</td><td>RoboTidy : A 3D Gaussian Splatting Household Tidying Benchmark for Embodied Navigation and Action</td><td>[2511.14161](http://arxiv.org/pdf/2511.14161)</td><td>◆ Household tidying is an important application area, yet current benchmarks neither model user preferences nor support mobility, and they generalize poorly, making it hard to comprehensively assess integrated language-to-action capabilities.
+<tr><td>2025-11-19</td><td>RoboTidy : A 3D Gaussian Splatting Household Tidying Benchmark for Embodied Navigation and Action</td><td>[2511.14161](http://arxiv.org/pdf/2511.14161)</td><td>◆ Household tidying is an important application area, yet current benchmarks neither model user preferences nor support mobility, and they generalize poorly, making it hard to comprehensively assess integrated language-to-action capabilities.
 ◆ To address this, we propose RoboTidy, a unified benchmark for language-guided household tidying that supports Vision-Language-Action (VLA) and Vision-Language-Navigation (VLN) training and evaluation.
 ◆ RoboTidy provides 500 photorealistic 3D Gaussian Splatting (3DGS) household scenes (covering 500 objects and containers) with collisions, formulates tidying as an &quot;Action (Object, Container)&quot; list, and supplies 6.4k high-quality manipulation demonstration trajectories and 1.5k naviagtion trajectories to support both few-shot and large-scale training.</td></tr>
 <tr><td>2025-11-17</td><td>Training-Free Multi-View Extension of IC-Light for Textual Position-Aware Scene Relighting</td><td>[2511.13684](http://arxiv.org/pdf/2511.13684)</td><td>◆ We introduce GS-Light, an efficient, textual position-aware pipeline for text-guided relighting of 3D scenes represented via Gaussian Splatting (3DGS).
@@ -2023,7 +2065,7 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <tr><td>2025-11-17</td><td>SF-Recon: Simplification-Free Lightweight Building Reconstruction via 3D Gaussian Splatting</td><td>[2511.13278](http://arxiv.org/pdf/2511.13278)</td><td>◆ Lightweight building surface models are crucial for digital city, navigation, and fast geospatial analytics, yet conventional multi-view geometry pipelines remain cumbersome and quality-sensitive due to their reliance on dense reconstruction, meshing, and subsequent simplification.
 ◆ This work presents SF-Recon, a method that directly reconstructs lightweight building surfaces from multi-view images without post-hoc mesh simplification.
 ◆ We first train an initial 3D Gaussian Splatting (3DGS) field to obtain a view-consistent representation.</td></tr>
-<tr><td>2025-11-17</td><td>SymGS : Leveraging Local Symmetries for 3D Gaussian Splatting Compression</td><td>[2511.13264](http://arxiv.org/pdf/2511.13264)</td><td>◆ 3D Gaussian Splatting has emerged as a transformative technique in novel view synthesis, primarily due to its high rendering speed and photorealistic fidelity.
+<tr><td>2025-11-19</td><td>SymGS : Leveraging Local Symmetries for 3D Gaussian Splatting Compression</td><td>[2511.13264](http://arxiv.org/pdf/2511.13264)</td><td>◆ 3D Gaussian Splatting has emerged as a transformative technique in novel view synthesis, primarily due to its high rendering speed and photorealistic fidelity.
 ◆ However, its memory footprint scales rapidly with scene complexity, often reaching several gigabytes.
 ◆ Existing methods address this issue by introducing compression strategies that exploit primitive-level redundancy through similarity detection and quantization.</td></tr>
 <tr><td>2025-11-17</td><td>Beyond Darkness: Thermal-Supervised 3D Gaussian Splatting for Low-Light Novel View Synthesis</td><td>[2511.13011](http://arxiv.org/pdf/2511.13011)</td><td>◆ Under extremely low-light conditions, novel view synthesis (NVS) faces severe degradation in terms of geometry, color consistency, and radiometric stability.
@@ -3055,10 +3097,22 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-19</td><td>ShelfOcc: Native 3D Supervision beyond LiDAR for Vision-Based Occupancy Estimation</td><td>[2511.15396](http://arxiv.org/pdf/2511.15396)</td><td>◆ Recent progress in self- and weakly supervised occupancy estimation has largely relied on 2D projection or rendering-based supervision, which suffers from geometric inconsistencies and severe depth bleeding.
+◆ We thus introduce ShelfOcc, a vision-only method that overcomes these limitations without relying on LiDAR.
+◆ ShelfOcc brings supervision into native 3D space by generating metrically consistent semantic voxel labels from video, enabling true 3D supervision without any additional sensors or manual 3D annotations.</td></tr>
+<tr><td>2025-11-19</td><td>Learning Depth from Past Selves: Self-Evolution Contrast for Robust Depth Estimation</td><td>[2511.15167](http://arxiv.org/pdf/2511.15167)</td><td>◆ Self-supervised depth estimation has gained significant attention in autonomous driving and robotics.
+◆ However, existing methods exhibit substantial performance degradation under adverse weather conditions such as rain and fog, where reduced visibility critically impairs depth prediction.
+◆ To address this issue, we propose a novel self-evolution contrastive learning framework called SEC-Depth for self-supervised robust depth estimation tasks.</td></tr>
+<tr><td>2025-11-18</td><td>EGSA-PT:Edge-Guided Spatial Attention with Progressive Training for Monocular Depth Estimation and Segmentation of Transparent Objects</td><td>[2511.14970](http://arxiv.org/pdf/2511.14970)</td><td>◆ Transparent object perception remains a major challenge in computer vision research, as transparency confounds both depth estimation and semantic segmentation.
+◆ Recent work has explored multi-task learning frameworks to improve robustness, yet negative cross-task interactions often hinder performance.
+◆ In this work, we introduce Edge-Guided Spatial Attention (EGSA), a fusion mechanism designed to mitigate destructive interactions by incorporating boundary information into the fusion between semantic and geometric features.</td></tr>
+<tr><td>2025-11-18</td><td>Variability-selected AGN in dwarf galaxies: the incidence of AGN in dwarf and massive galaxies is similar</td><td>[2511.14842](http://arxiv.org/pdf/2511.14842)</td><td>◆ We use the VST-COSMOS survey to identify, via their optical broadband variability, 30 AGN in nearby (z&lt;0.4) dwarf (10^8 MSun &lt; M &lt; 10^10 MSun) galaxies.
+◆ VST-COSMOS offers a 1 deg^2 survey footprint, a single visit depth of 24.6 mag and 68 r-band visits spanning an eleven-year temporal baseline.
+◆ Compared to a control sample matched in stellar mass and redshift, the dwarf AGN population shows an elevated fraction of early-type galaxies but a similar fraction of interacting objects, suggesting that interactions do not play a significant role in triggering these AGN.</td></tr>
 <tr><td>2025-11-18</td><td>Zero-shot Synthetic Video Realism Enhancement via Structure-aware Denoising</td><td>[2511.14719](http://arxiv.org/pdf/2511.14719)</td><td>◆ We propose an approach to enhancing synthetic video realism, which can re-render synthetic videos from a simulator in photorealistic fashion.
 ◆ Our realism enhancement approach is a zero-shot framework that focuses on preserving the multi-level structures from synthetic videos into the enhanced one in both spatial and temporal domains, built upon a diffusion video foundational model without further fine-tuning.
 ◆ Specifically, we incorporate an effective modification to have the generation/denoising process conditioned on estimated structure-aware information from the synthetic video, such as depth maps, semantic maps, and edge maps, by an auxiliary model, rather than extracting the information from a simulator.</td></tr>
-<tr><td>2025-11-18</td><td>Decoupling Urban Food Accessibility Resilience during Disasters through Time-Series Analysis of Human Mobility and Power Outages</td><td>[2511.14706](http://arxiv.org/pdf/2511.14706)</td><td>◆ Disaster-induced power outages create cascading disruptions across urban lifelines, yet the timed coupling between grid failure and essential service access remains poorly quantified.
+<tr><td>2025-11-19</td><td>Decoupling Urban Food Accessibility Resilience during Disasters through Time-Series Analysis of Human Mobility and Power Outages</td><td>[2511.14706](http://arxiv.org/pdf/2511.14706)</td><td>◆ Disaster-induced power outages create cascading disruptions across urban lifelines, yet the timed coupling between grid failure and essential service access remains poorly quantified.
 ◆ Focusing on Hurricane Beryl in Houston (2024), this study integrates approximately 173000 15-minute outage records with over 1.25 million visits to 3187 food facilities to quantify how infrastructure performance and human access co-evolve.
 ◆ We construct daily indices for outage characteristics (intensity, duration) and food access metrics (redundancy, frequency, proximity), estimate cross-system lags through lagged correlations over zero to seven days, and identify recovery patterns using DTW k-means clustering.</td></tr>
 <tr><td>2025-11-18</td><td>SparseSurf: Sparse-View 3D Gaussian Splatting for Surface Reconstruction</td><td>[2511.14633](http://arxiv.org/pdf/2511.14633)</td><td>◆ Recent advances in optimizing Gaussian Splatting for scene geometry have enabled efficient reconstruction of detailed surfaces from images.
@@ -3070,7 +3124,7 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <tr><td>2025-11-18</td><td>Perception-aware Exploration for Consumer-grade UAVs</td><td>[2511.14393](http://arxiv.org/pdf/2511.14393)</td><td>◆ In our work, we extend the current state-of-the-art approach for autonomous multi-UAV exploration to consumer-level UAVs, such as the DJI Mini 3 Pro.
 ◆ We propose a pipeline that selects viewpoint pairs from which the depth can be estimated and plans the trajectory that satisfies motion constraints necessary for odometry estimation.
 ◆ For the multi-UAV exploration, we propose a semi-distributed communication scheme that distributes the workload in a balanced manner.</td></tr>
-<tr><td>2025-11-18</td><td>Cheating Stereo Matching in Full-scale: Physical Adversarial Attack against Binocular Depth Estimation in Autonomous Driving</td><td>[2511.14386](http://arxiv.org/pdf/2511.14386)</td><td>◆ Though deep neural models adopted to realize the perception of autonomous driving have proven vulnerable to adversarial examples, known attacks often leverage 2D patches and target mostly monocular perception.
+<tr><td>2025-11-19</td><td>Cheating Stereo Matching in Full-scale: Physical Adversarial Attack against Binocular Depth Estimation in Autonomous Driving</td><td>[2511.14386](http://arxiv.org/pdf/2511.14386)</td><td>◆ Though deep neural models adopted to realize the perception of autonomous driving have proven vulnerable to adversarial examples, known attacks often leverage 2D patches and target mostly monocular perception.
 ◆ Therefore, the effectiveness of Physical Adversarial Examples (PAEs) on stereo-based binocular depth estimation remains largely unexplored.
 ◆ To this end, we propose the first texture-enabled physical adversarial attack against stereo matching models in the context of autonomous driving.</td></tr>
 <tr><td>2025-11-18</td><td>QHSC: The Quasar Candidate Catalog for the Hyper Suprime-Cam Subaru Strategic Program</td><td>[2511.14369](http://arxiv.org/pdf/2511.14369)</td><td>◆ The Hyper Suprime-Cam Subaru Strategic Program (HSC-SSP) is a deep wide-field multi-band imaging survey consisting of three layers (Wide, Deep, and UltraDeep), with the Wide layer covering $\sim 1470$ deg$^2$ to a depth of $i \sim 26$ mag.
@@ -3936,4 +3990,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.19
+> 更新于: 2025.11.20
