@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.23)
+# SLAM领域最新论文 (2025.11.24)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-21</td><td>MonoSpheres: Large-Scale Monocular SLAM-Based UAV Exploration through Perception-Coupled Mapping and Planning</td><td>[2511.17299](http://arxiv.org/pdf/2511.17299)</td><td>◆ Autonomous exploration of unknown environments is a key capability for mobile robots, but it is largely unsolved for robots equipped with only a single monocular camera and no dense range sensors.
+◆ In this paper, we present a novel approach to monocular vision-based exploration that can safely cover large-scale unstructured indoor and outdoor 3D environments by explicitly accounting for the properties of a sparse monocular SLAM frontend in both mapping and planning.
+◆ The mapping module solves the problems of sparse depth data, free-space gaps, and large depth uncertainty by oversampling free space in texture-sparse areas and keeping track of obstacle position uncertainty.</td></tr>
+<tr><td>2025-11-21</td><td>SING3R-SLAM: Submap-based Indoor Monocular Gaussian SLAM with 3D Reconstruction Priors</td><td>[2511.17207](http://arxiv.org/pdf/2511.17207)</td><td>◆ Recent advances in dense 3D reconstruction enable the accurate capture of local geometry; however, integrating them into SLAM is challenging due to drift and redundant point maps, which limit efficiency and downstream tasks, such as novel view synthesis.
+◆ To address these issues, we propose SING3R-SLAM, a globally consistent and compact Gaussian-based dense RGB SLAM framework.
+◆ The key idea is to combine locally consistent 3D reconstructions with a unified global Gaussian representation that jointly refines scene geometry and camera poses, enabling efficient and versatile 3D mapping for multiple downstream applications.</td></tr>
 <tr><td>2025-11-20</td><td>CRISTAL: Real-time Camera Registration in Static LiDAR Scans using Neural Rendering</td><td>[2511.16349](http://arxiv.org/pdf/2511.16349)</td><td>◆ Accurate camera localization is crucial for robotics and Extended Reality (XR), enabling reliable navigation and alignment of virtual and real content.
 ◆ Existing visual methods often suffer from drift, scale ambiguity, and depend on fiducials or loop closure.
 ◆ This work introduces a real-time method for localizing a camera within a pre-captured, highly accurate colored LiDAR point cloud.</td></tr>
@@ -762,6 +768,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-21</td><td>IndustryNav: Exploring Spatial Reasoning of Embodied Agents in Dynamic Industrial Navigation</td><td>[2511.17384](http://arxiv.org/pdf/2511.17384)</td><td>◆ While Visual Large Language Models (VLLMs) show great promise as embodied agents, they continue to face substantial challenges in spatial reasoning.
+◆ Existing embodied benchmarks largely focus on passive, static household environments and evaluate only isolated capabilities, failing to capture holistic performance in dynamic, real-world complexity.
+◆ To fill this gap, we present IndustryNav, the first dynamic industrial navigation benchmark for active spatial reasoning.</td></tr>
 <tr><td>2025-11-20</td><td>CRISTAL: Real-time Camera Registration in Static LiDAR Scans using Neural Rendering</td><td>[2511.16349](http://arxiv.org/pdf/2511.16349)</td><td>◆ Accurate camera localization is crucial for robotics and Extended Reality (XR), enabling reliable navigation and alignment of virtual and real content.
 ◆ Existing visual methods often suffer from drift, scale ambiguity, and depend on fiducials or loop closure.
 ◆ This work introduces a real-time method for localizing a camera within a pre-captured, highly accurate colored LiDAR point cloud.</td></tr>
@@ -1640,6 +1649,36 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-21</td><td>SMILE: A Composite Lexical-Semantic Metric for Question-Answering Evaluation</td><td>[2511.17432](http://arxiv.org/pdf/2511.17432)</td><td>◆ Traditional evaluation metrics for textual and visual question answering, like ROUGE, METEOR, and Exact Match (EM), focus heavily on n-gram based lexical similarity, often missing the deeper semantic understanding needed for accurate assessment.
+◆ While measures like BERTScore and MoverScore leverage contextual embeddings to address this limitation, they lack flexibility in balancing sentence-level and keyword-level semantics and ignore lexical similarity, which remains important.
+◆ Large Language Model (LLM) based evaluators, though powerful, come with drawbacks like high costs, bias, inconsistency, and hallucinations.</td></tr>
+<tr><td>2025-11-21</td><td>SPEAR-1: Scaling Beyond Robot Demonstrations via 3D Understanding</td><td>[2511.17411](http://arxiv.org/pdf/2511.17411)</td><td>◆ Robotic Foundation Models (RFMs) hold great promise as generalist, end-to-end systems for robot control.
+◆ Yet their ability to generalize across new environments, tasks, and embodiments remains limited.
+◆ We argue that a major bottleneck lies in their foundations: most RFMs are built by fine-tuning internet-pretrained Vision-Language Models (VLMs).</td></tr>
+<tr><td>2025-11-21</td><td>ATAC: Augmentation-Based Test-Time Adversarial Correction for CLIP</td><td>[2511.17362](http://arxiv.org/pdf/2511.17362)</td><td>◆ Despite its remarkable success in zero-shot image-text matching, CLIP remains highly vulnerable to adversarial perturbations on images.
+◆ As adversarial fine-tuning is prohibitively costly, recent works explore various test-time defense strategies; however, these approaches still exhibit limited robustness.
+◆ In this work, we revisit this problem and propose a simple yet effective strategy: Augmentation-based Test-time Adversarial Correction (ATAC).</td></tr>
+<tr><td>2025-11-21</td><td>NoPe-NeRF++: Local-to-Global Optimization of NeRF with No Pose Prior</td><td>[2511.17322](http://arxiv.org/pdf/2511.17322)</td><td>◆ In this paper, we introduce NoPe-NeRF++, a novel local-to-global optimization algorithm for training Neural Radiance Fields (NeRF) without requiring pose priors.
+◆ Existing methods, particularly NoPe-NeRF, which focus solely on the local relationships within images, often struggle to recover accurate camera poses in complex scenarios.
+◆ To overcome the challenges, our approach begins with a relative pose initialization with explicit feature matching, followed by a local joint optimization to enhance the pose estimation for training a more robust NeRF representation.</td></tr>
+<tr><td>2025-11-21</td><td>Angular clustering and bias of photometric quasars in the Kilo-Degree Survey Data Release 4</td><td>[2511.17311](http://arxiv.org/pdf/2511.17311)</td><td>◆ We investigate the angular clustering and effective bias of photometrically selected quasars in the Kilo-Degree Survey Data Release 4 (KiDS DR4).
+◆ We update the previous photometric redshifts (photo-$z$s) of the KiDS quasars using Hybrid-z, a deep learning framework combining four-band KiDS images and nine-band KiDS+VIKING magnitudes.
+◆ Hybrid-z is trained on the latest Dark Energy Spectroscopic Instrument (DESI) DR1 and Sloan Digital Sky Survey (SDSS) DR17 quasars matching with KiDS, and achieves average bias $\langle δz \rangle &lt; 0.01$ and scatter $\sim 0.04(1 + z)$ on a test sample.</td></tr>
+<tr><td>2025-11-21</td><td>MuM: Multi-View Masked Image Modeling for 3D Vision</td><td>[2511.17309](http://arxiv.org/pdf/2511.17309)</td><td>◆ Self-supervised learning on images seeks to extract meaningful visual representations from unlabeled data.
+◆ When scaled to large datasets, this paradigm has achieved state-of-the-art performance and the resulting trained models such as DINOv3 have seen widespread adoption.
+◆ However, most prior efforts are optimized for semantic understanding rather than geometric reasoning.</td></tr>
+<tr><td>2025-11-21</td><td>Teager-Kaiser Energy Methods For EEG Feature Extraction In Biomedical Applications</td><td>[2511.17164](http://arxiv.org/pdf/2511.17164)</td><td>◆ Electroencephalography (EEG) signals are inherently non-linear, non-stationary, and vulnerable to noise sources, making the extraction of discriminative features a long-standing challenge.
+◆ In this work, we investigate the non-linear Teager-Kaiser Energy Operator (TKEO) for modeling the underlying energy dynamics of EEG in three representative tasks: motor imagery, emotion recognition, and epilepsy detection.
+◆ To accommodate the narrowband nature of the operator, we employ Gabor filterbanks to isolate canonical frequency bands, followed by the Energy Separation Algorithm to decompose the TKEO output into amplitude envelope and instantaneous frequency components.</td></tr>
+<tr><td>2025-11-21</td><td>Exploring the added value of pretherapeutic MR descriptors in predicting breast cancer pathologic complete response to neoadjuvant chemotherapy</td><td>[2511.17158](http://arxiv.org/pdf/2511.17158)</td><td>◆ Objectives: To evaluate the association between pretreatment MRI descriptors and breast cancer (BC) pathological complete response (pCR) to neoadjuvant chemotherapy (NAC).
+◆ Materials \&amp; Methods: Patients with BC treated by NAC with a breast MRI between 2016 and 2020 were included in this retrospective observational single-center study.
+◆ MR studies were described using the standardized BI-RADS and breast edema score on T2-weighted MRI.</td></tr>
+<tr><td>2025-11-21</td><td>UI-Styler: Ultrasound Image Style Transfer with Class-Aware Prompts for Cross-Device Diagnosis Using a Frozen Black-Box Inference Network</td><td>[2511.17155](http://arxiv.org/pdf/2511.17155)</td><td>◆ The appearance of ultrasound images varies across acquisition devices, causing domain shifts that degrade the performance of fixed black-box downstream inference models when reused.
+◆ To mitigate this issue, it is practical to develop unpaired image translation (UIT) methods that effectively align the statistical distributions between source and target domains, particularly under the constraint of a reused inference-blackbox setting.
+◆ However, existing UIT approaches often overlook class-specific semantic alignment during domain adaptation, resulting in misaligned content-class mappings that can impair diagnostic accuracy.</td></tr>
+<tr><td>2025-11-21</td><td>Towards Generative Design Using Optimal Transport for Shape Exploration and Solution Field Interpolation</td><td>[2511.17111](http://arxiv.org/pdf/2511.17111)</td><td>◆ Generative Design (GD) combines artificial intelligence (AI), physics-based modeling, and multi-objective optimization to autonomously explore and refine engineering designs.
+◆ Despite its promise in aerospace, automotive, and other high-performance applications, current GD methods face critical challenges: AI approaches require large datasets and often struggle to generalize; topology optimization is computationally intensive and difficult to extend to multiphysics problems; and model order reduction for evolving geometries remains underdeveloped.
+◆ To address these challenges, we introduce a unified, structure-preserving framework for GD based on optimal transport (OT), enabling simultaneous interpolation of complex geometries and their associated physical solution fields across evolving design spaces, even with non-matching meshes and substantial shape changes.</td></tr>
 <tr><td>2025-11-20</td><td>Dataset Distillation for Pre-Trained Self-Supervised Vision Models</td><td>[2511.16674](http://arxiv.org/pdf/2511.16674)</td><td>◆ The task of dataset distillation aims to find a small set of synthetic images such that training a model on them reproduces the performance of the same model trained on a much larger dataset of real samples.
 ◆ Existing distillation methods focus on synthesizing datasets that enable training randomly initialized models.
 ◆ In contrast, state-of-the-art vision approaches are increasingly building on large, pre-trained self-supervised models rather than training from scratch.</td></tr>
@@ -2092,6 +2131,15 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-21</td><td>Gradient-Driven Natural Selection for Compact 3D Gaussian Splatting</td><td>[2511.16980](http://arxiv.org/pdf/2511.16980)</td><td>◆ 3DGS employs a large number of Gaussian primitives to fit scenes, resulting in substantial storage and computational overhead.
+◆ Existing pruning methods rely on manually designed criteria or introduce additional learnable parameters, yielding suboptimal results.
+◆ To address this, we propose an natural selection inspired pruning framework that models survival pressure as a regularization gradient field applied to opacity, allowing the optimization gradients--driven by the goal of maximizing rendering quality--to autonomously determine which Gaussians to retain or prune.</td></tr>
+<tr><td>2025-11-21</td><td>One Walk is All You Need: Data-Efficient 3D RF Scene Reconstruction with Human Movements</td><td>[2511.16966](http://arxiv.org/pdf/2511.16966)</td><td>◆ Reconstructing 3D Radiance Field (RF) scenes through opaque obstacles is a long-standing goal, yet it is fundamentally constrained by a laborious data acquisition process requiring thousands of static measurements, which treats human motion as noise to be filtered.
+◆ This work introduces a new paradigm with a core objective: to perform fast, data-efficient, and high-fidelity RF reconstruction of occluded 3D static scenes, using only a single, brief human walk.
+◆ We argue that this unstructured motion is not noise, but is in fact an information-rich signal available for reconstruction.</td></tr>
+<tr><td>2025-11-20</td><td>Vorion: A RISC-V GPU with Hardware-Accelerated 3D Gaussian Rendering and Training</td><td>[2511.16831](http://arxiv.org/pdf/2511.16831)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently emerged as a foundational technique for real-time neural rendering, 3D scene generation, volumetric video (4D) capture.
+◆ However, its rendering and training impose massive computation, making real-time rendering on edge devices and real-time 4D reconstruction on workstations currently infeasible.
+◆ Given its fixed-function nature and similarity with traditional rasterization, 3DGS presents a strong case for dedicated hardware in the graphics pipeline of next-generation GPUs.</td></tr>
 <tr><td>2025-11-20</td><td>Optimizing 3D Gaussian Splattering for Mobile GPUs</td><td>[2511.16298](http://arxiv.org/pdf/2511.16298)</td><td>◆ Image-based 3D scene reconstruction, which transforms multi-view images into a structured 3D representation of the surrounding environment, is a common task across many modern applications.
 ◆ 3D Gaussian Splatting (3DGS) is a new paradigm to address this problem and offers considerable efficiency as compared to the previous methods.
 ◆ Motivated by this, and considering various benefits of mobile device deployment (data privacy, operating without internet connectivity, and potentially faster responses), this paper develops Texture3dgs, an optimized mapping of 3DGS for a mobile GPU.</td></tr>
@@ -3154,6 +3202,33 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-21</td><td>Learning Latent Transmission and Glare Maps for Lens Veiling Glare Removal</td><td>[2511.17353](http://arxiv.org/pdf/2511.17353)</td><td>◆ Beyond the commonly recognized optical aberrations, the imaging performance of compact optical systems-including single-lens and metalens designs-is often further degraded by veiling glare caused by stray-light scattering from non-ideal optical surfaces and coatings, particularly in complex real-world environments.
+◆ This compound degradation undermines traditional lens aberration correction yet remains underexplored.
+◆ A major challenge is that conventional scattering models (e.g., for dehazing) fail to fit veiling glare due to its spatial-varying and depth-independent nature.</td></tr>
+<tr><td>2025-11-21</td><td>FisheyeGaussianLift: BEV Feature Lifting for Surround-View Fisheye Camera Perception</td><td>[2511.17210](http://arxiv.org/pdf/2511.17210)</td><td>◆ Accurate BEV semantic segmentation from fisheye imagery remains challenging due to extreme non-linear distortion, occlusion, and depth ambiguity inherent to wide-angle projections.
+◆ We present a distortion-aware BEV segmentation framework that directly processes multi-camera high-resolution fisheye images,utilizing calibrated geometric unprojection and per-pixel depth distribution estimation.
+◆ Each image pixel is lifted into 3D space via Gaussian parameterization, predicting spatial means and anisotropic covariances to explicitly model geometric uncertainty.</td></tr>
+<tr><td>2025-11-21</td><td>SPAGS: Sparse-View Articulated Object Reconstruction from Single State via Planar Gaussian Splatting</td><td>[2511.17092](http://arxiv.org/pdf/2511.17092)</td><td>◆ Articulated objects are ubiquitous in daily environments, and their 3D reconstruction holds great significance across various fields.
+◆ However, existing articulated object reconstruction methods typically require costly inputs such as multi-stage and multi-view observations.
+◆ To address the limitations, we propose a category-agnostic articulated object reconstruction framework via planar Gaussian Splatting, which only uses sparse-view RGB images from a single state.</td></tr>
+<tr><td>2025-11-21</td><td>REArtGS++: Generalizable Articulation Reconstruction with Temporal Geometry Constraint via Planar Gaussian Splatting</td><td>[2511.17059](http://arxiv.org/pdf/2511.17059)</td><td>◆ Articulated objects are pervasive in daily environments, such as drawers and refrigerators.
+◆ Towards their part-level surface reconstruction and joint parameter estimation, REArtGS~\cite{wu2025reartgs} introduces a category-agnostic approach using multi-view RGB images at two different states.
+◆ However, we observe that REArtGS still struggles with screw-joint or multi-part objects and lacks geometric constraints for unseen states.</td></tr>
+<tr><td>2025-11-21</td><td>Parameter-Free Neural Lens Blur Rendering for High-Fidelity Composites</td><td>[2511.17014](http://arxiv.org/pdf/2511.17014)</td><td>◆ Consistent and natural camera lens blur is important for seamlessly blending 3D virtual objects into photographed real-scenes.
+◆ Since lens blur typically varies with scene depth, the placement of virtual objects and their corresponding blur levels significantly affect the visual fidelity of mixed reality compositions.
+◆ Existing pipelines often rely on camera parameters (e.g., focal length, focus distance, aperture size) and scene depth to compute the circle of confusion (CoC) for realistic lens blur rendering.</td></tr>
+<tr><td>2025-11-21</td><td>Stable Offline Hand-Eye Calibration for any Robot with Just One Mark</td><td>[2511.17001](http://arxiv.org/pdf/2511.17001)</td><td>◆ Imitation learning has achieved remarkable success in a variety of robotic tasks by learning a mapping function from camera-space observations to robot-space actions.
+◆ Recent work indicates that the use of robot-to-camera transformation information ({\ie}, camera extrinsics) benefits the learning process and produces better results.
+◆ However, camera extrinsics are oftentimes unavailable and estimation methods usually suffer from local minima and poor generalizations.</td></tr>
+<tr><td>2025-11-21</td><td>DepthFocus: Controllable Depth Estimation for See-Through Scenes</td><td>[2511.16993](http://arxiv.org/pdf/2511.16993)</td><td>◆ Depth in the real world is rarely singular.
+◆ Transmissive materials create layered ambiguities that confound conventional perception systems.
+◆ Existing models remain passive, attempting to estimate static depth maps anchored to the nearest surface, while humans actively shift focus to perceive a desired depth.</td></tr>
+<tr><td>2025-11-21</td><td>Senti-iFusion: An Integrity-centered Hierarchical Fusion Framework for Multimodal Sentiment Analysis under Uncertain Modality Missingness</td><td>[2511.16990](http://arxiv.org/pdf/2511.16990)</td><td>◆ Multimodal Sentiment Analysis (MSA) is critical for human-computer interaction but faces challenges when the modalities are incomplete or missing.
+◆ Existing methods often assume pre-defined missing modalities or fixed missing rates, limiting their real-world applicability.
+◆ To address this challenge, we propose Senti-iFusion, an integrity-centered hierarchical fusion framework capable of handling both inter- and intra-modality missingness simultaneously.</td></tr>
+<tr><td>2025-11-20</td><td>BOP-ASK: Object-Interaction Reasoning for Vision-Language Models</td><td>[2511.16857](http://arxiv.org/pdf/2511.16857)</td><td>◆ Vision Language Models (VLMs) have achieved impressive performance on spatial reasoning benchmarks, yet these evaluations mask critical weaknesses in understanding object interactions.
+◆ Current benchmarks test high level relationships (&#x27;left of,&#x27; &#x27;behind&#x27;, etc.) but ignore fine-grained spatial understanding needed for real world applications: precise 3D localization, physical compatibility between objects, object affordances and multi step spatial planning.
+◆ In this work, we present BOP-ASK, a novel large scale dataset for object interaction reasoning for both training and benchmarking.</td></tr>
 <tr><td>2025-11-20</td><td>Dexterity from Smart Lenses: Multi-Fingered Robot Manipulation with In-the-Wild Human Demonstrations</td><td>[2511.16661](http://arxiv.org/pdf/2511.16661)</td><td>◆ Learning multi-fingered robot policies from humans performing daily tasks in natural environments has long been a grand goal in the robotics community.
 ◆ Achieving this would mark significant progress toward generalizable robot manipulation in human environments, as it would reduce the reliance on labor-intensive robot data collection.
 ◆ Despite substantial efforts, progress toward this goal has been bottle-necked by the embodiment gap between humans and robots, as well as by difficulties in extracting relevant contextual and motion cues that enable learning of autonomous policies from in-the-wild human videos.</td></tr>
@@ -4071,4 +4146,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.23
+> 更新于: 2025.11.24
