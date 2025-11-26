@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.25)
+# SLAM领域最新论文 (2025.11.26)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>The origin of B-type runaway stars based on kinematics</td><td>[2511.20566](http://arxiv.org/pdf/2511.20566)</td><td>◆ Runaway stars depart their birthplaces with high peculiar velocities.
+◆ Two mechanisms are commonly invoked to explain their origin, the binary supernova scenario (BSS) and the dynamical ejection scenario (DES).
+◆ Investigating the kinematic properties of runaway stars is key to understanding their origins.We intend to investigate the origins of 39 B-type runaway stars from LAMOST using orbital traceback analysis.</td></tr>
+<tr><td>2025-11-25</td><td>AMB3R: Accurate Feed-forward Metric-scale 3D Reconstruction with Backend</td><td>[2511.20343](http://arxiv.org/pdf/2511.20343)</td><td>◆ We present AMB3R, a multi-view feed-forward model for dense 3D reconstruction on a metric-scale that addresses diverse 3D vision tasks.
+◆ The key idea is to leverage a sparse, yet compact, volumetric scene representation as our backend, enabling geometric reasoning with spatial compactness.
+◆ Although trained solely for multi-view reconstruction, we demonstrate that AMB3R can be seamlessly extended to uncalibrated visual odometry (online) or large-scale structure from motion without the need for task-specific fine-tuning or test-time optimization.</td></tr>
+<tr><td>2025-11-25</td><td>Dynamic-ICP: Doppler-Aware Iterative Closest Point Registration for Dynamic Scenes</td><td>[2511.20292](http://arxiv.org/pdf/2511.20292)</td><td>◆ Reliable odometry in highly dynamic environments remains challenging when it relies on ICP-based registration: ICP assumes near-static scenes and degrades in repetitive or low-texture geometry.
+◆ We introduce Dynamic-ICP, a Doppler-aware registration framework.
+◆ The method (i) estimates ego motion from per-point Doppler velocity via robust regression and builds a velocity filter, (ii) clusters dynamic objects and reconstructs object-wise translational velocities from ego-compensated radial measurements, (iii) predicts dynamic points with a constant-velocity model, and (iv) aligns scans using a compact objective that combines point-to-plane geometry residual with a translation-invariant, rotation-only Doppler residual.</td></tr>
+<tr><td>2025-11-25</td><td>Stellar Parameters of BOSS M dwarfs in SDSS-V DR19</td><td>[2511.20005](http://arxiv.org/pdf/2511.20005)</td><td>◆ We utilized the Stellar LAbel Machine (SLAM), a data-driven model based on Support Vector Regression, to derive stellar parameters ([Fe/H], $T_{\rm eff}$, and $\log{g}$) for SDSS-V M dwarfs using low-resolution optical spectra (R$\sim$2000) obtained with the BOSS spectrographs.
+◆ These parameters are calibrated using LAMOST F, G or K dwarf companions ([Fe/H]), and APOGEE Net ($T_{\rm eff}$ and $\log{g}$), respectively.
+◆ Comparisons of SLAM predicted [Fe/H] values between two components of M+M dwarfs wide binaries show no bias but with a scatter of 0.11 dex.</td></tr>
 <tr><td>2025-11-24</td><td>Multi-Agent Monocular Dense SLAM With 3D Reconstruction Priors</td><td>[2511.19031](http://arxiv.org/pdf/2511.19031)</td><td>◆ Monocular Simultaneous Localization and Mapping (SLAM) aims to estimate a robot&#x27;s pose while simultaneously reconstructing an unknown 3D scene using a single camera.
 ◆ While existing monocular SLAM systems generate detailed 3D geometry through dense scene representations, they are computationally expensive due to the need for iterative optimization.
 ◆ To address this challenge, MASt3R-SLAM utilizes learned 3D reconstruction priors, enabling more efficient and accurate estimation of both 3D structures and camera poses.</td></tr>
@@ -791,6 +803,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>Metric, inertially aligned monocular state estimation via kinetodynamic priors</td><td>[2511.20496](http://arxiv.org/pdf/2511.20496)</td><td>◆ Accurate state estimation for flexible robotic systems poses significant challenges, particular for platforms with dynamically deforming structures that invalidate rigid-body assumptions.
+◆ This paper tackles this problem and allows to extend existing rigid-body pose estimation methods to non-rigid systems.
+◆ Our approach hinges on two core assumptions: first, the elastic properties are captured by an injective deformation-force model, efficiently learned via a Multi-Layer Perceptron; second, we solve the platform&#x27;s inherently smooth motion using continuous-time B-spline kinematic models.</td></tr>
+<tr><td>2025-11-25</td><td>AMB3R: Accurate Feed-forward Metric-scale 3D Reconstruction with Backend</td><td>[2511.20343](http://arxiv.org/pdf/2511.20343)</td><td>◆ We present AMB3R, a multi-view feed-forward model for dense 3D reconstruction on a metric-scale that addresses diverse 3D vision tasks.
+◆ The key idea is to leverage a sparse, yet compact, volumetric scene representation as our backend, enabling geometric reasoning with spatial compactness.
+◆ Although trained solely for multi-view reconstruction, we demonstrate that AMB3R can be seamlessly extended to uncalibrated visual odometry (online) or large-scale structure from motion without the need for task-specific fine-tuning or test-time optimization.</td></tr>
 <tr><td>2025-11-24</td><td>AutoOdom: Learning Auto-regressive Proprioceptive Odometry for Legged Locomotion</td><td>[2511.18857](http://arxiv.org/pdf/2511.18857)</td><td>◆ Accurate proprioceptive odometry is fundamental for legged robot navigation in GPS-denied and visually degraded environments where conventional visual odometry systems fail.
 ◆ Current approaches face critical limitations: analytical filtering methods suffer from modeling uncertainties and cumulative drift, hybrid learning-filtering approaches remain constrained by their analytical components, while pure learning-based methods struggle with simulation-to-reality transfer and demand extensive real-world data collection.
 ◆ This paper introduces AutoOdom, a novel autoregressive proprioceptive odometry system that overcomes these challenges through an innovative two-stage training paradigm.</td></tr>
@@ -1063,6 +1081,24 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>Bootstrapping Physics-Grounded Video Generation through VLM-Guided Iterative Self-Refinement</td><td>[2511.20280](http://arxiv.org/pdf/2511.20280)</td><td>◆ Recent progress in video generation has led to impressive visual quality, yet current models still struggle to produce results that align with real-world physical principles.
+◆ To this end, we propose an iterative self-refinement framework that leverages large language models and vision-language models to provide physics-aware guidance for video generation.
+◆ Specifically, we introduce a multimodal chain-of-thought (MM-CoT) process that refines prompts based on feedback from physical inconsistencies, progressively enhancing generation quality.</td></tr>
+<tr><td>2025-11-25</td><td>Patch-Level Glioblastoma Subregion Classification with a Contrastive Learning-Based Encoder</td><td>[2511.20221](http://arxiv.org/pdf/2511.20221)</td><td>◆ The significant molecular and pathological heterogeneity of glioblastoma, an aggressive brain tumor, complicates diagnosis and patient stratification.
+◆ While traditional histopathological assessment remains the standard, deep learning offers a promising path toward objective and automated analysis of whole slide images.
+◆ For the BraTS-Path 2025 Challenge, we developed a method that fine-tunes a pre-trained Vision Transformer (ViT) encoder with a dedicated classification head on the official training dataset.</td></tr>
+<tr><td>2025-11-25</td><td>Robust 3D Brain MRI Inpainting with Random Masking Augmentation</td><td>[2511.20202](http://arxiv.org/pdf/2511.20202)</td><td>◆ The ASNR-MICCAI BraTS-Inpainting Challenge was established to mitigate dataset biases that limit deep learning models in the quantitative analysis of brain tumor MRI.
+◆ This paper details our submission to the 2025 challenge, a novel deep learning framework for synthesizing healthy tissue in 3D scans.
+◆ The core of our method is a U-Net architecture trained to inpaint synthetically corrupted regions, enhanced with a random masking augmentation strategy to improve generalization.</td></tr>
+<tr><td>2025-11-25</td><td>VICoT-Agent: A Vision-Interleaved Chain-of-Thought Framework for Interpretable Multimodal Reasoning and Scalable Remote Sensing Analysis</td><td>[2511.20085](http://arxiv.org/pdf/2511.20085)</td><td>◆ The current remote sensing image analysis task is increasingly evolving from traditional object recognition to complex intelligence reasoning, which places higher requirements on the model&#x27;s reasoning ability and the flexibility of tool invocation.
+◆ To this end, we propose a new multimodal agent framework, Vision-Interleaved Chain-of-Thought Framework (VICoT), which implements explicit multi-round reasoning by dynamically incorporating visual tools into the chain of thought.
+◆ Through a stack-based reasoning structure and a modular MCP-compatible tool suite, VICoT enables LLMs to efficiently perform multi-round, interleaved vision-language reasoning tasks with strong generalization and flexibility.We also propose the Reasoning Stack distillation method to migrate complex Agent behaviors to small, lightweight models, which ensures the reasoning capability while significantly reducing complexity.</td></tr>
+<tr><td>2025-11-24</td><td>HunyuanOCR Technical Report</td><td>[2511.19575](http://arxiv.org/pdf/2511.19575)</td><td>◆ This paper presents HunyuanOCR, a commercial-grade, open-source, and lightweight (1B parameters) Vision-Language Model (VLM) dedicated to OCR tasks.
+◆ The architecture comprises a Native Vision Transformer (ViT) and a lightweight LLM connected via an MLP adapter.
+◆ HunyuanOCR demonstrates superior performance, outperforming commercial APIs, traditional pipelines, and larger models (e.g., Qwen3-VL-4B).</td></tr>
+<tr><td>2025-11-24</td><td>The Determinant Ratio Matrix Approach to Solving 3D Matching and 2D Orthographic Projection Alignment Tasks</td><td>[2511.19511](http://arxiv.org/pdf/2511.19511)</td><td>◆ Pose estimation is a general problem in computer vision with wide applications.
+◆ The relative orientation of a 3D reference object can be determined from a 3D rotated version of that object, or from a projection of the rotated object to a 2D planar image.
+◆ This projection can be a perspective projection (the PnP problem) or an orthographic projection (the OnP problem).</td></tr>
 <tr><td>2025-11-24</td><td>Three-Dimensional Anatomical Data Generation Based on Artificial Neural Networks</td><td>[2511.19198](http://arxiv.org/pdf/2511.19198)</td><td>◆ Surgical planning and training based on machine learning requires a large amount of 3D anatomical models reconstructed from medical imaging, which is currently one of the major bottlenecks.
 ◆ Obtaining these data from real patients and during surgery is very demanding, if even possible, due to legal, ethical, and technical challenges.
 ◆ It is especially difficult for soft tissue organs with poor imaging contrast, such as the prostate.</td></tr>
@@ -1715,6 +1751,36 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>LocateAnything3D: Vision-Language 3D Detection with Chain-of-Sight</td><td>[2511.20648](http://arxiv.org/pdf/2511.20648)</td><td>◆ To act in the world, a model must name what it sees and know where it is in 3D.
+◆ Today&#x27;s vision-language models (VLMs) excel at open-ended 2D description and grounding, yet multi-object 3D detection remains largely missing from the VLM toolbox.
+◆ We present LocateAnything3D, a VLM-native recipe that casts 3D detection as a next-token prediction problem.</td></tr>
+<tr><td>2025-11-25</td><td>Unleashing the Power of Vision-Language Models for Long-Tailed Multi-Label Visual Recognition</td><td>[2511.20641](http://arxiv.org/pdf/2511.20641)</td><td>◆ Long-tailed multi-label visual recognition poses a significant challenge, as images typically contain multiple labels with highly imbalanced class distributions, leading to biased models that favor head classes while underperforming on tail classes.
+◆ Recent efforts have leveraged pre-trained vision-language models, such as CLIP, alongside long-tailed learning techniques to exploit rich visual-textual priors for improved performance.
+◆ However, existing methods often derive semantic inter-class relationships directly from imbalanced datasets, resulting in unreliable correlations for tail classes due to data scarcity.</td></tr>
+<tr><td>2025-11-25</td><td>Flash-DMD: Towards High-Fidelity Few-Step Image Generation with Efficient Distillation and Joint Reinforcement Learning</td><td>[2511.20549](http://arxiv.org/pdf/2511.20549)</td><td>◆ Diffusion Models have emerged as a leading class of generative models, yet their iterative sampling process remains computationally expensive.
+◆ Timestep distillation is a promising technique to accelerate generation, but it often requires extensive training and leads to image quality degradation.
+◆ Furthermore, fine-tuning these distilled models for specific objectives, such as aesthetic appeal or user preference, using Reinforcement Learning (RL) is notoriously unstable and easily falls into reward hacking.</td></tr>
+<tr><td>2025-11-25</td><td>Dance Style Classification using Laban-Inspired and Frequency-Domain Motion Features</td><td>[2511.20469](http://arxiv.org/pdf/2511.20469)</td><td>◆ Dance is an essential component of human culture and serves as a tool for conveying emotions and telling stories.
+◆ Identifying and distinguishing dance genres based on motion data is a complex problem in human activity recognition, as many styles share similar poses, gestures, and temporal motion patterns.
+◆ This work presents a lightweight framework for classifying dance styles that determines motion characteristics based on pose estimates extracted from videos.</td></tr>
+<tr><td>2025-11-25</td><td>STARFlow-V: End-to-End Video Generative Modeling with Normalizing Flow</td><td>[2511.20462](http://arxiv.org/pdf/2511.20462)</td><td>◆ Normalizing flows (NFs) are end-to-end likelihood-based generative models for continuous data, and have recently regained attention with encouraging progress on image generation.
+◆ Yet in the video generation domain, where spatiotemporal complexity and computational cost are substantially higher, state-of-the-art systems almost exclusively rely on diffusion-based models.
+◆ In this work, we revisit this design space by presenting STARFlow-V, a normalizing flow-based video generator with substantial benefits such as end-to-end learning, robust causal prediction, and native likelihood estimation.</td></tr>
+<tr><td>2025-11-25</td><td>Planar Josephson junctions for sensors and electronics:Different geometry, new functionality</td><td>[2511.20424](http://arxiv.org/pdf/2511.20424)</td><td>◆ Josephson junctions are key elements in superconducting electronics.
+◆ The most common type is the overlap (sandwich-type) junction, formed by vertically stacking two superconducting layers.
+◆ In contrast, planar junctions are fabricated without overlap, at the edge of two superconducting films within a single plane.</td></tr>
+<tr><td>2025-11-25</td><td>Uplifting Table Tennis: A Robust, Real-World Application for 3D Trajectory and Spin Estimation</td><td>[2511.20250](http://arxiv.org/pdf/2511.20250)</td><td>◆ Obtaining the precise 3D motion of a table tennis ball from standard monocular videos is a challenging problem, as existing methods trained on synthetic data struggle to generalize to the noisy, imperfect ball and table detections of the real world.
+◆ This is primarily due to the inherent lack of 3D ground truth trajectories and spin annotations for real-world video.
+◆ To overcome this, we propose a novel two-stage pipeline that divides the problem into a front-end perception task and a back-end 2D-to-3D uplifting task.</td></tr>
+<tr><td>2025-11-25</td><td>Restora-Flow: Mask-Guided Image Restoration with Flow Matching</td><td>[2511.20152](http://arxiv.org/pdf/2511.20152)</td><td>◆ Flow matching has emerged as a promising generative approach that addresses the lengthy sampling times associated with state-of-the-art diffusion models and enables a more flexible trajectory design, while maintaining high-quality image generation.
+◆ This capability makes it suitable as a generative prior for image restoration tasks.
+◆ Although current methods leveraging flow models have shown promising results in restoration, some still suffer from long processing times or produce over-smoothed results.</td></tr>
+<tr><td>2025-11-25</td><td>LungEvaty: A Scalable, Open-Source Transformer-based Deep Learning Model for Lung Cancer Risk Prediction in LDCT Screening</td><td>[2511.20116](http://arxiv.org/pdf/2511.20116)</td><td>◆ Lung cancer risk estimation is gaining increasing importance as more countries introduce population-wide screening programs using low-dose CT (LDCT).
+◆ As imaging volumes grow, scalable methods that can process entire lung volumes efficiently are essential to tap into the full potential of these large screening datasets.
+◆ Existing approaches either over-rely on pixel-level annotations, limiting scalability, or analyze the lung in fragments, weakening performance.</td></tr>
+<tr><td>2025-11-25</td><td>Unusual Thermally Induced Blueshift and Emission Amplification of Mn2+ ions Enable Filter-Free Luminescent Thermal Imaging</td><td>[2511.19993](http://arxiv.org/pdf/2511.19993)</td><td>◆ The shift from point-based thermal sensing to filter-free thermal imaging requires luminescent thermometers that exhibit pronounced and thermally driven spectral changes within spectral regions matching the sensitivity profiles of the R, G, and B channels of a digital camera.
+◆ In this work, we introduce such a system, enabled by the synergistic interplay between (i) thermal redistribution among the vibronic components of the 4T1 excited state of Mn2+ ions and (ii) thermally assisted population of this state via optical trap sites.
+◆ These combined processes result in a simultaneous thermal enhancement and blueshift of the Mn2+ emission band associated with the 4T1 -&gt; 6A1 electronic transition.</td></tr>
 <tr><td>2025-11-24</td><td>Breaking the Likelihood-Quality Trade-off in Diffusion Models by Merging Pretrained Experts</td><td>[2511.19434](http://arxiv.org/pdf/2511.19434)</td><td>◆ Diffusion models for image generation often exhibit a trade-off between perceptual sample quality and data likelihood: training objectives emphasizing high-noise denoising steps yield realistic images but poor likelihoods, whereas likelihood-oriented training overweights low-noise steps and harms visual fidelity.
 ◆ We introduce a simple plug-and-play sampling method that combines two pretrained diffusion experts by switching between them along the denoising trajectory.
 ◆ Specifically, we apply an image-quality expert at high noise levels to shape global structure, then switch to a likelihood expert at low noise levels to refine pixel statistics.</td></tr>
@@ -2229,6 +2295,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>Wanderland: Geometrically Grounded Simulation for Open-World Embodied AI</td><td>[2511.20620](http://arxiv.org/pdf/2511.20620)</td><td>◆ Reproducible closed-loop evaluation remains a major bottleneck in Embodied AI such as visual navigation.
+◆ A promising path forward is high-fidelity simulation that combines photorealistic sensor rendering with geometrically grounded interaction in complex, open-world urban environments.
+◆ Although recent video-3DGS methods ease open-world scene capturing, they are still unsuitable for benchmarking due to large visual and geometric sim-to-real gaps.</td></tr>
+<tr><td>2025-11-25</td><td>GS-Checker: Tampering Localization for 3D Gaussian Splatting</td><td>[2511.20354](http://arxiv.org/pdf/2511.20354)</td><td>◆ Recent advances in editing technologies for 3D Gaussian Splatting (3DGS) have made it simple to manipulate 3D scenes.
+◆ However, these technologies raise concerns about potential malicious manipulation of 3D content.
+◆ To avoid such malicious applications, localizing tampered regions becomes crucial.</td></tr>
 <tr><td>2025-11-24</td><td>DensifyBeforehand: LiDAR-assisted Content-aware Densification for Efficient and Quality 3D Gaussian Splatting</td><td>[2511.19294](http://arxiv.org/pdf/2511.19294)</td><td>◆ This paper addresses the limitations of existing 3D Gaussian Splatting (3DGS) methods, particularly their reliance on adaptive density control, which can lead to floating artifacts and inefficient resource usage.
 ◆ We propose a novel densify beforehand approach that enhances the initialization of 3D scenes by combining sparse LiDAR data with monocular depth estimation from corresponding RGB images.
 ◆ Our ROI-aware sampling scheme prioritizes semantically and geometrically important regions, yielding a dense point cloud that improves visual fidelity and computational efficiency.</td></tr>
@@ -3320,6 +3392,21 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>3D-Aware Multi-Task Learning with Cross-View Correlations for Dense Scene Understanding</td><td>[2511.20646](http://arxiv.org/pdf/2511.20646)</td><td>◆ This paper addresses the challenge of training a single network to jointly perform multiple dense prediction tasks, such as segmentation and depth estimation, i.e., multi-task learning (MTL).
+◆ Current approaches mainly capture cross-task relations in the 2D image space, often leading to unstructured features lacking 3D-awareness.
+◆ We argue that 3D-awareness is vital for modeling cross-task correlations essential for comprehensive scene understanding.</td></tr>
+<tr><td>2025-11-25</td><td>AMB3R: Accurate Feed-forward Metric-scale 3D Reconstruction with Backend</td><td>[2511.20343](http://arxiv.org/pdf/2511.20343)</td><td>◆ We present AMB3R, a multi-view feed-forward model for dense 3D reconstruction on a metric-scale that addresses diverse 3D vision tasks.
+◆ The key idea is to leverage a sparse, yet compact, volumetric scene representation as our backend, enabling geometric reasoning with spatial compactness.
+◆ Although trained solely for multi-view reconstruction, we demonstrate that AMB3R can be seamlessly extended to uncalibrated visual odometry (online) or large-scale structure from motion without the need for task-specific fine-tuning or test-time optimization.</td></tr>
+<tr><td>2025-11-25</td><td>SKEL-CF: Coarse-to-Fine Biomechanical Skeleton and Surface Mesh Recovery</td><td>[2511.20157](http://arxiv.org/pdf/2511.20157)</td><td>◆ Parametric 3D human models such as SMPL have driven significant advances in human pose and shape estimation, yet their simplified kinematics limit biomechanical realism.
+◆ The recently proposed SKEL model addresses this limitation by re-rigging SMPL with an anatomically accurate skeleton.
+◆ However, estimating SKEL parameters directly remains challenging due to limited training data, perspective ambiguities, and the inherent complexity of human articulation.</td></tr>
+<tr><td>2025-11-25</td><td>DeLightMono: Enhancing Self-Supervised Monocular Depth Estimation in Endoscopy by Decoupling Uneven Illumination</td><td>[2511.20058](http://arxiv.org/pdf/2511.20058)</td><td>◆ Self-supervised monocular depth estimation serves as a key task in the development of endoscopic navigation systems.
+◆ However, performance degradation persists due to uneven illumination inherent in endoscopic images, particularly in low-intensity regions.
+◆ Existing low-light enhancement techniques fail to effectively guide the depth network.</td></tr>
+<tr><td>2025-11-24</td><td>Towards Reconciling Reionization with JWST: The Role of Bright Galaxies and Strong Feedback</td><td>[2511.19600](http://arxiv.org/pdf/2511.19600)</td><td>◆ The elevated UV luminosity functions (UVLF) from recent James Webb Space Telescope (JWST) have challenged the viability of existing theoretical models.
+◆ To address this, we use a semi-analytical framework -- which couples a physically motivated source model derived from radiative-transfer hydrodynamic simulations of reionization with a Markov Chain Monte Carlo sampler -- to perform a joint calibration to JWST galaxy surveys (UVLF, $φ_{\rm UV}$ and UV luminosity density, $ρ_{\rm UV}$) and reionization-era observables (ionizing emissivity, $\dot{N}_{\rm ion}$, neutral hydrogen fraction, $x_{\rm HI}$, and Thomson optical depth, $τ$).
+◆ We find that models with weak feedback and a higher contribution from faint galaxies reproduce the reionization observables but struggle to match the elevated JWST UVLF at $z &gt; 9$.</td></tr>
 <tr><td>2025-11-24</td><td>Real-Time Object Tracking with On-Device Deep Learning for Adaptive Beamforming in Dynamic Acoustic Environments</td><td>[2511.19396](http://arxiv.org/pdf/2511.19396)</td><td>◆ Advances in object tracking and acoustic beamforming are driving new capabilities in surveillance, human-computer interaction, and robotics.
 ◆ This work presents an embedded system that integrates deep learning-based tracking with beamforming to achieve precise sound source localization and directional audio capture in dynamic environments.
 ◆ The approach combines single-camera depth estimation and stereo vision to enable accurate 3D localization of moving objects.</td></tr>
@@ -4287,4 +4374,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.25
+> 更新于: 2025.11.26
