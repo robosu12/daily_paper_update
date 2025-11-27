@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.26)
+# SLAM领域最新论文 (2025.11.27)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-25</td><td>Estimating Fog Parameters from a Sequence of Stereo Images</td><td>[2511.20865](http://arxiv.org/pdf/2511.20865)</td><td>◆ We propose a method which, given a sequence of stereo foggy images, estimates the parameters of a fog model and updates them dynamically.
+◆ In contrast with previous approaches, which estimate the parameters sequentially and thus are prone to error propagation, our algorithm estimates all the parameters simultaneously by solving a novel optimisation problem.
+◆ By assuming that fog is only locally homogeneous, our method effectively handles real-world fog, which is often globally inhomogeneous.</td></tr>
 <tr><td>2025-11-25</td><td>The origin of B-type runaway stars based on kinematics</td><td>[2511.20566](http://arxiv.org/pdf/2511.20566)</td><td>◆ Runaway stars depart their birthplaces with high peculiar velocities.
 ◆ Two mechanisms are commonly invoked to explain their origin, the binary supernova scenario (BSS) and the dynamical ejection scenario (DES).
 ◆ Investigating the kinematic properties of runaway stars is key to understanding their origins.We intend to investigate the origins of 39 B-type runaway stars from LAMOST using orbital traceback analysis.</td></tr>
@@ -34,7 +37,7 @@
 <tr><td>2025-11-25</td><td>Stellar Parameters of BOSS M dwarfs in SDSS-V DR19</td><td>[2511.20005](http://arxiv.org/pdf/2511.20005)</td><td>◆ We utilized the Stellar LAbel Machine (SLAM), a data-driven model based on Support Vector Regression, to derive stellar parameters ([Fe/H], $T_{\rm eff}$, and $\log{g}$) for SDSS-V M dwarfs using low-resolution optical spectra (R$\sim$2000) obtained with the BOSS spectrographs.
 ◆ These parameters are calibrated using LAMOST F, G or K dwarf companions ([Fe/H]), and APOGEE Net ($T_{\rm eff}$ and $\log{g}$), respectively.
 ◆ Comparisons of SLAM predicted [Fe/H] values between two components of M+M dwarfs wide binaries show no bias but with a scatter of 0.11 dex.</td></tr>
-<tr><td>2025-11-24</td><td>Multi-Agent Monocular Dense SLAM With 3D Reconstruction Priors</td><td>[2511.19031](http://arxiv.org/pdf/2511.19031)</td><td>◆ Monocular Simultaneous Localization and Mapping (SLAM) aims to estimate a robot&#x27;s pose while simultaneously reconstructing an unknown 3D scene using a single camera.
+<tr><td>2025-11-26</td><td>Multi-Agent Monocular Dense SLAM With 3D Reconstruction Priors</td><td>[2511.19031](http://arxiv.org/pdf/2511.19031)</td><td>◆ Monocular Simultaneous Localization and Mapping (SLAM) aims to estimate a robot&#x27;s pose while simultaneously reconstructing an unknown 3D scene using a single camera.
 ◆ While existing monocular SLAM systems generate detailed 3D geometry through dense scene representations, they are computationally expensive due to the need for iterative optimization.
 ◆ To address this challenge, MASt3R-SLAM utilizes learned 3D reconstruction priors, enabling more efficient and accurate estimation of both 3D structures and camera poses.</td></tr>
 <tr><td>2025-11-24</td><td>SP-VINS: A Hybrid Stereo Visual Inertial Navigation System based on Implicit Environmental Map</td><td>[2511.18756](http://arxiv.org/pdf/2511.18756)</td><td>◆ Filter-based visual inertial navigation system (VINS) has attracted mobile-robot researchers for the good balance between accuracy and efficiency, but its limited mapping quality hampers long-term high-accuracy state estimation.
@@ -801,6 +804,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-26</td><td>Dual-Agent Reinforcement Learning for Adaptive and Cost-Aware Visual-Inertial Odometry</td><td>[2511.21083](http://arxiv.org/pdf/2511.21083)</td><td>◆ Visual-Inertial Odometry (VIO) is a critical component for robust ego-motion estimation, enabling foundational capabilities such as autonomous navigation in robotics and real-time 6-DoF tracking for augmented reality.
+◆ Existing methods face a well-known trade-off: filter-based approaches are efficient but prone to drift, while optimization-based methods, though accurate, rely on computationally prohibitive Visual-Inertial Bundle Adjustment (VIBA) that is difficult to run on resource-constrained platforms.
+◆ Rather than removing VIBA altogether, we aim to reduce how often and how heavily it must be invoked.</td></tr>
+<tr><td>2025-11-25</td><td>Estimating Fog Parameters from a Sequence of Stereo Images</td><td>[2511.20865](http://arxiv.org/pdf/2511.20865)</td><td>◆ We propose a method which, given a sequence of stereo foggy images, estimates the parameters of a fog model and updates them dynamically.
+◆ In contrast with previous approaches, which estimate the parameters sequentially and thus are prone to error propagation, our algorithm estimates all the parameters simultaneously by solving a novel optimisation problem.
+◆ By assuming that fog is only locally homogeneous, our method effectively handles real-world fog, which is often globally inhomogeneous.</td></tr>
 <tr><td>2025-11-25</td><td>Metric, inertially aligned monocular state estimation via kinetodynamic priors</td><td>[2511.20496](http://arxiv.org/pdf/2511.20496)</td><td>◆ Accurate state estimation for flexible robotic systems poses significant challenges, particular for platforms with dynamically deforming structures that invalidate rigid-body assumptions.
 ◆ This paper tackles this problem and allows to extend existing rigid-body pose estimation methods to non-rigid systems.
 ◆ Our approach hinges on two core assumptions: first, the elastic properties are captured by an injective deformation-force model, efficiently learned via a Multi-Layer Perceptron; second, we solve the platform&#x27;s inherently smooth motion using continuous-time B-spline kinematic models.</td></tr>
@@ -1098,7 +1107,7 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <tr><td>2025-11-24</td><td>Three-Dimensional Anatomical Data Generation Based on Artificial Neural Networks</td><td>[2511.19198](http://arxiv.org/pdf/2511.19198)</td><td>◆ Surgical planning and training based on machine learning requires a large amount of 3D anatomical models reconstructed from medical imaging, which is currently one of the major bottlenecks.
 ◆ Obtaining these data from real patients and during surgery is very demanding, if even possible, due to legal, ethical, and technical challenges.
 ◆ It is especially difficult for soft tissue organs with poor imaging contrast, such as the prostate.</td></tr>
-<tr><td>2025-11-24</td><td>Multi-Agent Monocular Dense SLAM With 3D Reconstruction Priors</td><td>[2511.19031](http://arxiv.org/pdf/2511.19031)</td><td>◆ Monocular Simultaneous Localization and Mapping (SLAM) aims to estimate a robot&#x27;s pose while simultaneously reconstructing an unknown 3D scene using a single camera.
+<tr><td>2025-11-26</td><td>Multi-Agent Monocular Dense SLAM With 3D Reconstruction Priors</td><td>[2511.19031](http://arxiv.org/pdf/2511.19031)</td><td>◆ Monocular Simultaneous Localization and Mapping (SLAM) aims to estimate a robot&#x27;s pose while simultaneously reconstructing an unknown 3D scene using a single camera.
 ◆ While existing monocular SLAM systems generate detailed 3D geometry through dense scene representations, they are computationally expensive due to the need for iterative optimization.
 ◆ To address this challenge, MASt3R-SLAM utilizes learned 3D reconstruction priors, enabling more efficient and accurate estimation of both 3D structures and camera poses.</td></tr>
 <tr><td>2025-11-24</td><td>SP-VINS: A Hybrid Stereo Visual Inertial Navigation System based on Implicit Environmental Map</td><td>[2511.18756](http://arxiv.org/pdf/2511.18756)</td><td>◆ Filter-based visual inertial navigation system (VINS) has attracted mobile-robot researchers for the good balance between accuracy and efficiency, but its limited mapping quality hampers long-term high-accuracy state estimation.
@@ -1745,6 +1754,36 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-26</td><td>Uncertainty Quantification for Visual Object Pose Estimation</td><td>[2511.21666](http://arxiv.org/pdf/2511.21666)</td><td>◆ Quantifying the uncertainty of an object&#x27;s pose estimate is essential for robust control and planning.
+◆ Although pose estimation is a well-studied robotics problem, attaching statistically rigorous uncertainty is not well understood without strict distributional assumptions.
+◆ We develop distribution-free pose uncertainty bounds about a given pose estimate in the monocular setting.</td></tr>
+<tr><td>2025-11-26</td><td>Fast 3D Ultrasound Localization Microscopy via Projection-based Processing Framework</td><td>[2511.21647](http://arxiv.org/pdf/2511.21647)</td><td>◆ Three-dimensional ultrasound localization microscopy (ULM) enables comprehensive visualization of the vasculature, thereby improving diagnostic reliability.
+◆ Nevertheless, its clinical translation remains challenging, as the exponential growth in voxel count for full 3D reconstruction imposes heavy computational demands and extensive post-processing time.
+◆ In this row-column array (RCA)-based 3D in vivo pig kidney ULM study, we reformulate each step of the full 3D ULM pipeline, including beamforming, clutter filtering, motion estimation, microbubble separation and localization into a series of computational-efficient 2D operations, substantially reducing the number of voxels to be processed while maintaining comparable accuracy.</td></tr>
+<tr><td>2025-11-26</td><td>MoGAN: Improving Motion Quality in Video Diffusion via Few-Step Motion Adversarial Post-Training</td><td>[2511.21592](http://arxiv.org/pdf/2511.21592)</td><td>◆ Video diffusion models achieve strong frame-level fidelity but still struggle with motion coherence, dynamics and realism, often producing jitter, ghosting, or implausible dynamics.
+◆ A key limitation is that the standard denoising MSE objective provides no direct supervision on temporal consistency, allowing models to achieve low loss while still generating poor motion.
+◆ We propose MoGAN, a motion-centric post-training framework that improves motion realism without reward models or human preference data.</td></tr>
+<tr><td>2025-11-26</td><td>Semantic-Enhanced Feature Matching with Learnable Geometric Verification for Cross-Modal Neuron Registration</td><td>[2511.21452](http://arxiv.org/pdf/2511.21452)</td><td>◆ Accurately registering in-vivo two-photon and ex-vivo fluorescence micro-optical sectioning tomography images of individual neurons is critical for structure-function analysis in neuroscience.
+◆ This task is profoundly challenging due to a significant cross-modality appearance gap, the scarcity of annotated data and severe tissue deformations.
+◆ We propose a novel deep learning framework to address these issues.</td></tr>
+<tr><td>2025-11-26</td><td>TSGM: Regular and Irregular Time-series Generation using Score-based Generative Models</td><td>[2511.21335](http://arxiv.org/pdf/2511.21335)</td><td>◆ Score-based generative models (SGMs) have demonstrated unparalleled sampling quality and diversity in numerous fields, such as image generation, voice synthesis, and tabular data synthesis, etc.
+◆ Inspired by those outstanding results, we apply SGMs to synthesize time-series by learning its conditional score function.
+◆ To this end, we present a conditional score network for time-series synthesis, deriving a denoising score matching loss tailored for our purposes.</td></tr>
+<tr><td>2025-11-26</td><td>Unlocking Zero-shot Potential of Semi-dense Image Matching via Gaussian Splatting</td><td>[2511.21265](http://arxiv.org/pdf/2511.21265)</td><td>◆ Learning-based image matching critically depends on large-scale, diverse, and geometrically accurate training data.
+◆ 3D Gaussian Splatting (3DGS) enables photorealistic novel-view synthesis and thus is attractive for data generation.
+◆ However, its geometric inaccuracies and biased depth rendering currently prevent robust correspondence labeling.</td></tr>
+<tr><td>2025-11-26</td><td>From Diffusion to One-Step Generation: A Comparative Study of Flow-Based Models with Application to Image Inpainting</td><td>[2511.21215](http://arxiv.org/pdf/2511.21215)</td><td>◆ We present a comprehensive comparative study of three generative modeling paradigms: Denoising Diffusion Probabilistic Models (DDPM), Conditional Flow Matching (CFM), and MeanFlow.
+◆ While DDPM and CFM require iterative sampling, MeanFlow enables direct one-step generation by modeling the average velocity over time intervals.
+◆ We implement all three methods using a unified TinyUNet architecture (&lt;1.5M parameters) on CIFAR-10, demonstrating that CFM achieves an FID of 24.15 with 50 steps, significantly outperforming DDPM (FID 402.98).</td></tr>
+<tr><td>2025-11-26</td><td>Transformer Driven Visual Servoing and Dual Arm Impedance Control for Fabric Texture Matching</td><td>[2511.21203](http://arxiv.org/pdf/2511.21203)</td><td>◆ In this paper, we propose a method to align and place a fabric piece on top of another using a dual-arm manipulator and a grayscale camera, so that their surface textures are accurately matched.
+◆ We propose a novel control scheme that combines Transformer-driven visual servoing with dualarm impedance control.
+◆ This approach enables the system to simultaneously control the pose of the fabric piece and place it onto the underlying one while applying tension to keep the fabric piece flat.</td></tr>
+<tr><td>2025-11-26</td><td>Beyond Patch Aggregation: 3-Pass Pyramid Indexing for Vision-Enhanced Document Retrieval</td><td>[2511.21121](http://arxiv.org/pdf/2511.21121)</td><td>◆ Document centric RAG pipelines usually begin with OCR, followed by brittle heuristics for chunking, table parsing, and layout reconstruction.
+◆ These text first workflows are costly to maintain, sensitive to small layout shifts, and often lose the spatial cues that contain the answer.
+◆ Vision first retrieval has emerged as a strong alternative.</td></tr>
+<tr><td>2025-11-26</td><td>CLRecogEye : Curriculum Learning towards exploiting convolution features for Dynamic Iris Recognition</td><td>[2511.21097](http://arxiv.org/pdf/2511.21097)</td><td>◆ Iris authentication algorithms have achieved impressive recognition performance, making them highly promising for real-world applications such as border control, citizen identification, and both criminal investigations and commercial systems.
+◆ However, their robustness is still challenged by variations in rotation, scale, specular reflections, and defocus blur.
+◆ In addition, most existing approaches rely on straightforward point-to-point comparisons, typically using cosine or L2 distance, without effectively leveraging the spatio-spatial-temporal structure of iris patterns.</td></tr>
 <tr><td>2025-11-25</td><td>LocateAnything3D: Vision-Language 3D Detection with Chain-of-Sight</td><td>[2511.20648](http://arxiv.org/pdf/2511.20648)</td><td>◆ To act in the world, a model must name what it sees and know where it is in 3D.
 ◆ Today&#x27;s vision-language models (VLMs) excel at open-ended 2D description and grounding, yet multi-object 3D detection remains largely missing from the VLM toolbox.
 ◆ We present LocateAnything3D, a VLM-native recipe that casts 3D detection as a next-token prediction problem.</td></tr>
@@ -2287,6 +2326,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-26</td><td>Unlocking Zero-shot Potential of Semi-dense Image Matching via Gaussian Splatting</td><td>[2511.21265](http://arxiv.org/pdf/2511.21265)</td><td>◆ Learning-based image matching critically depends on large-scale, diverse, and geometrically accurate training data.
+◆ 3D Gaussian Splatting (3DGS) enables photorealistic novel-view synthesis and thus is attractive for data generation.
+◆ However, its geometric inaccuracies and biased depth rendering currently prevent robust correspondence labeling.</td></tr>
+<tr><td>2025-11-26</td><td>FaithFusion: Harmonizing Reconstruction and Generation via Pixel-wise Information Gain</td><td>[2511.21113](http://arxiv.org/pdf/2511.21113)</td><td>◆ In controllable driving-scene reconstruction and 3D scene generation, maintaining geometric fidelity while synthesizing visually plausible appearance under large viewpoint shifts is crucial.
+◆ However, effective fusion of geometry-based 3DGS and appearance-driven diffusion models faces inherent challenges, as the absence of pixel-wise, 3D-consistent editing criteria often leads to over-restoration and geometric drift.
+◆ To address these issues, we introduce \textbf{FaithFusion}, a 3DGS-diffusion fusion framework driven by pixel-wise Expected Information Gain (EIG).</td></tr>
 <tr><td>2025-11-25</td><td>Wanderland: Geometrically Grounded Simulation for Open-World Embodied AI</td><td>[2511.20620](http://arxiv.org/pdf/2511.20620)</td><td>◆ Reproducible closed-loop evaluation remains a major bottleneck in Embodied AI such as visual navigation.
 ◆ A promising path forward is high-fidelity simulation that combines photorealistic sensor rendering with geometrically grounded interaction in complex, open-world urban environments.
 ◆ Although recent video-3DGS methods ease open-world scene capturing, they are still unsuitable for benchmarking due to large visual and geometric sim-to-real gaps.</td></tr>
@@ -3382,13 +3427,28 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-26</td><td>Phase Estimation with Compressed Controlled Time Evolution</td><td>[2511.21225](http://arxiv.org/pdf/2511.21225)</td><td>◆ Many optimally scaling quantum simulation algorithms employ controlled time evolution of the Hamiltonian, which is typically the major bottleneck for their efficient implementation.
+◆ This work establishes a compression protocol for encoding the controlled time evolution operator of translationally invariant, local Hamiltonians into a quantum circuit.
+◆ It achieves a near-optimal scaling in circuit depth $\mathcal{O}(t \text{ polylog}(t N/ε))$, while reducing the control overhead from a multiplicative to an additive factor.</td></tr>
+<tr><td>2025-11-26</td><td>Nonconvex Penalized LAD Estimation in Partial Linear Models with DNNs: Asymptotic Analysis and Proximal Algorithms</td><td>[2511.21115](http://arxiv.org/pdf/2511.21115)</td><td>◆ This paper investigates the partial linear model by Least Absolute Deviation (LAD) regression.
+◆ We parameterize the nonparametric term using Deep Neural Networks (DNNs) and formulate a penalized LAD problem for estimation.
+◆ Specifically, our model exhibits the following challenges.</td></tr>
+<tr><td>2025-11-25</td><td>Estimating Fog Parameters from a Sequence of Stereo Images</td><td>[2511.20865](http://arxiv.org/pdf/2511.20865)</td><td>◆ We propose a method which, given a sequence of stereo foggy images, estimates the parameters of a fog model and updates them dynamically.
+◆ In contrast with previous approaches, which estimate the parameters sequentially and thus are prone to error propagation, our algorithm estimates all the parameters simultaneously by solving a novel optimisation problem.
+◆ By assuming that fog is only locally homogeneous, our method effectively handles real-world fog, which is often globally inhomogeneous.</td></tr>
+<tr><td>2025-11-25</td><td>MODEST: Multi-Optics Depth-of-Field Stereo Dataset</td><td>[2511.20853](http://arxiv.org/pdf/2511.20853)</td><td>◆ Reliable depth estimation under real optical conditions remains a core challenge for camera vision in systems such as autonomous robotics and augmented reality.
+◆ Despite recent progress in depth estimation and depth-of-field rendering, research remains constrained by the lack of large-scale, high-fidelity, real stereo DSLR datasets, limiting real-world generalization and evaluation of models trained on synthetic data as shown extensively in literature.
+◆ We present the first high-resolution (5472$\times$3648px) stereo DSLR dataset with 18000 images, systematically varying focal length and aperture across complex real scenes and capturing the optical realism and complexity of professional camera systems.</td></tr>
+<tr><td>2025-11-25</td><td>Closed-Loop Phase-Coherence Compensation for Superconducting Qubits Integrated Computational and Hardware Validation of the Aurora Method</td><td>[2511.20741](http://arxiv.org/pdf/2511.20741)</td><td>◆ We present an emulator-based and hardware feasibility study of Aurora-DD, a phase-coherence compensation method that integrates a sign-based feedback update of a global phase offset (Delta phi) with a fixed-depth XY8 dynamical decoupling (DD) scaffold.
+◆ The feedback optimization is performed offline on a calibrated emulator and the resulting Delta phi* is deployed as pre-calibrated phase compensation on hardware.
+◆ This represents an &quot;offline closed-loop, online open-loop&quot; feasibility demonstration.</td></tr>
 <tr><td>2025-11-25</td><td>3D-Aware Multi-Task Learning with Cross-View Correlations for Dense Scene Understanding</td><td>[2511.20646](http://arxiv.org/pdf/2511.20646)</td><td>◆ This paper addresses the challenge of training a single network to jointly perform multiple dense prediction tasks, such as segmentation and depth estimation, i.e., multi-task learning (MTL).
 ◆ Current approaches mainly capture cross-task relations in the 2D image space, often leading to unstructured features lacking 3D-awareness.
 ◆ We argue that 3D-awareness is vital for modeling cross-task correlations essential for comprehensive scene understanding.</td></tr>
 <tr><td>2025-11-25</td><td>AMB3R: Accurate Feed-forward Metric-scale 3D Reconstruction with Backend</td><td>[2511.20343](http://arxiv.org/pdf/2511.20343)</td><td>◆ We present AMB3R, a multi-view feed-forward model for dense 3D reconstruction on a metric-scale that addresses diverse 3D vision tasks.
 ◆ The key idea is to leverage a sparse, yet compact, volumetric scene representation as our backend, enabling geometric reasoning with spatial compactness.
 ◆ Although trained solely for multi-view reconstruction, we demonstrate that AMB3R can be seamlessly extended to uncalibrated visual odometry (online) or large-scale structure from motion without the need for task-specific fine-tuning or test-time optimization.</td></tr>
-<tr><td>2025-11-25</td><td>SKEL-CF: Coarse-to-Fine Biomechanical Skeleton and Surface Mesh Recovery</td><td>[2511.20157](http://arxiv.org/pdf/2511.20157)</td><td>◆ Parametric 3D human models such as SMPL have driven significant advances in human pose and shape estimation, yet their simplified kinematics limit biomechanical realism.
+<tr><td>2025-11-26</td><td>SKEL-CF: Coarse-to-Fine Biomechanical Skeleton and Surface Mesh Recovery</td><td>[2511.20157](http://arxiv.org/pdf/2511.20157)</td><td>◆ Parametric 3D human models such as SMPL have driven significant advances in human pose and shape estimation, yet their simplified kinematics limit biomechanical realism.
 ◆ The recently proposed SKEL model addresses this limitation by re-rigging SMPL with an anatomically accurate skeleton.
 ◆ However, estimating SKEL parameters directly remains challenging due to limited training data, perspective ambiguities, and the inherent complexity of human articulation.</td></tr>
 <tr><td>2025-11-25</td><td>DeLightMono: Enhancing Self-Supervised Monocular Depth Estimation in Endoscopy by Decoupling Uneven Illumination</td><td>[2511.20058](http://arxiv.org/pdf/2511.20058)</td><td>◆ Self-supervised monocular depth estimation serves as a key task in the development of endoscopic navigation systems.
@@ -4362,4 +4422,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.26
+> 更新于: 2025.11.27
