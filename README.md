@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.11.30)
+# SLAM领域最新论文 (2025.12.01)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-28</td><td>Robust 3DGS-based SLAM via Adaptive Kernel Smoothing</td><td>[2511.23221](http://arxiv.org/pdf/2511.23221)</td><td>◆ In this paper, we challenge the conventional notion in 3DGS-SLAM that rendering quality is the primary determinant of tracking accuracy.
+◆ We argue that, compared to solely pursuing a perfect scene representation, it is more critical to enhance the robustness of the rasterization process against parameter errors to ensure stable camera pose tracking.
+◆ To address this challenge, we propose a novel approach that leverages a smooth kernel strategy to enhance the robustness of 3DGS-based SLAM.</td></tr>
+<tr><td>2025-11-28</td><td>Design loads for wave impacts -- introducing the Probabilistic Adaptive Screening (PAS) method for predicting extreme non-linear loads on maritime structures</td><td>[2511.23156](http://arxiv.org/pdf/2511.23156)</td><td>◆ To ensure the safety of marine and coastal structures, extreme (design) values should be known at the design stage.
+◆ But for such complex systems, estimating the magnitude of events which are both non-linear and rare is extremely challenging, and involves considerable computational cost to capture the high-fidelity physics.
+◆ To address this challenge, we offer a new multi-fidelity screening method, Probabilistic Adaptive Screening (PAS), which accurately predicts extreme values of strongly non-linear wave-induced loads while minimising the required high-fidelity simulation duration.</td></tr>
+<tr><td>2025-11-28</td><td>DiskChunGS: Large-Scale 3D Gaussian SLAM Through Chunk-Based Memory Management</td><td>[2511.23030](http://arxiv.org/pdf/2511.23030)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have demonstrated impressive results for novel view synthesis with real-time rendering capabilities.
+◆ However, integrating 3DGS with SLAM systems faces a fundamental scalability limitation: methods are constrained by GPU memory capacity, restricting reconstruction to small-scale environments.
+◆ We present DiskChunGS, a scalable 3DGS SLAM system that overcomes this bottleneck through an out-of-core approach that partitions scenes into spatial chunks and maintains only active regions in GPU memory while storing inactive areas on disk.</td></tr>
+<tr><td>2025-11-28</td><td>Taming the Light: Illumination-Invariant Semantic 3DGS-SLAM</td><td>[2511.22968](http://arxiv.org/pdf/2511.22968)</td><td>◆ Extreme exposure degrades both the 3D map reconstruction and semantic segmentation accuracy, which is particularly detrimental to tightly-coupled systems.
+◆ To achieve illumination invariance, we propose a novel semantic SLAM framework with two designs.
+◆ First, the Intrinsic Appearance Normalization (IAN) module proactively disentangles the scene&#x27;s intrinsic properties, such as albedo, from transient lighting.</td></tr>
 <tr><td>2025-11-25</td><td>Estimating Fog Parameters from a Sequence of Stereo Images</td><td>[2511.20865](http://arxiv.org/pdf/2511.20865)</td><td>◆ We propose a method which, given a sequence of stereo foggy images, estimates the parameters of a fog model and updates them dynamically.
 ◆ In contrast with previous approaches, which estimate the parameters sequentially and thus are prone to error propagation, our algorithm estimates all the parameters simultaneously by solving a novel optimisation problem.
 ◆ By assuming that fog is only locally homogeneous, our method effectively handles real-world fog, which is often globally inhomogeneous.</td></tr>
@@ -806,6 +818,12 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-28</td><td>DiskChunGS: Large-Scale 3D Gaussian SLAM Through Chunk-Based Memory Management</td><td>[2511.23030](http://arxiv.org/pdf/2511.23030)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have demonstrated impressive results for novel view synthesis with real-time rendering capabilities.
+◆ However, integrating 3DGS with SLAM systems faces a fundamental scalability limitation: methods are constrained by GPU memory capacity, restricting reconstruction to small-scale environments.
+◆ We present DiskChunGS, a scalable 3DGS SLAM system that overcomes this bottleneck through an out-of-core approach that partitions scenes into spatial chunks and maintains only active regions in GPU memory while storing inactive areas on disk.</td></tr>
+<tr><td>2025-11-28</td><td>MARVO: Marine-Adaptive Radiance-aware Visual Odometry</td><td>[2511.22860](http://arxiv.org/pdf/2511.22860)</td><td>◆ Underwater visual localization remains challenging due to wavelength-dependent attenuation, poor texture, and non-Gaussian sensor noise.
+◆ We introduce MARVO, a physics-aware, learning-integrated odometry framework that fuses underwater image formation modeling, differentiable matching, and reinforcement-learning optimization.
+◆ At the front-end, we extend transformer-based feature matcher with a Physics Aware Radiance Adapter that compensates for color channel attenuation and contrast loss, yielding geometrically consistent feature correspondences under turbidity.</td></tr>
 <tr><td>2025-11-26</td><td>Dual-Agent Reinforcement Learning for Adaptive and Cost-Aware Visual-Inertial Odometry</td><td>[2511.21083](http://arxiv.org/pdf/2511.21083)</td><td>◆ Visual-Inertial Odometry (VIO) is a critical component for robust ego-motion estimation, enabling foundational capabilities such as autonomous navigation in robotics and real-time 6-DoF tracking for augmented reality.
 ◆ Existing methods face a well-known trade-off: filter-based approaches are efficient but prone to drift, while optimization-based methods, though accurate, rely on computationally prohibitive Visual-Inertial Bundle Adjustment (VIBA) that is difficult to run on resource-constrained platforms.
 ◆ Rather than removing VIBA altogether, we aim to reduce how often and how heavily it must be invoked.</td></tr>
@@ -1090,6 +1108,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-28</td><td>DiskChunGS: Large-Scale 3D Gaussian SLAM Through Chunk-Based Memory Management</td><td>[2511.23030](http://arxiv.org/pdf/2511.23030)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have demonstrated impressive results for novel view synthesis with real-time rendering capabilities.
+◆ However, integrating 3DGS with SLAM systems faces a fundamental scalability limitation: methods are constrained by GPU memory capacity, restricting reconstruction to small-scale environments.
+◆ We present DiskChunGS, a scalable 3DGS SLAM system that overcomes this bottleneck through an out-of-core approach that partitions scenes into spatial chunks and maintains only active regions in GPU memory while storing inactive areas on disk.</td></tr>
 <tr><td>2025-11-25</td><td>Bootstrapping Physics-Grounded Video Generation through VLM-Guided Iterative Self-Refinement</td><td>[2511.20280](http://arxiv.org/pdf/2511.20280)</td><td>◆ Recent progress in video generation has led to impressive visual quality, yet current models still struggle to produce results that align with real-world physical principles.
 ◆ To this end, we propose an iterative self-refinement framework that leverages large language models and vision-language models to provide physics-aware guidance for video generation.
 ◆ Specifically, we introduce a multimodal chain-of-thought (MM-CoT) process that refines prompts based on feedback from physical inconsistencies, progressively enhancing generation quality.</td></tr>
@@ -1760,6 +1781,36 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-28</td><td>Deep Learning for Restoring MPI System Matrices Using Simulated Training Data</td><td>[2511.23251](http://arxiv.org/pdf/2511.23251)</td><td>◆ Magnetic particle imaging reconstructs tracer distributions using a system matrix obtained through time-consuming, noise-prone calibration measurements.
+◆ Methods for addressing imperfections in measured system matrices increasingly rely on deep neural networks, yet curated training data remain scarce.
+◆ This study evaluates whether physics-based simulated system matrices can be used to train deep learning models for different system matrix restoration tasks, i.e., denoising, accelerated calibration, upsampling, and inpainting, that generalize to measured data.</td></tr>
+<tr><td>2025-11-28</td><td>Vision Bridge Transformer at Scale</td><td>[2511.23199](http://arxiv.org/pdf/2511.23199)</td><td>◆ We introduce Vision Bridge Transformer (ViBT), a large-scale instantiation of Brownian Bridge Models designed for conditional generation.
+◆ Unlike traditional diffusion models that transform noise into data, Bridge Models directly model the trajectory between inputs and outputs, creating an efficient data-to-data translation paradigm.
+◆ By scaling these models to 20B and 1.3B parameters, we demonstrate their effectiveness for image and video translation tasks.</td></tr>
+<tr><td>2025-11-28</td><td>Quantum spectroscopy of topological dynamics via a supersymmetric Hamiltonian</td><td>[2511.23169](http://arxiv.org/pdf/2511.23169)</td><td>◆ Topological data analysis (TDA) characterizes complex dynamics through global invariants, but classical computation becomes prohibitive for high-dimensional data.
+◆ We reinterpret time-domain dynamics as the eigenvalue spectrum of a supersymmetric (SUSY) Hamiltonian and thereby estimate topological descriptors through quantum spectroscopy.
+◆ While zero modes correspond to Betti numbers, we show that low-lying excited states quantify the stability of topological features.</td></tr>
+<tr><td>2025-11-28</td><td>REVEAL: Reasoning-enhanced Forensic Evidence Analysis for Explainable AI-generated Image Detection</td><td>[2511.23158](http://arxiv.org/pdf/2511.23158)</td><td>◆ With the rapid advancement of generative models, visually realistic AI-generated images have become increasingly difficult to distinguish from authentic ones, posing severe threats to social trust and information integrity.
+◆ Consequently, there is an urgent need for efficient and truly explainable image forensic methods.
+◆ Recent detection paradigms have shifted towards explainable forensics.</td></tr>
+<tr><td>2025-11-28</td><td>On Computational Aspects of Ordered Matching Problems</td><td>[2511.23093](http://arxiv.org/pdf/2511.23093)</td><td>◆ Ordered matchings, defined as graphs with linearly ordered vertices, where each vertex is connected to exactly one edge, play a crucial role in the area of ordered graphs and their homomorphisms.
+◆ Therefore, we consider related problems from the complexity point of view and determine their corresponding computational and parameterized complexities.
+◆ We show that the subgraph of ordered matchings problem is NP-complete and we prove that the problem of finding ordered homomorphisms between ordered matchings is NP-complete as well, implying NP-completeness of more generic problems.</td></tr>
+<tr><td>2025-11-28</td><td>Geodiffussr: Generative Terrain Texturing with Elevation Fidelity</td><td>[2511.23029](http://arxiv.org/pdf/2511.23029)</td><td>◆ Large-scale terrain generation remains a labor-intensive task in computer graphics.
+◆ We introduce Geodiffussr, a flow-matching pipeline that synthesizes text-guided texture maps while strictly adhering to a supplied Digital Elevation Map (DEM).
+◆ The core mechanism is multi-scale content aggregation (MCA): DEM features from a pretrained encoder are injected into UNet blocks at multiple resolutions to enforce global-to-local elevation consistency.</td></tr>
+<tr><td>2025-11-28</td><td>A Trainable Centrality Framework for Modern Data</td><td>[2511.22959](http://arxiv.org/pdf/2511.22959)</td><td>◆ Measuring how central or typical a data point is underpins robust estimation, ranking, and outlier detection, but classical depth notions become expensive and unstable in high dimensions and are hard to extend beyond Euclidean data.
+◆ We introduce Fused Unified centrality Score Estimation (FUSE), a neural centrality framework that operates on top of arbitrary representations.
+◆ FUSE combines a global head, trained from pairwise distance-based comparisons to learn an anchor-free centrality score, with a local head, trained by denoising score matching to approximate a smoothed log-density potential.</td></tr>
+<tr><td>2025-11-28</td><td>One-to-All Animation: Alignment-Free Character Animation and Image Pose Transfe</td><td>[2511.22940](http://arxiv.org/pdf/2511.22940)</td><td>◆ Recent advances in diffusion models have greatly improved pose-driven character animation.
+◆ However, existing methods are limited to spatially aligned reference-pose pairs with matched skeletal structures.
+◆ Handling reference-pose misalignment remains unsolved.</td></tr>
+<tr><td>2025-11-28</td><td>ViGG: Robust RGB-D Point Cloud Registration using Visual-Geometric Mutual Guidance</td><td>[2511.22908](http://arxiv.org/pdf/2511.22908)</td><td>◆ Point cloud registration is a fundamental task in 3D vision.
+◆ Most existing methods only use geometric information for registration.
+◆ Recently proposed RGB-D registration methods primarily focus on feature fusion or improving feature learning, which limits their ability to exploit image information and hinders their practical applicability.</td></tr>
+<tr><td>2025-11-28</td><td>Robust Indexing for Challenging Serial X-ray Diffraction Patterns</td><td>[2511.22875](http://arxiv.org/pdf/2511.22875)</td><td>◆ Serial crystallography experiments routinely produce thousands of diffraction patterns from crystals in random orientations.
+◆ To turn this stream of images into a usable dataset, each pattern must be indexed before integration and merging can proceed.
+◆ In practice, diffraction patterns may contain only a small number of reliable peaks, be contaminated by background or spuriously detected reflections, or arise from crystals with highly skewed unit cells.</td></tr>
 <tr><td>2025-11-26</td><td>Uncertainty Quantification for Visual Object Pose Estimation</td><td>[2511.21666](http://arxiv.org/pdf/2511.21666)</td><td>◆ Quantifying the uncertainty of an object&#x27;s pose estimate is essential for robust control and planning.
 ◆ Although pose estimation is a well-studied robotics problem, attaching statistically rigorous uncertainty is not well understood without strict distributional assumptions.
 ◆ We develop distribution-free pose uncertainty bounds about a given pose estimate in the monocular setting.</td></tr>
@@ -2334,6 +2385,30 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-28</td><td>Robust 3DGS-based SLAM via Adaptive Kernel Smoothing</td><td>[2511.23221](http://arxiv.org/pdf/2511.23221)</td><td>◆ In this paper, we challenge the conventional notion in 3DGS-SLAM that rendering quality is the primary determinant of tracking accuracy.
+◆ We argue that, compared to solely pursuing a perfect scene representation, it is more critical to enhance the robustness of the rasterization process against parameter errors to ensure stable camera pose tracking.
+◆ To address this challenge, we propose a novel approach that leverages a smooth kernel strategy to enhance the robustness of 3DGS-based SLAM.</td></tr>
+<tr><td>2025-11-28</td><td>DiskChunGS: Large-Scale 3D Gaussian SLAM Through Chunk-Based Memory Management</td><td>[2511.23030](http://arxiv.org/pdf/2511.23030)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have demonstrated impressive results for novel view synthesis with real-time rendering capabilities.
+◆ However, integrating 3DGS with SLAM systems faces a fundamental scalability limitation: methods are constrained by GPU memory capacity, restricting reconstruction to small-scale environments.
+◆ We present DiskChunGS, a scalable 3DGS SLAM system that overcomes this bottleneck through an out-of-core approach that partitions scenes into spatial chunks and maintains only active regions in GPU memory while storing inactive areas on disk.</td></tr>
+<tr><td>2025-11-28</td><td>MrGS: Multi-modal Radiance Fields with 3D Gaussian Splatting for RGB-Thermal Novel View Synthesis</td><td>[2511.22997](http://arxiv.org/pdf/2511.22997)</td><td>◆ Recent advances in Neural Radiance Fields (NeRFs) and 3D Gaussian Splatting (3DGS) have achieved considerable performance in RGB scene reconstruction.
+◆ However, multi-modal rendering that incorporates thermal infrared imagery remains largely underexplored.
+◆ Existing approaches tend to neglect distinctive thermal characteristics, such as heat conduction and the Lambertian property.</td></tr>
+<tr><td>2025-11-28</td><td>Taming the Light: Illumination-Invariant Semantic 3DGS-SLAM</td><td>[2511.22968](http://arxiv.org/pdf/2511.22968)</td><td>◆ Extreme exposure degrades both the 3D map reconstruction and semantic segmentation accuracy, which is particularly detrimental to tightly-coupled systems.
+◆ To achieve illumination invariance, we propose a novel semantic SLAM framework with two designs.
+◆ First, the Intrinsic Appearance Normalization (IAN) module proactively disentangles the scene&#x27;s intrinsic properties, such as albedo, from transient lighting.</td></tr>
+<tr><td>2025-11-27</td><td>Can Protective Watermarking Safeguard the Copyright of 3D Gaussian Splatting?</td><td>[2511.22262](http://arxiv.org/pdf/2511.22262)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a powerful representation for 3D scenes, widely adopted due to its exceptional efficiency and high-fidelity visual quality.
+◆ Given the significant value of 3DGS assets, recent works have introduced specialized watermarking schemes to ensure copyright protection and ownership verification.
+◆ However, can existing 3D Gaussian watermarking approaches genuinely guarantee robust protection of the 3D assets?</td></tr>
+<tr><td>2025-11-27</td><td>IE-SRGS: An Internal-External Knowledge Fusion Framework for High-Fidelity 3D Gaussian Splatting Super-Resolution</td><td>[2511.22233](http://arxiv.org/pdf/2511.22233)</td><td>◆ Reconstructing high-resolution (HR) 3D Gaussian Splatting (3DGS) models from low-resolution (LR) inputs remains challenging due to the lack of fine-grained textures and geometry.
+◆ Existing methods typically rely on pre-trained 2D super-resolution (2DSR) models to enhance textures, but suffer from 3D Gaussian ambiguity arising from cross-view inconsistencies and domain gaps inherent in 2DSR models.
+◆ We propose IE-SRGS, a novel 3DGS SR paradigm that addresses this issue by jointly leveraging the complementary strengths of external 2DSR priors and internal 3DGS features.</td></tr>
+<tr><td>2025-11-27</td><td>RemedyGS: Defend 3D Gaussian Splatting against Computation Cost Attacks</td><td>[2511.22147](http://arxiv.org/pdf/2511.22147)</td><td>◆ As a mainstream technique for 3D reconstruction, 3D Gaussian splatting (3DGS) has been applied in a wide range of applications and services.
+◆ Recent studies have revealed critical vulnerabilities in this pipeline and introduced computation cost attacks that lead to malicious resource occupancies and even denial-of-service (DoS) conditions, thereby hindering the reliable deployment of 3DGS.
+◆ In this paper, we propose the first effective and comprehensive black-box defense framework, named RemedyGS, against such computation cost attacks, safeguarding 3DGS reconstruction systems and services.</td></tr>
+<tr><td>2025-11-27</td><td>EAST: Environment-Aware Stylized Transition Along the Reality-Virtuality Continuum</td><td>[2511.22056](http://arxiv.org/pdf/2511.22056)</td><td>◆ In the Virtual Reality (VR) gaming industry, maintaining immersion during real-world interruptions remains a challenge, particularly during transitions along the reality-virtuality continuum (RVC).
+◆ Existing methods tend to rely on digital replicas or simple visual transitions, neglecting to address the aesthetic discontinuities between real and virtual environments, especially in highly stylized VR games.
+◆ This paper introduces the Environment-Aware Stylized Transition (EAST) framework, which employs a novel style-transferred 3D Gaussian Splatting (3DGS) technique to transfer real-world interruptions into the virtual environment with seamless aesthetic consistency.</td></tr>
 <tr><td>2025-11-26</td><td>Unlocking Zero-shot Potential of Semi-dense Image Matching via Gaussian Splatting</td><td>[2511.21265](http://arxiv.org/pdf/2511.21265)</td><td>◆ Learning-based image matching critically depends on large-scale, diverse, and geometrically accurate training data.
 ◆ 3D Gaussian Splatting (3DGS) enables photorealistic novel-view synthesis and thus is attractive for data generation.
 ◆ However, its geometric inaccuracies and biased depth rendering currently prevent robust correspondence labeling.</td></tr>
@@ -3437,6 +3512,36 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-11-28</td><td>COMPAS: A Distributed Multi-Party SWAP Test for Parallel Quantum Algorithms</td><td>[2511.23434](http://arxiv.org/pdf/2511.23434)</td><td>◆ The limited number of qubits per chip remains a critical bottleneck in quantum computing, motivating the use of distributed architectures that interconnect multiple quantum processing units (QPUs).
+◆ However, executing quantum algorithms across distributed systems requires careful co-design of algorithmic primitives and hardware architectures to manage circuit depth and entanglement overhead.
+◆ We identify multivariate trace estimation as a key subroutine that is naturally suited for distribution, and broadly useful in tasks such as estimating Rényi entropies, virtual cooling and distillation, and certain applications of quantum signal processing.</td></tr>
+<tr><td>2025-11-28</td><td>Detection of the Pairwise Kinematic Sunyaev-Zel&#x27;dovich Effect and Pairwise Velocity with DESI DR1 Galaxies and ACT DR6 and Planck CMB Data</td><td>[2511.23417](http://arxiv.org/pdf/2511.23417)</td><td>◆ We present a 9.3-sigma detection of the pairwise kinematic Sunyaev-Zeldovich (kSZ) effect by combining a sample of 913,286 Luminous Red Galaxies (LRGs) from the Dark Energy Spectroscopic Instrument Data Release 1 (DESI DR1) catalog and co-added Atacama Cosmology Telescope (ACT DR6) and Planck cosmic microwave background (CMB) temperature maps.
+◆ This represents the highest-significance pairwise kSZ measurement to date.
+◆ The analysis uses three ACT CMB temperature maps: co-added 150 GHz, total frequency maps, and a component-separated Internal Linear Combination (ILC) map, all of which cover 19,000 square degrees of the sky from Advanced ACTPol observations conducted between 2017 and 2022.</td></tr>
+<tr><td>2025-11-28</td><td>Geometry-Consistent 4D Gaussian Splatting for Sparse-Input Dynamic View Synthesis</td><td>[2511.23044](http://arxiv.org/pdf/2511.23044)</td><td>◆ Gaussian Splatting has been considered as a novel way for view synthesis of dynamic scenes, which shows great potential in AIoT applications such as digital twins.
+◆ However, recent dynamic Gaussian Splatting methods significantly degrade when only sparse input views are available, limiting their applicability in practice.
+◆ The issue arises from the incoherent learning of 4D geometry as input views decrease.</td></tr>
+<tr><td>2025-11-28</td><td>A Trainable Centrality Framework for Modern Data</td><td>[2511.22959](http://arxiv.org/pdf/2511.22959)</td><td>◆ Measuring how central or typical a data point is underpins robust estimation, ranking, and outlier detection, but classical depth notions become expensive and unstable in high dimensions and are hard to extend beyond Euclidean data.
+◆ We introduce Fused Unified centrality Score Estimation (FUSE), a neural centrality framework that operates on top of arbitrary representations.
+◆ FUSE combines a global head, trained from pairwise distance-based comparisons to learn an anchor-free centrality score, with a local head, trained by denoising score matching to approximate a smoothed log-density potential.</td></tr>
+<tr><td>2025-11-28</td><td>MARVO: Marine-Adaptive Radiance-aware Visual Odometry</td><td>[2511.22860](http://arxiv.org/pdf/2511.22860)</td><td>◆ Underwater visual localization remains challenging due to wavelength-dependent attenuation, poor texture, and non-Gaussian sensor noise.
+◆ We introduce MARVO, a physics-aware, learning-integrated odometry framework that fuses underwater image formation modeling, differentiable matching, and reinforcement-learning optimization.
+◆ At the front-end, we extend transformer-based feature matcher with a Physics Aware Radiance Adapter that compensates for color channel attenuation and contrast loss, yielding geometrically consistent feature correspondences under turbidity.</td></tr>
+<tr><td>2025-11-28</td><td>Threat-Aware UAV Dodging of Human-Thrown Projectiles with an RGB-D Camera</td><td>[2511.22847](http://arxiv.org/pdf/2511.22847)</td><td>◆ Uncrewed aerial vehicles (UAVs) performing tasks such as transportation and aerial photography are vulnerable to intentional projectile attacks from humans.
+◆ Dodging such a sudden and fast projectile poses a significant challenge for UAVs, requiring ultra-low latency responses and agile maneuvers.
+◆ Drawing inspiration from baseball, in which pitchers&#x27; body movements are analyzed to predict the ball&#x27;s trajectory, we propose a novel real-time dodging system that leverages an RGB-D camera.</td></tr>
+<tr><td>2025-11-27</td><td>Splat-SAP: Feed-Forward Gaussian Splatting for Human-Centered Scene with Scale-Aware Point Map Reconstruction</td><td>[2511.22704](http://arxiv.org/pdf/2511.22704)</td><td>◆ We present Splat-SAP, a feed-forward approach to render novel views of human-centered scenes from binocular cameras with large sparsity.
+◆ Gaussian Splatting has shown its promising potential in rendering tasks, but it typically necessitates per-scene optimization with dense input views.
+◆ Although some recent approaches achieve feed-forward Gaussian Splatting rendering through geometry priors obtained by multi-view stereo, such approaches still require largely overlapped input views to establish the geometry prior.</td></tr>
+<tr><td>2025-11-27</td><td>Emergent Extreme-View Geometry in 3D Foundation Models</td><td>[2511.22686](http://arxiv.org/pdf/2511.22686)</td><td>◆ 3D foundation models (3DFMs) have recently transformed 3D vision, enabling joint prediction of depths, poses, and point maps directly from images.
+◆ Yet their ability to reason under extreme, non-overlapping views remains largely unexplored.
+◆ In this work, we study their internal representations and find that 3DFMs exhibit an emergent understanding of extreme-view geometry, despite never being trained for such conditions.</td></tr>
+<tr><td>2025-11-27</td><td>Advances in electromagnetic techniques for subsurface infrastructure detection: A comprehensive review of methods, challenges, and innovations</td><td>[2511.22673](http://arxiv.org/pdf/2511.22673)</td><td>◆ This review paper explores the state-of-the-art in non-intrusive methods for detecting and characterising buried infrastructure, focusing on Electrical Resistivity Tomography (ERT), Infrared Thermography (IRT), and magnetometry, along with data fusion techniques and mathematical estimators.
+◆ ERT and IRT offer distinct advantages in subsurface imaging, while magnetometry provides omnidirectional measurements ideal for detecting ferrous targets.
+◆ Despite these benefits, each method has inherent limitations, such as challenges in depth estimation and difficulties in distinguishing between various subsurface objects.</td></tr>
+<tr><td>2025-11-27</td><td>Gaussians on Fire: High-Frequency Reconstruction of Flames</td><td>[2511.22459](http://arxiv.org/pdf/2511.22459)</td><td>◆ We propose a method to reconstruct dynamic fire in 3D from a limited set of camera views with a Gaussian-based spatiotemporal representation.
+◆ Capturing and reconstructing fire and its dynamics is highly challenging due to its volatile nature, transparent quality, and multitude of high-frequency features.
+◆ Despite these challenges, we aim to reconstruct fire from only three views, which consequently requires solving for under-constrained geometry.</td></tr>
 <tr><td>2025-11-26</td><td>Phase Estimation with Compressed Controlled Time Evolution</td><td>[2511.21225](http://arxiv.org/pdf/2511.21225)</td><td>◆ Many optimally scaling quantum simulation algorithms employ controlled time evolution of the Hamiltonian, which is typically the major bottleneck for their efficient implementation.
 ◆ This work establishes a compression protocol for encoding the controlled time evolution operator of translationally invariant, local Hamiltonians into a quantum circuit.
 ◆ It achieves a near-optimal scaling in circuit depth $\mathcal{O}(t \text{ polylog}(t N/ε))$, while reducing the control overhead from a multiplicative to an additive factor.</td></tr>
@@ -4434,4 +4539,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.11.30
+> 更新于: 2025.12.01
