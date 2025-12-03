@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.02)
+# SLAM领域最新论文 (2025.12.03)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-02</td><td>VIGS-SLAM: Visual Inertial Gaussian Splatting SLAM</td><td>[2512.02293](http://arxiv.org/pdf/2512.02293)</td><td>◆ We present VIGS-SLAM, a visual-inertial 3D Gaussian Splatting SLAM system that achieves robust real-time tracking and high-fidelity reconstruction.
+◆ Although recent 3DGS-based SLAM methods achieve dense and photorealistic mapping, their purely visual design degrades under motion blur, low texture, and exposure variations.
+◆ Our method tightly couples visual and inertial cues within a unified optimization framework, jointly refining camera poses, depths, and IMU states.</td></tr>
 <tr><td>2025-12-01</td><td>KM-ViPE: Online Tightly Coupled Vision-Language-Geometry Fusion for Open-Vocabulary Semantic SLAM</td><td>[2512.01889](http://arxiv.org/pdf/2512.01889)</td><td>◆ We present KM-ViPE (Knowledge Mapping Video Pose Engine), a real-time open-vocabulary SLAM framework for uncalibrated monocular cameras in dynamic environments.
 ◆ Unlike systems requiring depth sensors and offline calibration, KM-ViPE operates directly on raw RGB streams, making it ideal for ego-centric applications and harvesting internet-scale video data for training.
 ◆ KM-ViPE tightly couples DINO visual features with geometric constraints through a high-level features based adaptive robust kernel that handles both moving objects and movable static objects (e.g., moving furniture in ego-centric views).</td></tr>
@@ -834,6 +837,9 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-02</td><td>VIGS-SLAM: Visual Inertial Gaussian Splatting SLAM</td><td>[2512.02293](http://arxiv.org/pdf/2512.02293)</td><td>◆ We present VIGS-SLAM, a visual-inertial 3D Gaussian Splatting SLAM system that achieves robust real-time tracking and high-fidelity reconstruction.
+◆ Although recent 3DGS-based SLAM methods achieve dense and photorealistic mapping, their purely visual design degrades under motion blur, low texture, and exposure variations.
+◆ Our method tightly couples visual and inertial cues within a unified optimization framework, jointly refining camera poses, depths, and IMU states.</td></tr>
 <tr><td>2025-12-01</td><td>KM-ViPE: Online Tightly Coupled Vision-Language-Geometry Fusion for Open-Vocabulary Semantic SLAM</td><td>[2512.01889](http://arxiv.org/pdf/2512.01889)</td><td>◆ We present KM-ViPE (Knowledge Mapping Video Pose Engine), a real-time open-vocabulary SLAM framework for uncalibrated monocular cameras in dynamic environments.
 ◆ Unlike systems requiring depth sensors and offline calibration, KM-ViPE operates directly on raw RGB streams, making it ideal for ego-centric applications and harvesting internet-scale video data for training.
 ◆ KM-ViPE tightly couples DINO visual features with geometric constraints through a high-level features based adaptive robust kernel that handles both moving objects and movable static objects (e.g., moving furniture in ego-centric views).</td></tr>
@@ -1134,6 +1140,21 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-02</td><td>MagicQuillV2: Precise and Interactive Image Editing with Layered Visual Cues</td><td>[2512.03046](http://arxiv.org/pdf/2512.03046)</td><td>◆ We propose MagicQuill V2, a novel system that introduces a \textbf{layered composition} paradigm to generative image editing, bridging the gap between the semantic power of diffusion models and the granular control of traditional graphics software.
+◆ While diffusion transformers excel at holistic generation, their use of singular, monolithic prompts fails to disentangle distinct user intentions for content, position, and appearance.
+◆ To overcome this, our method deconstructs creative intent into a stack of controllable visual cues: a content layer for what to create, a spatial layer for where to place it, a structural layer for how it is shaped, and a color layer for its palette.</td></tr>
+<tr><td>2025-12-02</td><td>Polar Perspectives: Evaluating 2-D LiDAR Projections for Robust Place Recognition with Visual Foundation Models</td><td>[2512.02897](http://arxiv.org/pdf/2512.02897)</td><td>◆ This work presents a systematic investigation into how alternative LiDAR-to-image projections affect metric place recognition when coupled with a state-of-the-art vision foundation model.
+◆ We introduce a modular retrieval pipeline that controls for backbone, aggregation, and evaluation protocol, thereby isolating the influence of the 2-D projection itself.
+◆ Using consistent geometric and structural channels across multiple datasets and deployment scenarios, we identify the projection characteristics that most strongly determine discriminative power, robustness to environmental variation, and suitability for real-time autonomy.</td></tr>
+<tr><td>2025-12-02</td><td>VIGS-SLAM: Visual Inertial Gaussian Splatting SLAM</td><td>[2512.02293](http://arxiv.org/pdf/2512.02293)</td><td>◆ We present VIGS-SLAM, a visual-inertial 3D Gaussian Splatting SLAM system that achieves robust real-time tracking and high-fidelity reconstruction.
+◆ Although recent 3DGS-based SLAM methods achieve dense and photorealistic mapping, their purely visual design degrades under motion blur, low texture, and exposure variations.
+◆ Our method tightly couples visual and inertial cues within a unified optimization framework, jointly refining camera poses, depths, and IMU states.</td></tr>
+<tr><td>2025-12-01</td><td>Magnetoelectric effect in the mixed valence polyoxovanadate cage V$_{12}$</td><td>[2512.02215](http://arxiv.org/pdf/2512.02215)</td><td>◆ Development of spintronic and quantum computing devices increases demand for efficient, energy saving method of spin manipulation at molecular scale.
+◆ Polyoxovanadate molecular magnets being susceptible to both electric and magnetic fields may serve here as a good base material.
+◆ In this paper two isostructural anions [V$_{12}$As$_8$O$_{40}$(HCO$_2$)]$^{n-}$ (with $n=3,5$) featuring two different mixed-valence states with itinerant and localized valence electrons are studied.</td></tr>
+<tr><td>2025-12-01</td><td>The Dependence of Earth Milankovitch Cycles on Martian Mass</td><td>[2512.02108](http://arxiv.org/pdf/2512.02108)</td><td>◆ The Milankovitch cycles of Earth result from gravitational interactions with other bodies in the Solar System.
+◆ These interactions lead to slow changes in the orbit and angular momentum vector of Earth, and correspondingly influence Earth&#x27;s climate evolution.
+◆ Several studies have shown that Mars may play a significant role in these Milankovitch cycles, such as the 2.4 Myr eccentricity cycle related to perihelion precession dynamics.</td></tr>
 <tr><td>2025-12-01</td><td>Register Any Point: Scaling 3D Point Cloud Registration by Flow Matching</td><td>[2512.01850](http://arxiv.org/pdf/2512.01850)</td><td>◆ Point cloud registration aligns multiple unposed point clouds into a common frame, and is a core step for 3D reconstruction and robot localization.
 ◆ In this work, we cast registration as conditional generation: a learned continuous, point-wise velocity field transports noisy points to a registered scene, from which the pose of each view is recovered.
 ◆ Unlike previous methods that conduct correspondence matching to estimate the transformation between a pair of point clouds and then optimize the pairwise transformations to realize multi-view registration, our model directly generates the registered point cloud.</td></tr>
@@ -1817,6 +1838,36 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-02</td><td>The Convex Matching Distance in Multiparameter Persistence</td><td>[2512.02944](http://arxiv.org/pdf/2512.02944)</td><td>◆ We introduce the convex matching distance, a novel metric for comparing functions with values in the real plane.
+◆ This metric measures the maximal bottleneck distance between the persistence diagrams associated with the convex combinations of the two function components.
+◆ Similarly to the traditional matching distance, the convex matching distance aggregates the information provided by two real-valued components.</td></tr>
+<tr><td>2025-12-02</td><td>Learning Multimodal Embeddings for Traffic Accident Prediction and Causal Estimation</td><td>[2512.02920](http://arxiv.org/pdf/2512.02920)</td><td>◆ We consider analyzing traffic accident patterns using both road network data and satellite images aligned to road graph nodes.
+◆ Previous work for predicting accident occurrences relies primarily on road network structural features while overlooking physical and environmental information from the road surface and its surroundings.
+◆ In this work, we construct a large multimodal dataset across six U.S.</td></tr>
+<tr><td>2025-12-02</td><td>Terahertz Emission from Spintronic Stack Nanodecorated with Drop-Cast Core-Shell Plasmonic Nanoparticles</td><td>[2512.02889](http://arxiv.org/pdf/2512.02889)</td><td>◆ Spintronic emitters promise to revolutionise terahertz (THz) sources by converting ultrafast optical pulses into broadband THz radiation without phase-matching constraints.
+◆ Because the conversion relies on spin-current injection across a nanometre-thin magnetic layer, its efficiency is ordinarily limited by weak optical coupling.
+◆ Here, we present a demonstration of a drop-casting based approach to introduce ultrafast plasmonic-mediated coupling: a sparse-layer of silica-gold core-shell nanoparticles is deposited directly onto a W/Fe/Pt spintronic trilayer.</td></tr>
+<tr><td>2025-12-02</td><td>A Comparative Study on How Data Normalization Affects Zero-Shot Generalization in Time Series Foundation Models</td><td>[2512.02833](http://arxiv.org/pdf/2512.02833)</td><td>◆ We investigate input normalization methods for Time-Series Foundation Models (TSFMs).
+◆ While normalization is well-studied in dataset-specific time-series models, it remains overlooked in TSFMs where generalization is critical.
+◆ Time-series data, unlike text or images, exhibits significant scale variation across domains and channels, coupled with non-stationarity, can undermine TSFM performance regardless of architectural complexity.</td></tr>
+<tr><td>2025-12-02</td><td>From Navigation to Refinement: Revealing the Two-Stage Nature of Flow-based Diffusion Models through Oracle Velocity</td><td>[2512.02826](http://arxiv.org/pdf/2512.02826)</td><td>◆ Flow-based diffusion models have emerged as a leading paradigm for training generative models across images and videos.
+◆ However, their memorization-generalization behavior remains poorly understood.
+◆ In this work, we revisit the flow matching (FM) objective and study its marginal velocity field, which admits a closed-form expression, allowing exact computation of the oracle FM target.</td></tr>
+<tr><td>2025-12-02</td><td>Direct observational evidence that higher-luminosity type 1 active galactic nuclei are most commonly triggered by galaxy mergers</td><td>[2512.02805](http://arxiv.org/pdf/2512.02805)</td><td>◆ We examine the connection between galaxy mergers and the triggering of active galactic nuclei (AGNs) using a sample of 614 type 1 AGNs at $z&lt;0.07$, along with a control sample of inactive galaxies matched to the AGNs for comparison.
+◆ We used tidal features, detected in deep images from the DESI Legacy Imaging Survey, as direct evidence of recent mergers.
+◆ We find that the fraction of type 1 AGN hosts with tidal features ($f_T$) is higher for AGNs with higher luminosities and (to a lesser extent) more massive black holes.</td></tr>
+<tr><td>2025-12-02</td><td>Exploring Definitions of Quality and Diversity in Sonic Measurement Spaces</td><td>[2512.02783](http://arxiv.org/pdf/2512.02783)</td><td>◆ Digital sound synthesis presents the opportunity to explore vast parameter spaces containing millions of configurations.
+◆ Quality diversity (QD) evolutionary algorithms offer a promising approach to harness this potential, yet their success hinges on appropriate sonic feature representations.
+◆ Existing QD methods predominantly employ handcrafted descriptors or supervised classifiers, potentially introducing unintended exploration biases and constraining discovery to familiar sonic regions.</td></tr>
+<tr><td>2025-12-02</td><td>Diffusion-Prior Split Gibbs Sampling for Synthetic Aperture Radar Imaging under Incomplete Measurements</td><td>[2512.02768](http://arxiv.org/pdf/2512.02768)</td><td>◆ Synthetic aperture radar (SAR) imaging plays a critical role in all-weather, day-and-night remote sensing, yet reconstruction is often challenged by noise, undersampling, and complex scattering scenarios.
+◆ Conventional methods, including matched filtering and sparsity-based compressed sensing, are limited in capturing intricate scene structures and frequently suffer from artifacts, elevated sidelobes, and loss of fine details.
+◆ Recent diffusion models have demonstrated superior capability in representing high-order priors; however, existing diffusion-based SAR methods still yield degraded reconstructions due to oversimplified likelihood approximations in guided sampling.</td></tr>
+<tr><td>2025-12-02</td><td>Beyond Paired Data: Self-Supervised UAV Geo-Localization from Reference Imagery Alone</td><td>[2512.02737](http://arxiv.org/pdf/2512.02737)</td><td>◆ Image-based localization in GNSS-denied environments is critical for UAV autonomy.
+◆ Existing state-of-the-art approaches rely on matching UAV images to geo-referenced satellite images; however, they typically require large-scale, paired UAV-satellite datasets for training.
+◆ Such data are costly to acquire and often unavailable, limiting their applicability.</td></tr>
+<tr><td>2025-12-02</td><td>GeoBridge: A Semantic-Anchored Multi-View Foundation Model Bridging Images and Text for Geo-Localization</td><td>[2512.02697](http://arxiv.org/pdf/2512.02697)</td><td>◆ Cross-view geo-localization infers a location by retrieving geo-tagged reference images that visually correspond to a query image.
+◆ However, the traditional satellite-centric paradigm limits robustness when high-resolution or up-to-date satellite imagery is unavailable.
+◆ It further underexploits complementary cues across views (e.g., drone, satellite, and street) and modalities (e.g., language and image).</td></tr>
 <tr><td>2025-12-01</td><td>SARL: Spatially-Aware Self-Supervised Representation Learning for Visuo-Tactile Perception</td><td>[2512.01908](http://arxiv.org/pdf/2512.01908)</td><td>◆ Contact-rich robotic manipulation requires representations that encode local geometry.
 ◆ Vision provides global context but lacks direct measurements of properties such as texture and hardness, whereas touch supplies these cues.
 ◆ Modern visuo-tactile sensors capture both modalities in a single fused image, yielding intrinsically aligned inputs that are well suited to manipulation tasks requiring visual and tactile information.</td></tr>
@@ -2449,6 +2500,18 @@ Coral以开源形式发布，为机器人软件集成挑战提供了可扩展的
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-02</td><td>EGGS: Exchangeable 2D/3D Gaussian Splatting for Geometry-Appearance Balanced Novel View Synthesis</td><td>[2512.02932](http://arxiv.org/pdf/2512.02932)</td><td>◆ Novel view synthesis (NVS) is crucial in computer vision and graphics, with wide applications in AR, VR, and autonomous driving.
+◆ While 3D Gaussian Splatting (3DGS) enables real-time rendering with high appearance fidelity, it suffers from multi-view inconsistencies, limiting geometric accuracy.
+◆ In contrast, 2D Gaussian Splatting (2DGS) enforces multi-view consistency but compromises texture details.</td></tr>
+<tr><td>2025-12-02</td><td>PolarGuide-GSDR: 3D Gaussian Splatting Driven by Polarization Priors and Deferred Reflection for Real-World Reflective Scenes</td><td>[2512.02664](http://arxiv.org/pdf/2512.02664)</td><td>◆ Polarization-aware Neural Radiance Fields (NeRF) enable novel view synthesis of specular-reflection scenes but face challenges in slow training, inefficient rendering, and strong dependencies on material/viewpoint assumptions.
+◆ However, 3D Gaussian Splatting (3DGS) enables real-time rendering yet struggles with accurate reflection reconstruction from reflection-geometry entanglement, adding a deferred reflection module introduces environment map dependence.
+◆ We address these limitations by proposing PolarGuide-GSDR, a polarization-forward-guided paradigm establishing a bidirectional coupling mechanism between polarization and 3DGS: first 3DGS&#x27;s geometric priors are leveraged to resolve polarization ambiguity, and then the refined polarization information cues are used to guide 3DGS&#x27;s normal and spherical harmonic representation.</td></tr>
+<tr><td>2025-12-02</td><td>VIGS-SLAM: Visual Inertial Gaussian Splatting SLAM</td><td>[2512.02293](http://arxiv.org/pdf/2512.02293)</td><td>◆ We present VIGS-SLAM, a visual-inertial 3D Gaussian Splatting SLAM system that achieves robust real-time tracking and high-fidelity reconstruction.
+◆ Although recent 3DGS-based SLAM methods achieve dense and photorealistic mapping, their purely visual design degrades under motion blur, low texture, and exposure variations.
+◆ Our method tightly couples visual and inertial cues within a unified optimization framework, jointly refining camera poses, depths, and IMU states.</td></tr>
+<tr><td>2025-12-01</td><td>SplatSuRe: Selective Super-Resolution for Multi-view Consistent 3D Gaussian Splatting</td><td>[2512.02172](http://arxiv.org/pdf/2512.02172)</td><td>◆ 3D Gaussian Splatting (3DGS) enables high-quality novel view synthesis, motivating interest in generating higher-resolution renders than those available during training.
+◆ A natural strategy is to apply super-resolution (SR) to low-resolution (LR) input views, but independently enhancing each image introduces multi-view inconsistencies, leading to blurry renders.
+◆ Prior methods attempt to mitigate these inconsistencies through learned neural components, temporally consistent video priors, or joint optimization on LR and SR views, but all uniformly apply SR across every image.</td></tr>
 <tr><td>2025-12-01</td><td>EGG-Fusion: Efficient 3D Reconstruction with Geometry-aware Gaussian Surfel on the Fly</td><td>[2512.01296](http://arxiv.org/pdf/2512.01296)</td><td>◆ Real-time 3D reconstruction is a fundamental task in computer graphics.
 ◆ Recently, differentiable-rendering-based SLAM system has demonstrated significant potential, enabling photorealistic scene rendering through learnable scene representations such as Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS).
 ◆ Current differentiable rendering methods face dual challenges in real-time computation and sensor noise sensitivity, leading to degraded geometric fidelity in scene reconstruction and limited practicality.</td></tr>
@@ -3589,6 +3652,18 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-02</td><td>DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling</td><td>[2512.03000](http://arxiv.org/pdf/2512.03000)</td><td>◆ Understanding the dynamic physical world, characterized by its evolving 3D structure, real-world motion, and semantic content with textual descriptions, is crucial for human-agent interaction and enables embodied agents to perceive and act within real environments with human-like capabilities.
+◆ However, existing datasets are often derived from limited simulators or utilize traditional Structurefrom-Motion for up-to-scale annotation and offer limited descriptive captioning, which restricts the capacity of foundation models to accurately interpret real-world dynamics from monocular videos, commonly sourced from the internet.
+◆ To bridge these gaps, we introduce DynamicVerse, a physical-scale, multimodal 4D world modeling framework for dynamic real-world video.</td></tr>
+<tr><td>2025-12-02</td><td>BEVDilation: LiDAR-Centric Multi-Modal Fusion for 3D Object Detection</td><td>[2512.02972](http://arxiv.org/pdf/2512.02972)</td><td>◆ Integrating LiDAR and camera information in the bird&#x27;s eye view (BEV) representation has demonstrated its effectiveness in 3D object detection.
+◆ However, because of the fundamental disparity in geometric accuracy between these sensors, indiscriminate fusion in previous methods often leads to degraded performance.
+◆ In this paper, we propose BEVDilation, a novel LiDAR-centric framework that prioritizes LiDAR information in the fusion.</td></tr>
+<tr><td>2025-12-02</td><td>DF-Mamba: Deformable State Space Modeling for 3D Hand Pose Estimation in Interactions</td><td>[2512.02727](http://arxiv.org/pdf/2512.02727)</td><td>◆ Modeling daily hand interactions often struggles with severe occlusions, such as when two hands overlap, which highlights the need for robust feature learning in 3D hand pose estimation (HPE).
+◆ To handle such occluded hand images, it is vital to effectively learn the relationship between local image features (e.g., for occluded joints) and global context (e.g., cues from inter-joints, inter-hands, or the scene).
+◆ However, most current 3D HPE methods still rely on ResNet for feature extraction, and such CNN&#x27;s inductive bias may not be optimal for 3D HPE due to its limited capability to model the global context.</td></tr>
+<tr><td>2025-12-01</td><td>DepthScape: Authoring 2.5D Designs via Depth Estimation, Semantic Understanding, and Geometry Extraction</td><td>[2512.02263](http://arxiv.org/pdf/2512.02263)</td><td>◆ 2.5D effects, such as occlusion and perspective foreshortening, enhance visual dynamics and realism by incorporating 3D depth cues into 2D designs.
+◆ However, creating such effects remains challenging and labor-intensive due to the complexity of depth perception.
+◆ We introduce DepthScape, a human-AI collaborative system that facilitates 2.5D effect creation by directly placing design elements into 3D reconstructions.</td></tr>
 <tr><td>2025-12-01</td><td>KM-ViPE: Online Tightly Coupled Vision-Language-Geometry Fusion for Open-Vocabulary Semantic SLAM</td><td>[2512.01889](http://arxiv.org/pdf/2512.01889)</td><td>◆ We present KM-ViPE (Knowledge Mapping Video Pose Engine), a real-time open-vocabulary SLAM framework for uncalibrated monocular cameras in dynamic environments.
 ◆ Unlike systems requiring depth sensors and offline calibration, KM-ViPE operates directly on raw RGB streams, making it ideal for ego-centric applications and harvesting internet-scale video data for training.
 ◆ KM-ViPE tightly couples DINO visual features with geometric constraints through a high-level features based adaptive robust kernel that handles both moving objects and movable static objects (e.g., moving furniture in ego-centric views).</td></tr>
@@ -4635,4 +4710,4 @@ FastAvatar以其卓越的重建质量与速度组合，极大地推动了3DGS在
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.02
+> 更新于: 2025.12.03
