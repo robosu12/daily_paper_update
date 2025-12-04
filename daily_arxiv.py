@@ -25,9 +25,9 @@ DEEPSEEK_API_KEY = "sk-179d350b272b4b4da85b426b6271c7b5"
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 
 # 全局过滤日期 - 修改这里调整过滤条件
-MIN_DATE = datetime.date(2025, 5, 1)
+MIN_DATE = datetime.date(2025, 12, 1)
 MIN_YEAR = 2025
-MIN_MONTH = 5
+MIN_MONTH = 12
 MIN_DAY = 1
 
 def load_config(config_file: str) -> dict:
