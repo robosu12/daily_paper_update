@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.04)
+# SLAM领域最新论文 (2025.12.05)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,10 +22,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-04</td><td>TEMPO-VINE: A Multi-Temporal Sensor Fusion Dataset for Localization and Mapping in Vineyards</td><td>[2512.04772](http://arxiv.org/pdf/2512.04772)</td><td>◆ In recent years, precision agriculture has been introducing groundbreaking innovations in the field, with a strong focus on automation.
+◆ However, research studies in robotics and autonomous navigation often rely on controlled simulations or isolated field trials.
+◆ The absence of a realistic common benchmark represents a significant limitation for the diffusion of robust autonomous systems under real complex agricultural conditions.</td></tr>
 <tr><td>2025-12-03</td><td>What Is The Best 3D Scene Representation for Robotics? From Geometric to Foundation Models</td><td>[2512.03422](http://arxiv.org/pdf/2512.03422)</td><td>◆ In this paper, we provide a comprehensive overview of existing scene representation methods for robotics, covering traditional representations such as point clouds, voxels, signed distance functions (SDF), and scene graphs, as well as more recent neural representations like Neural Radiance Fields (NeRF), 3D Gaussian Splatting (3DGS), and the emerging Foundation Models.
 ◆ While current SLAM and localization systems predominantly rely on sparse representations like point clouds and voxels, dense scene representations are expected to play a critical role in downstream tasks such as navigation and obstacle avoidance.
 ◆ Moreover, neural representations such as NeRF, 3DGS, and foundation models are well-suited for integrating high-level semantic features and language-based priors, enabling more comprehensive 3D scene understanding and embodied intelligence.</td></tr>
-<tr><td>2025-12-03</td><td>Surfel-LIO: Fast LiDAR-Inertial Odometry with Pre-computed Surfels and Hierarchical Z-order Voxel Hashing</td><td>[2512.03397](http://arxiv.org/pdf/2512.03397)</td><td>◆ LiDAR-inertial odometry (LIO) is an active research area, as it enables accurate real-time state estimation in GPS-denied environments.
+<tr><td>2025-12-04</td><td>Surfel-LIO: Fast LiDAR-Inertial Odometry with Pre-computed Surfels and Hierarchical Z-order Voxel Hashing</td><td>[2512.03397](http://arxiv.org/pdf/2512.03397)</td><td>◆ LiDAR-inertial odometry (LIO) is an active research area, as it enables accurate real-time state estimation in GPS-denied environments.
 ◆ Recent advances in map data structures and spatial indexing have significantly improved the efficiency of LIO systems.
 ◆ Nevertheless, we observe that two aspects may still leave room for improvement: (1) nearest neighbor search often requires examining multiple spatial units to gather sufficient points for plane fitting, and (2) plane parameters are typically recomputed at every iteration despite unchanged map geometry.</td></tr>
 <tr><td>2025-12-02</td><td>VIGS-SLAM: Visual Inertial Gaussian Splatting SLAM</td><td>[2512.02293](http://arxiv.org/pdf/2512.02293)</td><td>◆ We present VIGS-SLAM, a visual-inertial 3D Gaussian Splatting SLAM system that achieves robust real-time tracking and high-fidelity reconstruction.
@@ -72,6 +75,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-04</td><td>Shared Multi-modal Embedding Space for Face-Voice Association</td><td>[2512.04814](http://arxiv.org/pdf/2512.04814)</td><td>◆ The FAME 2026 challenge comprises two demanding tasks: training face-voice associations combined with a multilingual setting that includes testing on languages on which the model was not trained.
+◆ Our approach consists of separate uni-modal processing pipelines with general face and voice feature extraction, complemented by additional age-gender feature extraction to support prediction.
+◆ The resulting single-modal features are projected into a shared embedding space and trained with an Adaptive Angular Margin (AAM) loss.</td></tr>
+<tr><td>2025-12-04</td><td>TEMPO-VINE: A Multi-Temporal Sensor Fusion Dataset for Localization and Mapping in Vineyards</td><td>[2512.04772](http://arxiv.org/pdf/2512.04772)</td><td>◆ In recent years, precision agriculture has been introducing groundbreaking innovations in the field, with a strong focus on automation.
+◆ However, research studies in robotics and autonomous navigation often rely on controlled simulations or isolated field trials.
+◆ The absence of a realistic common benchmark represents a significant limitation for the diffusion of robust autonomous systems under real complex agricultural conditions.</td></tr>
 <tr><td>2025-12-02</td><td>MagicQuillV2: Precise and Interactive Image Editing with Layered Visual Cues</td><td>[2512.03046](http://arxiv.org/pdf/2512.03046)</td><td>◆ We propose MagicQuill V2, a novel system that introduces a \textbf{layered composition} paradigm to generative image editing, bridging the gap between the semantic power of diffusion models and the granular control of traditional graphics software.
 ◆ While diffusion transformers excel at holistic generation, their use of singular, monolithic prompts fails to disentangle distinct user intentions for content, position, and appearance.
 ◆ To overcome this, our method deconstructs creative intent into a stack of controllable visual cues: a content layer for what to create, a spatial layer for where to place it, a structural layer for how it is shaped, and a color layer for its palette.</td></tr>
@@ -84,7 +93,7 @@
 <tr><td>2025-12-01</td><td>Magnetoelectric effect in the mixed valence polyoxovanadate cage V$_{12}$</td><td>[2512.02215](http://arxiv.org/pdf/2512.02215)</td><td>◆ Development of spintronic and quantum computing devices increases demand for efficient, energy saving method of spin manipulation at molecular scale.
 ◆ Polyoxovanadate molecular magnets being susceptible to both electric and magnetic fields may serve here as a good base material.
 ◆ In this paper two isostructural anions [V$_{12}$As$_8$O$_{40}$(HCO$_2$)]$^{n-}$ (with $n=3,5$) featuring two different mixed-valence states with itinerant and localized valence electrons are studied.</td></tr>
-<tr><td>2025-12-01</td><td>The Dependence of Earth Milankovitch Cycles on Martian Mass</td><td>[2512.02108](http://arxiv.org/pdf/2512.02108)</td><td>◆ The Milankovitch cycles of Earth result from gravitational interactions with other bodies in the Solar System.
+<tr><td>2025-12-04</td><td>The Dependence of Earth Milankovitch Cycles on Martian Mass</td><td>[2512.02108](http://arxiv.org/pdf/2512.02108)</td><td>◆ The Milankovitch cycles of Earth result from gravitational interactions with other bodies in the Solar System.
 ◆ These interactions lead to slow changes in the orbit and angular momentum vector of Earth, and correspondingly influence Earth&#x27;s climate evolution.
 ◆ Several studies have shown that Mars may play a significant role in these Milankovitch cycles, such as the 2.4 Myr eccentricity cycle related to perihelion precession dynamics.</td></tr>
 <tr><td>2025-12-01</td><td>Register Any Point: Scaling 3D Point Cloud Registration by Flow Matching</td><td>[2512.01850](http://arxiv.org/pdf/2512.01850)</td><td>◆ Point cloud registration aligns multiple unposed point clouds into a common frame, and is a core step for 3D reconstruction and robot localization.
@@ -106,6 +115,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-04</td><td>Value Gradient Guidance for Flow Matching Alignment</td><td>[2512.05116](http://arxiv.org/pdf/2512.05116)</td><td>◆ While methods exist for aligning flow matching models--a popular and effective class of generative models--with human preferences, existing approaches fail to achieve both adaptation efficiency and probabilistically sound prior preservation.
+◆ In this work, we leverage the theory of optimal control and propose VGG-Flow, a gradient-matching-based method for finetuning pretrained flow matching models.
+◆ The key idea behind this algorithm is that the optimal difference between the finetuned velocity field and the pretrained one should be matched with the gradient field of a value function.</td></tr>
+<tr><td>2025-12-04</td><td>Deep infant brain segmentation from multi-contrast MRI</td><td>[2512.05114](http://arxiv.org/pdf/2512.05114)</td><td>◆ Segmentation of magnetic resonance images (MRI) facilitates analysis of human brain development by delineating anatomical structures.
+◆ However, in infants and young children, accurate segmentation is challenging due to development and imaging constraints.
+◆ Pediatric brain MRI is notoriously difficult to acquire, with inconsistent availability of imaging modalities, substantial non-head anatomy in the field of view, and frequent motion artifacts.</td></tr>
+<tr><td>2025-12-04</td><td>Deep Forcing: Training-Free Long Video Generation with Deep Sink and Participative Compression</td><td>[2512.05081](http://arxiv.org/pdf/2512.05081)</td><td>◆ Recent advances in autoregressive video diffusion have enabled real-time frame streaming, yet existing solutions still suffer from temporal repetition, drift, and motion deceleration.
+◆ We find that naively applying StreamingLLM-style attention sinks to video diffusion leads to fidelity degradation and motion stagnation.
+◆ To overcome this, we introduce Deep Forcing, which consists of two training-free mechanisms that address this without any fine-tuning.</td></tr>
+<tr><td>2025-12-04</td><td>Improving Posterior Inference of Galaxy Properties with Image-Based Conditional Flow Matching</td><td>[2512.05078](http://arxiv.org/pdf/2512.05078)</td><td>◆ Estimating physical properties of galaxies from wide-field surveys remains a central challenge in astrophysics.
+◆ While spectroscopy provides precise measurements, it is observationally expensive, and photometry discards morphological information that correlates with mass, star formation history, metallicity, and dust.
+◆ We present a conditional flow matching (CFM) framework that leverages pixel-level imaging alongside photometry to improve posterior inference of galaxy properties.</td></tr>
+<tr><td>2025-12-04</td><td>Generative Neural Video Compression via Video Diffusion Prior</td><td>[2512.05016](http://arxiv.org/pdf/2512.05016)</td><td>◆ We present GNVC-VD, the first DiT-based generative neural video compression framework built upon an advanced video generation foundation model, where spatio-temporal latent compression and sequence-level generative refinement are unified within a single codec.
+◆ Existing perceptual codecs primarily rely on pre-trained image generative priors to restore high-frequency details, but their frame-wise nature lacks temporal modeling and inevitably leads to perceptual flickering.
+◆ To address this, GNVC-VD introduces a unified flow-matching latent refinement module that leverages a video diffusion transformer to jointly enhance intra- and inter-frame latents through sequence-level denoising, ensuring consistent spatio-temporal details.</td></tr>
+<tr><td>2025-12-04</td><td>Environment-Aware Channel Inference via Cross-Modal Flow: From Multimodal Sensing to Wireless Channels</td><td>[2512.04966](http://arxiv.org/pdf/2512.04966)</td><td>◆ Accurate channel state information (CSI) underpins reliable and efficient wireless communication.
+◆ However, acquiring CSI via pilot estimation incurs substantial overhead, especially in massive multiple-input multiple-output (MIMO) systems operating in high-Doppler environments.
+◆ By leveraging the growing availability of environmental sensing data, this treatise investigates pilot-free channel inference that estimates complete CSI directly from multimodal observations, including camera images, LiDAR point clouds, and GPS coordinates.</td></tr>
+<tr><td>2025-12-04</td><td>LatentFM: A Latent Flow Matching Approach for Generative Medical Image Segmentation</td><td>[2512.04821](http://arxiv.org/pdf/2512.04821)</td><td>◆ Generative models have achieved remarkable progress with the emergence of flow matching (FM).
+◆ It has demonstrated strong generative capabilities and attracted significant attention as a simulation-free flow-based framework capable of learning exact data densities.
+◆ Motivated by these advances, we propose LatentFM, a flow-based model operating in the latent space for medical image segmentation.</td></tr>
+<tr><td>2025-12-04</td><td>Unveiling gravitational waves from core-collapse supernovae with MUSE</td><td>[2512.04804](http://arxiv.org/pdf/2512.04804)</td><td>◆ The core collapse of a massive star at the end of its life can give rise to one of the most powerful phenomena in the Universe.
+◆ Because of violent mass motions that take place during the explosion, core-collapse supernovae have been considered a potential source of detectable gravitational waveforms for decades.
+◆ However, their intrinsic stochasticity makes ineffective the use of modelled techniques such as matched filtering, forcing us to develop model independent technique to unveil their nature.</td></tr>
+<tr><td>2025-12-04</td><td>Live Avatar: Streaming Real-time Audio-Driven Avatar Generation with Infinite Length</td><td>[2512.04677](http://arxiv.org/pdf/2512.04677)</td><td>◆ Existing diffusion-based video generation methods are fundamentally constrained by sequential computation and long-horizon inconsistency, limiting their practical adoption in real-time, streaming audio-driven avatar synthesis.
+◆ We present Live Avatar, an algorithm-system co-designed framework that enables efficient, high-fidelity, and infinite-length avatar generation using a 14-billion-parameter diffusion model.
+◆ Our approach introduces Timestep-forcing Pipeline Parallelism (TPP), a distributed inference paradigm that pipelines denoising steps across multiple GPUs, effectively breaking the autoregressive bottleneck and ensuring stable, low-latency real-time streaming.</td></tr>
+<tr><td>2025-12-04</td><td>Spectral micro-CT for quantitative analysis of calcification in fibrocartilage</td><td>[2512.04662](http://arxiv.org/pdf/2512.04662)</td><td>◆ This work introduces a quantitative method for assessing calcification in fibrocartilage using spectral micro-computed tomography ($μ$CT).
+◆ Tissue samples of hip acetabular labrum from patients with osteoarthritis and femoroacetabular impingement were imaged with a laboratory-based spectral $μ$CT system equipped with a small-pixel photon-counting detector.
+◆ The detector operated with two energy thresholds, allowing the simultaneous acquisition of two CT datasets at different X-ray energies.</td></tr>
 <tr><td>2025-12-03</td><td>Leveraging topological data analysis to estimate bone strength from micro-CT as a surrogate for advanced imaging</td><td>[2512.03880](http://arxiv.org/pdf/2512.03880)</td><td>◆ Accurate bone strength prediction is essential for assessing fracture risk, particularly in aging populations and individuals with osteoporosis.
 ◆ Bone imaging has evolved from X-rays and DXA to clinical computed tomography (CT), and now to advanced modalities such as high-resolution peripheral quantitative CT and synchrotron radiation CT, which offer unprecedented resolution of bone microarchitecture.
 ◆ However, analytical methods have not kept pace with these imaging advances.</td></tr>
@@ -185,6 +224,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-04</td><td>RobustSplat++: Decoupling Densification, Dynamics, and Illumination for In-the-Wild 3DGS</td><td>[2512.04815](http://arxiv.org/pdf/2512.04815)</td><td>◆ 3D Gaussian Splatting (3DGS) has gained significant attention for its real-time, photo-realistic rendering in novel-view synthesis and 3D modeling.
+◆ However, existing methods struggle with accurately modeling in-the-wild scenes affected by transient objects and illuminations, leading to artifacts in the rendered images.
+◆ We identify that the Gaussian densification process, while enhancing scene detail capture, unintentionally contributes to these artifacts by growing additional Gaussians that model transient disturbances and illumination variations.</td></tr>
+<tr><td>2025-12-04</td><td>Gaussian Entropy Fields: Driving Adaptive Sparsity in 3D Gaussian Optimization</td><td>[2512.04542](http://arxiv.org/pdf/2512.04542)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a leading technique for novel view synthesis, demonstrating exceptional rendering efficiency.
+◆ \replaced[]{Well-reconstructed surfaces can be characterized by low configurational entropy, where dominant primitives clearly define surface geometry while redundant components are suppressed.}{The key insight is that well-reconstructed surfaces naturally exhibit low configurational entropy, where dominant primitives clearly define surface geometry while suppressing redundant components.} Three complementary technical contributions are introduced: (1) entropy-driven surface modeling via entropy minimization for low configurational entropy in primitive distributions; (2) adaptive spatial regularization using the Surface Neighborhood Redundancy Index (SNRI) and image entropy-guided weighting; (3) multi-scale geometric preservation through competitive cross-scale entropy alignment.
+◆ Extensive experiments demonstrate that GEF achieves competitive geometric precision on DTU and T\&amp;T benchmarks, while delivering superior rendering quality compared to existing methods on Mip-NeRF 360.</td></tr>
 <tr><td>2025-12-03</td><td>ReCamDriving: LiDAR-Free Camera-Controlled Novel Trajectory Video Generation</td><td>[2512.03621](http://arxiv.org/pdf/2512.03621)</td><td>◆ We propose ReCamDriving, a purely vision-based, camera-controlled novel-trajectory video generation framework.
 ◆ While repair-based methods fail to restore complex artifacts and LiDAR-based approaches rely on sparse and incomplete cues, ReCamDriving leverages dense and scene-complete 3DGS renderings for explicit geometric guidance, achieving precise camera-controllable generation.
 ◆ To mitigate overfitting to restoration behaviors when conditioned on 3DGS renderings, ReCamDriving adopts a two-stage training paradigm: the first stage uses camera poses for coarse control, while the second stage incorporates 3DGS renderings for fine-grained viewpoint and geometric guidance.</td></tr>
@@ -219,6 +264,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-04</td><td>Ground state energy and phase transitions of Long-range XXZ using VQE</td><td>[2512.04615](http://arxiv.org/pdf/2512.04615)</td><td>◆ The variational quantum eigen solver (VQE), has been widely used to find the ground state energy of different Hamiltonians with no analytical solutions and are classically difficult to compute.
+◆ In our work, we have used VQE to identify the phase transition boundary for an infinite order phase transition.
+◆ We use long-range XXZ (LRXXZ) chain for our study.</td></tr>
+<tr><td>2025-12-04</td><td>Supramolecular approach-based intermolecular interaction energy calculations using quantum phase estimation algorithm</td><td>[2512.04587](http://arxiv.org/pdf/2512.04587)</td><td>◆ Accurate computation of non-covalent, intermolecular interaction energies is important to understand various chemical phenomena, and quantum computers are anticipated to accelerate it.
+◆ Although the state-of-the-art quantum computers are still noisy and intermediate-scale ones, development of theoretical frameworks those are expected to work on a fault-tolerant quantum computer is an urgent issue.
+◆ In this work, we explore resource-efficient implementation of the quantum phase estimation-based complete active space configuration interaction (QPE-CASCI) calculations, with the aid of the second-order Møller--Plesset perturbation theory (MP2)-based active space selection with Boys localized orbitals.</td></tr>
+<tr><td>2025-12-04</td><td>COOPER: A Unified Model for Cooperative Perception and Reasoning in Spatial Intelligence</td><td>[2512.04563](http://arxiv.org/pdf/2512.04563)</td><td>◆ Visual Spatial Reasoning is crucial for enabling Multimodal Large Language Models (MLLMs) to understand object properties and spatial relationships, yet current models still struggle with 3D-aware reasoning.
+◆ Existing approaches typically enhance either perception, by augmenting RGB inputs with auxiliary modalities such as depth and segmentation, or reasoning, by training on spatial VQA datasets and applying reinforcement learning, and thus treat these two aspects in isolation.
+◆ In this work, we investigate whether a unified MLLM can develop an intrinsic ability to enhance spatial perception and, through adaptive interleaved reasoning, achieve stronger spatial intelligence.</td></tr>
+<tr><td>2025-12-04</td><td>MASE: Interpretable NLP Models via Model-Agnostic Saliency Estimation</td><td>[2512.04386](http://arxiv.org/pdf/2512.04386)</td><td>◆ Deep neural networks (DNNs) have made significant strides in Natural Language Processing (NLP), yet their interpretability remains elusive, particularly when evaluating their intricate decision-making processes.
+◆ Traditional methods often rely on post-hoc interpretations, such as saliency maps or feature visualization, which might not be directly applicable to the discrete nature of word data in NLP.
+◆ Addressing this, we introduce the Model-agnostic Saliency Estimation (MASE) framework.</td></tr>
+<tr><td>2025-12-04</td><td>MAFNet:Multi-frequency Adaptive Fusion Network for Real-time Stereo Matching</td><td>[2512.04358](http://arxiv.org/pdf/2512.04358)</td><td>◆ Existing stereo matching networks typically rely on either cost-volume construction based on 3D convolutions or deformation methods based on iterative optimization.
+◆ The former incurs significant computational overhead during cost aggregation, whereas the latter often lacks the ability to model non-local contextual information.
+◆ These methods exhibit poor compatibility on resource-constrained mobile devices, limiting their deployment in real-time applications.</td></tr>
+<tr><td>2025-12-03</td><td>Gamma-from-Mono: Road-Relative, Metric, Self-Supervised Monocular Geometry for Vehicular Applications</td><td>[2512.04303](http://arxiv.org/pdf/2512.04303)</td><td>◆ Accurate perception of the vehicle&#x27;s 3D surroundings, including fine-scale road geometry, such as bumps, slopes, and surface irregularities, is essential for safe and comfortable vehicle control.
+◆ However, conventional monocular depth estimation often oversmooths these features, losing critical information for motion planning and stability.
+◆ To address this, we introduce Gamma-from-Mono (GfM), a lightweight monocular geometry estimation method that resolves the projective ambiguity in single-camera reconstruction by decoupling global and local structure.</td></tr>
 <tr><td>2025-12-03</td><td>Unique Lives, Shared World: Learning from Single-Life Videos</td><td>[2512.04085](http://arxiv.org/pdf/2512.04085)</td><td>◆ We introduce the &quot;single-life&quot; learning paradigm, where we train a distinct vision model exclusively on egocentric videos captured by one individual.
 ◆ We leverage the multiple viewpoints naturally captured within a single life to learn a visual encoder in a self-supervised manner.
 ◆ Our experiments demonstrate three key findings.</td></tr>
@@ -270,4 +333,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.04
+> 更新于: 2025.12.05
