@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.08)
+# SLAM领域最新论文 (2025.12.09)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-08</td><td>OptMap: Geometric Map Distillation via Submodular Maximization</td><td>[2512.07775](http://arxiv.org/pdf/2512.07775)</td><td>◆ Autonomous robots rely on geometric maps to inform a diverse set of perception and decision-making algorithms.
+◆ As autonomy requires reasoning and planning on multiple scales of the environment, each algorithm may require a different map for optimal performance.
+◆ Light Detection And Ranging (LiDAR) sensors generate an abundance of geometric data to satisfy these diverse requirements, but selecting informative, size-constrained maps is computationally challenging as it requires solving an NP-hard combinatorial optimization.</td></tr>
+<tr><td>2025-12-08</td><td>Spatiotemporal Calibration and Ground Truth Estimation for High-Precision SLAM Benchmarking in Extended Reality</td><td>[2512.07221](http://arxiv.org/pdf/2512.07221)</td><td>◆ Simultaneous localization and mapping (SLAM) plays a fundamental role in extended reality (XR) applications.
+◆ As the standards for immersion in XR continue to increase, the demands for SLAM benchmarking have become more stringent.
+◆ Trajectory accuracy is the key metric, and marker-based optical motion capture (MoCap) systems are widely used to generate ground truth (GT) because of their drift-free and relatively accurate measurements.</td></tr>
+<tr><td>2025-12-07</td><td>Dynamic Visual SLAM using a General 3D Prior</td><td>[2512.06868](http://arxiv.org/pdf/2512.06868)</td><td>◆ Reliable incremental estimation of camera poses and 3D reconstruction is key to enable various applications including robotics, interactive visualization, and augmented reality.
+◆ However, this task is particularly challenging in dynamic natural environments, where scene dynamics can severely deteriorate camera pose estimation accuracy.
+◆ In this work, we propose a novel monocular visual SLAM system that can robustly estimate camera poses in dynamic scenes.</td></tr>
+<tr><td>2025-12-04</td><td>ARCAS: An Augmented Reality Collision Avoidance System with SLAM-Based Tracking for Enhancing VRU Safety</td><td>[2512.05299](http://arxiv.org/pdf/2512.05299)</td><td>◆ Vulnerable road users (VRUs) face high collision risks in mixed traffic, yet most existing safety systems prioritize driver or vehicle assistance over direct VRU support.
+◆ This paper presents ARCAS, a real-time augmented reality collision avoidance system that provides personalized spatial alerts to VRUs via wearable AR headsets.
+◆ By fusing roadside 360-degree 3D LiDAR with SLAM-based headset tracking and an automatic 3D calibration procedure, ARCAS accurately overlays world-locked 3D bounding boxes and directional arrows onto approaching hazards in the user&#x27;s passthrough view.</td></tr>
 <tr><td>2025-12-04</td><td>TEMPO-VINE: A Multi-Temporal Sensor Fusion Dataset for Localization and Mapping in Vineyards</td><td>[2512.04772](http://arxiv.org/pdf/2512.04772)</td><td>◆ In recent years, precision agriculture has been introducing groundbreaking innovations in the field, with a strong focus on automation.
 ◆ However, research studies in robotics and autonomous navigation often rely on controlled simulations or isolated field trials.
 ◆ The absence of a realistic common benchmark represents a significant limitation for the diffusion of robust autonomous systems under real complex agricultural conditions.</td></tr>
@@ -61,6 +73,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-07</td><td>Dynamic Visual SLAM using a General 3D Prior</td><td>[2512.06868](http://arxiv.org/pdf/2512.06868)</td><td>◆ Reliable incremental estimation of camera poses and 3D reconstruction is key to enable various applications including robotics, interactive visualization, and augmented reality.
+◆ However, this task is particularly challenging in dynamic natural environments, where scene dynamics can severely deteriorate camera pose estimation accuracy.
+◆ In this work, we propose a novel monocular visual SLAM system that can robustly estimate camera poses in dynamic scenes.</td></tr>
 <tr><td>2025-12-02</td><td>VIGS-SLAM: Visual Inertial Gaussian Splatting SLAM</td><td>[2512.02293](http://arxiv.org/pdf/2512.02293)</td><td>◆ We present VIGS-SLAM, a visual-inertial 3D Gaussian Splatting SLAM system that achieves robust real-time tracking and high-fidelity reconstruction.
 ◆ Although recent 3DGS-based SLAM methods achieve dense and photorealistic mapping, their purely visual design degrades under motion blur, low texture, and exposure variations.
 ◆ Our method tightly couples visual and inertial cues within a unified optimization framework, jointly refining camera poses, depths, and IMU states.</td></tr>
@@ -79,6 +94,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-07</td><td>On Memory: A comparison of memory mechanisms in world models</td><td>[2512.06983](http://arxiv.org/pdf/2512.06983)</td><td>◆ World models enable agents to plan within imagined environments by predicting future states conditioned on past observations and actions.
+◆ However, their ability to plan over long horizons is limited by the effective memory span of the backbone architecture.
+◆ This limitation leads to perceptual drift in long rollouts, hindering the model&#x27;s capacity to perform loop closures within imagined trajectories.</td></tr>
+<tr><td>2025-12-06</td><td>General Computation using Slidable Tiles with Deterministic Global Forces</td><td>[2512.06574](http://arxiv.org/pdf/2512.06574)</td><td>◆ We study the computational power of the Full-Tilt model of motion planning, where slidable polyominos are moved maximally around a board by way of a sequence of directional ``tilts.&#x27;&#x27; We focus on the deterministic scenario in which the tilts constitute a repeated clockwise rotation.
+◆ We show that general-purpose computation is possible within this framework by providing a direct and efficient simulation of space-bounded Turing machines in which one computational step of the machine is simulated per $O(1)$ rotations.
+◆ We further show that the initial tape of the machine can be programmed by an initial tilt-sequence preceding the rotations.</td></tr>
+<tr><td>2025-12-06</td><td>Innovation, Spillovers and Economic Geography</td><td>[2512.06402](http://arxiv.org/pdf/2512.06402)</td><td>◆ We develop a Schumpeterian quality-ladder spatial model in which innovation arrivals depend on regional knowledge spillovers.
+◆ A parsimonious reduced-form diffusion mechanism induces the convergence of regions&#x27; average distance to the global frontier quality.
+◆ As a result, regional differences in knowledge levels stem residually from asymmetries in the spatial distribution of researchers and firms.</td></tr>
+<tr><td>2025-12-05</td><td>GuideNav: User-Informed Development of a Vision-Only Robotic Navigation Assistant For Blind Travelers</td><td>[2512.06147](http://arxiv.org/pdf/2512.06147)</td><td>◆ While commendable progress has been made in user-centric research on mobile assistive systems for blind and low-vision (BLV) individuals, references that directly inform robot navigation design remain rare.
+◆ To bridge this gap, we conducted a comprehensive human study involving interviews with 26 guide dog handlers, four white cane users, nine guide dog trainers, and one O\&amp;M trainer, along with 15+ hours of observing guide dog-assisted walking.
+◆ After de-identification, we open-sourced the dataset to promote human-centered development and informed decision-making for assistive systems for BLV people.</td></tr>
 <tr><td>2025-12-04</td><td>Shared Multi-modal Embedding Space for Face-Voice Association</td><td>[2512.04814](http://arxiv.org/pdf/2512.04814)</td><td>◆ The FAME 2026 challenge comprises two demanding tasks: training face-voice associations combined with a multilingual setting that includes testing on languages on which the model was not trained.
 ◆ Our approach consists of separate uni-modal processing pipelines with general face and voice feature extraction, complemented by additional age-gender feature extraction to support prediction.
 ◆ The resulting single-modal features are projected into a shared embedding space and trained with an Adaptive Angular Margin (AAM) loss.</td></tr>
@@ -121,6 +148,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-08</td><td>UnCageNet: Tracking and Pose Estimation of Caged Animal</td><td>[2512.07712](http://arxiv.org/pdf/2512.07712)</td><td>◆ Animal tracking and pose estimation systems, such as STEP (Simultaneous Tracking and Pose Estimation) and ViTPose, experience substantial performance drops when processing images and videos with cage structures and systematic occlusions.
+◆ We present a three-stage preprocessing pipeline that addresses this limitation through: (1) cage segmentation using a Gabor-enhanced ResNet-UNet architecture with tunable orientation filters, (2) cage inpainting using CRFill for content-aware reconstruction of occluded regions, and (3) evaluation of pose estimation and tracking on the uncaged frames.
+◆ Our Gabor-enhanced segmentation model leverages orientation-aware features with 72 directional kernels to accurately identify and segment cage structures that severely impair the performance of existing methods.</td></tr>
 <tr><td>2025-12-04</td><td>Value Gradient Guidance for Flow Matching Alignment</td><td>[2512.05116](http://arxiv.org/pdf/2512.05116)</td><td>◆ While methods exist for aligning flow matching models--a popular and effective class of generative models--with human preferences, existing approaches fail to achieve both adaptation efficiency and probabilistically sound prior preservation.
 ◆ In this work, we leverage the theory of optimal control and propose VGG-Flow, a gradient-matching-based method for finetuning pretrained flow matching models.
 ◆ The key idea behind this algorithm is that the optimal difference between the finetuned velocity field and the pretrained one should be matched with the gradient field of a value function.</td></tr>
@@ -232,6 +262,33 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-08</td><td>From Orbit to Ground: Generative City Photogrammetry from Extreme Off-Nadir Satellite Images</td><td>[2512.07527](http://arxiv.org/pdf/2512.07527)</td><td>◆ City-scale 3D reconstruction from satellite imagery presents the challenge of extreme viewpoint extrapolation, where our goal is to synthesize ground-level novel views from sparse orbital images with minimal parallax.
+◆ This requires inferring nearly $90^\circ$ viewpoint gaps from image sources with severely foreshortened facades and flawed textures, causing state-of-the-art reconstruction engines such as NeRF and 3DGS to fail.
+◆ To address this problem, we propose two design choices tailored for city structures and satellite inputs.</td></tr>
+<tr><td>2025-12-08</td><td>AdLift: Lifting Adversarial Perturbations to Safeguard 3D Gaussian Splatting Assets Against Instruction-Driven Editing</td><td>[2512.07247](http://arxiv.org/pdf/2512.07247)</td><td>◆ Recent studies have extended diffusion-based instruction-driven 2D image editing pipelines to 3D Gaussian Splatting (3DGS), enabling faithful manipulation of 3DGS assets and greatly advancing 3DGS content creation.
+◆ However, it also exposes these assets to serious risks of unauthorized editing and malicious tampering.
+◆ Although imperceptible adversarial perturbations against diffusion models have proven effective for protecting 2D images, applying them to 3DGS encounters two major challenges: view-generalizable protection and balancing invisibility with protection capability.</td></tr>
+<tr><td>2025-12-08</td><td>STRinGS: Selective Text Refinement in Gaussian Splatting</td><td>[2512.07230](http://arxiv.org/pdf/2512.07230)</td><td>◆ Text as signs, labels, or instructions is a critical element of real-world scenes as they can convey important contextual information.
+◆ 3D representations such as 3D Gaussian Splatting (3DGS) struggle to preserve fine-grained text details, while achieving high visual fidelity.
+◆ Small errors in textual element reconstruction can lead to significant semantic loss.</td></tr>
+<tr><td>2025-12-08</td><td>SUCCESS-GS: Survey of Compactness and Compression for Efficient Static and Dynamic Gaussian Splatting</td><td>[2512.07197](http://arxiv.org/pdf/2512.07197)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a powerful explicit representation enabling real-time, high-fidelity 3D reconstruction and novel view synthesis.
+◆ However, its practical use is hindered by the massive memory and computational demands required to store and render millions of Gaussians.
+◆ These challenges become even more severe in 4D dynamic scenes.</td></tr>
+<tr><td>2025-12-08</td><td>COREA: Coarse-to-Fine 3D Representation Alignment Between Relightable 3D Gaussians and SDF via Bidirectional 3D-to-3D Supervision</td><td>[2512.07107](http://arxiv.org/pdf/2512.07107)</td><td>◆ We present COREA, the first unified framework that jointly learns relightable 3D Gaussians and a Signed Distance Field (SDF) for accurate geometry reconstruction and faithful relighting.
+◆ While recent 3D Gaussian Splatting (3DGS) methods have extended toward mesh reconstruction and physically-based rendering (PBR), their geometry is still learned from 2D renderings, leading to coarse surfaces and unreliable BRDF-lighting decomposition.
+◆ To address these limitations, COREA introduces a coarse-to-fine bidirectional 3D-to-3D alignment strategy that allows geometric signals to be learned directly in 3D space.</td></tr>
+<tr><td>2025-12-07</td><td>RAVE: Rate-Adaptive Visual Encoding for 3D Gaussian Splatting</td><td>[2512.07052](http://arxiv.org/pdf/2512.07052)</td><td>◆ Recent advances in neural scene representations have transformed immersive multimedia, with 3D Gaussian Splatting (3DGS) enabling real-time photorealistic rendering.
+◆ Despite its efficiency, 3DGS suffers from large memory requirements and costly training procedures, motivating efforts toward compression.
+◆ Existing approaches, however, operate at fixed rates, limiting adaptability to varying bandwidth and device constraints.</td></tr>
+<tr><td>2025-12-07</td><td>RDSplat: Robust Watermarking Against Diffusion Editing for 3D Gaussian Splatting</td><td>[2512.06774](http://arxiv.org/pdf/2512.06774)</td><td>◆ 3D Gaussian Splatting (3DGS) has enabled the creation of digital assets and downstream applications, underscoring the need for robust copyright protection via digital watermarking.
+◆ However, existing 3DGS watermarking methods remain highly vulnerable to diffusion-based editing, which can easily erase embedded provenance.
+◆ This challenge highlights the urgent need for 3DGS watermarking techniques that are intrinsically resilient to diffusion-based editing.</td></tr>
+<tr><td>2025-12-06</td><td>AGORA: Adversarial Generation Of Real-time Animatable 3D Gaussian Head Avatars</td><td>[2512.06438](http://arxiv.org/pdf/2512.06438)</td><td>◆ The generation of high-fidelity, animatable 3D human avatars remains a core challenge in computer graphics and vision, with applications in VR, telepresence, and entertainment.
+◆ Existing approaches based on implicit representations like NeRFs suffer from slow rendering and dynamic inconsistencies, while 3D Gaussian Splatting (3DGS) methods are typically limited to static head generation, lacking dynamic control.
+◆ We bridge this gap by introducing AGORA, a novel framework that extends 3DGS within a generative adversarial network to produce animatable avatars.</td></tr>
+<tr><td>2025-12-05</td><td>TED-4DGS: Temporally Activated and Embedding-based Deformation for 4DGS Compression</td><td>[2512.05446](http://arxiv.org/pdf/2512.05446)</td><td>◆ Building on the success of 3D Gaussian Splatting (3DGS) in static 3D scene representation, its extension to dynamic scenes, commonly referred to as 4DGS or dynamic 3DGS, has attracted increasing attention.
+◆ However, designing more compact and efficient deformation schemes together with rate-distortion-optimized compression strategies for dynamic 3DGS representations remains an underexplored area.
+◆ Prior methods either rely on space-time 4DGS with overspecified, short-lived Gaussian primitives or on canonical 3DGS with deformation that lacks explicit temporal control.</td></tr>
 <tr><td>2025-12-04</td><td>RobustSplat++: Decoupling Densification, Dynamics, and Illumination for In-the-Wild 3DGS</td><td>[2512.04815](http://arxiv.org/pdf/2512.04815)</td><td>◆ 3D Gaussian Splatting (3DGS) has gained significant attention for its real-time, photo-realistic rendering in novel-view synthesis and 3D modeling.
 ◆ However, existing methods struggle with accurately modeling in-the-wild scenes affected by transient objects and illuminations, leading to artifacts in the rendered images.
 ◆ We identify that the Gaussian densification process, while enhancing scene detail capture, unintentionally contributes to these artifacts by growing additional Gaussians that model transient disturbances and illumination variations.</td></tr>
@@ -274,6 +331,27 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-08</td><td>More than Segmentation: Benchmarking SAM 3 for Segmentation, 3D Perception, and Reconstruction in Robotic Surgery</td><td>[2512.07596](http://arxiv.org/pdf/2512.07596)</td><td>◆ The recent Segment Anything Model (SAM) 3 has introduced significant advancements over its predecessor, SAM 2, particularly with the integration of language-based segmentation and enhanced 3D perception capabilities.
+◆ SAM 3 supports zero-shot segmentation across a wide range of prompts, including point, bounding box, and language-based prompts, allowing for more flexible and intuitive interactions with the model.
+◆ In this empirical evaluation, we assess the performance of SAM 3 in robot-assisted surgery, benchmarking its zero-shot segmentation with point and bounding box prompts and exploring its effectiveness in dynamic video tracking, alongside its newly introduced language prompt segmentation.</td></tr>
+<tr><td>2025-12-07</td><td>Generalized Geometry Encoding Volume for Real-time Stereo Matching</td><td>[2512.06793](http://arxiv.org/pdf/2512.06793)</td><td>◆ Real-time stereo matching methods primarily focus on enhancing in-domain performance but often overlook the critical importance of generalization in real-world applications.
+◆ In contrast, recent stereo foundation models leverage monocular foundation models (MFMs) to improve generalization, but typically suffer from substantial inference latency.
+◆ To address this trade-off, we propose Generalized Geometry Encoding Volume (GGEV), a novel real-time stereo matching network that achieves strong generalization.</td></tr>
+<tr><td>2025-12-07</td><td>CoT4Det: A Chain-of-Thought Framework for Perception-Oriented Vision-Language Tasks</td><td>[2512.06663](http://arxiv.org/pdf/2512.06663)</td><td>◆ Large Vision-Language Models (LVLMs) have demonstrated remarkable success in a broad range of vision-language tasks, such as general visual question answering and optical character recognition (OCR).
+◆ However, their performance on perception-centric tasks -- such as object detection, semantic segmentation, and depth estimation -- remains significantly inferior to that of task-specific expert models.
+◆ For example, Qwen2.5-VL-7B-Instruct achieves only 19% mAP on COCO2017 val, particularly struggling with dense scenes and small object recall.</td></tr>
+<tr><td>2025-12-06</td><td>Human3R: Incorporating Human Priors for Better 3D Dynamic Reconstruction from Monocular Videos</td><td>[2512.06368](http://arxiv.org/pdf/2512.06368)</td><td>◆ Monocular dynamic video reconstruction faces significant challenges in dynamic human scenes due to geometric inconsistencies and resolution degradation issues.
+◆ Existing methods lack 3D human structural understanding, producing geometrically inconsistent results with distorted limb proportions and unnatural human-object fusion, while memory-constrained downsampling causes human boundary drift toward background geometry.
+◆ To address these limitations, we propose to incorporate hybrid geometric priors that combine SMPL human body models with monocular depth estimation.</td></tr>
+<tr><td>2025-12-05</td><td>See in Depth: Training-Free Surgical Scene Segmentation with Monocular Depth Priors</td><td>[2512.05529](http://arxiv.org/pdf/2512.05529)</td><td>◆ Pixel-wise segmentation of laparoscopic scenes is essential for computer-assisted surgery but difficult to scale due to the high cost of dense annotations.
+◆ We propose depth-guided surgical scene segmentation (DepSeg), a training-free framework that utilizes monocular depth as a geometric prior together with pretrained vision foundation models.
+◆ DepSeg first estimates a relative depth map with a pretrained monocular depth estimation network and proposes depth-guided point prompts, which SAM2 converts into class-agnostic masks.</td></tr>
+<tr><td>2025-12-05</td><td>YOLO and SGBM Integration for Autonomous Tree Branch Detection and Depth Estimation in Radiata Pine Pruning Applications</td><td>[2512.05412](http://arxiv.org/pdf/2512.05412)</td><td>◆ Manual pruning of radiata pine trees poses significant safety risks due to extreme working heights and challenging terrain.
+◆ This paper presents a computer vision framework that integrates YOLO object detection with Semi-Global Block Matching (SGBM) stereo vision for autonomous drone-based pruning operations.
+◆ Our system achieves precise branch detection and depth estimation using only stereo camera input, eliminating the need for expensive LiDAR sensors.</td></tr>
+<tr><td>2025-12-05</td><td>Genetic Algorithms For Parameter Optimization for Disparity Map Generation of Radiata Pine Branch Images</td><td>[2512.05410](http://arxiv.org/pdf/2512.05410)</td><td>◆ Traditional stereo matching algorithms like Semi-Global Block Matching (SGBM) with Weighted Least Squares (WLS) filtering offer speed advantages over neural networks for UAV applications, generating disparity maps in approximately 0.5 seconds per frame.
+◆ However, these algorithms require meticulous parameter tuning.
+◆ We propose a Genetic Algorithm (GA) based parameter optimization framework that systematically searches for optimal parameter configurations for SGBM and WLS, enabling UAVs to measure distances to tree branches with enhanced precision while maintaining processing efficiency.</td></tr>
 <tr><td>2025-12-04</td><td>Ground state energy and phase transitions of Long-range XXZ using VQE</td><td>[2512.04615](http://arxiv.org/pdf/2512.04615)</td><td>◆ The variational quantum eigen solver (VQE), has been widely used to find the ground state energy of different Hamiltonians with no analytical solutions and are classically difficult to compute.
 ◆ In our work, we have used VQE to identify the phase transition boundary for an infinite order phase transition.
 ◆ We use long-range XXZ (LRXXZ) chain for our study.</td></tr>
@@ -345,4 +423,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.08
+> 更新于: 2025.12.09
