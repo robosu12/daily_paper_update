@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.09)
+# SLAM领域最新论文 (2025.12.10)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-09</td><td>A Sensor-Aware Phenomenological Framework for Lidar Degradation Simulation and SLAM Robustness Evaluation</td><td>[2512.08653](http://arxiv.org/pdf/2512.08653)</td><td>◆ Lidar-based SLAM systems are highly sensitive to adverse conditions such as occlusion, noise, and field-of-view (FoV) degradation, yet existing robustness evaluation methods either lack physical grounding or do not capture sensor-specific behavior.
+◆ This paper presents a sensor-aware, phenomenological framework for simulating interpretable lidar degradations directly on real point clouds, enabling controlled and reproducible SLAM stress testing.
+◆ Unlike image-derived corruption benchmarks (e.g., SemanticKITTI-C) or simulation-only approaches (e.g., lidarsim), the proposed system preserves per-point geometry, intensity, and temporal structure while applying structured dropout, FoV reduction, Gaussian noise, occlusion masking, sparsification, and motion distortion.</td></tr>
+<tr><td>2025-12-09</td><td>OpenMonoGS-SLAM: Monocular Gaussian Splatting SLAM with Open-set Semantics</td><td>[2512.08625](http://arxiv.org/pdf/2512.08625)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is a foundational component in robotics, AR/VR, and autonomous systems.
+◆ With the rising focus on spatial AI in recent years, combining SLAM with semantic understanding has become increasingly important for enabling intelligent perception and interaction.
+◆ Recent efforts have explored this integration, but they often rely on depth sensors or closed-set semantic models, limiting their scalability and adaptability in open-world environments.</td></tr>
+<tr><td>2025-12-08</td><td>Sparse Variable Projection in Robotic Perception: Exploiting Separable Structure for Efficient Nonlinear Optimization</td><td>[2512.07969](http://arxiv.org/pdf/2512.07969)</td><td>◆ Robotic perception often requires solving large nonlinear least-squares (NLS) problems.
+◆ While sparsity has been well-exploited to scale solvers, a complementary and underexploited structure is \emph{separability} -- where some variables (e.g., visual landmarks) appear linearly in the residuals and, for any estimate of the remaining variables (e.g., poses), have a closed-form solution.
+◆ Variable projection (VarPro) methods are a family of techniques that exploit this structure by analytically eliminating the linear variables and presenting a reduced problem in the remaining variables that has favorable properties.</td></tr>
 <tr><td>2025-12-08</td><td>OptMap: Geometric Map Distillation via Submodular Maximization</td><td>[2512.07775](http://arxiv.org/pdf/2512.07775)</td><td>◆ Autonomous robots rely on geometric maps to inform a diverse set of perception and decision-making algorithms.
 ◆ As autonomy requires reasoning and planning on multiple scales of the environment, each algorithm may require a different map for optimal performance.
 ◆ Light Detection And Ranging (LiDAR) sensors generate an abundance of geometric data to satisfy these diverse requirements, but selecting informative, size-constrained maps is computationally challenging as it requires solving an NP-hard combinatorial optimization.</td></tr>
@@ -254,7 +263,17 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-12-08</td><td>From Orbit to Ground: Generative City Photogrammetry from Extreme Off-Nadir Satellite Images</td><td>[2512.07527](http://arxiv.org/pdf/2512.07527)</td><td>◆ City-scale 3D reconstruction from satellite imagery presents the challenge of extreme viewpoint extrapolation, where our goal is to synthesize ground-level novel views from sparse orbital images with minimal parallax.
+<tr><td>2025-12-09</td><td>OpenMonoGS-SLAM: Monocular Gaussian Splatting SLAM with Open-set Semantics</td><td>[2512.08625](http://arxiv.org/pdf/2512.08625)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is a foundational component in robotics, AR/VR, and autonomous systems.
+◆ With the rising focus on spatial AI in recent years, combining SLAM with semantic understanding has become increasingly important for enabling intelligent perception and interaction.
+◆ Recent efforts have explored this integration, but they often rely on depth sensors or closed-set semantic models, limiting their scalability and adaptability in open-world environments.</td></tr>
+<tr><td>2025-12-09</td><td>On-the-fly Large-scale 3D Reconstruction from Multi-Camera Rigs</td><td>[2512.08498](http://arxiv.org/pdf/2512.08498)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled efficient free-viewpoint rendering and photorealistic scene reconstruction.
+◆ While on-the-fly extensions of 3DGS have shown promise for real-time reconstruction from monocular RGB streams, they often fail to achieve complete 3D coverage due to the limited field of view (FOV).
+◆ Employing a multi-camera rig fundamentally addresses this limitation.</td></tr>
+<tr><td>2025-12-09</td><td>Visionary: The World Model Carrier Built on WebGPU-Powered Gaussian Splatting Platform</td><td>[2512.08478](http://arxiv.org/pdf/2512.08478)</td><td>◆ Neural rendering, particularly 3D Gaussian Splatting (3DGS), has evolved rapidly and become a key component for building world models.
+◆ However, existing viewer solutions remain fragmented, heavy, or constrained by legacy pipelines, resulting in high deployment friction and limited support for dynamic content and generative models.
+◆ In this work, we present Visionary, an open, web-native platform for real-time various Gaussian Splatting and meshes rendering.</td></tr>
+<tr><td>2025-12-09</td><td>Zero-Splat TeleAssist: A Zero-Shot Pose Estimation Framework for Semantic Teleoperation</td><td>[2512.08271](http://arxiv.org/pdf/2512.08271)</td><td>◆ We introduce Zero-Splat TeleAssist, a zero-shot sensor-fusion pipeline that transforms commodity CCTV streams into a shared, 6-DoF world model for multilateral teleoperation.</td></tr>
+<tr><td>2025-12-09</td><td>From Orbit to Ground: Generative City Photogrammetry from Extreme Off-Nadir Satellite Images</td><td>[2512.07527](http://arxiv.org/pdf/2512.07527)</td><td>◆ City-scale 3D reconstruction from satellite imagery presents the challenge of extreme viewpoint extrapolation, where our goal is to synthesize ground-level novel views from sparse orbital images with minimal parallax.
 ◆ This requires inferring nearly $90^\circ$ viewpoint gaps from image sources with severely foreshortened facades and flawed textures, causing state-of-the-art reconstruction engines such as NeRF and 3DGS to fail.
 ◆ To address this problem, we propose two design choices tailored for city structures and satellite inputs.</td></tr>
 <tr><td>2025-12-08</td><td>AdLift: Lifting Adversarial Perturbations to Safeguard 3D Gaussian Splatting Assets Against Instruction-Driven Editing</td><td>[2512.07247](http://arxiv.org/pdf/2512.07247)</td><td>◆ Recent studies have extended diffusion-based instruction-driven 2D image editing pipelines to 3D Gaussian Splatting (3DGS), enabling faithful manipulation of 3DGS assets and greatly advancing 3DGS content creation.
@@ -266,7 +285,7 @@
 <tr><td>2025-12-08</td><td>SUCCESS-GS: Survey of Compactness and Compression for Efficient Static and Dynamic Gaussian Splatting</td><td>[2512.07197](http://arxiv.org/pdf/2512.07197)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a powerful explicit representation enabling real-time, high-fidelity 3D reconstruction and novel view synthesis.
 ◆ However, its practical use is hindered by the massive memory and computational demands required to store and render millions of Gaussians.
 ◆ These challenges become even more severe in 4D dynamic scenes.</td></tr>
-<tr><td>2025-12-08</td><td>COREA: Coarse-to-Fine 3D Representation Alignment Between Relightable 3D Gaussians and SDF via Bidirectional 3D-to-3D Supervision</td><td>[2512.07107](http://arxiv.org/pdf/2512.07107)</td><td>◆ We present COREA, the first unified framework that jointly learns relightable 3D Gaussians and a Signed Distance Field (SDF) for accurate geometry reconstruction and faithful relighting.
+<tr><td>2025-12-09</td><td>COREA: Coarse-to-Fine 3D Representation Alignment Between Relightable 3D Gaussians and SDF via Bidirectional 3D-to-3D Supervision</td><td>[2512.07107](http://arxiv.org/pdf/2512.07107)</td><td>◆ We present COREA, the first unified framework that jointly learns relightable 3D Gaussians and a Signed Distance Field (SDF) for accurate geometry reconstruction and faithful relighting.
 ◆ While recent 3D Gaussian Splatting (3DGS) methods have extended toward mesh reconstruction and physically-based rendering (PBR), their geometry is still learned from 2D renderings, leading to coarse surfaces and unreliable BRDF-lighting decomposition.
 ◆ To address these limitations, COREA introduces a coarse-to-fine bidirectional 3D-to-3D alignment strategy that allows geometric signals to be learned directly in 3D space.</td></tr>
 <tr><td>2025-12-07</td><td>RAVE: Rate-Adaptive Visual Encoding for 3D Gaussian Splatting</td><td>[2512.07052](http://arxiv.org/pdf/2512.07052)</td><td>◆ Recent advances in neural scene representations have transformed immersive multimedia, with 3D Gaussian Splatting (3DGS) enabling real-time photorealistic rendering.
@@ -321,6 +340,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-09</td><td>Scale-invariant and View-relational Representation Learning for Full Surround Monocular Depth</td><td>[2512.08700](http://arxiv.org/pdf/2512.08700)</td><td>◆ Recent foundation models demonstrate strong generalization capabilities in monocular depth estimation.
+◆ However, directly applying these models to Full Surround Monocular Depth Estimation (FSMDE) presents two major challenges: (1) high computational cost, which limits real-time performance, and (2) difficulty in estimating metric-scale depth, as these models are typically trained to predict only relative depth.
+◆ To address these limitations, we propose a novel knowledge distillation strategy that transfers robust depth knowledge from a foundation model to a lightweight FSMDE network.</td></tr>
+<tr><td>2025-12-09</td><td>Accuracy Does Not Guarantee Human-Likeness in Monocular Depth Estimators</td><td>[2512.08163](http://arxiv.org/pdf/2512.08163)</td><td>◆ Monocular depth estimation is a fundamental capability for real-world applications such as autonomous driving and robotics.
+◆ Although deep neural networks (DNNs) have achieved superhuman accuracy on physical-based benchmarks, a key challenge remains: aligning model representations with human perception, a promising strategy for enhancing model robustness and interpretability.
+◆ Research in object recognition has revealed a complex trade-off between model accuracy and human-like behavior, raising a question whether a similar divergence exist in depth estimation, particularly for natural outdoor scenes where benchmarks rely on sensor-based ground truth rather than human perceptual estimates.</td></tr>
 <tr><td>2025-12-08</td><td>More than Segmentation: Benchmarking SAM 3 for Segmentation, 3D Perception, and Reconstruction in Robotic Surgery</td><td>[2512.07596](http://arxiv.org/pdf/2512.07596)</td><td>◆ The recent Segment Anything Model (SAM) 3 has introduced significant advancements over its predecessor, SAM 2, particularly with the integration of language-based segmentation and enhanced 3D perception capabilities.
 ◆ SAM 3 supports zero-shot segmentation across a wide range of prompts, including point, bounding box, and language-based prompts, allowing for more flexible and intuitive interactions with the model.
 ◆ In this empirical evaluation, we assess the performance of SAM 3 in robot-assisted surgery, benchmarking its zero-shot segmentation with point and bounding box prompts and exploring its effectiveness in dynamic video tracking, alongside its newly introduced language prompt segmentation.</td></tr>
@@ -330,7 +355,7 @@
 <tr><td>2025-12-07</td><td>CoT4Det: A Chain-of-Thought Framework for Perception-Oriented Vision-Language Tasks</td><td>[2512.06663](http://arxiv.org/pdf/2512.06663)</td><td>◆ Large Vision-Language Models (LVLMs) have demonstrated remarkable success in a broad range of vision-language tasks, such as general visual question answering and optical character recognition (OCR).
 ◆ However, their performance on perception-centric tasks -- such as object detection, semantic segmentation, and depth estimation -- remains significantly inferior to that of task-specific expert models.
 ◆ For example, Qwen2.5-VL-7B-Instruct achieves only 19% mAP on COCO2017 val, particularly struggling with dense scenes and small object recall.</td></tr>
-<tr><td>2025-12-06</td><td>Human3R: Incorporating Human Priors for Better 3D Dynamic Reconstruction from Monocular Videos</td><td>[2512.06368](http://arxiv.org/pdf/2512.06368)</td><td>◆ Monocular dynamic video reconstruction faces significant challenges in dynamic human scenes due to geometric inconsistencies and resolution degradation issues.
+<tr><td>2025-12-09</td><td>HuPrior3R: Incorporating Human Priors for Better 3D Dynamic Reconstruction from Monocular Videos</td><td>[2512.06368](http://arxiv.org/pdf/2512.06368)</td><td>◆ Monocular dynamic video reconstruction faces significant challenges in dynamic human scenes due to geometric inconsistencies and resolution degradation issues.
 ◆ Existing methods lack 3D human structural understanding, producing geometrically inconsistent results with distorted limb proportions and unnatural human-object fusion, while memory-constrained downsampling causes human boundary drift toward background geometry.
 ◆ To address these limitations, we propose to incorporate hybrid geometric priors that combine SMPL human body models with monocular depth estimation.</td></tr>
 <tr><td>2025-12-05</td><td>See in Depth: Training-Free Surgical Scene Segmentation with Monocular Depth Priors</td><td>[2512.05529](http://arxiv.org/pdf/2512.05529)</td><td>◆ Pixel-wise segmentation of laparoscopic scenes is essential for computer-assisted surgery but difficult to scale due to the high cost of dense annotations.
@@ -411,4 +436,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.09
+> 更新于: 2025.12.10
