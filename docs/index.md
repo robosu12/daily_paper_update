@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.10)
+# SLAM领域最新论文 (2025.12.11)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-10</td><td>Super4DR: 4D Radar-centric Self-supervised Odometry and Gaussian-based Map Optimization</td><td>[2512.09608](http://arxiv.org/pdf/2512.09608)</td><td>◆ Conventional SLAM systems using visual or LiDAR data often struggle in poor lighting and severe weather.
+◆ Although 4D radar is suited for such environments, its sparse and noisy point clouds hinder accurate odometry estimation, while the radar maps suffer from obscure and incomplete structures.
+◆ Thus, we propose Super4DR, a 4D radar-centric framework for learning-based odometry estimation and gaussian-based map optimization.</td></tr>
+<tr><td>2025-12-10</td><td>D$^2$GSLAM: 4D Dynamic Gaussian Splatting SLAM</td><td>[2512.09411](http://arxiv.org/pdf/2512.09411)</td><td>◆ Recent advances in Dense Simultaneous Localization and Mapping (SLAM) have demonstrated remarkable performance in static environments.
+◆ However, dense SLAM in dynamic environments remains challenging.
+◆ Most methods directly remove dynamic objects and focus solely on static scene reconstruction, which ignores the motion information contained in these dynamic objects.</td></tr>
 <tr><td>2025-12-09</td><td>A Sensor-Aware Phenomenological Framework for Lidar Degradation Simulation and SLAM Robustness Evaluation</td><td>[2512.08653](http://arxiv.org/pdf/2512.08653)</td><td>◆ Lidar-based SLAM systems are highly sensitive to adverse conditions such as occlusion, noise, and field-of-view (FoV) degradation, yet existing robustness evaluation methods either lack physical grounding or do not capture sensor-specific behavior.
 ◆ This paper presents a sensor-aware, phenomenological framework for simulating interpretable lidar degradations directly on real point clouds, enabling controlled and reproducible SLAM stress testing.
 ◆ Unlike image-derived corruption benchmarks (e.g., SemanticKITTI-C) or simulation-only approaches (e.g., lidarsim), the proposed system preserves per-point geometry, intensity, and temporal structure while applying structured dropout, FoV reduction, Gaussian noise, occlusion masking, sparsification, and motion distortion.</td></tr>
@@ -80,6 +86,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-10</td><td>Development and Testing for Perception Based Autonomous Landing of a Long-Range QuadPlane</td><td>[2512.09343](http://arxiv.org/pdf/2512.09343)</td><td>◆ QuadPlanes combine the range efficiency of fixed-wing aircraft with the maneuverability of multi-rotor platforms for long-range autonomous missions.
+◆ In GPS-denied or cluttered urban environments, perception-based landing is vital for reliable operation.
+◆ Unlike structured landing zones, real-world sites are unstructured and highly variable, requiring strong generalization capabilities from the perception system.</td></tr>
 <tr><td>2025-12-07</td><td>Dynamic Visual SLAM using a General 3D Prior</td><td>[2512.06868](http://arxiv.org/pdf/2512.06868)</td><td>◆ Reliable incremental estimation of camera poses and 3D reconstruction is key to enable various applications including robotics, interactive visualization, and augmented reality.
 ◆ However, this task is particularly challenging in dynamic natural environments, where scene dynamics can severely deteriorate camera pose estimation accuracy.
 ◆ In this work, we propose a novel monocular visual SLAM system that can robustly estimate camera poses in dynamic scenes.</td></tr>
@@ -99,6 +108,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-10</td><td>YOPO-Nav: Visual Navigation using 3DGS Graphs from One-Pass Videos</td><td>[2512.09903](http://arxiv.org/pdf/2512.09903)</td><td>◆ Visual navigation has emerged as a practical alternative to traditional robotic navigation pipelines that rely on detailed mapping and path planning.
+◆ However, constructing and maintaining 3D maps is often computationally expensive and memory-intensive.
+◆ We address the problem of visual navigation when exploration videos of a large environment are available.</td></tr>
+<tr><td>2025-12-10</td><td>Sequential Testing for Descriptor-Agnostic LiDAR Loop Closure in Repetitive Environments</td><td>[2512.09447](http://arxiv.org/pdf/2512.09447)</td><td>◆ We propose a descriptor-agnostic, multi-frame loop closure verification method that formulates LiDAR loop closure as a truncated Sequential Probability Ratio Test (SPRT).
+◆ Instead of deciding from a single descriptor comparison or using fixed thresholds with late-stage Iterative Closest Point (ICP) vetting, the verifier accumulates a short temporal stream of descriptor similarities between a query and each candidate.
+◆ It then issues an accept/reject decision adaptively once sufficient multi-frame evidence has been observed, according to user-specified Type-I/II error design targets.</td></tr>
+<tr><td>2025-12-09</td><td>Adaptive Thresholding for Visual Place Recognition using Negative Gaussian Mixture Statistics</td><td>[2512.09071](http://arxiv.org/pdf/2512.09071)</td><td>◆ Visual place recognition (VPR) is an important component technology for camera-based mapping and navigation applications.
+◆ This is a challenging problem because images of the same place may appear quite different for reasons including seasonal changes, weather illumination, structural changes to the environment, as well as transient pedestrian or vehicle traffic.
+◆ Papers focusing on generating image descriptors for VPR report their results using metrics such as recall@K and ROC curves.</td></tr>
 <tr><td>2025-12-07</td><td>On Memory: A comparison of memory mechanisms in world models</td><td>[2512.06983](http://arxiv.org/pdf/2512.06983)</td><td>◆ World models enable agents to plan within imagined environments by predicting future states conditioned on past observations and actions.
 ◆ However, their ability to plan over long horizons is limited by the effective memory span of the backbone architecture.
 ◆ This limitation leads to perceptual drift in long rollouts, hindering the model&#x27;s capacity to perform loop closures within imagined trajectories.</td></tr>
@@ -263,6 +281,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-10</td><td>Splatent: Splatting Diffusion Latents for Novel View Synthesis</td><td>[2512.09923](http://arxiv.org/pdf/2512.09923)</td><td>◆ Radiance field representations have recently been explored in the latent space of VAEs that are commonly used by diffusion models.
+◆ This direction offers efficient rendering and seamless integration with diffusion-based pipelines.
+◆ However, these methods face a fundamental limitation: The VAE latent space lacks multi-view consistency, leading to blurred textures and missing details during 3D reconstruction.</td></tr>
+<tr><td>2025-12-10</td><td>YOPO-Nav: Visual Navigation using 3DGS Graphs from One-Pass Videos</td><td>[2512.09903](http://arxiv.org/pdf/2512.09903)</td><td>◆ Visual navigation has emerged as a practical alternative to traditional robotic navigation pipelines that rely on detailed mapping and path planning.
+◆ However, constructing and maintaining 3D maps is often computationally expensive and memory-intensive.
+◆ We address the problem of visual navigation when exploration videos of a large environment are available.</td></tr>
+<tr><td>2025-12-10</td><td>Relightable and Dynamic Gaussian Avatar Reconstruction from Monocular Video</td><td>[2512.09335](http://arxiv.org/pdf/2512.09335)</td><td>◆ Modeling relightable and animatable human avatars from monocular video is a long-standing and challenging task.
+◆ Recently, Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) methods have been employed to reconstruct the avatars.
+◆ However, they often produce unsatisfactory photo-realistic results because of insufficient geometrical details related to body motion, such as clothing wrinkles.</td></tr>
+<tr><td>2025-12-10</td><td>MoRel: Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification</td><td>[2512.09270](http://arxiv.org/pdf/2512.09270)</td><td>◆ Recent advances in 4D Gaussian Splatting (4DGS) have extended the high-speed rendering capability of 3D Gaussian Splatting (3DGS) into the temporal domain, enabling real-time rendering of dynamic scenes.
+◆ However, one of the major remaining challenges lies in modeling long-range motion-contained dynamic videos, where a naive extension of existing methods leads to severe memory explosion, temporal flickering, and failure to handle appearing or disappearing occlusions over time.
+◆ To address these challenges, we propose a novel 4DGS framework characterized by an Anchor Relay-based Bidirectional Blending (ARBB) mechanism, named MoRel, which enables temporally consistent and memory-efficient modeling of long-range dynamic scenes.</td></tr>
 <tr><td>2025-12-09</td><td>OpenMonoGS-SLAM: Monocular Gaussian Splatting SLAM with Open-set Semantics</td><td>[2512.08625](http://arxiv.org/pdf/2512.08625)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is a foundational component in robotics, AR/VR, and autonomous systems.
 ◆ With the rising focus on spatial AI in recent years, combining SLAM with semantic understanding has become increasingly important for enabling intelligent perception and interaction.
 ◆ Recent efforts have explored this integration, but they often rely on depth sensors or closed-set semantic models, limiting their scalability and adaptability in open-world environments.</td></tr>
@@ -346,7 +376,7 @@
 <tr><td>2025-12-09</td><td>Accuracy Does Not Guarantee Human-Likeness in Monocular Depth Estimators</td><td>[2512.08163](http://arxiv.org/pdf/2512.08163)</td><td>◆ Monocular depth estimation is a fundamental capability for real-world applications such as autonomous driving and robotics.
 ◆ Although deep neural networks (DNNs) have achieved superhuman accuracy on physical-based benchmarks, a key challenge remains: aligning model representations with human perception, a promising strategy for enhancing model robustness and interpretability.
 ◆ Research in object recognition has revealed a complex trade-off between model accuracy and human-like behavior, raising a question whether a similar divergence exist in depth estimation, particularly for natural outdoor scenes where benchmarks rely on sensor-based ground truth rather than human perceptual estimates.</td></tr>
-<tr><td>2025-12-08</td><td>More than Segmentation: Benchmarking SAM 3 for Segmentation, 3D Perception, and Reconstruction in Robotic Surgery</td><td>[2512.07596](http://arxiv.org/pdf/2512.07596)</td><td>◆ The recent Segment Anything Model (SAM) 3 has introduced significant advancements over its predecessor, SAM 2, particularly with the integration of language-based segmentation and enhanced 3D perception capabilities.
+<tr><td>2025-12-10</td><td>More than Segmentation: Benchmarking SAM 3 for Segmentation, 3D Perception, and Reconstruction in Robotic Surgery</td><td>[2512.07596](http://arxiv.org/pdf/2512.07596)</td><td>◆ The recent Segment Anything Model (SAM) 3 has introduced significant advancements over its predecessor, SAM 2, particularly with the integration of language-based segmentation and enhanced 3D perception capabilities.
 ◆ SAM 3 supports zero-shot segmentation across a wide range of prompts, including point, bounding box, and language-based prompts, allowing for more flexible and intuitive interactions with the model.
 ◆ In this empirical evaluation, we assess the performance of SAM 3 in robot-assisted surgery, benchmarking its zero-shot segmentation with point and bounding box prompts and exploring its effectiveness in dynamic video tracking, alongside its newly introduced language prompt segmentation.</td></tr>
 <tr><td>2025-12-07</td><td>Generalized Geometry Encoding Volume for Real-time Stereo Matching</td><td>[2512.06793](http://arxiv.org/pdf/2512.06793)</td><td>◆ Real-time stereo matching methods primarily focus on enhancing in-domain performance but often overlook the critical importance of generalization in real-world applications.
@@ -436,4 +466,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.10
+> 更新于: 2025.12.11
