@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.11)
+# SLAM领域最新论文 (2025.12.12)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-11</td><td>Contact SLAM: An Active Tactile Exploration Policy Based on Physical Reasoning Utilized in Robotic Fine Blind Manipulation Tasks</td><td>[2512.10481](http://arxiv.org/pdf/2512.10481)</td><td>◆ Contact-rich manipulation is difficult for robots to execute and requires accurate perception of the environment.
+◆ In some scenarios, vision is occluded.
+◆ The robot can then no longer obtain real-time scene state information through visual feedback.</td></tr>
+<tr><td>2025-12-11</td><td>CLASH: Collaborative Large-Small Hierarchical Framework for Continuous Vision-and-Language Navigation</td><td>[2512.10360](http://arxiv.org/pdf/2512.10360)</td><td>◆ Vision-and-Language Navigation (VLN) requires robots to follow natural language instructions and navigate complex environments without prior maps.
+◆ While recent vision-language large models demonstrate strong reasoning abilities, they often underperform task-specific panoramic small models in VLN tasks.
+◆ To address this, we propose CLASH (Collaborative Large-Small Hierarchy), a VLN-CE framework that integrates a reactive small-model planner (RSMP) with a reflective large-model reasoner (RLMR).</td></tr>
+<tr><td>2025-12-10</td><td>Inertial Magnetic SLAM Systems Using Low-Cost Sensors</td><td>[2512.10128](http://arxiv.org/pdf/2512.10128)</td><td>◆ Spatially inhomogeneous magnetic fields offer a valuable, non-visual information source for positioning.
+◆ Among systems leveraging this, magnetic field-based simultaneous localization and mapping (SLAM) systems are particularly attractive because they can provide positioning information and build a magnetic field map on the fly.
+◆ Moreover, they have bounded error within mapped regions.</td></tr>
 <tr><td>2025-12-10</td><td>Super4DR: 4D Radar-centric Self-supervised Odometry and Gaussian-based Map Optimization</td><td>[2512.09608](http://arxiv.org/pdf/2512.09608)</td><td>◆ Conventional SLAM systems using visual or LiDAR data often struggle in poor lighting and severe weather.
 ◆ Although 4D radar is suited for such environments, its sparse and noisy point clouds hinder accurate odometry estimation, while the radar maps suffer from obscure and incomplete structures.
 ◆ Thus, we propose Super4DR, a 4D radar-centric framework for learning-based odometry estimation and gaussian-based map optimization.</td></tr>
@@ -86,7 +95,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-12-10</td><td>Development and Testing for Perception Based Autonomous Landing of a Long-Range QuadPlane</td><td>[2512.09343](http://arxiv.org/pdf/2512.09343)</td><td>◆ QuadPlanes combine the range efficiency of fixed-wing aircraft with the maneuverability of multi-rotor platforms for long-range autonomous missions.
+<tr><td>2025-12-10</td><td>Inertial Magnetic SLAM Systems Using Low-Cost Sensors</td><td>[2512.10128](http://arxiv.org/pdf/2512.10128)</td><td>◆ Spatially inhomogeneous magnetic fields offer a valuable, non-visual information source for positioning.
+◆ Among systems leveraging this, magnetic field-based simultaneous localization and mapping (SLAM) systems are particularly attractive because they can provide positioning information and build a magnetic field map on the fly.
+◆ Moreover, they have bounded error within mapped regions.</td></tr>
+<tr><td>2025-12-11</td><td>Development and Testing for Perception Based Autonomous Landing of a Long-Range QuadPlane</td><td>[2512.09343](http://arxiv.org/pdf/2512.09343)</td><td>◆ QuadPlanes combine the range efficiency of fixed-wing aircraft with the maneuverability of multi-rotor platforms for long-range autonomous missions.
 ◆ In GPS-denied or cluttered urban environments, perception-based landing is vital for reliable operation.
 ◆ Unlike structured landing zones, real-world sites are unstructured and highly variable, requiring strong generalization capabilities from the perception system.</td></tr>
 <tr><td>2025-12-07</td><td>Dynamic Visual SLAM using a General 3D Prior</td><td>[2512.06868](http://arxiv.org/pdf/2512.06868)</td><td>◆ Reliable incremental estimation of camera poses and 3D reconstruction is key to enable various applications including robotics, interactive visualization, and augmented reality.
@@ -108,6 +120,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-11</td><td>Quantifying displacement: a gentrification&#x27;s consequence via persistent homology</td><td>[2512.10753](http://arxiv.org/pdf/2512.10753)</td><td>◆ Gentrification is the process by which wealthier individuals move into a previously lower-income neighbourhood.
+◆ Among the effects of this multi-faceted phenomenon are rising living costs, cultural and social changes-where local traditions, businesses, and community networks are replaced or diluted by new, more affluent lifestyles-and population displacement, where long-term, lower-income residents are priced out by rising rents and property taxes.
+◆ Despite its relevance, quantifying displacement presents difficulties stemming from lack of information on motives for relocation and from the fact that a long time-span must be analysed: displacement is a gradual process (leases end or conditions change at different times), impossible to capture in one data snapshot.</td></tr>
+<tr><td>2025-12-11</td><td>HypeR Adaptivity: Joint $hr$-Adaptive Meshing via Hypergraph Multi-Agent Deep Reinforcement Learning</td><td>[2512.10439](http://arxiv.org/pdf/2512.10439)</td><td>◆ Adaptive mesh refinement is central to the efficient solution of partial differential equations (PDEs) via the finite element method (FEM).
+◆ Classical $r$-adaptivity optimizes vertex positions but requires solving expensive auxiliary PDEs such as the Monge-Ampère equation, while classical $h$-adaptivity modifies topology through element subdivision but suffers from expensive error indicator computation and is constrained by isotropic refinement patterns that impose accuracy ceilings.
+◆ Combined $hr$-adaptive techniques naturally outperform single-modality approaches, yet inherit both computational bottlenecks and the restricted cost-accuracy trade-off.</td></tr>
 <tr><td>2025-12-10</td><td>YOPO-Nav: Visual Navigation using 3DGS Graphs from One-Pass Videos</td><td>[2512.09903](http://arxiv.org/pdf/2512.09903)</td><td>◆ Visual navigation has emerged as a practical alternative to traditional robotic navigation pipelines that rely on detailed mapping and path planning.
 ◆ However, constructing and maintaining 3D maps is often computationally expensive and memory-intensive.
 ◆ We address the problem of visual navigation when exploration videos of a large environment are available.</td></tr>
@@ -169,6 +187,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-11</td><td>Self-Supervised Contrastive Embedding Adaptation for Endoscopic Image Matching</td><td>[2512.10379](http://arxiv.org/pdf/2512.10379)</td><td>◆ Accurate spatial understanding is essential for image-guided surgery, augmented reality integration and context awareness.
+◆ In minimally invasive procedures, where visual input is the sole intraoperative modality, establishing precise pixel-level correspondences between endoscopic frames is critical for 3D reconstruction, camera tracking, and scene interpretation.
+◆ However, the surgical domain presents distinct challenges: weak perspective cues, non-Lambertian tissue reflections, and complex, deformable anatomy degrade the performance of conventional computer vision techniques.</td></tr>
+<tr><td>2025-12-11</td><td>MotionEdit: Benchmarking and Learning Motion-Centric Image Editing</td><td>[2512.10284](http://arxiv.org/pdf/2512.10284)</td><td>◆ We introduce MotionEdit, a novel dataset for motion-centric image editing-the task of modifying subject actions and interactions while preserving identity, structure, and physical plausibility.
+◆ Unlike existing image editing datasets that focus on static appearance changes or contain only sparse, low-quality motion edits, MotionEdit provides high-fidelity image pairs depicting realistic motion transformations extracted and verified from continuous videos.
+◆ This new task is not only scientifically challenging but also practically significant, powering downstream applications such as frame-controlled video synthesis and animation.</td></tr>
 <tr><td>2025-12-08</td><td>UnCageNet: Tracking and Pose Estimation of Caged Animal</td><td>[2512.07712](http://arxiv.org/pdf/2512.07712)</td><td>◆ Animal tracking and pose estimation systems, such as STEP (Simultaneous Tracking and Pose Estimation) and ViTPose, experience substantial performance drops when processing images and videos with cage structures and systematic occlusions.
 ◆ We present a three-stage preprocessing pipeline that addresses this limitation through: (1) cage segmentation using a Gabor-enhanced ResNet-UNet architecture with tunable orientation filters, (2) cage inpainting using CRFill for content-aware reconstruction of occluded regions, and (3) evaluation of pose estimation and tracking on the uncaged frames.
 ◆ Our Gabor-enhanced segmentation model leverages orientation-aware features with 72 directional kernels to accurately identify and segment cage structures that severely impair the performance of existing methods.</td></tr>
@@ -281,13 +305,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-11</td><td>Breaking the Vicious Cycle: Coherent 3D Gaussian Splatting from Sparse and Motion-Blurred Views</td><td>[2512.10369](http://arxiv.org/pdf/2512.10369)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a state-of-the-art method for novel view synthesis.
+◆ However, its performance heavily relies on dense, high-quality input imagery, an assumption that is often violated in real-world applications, where data is typically sparse and motion-blurred.
+◆ These two issues create a vicious cycle: sparse views ignore the multi-view constraints necessary to resolve motion blur, while motion blur erases high-frequency details crucial for aligning the limited views.</td></tr>
 <tr><td>2025-12-10</td><td>Splatent: Splatting Diffusion Latents for Novel View Synthesis</td><td>[2512.09923](http://arxiv.org/pdf/2512.09923)</td><td>◆ Radiance field representations have recently been explored in the latent space of VAEs that are commonly used by diffusion models.
 ◆ This direction offers efficient rendering and seamless integration with diffusion-based pipelines.
 ◆ However, these methods face a fundamental limitation: The VAE latent space lacks multi-view consistency, leading to blurred textures and missing details during 3D reconstruction.</td></tr>
 <tr><td>2025-12-10</td><td>YOPO-Nav: Visual Navigation using 3DGS Graphs from One-Pass Videos</td><td>[2512.09903](http://arxiv.org/pdf/2512.09903)</td><td>◆ Visual navigation has emerged as a practical alternative to traditional robotic navigation pipelines that rely on detailed mapping and path planning.
 ◆ However, constructing and maintaining 3D maps is often computationally expensive and memory-intensive.
 ◆ We address the problem of visual navigation when exploration videos of a large environment are available.</td></tr>
-<tr><td>2025-12-10</td><td>Relightable and Dynamic Gaussian Avatar Reconstruction from Monocular Video</td><td>[2512.09335](http://arxiv.org/pdf/2512.09335)</td><td>◆ Modeling relightable and animatable human avatars from monocular video is a long-standing and challenging task.
+<tr><td>2025-12-11</td><td>Relightable and Dynamic Gaussian Avatar Reconstruction from Monocular Video</td><td>[2512.09335](http://arxiv.org/pdf/2512.09335)</td><td>◆ Modeling relightable and animatable human avatars from monocular video is a long-standing and challenging task.
 ◆ Recently, Neural Radiance Field (NeRF) and 3D Gaussian Splatting (3DGS) methods have been employed to reconstruct the avatars.
 ◆ However, they often produce unsatisfactory photo-realistic results because of insufficient geometrical details related to body motion, such as clothing wrinkles.</td></tr>
 <tr><td>2025-12-10</td><td>MoRel: Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification</td><td>[2512.09270](http://arxiv.org/pdf/2512.09270)</td><td>◆ Recent advances in 4D Gaussian Splatting (4DGS) have extended the high-speed rendering capability of 3D Gaussian Splatting (3DGS) into the temporal domain, enabling real-time rendering of dynamic scenes.
@@ -370,6 +397,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-11</td><td>Empowering Dynamic Urban Navigation with Stereo and Mid-Level Vision</td><td>[2512.10956](http://arxiv.org/pdf/2512.10956)</td><td>◆ The success of foundation models in language and vision motivated research in fully end-to-end robot navigation foundation models (NFMs).
+◆ NFMs directly map monocular visual input to control actions and ignore mid-level vision modules (tracking, depth estimation, etc) entirely.
+◆ While the assumption that vision capabilities will emerge implicitly is compelling, it requires large amounts of pixel-to-action supervision that are difficult to obtain.</td></tr>
+<tr><td>2025-12-11</td><td>Video Depth Propagation</td><td>[2512.10725](http://arxiv.org/pdf/2512.10725)</td><td>◆ Depth estimation in videos is essential for visual perception in real-world applications.
+◆ However, existing methods either rely on simple frame-by-frame monocular models, leading to temporal inconsistencies and inaccuracies, or use computationally demanding temporal modeling, unsuitable for real-time applications.
+◆ These limitations significantly restrict general applicability and performance in practical settings.</td></tr>
+<tr><td>2025-12-11</td><td>SpaceDrive: Infusing Spatial Awareness into VLM-based Autonomous Driving</td><td>[2512.10719](http://arxiv.org/pdf/2512.10719)</td><td>◆ End-to-end autonomous driving methods built on vision language models (VLMs) have undergone rapid development driven by their universal visual understanding and strong reasoning capabilities obtained from the large-scale pretraining.
+◆ However, we find that current VLMs struggle to understand fine-grained 3D spatial relationships which is a fundamental requirement for systems interacting with the physical world.
+◆ To address this issue, we propose SpaceDrive, a spatial-aware VLM-based driving framework that treats spatial information as explicit positional encodings (PEs) instead of textual digit tokens, enabling joint reasoning over semantic and spatial representations.</td></tr>
+<tr><td>2025-12-11</td><td>Robust Shape from Focus via Multiscale Directional Dilated Laplacian and Recurrent Network</td><td>[2512.10498](http://arxiv.org/pdf/2512.10498)</td><td>◆ Shape-from-Focus (SFF) is a passive depth estimation technique that infers scene depth by analyzing focus variations in a focal stack.
+◆ Most recent deep learning-based SFF methods typically operate in two stages: first, they extract focus volumes (a per pixel representation of focus likelihood across the focal stack) using heavy feature encoders; then, they estimate depth via a simple one-step aggregation technique that often introduces artifacts and amplifies noise in the depth map.
+◆ To address these issues, we propose a hybrid framework.</td></tr>
 <tr><td>2025-12-09</td><td>Scale-invariant and View-relational Representation Learning for Full Surround Monocular Depth</td><td>[2512.08700](http://arxiv.org/pdf/2512.08700)</td><td>◆ Recent foundation models demonstrate strong generalization capabilities in monocular depth estimation.
 ◆ However, directly applying these models to Full Surround Monocular Depth Estimation (FSMDE) presents two major challenges: (1) high computational cost, which limits real-time performance, and (2) difficulty in estimating metric-scale depth, as these models are typically trained to predict only relative depth.
 ◆ To address these limitations, we propose a novel knowledge distillation strategy that transfers robust depth knowledge from a foundation model to a lightweight FSMDE network.</td></tr>
@@ -466,4 +505,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.11
+> 更新于: 2025.12.12
