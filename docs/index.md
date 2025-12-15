@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.14)
+# SLAM领域最新论文 (2025.12.15)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -305,6 +305,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-12</td><td>Moment-Based 3D Gaussian Splatting: Resolving Volumetric Occlusion with Order-Independent Transmittance</td><td>[2512.11800](http://arxiv.org/pdf/2512.11800)</td><td>◆ The recent success of 3D Gaussian Splatting (3DGS) has reshaped novel view synthesis by enabling fast optimization and real-time rendering of high-quality radiance fields.
+◆ However, it relies on simplified, order-dependent alpha blending and coarse approximations of the density integral within the rasterizer, thereby limiting its ability to render complex, overlapping semi-transparent objects.
+◆ In this paper, we extend rasterization-based rendering of 3D Gaussian representations with a novel method for high-fidelity transmittance computation, entirely avoiding the need for ray tracing or per-pixel sample sorting.</td></tr>
 <tr><td>2025-12-11</td><td>Breaking the Vicious Cycle: Coherent 3D Gaussian Splatting from Sparse and Motion-Blurred Views</td><td>[2512.10369](http://arxiv.org/pdf/2512.10369)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a state-of-the-art method for novel view synthesis.
 ◆ However, its performance heavily relies on dense, high-quality input imagery, an assumption that is often violated in real-world applications, where data is typically sparse and motion-blurred.
 ◆ These two issues create a vicious cycle: sparse views ignore the multi-view constraints necessary to resolve motion blur, while motion blur erases high-frequency details crucial for aligning the limited views.</td></tr>
@@ -397,6 +400,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-12</td><td>ProbeMDE: Uncertainty-Guided Active Proprioception for Monocular Depth Estimation in Surgical Robotics</td><td>[2512.11773](http://arxiv.org/pdf/2512.11773)</td><td>◆ Monocular depth estimation (MDE) provides a useful tool for robotic perception, but its predictions are often uncertain and inaccurate in challenging environments such as surgical scenes where textureless surfaces, specular reflections, and occlusions are common.
+◆ To address this, we propose ProbeMDE, a cost-aware active sensing framework that combines RGB images with sparse proprioceptive measurements for MDE.
+◆ Our approach utilizes an ensemble of MDE models to predict dense depth maps conditioned on both RGB images and on a sparse set of known depth measurements obtained via proprioception, where the robot has touched the environment in a known configuration.</td></tr>
+<tr><td>2025-12-11</td><td>Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching</td><td>[2512.11130](http://arxiv.org/pdf/2512.11130)</td><td>◆ Stereo foundation models achieve strong zero-shot generalization but remain computationally prohibitive for real-time applications.
+◆ Efficient stereo architectures, on the other hand, sacrifice robustness for speed and require costly per-domain fine-tuning.
+◆ To bridge this gap, we present Fast-FoundationStereo, a family of architectures that achieve, for the first time, strong zero-shot generalization at real-time frame rate.</td></tr>
 <tr><td>2025-12-11</td><td>Empowering Dynamic Urban Navigation with Stereo and Mid-Level Vision</td><td>[2512.10956](http://arxiv.org/pdf/2512.10956)</td><td>◆ The success of foundation models in language and vision motivated research in fully end-to-end robot navigation foundation models (NFMs).
 ◆ NFMs directly map monocular visual input to control actions and ignore mid-level vision modules (tracking, depth estimation, etc) entirely.
 ◆ While the assumption that vision capabilities will emerge implicitly is compelling, it requires large amounts of pixel-to-action supervision that are difficult to obtain.</td></tr>
@@ -505,4 +514,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.14
+> 更新于: 2025.12.15
