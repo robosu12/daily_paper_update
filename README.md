@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.15)
+# SLAM领域最新论文 (2025.12.16)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -97,6 +97,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-09</td><td>Enabling Autonomous Navigation in a Snake Robot through Visual-Inertial Odometry and Closed-Loop Trajectory Tracking Control</td><td>[2512.11886](http://arxiv.org/pdf/2512.11886)</td><td>◆ Snake robots offer exceptional mobility across extreme terrain inaccessible to conventional rovers, yet their highly articulated bodies present fundamental challenges for autonomous navigation in environments lacking external tracking infrastructure.
+◆ This thesis develops a complete autonomy pipeline for COBRA, an 11 degree-of-freedom modular snake robot designed for planetary exploration.
+◆ While the robot&#x27;s biologically inspired serpentine gaits achieve impressive mobility, prior work has relied entirely on open-loop teleoperation.</td></tr>
 <tr><td>2025-12-10</td><td>Inertial Magnetic SLAM Systems Using Low-Cost Sensors</td><td>[2512.10128](http://arxiv.org/pdf/2512.10128)</td><td>◆ Spatially inhomogeneous magnetic fields offer a valuable, non-visual information source for positioning.
 ◆ Among systems leveraging this, magnetic field-based simultaneous localization and mapping (SLAM) systems are particularly attractive because they can provide positioning information and build a magnetic field map on the fly.
 ◆ Moreover, they have bounded error within mapped regions.</td></tr>
@@ -313,6 +316,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-15</td><td>Computer vision training dataset generation for robotic environments using Gaussian splatting</td><td>[2512.13411](http://arxiv.org/pdf/2512.13411)</td><td>◆ This paper introduces a novel pipeline for generating large-scale, highly realistic, and automatically labeled datasets for computer vision tasks in robotic environments.
+◆ Our approach addresses the critical challenges of the domain gap between synthetic and real-world imagery and the time-consuming bottleneck of manual annotation.
+◆ We leverage 3D Gaussian Splatting (3DGS) to create photorealistic representations of the operational environment and objects.</td></tr>
 <tr><td>2025-12-12</td><td>Moment-Based 3D Gaussian Splatting: Resolving Volumetric Occlusion with Order-Independent Transmittance</td><td>[2512.11800](http://arxiv.org/pdf/2512.11800)</td><td>◆ The recent success of 3D Gaussian Splatting (3DGS) has reshaped novel view synthesis by enabling fast optimization and real-time rendering of high-quality radiance fields.
 ◆ However, it relies on simplified, order-dependent alpha blending and coarse approximations of the density integral within the rasterizer, thereby limiting its ability to render complex, overlapping semi-transparent objects.
 ◆ In this paper, we extend rasterization-based rendering of 3D Gaussian representations with a novel method for high-fidelity transmittance computation, entirely avoiding the need for ray tracing or per-pixel sample sorting.</td></tr>
@@ -410,6 +416,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-15</td><td>StarryGazer: Leveraging Monocular Depth Estimation Models for Domain-Agnostic Single Depth Image Completion</td><td>[2512.13147](http://arxiv.org/pdf/2512.13147)</td><td>◆ The problem of depth completion involves predicting a dense depth image from a single sparse depth map and an RGB image.
+◆ Unsupervised depth completion methods have been proposed for various datasets where ground truth depth data is unavailable and supervised methods cannot be applied.
+◆ However, these models require auxiliary data to estimate depth values, which is far from real scenarios.</td></tr>
+<tr><td>2025-12-13</td><td>BokehDepth: Enhancing Monocular Depth Estimation through Bokeh Generation</td><td>[2512.12425](http://arxiv.org/pdf/2512.12425)</td><td>◆ Bokeh and monocular depth estimation are tightly coupled through the same lens imaging geometry, yet current methods exploit this connection in incomplete ways.
+◆ High-quality bokeh rendering pipelines typically depend on noisy depth maps, which amplify estimation errors into visible artifacts, while modern monocular metric depth models still struggle on weakly textured, distant and geometrically ambiguous regions where defocus cues are most informative.
+◆ We introduce BokehDepth, a two-stage framework that decouples bokeh synthesis from depth prediction and treats defocus as an auxiliary supervision-free geometric cue.</td></tr>
 <tr><td>2025-12-12</td><td>ProbeMDE: Uncertainty-Guided Active Proprioception for Monocular Depth Estimation in Surgical Robotics</td><td>[2512.11773](http://arxiv.org/pdf/2512.11773)</td><td>◆ Monocular depth estimation (MDE) provides a useful tool for robotic perception, but its predictions are often uncertain and inaccurate in challenging environments such as surgical scenes where textureless surfaces, specular reflections, and occlusions are common.
 ◆ To address this, we propose ProbeMDE, a cost-aware active sensing framework that combines RGB images with sparse proprioceptive measurements for MDE.
 ◆ Our approach utilizes an ensemble of MDE models to predict dense depth maps conditioned on both RGB images and on a sparse set of known depth measurements obtained via proprioception, where the robot has touched the environment in a known configuration.</td></tr>
@@ -526,4 +538,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.15
+> 更新于: 2025.12.16
