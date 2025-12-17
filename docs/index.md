@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.16)
+# SLAM领域最新论文 (2025.12.17)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,33 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-16</td><td>Odyssey: An Automotive Lidar-Inertial Odometry Dataset for GNSS-denied situations</td><td>[2512.14428](http://arxiv.org/pdf/2512.14428)</td><td>◆ The development and evaluation of Lidar-Inertial Odometry (LIO) and Simultaneous Localization and Mapping (SLAM) systems requires a precise ground truth.
+◆ The Global Navigation Satellite System (GNSS) is often used as a foundation for this, but its signals can be unreliable in obstructed environments due to multi-path effects or loss-of-signal.
+◆ While existing datasets compensate for the sporadic loss of GNSS signals by incorporating Inertial Measurement Unit (IMU) measurements, the commonly used Micro-Electro-Mechanical Systems (MEMS) or Fiber Optic Gyroscope (FOG)-based systems do not permit the prolonged study of GNSS-denied environments.</td></tr>
+<tr><td>2025-12-16</td><td>Field evaluation and optimization of a lightweight lidar-based UAV navigation system for dense boreal forest environments</td><td>[2512.14340](http://arxiv.org/pdf/2512.14340)</td><td>◆ The interest in the usage of uncrewed aerial vehicles (UAVs) for forest applications has increased in recent years.
+◆ While above-canopy flight has reached a high level of autonomy, navigating under-canopy remains a significant challenge.
+◆ The use of autonomous UAVs could reduce the burden of data collection, which has motivated the development of numerous solutions for under-canopy autonomous flight.</td></tr>
+<tr><td>2025-12-16</td><td>SUPER -- A Framework for Sensitivity-based Uncertainty-aware Performance and Risk Assessment in Visual Inertial Odometry</td><td>[2512.14189](http://arxiv.org/pdf/2512.14189)</td><td>◆ While many visual odometry (VO), visual-inertial odometry (VIO), and SLAM systems achieve high accuracy, the majority of existing methods miss to assess risks at runtime.
+◆ This paper presents SUPER (Sensitivity-based Uncertainty-aware PErformance and Risk assessment) that is a generic and explainable framework that propagates uncertainties via sensitivities for real-time risk assessment in VIO.
+◆ The scientific novelty lies in the derivation of a real-time risk indicator that is backend-agnostic and exploits the Schur complement blocks of the Gauss-Newton normal matrix to propagate uncertainties.</td></tr>
+<tr><td>2025-12-16</td><td>ACE-SLAM: Scene Coordinate Regression for Neural Implicit Real-Time SLAM</td><td>[2512.14032](http://arxiv.org/pdf/2512.14032)</td><td>◆ We present a novel neural RGB-D Simultaneous Localization And Mapping (SLAM) system that learns an implicit map of the scene in real time.
+◆ For the first time, we explore the use of Scene Coordinate Regression (SCR) as the core implicit map representation in a neural SLAM pipeline, a paradigm that trains a lightweight network to directly map 2D image features to 3D global coordinates.
+◆ SCR networks provide efficient, low-memory 3D map representations, enable extremely fast relocalization, and inherently preserve privacy, making them particularly suitable for neural implicit SLAM.</td></tr>
+<tr><td>2025-12-16</td><td>Deep Learning Perspective of Scene Understanding in Autonomous Robots</td><td>[2512.14020](http://arxiv.org/pdf/2512.14020)</td><td>◆ This paper provides a review of deep learning applications in scene understanding in autonomous robots, including innovations in object detection, semantic and instance segmentation, depth estimation, 3D reconstruction, and visual SLAM.
+◆ It emphasizes how these techniques address limitations of traditional geometric models, improve depth perception in real time despite occlusions and textureless surfaces, and enhance semantic reasoning to understand the environment better.
+◆ When these perception modules are integrated into dynamic and unstructured environments, they become more effective in decisionmaking, navigation and interaction.</td></tr>
+<tr><td>2025-12-16</td><td>Autonomous Construction-Site Safety Inspection Using Mobile Robots: A Multilayer VLM-LLM Pipeline</td><td>[2512.13974](http://arxiv.org/pdf/2512.13974)</td><td>◆ Construction safety inspection remains mostly manual, and automated approaches still rely on task-specific datasets that are hard to maintain in fast-changing construction environments due to frequent retraining.
+◆ Meanwhile, field inspection with robots still depends on human teleoperation and manual reporting, which are labor-intensive.
+◆ This paper aims to connect what a robot sees during autonomous navigation to the safety rules that are common in construction sites, automatically generating a safety inspection report.</td></tr>
+<tr><td>2025-12-13</td><td>INDOOR-LiDAR: Bridging Simulation and Reality for Robot-Centric 360 degree Indoor LiDAR Perception -- A Robot-Centric Hybrid Dataset</td><td>[2512.12377](http://arxiv.org/pdf/2512.12377)</td><td>◆ We present INDOOR-LIDAR, a comprehensive hybrid dataset of indoor 3D LiDAR point clouds designed to advance research in robot perception.
+◆ Existing indoor LiDAR datasets often suffer from limited scale, inconsistent annotation formats, and human-induced variability during data collection.
+◆ INDOOR-LIDAR addresses these limitations by integrating simulated environments with real-world scans acquired using autonomous ground robots, providing consistent coverage and realistic sensor behavior under controlled variations.</td></tr>
+<tr><td>2025-12-13</td><td>Semantic Zone based 3D Map Management for Mobile Robot</td><td>[2512.12228](http://arxiv.org/pdf/2512.12228)</td><td>◆ Mobile robots in large-scale indoor environments, such as hospitals and logistics centers, require accurate 3D spatial representations.
+◆ However, 3D maps consume substantial memory, making it difficult to maintain complete map data within limited computational resources.
+◆ Existing SLAM frameworks typically rely on geometric distance or temporal metrics for memory management, often resulting in inefficient data retrieval in spatially compartmentalized environments.</td></tr>
+<tr><td>2025-12-13</td><td>Navigation Around Unknown Space Objects Using Visible-Thermal Image Fusion</td><td>[2512.12203](http://arxiv.org/pdf/2512.12203)</td><td>◆ As the popularity of on-orbit operations grows, so does the need for precise navigation around unknown resident space objects (RSOs) such as other spacecraft, orbital debris, and asteroids.
+◆ The use of Simultaneous Localization and Mapping (SLAM) algorithms is often studied as a method to map out the surface of an RSO and find the inspector&#x27;s relative pose using a lidar or conventional camera.
+◆ However, conventional cameras struggle during eclipse or shadowed periods, and lidar, though robust to lighting conditions, tends to be heavier, bulkier, and more power-intensive.</td></tr>
 <tr><td>2025-12-11</td><td>Contact SLAM: An Active Tactile Exploration Policy Based on Physical Reasoning Utilized in Robotic Fine Blind Manipulation Tasks</td><td>[2512.10481](http://arxiv.org/pdf/2512.10481)</td><td>◆ Contact-rich manipulation is difficult for robots to execute and requires accurate perception of the environment.
 ◆ In some scenarios, vision is occluded.
 ◆ The robot can then no longer obtain real-time scene state information through visual feedback.</td></tr>
@@ -95,6 +122,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-16</td><td>SUPER -- A Framework for Sensitivity-based Uncertainty-aware Performance and Risk Assessment in Visual Inertial Odometry</td><td>[2512.14189](http://arxiv.org/pdf/2512.14189)</td><td>◆ While many visual odometry (VO), visual-inertial odometry (VIO), and SLAM systems achieve high accuracy, the majority of existing methods miss to assess risks at runtime.
+◆ This paper presents SUPER (Sensitivity-based Uncertainty-aware PErformance and Risk assessment) that is a generic and explainable framework that propagates uncertainties via sensitivities for real-time risk assessment in VIO.
+◆ The scientific novelty lies in the derivation of a real-time risk indicator that is backend-agnostic and exploits the Schur complement blocks of the Gauss-Newton normal matrix to propagate uncertainties.</td></tr>
+<tr><td>2025-12-16</td><td>Deep Learning Perspective of Scene Understanding in Autonomous Robots</td><td>[2512.14020](http://arxiv.org/pdf/2512.14020)</td><td>◆ This paper provides a review of deep learning applications in scene understanding in autonomous robots, including innovations in object detection, semantic and instance segmentation, depth estimation, 3D reconstruction, and visual SLAM.
+◆ It emphasizes how these techniques address limitations of traditional geometric models, improve depth perception in real time despite occlusions and textureless surfaces, and enhance semantic reasoning to understand the environment better.
+◆ When these perception modules are integrated into dynamic and unstructured environments, they become more effective in decisionmaking, navigation and interaction.</td></tr>
 <tr><td>2025-12-09</td><td>Enabling Autonomous Navigation in a Snake Robot through Visual-Inertial Odometry and Closed-Loop Trajectory Tracking Control</td><td>[2512.11886](http://arxiv.org/pdf/2512.11886)</td><td>◆ Snake robots offer exceptional mobility across extreme terrain inaccessible to conventional rovers, yet their highly articulated bodies present fundamental challenges for autonomous navigation in environments lacking external tracking infrastructure.
 ◆ This thesis develops a complete autonomy pipeline for COBRA, an 11 degree-of-freedom modular snake robot designed for planetary exploration.
 ◆ While the robot&#x27;s biologically inspired serpentine gaits achieve impressive mobility, prior work has relied entirely on open-loop teleoperation.</td></tr>
@@ -123,6 +156,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-16</td><td>Odyssey: An Automotive Lidar-Inertial Odometry Dataset for GNSS-denied situations</td><td>[2512.14428](http://arxiv.org/pdf/2512.14428)</td><td>◆ The development and evaluation of Lidar-Inertial Odometry (LIO) and Simultaneous Localization and Mapping (SLAM) systems requires a precise ground truth.
+◆ The Global Navigation Satellite System (GNSS) is often used as a foundation for this, but its signals can be unreliable in obstructed environments due to multi-path effects or loss-of-signal.
+◆ While existing datasets compensate for the sporadic loss of GNSS signals by incorporating Inertial Measurement Unit (IMU) measurements, the commonly used Micro-Electro-Mechanical Systems (MEMS) or Fiber Optic Gyroscope (FOG)-based systems do not permit the prolonged study of GNSS-denied environments.</td></tr>
+<tr><td>2025-12-16</td><td>SUPER -- A Framework for Sensitivity-based Uncertainty-aware Performance and Risk Assessment in Visual Inertial Odometry</td><td>[2512.14189](http://arxiv.org/pdf/2512.14189)</td><td>◆ While many visual odometry (VO), visual-inertial odometry (VIO), and SLAM systems achieve high accuracy, the majority of existing methods miss to assess risks at runtime.
+◆ This paper presents SUPER (Sensitivity-based Uncertainty-aware PErformance and Risk assessment) that is a generic and explainable framework that propagates uncertainties via sensitivities for real-time risk assessment in VIO.
+◆ The scientific novelty lies in the derivation of a real-time risk indicator that is backend-agnostic and exploits the Schur complement blocks of the Gauss-Newton normal matrix to propagate uncertainties.</td></tr>
+<tr><td>2025-12-16</td><td>ACE-SLAM: Scene Coordinate Regression for Neural Implicit Real-Time SLAM</td><td>[2512.14032](http://arxiv.org/pdf/2512.14032)</td><td>◆ We present a novel neural RGB-D Simultaneous Localization And Mapping (SLAM) system that learns an implicit map of the scene in real time.
+◆ For the first time, we explore the use of Scene Coordinate Regression (SCR) as the core implicit map representation in a neural SLAM pipeline, a paradigm that trains a lightweight network to directly map 2D image features to 3D global coordinates.
+◆ SCR networks provide efficient, low-memory 3D map representations, enable extremely fast relocalization, and inherently preserve privacy, making them particularly suitable for neural implicit SLAM.</td></tr>
+<tr><td>2025-12-15</td><td>CogniEdit: Dense Gradient Flow Optimization for Fine-Grained Image Editing</td><td>[2512.13276](http://arxiv.org/pdf/2512.13276)</td><td>◆ Instruction-based image editing with diffusion models has achieved impressive results, yet existing methods struggle with fine-grained instructions specifying precise attributes such as colors, positions, and quantities.
+◆ While recent approaches employ Group Relative Policy Optimization (GRPO) for alignment, they optimize only at individual sampling steps, providing sparse feedback that limits trajectory-level control.
+◆ We propose a unified framework CogniEdit, combining multi-modal reasoning with dense reward optimization that propagates gradients across consecutive denoising steps, enabling trajectory-level gradient flow through the sampling process.</td></tr>
+<tr><td>2025-12-15</td><td>Towards Test-time Efficient Visual Place Recognition via Asymmetric Query Processing</td><td>[2512.13055](http://arxiv.org/pdf/2512.13055)</td><td>◆ Visual Place Recognition (VPR) has advanced significantly with high-capacity foundation models like DINOv2, achieving remarkable performance.
+◆ Nonetheless, their substantial computational cost makes deployment on resource-constrained devices impractical.
+◆ In this paper, we introduce an efficient asymmetric VPR framework that incorporates a high-capacity gallery model for offline feature extraction with a lightweight query network for online processing.</td></tr>
+<tr><td>2025-12-15</td><td>Linear convergence of relocated fixed-point iterations</td><td>[2512.12954](http://arxiv.org/pdf/2512.12954)</td><td>◆ We establish linear convergence of relocated fixed-point iterations as introduced by Atenas et al.
+◆ (2025) assuming the algorithmic operator satisfies a linear error bound.
+◆ In particular, this framework applies to the setting where the algorithmic operator is a contraction.</td></tr>
 <tr><td>2025-12-11</td><td>Quantifying displacement: a gentrification&#x27;s consequence via persistent homology</td><td>[2512.10753](http://arxiv.org/pdf/2512.10753)</td><td>◆ Gentrification is the process by which wealthier individuals move into a previously lower-income neighbourhood.
 ◆ Among the effects of this multi-faceted phenomenon are rising living costs, cultural and social changes-where local traditions, businesses, and community networks are replaced or diluted by new, more affluent lifestyles-and population displacement, where long-term, lower-income residents are priced out by rising rents and property taxes.
 ◆ Despite its relevance, quantifying displacement presents difficulties stemming from lack of information on motives for relocation and from the fact that a long time-span must be analysed: displacement is a gradual process (leases end or conditions change at different times), impossible to capture in one data snapshot.</td></tr>
@@ -190,13 +241,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-15</td><td>JoVA: Unified Multimodal Learning for Joint Video-Audio Generation</td><td>[2512.13677](http://arxiv.org/pdf/2512.13677)</td><td>◆ In this paper, we present JoVA, a unified framework for joint video-audio generation.
+◆ Despite recent encouraging advances, existing methods face two critical limitations.
+◆ First, most existing approaches can only generate ambient sounds and lack the capability to produce human speech synchronized with lip movements.</td></tr>
 <tr><td>2025-12-11</td><td>Self-Supervised Contrastive Embedding Adaptation for Endoscopic Image Matching</td><td>[2512.10379](http://arxiv.org/pdf/2512.10379)</td><td>◆ Accurate spatial understanding is essential for image-guided surgery, augmented reality integration and context awareness.
 ◆ In minimally invasive procedures, where visual input is the sole intraoperative modality, establishing precise pixel-level correspondences between endoscopic frames is critical for 3D reconstruction, camera tracking, and scene interpretation.
 ◆ However, the surgical domain presents distinct challenges: weak perspective cues, non-Lambertian tissue reflections, and complex, deformable anatomy degrade the performance of conventional computer vision techniques.</td></tr>
-<tr><td>2025-12-11</td><td>MotionEdit: Benchmarking and Learning Motion-Centric Image Editing</td><td>[2512.10284](http://arxiv.org/pdf/2512.10284)</td><td>◆ We introduce MotionEdit, a novel dataset for motion-centric image editing-the task of modifying subject actions and interactions while preserving identity, structure, and physical plausibility.
+<tr><td>2025-12-14</td><td>MotionEdit: Benchmarking and Learning Motion-Centric Image Editing</td><td>[2512.10284](http://arxiv.org/pdf/2512.10284)</td><td>◆ We introduce MotionEdit, a novel dataset for motion-centric image editing-the task of modifying subject actions and interactions while preserving identity, structure, and physical plausibility.
 ◆ Unlike existing image editing datasets that focus on static appearance changes or contain only sparse, low-quality motion edits, MotionEdit provides high-fidelity image pairs depicting realistic motion transformations extracted and verified from continuous videos.
 ◆ This new task is not only scientifically challenging but also practically significant, powering downstream applications such as frame-controlled video synthesis and animation.</td></tr>
-<tr><td>2025-12-08</td><td>UnCageNet: Tracking and Pose Estimation of Caged Animal</td><td>[2512.07712](http://arxiv.org/pdf/2512.07712)</td><td>◆ Animal tracking and pose estimation systems, such as STEP (Simultaneous Tracking and Pose Estimation) and ViTPose, experience substantial performance drops when processing images and videos with cage structures and systematic occlusions.
+<tr><td>2025-12-16</td><td>UnCageNet: Tracking and Pose Estimation of Caged Animal</td><td>[2512.07712](http://arxiv.org/pdf/2512.07712)</td><td>◆ Animal tracking and pose estimation systems, such as STEP (Simultaneous Tracking and Pose Estimation) and ViTPose, experience substantial performance drops when processing images and videos with cage structures and systematic occlusions.
 ◆ We present a three-stage preprocessing pipeline that addresses this limitation through: (1) cage segmentation using a Gabor-enhanced ResNet-UNet architecture with tunable orientation filters, (2) cage inpainting using CRFill for content-aware reconstruction of occluded regions, and (3) evaluation of pose estimation and tracking on the uncaged frames.
 ◆ Our Gabor-enhanced segmentation model leverages orientation-aware features with 72 directional kernels to accurately identify and segment cage structures that severely impair the performance of existing methods.</td></tr>
 <tr><td>2025-12-04</td><td>Value Gradient Guidance for Flow Matching Alignment</td><td>[2512.05116](http://arxiv.org/pdf/2512.05116)</td><td>◆ While methods exist for aligning flow matching models--a popular and effective class of generative models--with human preferences, existing approaches fail to achieve both adaptation efficiency and probabilistically sound prior preservation.
@@ -308,6 +362,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-16</td><td>HGS: Hybrid Gaussian Splatting with Static-Dynamic Decomposition for Compact Dynamic View Synthesis</td><td>[2512.14352](http://arxiv.org/pdf/2512.14352)</td><td>◆ Dynamic novel view synthesis (NVS) is essential for creating immersive experiences.
+◆ Existing approaches have advanced dynamic NVS by introducing 3D Gaussian Splatting (3DGS) with implicit deformation fields or indiscriminately assigned time-varying parameters, surpassing NeRF-based methods.
+◆ However, due to excessive model complexity and parameter redundancy, they incur large model sizes and slow rendering speeds, making them inefficient for real-time applications, particularly on resource-constrained devices.</td></tr>
+<tr><td>2025-12-16</td><td>GaussianPlant: Structure-aligned Gaussian Splatting for 3D Reconstruction of Plants</td><td>[2512.14087](http://arxiv.org/pdf/2512.14087)</td><td>◆ We present a method for jointly recovering the appearance and internal structure of botanical plants from multi-view images based on 3D Gaussian Splatting (3DGS).
+◆ While 3DGS exhibits robust reconstruction of scene appearance for novel-view synthesis, it lacks structural representations underlying those appearances (e.g., branching patterns of plants), which limits its applicability to tasks such as plant phenotyping.
+◆ To achieve both high-fidelity appearance and structural reconstruction, we introduce GaussianPlant, a hierarchical 3DGS representation, which disentangles structure and appearance.</td></tr>
 <tr><td>2025-12-15</td><td>Computer vision training dataset generation for robotic environments using Gaussian splatting</td><td>[2512.13411](http://arxiv.org/pdf/2512.13411)</td><td>◆ This paper introduces a novel pipeline for generating large-scale, highly realistic, and automatically labeled datasets for computer vision tasks in robotic environments.
 ◆ Our approach addresses the critical challenges of the domain gap between synthetic and real-world imagery and the time-consuming bottleneck of manual annotation.
 ◆ We leverage 3D Gaussian Splatting (3DGS) to create photorealistic representations of the operational environment and objects.</td></tr>
@@ -406,6 +466,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-16</td><td>DASP: Self-supervised Nighttime Monocular Depth Estimation with Domain Adaptation of Spatiotemporal Priors</td><td>[2512.14536](http://arxiv.org/pdf/2512.14536)</td><td>◆ Self-supervised monocular depth estimation has achieved notable success under daytime conditions.
+◆ However, its performance deteriorates markedly at night due to low visibility and varying illumination, e.g., insufficient light causes textureless areas, and moving objects bring blurry regions.
+◆ To this end, we propose a self-supervised framework named DASP that leverages spatiotemporal priors for nighttime depth estimation.</td></tr>
+<tr><td>2025-12-16</td><td>Elastic3D: Controllable Stereo Video Conversion with Guided Latent Decoding</td><td>[2512.14236](http://arxiv.org/pdf/2512.14236)</td><td>◆ The growing demand for immersive 3D content calls for automated monocular-to-stereo video conversion.
+◆ We present Elastic3D, a controllable, direct end-to-end method for upgrading a conventional video to a binocular one.
+◆ Our approach, based on (conditional) latent diffusion, avoids artifacts due to explicit depth estimation and warping.</td></tr>
+<tr><td>2025-12-16</td><td>Robust Single-shot Structured Light 3D Imaging via Neural Feature Decoding</td><td>[2512.14028](http://arxiv.org/pdf/2512.14028)</td><td>◆ We consider the problem of active 3D imaging using single-shot structured light systems, which are widely employed in commercial 3D sensing devices such as Apple Face ID and Intel RealSense.
+◆ Traditional structured light methods typically decode depth correspondences through pixel-domain matching algorithms, resulting in limited robustness under challenging scenarios like occlusions, fine-structured details, and non-Lambertian surfaces.
+◆ Inspired by recent advances in neural feature matching, we propose a learning-based structured light decoding framework that performs robust correspondence matching within feature space rather than the fragile pixel domain.</td></tr>
+<tr><td>2025-12-16</td><td>Deep Learning Perspective of Scene Understanding in Autonomous Robots</td><td>[2512.14020](http://arxiv.org/pdf/2512.14020)</td><td>◆ This paper provides a review of deep learning applications in scene understanding in autonomous robots, including innovations in object detection, semantic and instance segmentation, depth estimation, 3D reconstruction, and visual SLAM.
+◆ It emphasizes how these techniques address limitations of traditional geometric models, improve depth perception in real time despite occlusions and textureless surfaces, and enhance semantic reasoning to understand the environment better.
+◆ When these perception modules are integrated into dynamic and unstructured environments, they become more effective in decisionmaking, navigation and interaction.</td></tr>
 <tr><td>2025-12-15</td><td>StarryGazer: Leveraging Monocular Depth Estimation Models for Domain-Agnostic Single Depth Image Completion</td><td>[2512.13147](http://arxiv.org/pdf/2512.13147)</td><td>◆ The problem of depth completion involves predicting a dense depth image from a single sparse depth map and an RGB image.
 ◆ Unsupervised depth completion methods have been proposed for various datasets where ground truth depth data is unavailable and supervised methods cannot be applied.
 ◆ However, these models require auxiliary data to estimate depth values, which is far from real scenarios.</td></tr>
@@ -526,4 +598,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.16
+> 更新于: 2025.12.17
