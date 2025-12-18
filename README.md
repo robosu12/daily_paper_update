@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.17)
+# SLAM领域最新论文 (2025.12.18)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-17</td><td>Spatia: Video Generation with Updatable Spatial Memory</td><td>[2512.15716](http://arxiv.org/pdf/2512.15716)</td><td>◆ Existing video generation models struggle to maintain long-term spatial and temporal consistency due to the dense, high-dimensional nature of video signals.
+◆ To overcome this limitation, we propose Spatia, a spatial memory-aware video generation framework that explicitly preserves a 3D scene point cloud as persistent spatial memory.
+◆ Spatia iteratively generates video clips conditioned on this spatial memory and continuously updates it through visual SLAM.</td></tr>
+<tr><td>2025-12-17</td><td>NAP3D: NeRF Assisted 3D-3D Pose Alignment for Autonomous Vehicles</td><td>[2512.15080](http://arxiv.org/pdf/2512.15080)</td><td>◆ Accurate localization is essential for autonomous vehicles, yet sensor noise and drift over time can lead to significant pose estimation errors, particularly in long-horizon environments.
+◆ A common strategy for correcting accumulated error is visual loop closure in SLAM, which adjusts the pose graph when the agent revisits previously mapped locations.
+◆ These techniques typically rely on identifying visual mappings between the current view and previously observed scenes and often require fusing data from multiple sensors.</td></tr>
+<tr><td>2025-12-17</td><td>A Parameter-Free Stochastic LineseArch Method (SLAM) for Minimizing Expectation Residuals</td><td>[2512.14979](http://arxiv.org/pdf/2512.14979)</td><td>◆ Most existing rate and complexity guarantees for stochastic gradient methods in $L$-smooth settings mandates that such sequences be non-adaptive, non-increasing, and upper bounded by $\tfrac{a}{L}$ for $a &gt; 0$.
+◆ This requires knowledge of $L$ and may preclude larger steps.
+◆ Motivated by these shortcomings, we present an Armijo-enabled stochastic linesearch framework with standard stochastic zeroth- and first-order oracles.</td></tr>
 <tr><td>2025-12-16</td><td>Odyssey: An Automotive Lidar-Inertial Odometry Dataset for GNSS-denied situations</td><td>[2512.14428](http://arxiv.org/pdf/2512.14428)</td><td>◆ The development and evaluation of Lidar-Inertial Odometry (LIO) and Simultaneous Localization and Mapping (SLAM) systems requires a precise ground truth.
 ◆ The Global Navigation Satellite System (GNSS) is often used as a foundation for this, but its signals can be unreliable in obstructed environments due to multi-path effects or loss-of-signal.
 ◆ While existing datasets compensate for the sporadic loss of GNSS signals by incorporating Inertial Measurement Unit (IMU) measurements, the commonly used Micro-Electro-Mechanical Systems (MEMS) or Fiber Optic Gyroscope (FOG)-based systems do not permit the prolonged study of GNSS-denied environments.</td></tr>
@@ -124,6 +133,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-17</td><td>Spatia: Video Generation with Updatable Spatial Memory</td><td>[2512.15716](http://arxiv.org/pdf/2512.15716)</td><td>◆ Existing video generation models struggle to maintain long-term spatial and temporal consistency due to the dense, high-dimensional nature of video signals.
+◆ To overcome this limitation, we propose Spatia, a spatial memory-aware video generation framework that explicitly preserves a 3D scene point cloud as persistent spatial memory.
+◆ Spatia iteratively generates video clips conditioned on this spatial memory and continuously updates it through visual SLAM.</td></tr>
 <tr><td>2025-12-16</td><td>SUPER -- A Framework for Sensitivity-based Uncertainty-aware Performance and Risk Assessment in Visual Inertial Odometry</td><td>[2512.14189](http://arxiv.org/pdf/2512.14189)</td><td>◆ While many visual odometry (VO), visual-inertial odometry (VIO), and SLAM systems achieve high accuracy, the majority of existing methods miss to assess risks at runtime.
 ◆ This paper presents SUPER (Sensitivity-based Uncertainty-aware PErformance and Risk assessment) that is a generic and explainable framework that propagates uncertainties via sensitivities for real-time risk assessment in VIO.
 ◆ The scientific novelty lies in the derivation of a real-time risk indicator that is backend-agnostic and exploits the Schur complement blocks of the Gauss-Newton normal matrix to propagate uncertainties.</td></tr>
@@ -160,6 +172,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-17</td><td>NAP3D: NeRF Assisted 3D-3D Pose Alignment for Autonomous Vehicles</td><td>[2512.15080](http://arxiv.org/pdf/2512.15080)</td><td>◆ Accurate localization is essential for autonomous vehicles, yet sensor noise and drift over time can lead to significant pose estimation errors, particularly in long-horizon environments.
+◆ A common strategy for correcting accumulated error is visual loop closure in SLAM, which adjusts the pose graph when the agent revisits previously mapped locations.
+◆ These techniques typically rely on identifying visual mappings between the current view and previously observed scenes and often require fusing data from multiple sensors.</td></tr>
 <tr><td>2025-12-16</td><td>Odyssey: An Automotive Lidar-Inertial Odometry Dataset for GNSS-denied situations</td><td>[2512.14428](http://arxiv.org/pdf/2512.14428)</td><td>◆ The development and evaluation of Lidar-Inertial Odometry (LIO) and Simultaneous Localization and Mapping (SLAM) systems requires a precise ground truth.
 ◆ The Global Navigation Satellite System (GNSS) is often used as a foundation for this, but its signals can be unreliable in obstructed environments due to multi-path effects or loss-of-signal.
 ◆ While existing datasets compensate for the sporadic loss of GNSS signals by incorporating Inertial Measurement Unit (IMU) measurements, the commonly used Micro-Electro-Mechanical Systems (MEMS) or Fiber Optic Gyroscope (FOG)-based systems do not permit the prolonged study of GNSS-denied environments.</td></tr>
@@ -247,6 +262,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-17</td><td>BLANKET: Anonymizing Faces in Infant Video Recordings</td><td>[2512.15542](http://arxiv.org/pdf/2512.15542)</td><td>◆ Ensuring the ethical use of video data involving human subjects, particularly infants, requires robust anonymization methods.
+◆ We propose BLANKET (Baby-face Landmark-preserving ANonymization with Keypoint dEtection consisTency), a novel approach designed to anonymize infant faces in video recordings while preserving essential facial attributes.
+◆ Our method comprises two stages.</td></tr>
+<tr><td>2025-12-17</td><td>Off The Grid: Detection of Primitives for Feed-Forward 3D Gaussian Splatting</td><td>[2512.15508](http://arxiv.org/pdf/2512.15508)</td><td>◆ Feed-forward 3D Gaussian Splatting (3DGS) models enable real-time scene generation but are hindered by suboptimal pixel-aligned primitive placement, which relies on a dense, rigid grid and limits both quality and efficiency.
+◆ We introduce a new feed-forward architecture that detects 3D Gaussian primitives at a sub-pixel level, replacing the pixel grid with an adaptive, &quot;Off The Grid&quot; distribution.
+◆ Inspired by keypoint detection, our multi-resolution decoder learns to distribute primitives across image patches.</td></tr>
 <tr><td>2025-12-15</td><td>JoVA: Unified Multimodal Learning for Joint Video-Audio Generation</td><td>[2512.13677](http://arxiv.org/pdf/2512.13677)</td><td>◆ In this paper, we present JoVA, a unified framework for joint video-audio generation.
 ◆ Despite recent encouraging advances, existing methods face two critical limitations.
 ◆ First, most existing approaches can only generate ambient sounds and lack the capability to produce human speech synchronized with lip movements.</td></tr>
@@ -370,6 +391,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-17</td><td>Off The Grid: Detection of Primitives for Feed-Forward 3D Gaussian Splatting</td><td>[2512.15508](http://arxiv.org/pdf/2512.15508)</td><td>◆ Feed-forward 3D Gaussian Splatting (3DGS) models enable real-time scene generation but are hindered by suboptimal pixel-aligned primitive placement, which relies on a dense, rigid grid and limits both quality and efficiency.
+◆ We introduce a new feed-forward architecture that detects 3D Gaussian primitives at a sub-pixel level, replacing the pixel grid with an adaptive, &quot;Off The Grid&quot; distribution.
+◆ Inspired by keypoint detection, our multi-resolution decoder learns to distribute primitives across image patches.</td></tr>
+<tr><td>2025-12-17</td><td>MVGSR: Multi-View Consistent 3D Gaussian Super-Resolution via Epipolar Guidance</td><td>[2512.15048](http://arxiv.org/pdf/2512.15048)</td><td>◆ Scenes reconstructed by 3D Gaussian Splatting (3DGS) trained on low-resolution (LR) images are unsuitable for high-resolution (HR) rendering.
+◆ Consequently, a 3DGS super-resolution (SR) method is needed to bridge LR inputs and HR rendering.
+◆ Early 3DGS SR methods rely on single-image SR networks, which lack cross-view consistency and fail to fuse complementary information across views.</td></tr>
 <tr><td>2025-12-16</td><td>HGS: Hybrid Gaussian Splatting with Static-Dynamic Decomposition for Compact Dynamic View Synthesis</td><td>[2512.14352](http://arxiv.org/pdf/2512.14352)</td><td>◆ Dynamic novel view synthesis (NVS) is essential for creating immersive experiences.
 ◆ Existing approaches have advanced dynamic NVS by introducing 3D Gaussian Splatting (3DGS) with implicit deformation fields or indiscriminately assigned time-varying parameters, surpassing NeRF-based methods.
 ◆ However, due to excessive model complexity and parameter redundancy, they incur large model sizes and slow rendering speeds, making them inefficient for real-time applications, particularly on resource-constrained devices.</td></tr>
@@ -476,6 +503,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-17</td><td>In Pursuit of Pixel Supervision for Visual Pre-training</td><td>[2512.15715](http://arxiv.org/pdf/2512.15715)</td><td>◆ At the most basic level, pixels are the source of the visual information through which we perceive the world.
+◆ Pixels contain information at all levels, ranging from low-level attributes to high-level concepts.
+◆ Autoencoders represent a classical and long-standing paradigm for learning representations from pixels or other raw inputs.</td></tr>
 <tr><td>2025-12-16</td><td>DASP: Self-supervised Nighttime Monocular Depth Estimation with Domain Adaptation of Spatiotemporal Priors</td><td>[2512.14536](http://arxiv.org/pdf/2512.14536)</td><td>◆ Self-supervised monocular depth estimation has achieved notable success under daytime conditions.
 ◆ However, its performance deteriorates markedly at night due to low visibility and varying illumination, e.g., insufficient light causes textureless areas, and moving objects bring blurry regions.
 ◆ To this end, we propose a self-supervised framework named DASP that leverages spatiotemporal priors for nighttime depth estimation.</td></tr>
@@ -494,7 +524,7 @@
 <tr><td>2025-12-13</td><td>BokehDepth: Enhancing Monocular Depth Estimation through Bokeh Generation</td><td>[2512.12425](http://arxiv.org/pdf/2512.12425)</td><td>◆ Bokeh and monocular depth estimation are tightly coupled through the same lens imaging geometry, yet current methods exploit this connection in incomplete ways.
 ◆ High-quality bokeh rendering pipelines typically depend on noisy depth maps, which amplify estimation errors into visible artifacts, while modern monocular metric depth models still struggle on weakly textured, distant and geometrically ambiguous regions where defocus cues are most informative.
 ◆ We introduce BokehDepth, a two-stage framework that decouples bokeh synthesis from depth prediction and treats defocus as an auxiliary supervision-free geometric cue.</td></tr>
-<tr><td>2025-12-12</td><td>ProbeMDE: Uncertainty-Guided Active Proprioception for Monocular Depth Estimation in Surgical Robotics</td><td>[2512.11773](http://arxiv.org/pdf/2512.11773)</td><td>◆ Monocular depth estimation (MDE) provides a useful tool for robotic perception, but its predictions are often uncertain and inaccurate in challenging environments such as surgical scenes where textureless surfaces, specular reflections, and occlusions are common.
+<tr><td>2025-12-17</td><td>ProbeMDE: Uncertainty-Guided Active Proprioception for Monocular Depth Estimation in Surgical Robotics</td><td>[2512.11773](http://arxiv.org/pdf/2512.11773)</td><td>◆ Monocular depth estimation (MDE) provides a useful tool for robotic perception, but its predictions are often uncertain and inaccurate in challenging environments such as surgical scenes where textureless surfaces, specular reflections, and occlusions are common.
 ◆ To address this, we propose ProbeMDE, a cost-aware active sensing framework that combines RGB images with sparse proprioceptive measurements for MDE.
 ◆ Our approach utilizes an ensemble of MDE models to predict dense depth maps conditioned on both RGB images and on a sparse set of known depth measurements obtained via proprioception, where the robot has touched the environment in a known configuration.</td></tr>
 <tr><td>2025-12-11</td><td>Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching</td><td>[2512.11130](http://arxiv.org/pdf/2512.11130)</td><td>◆ Stereo foundation models achieve strong zero-shot generalization but remain computationally prohibitive for real-time applications.
@@ -610,4 +640,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.17
+> 更新于: 2025.12.18
