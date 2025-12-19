@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.18)
+# SLAM领域最新论文 (2025.12.19)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-18</td><td>SNOW: Spatio-Temporal Scene Understanding with World Knowledge for Open-World Embodied Reasoning</td><td>[2512.16461](http://arxiv.org/pdf/2512.16461)</td><td>◆ Autonomous robotic systems require spatio-temporal understanding of dynamic environments to ensure reliable navigation and interaction.
+◆ While Vision-Language Models (VLMs) provide open-world semantic priors, they lack grounding in 3D geometry and temporal dynamics.
+◆ Conversely, geometric perception captures structure and motion but remains semantically sparse.</td></tr>
 <tr><td>2025-12-17</td><td>Spatia: Video Generation with Updatable Spatial Memory</td><td>[2512.15716](http://arxiv.org/pdf/2512.15716)</td><td>◆ Existing video generation models struggle to maintain long-term spatial and temporal consistency due to the dense, high-dimensional nature of video signals.
 ◆ To overcome this limitation, we propose Spatia, a spatial memory-aware video generation framework that explicitly preserves a 3D scene point cloud as persistent spatial memory.
 ◆ Spatia iteratively generates video clips conditioned on this spatial memory and continuously updates it through visual SLAM.</td></tr>
@@ -256,6 +259,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-17</td><td>The Perceptual Observatory Characterizing Robustness and Grounding in MLLMs</td><td>[2512.15949](http://arxiv.org/pdf/2512.15949)</td><td>◆ Recent advances in multimodal large language models (MLLMs) have yielded increasingly powerful models, yet their perceptual capacities remain poorly characterized.
+◆ In practice, most model families scale language component while reusing nearly identical vision encoders (e.g., Qwen2.5-VL 3B/7B/72B), which raises pivotal concerns about whether progress reflects genuine visual grounding or reliance on internet-scale textual world knowledge.
+◆ Existing evaluation methods emphasize end-task accuracy, overlooking robustness, attribution fidelity, and reasoning under controlled perturbations.</td></tr>
 <tr><td>2025-12-17</td><td>BLANKET: Anonymizing Faces in Infant Video Recordings</td><td>[2512.15542](http://arxiv.org/pdf/2512.15542)</td><td>◆ Ensuring the ethical use of video data involving human subjects, particularly infants, requires robust anonymization methods.
 ◆ We propose BLANKET (Baby-face Landmark-preserving ANonymization with Keypoint dEtection consisTency), a novel approach designed to anonymize infant faces in video recordings while preserving essential facial attributes.
 ◆ Our method comprises two stages.</td></tr>
@@ -383,6 +389,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-18</td><td>SDFoam: Signed-Distance Foam for explicit surface reconstruction</td><td>[2512.16706](http://arxiv.org/pdf/2512.16706)</td><td>◆ Neural radiance fields (NeRF) have driven impressive progress in view synthesis by using ray-traced volumetric rendering.
+◆ Splatting-based methods such as 3D Gaussian Splatting (3DGS) provide faster rendering by rasterizing 3D primitives.
+◆ RadiantFoam (RF) brought ray tracing back, achieving throughput comparable to Gaussian Splatting by organizing radiance with an explicit Voronoi Diagram (VD).</td></tr>
 <tr><td>2025-12-17</td><td>Off The Grid: Detection of Primitives for Feed-Forward 3D Gaussian Splatting</td><td>[2512.15508](http://arxiv.org/pdf/2512.15508)</td><td>◆ Feed-forward 3D Gaussian Splatting (3DGS) models enable real-time scene generation but are hindered by suboptimal pixel-aligned primitive placement, which relies on a dense, rigid grid and limits both quality and efficiency.
 ◆ We introduce a new feed-forward architecture that detects 3D Gaussian primitives at a sub-pixel level, replacing the pixel grid with an adaptive, &quot;Off The Grid&quot; distribution.
 ◆ Inspired by keypoint detection, our multi-resolution decoder learns to distribute primitives across image patches.</td></tr>
@@ -493,6 +502,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-18</td><td>Depth Any Panoramas: A Foundation Model for Panoramic Depth Estimation</td><td>[2512.16913](http://arxiv.org/pdf/2512.16913)</td><td>◆ In this work, we present a panoramic metric depth foundation model that generalizes across diverse scene distances.
+◆ We explore a data-in-the-loop paradigm from the view of both data construction and framework design.
+◆ We collect a large-scale dataset by combining public datasets, high-quality synthetic data from our UE5 simulator and text-to-image models, and real panoramic images from the web.</td></tr>
+<tr><td>2025-12-18</td><td>N3D-VLM: Native 3D Grounding Enables Accurate Spatial Reasoning in Vision-Language Models</td><td>[2512.16561](http://arxiv.org/pdf/2512.16561)</td><td>◆ While current multimodal models can answer questions based on 2D images, they lack intrinsic 3D object perception, limiting their ability to comprehend spatial relationships and depth cues in 3D scenes.
+◆ In this work, we propose N3D-VLM, a novel unified framework that seamlessly integrates native 3D object perception with 3D-aware visual reasoning, enabling both precise 3D grounding and interpretable spatial understanding.
+◆ Unlike conventional end-to-end models that directly predict answers from RGB/RGB-D inputs, our approach equips the model with native 3D object perception capabilities, enabling it to directly localize objects in 3D space based on textual descriptions.</td></tr>
 <tr><td>2025-12-17</td><td>In Pursuit of Pixel Supervision for Visual Pre-training</td><td>[2512.15715](http://arxiv.org/pdf/2512.15715)</td><td>◆ At the most basic level, pixels are the source of the visual information through which we perceive the world.
 ◆ Pixels contain information at all levels, ranging from low-level attributes to high-level concepts.
 ◆ Autoencoders represent a classical and long-standing paradigm for learning representations from pixels or other raw inputs.</td></tr>
@@ -628,4 +643,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.18
+> 更新于: 2025.12.19
