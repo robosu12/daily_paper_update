@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.21)
+# SLAM领域最新论文 (2025.12.22)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -136,6 +136,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-19</td><td>Deep Learning-based Robust Autonomous Navigation of Aerial Robots in Dense Forests</td><td>[2512.17553](http://arxiv.org/pdf/2512.17553)</td><td>◆ Autonomous aerial navigation in dense natural environments remains challenging due to limited visibility, thin and irregular obstacles, GNSS-denied operation, and frequent perceptual degradation.
+◆ This work presents an improved deep learning-based navigation framework that integrates semantically enhanced depth encoding with neural motion-primitive evaluation for robust flight in cluttered forests.
+◆ Several modules are incorporated on top of the original sevae-ORACLE algorithm to address limitations observed during real-world deployment, including lateral control for sharper maneuvering, a temporal consistency mechanism to suppress oscillatory planning decisions, a stereo-based visual-inertial odometry solution for drift-resilient state estimation, and a supervisory safety layer that filters unsafe actions in real time.</td></tr>
+<tr><td>2025-12-19</td><td>Adaptive Covariance and Quaternion-Focused Hybrid Error-State EKF/UKF for Visual-Inertial Odometry</td><td>[2512.17505](http://arxiv.org/pdf/2512.17505)</td><td>◆ This study presents an innovative hybrid Visual-Inertial Odometry (VIO) method for Unmanned Aerial Vehicles (UAVs) that is resilient to environmental challenges and capable of dynamically assessing sensor reliability.
+◆ Built upon a loosely coupled sensor fusion architecture, the system utilizes a novel hybrid Quaternion-focused Error-State EKF/UKF (Qf-ES-EKF/UKF) architecture to process inertial measurement unit (IMU) data.
+◆ This architecture first propagates the entire state using an Error-State Extended Kalman Filter (ESKF) and then applies a targeted Scaled Unscented Kalman Filter (SUKF) step to refine only the orientation.</td></tr>
 <tr><td>2025-12-17</td><td>Spatia: Video Generation with Updatable Spatial Memory</td><td>[2512.15716](http://arxiv.org/pdf/2512.15716)</td><td>◆ Existing video generation models struggle to maintain long-term spatial and temporal consistency due to the dense, high-dimensional nature of video signals.
 ◆ To overcome this limitation, we propose Spatia, a spatial memory-aware video generation framework that explicitly preserves a 3D scene point cloud as persistent spatial memory.
 ◆ Spatia iteratively generates video clips conditioned on this spatial memory and continuously updates it through visual SLAM.</td></tr>
@@ -175,6 +181,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-19</td><td>Exploring the Effect of Basis Rotation on NQS Performance</td><td>[2512.17893](http://arxiv.org/pdf/2512.17893)</td><td>◆ Neural Quantum States (NQS) use neural networks to represent wavefunctions of quantum many-body systems, but their performance depends on the choice of basis, yet the underlying mechanism remains poorly understood.
+◆ We use a fully solvable one-dimensional Ising model to show that local basis rotations leave the loss landscape unchanged while relocating the exact wavefunction in parameter space, effectively increasing its geometric distance from typical initializations.
+◆ By sweeping a rotation angle, we compute quantum Fisher information and Fubini-Study distances to quantify how the rotated wavefunction moves within the loss landscape.</td></tr>
+<tr><td>2025-12-19</td><td>Autonomous Picosecond-Precision Synchronization in Measurement-Device-Independent Quantum Key Distribution</td><td>[2512.17510](http://arxiv.org/pdf/2512.17510)</td><td>◆ Measurement-device-independent quantum key distribution (MDI-QKD) eliminates detector side-channel attacks by relocating all measurements to an untrusted intermediate node.
+◆ However, its practical implementation critically relies on picosecond-level temporal synchronization between spatially separated users.
+◆ In this work, we present a physically motivated autonomous synchronization algorithm for fiber-based MDI-QKD networks that does not require auxiliary optical channels or shared clock references.</td></tr>
 <tr><td>2025-12-17</td><td>NAP3D: NeRF Assisted 3D-3D Pose Alignment for Autonomous Vehicles</td><td>[2512.15080](http://arxiv.org/pdf/2512.15080)</td><td>◆ Accurate localization is essential for autonomous vehicles, yet sensor noise and drift over time can lead to significant pose estimation errors, particularly in long-horizon environments.
 ◆ A common strategy for correcting accumulated error is visual loop closure in SLAM, which adjusts the pose graph when the agent revisits previously mapped locations.
 ◆ These techniques typically rely on identifying visual mappings between the current view and previously observed scenes and often require fusing data from multiple sensors.</td></tr>
@@ -397,6 +409,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-19</td><td>Chorus: Multi-Teacher Pretraining for Holistic 3D Gaussian Scene Encoding</td><td>[2512.17817](http://arxiv.org/pdf/2512.17817)</td><td>◆ While 3DGS has emerged as a high-fidelity scene representation, encoding rich, general-purpose features directly from its primitives remains under-explored.
+◆ We address this gap by introducing Chorus, a multi-teacher pretraining framework that learns a holistic feed-forward 3D Gaussian Splatting (3DGS) scene encoder by distilling complementary signals from 2D foundation models.
+◆ Chorus employs a shared 3D encoder and teacher-specific projectors to learn from language-aligned, generalist, and object-aware teachers, encouraging a shared embedding space that captures signals from high-level semantics to fine-grained structure.</td></tr>
+<tr><td>2025-12-18</td><td>Animate Any Character in Any World</td><td>[2512.17796](http://arxiv.org/pdf/2512.17796)</td><td>◆ Recent advances in world models have greatly enhanced interactive environment simulation.
+◆ Existing methods mainly fall into two categories: (1) static world generation models, which construct 3D environments without active agents, and (2) controllable-entity models, which allow a single entity to perform limited actions in an otherwise uncontrollable environment.
+◆ In this work, we introduce AniX, leveraging the realism and structural grounding of static world generation while extending controllable-entity models to support user-specified characters capable of performing open-ended actions.</td></tr>
+<tr><td>2025-12-19</td><td>Flying in Clutter on Monocular RGB by Learning in 3D Radiance Fields with Domain Adaptation</td><td>[2512.17349](http://arxiv.org/pdf/2512.17349)</td><td>◆ Modern autonomous navigation systems predominantly rely on lidar and depth cameras.
+◆ However, a fundamental question remains: Can flying robots navigate in clutter using solely monocular RGB images?
+◆ Given the prohibitive costs of real-world data collection, learning policies in simulation offers a promising path.</td></tr>
 <tr><td>2025-12-18</td><td>SDFoam: Signed-Distance Foam for explicit surface reconstruction</td><td>[2512.16706](http://arxiv.org/pdf/2512.16706)</td><td>◆ Neural radiance fields (NeRF) have driven impressive progress in view synthesis by using ray-traced volumetric rendering.
 ◆ Splatting-based methods such as 3D Gaussian Splatting (3DGS) provide faster rendering by rasterizing 3D primitives.
 ◆ RadiantFoam (RF) brought ray tracing back, achieving throughput comparable to Gaussian Splatting by organizing radiance with an explicit Voronoi Diagram (VD).</td></tr>
@@ -512,6 +533,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-19</td><td>Re-Depth Anything: Test-Time Depth Refinement via Self-Supervised Re-lighting</td><td>[2512.17908](http://arxiv.org/pdf/2512.17908)</td><td>◆ Monocular depth estimation remains challenging as recent foundation models, such as Depth Anything V2 (DA-V2), struggle with real-world images that are far from the training distribution.
+◆ We introduce Re-Depth Anything, a test-time self-supervision framework that bridges this domain gap by fusing DA-V2 with the powerful priors of large-scale 2D diffusion models.
+◆ Our method performs label-free refinement directly on the input image by re-lighting predicted depth maps and augmenting the input.</td></tr>
+<tr><td>2025-12-19</td><td>Long-Range depth estimation using learning based Hybrid Distortion Model for CCTV cameras</td><td>[2512.17784](http://arxiv.org/pdf/2512.17784)</td><td>◆ Accurate camera models are essential for photogrammetry applications such as 3D mapping and object localization, particularly for long distances.
+◆ Various stereo-camera based 3D localization methods are available but are limited to few hundreds of meters&#x27; range.
+◆ This is majorly due to the limitation of the distortion models assumed for the non-linearities present in the camera lens.</td></tr>
+<tr><td>2025-12-19</td><td>SAVeD: A First-Person Social Media Video Dataset for ADAS-equipped vehicle Near-Miss and Crash Event Analyses</td><td>[2512.17724](http://arxiv.org/pdf/2512.17724)</td><td>◆ The advancement of safety-critical research in driving behavior in ADAS-equipped vehicles require real-world datasets that not only include diverse traffic scenarios but also capture high-risk edge cases such as near-miss events and system failures.
+◆ However, existing datasets are largely limited to either simulated environments or human-driven vehicle data, lacking authentic ADAS (Advanced Driver Assistance System) vehicle behavior under risk conditions.
+◆ To address this gap, this paper introduces SAVeD, a large-scale video dataset curated from publicly available social media content, explicitly focused on ADAS vehicle-related crashes, near-miss incidents, and disengagements.</td></tr>
+<tr><td>2025-12-18</td><td>Infinite-Homography as Robust Conditioning for Camera-Controlled Video Generation</td><td>[2512.17040](http://arxiv.org/pdf/2512.17040)</td><td>◆ Recent progress in video diffusion models has spurred growing interest in camera-controlled novel-view video generation for dynamic scenes, aiming to provide creators with cinematic camera control capabilities in post-production.
+◆ A key challenge in camera-controlled video generation is ensuring fidelity to the specified camera pose, while maintaining view consistency and reasoning about occluded geometry from limited observations.
+◆ To address this, existing methods either train trajectory-conditioned video generation model on trajectory-video pair dataset, or estimate depth from the input video to reproject it along a target trajectory and generate the unprojected regions.</td></tr>
 <tr><td>2025-12-18</td><td>Depth Any Panoramas: A Foundation Model for Panoramic Depth Estimation</td><td>[2512.16913](http://arxiv.org/pdf/2512.16913)</td><td>◆ In this work, we present a panoramic metric depth foundation model that generalizes across diverse scene distances.
 ◆ We explore a data-in-the-loop paradigm from the view of both data construction and framework design.
 ◆ We collect a large-scale dataset by combining public datasets, high-quality synthetic data from our UE5 simulator and text-to-image models, and real panoramic images from the web.</td></tr>
@@ -655,4 +688,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.21
+> 更新于: 2025.12.22
