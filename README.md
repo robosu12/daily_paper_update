@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.22)
+# SLAM领域最新论文 (2025.12.23)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-22</td><td>LIMOncello: Revisited IKFoM on the SGal(3) Manifold for Fast LiDAR-Inertial Odometry</td><td>[2512.19567](http://arxiv.org/pdf/2512.19567)</td><td>◆ This work introduces LIMOncello, a tightly coupled LiDAR-Inertial Odometry system that models 6-DoF motion on the $\mathrm{SGal}(3)$ manifold within an iterated error-state Kalman filter backend.
+◆ Compared to state representations defined on $\mathrm{SO}(3)\times\mathbb{R}^6$, the use of $\mathrm{SGal}(3)$ provides a coherent and numerically stable discrete-time propagation model that helps limit drift in low-observability conditions.
+◆ LIMOncello also includes a lightweight incremental i-Octree mapping backend that enables faster updates and substantially lower memory usage than incremental kd-tree style map structures, without relying on locality-restricted search heuristics.</td></tr>
 <tr><td>2025-12-18</td><td>SNOW: Spatio-Temporal Scene Understanding with World Knowledge for Open-World Embodied Reasoning</td><td>[2512.16461](http://arxiv.org/pdf/2512.16461)</td><td>◆ Autonomous robotic systems require spatio-temporal understanding of dynamic environments to ensure reliable navigation and interaction.
 ◆ While Vision-Language Models (VLMs) provide open-world semantic priors, they lack grounding in 3D geometry and temporal dynamics.
 ◆ Conversely, geometric perception captures structure and motion but remains semantically sparse.</td></tr>
@@ -136,6 +139,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-22</td><td>Trifocal Tensor and Relative Pose Estimation with Known Vertical Direction</td><td>[2512.19110](http://arxiv.org/pdf/2512.19110)</td><td>◆ This work presents two novel solvers for estimating the relative poses among views with known vertical directions.
+◆ The vertical directions of camera views can be easily obtained using inertial measurement units (IMUs) which have been widely used in autonomous vehicles, mobile phones, and unmanned aerial vehicles (UAVs).
+◆ Given the known vertical directions, our lgorithms only need to solve for two rotation angles and two translation vectors.</td></tr>
 <tr><td>2025-12-19</td><td>Deep Learning-based Robust Autonomous Navigation of Aerial Robots in Dense Forests</td><td>[2512.17553](http://arxiv.org/pdf/2512.17553)</td><td>◆ Autonomous aerial navigation in dense natural environments remains challenging due to limited visibility, thin and irregular obstacles, GNSS-denied operation, and frequent perceptual degradation.
 ◆ This work presents an improved deep learning-based navigation framework that integrates semantically enhanced depth encoding with neural motion-primitive evaluation for robust flight in cluttered forests.
 ◆ Several modules are incorporated on top of the original sevae-ORACLE algorithm to address limitations observed during real-world deployment, including lateral control for sharper maneuvering, a temporal consistency mechanism to suppress oscillatory planning decisions, a stereo-based visual-inertial odometry solution for drift-resilient state estimation, and a supervisory safety layer that filters unsafe actions in real time.</td></tr>
@@ -181,6 +187,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-21</td><td>Bridging the divide: Economic exchange and segregation in dual-income cities</td><td>[2512.18680](http://arxiv.org/pdf/2512.18680)</td><td>◆ Segregation is a growing concern around the world.
+◆ One of its main manifestations is the creation of ghettos, whose inhabitants have difficult access to well-paid jobs, which are often located far from their homes.
+◆ In order to study this phenomenon, we propose an extension of Schelling&#x27;s model of segregation to take into account the existence of economic exchanges.</td></tr>
+<tr><td>2025-12-21</td><td>Text2Graph VPR: A Text-to-Graph Expert System for Explainable Place Recognition in Changing Environments</td><td>[2512.18613](http://arxiv.org/pdf/2512.18613)</td><td>◆ Visual Place Recognition (VPR) in long-term deployment requires reasoning beyond pixel similarity: systems must make transparent, interpretable decisions that remain robust under lighting, weather and seasonal change.
+◆ We present Text2Graph VPR, an explainable semantic localization system that converts image sequences into textual scene descriptions, parses those descriptions into structured scene graphs, and reasons over the resulting graphs to identify places.
+◆ Scene graphs capture objects, attributes and pairwise relations; we aggregate per-frame graphs into a compact place representation and perform retrieval with a dual-similarity mechanism that fuses learned Graph Attention Network (GAT) embeddings and a Shortest-Path (SP) kernel for structural matching.</td></tr>
+<tr><td>2025-12-20</td><td>UniMPR: A Unified Framework for Multimodal Place Recognition with Arbitrary Sensor Configurations</td><td>[2512.18279](http://arxiv.org/pdf/2512.18279)</td><td>◆ Place recognition is a critical component of autonomous vehicles and robotics, enabling global localization in GPS-denied environments.
+◆ Recent advances have spurred significant interest in multimodal place recognition (MPR), which leverages complementary strengths of multiple modalities.
+◆ Despite its potential, most existing MPR methods still face three key challenges: (1) dynamically adapting to arbitrary modality inputs within a unified framework, (2) maintaining robustness with missing or degraded modalities, and (3) generalizing across diverse sensor configurations and setups.</td></tr>
 <tr><td>2025-12-19</td><td>Exploring the Effect of Basis Rotation on NQS Performance</td><td>[2512.17893](http://arxiv.org/pdf/2512.17893)</td><td>◆ Neural Quantum States (NQS) use neural networks to represent wavefunctions of quantum many-body systems, but their performance depends on the choice of basis, yet the underlying mechanism remains poorly understood.
 ◆ We use a fully solvable one-dimensional Ising model to show that local basis rotations leave the loss landscape unchanged while relocating the exact wavefunction in parameter space, effectively increasing its geometric distance from typical initializations.
 ◆ By sweeping a rotation angle, we compute quantum Fisher information and Fubini-Study distances to quantify how the rotated wavefunction moves within the loss landscape.</td></tr>
@@ -277,6 +292,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-20</td><td>Analog Quantum Image Representation with Qubit-Frugal Encoding</td><td>[2512.18451](http://arxiv.org/pdf/2512.18451)</td><td>◆ In this work, we introduce a fundamentally new paradigm for quantum image representation tailored for neutral-atom quantum devices.
+◆ The proposed method constructs a qubit-efficient image representation by first applying a cartographic generalization algorithm to a classical edge-extracted input image, yielding a highly optimized sparse-dot based geometric description.
+◆ While ensuring the structural integrity of the image, this sparse representation is then embedded into the atomic configuration of Aquila (QuEra Computing Inc.), modeled through the Bloqade simulation software stack.</td></tr>
 <tr><td>2025-12-17</td><td>The Perceptual Observatory Characterizing Robustness and Grounding in MLLMs</td><td>[2512.15949](http://arxiv.org/pdf/2512.15949)</td><td>◆ Recent advances in multimodal large language models (MLLMs) have yielded increasingly powerful models, yet their perceptual capacities remain poorly characterized.
 ◆ In practice, most model families scale language component while reusing nearly identical vision encoders (e.g., Qwen2.5-VL 3B/7B/72B), which raises pivotal concerns about whether progress reflects genuine visual grounding or reliance on internet-scale textual world knowledge.
 ◆ Existing evaluation methods emphasize end-task accuracy, overlooking robustness, attribution fidelity, and reasoning under controlled perturbations.</td></tr>
@@ -409,7 +427,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-12-19</td><td>Chorus: Multi-Teacher Pretraining for Holistic 3D Gaussian Scene Encoding</td><td>[2512.17817](http://arxiv.org/pdf/2512.17817)</td><td>◆ While 3DGS has emerged as a high-fidelity scene representation, encoding rich, general-purpose features directly from its primitives remains under-explored.
+<tr><td>2025-12-22</td><td>WorldWarp: Propagating 3D Geometry with Asynchronous Video Diffusion</td><td>[2512.19678](http://arxiv.org/pdf/2512.19678)</td><td>◆ Generating long-range, geometrically consistent video presents a fundamental dilemma: while consistency demands strict adherence to 3D geometry in pixel space, state-of-the-art generative models operate most effectively in a camera-conditioned latent space.
+◆ This disconnect causes current methods to struggle with occluded areas and complex camera trajectories.
+◆ To bridge this gap, we propose WorldWarp, a framework that couples a 3D structural anchor with a 2D generative refiner.</td></tr>
+<tr><td>2025-12-22</td><td>TwinAligner: Visual-Dynamic Alignment Empowers Physics-aware Real2Sim2Real for Robotic Manipulation</td><td>[2512.19390](http://arxiv.org/pdf/2512.19390)</td><td>◆ The robotics field is evolving towards data-driven, end-to-end learning, inspired by multimodal large models.
+◆ However, reliance on expensive real-world data limits progress.
+◆ Simulators offer cost-effective alternatives, but the gap between simulation and reality challenges effective policy transfer.</td></tr>
+<tr><td>2025-12-21</td><td>EcoSplat: Efficiency-controllable Feed-forward 3D Gaussian Splatting from Multi-view Images</td><td>[2512.18692](http://arxiv.org/pdf/2512.18692)</td><td>◆ Feed-forward 3D Gaussian Splatting (3DGS) enables efficient one-pass scene reconstruction, providing 3D representations for novel view synthesis without per-scene optimization.
+◆ However, existing methods typically predict pixel-aligned primitives per-view, producing an excessive number of primitives in dense-view settings and offering no explicit control over the number of predicted Gaussians.
+◆ To address this, we propose EcoSplat, the first efficiency-controllable feed-forward 3DGS framework that adaptively predicts the 3D representation for any given target primitive count at inference time.</td></tr>
+<tr><td>2025-12-21</td><td>Geometric-Photometric Event-based 3D Gaussian Ray Tracing</td><td>[2512.18640](http://arxiv.org/pdf/2512.18640)</td><td>◆ Event cameras offer a high temporal resolution over traditional frame-based cameras, which makes them suitable for motion and structure estimation.
+◆ However, it has been unclear how event-based 3D Gaussian Splatting (3DGS) approaches could leverage fine-grained temporal information of sparse events.
+◆ This work proposes a framework to address the trade-off between accuracy and temporal resolution in event-based 3DGS.</td></tr>
+<tr><td>2025-12-22</td><td>Chorus: Multi-Teacher Pretraining for Holistic 3D Gaussian Scene Encoding</td><td>[2512.17817](http://arxiv.org/pdf/2512.17817)</td><td>◆ While 3DGS has emerged as a high-fidelity scene representation, encoding rich, general-purpose features directly from its primitives remains under-explored.
 ◆ We address this gap by introducing Chorus, a multi-teacher pretraining framework that learns a holistic feed-forward 3D Gaussian Splatting (3DGS) scene encoder by distilling complementary signals from 2D foundation models.
 ◆ Chorus employs a shared 3D encoder and teacher-specific projectors to learn from language-aligned, generalist, and object-aware teachers, encouraging a shared embedding space that captures signals from high-level semantics to fine-grained structure.</td></tr>
 <tr><td>2025-12-18</td><td>Animate Any Character in Any World</td><td>[2512.17796](http://arxiv.org/pdf/2512.17796)</td><td>◆ Recent advances in world models have greatly enhanced interactive environment simulation.
@@ -533,6 +563,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-22</td><td>CoDrone: Autonomous Drone Navigation Assisted by Edge and Cloud Foundation Models</td><td>[2512.19083](http://arxiv.org/pdf/2512.19083)</td><td>◆ Autonomous navigation for Unmanned Aerial Vehicles faces key challenges from limited onboard computational resources, which restrict deployed deep neural networks to shallow architectures incapable of handling complex environments.
+◆ Offloading tasks to remote edge servers introduces high latency, creating an inherent trade-off in system design.
+◆ To address these limitations, we propose CoDrone - the first cloud-edge-end collaborative computing framework integrating foundation models into autonomous UAV cruising scenarios - effectively leveraging foundation models to enhance performance of resource-constrained unmanned aerial vehicle platforms.</td></tr>
+<tr><td>2025-12-22</td><td>CETCAM: Camera-Controllable Video Generation via Consistent and Extensible Tokenization</td><td>[2512.19020](http://arxiv.org/pdf/2512.19020)</td><td>◆ Achieving precise camera control in video generation remains challenging, as existing methods often rely on camera pose annotations that are difficult to scale to large and dynamic datasets and are frequently inconsistent with depth estimation, leading to train-test discrepancies.
+◆ We introduce CETCAM, a camera-controllable video generation framework that eliminates the need for camera annotations through a consistent and extensible tokenization scheme.
+◆ CETCAM leverages recent advances in geometry foundation models, such as VGGT, to estimate depth and camera parameters and converts them into unified, geometry-aware tokens.</td></tr>
+<tr><td>2025-12-21</td><td>A Study of Finetuning Video Transformers for Multi-view Geometry Tasks</td><td>[2512.18684](http://arxiv.org/pdf/2512.18684)</td><td>◆ This paper presents an investigation of vision transformer learning for multi-view geometry tasks, such as optical flow estimation, by fine-tuning video foundation models.
+◆ Unlike previous methods that involve custom architectural designs and task-specific pretraining, our research finds that general-purpose models pretrained on videos can be readily transferred to multi-view problems with minimal adaptation.
+◆ The core insight is that general-purpose attention between patches learns temporal and spatial information for geometric reasoning.</td></tr>
+<tr><td>2025-12-20</td><td>EndoStreamDepth: Temporally Consistent Monocular Depth Estimation for Endoscopic Video Streams</td><td>[2512.18159](http://arxiv.org/pdf/2512.18159)</td><td>◆ This work presents EndoStreamDepth, a monocular depth estimation framework for endoscopic video streams.
+◆ It provides accurate depth maps with sharp anatomical boundaries for each frame, temporally consistent predictions across frames, and real-time throughput.
+◆ Unlike prior work that uses batched inputs, EndoStreamDepth processes individual frames with a temporal module to propagate inter-frame information.</td></tr>
 <tr><td>2025-12-19</td><td>Re-Depth Anything: Test-Time Depth Refinement via Self-Supervised Re-lighting</td><td>[2512.17908](http://arxiv.org/pdf/2512.17908)</td><td>◆ Monocular depth estimation remains challenging as recent foundation models, such as Depth Anything V2 (DA-V2), struggle with real-world images that are far from the training distribution.
 ◆ We introduce Re-Depth Anything, a test-time self-supervision framework that bridges this domain gap by fusing DA-V2 with the powerful priors of large-scale 2D diffusion models.
 ◆ Our method performs label-free refinement directly on the input image by re-lighting predicted depth maps and augmenting the input.</td></tr>
@@ -688,4 +730,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.22
+> 更新于: 2025.12.23
