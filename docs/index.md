@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.23)
+# SLAM领域最新论文 (2025.12.24)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-23</td><td>FAR-AVIO: Fast and Robust Schur-Complement Based Acoustic-Visual-Inertial Fusion Odometry with Sensor Calibration</td><td>[2512.20355](http://arxiv.org/pdf/2512.20355)</td><td>◆ Underwater environments impose severe challenges to visual-inertial odometry systems, as strong light attenuation, marine snow and turbidity, together with weakly exciting motions, degrade inertial observability and cause frequent tracking failures over long-term operation.
+◆ While tightly coupled acoustic-visual-inertial fusion, typically implemented through an acoustic Doppler Velocity Log (DVL) integrated with visual-inertial measurements, can provide accurate state estimation, the associated graph-based optimization is often computationally prohibitive for real-time deployment on resource-constrained platforms.
+◆ Here we present FAR-AVIO, a Schur-Complement based, tightly coupled acoustic-visual-inertial odometry framework tailored for underwater robots.</td></tr>
 <tr><td>2025-12-22</td><td>LIMOncello: Revisited IKFoM on the SGal(3) Manifold for Fast LiDAR-Inertial Odometry</td><td>[2512.19567](http://arxiv.org/pdf/2512.19567)</td><td>◆ This work introduces LIMOncello, a tightly coupled LiDAR-Inertial Odometry system that models 6-DoF motion on the $\mathrm{SGal}(3)$ manifold within an iterated error-state Kalman filter backend.
 ◆ Compared to state representations defined on $\mathrm{SO}(3)\times\mathbb{R}^6$, the use of $\mathrm{SGal}(3)$ provides a coherent and numerically stable discrete-time propagation model that helps limit drift in low-observability conditions.
 ◆ LIMOncello also includes a lightweight incremental i-Octree mapping backend that enables faster updates and substantially lower memory usage than incremental kd-tree style map structures, without relying on locality-restricted search heuristics.</td></tr>
@@ -137,6 +140,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-23</td><td>Drift-Corrected Monocular VIO and Perception-Aware Planning for Autonomous Drone Racing</td><td>[2512.20475](http://arxiv.org/pdf/2512.20475)</td><td>◆ The Abu Dhabi Autonomous Racing League(A2RL) x Drone Champions League competition(DCL) requires teams to perform high-speed autonomous drone racing using only a single camera and a low-quality inertial measurement unit -- a minimal sensor set that mirrors expert human drone racing pilots.
+◆ This sensor limitation makes the system susceptible to drift from Visual-Inertial Odometry (VIO), particularly during long and fast flights with aggressive maneuvers.
+◆ This paper presents the system developed for the championship, which achieved a competitive performance.</td></tr>
+<tr><td>2025-12-23</td><td>FAR-AVIO: Fast and Robust Schur-Complement Based Acoustic-Visual-Inertial Fusion Odometry with Sensor Calibration</td><td>[2512.20355](http://arxiv.org/pdf/2512.20355)</td><td>◆ Underwater environments impose severe challenges to visual-inertial odometry systems, as strong light attenuation, marine snow and turbidity, together with weakly exciting motions, degrade inertial observability and cause frequent tracking failures over long-term operation.
+◆ While tightly coupled acoustic-visual-inertial fusion, typically implemented through an acoustic Doppler Velocity Log (DVL) integrated with visual-inertial measurements, can provide accurate state estimation, the associated graph-based optimization is often computationally prohibitive for real-time deployment on resource-constrained platforms.
+◆ Here we present FAR-AVIO, a Schur-Complement based, tightly coupled acoustic-visual-inertial odometry framework tailored for underwater robots.</td></tr>
 <tr><td>2025-12-22</td><td>Trifocal Tensor and Relative Pose Estimation with Known Vertical Direction</td><td>[2512.19110](http://arxiv.org/pdf/2512.19110)</td><td>◆ This work presents two novel solvers for estimating the relative poses among views with known vertical directions.
 ◆ The vertical directions of camera views can be easily obtained using inertial measurement units (IMUs) which have been widely used in autonomous vehicles, mobile phones, and unmanned aerial vehicles (UAVs).
 ◆ Given the known vertical directions, our lgorithms only need to solve for two rotation angles and two translation vectors.</td></tr>
@@ -189,7 +198,7 @@
 <tr><td>2025-12-21</td><td>Text2Graph VPR: A Text-to-Graph Expert System for Explainable Place Recognition in Changing Environments</td><td>[2512.18613](http://arxiv.org/pdf/2512.18613)</td><td>◆ Visual Place Recognition (VPR) in long-term deployment requires reasoning beyond pixel similarity: systems must make transparent, interpretable decisions that remain robust under lighting, weather and seasonal change.
 ◆ We present Text2Graph VPR, an explainable semantic localization system that converts image sequences into textual scene descriptions, parses those descriptions into structured scene graphs, and reasons over the resulting graphs to identify places.
 ◆ Scene graphs capture objects, attributes and pairwise relations; we aggregate per-frame graphs into a compact place representation and perform retrieval with a dual-similarity mechanism that fuses learned Graph Attention Network (GAT) embeddings and a Shortest-Path (SP) kernel for structural matching.</td></tr>
-<tr><td>2025-12-20</td><td>UniMPR: A Unified Framework for Multimodal Place Recognition with Arbitrary Sensor Configurations</td><td>[2512.18279](http://arxiv.org/pdf/2512.18279)</td><td>◆ Place recognition is a critical component of autonomous vehicles and robotics, enabling global localization in GPS-denied environments.
+<tr><td>2025-12-23</td><td>UniMPR: A Unified Framework for Multimodal Place Recognition with Heterogeneous Sensor Configurations</td><td>[2512.18279](http://arxiv.org/pdf/2512.18279)</td><td>◆ Place recognition is a critical component of autonomous vehicles and robotics, enabling global localization in GPS-denied environments.
 ◆ Recent advances have spurred significant interest in multimodal place recognition (MPR), which leverages complementary strengths of multiple modalities.
 ◆ Despite its potential, most existing MPR methods still face three key challenges: (1) dynamically adapting to arbitrary modality inputs within a unified framework, (2) maintaining robustness with missing or degraded modalities, and (3) generalizing across diverse sensor configurations and setups.</td></tr>
 <tr><td>2025-12-19</td><td>Exploring the Effect of Basis Rotation on NQS Performance</td><td>[2512.17893](http://arxiv.org/pdf/2512.17893)</td><td>◆ Neural Quantum States (NQS) use neural networks to represent wavefunctions of quantum many-body systems, but their performance depends on the choice of basis, yet the underlying mechanism remains poorly understood.
@@ -419,6 +428,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-23</td><td>Nebula: Enable City-Scale 3D Gaussian Splatting in Virtual Reality via Collaborative Rendering and Accelerated Stereo Rasterization</td><td>[2512.20495](http://arxiv.org/pdf/2512.20495)</td><td>◆ 3D Gaussian splatting (3DGS) has drawn significant attention in the architectural community recently.
+◆ However, current architectural designs often overlook the 3DGS scalability, making them fragile for extremely large-scale 3DGS.
+◆ Meanwhile, the VR bandwidth requirement makes it impossible to deliver high-fidelity and smooth VR content from the cloud.</td></tr>
+<tr><td>2025-12-23</td><td>Enhancing annotations for 5D apple pose estimation through 3D Gaussian Splatting (3DGS)</td><td>[2512.20148](http://arxiv.org/pdf/2512.20148)</td><td>◆ Automating tasks in orchards is challenging because of the large amount of variation in the environment and occlusions.
+◆ One of the challenges is apple pose estimation, where key points, such as the calyx, are often occluded.
+◆ Recently developed pose estimation methods no longer rely on these key points, but still require them for annotations, making annotating challenging and time-consuming.</td></tr>
 <tr><td>2025-12-22</td><td>WorldWarp: Propagating 3D Geometry with Asynchronous Video Diffusion</td><td>[2512.19678](http://arxiv.org/pdf/2512.19678)</td><td>◆ Generating long-range, geometrically consistent video presents a fundamental dilemma: while consistency demands strict adherence to 3D geometry in pixel space, state-of-the-art generative models operate most effectively in a camera-conditioned latent space.
 ◆ This disconnect causes current methods to struggle with occluded areas and complex camera trajectories.
 ◆ To bridge this gap, we propose WorldWarp, a framework that couples a 3D structural anchor with a 2D generative refiner.</td></tr>
@@ -718,4 +733,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.23
+> 更新于: 2025.12.24
