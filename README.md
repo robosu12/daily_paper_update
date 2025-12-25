@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.24)
+# SLAM领域最新论文 (2025.12.25)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -196,6 +196,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-24</td><td>UniPR-3D: Towards Universal Visual Place Recognition with Visual Geometry Grounded Transformer</td><td>[2512.21078](http://arxiv.org/pdf/2512.21078)</td><td>◆ Visual Place Recognition (VPR) has been traditionally formulated as a single-image retrieval task.
+◆ Using multiple views offers clear advantages, yet this setting remains relatively underexplored and existing methods often struggle to generalize across diverse environments.
+◆ In this work we introduce UniPR-3D, the first VPR architecture that effectively integrates information from multiple views.</td></tr>
 <tr><td>2025-12-21</td><td>Bridging the divide: Economic exchange and segregation in dual-income cities</td><td>[2512.18680](http://arxiv.org/pdf/2512.18680)</td><td>◆ Segregation is a growing concern around the world.
 ◆ One of its main manifestations is the creation of ghettos, whose inhabitants have difficult access to well-paid jobs, which are often located far from their homes.
 ◆ In order to study this phenomenon, we propose an extension of Schelling&#x27;s model of segregation to take into account the existence of economic exchanges.</td></tr>
@@ -301,6 +304,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-24</td><td>VisRes Bench: On Evaluating the Visual Reasoning Capabilities of VLMs</td><td>[2512.21194](http://arxiv.org/pdf/2512.21194)</td><td>◆ Vision-Language Models (VLMs) have achieved remarkable progress across tasks such as visual question answering and image captioning.
+◆ Yet, the extent to which these models perform visual reasoning as opposed to relying on linguistic priors remains unclear.
+◆ To address this, we introduce VisRes Bench, a benchmark designed to study visual reasoning in naturalistic settings without contextual language supervision.</td></tr>
 <tr><td>2025-12-20</td><td>Analog Quantum Image Representation with Qubit-Frugal Encoding</td><td>[2512.18451](http://arxiv.org/pdf/2512.18451)</td><td>◆ In this work, we introduce a fundamentally new paradigm for quantum image representation tailored for neutral-atom quantum devices.
 ◆ The proposed method constructs a qubit-efficient image representation by first applying a cartographic generalization algorithm to a classical edge-extracted input image, yielding a highly optimized sparse-dot based geometric description.
 ◆ While ensuring the structural integrity of the image, this sparse representation is then embedded into the atomic configuration of Aquila (QuEra Computing Inc.), modeled through the Bloqade simulation software stack.</td></tr>
@@ -578,7 +584,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-12-22</td><td>CoDrone: Autonomous Drone Navigation Assisted by Edge and Cloud Foundation Models</td><td>[2512.19083](http://arxiv.org/pdf/2512.19083)</td><td>◆ Autonomous navigation for Unmanned Aerial Vehicles faces key challenges from limited onboard computational resources, which restrict deployed deep neural networks to shallow architectures incapable of handling complex environments.
+<tr><td>2025-12-24</td><td>CoDrone: Autonomous Drone Navigation Assisted by Edge and Cloud Foundation Models</td><td>[2512.19083](http://arxiv.org/pdf/2512.19083)</td><td>◆ Autonomous navigation for Unmanned Aerial Vehicles faces key challenges from limited onboard computational resources, which restrict deployed deep neural networks to shallow architectures incapable of handling complex environments.
 ◆ Offloading tasks to remote edge servers introduces high latency, creating an inherent trade-off in system design.
 ◆ To address these limitations, we propose CoDrone - the first cloud-edge-end collaborative computing framework integrating foundation models into autonomous UAV cruising scenarios - effectively leveraging foundation models to enhance performance of resource-constrained unmanned aerial vehicle platforms.</td></tr>
 <tr><td>2025-12-22</td><td>CETCAM: Camera-Controllable Video Generation via Consistent and Extensible Tokenization</td><td>[2512.19020](http://arxiv.org/pdf/2512.19020)</td><td>◆ Achieving precise camera control in video generation remains challenging, as existing methods often rely on camera pose annotations that are difficult to scale to large and dynamic datasets and are frequently inconsistent with depth estimation, leading to train-test discrepancies.
@@ -745,4 +751,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.24
+> 更新于: 2025.12.25
