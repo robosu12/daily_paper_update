@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.28)
+# SLAM领域最新论文 (2025.12.29)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,7 +22,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-12-23</td><td>FAR-AVIO: Fast and Robust Schur-Complement Based Acoustic-Visual-Inertial Fusion Odometry with Sensor Calibration</td><td>[2512.20355](http://arxiv.org/pdf/2512.20355)</td><td>◆ Underwater environments impose severe challenges to visual-inertial odometry systems, as strong light attenuation, marine snow and turbidity, together with weakly exciting motions, degrade inertial observability and cause frequent tracking failures over long-term operation.
+<tr><td>2025-12-25</td><td>World-Coordinate Human Motion Retargeting via SAM 3D Body</td><td>[2512.21573](http://arxiv.org/pdf/2512.21573)</td><td>◆ Recovering world-coordinate human motion from monocular videos with humanoid robot retargeting is significant for embodied intelligence and robotics.
+◆ To avoid complex SLAM pipelines or heavy temporal models, we propose a lightweight, engineering-oriented framework that leverages SAM 3D Body (3DB) as a frozen perception backbone and uses the Momentum HumanRig (MHR) representation as a robot-friendly intermediate.
+◆ Our method (i) locks the identity and skeleton-scale parameters of per tracked subject to enforce temporally consistent bone lengths, (ii) smooths per-frame predictions via efficient sliding-window optimization in the low-dimensional MHR latent space, and (iii) recovers physically plausible global root trajectories with a differentiable soft foot-ground contact model and contact-aware global optimization.</td></tr>
+<tr><td>2025-12-25</td><td>FAR-AVIO: Fast and Robust Schur-Complement Based Acoustic-Visual-Inertial Fusion Odometry with Sensor Calibration</td><td>[2512.20355](http://arxiv.org/pdf/2512.20355)</td><td>◆ Underwater environments impose severe challenges to visual-inertial odometry systems, as strong light attenuation, marine snow and turbidity, together with weakly exciting motions, degrade inertial observability and cause frequent tracking failures over long-term operation.
 ◆ While tightly coupled acoustic-visual-inertial fusion, typically implemented through an acoustic Doppler Velocity Log (DVL) integrated with visual-inertial measurements, can provide accurate state estimation, the associated graph-based optimization is often computationally prohibitive for real-time deployment on resource-constrained platforms.
 ◆ Here we present FAR-AVIO, a Schur-Complement based, tightly coupled acoustic-visual-inertial odometry framework tailored for underwater robots.</td></tr>
 <tr><td>2025-12-22</td><td>LIMOncello: Revisited IKFoM on the SGal(3) Manifold for Fast LiDAR-Inertial Odometry</td><td>[2512.19567](http://arxiv.org/pdf/2512.19567)</td><td>◆ This work introduces LIMOncello, a tightly coupled LiDAR-Inertial Odometry system that models 6-DoF motion on the $\mathrm{SGal}(3)$ manifold within an iterated error-state Kalman filter backend.
@@ -143,7 +146,7 @@
 <tr><td>2025-12-23</td><td>Drift-Corrected Monocular VIO and Perception-Aware Planning for Autonomous Drone Racing</td><td>[2512.20475](http://arxiv.org/pdf/2512.20475)</td><td>◆ The Abu Dhabi Autonomous Racing League(A2RL) x Drone Champions League competition(DCL) requires teams to perform high-speed autonomous drone racing using only a single camera and a low-quality inertial measurement unit -- a minimal sensor set that mirrors expert human drone racing pilots.
 ◆ This sensor limitation makes the system susceptible to drift from Visual-Inertial Odometry (VIO), particularly during long and fast flights with aggressive maneuvers.
 ◆ This paper presents the system developed for the championship, which achieved a competitive performance.</td></tr>
-<tr><td>2025-12-23</td><td>FAR-AVIO: Fast and Robust Schur-Complement Based Acoustic-Visual-Inertial Fusion Odometry with Sensor Calibration</td><td>[2512.20355](http://arxiv.org/pdf/2512.20355)</td><td>◆ Underwater environments impose severe challenges to visual-inertial odometry systems, as strong light attenuation, marine snow and turbidity, together with weakly exciting motions, degrade inertial observability and cause frequent tracking failures over long-term operation.
+<tr><td>2025-12-25</td><td>FAR-AVIO: Fast and Robust Schur-Complement Based Acoustic-Visual-Inertial Fusion Odometry with Sensor Calibration</td><td>[2512.20355](http://arxiv.org/pdf/2512.20355)</td><td>◆ Underwater environments impose severe challenges to visual-inertial odometry systems, as strong light attenuation, marine snow and turbidity, together with weakly exciting motions, degrade inertial observability and cause frequent tracking failures over long-term operation.
 ◆ While tightly coupled acoustic-visual-inertial fusion, typically implemented through an acoustic Doppler Velocity Log (DVL) integrated with visual-inertial measurements, can provide accurate state estimation, the associated graph-based optimization is often computationally prohibitive for real-time deployment on resource-constrained platforms.
 ◆ Here we present FAR-AVIO, a Schur-Complement based, tightly coupled acoustic-visual-inertial odometry framework tailored for underwater robots.</td></tr>
 <tr><td>2025-12-22</td><td>Trifocal Tensor and Relative Pose Estimation with Known Vertical Direction</td><td>[2512.19110](http://arxiv.org/pdf/2512.19110)</td><td>◆ This work presents two novel solvers for estimating the relative poses among views with known vertical directions.
@@ -192,6 +195,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-26</td><td>Reloc-VGGT: Visual Re-localization with Geometry Grounded Transformer</td><td>[2512.21883](http://arxiv.org/pdf/2512.21883)</td><td>◆ Visual localization has traditionally been formulated as a pair-wise pose regression problem.
+◆ Existing approaches mainly estimate relative poses between two images and employ a late-fusion strategy to obtain absolute pose estimates.
+◆ However, the late motion average is often insufficient for effectively integrating spatial information, and its accuracy degrades in complex environments.</td></tr>
 <tr><td>2025-12-24</td><td>UniPR-3D: Towards Universal Visual Place Recognition with Visual Geometry Grounded Transformer</td><td>[2512.21078](http://arxiv.org/pdf/2512.21078)</td><td>◆ Visual Place Recognition (VPR) has been traditionally formulated as a single-image retrieval task.
 ◆ Using multiple views offers clear advantages, yet this setting remains relatively underexplored and existing methods often struggle to generalize across diverse environments.
 ◆ In this work we introduce UniPR-3D, the first VPR architecture that effectively integrates information from multiple views.</td></tr>
@@ -574,6 +580,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-26</td><td>Bab_Sak Robotic Intubation System (BRIS): A Learning-Enabled Control Framework for Safe Fiberoptic Endotracheal Intubation</td><td>[2512.21983](http://arxiv.org/pdf/2512.21983)</td><td>◆ Endotracheal intubation is a critical yet technically demanding procedure, with failure or improper tube placement leading to severe complications.
+◆ Existing robotic and teleoperated intubation systems primarily focus on airway navigation and do not provide integrated control of endotracheal tube advancement or objective verification of tube depth relative to the carina.
+◆ This paper presents the Robotic Intubation System (BRIS), a compact, human-in-the-loop platform designed to assist fiberoptic-guided intubation while enabling real-time, objective depth awareness.</td></tr>
+<tr><td>2025-12-26</td><td>StereoVLA: Enhancing Vision-Language-Action Models with Stereo Vision</td><td>[2512.21970](http://arxiv.org/pdf/2512.21970)</td><td>◆ Stereo cameras closely mimic human binocular vision, providing rich spatial cues critical for precise robotic manipulation.
+◆ Despite their advantage, the adoption of stereo vision in vision-language-action models (VLAs) remains underexplored.
+◆ In this work, we present StereoVLA, a VLA model that leverages rich geometric cues from stereo vision.</td></tr>
 <tr><td>2025-12-24</td><td>CoDrone: Autonomous Drone Navigation Assisted by Edge and Cloud Foundation Models</td><td>[2512.19083](http://arxiv.org/pdf/2512.19083)</td><td>◆ Autonomous navigation for Unmanned Aerial Vehicles faces key challenges from limited onboard computational resources, which restrict deployed deep neural networks to shallow architectures incapable of handling complex environments.
 ◆ Offloading tasks to remote edge servers introduces high latency, creating an inherent trade-off in system design.
 ◆ To address these limitations, we propose CoDrone - the first cloud-edge-end collaborative computing framework integrating foundation models into autonomous UAV cruising scenarios - effectively leveraging foundation models to enhance performance of resource-constrained unmanned aerial vehicle platforms.</td></tr>
@@ -739,4 +751,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.28
+> 更新于: 2025.12.29
