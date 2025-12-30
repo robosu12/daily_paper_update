@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.29)
+# SLAM领域最新论文 (2025.12.30)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-27</td><td>Mesquite MoCap: Democratizing Real-Time Motion Capture with Affordable, Bodyworn IoT Sensors and WebXR SLAM</td><td>[2512.22690](http://arxiv.org/pdf/2512.22690)</td><td>◆ Motion capture remains costly and complex to deploy, limiting use outside specialized laboratories.
+◆ We present Mesquite, an open-source, low-cost inertial motion-capture system that combines a body-worn network of 15 IMU sensor nodes with a hip-worn Android smartphone for position tracking.
+◆ A low-power wireless link streams quaternion orientations to a central USB dongle and a browser-based application for real-time visualization and recording.</td></tr>
+<tr><td>2025-12-26</td><td>Simultaneous Source Separation, Synchronization, Localization and Mapping for 6G Systems</td><td>[2512.22393](http://arxiv.org/pdf/2512.22393)</td><td>◆ Multipath-based simultaneous localization and mapping (MP-SLAM) is a promising approach for future 6G networks to jointly estimate the positions of transmitters and receivers together with the propagation environment.
+◆ In cooperative MP-SLAM, information collected by multiple mobile terminals (MTs) is fused to enhance accuracy and robustness.
+◆ Existing methods, however, typically assume perfectly synchronized base stations (BSs) and orthogonal transmission sequences, rendering inter-BS interference at the MTs negligible.</td></tr>
 <tr><td>2025-12-25</td><td>World-Coordinate Human Motion Retargeting via SAM 3D Body</td><td>[2512.21573](http://arxiv.org/pdf/2512.21573)</td><td>◆ Recovering world-coordinate human motion from monocular videos with humanoid robot retargeting is significant for embodied intelligence and robotics.
 ◆ To avoid complex SLAM pipelines or heavy temporal models, we propose a lightweight, engineering-oriented framework that leverages SAM 3D Body (3DB) as a frozen perception backbone and uses the Momentum HumanRig (MHR) representation as a robot-friendly intermediate.
 ◆ Our method (i) locks the identity and skeleton-scale parameters of per tracked subject to enforce temporally consistent bone lengths, (ii) smooths per-frame predictions via efficient sliding-window optimization in the low-dimensional MHR latent space, and (iii) recovers physically plausible global root trajectories with a differentiable soft foot-ground contact model and contact-aware global optimization.</td></tr>
@@ -202,7 +208,7 @@
 <tr><td>2025-12-26</td><td>Reloc-VGGT: Visual Re-localization with Geometry Grounded Transformer</td><td>[2512.21883](http://arxiv.org/pdf/2512.21883)</td><td>◆ Visual localization has traditionally been formulated as a pair-wise pose regression problem.
 ◆ Existing approaches mainly estimate relative poses between two images and employ a late-fusion strategy to obtain absolute pose estimates.
 ◆ However, the late motion average is often insufficient for effectively integrating spatial information, and its accuracy degrades in complex environments.</td></tr>
-<tr><td>2025-12-24</td><td>UniPR-3D: Towards Universal Visual Place Recognition with Visual Geometry Grounded Transformer</td><td>[2512.21078](http://arxiv.org/pdf/2512.21078)</td><td>◆ Visual Place Recognition (VPR) has been traditionally formulated as a single-image retrieval task.
+<tr><td>2025-12-28</td><td>UniPR-3D: Towards Universal Visual Place Recognition with Visual Geometry Grounded Transformer</td><td>[2512.21078](http://arxiv.org/pdf/2512.21078)</td><td>◆ Visual Place Recognition (VPR) has been traditionally formulated as a single-image retrieval task.
 ◆ Using multiple views offers clear advantages, yet this setting remains relatively underexplored and existing methods often struggle to generalize across diverse environments.
 ◆ In this work we introduce UniPR-3D, the first VPR architecture that effectively integrates information from multiple views.</td></tr>
 <tr><td>2025-12-21</td><td>Bridging the divide: Economic exchange and segregation in dual-income cities</td><td>[2512.18680](http://arxiv.org/pdf/2512.18680)</td><td>◆ Segregation is a growing concern around the world.
@@ -448,6 +454,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-28</td><td>3D Scene Change Modeling With Consistent Multi-View Aggregation</td><td>[2512.22830](http://arxiv.org/pdf/2512.22830)</td><td>◆ Change detection plays a vital role in scene monitoring, exploration, and continual reconstruction.
+◆ Existing 3D change detection methods often exhibit spatial inconsistency in the detected changes and fail to explicitly separate pre- and post-change states.
+◆ To address these limitations, we propose SCaR-3D, a novel 3D scene change detection framework that identifies object-level changes from a dense-view pre-change image sequence and sparse-view post-change images.</td></tr>
 <tr><td>2025-12-23</td><td>Nebula: Enable City-Scale 3D Gaussian Splatting in Virtual Reality via Collaborative Rendering and Accelerated Stereo Rasterization</td><td>[2512.20495](http://arxiv.org/pdf/2512.20495)</td><td>◆ 3D Gaussian splatting (3DGS) has drawn significant attention in the architectural community recently.
 ◆ However, current architectural designs often overlook the 3DGS scalability, making them fragile for extremely large-scale 3DGS.
 ◆ Meanwhile, the VR bandwidth requirement makes it impossible to deliver high-fidelity and smooth VR content from the cloud.</td></tr>
@@ -590,6 +599,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-28</td><td>With Great Context Comes Great Prediction Power: Classifying Objects via Geo-Semantic Scene Graphs</td><td>[2512.23024](http://arxiv.org/pdf/2512.23024)</td><td>◆ Humans effortlessly identify objects by leveraging a rich understanding of the surrounding scene, including spatial relationships, material properties, and the co-occurrence of other objects.
+◆ In contrast, most computational object recognition systems operate on isolated image regions, devoid of meaning in isolation, thus ignoring this vital contextual information.
+◆ This paper argues for the critical role of context and introduces a novel framework for contextual object classification.</td></tr>
+<tr><td>2025-12-28</td><td>Depth Anything in $360^\circ$: Towards Scale Invariance in the Wild</td><td>[2512.22819](http://arxiv.org/pdf/2512.22819)</td><td>◆ Panoramic depth estimation provides a comprehensive solution for capturing complete $360^\circ$ environmental structural information, offering significant benefits for robotics and AR/VR applications.
+◆ However, while extensively studied in indoor settings, its zero-shot generalization to open-world domains lags far behind perspective images, which benefit from abundant training data.
+◆ This disparity makes transferring capabilities from the perspective domain an attractive solution.</td></tr>
+<tr><td>2025-12-27</td><td>Visual Autoregressive Modelling for Monocular Depth Estimation</td><td>[2512.22653](http://arxiv.org/pdf/2512.22653)</td><td>◆ We propose a monocular depth estimation method based on visual autoregressive (VAR) priors, offering an alternative to diffusion-based approaches.
+◆ Our method adapts a large-scale text-to-image VAR model and introduces a scale-wise conditional upsampling mechanism with classifier-free guidance.
+◆ Our approach performs inference in ten fixed autoregressive stages, requiring only 74K synthetic samples for fine-tuning, and achieves competitive results.</td></tr>
+<tr><td>2025-12-26</td><td>iOSPointMapper: RealTime Pedestrian and Accessibility Mapping with Mobile AI</td><td>[2512.22392](http://arxiv.org/pdf/2512.22392)</td><td>◆ Accurate, up-to-date sidewalk data is essential for building accessible and inclusive pedestrian infrastructure, yet current approaches to data collection are often costly, fragmented, and difficult to scale.
+◆ We introduce iOSPointMapper, a mobile application that enables real-time, privacy-conscious sidewalk mapping on the ground, using recent-generation iPhones and iPads.
+◆ The system leverages on-device semantic segmentation, LiDAR-based depth estimation, and fused GPS/IMU data to detect and localize sidewalk-relevant features such as traffic signs, traffic lights and poles.</td></tr>
 <tr><td>2025-12-26</td><td>Bab_Sak Robotic Intubation System (BRIS): A Learning-Enabled Control Framework for Safe Fiberoptic Endotracheal Intubation</td><td>[2512.21983](http://arxiv.org/pdf/2512.21983)</td><td>◆ Endotracheal intubation is a critical yet technically demanding procedure, with failure or improper tube placement leading to severe complications.
 ◆ Existing robotic and teleoperated intubation systems primarily focus on airway navigation and do not provide integrated control of endotracheal tube advancement or objective verification of tube depth relative to the carina.
 ◆ This paper presents the Robotic Intubation System (BRIS), a compact, human-in-the-loop platform designed to assist fiberoptic-guided intubation while enabling real-time, objective depth awareness.</td></tr>
@@ -763,4 +784,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.29
+> 更新于: 2025.12.30
