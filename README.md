@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2025.12.31)
+# SLAM领域最新论文 (2026.01.01)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,10 +22,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-31</td><td>FoundationSLAM: Unleashing the Power of Depth Foundation Models for End-to-End Dense Visual SLAM</td><td>[2512.25008](http://arxiv.org/pdf/2512.25008)</td><td>◆ We present FoundationSLAM, a learning-based monocular dense SLAM system that addresses the absence of geometric consistency in previous flow-based approaches for accurate and robust tracking and mapping.
+◆ Our core idea is to bridge flow estimation with geometric reasoning by leveraging the guidance from foundation depth models.
+◆ To this end, we first develop a Hybrid Flow Network that produces geometry-aware correspondences, enabling consistent depth and pose inference across diverse keyframes.</td></tr>
 <tr><td>2025-12-27</td><td>Mesquite MoCap: Democratizing Real-Time Motion Capture with Affordable, Bodyworn IoT Sensors and WebXR SLAM</td><td>[2512.22690](http://arxiv.org/pdf/2512.22690)</td><td>◆ Motion capture remains costly and complex to deploy, limiting use outside specialized laboratories.
 ◆ We present Mesquite, an open-source, low-cost inertial motion-capture system that combines a body-worn network of 15 IMU sensor nodes with a hip-worn Android smartphone for position tracking.
 ◆ A low-power wireless link streams quaternion orientations to a central USB dongle and a browser-based application for real-time visualization and recording.</td></tr>
-<tr><td>2025-12-26</td><td>Simultaneous Source Separation, Synchronization, Localization and Mapping for 6G Systems</td><td>[2512.22393](http://arxiv.org/pdf/2512.22393)</td><td>◆ Multipath-based simultaneous localization and mapping (MP-SLAM) is a promising approach for future 6G networks to jointly estimate the positions of transmitters and receivers together with the propagation environment.
+<tr><td>2025-12-30</td><td>Simultaneous Source Separation, Synchronization, Localization and Mapping for 6G Systems</td><td>[2512.22393](http://arxiv.org/pdf/2512.22393)</td><td>◆ Multipath-based simultaneous localization and mapping (MP-SLAM) is a promising approach for future 6G networks to jointly estimate the positions of transmitters and receivers together with the propagation environment.
 ◆ In cooperative MP-SLAM, information collected by multiple mobile terminals (MTs) is fused to enhance accuracy and robustness.
 ◆ Existing methods, however, typically assume perfectly synchronized base stations (BSs) and orthogonal transmission sequences, rendering inter-BS interference at the MTs negligible.</td></tr>
 <tr><td>2025-12-25</td><td>World-Coordinate Human Motion Retargeting via SAM 3D Body</td><td>[2512.21573](http://arxiv.org/pdf/2512.21573)</td><td>◆ Recovering world-coordinate human motion from monocular videos with humanoid robot retargeting is significant for embodied intelligence and robotics.
@@ -151,6 +154,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-31</td><td>FoundationSLAM: Unleashing the Power of Depth Foundation Models for End-to-End Dense Visual SLAM</td><td>[2512.25008](http://arxiv.org/pdf/2512.25008)</td><td>◆ We present FoundationSLAM, a learning-based monocular dense SLAM system that addresses the absence of geometric consistency in previous flow-based approaches for accurate and robust tracking and mapping.
+◆ Our core idea is to bridge flow estimation with geometric reasoning by leveraging the guidance from foundation depth models.
+◆ To this end, we first develop a Hybrid Flow Network that produces geometry-aware correspondences, enabling consistent depth and pose inference across diverse keyframes.</td></tr>
 <tr><td>2025-12-23</td><td>Drift-Corrected Monocular VIO and Perception-Aware Planning for Autonomous Drone Racing</td><td>[2512.20475](http://arxiv.org/pdf/2512.20475)</td><td>◆ The Abu Dhabi Autonomous Racing League(A2RL) x Drone Champions League competition(DCL) requires teams to perform high-speed autonomous drone racing using only a single camera and a low-quality inertial measurement unit -- a minimal sensor set that mirrors expert human drone racing pilots.
 ◆ This sensor limitation makes the system susceptible to drift from Visual-Inertial Odometry (VIO), particularly during long and fast flights with aggressive maneuvers.
 ◆ This paper presents the system developed for the championship, which achieved a competitive performance.</td></tr>
@@ -205,6 +211,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-31</td><td>Vibe Coding, Interface Flattening</td><td>[2512.24939](http://arxiv.org/pdf/2512.24939)</td><td>◆ Large language models are reshaping programming by enabling &#x27;vibe coding&#x27;: the development of softwares through natural-language interaction with model-driven toolchains.
+◆ This article argues that vibe coding is best understood as interface flattening, a reconfiguration in which previously distinct modalities (GUI, CLI, and API) appear to converge into a single conversational surface, even as the underlying chain of translation from intention to machinic effect lengthens and thickens.
+◆ Drawing on Friedrich Kittler&#x27;s materialist media theory and Alexander Galloway&#x27;s account of interfaces as sites of protocol control, the paper situates programming as a historically localised interface arrangement rather than an essential relation to computation.</td></tr>
+<tr><td>2025-12-31</td><td>Antagonistic Bowden-Cable Actuation of a Lightweight Robotic Hand: Toward Dexterous Manipulation for Payload Constrained Humanoids</td><td>[2512.24657](http://arxiv.org/pdf/2512.24657)</td><td>◆ Humanoid robots toward human-level dexterity require robotic hands capable of simultaneously providing high grasping force, rapid actuation speeds, multiple degrees of freedom, and lightweight structures within human-like size constraints.
+◆ Meeting these conflicting requirements remains challenging, as satisfying this combination typically necessitates heavier actuators and bulkier transmission systems, significantly restricting the payload capacity of robot arms.
+◆ In this letter, we present a lightweight anthropomorphic hand actuated by Bowden cables, which uniquely combines rolling-contact joint optimization with antagonistic cable actuation, enabling single-motor-per-joint control with negligible cable-length deviation.</td></tr>
+<tr><td>2025-12-30</td><td>Geometric Multi-Session Map Merging with Learned Local Descriptors</td><td>[2512.24384](http://arxiv.org/pdf/2512.24384)</td><td>◆ Multi-session map merging is crucial for extended autonomous operations in large-scale environments.
+◆ In this paper, we present GMLD, a learning-based local descriptor framework for large-scale multi-session point cloud map merging that systematically aligns maps collected across different sessions with overlapping regions.
+◆ The proposed framework employs a keypoint-aware encoder and a plane-based geometric transformer to extract discriminative features for loop closure detection and relative pose estimation.</td></tr>
 <tr><td>2025-12-26</td><td>Reloc-VGGT: Visual Re-localization with Geometry Grounded Transformer</td><td>[2512.21883](http://arxiv.org/pdf/2512.21883)</td><td>◆ Visual localization has traditionally been formulated as a pair-wise pose regression problem.
 ◆ Existing approaches mainly estimate relative poses between two images and employ a late-fusion strategy to obtain absolute pose estimates.
 ◆ However, the late motion average is often insufficient for effectively integrating spatial information, and its accuracy degrades in complex environments.</td></tr>
@@ -316,6 +331,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-31</td><td>GenZ: Foundational models as latent variable generators within traditional statistical models</td><td>[2512.24834](http://arxiv.org/pdf/2512.24834)</td><td>◆ We present GenZ, a hybrid model that bridges foundational models and statistical modeling through interpretable semantic features.
+◆ While large language models possess broad domain knowledge, they often fail to capture dataset-specific patterns critical for prediction tasks.
+◆ Our approach addresses this by discovering semantic feature descriptions through an iterative process that contrasts groups of items identified via statistical modeling errors, rather than relying solely on the foundational model&#x27;s domain understanding.</td></tr>
+<tr><td>2025-12-31</td><td>Quantum Visual Word Sense Disambiguation: Unraveling Ambiguities Through Quantum Inference Model</td><td>[2512.24687](http://arxiv.org/pdf/2512.24687)</td><td>◆ Visual word sense disambiguation focuses on polysemous words, where candidate images can be easily confused.
+◆ Traditional methods use classical probability to calculate the likelihood of an image matching each gloss of the target word, summing these to form a posterior probability.
+◆ However, due to the challenge of semantic uncertainty, glosses from different sources inevitably carry semantic biases, which can lead to biased disambiguation results.</td></tr>
 <tr><td>2025-12-24</td><td>VisRes Bench: On Evaluating the Visual Reasoning Capabilities of VLMs</td><td>[2512.21194](http://arxiv.org/pdf/2512.21194)</td><td>◆ Vision-Language Models (VLMs) have achieved remarkable progress across tasks such as visual question answering and image captioning.
 ◆ Yet, the extent to which these models perform visual reasoning as opposed to relying on linguistic priors remains unclear.
 ◆ To address this, we introduce VisRes Bench, a benchmark designed to study visual reasoning in naturalistic settings without contextual language supervision.</td></tr>
@@ -454,6 +475,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-31</td><td>PhysTalk: Language-driven Real-time Physics in 3D Gaussian Scenes</td><td>[2512.24986](http://arxiv.org/pdf/2512.24986)</td><td>◆ Realistic visual simulations are omnipresent, yet their creation requires computing time, rendering, and expert animation knowledge.
+◆ Open-vocabulary visual effects generation from text inputs emerges as a promising solution that can unlock immense creative potential.
+◆ However, current pipelines lack both physical realism and effective language interfaces, requiring slow offline optimization.</td></tr>
+<tr><td>2025-12-31</td><td>UniC-Lift: Unified 3D Instance Segmentation via Contrastive Learning</td><td>[2512.24763](http://arxiv.org/pdf/2512.24763)</td><td>◆ 3D Gaussian Splatting (3DGS) and Neural Radiance Fields (NeRF) have advanced novel-view synthesis.
+◆ Recent methods extend multi-view 2D segmentation to 3D, enabling instance/semantic segmentation for better scene understanding.
+◆ A key challenge is the inconsistency of 2D instance labels across views, leading to poor 3D predictions.</td></tr>
+<tr><td>2025-12-31</td><td>Splatwizard: A Benchmark Toolkit for 3D Gaussian Splatting Compression</td><td>[2512.24742](http://arxiv.org/pdf/2512.24742)</td><td>◆ The recent advent of 3D Gaussian Splatting (3DGS) has marked a significant breakthrough in real-time novel view synthesis.
+◆ However, the rapid proliferation of 3DGS-based algorithms has created a pressing need for standardized and comprehensive evaluation tools, especially for compression task.
+◆ Existing benchmarks often lack the specific metrics necessary to holistically assess the unique characteristics of different methods, such as rendering speed, rate distortion trade-offs memory efficiency, and geometric accuracy.</td></tr>
+<tr><td>2025-12-30</td><td>Improved 3D Gaussian Splatting of Unknown Spacecraft Structure Using Space Environment Illumination Knowledge</td><td>[2512.23998](http://arxiv.org/pdf/2512.23998)</td><td>◆ This work presents a novel pipeline to recover the 3D structure of an unknown target spacecraft from a sequence of images captured during Rendezvous and Proximity Operations (RPO) in space.
+◆ The target&#x27;s geometry and appearance are represented as a 3D Gaussian Splatting (3DGS) model.
+◆ However, learning 3DGS requires static scenes, an assumption in contrast to dynamic lighting conditions encountered in spaceborne imagery.</td></tr>
 <tr><td>2025-12-28</td><td>3D Scene Change Modeling With Consistent Multi-View Aggregation</td><td>[2512.22830](http://arxiv.org/pdf/2512.22830)</td><td>◆ Change detection plays a vital role in scene monitoring, exploration, and continual reconstruction.
 ◆ Existing 3D change detection methods often exhibit spatial inconsistency in the detected changes and fail to explicitly separate pre- and post-change states.
 ◆ To address these limitations, we propose SCaR-3D, a novel 3D scene change detection framework that identifies object-level changes from a dense-view pre-change image sequence and sparse-view post-change images.</td></tr>
@@ -599,6 +632,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2025-12-31</td><td>Projection-based Adversarial Attack using Physics-in-the-Loop Optimization for Monocular Depth Estimation</td><td>[2512.24792](http://arxiv.org/pdf/2512.24792)</td><td>◆ Deep neural networks (DNNs) remain vulnerable to adversarial attacks that cause misclassification when specific perturbations are added to input images.
+◆ This vulnerability also threatens the reliability of DNN-based monocular depth estimation (MDE) models, making robustness enhancement a critical need in practical applications.
+◆ To validate the vulnerability of DNN-based MDE models, this study proposes a projection-based adversarial attack method that projects perturbation light onto a target object.</td></tr>
+<tr><td>2025-12-30</td><td>Guided Diffusion-based Generation of Adversarial Objects for Real-World Monocular Depth Estimation Attacks</td><td>[2512.24111](http://arxiv.org/pdf/2512.24111)</td><td>◆ Monocular Depth Estimation (MDE) serves as a core perception module in autonomous driving systems, but it remains highly susceptible to adversarial attacks.
+◆ Errors in depth estimation may propagate through downstream decision making and influence overall traffic safety.
+◆ Existing physical attacks primarily rely on texture-based patches, which impose strict placement constraints and exhibit limited realism, thereby reducing their effectiveness in complex driving environments.</td></tr>
+<tr><td>2025-12-29</td><td>Leveraging Synthetic Priors for Monocular Depth Estimation in Specular Surgical Environments</td><td>[2512.23786](http://arxiv.org/pdf/2512.23786)</td><td>◆ Accurate Monocular Depth Estimation (MDE) is critical for robotic surgery but remains fragile in specular, fluid-filled endoscopic environments.
+◆ Existing self-supervised methods, typically relying on foundation models trained with noisy real-world pseudo-labels, often suffer from boundary collapse on thin surgical tools and transparent surfaces.
+◆ In this work, we address this by leveraging the high-fidelity synthetic priors of the Depth Anything V2 architecture, which inherently captures precise geometric details of thin structures.</td></tr>
 <tr><td>2025-12-28</td><td>With Great Context Comes Great Prediction Power: Classifying Objects via Geo-Semantic Scene Graphs</td><td>[2512.23024](http://arxiv.org/pdf/2512.23024)</td><td>◆ Humans effortlessly identify objects by leveraging a rich understanding of the surrounding scene, including spatial relationships, material properties, and the co-occurrence of other objects.
 ◆ In contrast, most computational object recognition systems operate on isolated image regions, devoid of meaning in isolation, thus ignoring this vital contextual information.
 ◆ This paper argues for the critical role of context and introduces a novel framework for contextual object classification.</td></tr>
@@ -784,4 +826,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2025.12.31
+> 更新于: 2026.01.01
