@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.04)
+# SLAM领域最新论文 (2026.01.05)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,7 +22,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-12-31</td><td>FoundationSLAM: Unleashing the Power of Depth Foundation Models for End-to-End Dense Visual SLAM</td><td>[2512.25008](http://arxiv.org/pdf/2512.25008)</td><td>◆ We present FoundationSLAM, a learning-based monocular dense SLAM system that addresses the absence of geometric consistency in previous flow-based approaches for accurate and robust tracking and mapping.
+<tr><td>2025-12-28</td><td>RGS-SLAM: Robust Gaussian Splatting SLAM with One-Shot Dense Initialization</td><td>[2601.00705](http://arxiv.org/pdf/2601.00705)</td><td>◆ We introduce RGS-SLAM, a robust Gaussian-splatting SLAM framework that replaces the residual-driven densification stage of GS-SLAM with a training-free correspondence-to-Gaussian initialization.
+◆ Instead of progressively adding Gaussians as residuals reveal missing geometry, RGS-SLAM performs a one-shot triangulation of dense multi-view correspondences derived from DINOv3 descriptors refined through a confidence-aware inlier classifier, generating a well-distributed and structure-aware Gaussian seed prior to optimization.
+◆ This initialization stabilizes early mapping and accelerates convergence by roughly 20\%, yielding higher rendering fidelity in texture-rich and cluttered scenes while remaining fully compatible with existing GS-SLAM pipelines.</td></tr>
+<tr><td>2026-01-02</td><td>Variable Elimination in Hybrid Factor Graphs for Discrete-Continuous Inference &amp; Estimation</td><td>[2601.00545](http://arxiv.org/pdf/2601.00545)</td><td>◆ Many hybrid problems in robotics involve both continuous and discrete components, and modeling them together for estimation tasks has been a long standing and difficult problem.
+◆ Hybrid Factor Graphs give us a mathematical framework to model these types of problems, however existing approaches for solving them are based on approximations.
+◆ In this work, we propose an efficient Hybrid Factor Graph framework alongwith a variable elimination algorithm to produce a hybrid Bayes network, which can then be used for exact Maximum A Posteriori estimation and marginalization over both sets of variables.</td></tr>
+<tr><td>2026-01-01</td><td>FoundationSLAM: Unleashing the Power of Depth Foundation Models for End-to-End Dense Visual SLAM</td><td>[2512.25008](http://arxiv.org/pdf/2512.25008)</td><td>◆ We present FoundationSLAM, a learning-based monocular dense SLAM system that addresses the absence of geometric consistency in previous flow-based approaches for accurate and robust tracking and mapping.
 ◆ Our core idea is to bridge flow estimation with geometric reasoning by leveraging the guidance from foundation depth models.
 ◆ To this end, we first develop a Hybrid Flow Network that produces geometry-aware correspondences, enabling consistent depth and pose inference across diverse keyframes.</td></tr>
 <tr><td>2025-12-27</td><td>Mesquite MoCap: Democratizing Real-Time Motion Capture with Affordable, Bodyworn IoT Sensors and WebXR SLAM</td><td>[2512.22690](http://arxiv.org/pdf/2512.22690)</td><td>◆ Motion capture remains costly and complex to deploy, limiting use outside specialized laboratories.
@@ -154,7 +160,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2025-12-31</td><td>FoundationSLAM: Unleashing the Power of Depth Foundation Models for End-to-End Dense Visual SLAM</td><td>[2512.25008](http://arxiv.org/pdf/2512.25008)</td><td>◆ We present FoundationSLAM, a learning-based monocular dense SLAM system that addresses the absence of geometric consistency in previous flow-based approaches for accurate and robust tracking and mapping.
+<tr><td>2026-01-02</td><td>DefVINS: Visual-Inertial Odometry for Deformable Scenes</td><td>[2601.00702](http://arxiv.org/pdf/2601.00702)</td><td>◆ Deformable scenes violate the rigidity assumptions underpinning classical visual-inertial odometry (VIO), often leading to over-fitting to local non-rigid motion or severe drift when deformation dominates visual parallax.
+◆ We introduce DefVINS, a visual-inertial odometry framework that explicitly separates a rigid, IMU-anchored state from a non--rigid warp represented by an embedded deformation graph.
+◆ The system is initialized using a standard VIO procedure that fixes gravity, velocity, and IMU biases, after which non-rigid degrees of freedom are activated progressively as the estimation becomes well conditioned.</td></tr>
+<tr><td>2026-01-01</td><td>FoundationSLAM: Unleashing the Power of Depth Foundation Models for End-to-End Dense Visual SLAM</td><td>[2512.25008](http://arxiv.org/pdf/2512.25008)</td><td>◆ We present FoundationSLAM, a learning-based monocular dense SLAM system that addresses the absence of geometric consistency in previous flow-based approaches for accurate and robust tracking and mapping.
 ◆ Our core idea is to bridge flow estimation with geometric reasoning by leveraging the guidance from foundation depth models.
 ◆ To this end, we first develop a Hybrid Flow Network that produces geometry-aware correspondences, enabling consistent depth and pose inference across diverse keyframes.</td></tr>
 <tr><td>2025-12-23</td><td>Drift-Corrected Monocular VIO and Perception-Aware Planning for Autonomous Drone Racing</td><td>[2512.20475](http://arxiv.org/pdf/2512.20475)</td><td>◆ The Abu Dhabi Autonomous Racing League(A2RL) x Drone Champions League competition(DCL) requires teams to perform high-speed autonomous drone racing using only a single camera and a low-quality inertial measurement unit -- a minimal sensor set that mirrors expert human drone racing pilots.
@@ -632,6 +641,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-02</td><td>AdaGaR: Adaptive Gabor Representation for Dynamic Scene Reconstruction</td><td>[2601.00796](http://arxiv.org/pdf/2601.00796)</td><td>◆ Reconstructing dynamic 3D scenes from monocular videos requires simultaneously capturing high-frequency appearance details and temporally continuous motion.
+◆ Existing methods using single Gaussian primitives are limited by their low-pass filtering nature, while standard Gabor functions introduce energy instability.
+◆ Moreover, lack of temporal continuity constraints often leads to motion artifacts during interpolation.</td></tr>
 <tr><td>2025-12-31</td><td>Projection-based Adversarial Attack using Physics-in-the-Loop Optimization for Monocular Depth Estimation</td><td>[2512.24792](http://arxiv.org/pdf/2512.24792)</td><td>◆ Deep neural networks (DNNs) remain vulnerable to adversarial attacks that cause misclassification when specific perturbations are added to input images.
 ◆ This vulnerability also threatens the reliability of DNN-based monocular depth estimation (MDE) models, making robustness enhancement a critical need in practical applications.
 ◆ To validate the vulnerability of DNN-based MDE models, this study proposes a projection-based adversarial attack method that projects perturbation light onto a target object.</td></tr>
@@ -826,4 +838,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.04
+> 更新于: 2026.01.05
