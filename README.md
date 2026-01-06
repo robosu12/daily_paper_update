@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.05)
+# SLAM领域最新论文 (2026.01.06)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-05</td><td>Differential Barometric Altimetry for Submeter Vertical Localization and Floor Recognition Indoors</td><td>[2601.02184](http://arxiv.org/pdf/2601.02184)</td><td>◆ Accurate altitude estimation and reliable floor recognition are critical for mobile robot localization and navigation within complex multi-storey environments.
+◆ In this paper, we present a robust, low-cost vertical estimation framework leveraging differential barometric sensing integrated within a fully ROS-compliant software package.
+◆ Our system simultaneously publishes real-time altitude data from both a stationary base station and a mobile sensor, enabling precise and drift-free vertical localization.</td></tr>
+<tr><td>2026-01-03</td><td>VISO: Robust Underwater Visual-Inertial-Sonar SLAM with Photometric Rendering for Dense 3D Reconstruction</td><td>[2601.01144](http://arxiv.org/pdf/2601.01144)</td><td>◆ Visual challenges in underwater environments significantly hinder the accuracy of vision-based localisation and the high-fidelity dense reconstruction.
+◆ In this paper, we propose VISO, a robust underwater SLAM system that fuses a stereo camera, an inertial measurement unit (IMU), and a 3D sonar to achieve accurate 6-DoF localisation and enable efficient dense 3D reconstruction with high photometric fidelity.
+◆ We introduce a coarse-to-fine online calibration approach for extrinsic parameters estimation between the 3D sonar and the camera.</td></tr>
 <tr><td>2025-12-28</td><td>RGS-SLAM: Robust Gaussian Splatting SLAM with One-Shot Dense Initialization</td><td>[2601.00705](http://arxiv.org/pdf/2601.00705)</td><td>◆ We introduce RGS-SLAM, a robust Gaussian-splatting SLAM framework that replaces the residual-driven densification stage of GS-SLAM with a training-free correspondence-to-Gaussian initialization.
 ◆ Instead of progressively adding Gaussians as residuals reveal missing geometry, RGS-SLAM performs a one-shot triangulation of dense multi-view correspondences derived from DINOv3 descriptors refined through a confidence-aware inlier classifier, generating a well-distributed and structure-aware Gaussian seed prior to optimization.
 ◆ This initialization stabilizes early mapping and accelerates convergence by roughly 20\%, yielding higher rendering fidelity in texture-rich and cluttered scenes while remaining fully compatible with existing GS-SLAM pipelines.</td></tr>
@@ -43,7 +49,7 @@
 <tr><td>2025-12-25</td><td>FAR-AVIO: Fast and Robust Schur-Complement Based Acoustic-Visual-Inertial Fusion Odometry with Sensor Calibration</td><td>[2512.20355](http://arxiv.org/pdf/2512.20355)</td><td>◆ Underwater environments impose severe challenges to visual-inertial odometry systems, as strong light attenuation, marine snow and turbidity, together with weakly exciting motions, degrade inertial observability and cause frequent tracking failures over long-term operation.
 ◆ While tightly coupled acoustic-visual-inertial fusion, typically implemented through an acoustic Doppler Velocity Log (DVL) integrated with visual-inertial measurements, can provide accurate state estimation, the associated graph-based optimization is often computationally prohibitive for real-time deployment on resource-constrained platforms.
 ◆ Here we present FAR-AVIO, a Schur-Complement based, tightly coupled acoustic-visual-inertial odometry framework tailored for underwater robots.</td></tr>
-<tr><td>2025-12-22</td><td>LIMOncello: Revisited IKFoM on the SGal(3) Manifold for Fast LiDAR-Inertial Odometry</td><td>[2512.19567](http://arxiv.org/pdf/2512.19567)</td><td>◆ This work introduces LIMOncello, a tightly coupled LiDAR-Inertial Odometry system that models 6-DoF motion on the $\mathrm{SGal}(3)$ manifold within an iterated error-state Kalman filter backend.
+<tr><td>2026-01-05</td><td>LIMOncello: Iterated Error-State Kalman Filter on the SGal(3) Manifold for Fast LiDAR-Inertial Odometry</td><td>[2512.19567](http://arxiv.org/pdf/2512.19567)</td><td>◆ This work introduces LIMOncello, a tightly coupled LiDAR-Inertial Odometry system that models 6-DoF motion on the $\mathrm{SGal}(3)$ manifold within an iterated error-state Kalman filter backend.
 ◆ Compared to state representations defined on $\mathrm{SO}(3)\times\mathbb{R}^6$, the use of $\mathrm{SGal}(3)$ provides a coherent and numerically stable discrete-time propagation model that helps limit drift in low-observability conditions.
 ◆ LIMOncello also includes a lightweight incremental i-Octree mapping backend that enables faster updates and substantially lower memory usage than incremental kd-tree style map structures, without relying on locality-restricted search heuristics.</td></tr>
 <tr><td>2025-12-18</td><td>SNOW: Spatio-Temporal Scene Understanding with World Knowledge for Open-World Embodied Reasoning</td><td>[2512.16461](http://arxiv.org/pdf/2512.16461)</td><td>◆ Autonomous robotic systems require spatio-temporal understanding of dynamic environments to ensure reliable navigation and interaction.
@@ -160,6 +166,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-05</td><td>360DVO: Deep Visual Odometry for Monocular 360-Degree Camera</td><td>[2601.02309](http://arxiv.org/pdf/2601.02309)</td><td>◆ Monocular omnidirectional visual odometry (OVO) systems leverage 360-degree cameras to overcome field-of-view limitations of perspective VO systems.
+◆ However, existing methods, reliant on handcrafted features or photometric objectives, often lack robustness in challenging scenarios, such as aggressive motion and varying illumination.
+◆ To address this, we present 360DVO, the first deep learning-based OVO framework.</td></tr>
 <tr><td>2026-01-02</td><td>DefVINS: Visual-Inertial Odometry for Deformable Scenes</td><td>[2601.00702](http://arxiv.org/pdf/2601.00702)</td><td>◆ Deformable scenes violate the rigidity assumptions underpinning classical visual-inertial odometry (VIO), often leading to over-fitting to local non-rigid motion or severe drift when deformation dominates visual parallax.
 ◆ We introduce DefVINS, a visual-inertial odometry framework that explicitly separates a rigid, IMU-anchored state from a non--rigid warp represented by an embedded deformation graph.
 ◆ The system is initialized using a standard VIO procedure that fixes gravity, velocity, and IMU biases, after which non-rigid degrees of freedom are activated progressively as the estimation becomes well conditioned.</td></tr>
@@ -220,6 +229,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-03</td><td>From Random Walks to Thermal Rides: Universal Anomalous Transport in Soaring Flights</td><td>[2601.01293](http://arxiv.org/pdf/2601.01293)</td><td>◆ Cross-country soaring flights rely on intermittent atmospheric updrafts to cover long distances, producing trajectories that alternate between rapid relocation and local exploration.
+◆ From a large dataset of paraglider, hang glider, and sailplane flights, we uncover a universal transport law: beyond short ballistic times, horizontal motion is persistently sub-ballistic, with a Hurst exponent $\approx 0.88$ largely independent of aircraft type.
+◆ Phase-resolved analysis using a probabilistic segmentation method shows that this scaling arises from the fundamentally intermittent, two-dimensional, and directionally correlated nature of soaring transport, in which successive ballistic segments do not add coherently.</td></tr>
 <tr><td>2025-12-31</td><td>Vibe Coding, Interface Flattening</td><td>[2512.24939](http://arxiv.org/pdf/2512.24939)</td><td>◆ Large language models are reshaping programming by enabling &#x27;vibe coding&#x27;: the development of softwares through natural-language interaction with model-driven toolchains.
 ◆ This article argues that vibe coding is best understood as interface flattening, a reconfiguration in which previously distinct modalities (GUI, CLI, and API) appear to converge into a single conversational surface, even as the underlying chain of translation from intention to machinic effect lengthens and thickens.
 ◆ Drawing on Friedrich Kittler&#x27;s materialist media theory and Alexander Galloway&#x27;s account of interfaces as sites of protocol control, the paper situates programming as a historically localised interface arrangement rather than an essential relation to computation.</td></tr>
@@ -340,6 +352,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-05</td><td>Exact Clique Number Manipulation via Edge Interdiction</td><td>[2601.01869](http://arxiv.org/pdf/2601.01869)</td><td>◆ The Edge Interdiction Clique Problem (EICP) aims to remove at most $k$ edges from a graph so as to minimize the size of the largest clique in the remaining graph.
+◆ This problem captures a fundamental question in graph manipulation: which edges are structurally critical for preserving large cliques?
+◆ Such a problem is also motivated by practical applications including protein function maintenance and image matching.</td></tr>
+<tr><td>2026-01-02</td><td>UnrealPose: Leveraging Game Engine Kinematics for Large-Scale Synthetic Human Pose Data</td><td>[2601.00991](http://arxiv.org/pdf/2601.00991)</td><td>◆ Diverse, accurately labeled 3D human pose data is expensive and studio-bound, while in-the-wild datasets lack known ground truth.
+◆ We introduce UnrealPose-Gen, an Unreal Engine 5 pipeline built on Movie Render Queue for high-quality offline rendering.
+◆ Our generated frames include: (i) 3D joints in world and camera coordinates, (ii) 2D projections and COCO-style keypoints with occlusion and joint-visibility flags, (iii) person bounding boxes, and (iv) camera intrinsics and extrinsics.</td></tr>
 <tr><td>2025-12-31</td><td>GenZ: Foundational models as latent variable generators within traditional statistical models</td><td>[2512.24834](http://arxiv.org/pdf/2512.24834)</td><td>◆ We present GenZ, a hybrid model that bridges foundational models and statistical modeling through interpretable semantic features.
 ◆ While large language models possess broad domain knowledge, they often fail to capture dataset-specific patterns critical for prediction tasks.
 ◆ Our approach addresses this by discovering semantic feature descriptions through an iterative process that contrasts groups of items identified via statistical modeling errors, rather than relying solely on the foundational model&#x27;s domain understanding.</td></tr>
@@ -484,6 +502,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-05</td><td>Joint Semantic and Rendering Enhancements in 3D Gaussian Modeling with Anisotropic Local Encoding</td><td>[2601.02339](http://arxiv.org/pdf/2601.02339)</td><td>◆ Recent works propose extending 3DGS with semantic feature vectors for simultaneous semantic segmentation and image rendering.
+◆ However, these methods often treat the semantic and rendering branches separately, relying solely on 2D supervision while ignoring the 3D Gaussian geometry.
+◆ Moreover, current adaptive strategies adapt the Gaussian set depending solely on rendering gradients, which can be insufficient in subtle or textureless regions.</td></tr>
+<tr><td>2026-01-05</td><td>360-GeoGS: Geometrically Consistent Feed-Forward 3D Gaussian Splatting Reconstruction for 360 Images</td><td>[2601.02102](http://arxiv.org/pdf/2601.02102)</td><td>◆ 3D scene reconstruction is fundamental for spatial intelligence applications such as AR, robotics, and digital twins.
+◆ Traditional multi-view stereo struggles with sparse viewpoints or low-texture regions, while neural rendering approaches, though capable of producing high-quality results, require per-scene optimization and lack real-time efficiency.
+◆ Explicit 3D Gaussian Splatting (3DGS) enables efficient rendering, but most feed-forward variants focus on visual quality rather than geometric consistency, limiting accurate surface reconstruction and overall reliability in spatial perception tasks.</td></tr>
+<tr><td>2026-01-04</td><td>Animated 3DGS Avatars in Diverse Scenes with Consistent Lighting and Shadows</td><td>[2601.01660](http://arxiv.org/pdf/2601.01660)</td><td>◆ We present a method for consistent lighting and shadows when animated 3D Gaussian Splatting (3DGS) avatars interact with 3DGS scenes or with dynamic objects inserted into otherwise static scenes.
+◆ Our key contribution is Deep Gaussian Shadow Maps (DGSM), a modern analogue of the classical shadow mapping algorithm tailored to the volumetric 3DGS representation.
+◆ Building on the classic deep shadow mapping idea, we show that 3DGS admits closed form light accumulation along light rays, enabling volumetric shadow computation without meshing.</td></tr>
+<tr><td>2026-01-04</td><td>ParkGaussian: Surround-view 3D Gaussian Splatting for Autonomous Parking</td><td>[2601.01386](http://arxiv.org/pdf/2601.01386)</td><td>◆ Parking is a critical task for autonomous driving systems (ADS), with unique challenges in crowded parking slots and GPS-denied environments.
+◆ However, existing works focus on 2D parking slot perception, mapping, and localization, 3D reconstruction remains underexplored, which is crucial for capturing complex spatial geometry in parking scenarios.
+◆ Naively improving the visual quality of reconstructed parking scenes does not directly benefit autonomous parking, as the key entry point for parking is the slots perception module.</td></tr>
+<tr><td>2026-01-04</td><td>ShadowGS: Shadow-Aware 3D Gaussian Splatting for Satellite Imagery</td><td>[2601.00939](http://arxiv.org/pdf/2601.00939)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a novel paradigm for 3D reconstruction from satellite imagery.
+◆ However, in multi-temporal satellite images, prevalent shadows exhibit significant inconsistencies due to varying illumination conditions.
+◆ To address this, we propose ShadowGS, a novel framework based on 3DGS.</td></tr>
+<tr><td>2026-01-01</td><td>Clean-GS: Semantic Mask-Guided Pruning for 3D Gaussian Splatting</td><td>[2601.00913](http://arxiv.org/pdf/2601.00913)</td><td>◆ 3D Gaussian Splatting produces high-quality scene reconstructions but generates hundreds of thousands of spurious Gaussians (floaters) scattered throughout the environment.
+◆ These artifacts obscure objects of interest and inflate model sizes, hindering deployment in bandwidth-constrained applications.
+◆ We present Clean-GS, a method for removing background clutter and floaters from 3DGS reconstructions using sparse semantic masks.</td></tr>
 <tr><td>2025-12-31</td><td>PhysTalk: Language-driven Real-time Physics in 3D Gaussian Scenes</td><td>[2512.24986](http://arxiv.org/pdf/2512.24986)</td><td>◆ Realistic visual simulations are omnipresent, yet their creation requires computing time, rendering, and expert animation knowledge.
 ◆ Open-vocabulary visual effects generation from text inputs emerges as a promising solution that can unlock immense creative potential.
 ◆ However, current pipelines lack both physical realism and effective language interfaces, requiring slow offline optimization.</td></tr>
@@ -641,6 +677,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-05</td><td>Adapting Depth Anything to Adverse Imaging Conditions with Events</td><td>[2601.02020](http://arxiv.org/pdf/2601.02020)</td><td>◆ Robust depth estimation under dynamic and adverse lighting conditions is essential for robotic systems.
+◆ Currently, depth foundation models, such as Depth Anything, achieve great success in ideal scenes but remain challenging under adverse imaging conditions such as extreme illumination and motion blur.
+◆ These degradations corrupt the visual signals of frame cameras, weakening the discriminative features of frame-based depths across the spatial and temporal dimensions.</td></tr>
+<tr><td>2026-01-05</td><td>DisCo-FLoc: Using Dual-Level Visual-Geometric Contrasts to Disambiguate Depth-Aware Visual Floorplan Localization</td><td>[2601.01822](http://arxiv.org/pdf/2601.01822)</td><td>◆ Since floorplan data is readily available, long-term persistent, and robust to changes in visual appearance, visual Floorplan Localization (FLoc) has garnered significant attention.
+◆ Existing methods either ingeniously match geometric priors or utilize sparse semantics to reduce FLoc uncertainty.
+◆ However, they still suffer from ambiguous FLoc caused by repetitive structures within minimalist floorplans.</td></tr>
+<tr><td>2026-01-04</td><td>Language as Prior, Vision as Calibration: Metric Scale Recovery for Monocular Depth Estimation</td><td>[2601.01457](http://arxiv.org/pdf/2601.01457)</td><td>◆ Relative-depth foundation models transfer well, yet monocular metric depth remains ill-posed due to unidentifiable global scale and heightened domain-shift sensitivity.
+◆ Under a frozen-backbone calibration setting, we recover metric depth via an image-specific affine transform in inverse depth and train only lightweight calibration heads while keeping the relative-depth backbone and the CLIP text encoder fixed.
+◆ Since captions provide coarse but noisy scale cues that vary with phrasing and missing objects, we use language to predict an uncertainty-aware envelope that bounds feasible calibration parameters in an unconstrained space, rather than committing to a text-only point estimate.</td></tr>
 <tr><td>2026-01-02</td><td>AdaGaR: Adaptive Gabor Representation for Dynamic Scene Reconstruction</td><td>[2601.00796](http://arxiv.org/pdf/2601.00796)</td><td>◆ Reconstructing dynamic 3D scenes from monocular videos requires simultaneously capturing high-frequency appearance details and temporally continuous motion.
 ◆ Existing methods using single Gaussian primitives are limited by their low-pass filtering nature, while standard Gabor functions introduce energy instability.
 ◆ Moreover, lack of temporal continuity constraints often leads to motion artifacts during interpolation.</td></tr>
@@ -838,4 +883,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.05
+> 更新于: 2026.01.06
