@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.06)
+# SLAM领域最新论文 (2026.01.07)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
+◆ We propose a method to improve loop closure performance in DPV-SLAM.
+◆ Our approach integrates AnyLoc, a learning-based visual place recognition technique, as a replacement for the classical Bag of Visual Words (BoVW) loop detection method.</td></tr>
 <tr><td>2026-01-05</td><td>Differential Barometric Altimetry for Submeter Vertical Localization and Floor Recognition Indoors</td><td>[2601.02184](http://arxiv.org/pdf/2601.02184)</td><td>◆ Accurate altitude estimation and reliable floor recognition are critical for mobile robot localization and navigation within complex multi-storey environments.
 ◆ In this paper, we present a robust, low-cost vertical estimation framework leveraging differential barometric sensing integrated within a fully ROS-compliant software package.
 ◆ Our system simultaneously publishes real-time altitude data from both a stationary base station and a mobile sensor, enabling precise and drift-free vertical localization.</td></tr>
@@ -164,6 +167,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
+◆ We propose a method to improve loop closure performance in DPV-SLAM.
+◆ Our approach integrates AnyLoc, a learning-based visual place recognition technique, as a replacement for the classical Bag of Visual Words (BoVW) loop detection method.</td></tr>
 <tr><td>2026-01-05</td><td>360DVO: Deep Visual Odometry for Monocular 360-Degree Camera</td><td>[2601.02309](http://arxiv.org/pdf/2601.02309)</td><td>◆ Monocular omnidirectional visual odometry (OVO) systems leverage 360-degree cameras to overcome field-of-view limitations of perspective VO systems.
 ◆ However, existing methods, reliant on handcrafted features or photometric objectives, often lack robustness in challenging scenarios, such as aggressive motion and varying illumination.
 ◆ To address this, we present 360DVO, the first deep learning-based OVO framework.</td></tr>
@@ -225,6 +231,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
+◆ We propose a method to improve loop closure performance in DPV-SLAM.
+◆ Our approach integrates AnyLoc, a learning-based visual place recognition technique, as a replacement for the classical Bag of Visual Words (BoVW) loop detection method.</td></tr>
 <tr><td>2026-01-03</td><td>From Random Walks to Thermal Rides: Universal Anomalous Transport in Soaring Flights</td><td>[2601.01293](http://arxiv.org/pdf/2601.01293)</td><td>◆ Cross-country soaring flights rely on intermittent atmospheric updrafts to cover long distances, producing trajectories that alternate between rapid relocation and local exploration.
 ◆ From a large dataset of paraglider, hang glider, and sailplane flights, we uncover a universal transport law: beyond short ballistic times, horizontal motion is persistently sub-ballistic, with a Hurst exponent $\approx 0.88$ largely independent of aircraft type.
 ◆ Phase-resolved analysis using a probabilistic segmentation method shows that this scaling arises from the fundamentally intermittent, two-dimensional, and directionally correlated nature of soaring transport, in which successive ballistic segments do not add coherently.</td></tr>
@@ -494,6 +503,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-06</td><td>A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting</td><td>[2601.03200](http://arxiv.org/pdf/2601.03200)</td><td>◆ Developing high-fidelity, interactive digital twins is crucial for enabling closed-loop motion planning and reliable real-world robot execution, which are essential to advancing sim-to-real transfer.
+◆ However, existing approaches often suffer from slow reconstruction, limited visual fidelity, and difficulties in converting photorealistic models into planning-ready collision geometry.
+◆ We present a practical framework that constructs high-quality digital twins within minutes from sparse RGB inputs.</td></tr>
 <tr><td>2026-01-05</td><td>Joint Semantic and Rendering Enhancements in 3D Gaussian Modeling with Anisotropic Local Encoding</td><td>[2601.02339](http://arxiv.org/pdf/2601.02339)</td><td>◆ Recent works propose extending 3DGS with semantic feature vectors for simultaneous semantic segmentation and image rendering.
 ◆ However, these methods often treat the semantic and rendering branches separately, relying solely on 2D supervision while ignoring the 3D Gaussian geometry.
 ◆ Moreover, current adaptive strategies adapt the Gaussian set depending solely on rendering gradients, which can be insufficient in subtle or textureless regions.</td></tr>
@@ -667,6 +679,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-06</td><td>InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields</td><td>[2601.03252](http://arxiv.org/pdf/2601.03252)</td><td>◆ Existing depth estimation methods are fundamentally limited to predicting depth on discrete image grids.
+◆ Such representations restrict their scalability to arbitrary output resolutions and hinder the geometric detail recovery.
+◆ This paper introduces InfiniDepth, which represents depth as neural implicit fields.</td></tr>
+<tr><td>2026-01-06</td><td>Reinforcement Learning for Follow-the-Leader Robotic Endoscopic Navigation via Synthetic Data</td><td>[2601.02798](http://arxiv.org/pdf/2601.02798)</td><td>◆ Autonomous navigation is crucial for both medical and industrial endoscopic robots, enabling safe and efficient exploration of narrow tubular environments without continuous human intervention, where avoiding contact with the inner walls has been a longstanding challenge for prior approaches.
+◆ We present a follow-the-leader endoscopic robot based on a flexible continuum structure designed to minimize contact between the endoscope body and intestinal walls, thereby reducing patient discomfort.
+◆ To achieve this objective, we propose a vision-based deep reinforcement learning framework guided by monocular depth estimation.</td></tr>
+<tr><td>2026-01-06</td><td>StableDPT: Temporal Stable Monocular Video Depth Estimation</td><td>[2601.02793](http://arxiv.org/pdf/2601.02793)</td><td>◆ Applying single image Monocular Depth Estimation (MDE) models to video sequences introduces significant temporal instability and flickering artifacts.
+◆ We propose a novel approach that adapts any state-of-the-art image-based (depth) estimation model for video processing by integrating a new temporal module - trainable on a single GPU in a few days.
+◆ Our architecture StableDPT builds upon an off-the-shelf Vision Transformer (ViT) encoder and enhances the Dense Prediction Transformer (DPT) head.</td></tr>
+<tr><td>2026-01-06</td><td>AnyDepth: Depth Estimation Made Easy</td><td>[2601.02760](http://arxiv.org/pdf/2601.02760)</td><td>◆ Monocular depth estimation aims to recover the depth information of 3D scenes from 2D images.
+◆ Recent work has made significant progress, but its reliance on large-scale datasets and complex decoders has limited its efficiency and generalization ability.
+◆ In this paper, we propose a lightweight and data-centric framework for zero-shot monocular depth estimation.</td></tr>
 <tr><td>2026-01-05</td><td>Adapting Depth Anything to Adverse Imaging Conditions with Events</td><td>[2601.02020](http://arxiv.org/pdf/2601.02020)</td><td>◆ Robust depth estimation under dynamic and adverse lighting conditions is essential for robotic systems.
 ◆ Currently, depth foundation models, such as Depth Anything, achieve great success in ideal scenes but remain challenging under adverse imaging conditions such as extreme illumination and motion blur.
 ◆ These degradations corrupt the visual signals of frame cameras, weakening the discriminative features of frame-based depths across the spatial and temporal dimensions.</td></tr>
@@ -871,4 +895,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.06
+> 更新于: 2026.01.07
