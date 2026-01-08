@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.07)
+# SLAM领域最新论文 (2026.01.08)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -231,6 +231,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-07</td><td>Multi-agent Optimization of Non-cooperative Multimodal Mobility Systems</td><td>[2601.03777](http://arxiv.org/pdf/2601.03777)</td><td>◆ While multimodal mobility systems have the potential to bring many benefits to travelers, drivers, the environment, and traffic congestion, such systems typically involve multiple non-cooperative decision-makers who may selfishly optimize their own objectives without considering the overall system benefits.
+◆ This paper aims to investigate market-based interactions of travelers and ride-sourcing drivers in the context of multimodal mobility systems.
+◆ We propose a unified mathematical modeling framework to capture the decentralized travelers and drivers&#x27; decision-making process and balance the network&#x27;s demand and supply by equilibrium pricing.</td></tr>
 <tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
 ◆ We propose a method to improve loop closure performance in DPV-SLAM.
 ◆ Our approach integrates AnyLoc, a learning-based visual place recognition technique, as a replacement for the classical Bag of Visual Words (BoVW) loop detection method.</td></tr>
@@ -503,6 +506,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-06</td><td>RelightAnyone: A Generalized Relightable 3D Gaussian Head Model</td><td>[2601.03357](http://arxiv.org/pdf/2601.03357)</td><td>◆ 3D Gaussian Splatting (3DGS) has become a standard approach to reconstruct and render photorealistic 3D head avatars.
+◆ A major challenge is to relight the avatars to match any scene illumination.
+◆ For high quality relighting, existing methods require subjects to be captured under complex time-multiplexed illumination, such as one-light-at-a-time (OLAT).</td></tr>
+<tr><td>2026-01-06</td><td>CaricatureGS: Exaggerating 3D Gaussian Splatting Faces With Gaussian Curvature</td><td>[2601.03319](http://arxiv.org/pdf/2601.03319)</td><td>◆ A photorealistic and controllable 3D caricaturization framework for faces is introduced.
+◆ We start with an intrinsic Gaussian curvature-based surface exaggeration technique, which, when coupled with texture, tends to produce over-smoothed renders.
+◆ To address this, we resort to 3D Gaussian Splatting (3DGS), which has recently been shown to produce realistic free-viewpoint avatars.</td></tr>
 <tr><td>2026-01-06</td><td>A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting</td><td>[2601.03200](http://arxiv.org/pdf/2601.03200)</td><td>◆ Developing high-fidelity, interactive digital twins is crucial for enabling closed-loop motion planning and reliable real-world robot execution, which are essential to advancing sim-to-real transfer.
 ◆ However, existing approaches often suffer from slow reconstruction, limited visual fidelity, and difficulties in converting photorealistic models into planning-ready collision geometry.
 ◆ We present a practical framework that constructs high-quality digital twins within minutes from sparse RGB inputs.</td></tr>
@@ -679,6 +688,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-07</td><td>Bayesian Monocular Depth Refinement via Neural Radiance Fields</td><td>[2601.03869](http://arxiv.org/pdf/2601.03869)</td><td>◆ Monocular depth estimation has applications in many fields, such as autonomous navigation and extended reality, making it an essential computer vision task.
+◆ However, current methods often produce smooth depth maps that lack the fine geometric detail needed for accurate scene understanding.
+◆ We propose MDENeRF, an iterative framework that refines monocular depth estimates using depth information from Neural Radiance Fields (NeRFs).</td></tr>
+<tr><td>2026-01-07</td><td>IDESplat: Iterative Depth Probability Estimation for Generalizable 3D Gaussian Splatting</td><td>[2601.03824](http://arxiv.org/pdf/2601.03824)</td><td>◆ Generalizable 3D Gaussian Splatting aims to directly predict Gaussian parameters using a feed-forward network for scene reconstruction.
+◆ Among these parameters, Gaussian means are particularly difficult to predict, so depth is usually estimated first and then unprojected to obtain the Gaussian sphere centers.
+◆ Existing methods typically rely solely on a single warp to estimate depth probability, which hinders their ability to fully leverage cross-view geometric cues, resulting in unstable and coarse depth maps.</td></tr>
+<tr><td>2026-01-06</td><td>Guardians of the Hair: Rescuing Soft Boundaries in Depth, Stereo, and Novel Views</td><td>[2601.03362](http://arxiv.org/pdf/2601.03362)</td><td>◆ Soft boundaries, like thin hairs, are commonly observed in natural and computer-generated imagery, but they remain challenging for 3D vision due to the ambiguous mixing of foreground and background cues.
+◆ This paper introduces Guardians of the Hair (HairGuard), a framework designed to recover fine-grained soft boundary details in 3D vision tasks.
+◆ Specifically, we first propose a novel data curation pipeline that leverages image matting datasets for training and design a depth fixer network to automatically identify soft boundary regions.</td></tr>
+<tr><td>2026-01-06</td><td>VLM4VLA: Revisiting Vision-Language-Models in Vision-Language-Action Models</td><td>[2601.03309](http://arxiv.org/pdf/2601.03309)</td><td>◆ Vision-Language-Action (VLA) models, which integrate pretrained large Vision-Language Models (VLM) into their policy backbone, are gaining significant attention for their promising generalization capabilities.
+◆ This paper revisits a fundamental yet seldom systematically studied question: how VLM choice and competence translate to downstream VLA policies performance?
+◆ We introduce VLM4VLA, a minimal adaptation pipeline that converts general-purpose VLMs into VLA policies using only a small set of new learnable parameters for fair and efficient comparison.</td></tr>
 <tr><td>2026-01-06</td><td>InfiniDepth: Arbitrary-Resolution and Fine-Grained Depth Estimation with Neural Implicit Fields</td><td>[2601.03252](http://arxiv.org/pdf/2601.03252)</td><td>◆ Existing depth estimation methods are fundamentally limited to predicting depth on discrete image grids.
 ◆ Such representations restrict their scalability to arbitrary output resolutions and hinder the geometric detail recovery.
 ◆ This paper introduces InfiniDepth, which represents depth as neural implicit fields.</td></tr>
@@ -895,4 +916,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.07
+> 更新于: 2026.01.08
