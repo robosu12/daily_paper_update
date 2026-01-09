@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.08)
+# SLAM领域最新论文 (2026.01.09)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-08</td><td>Discrete Fourier Transform-based Point Cloud Compression for Efficient SLAM in Featureless Terrain</td><td>[2601.04551](http://arxiv.org/pdf/2601.04551)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is an essential technology for the efficiency and reliability of unmanned robotic exploration missions.
+◆ While the onboard computational capability and communication bandwidth are critically limited, the point cloud data handled by SLAM is large in size, attracting attention to data compression methods.
+◆ To address such a problem, in this paper, we propose a new method for compressing point cloud maps by exploiting the Discrete Fourier Transform (DFT).</td></tr>
+<tr><td>2026-01-08</td><td>Fast Continuum Robot Shape and External Load State Estimation on SE(3)</td><td>[2601.04493](http://arxiv.org/pdf/2601.04493)</td><td>◆ Previous on-manifold approaches to continuum robot state estimation have typically adopted simplified Cosserat rod models, which cannot directly account for actuation inputs or external loads.
+◆ We introduce a general framework that incorporates uncertainty models for actuation (e.g., tendon tensions), applied forces and moments, process noise, boundary conditions, and arbitrary backbone measurements.
+◆ By adding temporal priors across time steps, our method additionally performs joint estimation in both the spatial (arclength) and temporal domains, enabling full \textit{spacetime} state estimation.</td></tr>
 <tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
 ◆ We propose a method to improve loop closure performance in DPV-SLAM.
 ◆ Our approach integrates AnyLoc, a learning-based visual place recognition technique, as a replacement for the classical Bag of Visual Words (BoVW) loop detection method.</td></tr>
@@ -231,6 +237,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-08</td><td>Earthquakes and cluster dynamics during Interseismic phases between the Northern and Central Apennines (Italy)</td><td>[2601.04829](http://arxiv.org/pdf/2601.04829)</td><td>◆ In the last thirty years, the Northern and Central Apennines (Italy) have been affected by three main destructive seismic sequences: the 1997 Colfiorito (three events $M_L &gt; 5.5$), the 2009 L&#x27;Aquila (one event $M_L &gt; 5.5$), and the 2016--2017 Amatrice--Visso--Norcia (three events $M_L &gt; 5.5$).
+◆ Several studies have analysed the spatio-temporal evolution and processes driving each sequence, focusing mainly on the foreshock--mainshock--aftershock periods.
+◆ Here, we focus on the 2018--2024 interseismic phase, aiming to unravel the long-term seismogenic behaviour of this region.</td></tr>
 <tr><td>2026-01-07</td><td>Multi-agent Optimization of Non-cooperative Multimodal Mobility Systems</td><td>[2601.03777](http://arxiv.org/pdf/2601.03777)</td><td>◆ While multimodal mobility systems have the potential to bring many benefits to travelers, drivers, the environment, and traffic congestion, such systems typically involve multiple non-cooperative decision-makers who may selfishly optimize their own objectives without considering the overall system benefits.
 ◆ This paper aims to investigate market-based interactions of travelers and ride-sourcing drivers in the context of multimodal mobility systems.
 ◆ We propose a unified mathematical modeling framework to capture the decentralized travelers and drivers&#x27; decision-making process and balance the network&#x27;s demand and supply by equilibrium pricing.</td></tr>
@@ -506,6 +515,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-08</td><td>ProFuse: Efficient Cross-View Context Fusion for Open-Vocabulary 3D Gaussian Splatting</td><td>[2601.04754](http://arxiv.org/pdf/2601.04754)</td><td>◆ We present ProFuse, an efficient context-aware framework for open-vocabulary 3D scene understanding with 3D Gaussian Splatting (3DGS).
+◆ The pipeline enhances cross-view consistency and intra-mask cohesion within a direct registration setup, adding minimal overhead and requiring no render-supervised fine-tuning.
+◆ Instead of relying on a pretrained 3DGS scene, we introduce a dense correspondence-guided pre-registration phase that initializes Gaussians with accurate geometry while jointly constructing 3D Context Proposals via cross-view clustering.</td></tr>
 <tr><td>2026-01-06</td><td>RelightAnyone: A Generalized Relightable 3D Gaussian Head Model</td><td>[2601.03357](http://arxiv.org/pdf/2601.03357)</td><td>◆ 3D Gaussian Splatting (3DGS) has become a standard approach to reconstruct and render photorealistic 3D head avatars.
 ◆ A major challenge is to relight the avatars to match any scene illumination.
 ◆ For high quality relighting, existing methods require subjects to be captured under complex time-multiplexed illumination, such as one-light-at-a-time (OLAT).</td></tr>
@@ -688,6 +700,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-08</td><td>Pixel-Perfect Visual Geometry Estimation</td><td>[2601.05246](http://arxiv.org/pdf/2601.05246)</td><td>◆ Recovering clean and accurate geometry from images is essential for robotics and augmented reality.
+◆ However, existing geometry foundation models still suffer severely from flying pixels and the loss of fine details.
+◆ In this paper, we present pixel-perfect visual geometry models that can predict high-quality, flying-pixel-free point clouds by leveraging generative modeling in the pixel space.</td></tr>
 <tr><td>2026-01-07</td><td>Bayesian Monocular Depth Refinement via Neural Radiance Fields</td><td>[2601.03869](http://arxiv.org/pdf/2601.03869)</td><td>◆ Monocular depth estimation has applications in many fields, such as autonomous navigation and extended reality, making it an essential computer vision task.
 ◆ However, current methods often produce smooth depth maps that lack the fine geometric detail needed for accurate scene understanding.
 ◆ We propose MDENeRF, an iterative framework that refines monocular depth estimates using depth information from Neural Radiance Fields (NeRFs).</td></tr>
@@ -916,4 +931,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.08
+> 更新于: 2026.01.09
