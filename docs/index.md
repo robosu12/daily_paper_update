@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.11)
+# SLAM领域最新论文 (2026.01.12)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-09</td><td>InsSo3D: Inertial Navigation System and 3D Sonar SLAM for turbid environment inspection</td><td>[2601.05805](http://arxiv.org/pdf/2601.05805)</td><td>◆ This paper presents InsSo3D, an accurate and efficient method for large-scale 3D Simultaneous Localisation and Mapping (SLAM) using a 3D Sonar and an Inertial Navigation System (INS).
+◆ Unlike traditional sonar, which produces 2D images containing range and azimuth information but lacks elevation information, 3D Sonar produces a 3D point cloud, which therefore does not suffer from elevation ambiguity.
+◆ We introduce a robust and modern SLAM framework adapted to the 3D Sonar data using INS as prior, detecting loop closure and performing pose graph optimisation.</td></tr>
+<tr><td>2026-01-09</td><td>FeatureSLAM: Feature-enriched 3D gaussian splatting SLAM in real time</td><td>[2601.05738](http://arxiv.org/pdf/2601.05738)</td><td>◆ We present a real-time tracking SLAM system that unifies efficient camera tracking with photorealistic feature-enriched mapping using 3D Gaussian Splatting (3DGS).
+◆ Our main contribution is integrating dense feature rasterization into the novel-view synthesis, aligned with a visual foundation model.
+◆ This yields strong semantics, going beyond basic RGB-D input, aiding both tracking and mapping accuracy.</td></tr>
 <tr><td>2026-01-08</td><td>Discrete Fourier Transform-based Point Cloud Compression for Efficient SLAM in Featureless Terrain</td><td>[2601.04551](http://arxiv.org/pdf/2601.04551)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is an essential technology for the efficiency and reliability of unmanned robotic exploration missions.
 ◆ While the onboard computational capability and communication bandwidth are critically limited, the point cloud data handled by SLAM is large in size, attracting attention to data compression methods.
 ◆ To address such a problem, in this paper, we propose a new method for compressing point cloud maps by exploiting the Discrete Fourier Transform (DFT).</td></tr>
@@ -176,7 +182,7 @@
 <tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
 ◆ We propose a method to improve loop closure performance in DPV-SLAM.
 ◆ Our approach integrates AnyLoc, a learning-based visual place recognition technique, as a replacement for the classical Bag of Visual Words (BoVW) loop detection method.</td></tr>
-<tr><td>2026-01-05</td><td>360DVO: Deep Visual Odometry for Monocular 360-Degree Camera</td><td>[2601.02309](http://arxiv.org/pdf/2601.02309)</td><td>◆ Monocular omnidirectional visual odometry (OVO) systems leverage 360-degree cameras to overcome field-of-view limitations of perspective VO systems.
+<tr><td>2026-01-09</td><td>360DVO: Deep Visual Odometry for Monocular 360-Degree Camera</td><td>[2601.02309](http://arxiv.org/pdf/2601.02309)</td><td>◆ Monocular omnidirectional visual odometry (OVO) systems leverage 360-degree cameras to overcome field-of-view limitations of perspective VO systems.
 ◆ However, existing methods, reliant on handcrafted features or photometric objectives, often lack robustness in challenging scenarios, such as aggressive motion and varying illumination.
 ◆ To address this, we present 360DVO, the first deep learning-based OVO framework.</td></tr>
 <tr><td>2026-01-02</td><td>DefVINS: Visual-Inertial Odometry for Deformable Scenes</td><td>[2601.00702](http://arxiv.org/pdf/2601.00702)</td><td>◆ Deformable scenes violate the rigidity assumptions underpinning classical visual-inertial odometry (VIO), often leading to over-fitting to local non-rigid motion or severe drift when deformation dominates visual parallax.
@@ -237,6 +243,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-09</td><td>InsSo3D: Inertial Navigation System and 3D Sonar SLAM for turbid environment inspection</td><td>[2601.05805](http://arxiv.org/pdf/2601.05805)</td><td>◆ This paper presents InsSo3D, an accurate and efficient method for large-scale 3D Simultaneous Localisation and Mapping (SLAM) using a 3D Sonar and an Inertial Navigation System (INS).
+◆ Unlike traditional sonar, which produces 2D images containing range and azimuth information but lacks elevation information, 3D Sonar produces a 3D point cloud, which therefore does not suffer from elevation ambiguity.
+◆ We introduce a robust and modern SLAM framework adapted to the 3D Sonar data using INS as prior, detecting loop closure and performing pose graph optimisation.</td></tr>
 <tr><td>2026-01-08</td><td>Earthquakes and cluster dynamics during Interseismic phases between the Northern and Central Apennines (Italy)</td><td>[2601.04829](http://arxiv.org/pdf/2601.04829)</td><td>◆ In the last thirty years, the Northern and Central Apennines (Italy) have been affected by three main destructive seismic sequences: the 1997 Colfiorito (three events $M_L &gt; 5.5$), the 2009 L&#x27;Aquila (one event $M_L &gt; 5.5$), and the 2016--2017 Amatrice--Visso--Norcia (three events $M_L &gt; 5.5$).
 ◆ Several studies have analysed the spatio-temporal evolution and processes driving each sequence, focusing mainly on the foreshock--mainshock--aftershock periods.
 ◆ Here, we focus on the 2018--2024 interseismic phase, aiming to unravel the long-term seismogenic behaviour of this region.</td></tr>
@@ -367,6 +376,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-09</td><td>Stationaere Kurven auf endlichdimensionalen Mannigfaltigkeiten</td><td>[2601.05695](http://arxiv.org/pdf/2601.05695)</td><td>◆ In this work we discuss the notion of stationary curves of the length functional, the so-called (weak) geodesics, on a Riemannian manifold.
+◆ The motivation behind this work is to give a detailed description of many key concepts from differential geometry that one needs in order to understand the important notion of a (weak) geodesic.
+◆ For this, we mainly focus on finite-dimensional smooth manifolds, so that we can develop an intuitive and geometric understanding of the concepts that we want to discuss.</td></tr>
 <tr><td>2026-01-05</td><td>Exact Clique Number Manipulation via Edge Interdiction</td><td>[2601.01869](http://arxiv.org/pdf/2601.01869)</td><td>◆ The Edge Interdiction Clique Problem (EICP) aims to remove at most $k$ edges from a graph so as to minimize the size of the largest clique in the remaining graph.
 ◆ This problem captures a fundamental question in graph manipulation: which edges are structurally critical for preserving large cliques?
 ◆ Such a problem is also motivated by practical applications including protein function maintenance and image matching.</td></tr>
@@ -515,6 +527,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-09</td><td>FeatureSLAM: Feature-enriched 3D gaussian splatting SLAM in real time</td><td>[2601.05738](http://arxiv.org/pdf/2601.05738)</td><td>◆ We present a real-time tracking SLAM system that unifies efficient camera tracking with photorealistic feature-enriched mapping using 3D Gaussian Splatting (3DGS).
+◆ Our main contribution is integrating dense feature rasterization into the novel-view synthesis, aligned with a visual foundation model.
+◆ This yields strong semantics, going beyond basic RGB-D input, aiding both tracking and mapping accuracy.</td></tr>
+<tr><td>2026-01-08</td><td>Sketch&amp;Patch++: Efficient Structure-Aware 3D Gaussian Representation</td><td>[2601.05394](http://arxiv.org/pdf/2601.05394)</td><td>◆ We observe that Gaussians exhibit distinct roles and characteristics analogous to traditional artistic techniques -- like how artists first sketch outlines before filling in broader areas with color, some Gaussians capture high-frequency features such as edges and contours, while others represent broader, smoother regions analogous to brush strokes that add volume and depth.
+◆ Based on this observation, we propose a hybrid representation that categorizes Gaussians into (i) Sketch Gaussians, which represent high-frequency, boundary-defining features, and (ii) Patch Gaussians, which cover low-frequency, smooth regions.
+◆ This semantic separation naturally enables layered progressive streaming, where the compact Sketch Gaussians establish the structural skeleton before Patch Gaussians incrementally refine volumetric detail.</td></tr>
 <tr><td>2026-01-08</td><td>ProFuse: Efficient Cross-View Context Fusion for Open-Vocabulary 3D Gaussian Splatting</td><td>[2601.04754](http://arxiv.org/pdf/2601.04754)</td><td>◆ We present ProFuse, an efficient context-aware framework for open-vocabulary 3D scene understanding with 3D Gaussian Splatting (3DGS).
 ◆ The pipeline enhances cross-view consistency and intra-mask cohesion within a direct registration setup, adding minimal overhead and requiring no render-supervised fine-tuning.
 ◆ Instead of relying on a pretrained 3DGS scene, we introduce a dense correspondence-guided pre-registration phase that initializes Gaussians with accurate geometry while jointly constructing 3D Context Proposals via cross-view clustering.</td></tr>
@@ -700,6 +718,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-09</td><td>GeoSurDepth: Spatial Geometry-Consistent Self-Supervised Depth Estimation for Surround-View Cameras</td><td>[2601.05839](http://arxiv.org/pdf/2601.05839)</td><td>◆ Accurate surround-view depth estimation provides a competitive alternative to laser-based sensors and is essential for 3D scene understanding in autonomous driving.
+◆ While prior studies have proposed various approaches that primarily focus on enforcing cross-view constraints at the photometric level, few explicitly exploit the rich geometric structure inherent in both monocular and surround-view setting.
+◆ In this work, we propose GeoSurDepth, a framework that leverages geometry consistency as the primary cue for surround-view depth estimation.</td></tr>
 <tr><td>2026-01-08</td><td>Pixel-Perfect Visual Geometry Estimation</td><td>[2601.05246](http://arxiv.org/pdf/2601.05246)</td><td>◆ Recovering clean and accurate geometry from images is essential for robotics and augmented reality.
 ◆ However, existing geometry foundation models still suffer severely from flying pixels and the loss of fine details.
 ◆ In this paper, we present pixel-perfect visual geometry models that can predict high-quality, flying-pixel-free point clouds by leveraging generative modeling in the pixel space.</td></tr>
@@ -931,4 +952,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.11
+> 更新于: 2026.01.12
