@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.12)
+# SLAM领域最新论文 (2026.01.13)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -28,6 +28,9 @@
 <tr><td>2026-01-09</td><td>FeatureSLAM: Feature-enriched 3D gaussian splatting SLAM in real time</td><td>[2601.05738](http://arxiv.org/pdf/2601.05738)</td><td>◆ We present a real-time tracking SLAM system that unifies efficient camera tracking with photorealistic feature-enriched mapping using 3D Gaussian Splatting (3DGS).
 ◆ Our main contribution is integrating dense feature rasterization into the novel-view synthesis, aligned with a visual foundation model.
 ◆ This yields strong semantics, going beyond basic RGB-D input, aiding both tracking and mapping accuracy.</td></tr>
+<tr><td>2026-01-08</td><td>UniLiPs: Unified LiDAR Pseudo-Labeling with Geometry-Grounded Dynamic Scene Decomposition</td><td>[2601.05105](http://arxiv.org/pdf/2601.05105)</td><td>◆ Unlabeled LiDAR logs, in autonomous driving applications, are inherently a gold mine of dense 3D geometry hiding in plain sight - yet they are almost useless without human labels, highlighting a dominant cost barrier for autonomous-perception research.
+◆ In this work we tackle this bottleneck by leveraging temporal-geometric consistency across LiDAR sweeps to lift and fuse cues from text and 2D vision foundation models directly into 3D, without any manual input.
+◆ We introduce an unsupervised multi-modal pseudo-labeling method relying on strong geometric priors learned from temporally accumulated LiDAR maps, alongside with a novel iterative update rule that enforces joint geometric-semantic consistency, and vice-versa detecting moving objects from inconsistencies.</td></tr>
 <tr><td>2026-01-08</td><td>Discrete Fourier Transform-based Point Cloud Compression for Efficient SLAM in Featureless Terrain</td><td>[2601.04551](http://arxiv.org/pdf/2601.04551)</td><td>◆ Simultaneous Localization and Mapping (SLAM) is an essential technology for the efficiency and reliability of unmanned robotic exploration missions.
 ◆ While the onboard computational capability and communication bandwidth are critically limited, the point cloud data handled by SLAM is large in size, attracting attention to data compression methods.
 ◆ To address such a problem, in this paper, we propose a new method for compressing point cloud maps by exploiting the Discrete Fourier Transform (DFT).</td></tr>
@@ -181,6 +184,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-12</td><td>Nonlinear Observer Design for Visual-Inertial Odometry</td><td>[2601.07156](http://arxiv.org/pdf/2601.07156)</td><td>◆ This paper addresses the problem of Visual-Inertial Odometry (VIO) for rigid body systems evolving in three-dimensional space.
+◆ We introduce a novel matrix Lie group structure, denoted SE_{3+n}(3), that unifies the pose, gravity, linear velocity, and landmark positions within a consistent geometric framework tailored to the VIO problem.
+◆ Building upon this formulation, we design an almost globally asymptotically stable nonlinear geometric observer that tightly integrates data from an Inertial Measurement Unit (IMU) and visual sensors.</td></tr>
 <tr><td>2026-01-06</td><td>Loop Closure using AnyLoc Visual Place Recognition in DPV-SLAM</td><td>[2601.02723](http://arxiv.org/pdf/2601.02723)</td><td>◆ Loop closure is crucial for maintaining the accuracy and consistency of visual SLAM.
 ◆ We propose a method to improve loop closure performance in DPV-SLAM.
 ◆ Our approach integrates AnyLoc, a learning-based visual place recognition technique, as a replacement for the classical Bag of Visual Words (BoVW) loop detection method.</td></tr>
@@ -247,6 +253,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-12</td><td>Anisotropic anomalous Hall effect in distorted kagome GdTi3Bi4</td><td>[2601.07578](http://arxiv.org/pdf/2601.07578)</td><td>◆ Topological kagome magnets offer a rich landscape for exploring the intricate interplay of quantum interactions among geometry, topology, spin, and correlation.
+◆ GdTi3Bi4 crystallizes in layered Ti based kagome nets intertwined with zigzag Gd chains along the a axis and orders antiferromagnetically below 15 K.
+◆ Here, we present the temperature and field dependent electrical transport of GdTi3Bi4 in different directions.</td></tr>
+<tr><td>2026-01-11</td><td>SARA: Scene-Aware Reconstruction Accelerator</td><td>[2601.06831](http://arxiv.org/pdf/2601.06831)</td><td>◆ We present SARA (Scene-Aware Reconstruction Accelerator), a geometry-driven pair selection module for Structure-from-Motion (SfM).
+◆ Unlike conventional pipelines that select pairs based on visual similarity alone, SARA introduces geometry-first pair selection by scoring reconstruction informativeness - the product of overlap and parallax - before expensive matching.
+◆ A lightweight pre-matching stage uses mutual nearest neighbors and RANSAC to estimate these cues, then constructs an Information-Weighted Spanning Tree (IWST) augmented with targeted edges for loop closure, long-baseline anchors, and weak-view reinforcement.</td></tr>
+<tr><td>2026-01-11</td><td>Reconfiguration of Hamiltonian Paths and Cycles in Rectangular Grid Graphs</td><td>[2601.06749](http://arxiv.org/pdf/2601.06749)</td><td>◆ \noindent An \textit{\(m \times n\) grid graph} is the induced subgraph of the square lattice whose vertex set consists of all integer grid points \(\{(i,j) : 0 \leq i &lt; m,\ 0 \leq j &lt; n\}\).
+◆ Let $H$ and $K$ be Hamiltonian cycles in an $m \times n$ grid graph $G$.
+◆ We study the problem of reconfiguring $H$ into $K$ using a sequence of local transformations called \textit{moves}.</td></tr>
+<tr><td>2026-01-11</td><td>Imaginary Gauge-steerable Edge Modes In Non-Hermitian Aubry-André-Harper Model</td><td>[2601.06746](http://arxiv.org/pdf/2601.06746)</td><td>◆ We investigate a non-Hermitian Aubry-André-Harper lattice exhibiting quasiperiodicity, featuring an imaginary gauge field that varies spatially but averages to zero.
+◆ In the presence of open boundary conditions, this system is precisely mapped, through a nonunitary gauge transformation, to the Hermitian AAH model with balanced hopping terms.
+◆ The mapping leaves the spectrum unchanged but reshapes each eigenfunction by a realization-dependent random-walk envelope.</td></tr>
+<tr><td>2026-01-10</td><td>WHU-PCPR: A cross-platform heterogeneous point cloud dataset for place recognition in complex urban scenes</td><td>[2601.06442](http://arxiv.org/pdf/2601.06442)</td><td>◆ Point Cloud-based Place Recognition (PCPR) demonstrates considerable potential in applications such as autonomous driving, robot localization and navigation, and map update.
+◆ In practical applications, point clouds used for place recognition are often acquired from different platforms and LiDARs across varying scene.
+◆ However, existing PCPR datasets lack diversity in scenes, platforms, and sensors, which limits the effective development of related research.</td></tr>
 <tr><td>2026-01-09</td><td>InsSo3D: Inertial Navigation System and 3D Sonar SLAM for turbid environment inspection</td><td>[2601.05805](http://arxiv.org/pdf/2601.05805)</td><td>◆ This paper presents InsSo3D, an accurate and efficient method for large-scale 3D Simultaneous Localisation and Mapping (SLAM) using a 3D Sonar and an Inertial Navigation System (INS).
 ◆ Unlike traditional sonar, which produces 2D images containing range and azimuth information but lacks elevation information, 3D Sonar produces a 3D point cloud, which therefore does not suffer from elevation ambiguity.
 ◆ We introduce a robust and modern SLAM framework adapted to the 3D Sonar data using INS as prior, detecting loop closure and performing pose graph optimisation.</td></tr>
@@ -406,7 +427,7 @@
 <tr><td>2025-12-17</td><td>The Perceptual Observatory Characterizing Robustness and Grounding in MLLMs</td><td>[2512.15949](http://arxiv.org/pdf/2512.15949)</td><td>◆ Recent advances in multimodal large language models (MLLMs) have yielded increasingly powerful models, yet their perceptual capacities remain poorly characterized.
 ◆ In practice, most model families scale language component while reusing nearly identical vision encoders (e.g., Qwen2.5-VL 3B/7B/72B), which raises pivotal concerns about whether progress reflects genuine visual grounding or reliance on internet-scale textual world knowledge.
 ◆ Existing evaluation methods emphasize end-task accuracy, overlooking robustness, attribution fidelity, and reasoning under controlled perturbations.</td></tr>
-<tr><td>2025-12-17</td><td>BLANKET: Anonymizing Faces in Infant Video Recordings</td><td>[2512.15542](http://arxiv.org/pdf/2512.15542)</td><td>◆ Ensuring the ethical use of video data involving human subjects, particularly infants, requires robust anonymization methods.
+<tr><td>2026-01-11</td><td>BLANKET: Anonymizing Faces in Infant Video Recordings</td><td>[2512.15542](http://arxiv.org/pdf/2512.15542)</td><td>◆ Ensuring the ethical use of video data involving human subjects, particularly infants, requires robust anonymization methods.
 ◆ We propose BLANKET (Baby-face Landmark-preserving ANonymization with Keypoint dEtection consisTency), a novel approach designed to anonymize infant faces in video recordings while preserving essential facial attributes.
 ◆ Our method comprises two stages.</td></tr>
 <tr><td>2025-12-17</td><td>Off The Grid: Detection of Primitives for Feed-Forward 3D Gaussian Splatting</td><td>[2512.15508](http://arxiv.org/pdf/2512.15508)</td><td>◆ Feed-forward 3D Gaussian Splatting (3DGS) models enable real-time scene generation but are hindered by suboptimal pixel-aligned primitive placement, which relies on a dense, rigid grid and limits both quality and efficiency.
@@ -535,9 +556,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-12</td><td>ViewMorpher3D: A 3D-aware Diffusion Framework for Multi-Camera Novel View Synthesis in Autonomous Driving</td><td>[2601.07540](http://arxiv.org/pdf/2601.07540)</td><td>◆ Autonomous driving systems rely heavily on multi-view images to ensure accurate perception and robust decision-making.
+◆ To effectively develop and evaluate perception stacks and planning algorithms, realistic closed-loop simulators are indispensable.
+◆ While 3D reconstruction techniques such as Gaussian Splatting offer promising avenues for simulator construction, the rendered novel views often exhibit artifacts, particularly in extrapolated perspectives or when available observations are sparse.</td></tr>
+<tr><td>2026-01-12</td><td>Mon3tr: Monocular 3D Telepresence with Pre-built Gaussian Avatars as Amortization</td><td>[2601.07518](http://arxiv.org/pdf/2601.07518)</td><td>◆ Immersive telepresence aims to transform human interaction in AR/VR applications by enabling lifelike full-body holographic representations for enhanced remote collaboration.
+◆ However, existing systems rely on hardware-intensive multi-camera setups and demand high bandwidth for volumetric streaming, limiting their real-time performance on mobile devices.
+◆ To overcome these challenges, we propose Mon3tr, a novel Monocular 3D telepresence framework that integrates 3D Gaussian splatting (3DGS) based parametric human modeling into telepresence for the first time.</td></tr>
+<tr><td>2026-01-12</td><td>R3-RECON: Radiance-Field-Free Active Reconstruction via Renderability</td><td>[2601.07484](http://arxiv.org/pdf/2601.07484)</td><td>◆ In active reconstruction, an embodied agent must decide where to look next to efficiently acquire views that support high-quality novel-view rendering.
+◆ Recent work on active view planning for neural rendering largely derives next-best-view (NBV) criteria by backpropagating through radiance fields or estimating information entropy over 3D Gaussian primitives.
+◆ While effective, these strategies tightly couple view selection to heavy, representation-specific mechanisms and fail to account for the computational and resource constraints required for lightweight online deployment.</td></tr>
+<tr><td>2026-01-11</td><td>SARA: Scene-Aware Reconstruction Accelerator</td><td>[2601.06831](http://arxiv.org/pdf/2601.06831)</td><td>◆ We present SARA (Scene-Aware Reconstruction Accelerator), a geometry-driven pair selection module for Structure-from-Motion (SfM).
+◆ Unlike conventional pipelines that select pairs based on visual similarity alone, SARA introduces geometry-first pair selection by scoring reconstruction informativeness - the product of overlap and parallax - before expensive matching.
+◆ A lightweight pre-matching stage uses mutual nearest neighbors and RANSAC to estimate these cues, then constructs an Information-Weighted Spanning Tree (IWST) augmented with targeted edges for loop closure, long-baseline anchors, and weak-view reinforcement.</td></tr>
+<tr><td>2026-01-10</td><td>SRFlow: A Dataset and Regularization Model for High-Resolution Facial Optical Flow via Splatting Rasterization</td><td>[2601.06479](http://arxiv.org/pdf/2601.06479)</td><td>◆ Facial optical flow supports a wide range of tasks in facial motion analysis.
+◆ However, the lack of high-resolution facial optical flow datasets has hindered progress in this area.
+◆ In this paper, we introduce Splatting Rasterization Flow (SRFlow), a high-resolution facial optical flow dataset, and Splatting Rasterization Guided FlowNet (SRFlowNet), a facial optical flow model with tailored regularization losses.</td></tr>
+<tr><td>2026-01-09</td><td>NAS-GS: Noise-Aware Sonar Gaussian Splatting</td><td>[2601.06285](http://arxiv.org/pdf/2601.06285)</td><td>◆ Underwater sonar imaging plays a crucial role in various applications, including autonomous navigation in murky water, marine archaeology, and environmental monitoring.
+◆ However, the unique characteristics of sonar images, such as complex noise patterns and the lack of elevation information, pose significant challenges for 3D reconstruction and novel view synthesis.
+◆ In this paper, we present NAS-GS, a novel Noise-Aware Sonar Gaussian Splatting framework specifically designed to address these challenges.</td></tr>
+<tr><td>2026-01-09</td><td>LayerGS: Decomposition and Inpainting of Layered 3D Human Avatars via 2D Gaussian Splatting</td><td>[2601.05853](http://arxiv.org/pdf/2601.05853)</td><td>◆ We propose a novel framework for decomposing arbitrarily posed humans into animatable multi-layered 3D human avatars, separating the body and garments.
+◆ Conventional single-layer reconstruction methods lock clothing to one identity, while prior multi-layer approaches struggle with occluded regions.
+◆ We overcome both limitations by encoding each layer as a set of 2D Gaussians for accurate geometry and photorealistic rendering, and inpainting hidden regions with a pretrained 2D diffusion model via score-distillation sampling (SDS).</td></tr>
 <tr><td>2026-01-09</td><td>FeatureSLAM: Feature-enriched 3D gaussian splatting SLAM in real time</td><td>[2601.05738](http://arxiv.org/pdf/2601.05738)</td><td>◆ We present a real-time tracking SLAM system that unifies efficient camera tracking with photorealistic feature-enriched mapping using 3D Gaussian Splatting (3DGS).
 ◆ Our main contribution is integrating dense feature rasterization into the novel-view synthesis, aligned with a visual foundation model.
 ◆ This yields strong semantics, going beyond basic RGB-D input, aiding both tracking and mapping accuracy.</td></tr>
+<tr><td>2026-01-09</td><td>GS-DMSR: Dynamic Sensitive Multi-scale Manifold Enhancement for Accelerated High-Quality 3D Gaussian Splatting</td><td>[2601.05584](http://arxiv.org/pdf/2601.05584)</td><td>◆ In the field of 3D dynamic scene reconstruction, how to balance model convergence rate and rendering quality has long been a critical challenge that urgently needs to be addressed, particularly in high-precision modeling of scenes with complex dynamic motions.
+◆ To tackle this issue, this study proposes the GS-DMSR method.
+◆ By quantitatively analyzing the dynamic evolution process of Gaussian attributes, this mechanism achieves adaptive gradient focusing, enabling it to dynamically identify significant differences in the motion states of Gaussian models.</td></tr>
+<tr><td>2026-01-09</td><td>GaussianSwap: Animatable Video Face Swapping with 3D Gaussian Splatting</td><td>[2601.05511](http://arxiv.org/pdf/2601.05511)</td><td>◆ We introduce GaussianSwap, a novel video face swapping framework that constructs a 3D Gaussian Splatting based face avatar from a target video while transferring identity from a source image to the avatar.
+◆ Conventional video swapping frameworks are limited to generating facial representations in pixel-based formats.
+◆ The resulting swapped faces exist merely as a set of unstructured pixels without any capacity for animation or interactive manipulation.</td></tr>
 <tr><td>2026-01-08</td><td>Sketch&amp;Patch++: Efficient Structure-Aware 3D Gaussian Representation</td><td>[2601.05394](http://arxiv.org/pdf/2601.05394)</td><td>◆ We observe that Gaussians exhibit distinct roles and characteristics analogous to traditional artistic techniques -- like how artists first sketch outlines before filling in broader areas with color, some Gaussians capture high-frequency features such as edges and contours, while others represent broader, smoother regions analogous to brush strokes that add volume and depth.
 ◆ Based on this observation, we propose a hybrid representation that categorizes Gaussians into (i) Sketch Gaussians, which represent high-frequency, boundary-defining features, and (ii) Patch Gaussians, which cover low-frequency, smooth regions.
 ◆ This semantic separation naturally enables layered progressive streaming, where the compact Sketch Gaussians establish the structural skeleton before Patch Gaussians incrementally refine volumetric detail.</td></tr>
@@ -728,6 +776,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-11</td><td>UDPNet: Unleashing Depth-based Priors for Robust Image Dehazing</td><td>[2601.06909](http://arxiv.org/pdf/2601.06909)</td><td>◆ Image dehazing has witnessed significant advancements with the development of deep learning models.
+◆ However, a few methods predominantly focus on single-modal RGB features, neglecting the inherent correlation between scene depth and haze distribution.
+◆ Even those that jointly optimize depth estimation and image dehazing often suffer from suboptimal performance due to inadequate utilization of accurate depth information.</td></tr>
 <tr><td>2026-01-09</td><td>GeoSurDepth: Spatial Geometry-Consistent Self-Supervised Depth Estimation for Surround-View Cameras</td><td>[2601.05839](http://arxiv.org/pdf/2601.05839)</td><td>◆ Accurate surround-view depth estimation provides a competitive alternative to laser-based sensors and is essential for 3D scene understanding in autonomous driving.
 ◆ While prior studies have proposed various approaches that primarily focus on enforcing cross-view constraints at the photometric level, few explicitly exploit the rich geometric structure inherent in both monocular and surround-view setting.
 ◆ In this work, we propose GeoSurDepth, a framework that leverages geometry consistency as the primary cue for surround-view depth estimation.</td></tr>
@@ -964,4 +1015,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.12
+> 更新于: 2026.01.13
