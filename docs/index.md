@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.14)
+# SLAM领域最新论文 (2026.01.15)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-14</td><td>SCE-SLAM: Scale-Consistent Monocular SLAM via Scene Coordinate Embeddings</td><td>[2601.09665](http://arxiv.org/pdf/2601.09665)</td><td>◆ Monocular visual SLAM enables 3D reconstruction from internet video and autonomous navigation on resource-constrained platforms, yet suffers from scale drift, i.e., the gradual divergence of estimated scale over long sequences.
+◆ Existing frame-to-frame methods achieve real-time performance through local optimization but accumulate scale drift due to the lack of global constraints among independent windows.
+◆ To address this, we propose SCE-SLAM, an end-to-end SLAM system that maintains scale consistency through scene coordinate embeddings, which are learned patch-level representations encoding 3D geometric relationships under a canonical scale reference.</td></tr>
+<tr><td>2026-01-14</td><td>Multimodal Signal Processing For Thermo-Visible-Lidar Fusion In Real-time 3D Semantic Mapping</td><td>[2601.09578](http://arxiv.org/pdf/2601.09578)</td><td>◆ In complex environments, autonomous robot navigation and environmental perception pose higher requirements for SLAM technology.
+◆ This paper presents a novel method for semantically enhancing 3D point cloud maps with thermal information.
+◆ By first performing pixel-level fusion of visible and infrared images, the system projects real-time LiDAR point clouds onto this fused image stream.</td></tr>
+<tr><td>2026-01-14</td><td>SLAM-LLM: A Modular, Open-Source Multimodal Large Language Model Framework and Best Practice for Speech, Language, Audio and Music Processing</td><td>[2601.09385](http://arxiv.org/pdf/2601.09385)</td><td>◆ The recent surge in open-source Multimodal Large Language Models (MLLM) frameworks, such as LLaVA, provides a convenient kickoff for artificial intelligence developers and researchers.
+◆ However, most of the MLLM frameworks take vision as the main input modality, and provide limited in-depth support for the modality of speech, audio, and music.
+◆ This situation hinders the development of audio-language models, and forces researchers to spend a lot of effort on code writing and hyperparameter tuning.</td></tr>
+<tr><td>2026-01-13</td><td>Thermo-LIO: A Novel Multi-Sensor Integrated System for Structural Health Monitoring</td><td>[2601.08977](http://arxiv.org/pdf/2601.08977)</td><td>◆ Traditional two-dimensional thermography, despite being non-invasive and useful for defect detection in the construction field, is limited in effectively assessing complex geometries, inaccessible areas, and subsurface defects.
+◆ This paper introduces Thermo-LIO, a novel multi-sensor system that can enhance Structural Health Monitoring (SHM) by fusing thermal imaging with high-resolution LiDAR.
+◆ To achieve this, the study first develops a multimodal fusion method combining thermal imaging and LiDAR, enabling precise calibration and synchronization of multimodal data streams to create accurate representations of temperature distributions in buildings.</td></tr>
 <tr><td>2026-01-13</td><td>Efficient Incremental SLAM via Information-Guided and Selective Optimization</td><td>[2601.08110](http://arxiv.org/pdf/2601.08110)</td><td>◆ We present an efficient incremental SLAM back-end that achieves the accuracy of full batch optimization while substantially reducing computational cost.
 ◆ The proposed approach combines two complementary ideas: information-guided gating (IGG) and selective partial optimization (SPO).
 ◆ IGG employs an information-theoretic criterion based on the log-determinant of the information matrix to quantify the contribution of new measurements, triggering global optimization only when a significant information gain is observed.</td></tr>
@@ -185,6 +197,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-14</td><td>SCE-SLAM: Scale-Consistent Monocular SLAM via Scene Coordinate Embeddings</td><td>[2601.09665](http://arxiv.org/pdf/2601.09665)</td><td>◆ Monocular visual SLAM enables 3D reconstruction from internet video and autonomous navigation on resource-constrained platforms, yet suffers from scale drift, i.e., the gradual divergence of estimated scale over long sequences.
+◆ Existing frame-to-frame methods achieve real-time performance through local optimization but accumulate scale drift due to the lack of global constraints among independent windows.
+◆ To address this, we propose SCE-SLAM, an end-to-end SLAM system that maintains scale consistency through scene coordinate embeddings, which are learned patch-level representations encoding 3D geometric relationships under a canonical scale reference.</td></tr>
 <tr><td>2026-01-12</td><td>Nonlinear Observer Design for Visual-Inertial Odometry</td><td>[2601.07156](http://arxiv.org/pdf/2601.07156)</td><td>◆ This paper addresses the problem of Visual-Inertial Odometry (VIO) for rigid body systems evolving in three-dimensional space.
 ◆ We introduce a novel matrix Lie group structure, denoted SE_{3+n}(3), that unifies the pose, gravity, linear velocity, and landmark positions within a consistent geometric framework tailored to the VIO problem.
 ◆ Building upon this formulation, we design an almost globally asymptotically stable nonlinear geometric observer that tightly integrates data from an Inertial Measurement Unit (IMU) and visual sensors.</td></tr>
@@ -252,6 +267,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-14</td><td>Hybrid guided variational autoencoder for visual place recognition</td><td>[2601.09248](http://arxiv.org/pdf/2601.09248)</td><td>◆ Autonomous agents such as cars, robots and drones need to precisely localize themselves in diverse environments, including in GPS-denied indoor environments.
+◆ One approach for precise localization is visual place recognition (VPR), which estimates the place of an image based on previously seen places.
+◆ State-of-the-art VPR models require high amounts of memory, making them unwieldy for mobile deployment, while more compact models lack robustness and generalization capabilities.</td></tr>
 <tr><td>2026-01-13</td><td>Keyframe-based Dense Mapping with the Graph of View-Dependent Local Maps</td><td>[2601.08520](http://arxiv.org/pdf/2601.08520)</td><td>◆ In this article, we propose a new keyframe-based mapping system.
 ◆ The proposed method updates local Normal Distribution Transform maps (NDT) using data from an RGB-D sensor.
 ◆ The cells of the NDT are stored in 2D view-dependent structures to better utilize the properties and uncertainty model of RGB-D cameras.</td></tr>
@@ -406,6 +424,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-14</td><td>CLIDD: Cross-Layer Independent Deformable Description for Efficient and Discriminative Local Feature Representation</td><td>[2601.09230](http://arxiv.org/pdf/2601.09230)</td><td>◆ Robust local feature representations are essential for spatial intelligence tasks such as robot navigation and augmented reality.
+◆ Establishing reliable correspondences requires descriptors that provide both high discriminative power and computational efficiency.
+◆ To address this, we introduce Cross-Layer Independent Deformable Description (CLIDD), a method that achieves superior distinctiveness by sampling directly from independent feature hierarchies.</td></tr>
 <tr><td>2026-01-13</td><td>Near-perfect photo-ID of the Hula painted frog with zero-shot deep local-feature matching</td><td>[2601.08798](http://arxiv.org/pdf/2601.08798)</td><td>◆ Accurate individual identification is essential for monitoring rare amphibians, yet invasive marking is often unsuitable for critically endangered species.
 ◆ We evaluate state-of-the-art computer-vision methods for photographic re-identification of the Hula painted frog (Latonia nigriventer) using 1,233 ventral images from 191 individuals collected during 2013-2020 capture-recapture surveys.
 ◆ We compare deep local-feature matching in a zero-shot setting with deep global-feature embedding models.</td></tr>
@@ -563,6 +584,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-14</td><td>Variable Basis Mapping for Real-Time Volumetric Visualization</td><td>[2601.09417](http://arxiv.org/pdf/2601.09417)</td><td>◆ Real-time visualization of large-scale volumetric data remains challenging, as direct volume rendering and voxel-based methods suffer from prohibitively high computational cost.
+◆ We propose Variable Basis Mapping (VBM), a framework that transforms volumetric fields into 3D Gaussian Splatting (3DGS) representations through wavelet-domain analysis.
+◆ First, we precompute a compact Wavelet-to-Gaussian Transition Bank that provides optimal Gaussian surrogates for canonical wavelet atoms across multiple scales.</td></tr>
+<tr><td>2026-01-14</td><td>TIDI-GS: Floater Suppression in 3D Gaussian Splatting for Enhanced Indoor Scene Fidelity</td><td>[2601.09291](http://arxiv.org/pdf/2601.09291)</td><td>◆ 3D Gaussian Splatting (3DGS) is a technique to create high-quality, real-time 3D scenes from images.
+◆ This method often produces visual artifacts known as floaters--nearly transparent, disconnected elements that drift in space away from the actual surface.
+◆ This geometric inaccuracy undermines the reliability of these models for practical applications, which is critical.</td></tr>
+<tr><td>2026-01-14</td><td>GaussianFluent: Gaussian Simulation for Dynamic Scenes with Mixed Materials</td><td>[2601.09265](http://arxiv.org/pdf/2601.09265)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a prominent 3D representation for high-fidelity and real-time rendering.
+◆ Prior work has coupled physics simulation with Gaussians, but predominantly targets soft, deformable materials, leaving brittle fracture largely unresolved.
+◆ This stems from two key obstacles: the lack of volumetric interiors with coherent textures in GS representation, and the absence of fracture-aware simulation methods for Gaussians.</td></tr>
+<tr><td>2026-01-14</td><td>A$^2$TG: Adaptive Anisotropic Textured Gaussians for Efficient 3D Scene Representation</td><td>[2601.09243](http://arxiv.org/pdf/2601.09243)</td><td>◆ Gaussian Splatting has emerged as a powerful representation for high-quality, real-time 3D scene rendering.
+◆ While recent works extend Gaussians with learnable textures to enrich visual appearance, existing approaches allocate a fixed square texture per primitive, leading to inefficient memory usage and limited adaptability to scene variability.
+◆ In this paper, we introduce adaptive anisotropic textured Gaussians (A$^2$TG), a novel representation that generalizes textured Gaussians by equipping each primitive with an anisotropic texture.</td></tr>
 <tr><td>2026-01-12</td><td>3DGS-Drag: Dragging Gaussians for Intuitive Point-Based 3D Editing</td><td>[2601.07963](http://arxiv.org/pdf/2601.07963)</td><td>◆ The transformative potential of 3D content creation has been progressively unlocked through advancements in generative models.
 ◆ Recently, intuitive drag editing with geometric changes has attracted significant attention in 2D editing yet remains challenging for 3D scenes.
 ◆ In this paper, we introduce 3DGS-Drag -- a point-based 3D editing framework that provides efficient, intuitive drag manipulation of real 3D scenes.</td></tr>
@@ -1024,4 +1057,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.14
+> 更新于: 2026.01.15
