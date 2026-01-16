@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.15)
+# SLAM领域最新论文 (2026.01.16)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -267,6 +267,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-15</td><td>A Unified Framework for Kinematic Simulation of Rigid Foldable Structures</td><td>[2601.10225](http://arxiv.org/pdf/2601.10225)</td><td>◆ Origami-inspired structures with rigid panels now span thick, kirigami, and multi-sheet realizations, making unified kinematic analysis essential.
+◆ Yet a general method that consolidates their loop constraints has been lacking.
+◆ We present an automated approach that generates the Pfaffian constraint matrix for arbitrary rigid foldable structures (RFS).</td></tr>
 <tr><td>2026-01-14</td><td>Hybrid guided variational autoencoder for visual place recognition</td><td>[2601.09248](http://arxiv.org/pdf/2601.09248)</td><td>◆ Autonomous agents such as cars, robots and drones need to precisely localize themselves in diverse environments, including in GPS-denied indoor environments.
 ◆ One approach for precise localization is visual place recognition (VPR), which estimates the place of an image based on previously seen places.
 ◆ State-of-the-art VPR models require high amounts of memory, making them unwieldy for mobile deployment, while more compact models lack robustness and generalization capabilities.</td></tr>
@@ -584,6 +587,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-15</td><td>RSATalker: Realistic Socially-Aware Talking Head Generation for Multi-Turn Conversation</td><td>[2601.10606](http://arxiv.org/pdf/2601.10606)</td><td>◆ Talking head generation is increasingly important in virtual reality (VR), especially for social scenarios involving multi-turn conversation.
+◆ Existing approaches face notable limitations: mesh-based 3D methods can model dual-person dialogue but lack realistic textures, while large-model-based 2D methods produce natural appearances but incur prohibitive computational costs.
+◆ Recently, 3D Gaussian Splatting (3DGS) based methods achieve efficient and realistic rendering but remain speaker-only and ignore social relationships.</td></tr>
+<tr><td>2026-01-15</td><td>Thinking Like Van Gogh: Structure-Aware Style Transfer via Flow-Guided 3D Gaussian Splatting</td><td>[2601.10075](http://arxiv.org/pdf/2601.10075)</td><td>◆ In 1888, Vincent van Gogh wrote, &quot;I am seeking exaggeration in the essential.&quot; This principle, amplifying structural form while suppressing photographic detail, lies at the core of Post-Impressionist art.
+◆ However, most existing 3D style transfer methods invert this philosophy, treating geometry as a rigid substrate for surface-level texture projection.
+◆ To authentically reproduce Post-Impressionist stylization, geometric abstraction must be embraced as the primary vehicle of expression.</td></tr>
 <tr><td>2026-01-14</td><td>Variable Basis Mapping for Real-Time Volumetric Visualization</td><td>[2601.09417](http://arxiv.org/pdf/2601.09417)</td><td>◆ Real-time visualization of large-scale volumetric data remains challenging, as direct volume rendering and voxel-based methods suffer from prohibitively high computational cost.
 ◆ We propose Variable Basis Mapping (VBM), a framework that transforms volumetric fields into 3D Gaussian Splatting (3DGS) representations through wavelet-domain analysis.
 ◆ First, we precompute a compact Wavelet-to-Gaussian Transition Bank that provides optimal Gaussian surrogates for canonical wavelet atoms across multiple scales.</td></tr>
@@ -817,6 +826,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-14</td><td>NanoSD: Edge Efficient Foundation Model for Real Time Image Restoration</td><td>[2601.09823](http://arxiv.org/pdf/2601.09823)</td><td>◆ Latent diffusion models such as Stable Diffusion 1.5 offer strong generative priors that are highly valuable for image restoration, yet their full pipelines remain too computationally heavy for deployment on edge devices.
+◆ Existing lightweight variants predominantly compress the denoising U-Net or reduce the diffusion trajectory, which disrupts the underlying latent manifold and limits generalization beyond a single task.
+◆ We introduce NanoSD, a family of Pareto-optimal diffusion foundation models distilled from Stable Diffusion 1.5 through network surgery, feature-wise generative distillation, and structured architectural scaling jointly applied to the U-Net and the VAE encoder-decoder.</td></tr>
 <tr><td>2026-01-13</td><td>CogniMap3D: Cognitive 3D Mapping and Rapid Retrieval</td><td>[2601.08175](http://arxiv.org/pdf/2601.08175)</td><td>◆ We present CogniMap3D, a bioinspired framework for dynamic 3D scene understanding and reconstruction that emulates human cognitive processes.
 ◆ Our approach maintains a persistent memory bank of static scenes, enabling efficient spatial knowledge storage and rapid retrieval.
 ◆ CogniMap3D integrates three core capabilities: a multi-stage motion cue framework for identifying dynamic objects, a cognitive mapping system for storing, recalling, and updating static scenes across multiple visits, and a factor graph optimization strategy for refining camera poses.</td></tr>
@@ -829,7 +841,7 @@
 <tr><td>2026-01-08</td><td>Pixel-Perfect Visual Geometry Estimation</td><td>[2601.05246](http://arxiv.org/pdf/2601.05246)</td><td>◆ Recovering clean and accurate geometry from images is essential for robotics and augmented reality.
 ◆ However, existing geometry foundation models still suffer severely from flying pixels and the loss of fine details.
 ◆ In this paper, we present pixel-perfect visual geometry models that can predict high-quality, flying-pixel-free point clouds by leveraging generative modeling in the pixel space.</td></tr>
-<tr><td>2026-01-07</td><td>Bayesian Monocular Depth Refinement via Neural Radiance Fields</td><td>[2601.03869](http://arxiv.org/pdf/2601.03869)</td><td>◆ Monocular depth estimation has applications in many fields, such as autonomous navigation and extended reality, making it an essential computer vision task.
+<tr><td>2026-01-15</td><td>Bayesian Monocular Depth Refinement via Neural Radiance Fields</td><td>[2601.03869](http://arxiv.org/pdf/2601.03869)</td><td>◆ Monocular depth estimation has applications in many fields, such as autonomous navigation and extended reality, making it an essential computer vision task.
 ◆ However, current methods often produce smooth depth maps that lack the fine geometric detail needed for accurate scene understanding.
 ◆ We propose MDENeRF, an iterative framework that refines monocular depth estimates using depth information from Neural Radiance Fields (NeRFs).</td></tr>
 <tr><td>2026-01-07</td><td>IDESplat: Iterative Depth Probability Estimation for Generalizable 3D Gaussian Splatting</td><td>[2601.03824](http://arxiv.org/pdf/2601.03824)</td><td>◆ Generalizable 3D Gaussian Splatting aims to directly predict Gaussian parameters using a feed-forward network for scene reconstruction.
@@ -1057,4 +1069,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.15
+> 更新于: 2026.01.16
