@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.18)
+# SLAM领域最新论文 (2026.01.19)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-16</td><td>ShapeR: Robust Conditional 3D Shape Generation from Casual Captures</td><td>[2601.11514](http://arxiv.org/pdf/2601.11514)</td><td>◆ Recent advances in 3D shape generation have achieved impressive results, but most existing methods rely on clean, unoccluded, and well-segmented inputs.
+◆ Such conditions are rarely met in real-world scenarios.
+◆ We present ShapeR, a novel approach for conditional 3D object shape generation from casually captured sequences.</td></tr>
+<tr><td>2026-01-15</td><td>SurfSLAM: Sim-to-Real Underwater Stereo Reconstruction For Real-Time SLAM</td><td>[2601.10814](http://arxiv.org/pdf/2601.10814)</td><td>◆ Localization and mapping are core perceptual capabilities for underwater robots.
+◆ Stereo cameras provide a low-cost means of directly estimating metric depth to support these tasks.
+◆ However, despite recent advances in stereo depth estimation on land, computing depth from image pairs in underwater scenes remains challenging.</td></tr>
 <tr><td>2026-01-14</td><td>SCE-SLAM: Scale-Consistent Monocular SLAM via Scene Coordinate Embeddings</td><td>[2601.09665](http://arxiv.org/pdf/2601.09665)</td><td>◆ Monocular visual SLAM enables 3D reconstruction from internet video and autonomous navigation on resource-constrained platforms, yet suffers from scale drift, i.e., the gradual divergence of estimated scale over long sequences.
 ◆ Existing frame-to-frame methods achieve real-time performance through local optimization but accumulate scale drift due to the lack of global constraints among independent windows.
 ◆ To address this, we propose SCE-SLAM, an end-to-end SLAM system that maintains scale consistency through scene coordinate embeddings, which are learned patch-level representations encoding 3D geometric relationships under a canonical scale reference.</td></tr>
@@ -267,6 +273,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-16</td><td>Modular and Mobile Capacity Planning for Hyperconnected Supply Chain Networks</td><td>[2601.11107](http://arxiv.org/pdf/2601.11107)</td><td>◆ The increased volatility of markets and the pressing need for resource sustainability are driving supply chains towards more agile, distributed, and dynamic designs.
+◆ Motivated by the Physical Internet initiative, we introduce the Dynamic Stochastic Modular and Mobile Capacity Planning (DSMMCP) problem, which fosters hyperconnectivity through a network-of-networks architecture with modular and mobile capacities.
+◆ The problem addresses both demand and supply uncertainties by incorporating short-term leasing of modular facilities and dynamic relocation of resources.</td></tr>
 <tr><td>2026-01-15</td><td>A Unified Framework for Kinematic Simulation of Rigid Foldable Structures</td><td>[2601.10225](http://arxiv.org/pdf/2601.10225)</td><td>◆ Origami-inspired structures with rigid panels now span thick, kirigami, and multi-sheet realizations, making unified kinematic analysis essential.
 ◆ Yet a general method that consolidates their loop constraints has been lacking.
 ◆ We present an automated approach that generates the Pfaffian constraint matrix for arbitrary rigid foldable structures (RFS).</td></tr>
@@ -826,7 +835,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-01-14</td><td>NanoSD: Edge Efficient Foundation Model for Real Time Image Restoration</td><td>[2601.09823](http://arxiv.org/pdf/2601.09823)</td><td>◆ Latent diffusion models such as Stable Diffusion 1.5 offer strong generative priors that are highly valuable for image restoration, yet their full pipelines remain too computationally heavy for deployment on edge devices.
+<tr><td>2026-01-15</td><td>SurfSLAM: Sim-to-Real Underwater Stereo Reconstruction For Real-Time SLAM</td><td>[2601.10814](http://arxiv.org/pdf/2601.10814)</td><td>◆ Localization and mapping are core perceptual capabilities for underwater robots.
+◆ Stereo cameras provide a low-cost means of directly estimating metric depth to support these tasks.
+◆ However, despite recent advances in stereo depth estimation on land, computing depth from image pairs in underwater scenes remains challenging.</td></tr>
+<tr><td>2026-01-16</td><td>NanoSD: Edge Efficient Foundation Model for Real Time Image Restoration</td><td>[2601.09823](http://arxiv.org/pdf/2601.09823)</td><td>◆ Latent diffusion models such as Stable Diffusion 1.5 offer strong generative priors that are highly valuable for image restoration, yet their full pipelines remain too computationally heavy for deployment on edge devices.
 ◆ Existing lightweight variants predominantly compress the denoising U-Net or reduce the diffusion trajectory, which disrupts the underlying latent manifold and limits generalization beyond a single task.
 ◆ We introduce NanoSD, a family of Pareto-optimal diffusion foundation models distilled from Stable Diffusion 1.5 through network surgery, feature-wise generative distillation, and structured architectural scaling jointly applied to the U-Net and the VAE encoder-decoder.</td></tr>
 <tr><td>2026-01-13</td><td>CogniMap3D: Cognitive 3D Mapping and Rapid Retrieval</td><td>[2601.08175](http://arxiv.org/pdf/2601.08175)</td><td>◆ We present CogniMap3D, a bioinspired framework for dynamic 3D scene understanding and reconstruction that emulates human cognitive processes.
@@ -1069,4 +1081,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.18
+> 更新于: 2026.01.19
