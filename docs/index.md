@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.20)
+# SLAM领域最新论文 (2026.01.21)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-19</td><td>Autonomous Navigation at the Nano-Scale: Algorithms, Architectures, and Constraints</td><td>[2601.13252](http://arxiv.org/pdf/2601.13252)</td><td>◆ Autonomous navigation for nano-scale unmanned aerial vehicles (nano-UAVs) is governed by extreme Size, Weight, and Power (SWaP) constraints (with the weight &lt; 50 g and sub-100 mW onboard processor), distinguishing it fundamentally from standard robotic paradigms.
+◆ This review synthesizes the state-of-the-art in sensing, computing, and control architectures designed specifically for these sub- 100mW computational envelopes.
+◆ We critically analyse the transition from classical geometry-based methods to emerging &quot;Edge AI&quot; paradigms, including quantized deep neural networks deployed on ultra-low-power System-on-Chips (SoCs) and neuromorphic event-based control.</td></tr>
+<tr><td>2026-01-18</td><td>R-VoxelMap: Accurate Voxel Mapping with Recursive Plane Fitting for Online LiDAR Odometry</td><td>[2601.12377](http://arxiv.org/pdf/2601.12377)</td><td>◆ This paper proposes R-VoxelMap, a novel voxel mapping method that constructs accurate voxel maps using a geometry-driven recursive plane fitting strategy to enhance the localization accuracy of online LiDAR odometry.
+◆ VoxelMap and its variants typically fit and check planes using all points in a voxel, which may lead to plane parameter deviation caused by outliers, over segmentation of large planes, and incorrect merging across different physical planes.
+◆ To address these issues, R-VoxelMap utilizes a geometry-driven recursive construction strategy based on an outlier detect-and-reuse pipeline.</td></tr>
+<tr><td>2026-01-10</td><td>PointSLAM++: Robust Dense Neural Gaussian Point Cloud-based SLAM</td><td>[2601.11617](http://arxiv.org/pdf/2601.11617)</td><td>◆ Real-time 3D reconstruction is crucial for robotics and augmented reality, yet current simultaneous localization and mapping(SLAM) approaches often struggle to maintain structural consistency and robust pose estimation in the presence of depth noise.
+◆ This work introduces PointSLAM++, a novel RGB-D SLAM system that leverages a hierarchically constrained neural Gaussian representation to preserve structural relationships while generating Gaussian primitives for scene mapping.
+◆ It also employs progressive pose optimization to mitigate depth sensor noise, significantly enhancing localization accuracy.</td></tr>
 <tr><td>2026-01-16</td><td>ShapeR: Robust Conditional 3D Shape Generation from Casual Captures</td><td>[2601.11514](http://arxiv.org/pdf/2601.11514)</td><td>◆ Recent advances in 3D shape generation have achieved impressive results, but most existing methods rely on clean, unoccluded, and well-segmented inputs.
 ◆ Such conditions are rarely met in real-world scenarios.
 ◆ We present ShapeR, a novel approach for conditional 3D object shape generation from casually captured sequences.</td></tr>
@@ -273,6 +282,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-20</td><td>DroneVLA: VLA based Aerial Manipulation</td><td>[2601.13809](http://arxiv.org/pdf/2601.13809)</td><td>◆ As aerial platforms evolve from passive observers to active manipulators, the challenge shifts toward designing intuitive interfaces that allow non-expert users to command these systems naturally.
+◆ This work introduces a novel concept of autonomous aerial manipulation system capable of interpreting high-level natural language commands to retrieve objects and deliver them to a human user.
+◆ The system is intended to integrate a MediaPipe based on Grounding DINO and a Vision-Language-Action (VLA) model with a custom-built drone equipped with a 1-DOF gripper and an Intel RealSense RGB-D camera.</td></tr>
+<tr><td>2026-01-20</td><td>Why Does the LLM Stop Computing: An Empirical Study of User-Reported Failures in Open-Source LLMs</td><td>[2601.13655](http://arxiv.org/pdf/2601.13655)</td><td>◆ The democratization of open-source Large Language Models (LLMs) allows users to fine-tune and deploy models on local infrastructure but exposes them to a First Mile deployment landscape.
+◆ Unlike black-box API consumption, the reliability of user-managed orchestration remains a critical blind spot.
+◆ To bridge this gap, we conduct the first large-scale empirical study of 705 real-world failures from the open-source DeepSeek, Llama, and Qwen ecosystems.</td></tr>
+<tr><td>2026-01-19</td><td>DC-VLAQ: Query-Residual Aggregation for Robust Visual Place Recognition</td><td>[2601.12729](http://arxiv.org/pdf/2601.12729)</td><td>◆ One of the central challenges in visual place recognition (VPR) is learning a robust global representation that remains discriminative under large viewpoint changes, illumination variations, and severe domain shifts.
+◆ While visual foundation models (VFMs) provide strong local features, most existing methods rely on a single model, overlooking the complementary cues offered by different VFMs.
+◆ However, exploiting such complementary information inevitably alters token distributions, which challenges the stability of existing query-based global aggregation schemes.</td></tr>
 <tr><td>2026-01-16</td><td>Modular and Mobile Capacity Planning for Hyperconnected Supply Chain Networks</td><td>[2601.11107](http://arxiv.org/pdf/2601.11107)</td><td>◆ The increased volatility of markets and the pressing need for resource sustainability are driving supply chains towards more agile, distributed, and dynamic designs.
 ◆ Motivated by the Physical Internet initiative, we introduce the Dynamic Stochastic Modular and Mobile Capacity Planning (DSMMCP) problem, which fosters hyperconnectivity through a network-of-networks architecture with modular and mobile capacities.
 ◆ The problem addresses both demand and supply uncertainties by incorporating short-term leasing of modular facilities and dynamic relocation of resources.</td></tr>
@@ -436,6 +454,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-19</td><td>A Streamlined Attention-Based Network for Descriptor Extraction</td><td>[2601.13126](http://arxiv.org/pdf/2601.13126)</td><td>◆ We introduce SANDesc, a Streamlined Attention-Based Network for Descriptor extraction that aims to improve on existing architectures for keypoint description.
+◆ Our descriptor network learns to compute descriptors that improve matching without modifying the underlying keypoint detector.
+◆ We employ a revised U-Net-like architecture enhanced with Convolutional Block Attention Modules and residual paths, enabling effective local representation while maintaining computational efficiency.</td></tr>
+<tr><td>2026-01-18</td><td>XRefine: Attention-Guided Keypoint Match Refinement</td><td>[2601.12530](http://arxiv.org/pdf/2601.12530)</td><td>◆ Sparse keypoint matching is crucial for 3D vision tasks, yet current keypoint detectors often produce spatially inaccurate matches.
+◆ Existing refinement methods mitigate this issue through alignment of matched keypoint locations, but they are typically detector-specific, requiring retraining for each keypoint detector.
+◆ We introduce XRefine, a novel, detector-agnostic approach for sub-pixel keypoint refinement that operates solely on image patches centered at matched keypoints.</td></tr>
+<tr><td>2026-01-17</td><td>SupScene: Learning Overlap-Aware Global Descriptor for Unconstrained SfM</td><td>[2601.11930](http://arxiv.org/pdf/2601.11930)</td><td>◆ Image retrieval is a critical step for alleviating the quadratic complexity of image matching in unconstrained Structure-from-Motion (SfM).
+◆ However, in this context, image retrieval typically focuses more on the image pairs of geometric matchability than on those of semantic similarity, a nuance that most existing deep learning-based methods guided by batched binaries (overlapping vs.
+◆ non-overlapping pairs) fail to capture.</td></tr>
 <tr><td>2026-01-14</td><td>CLIDD: Cross-Layer Independent Deformable Description for Efficient and Discriminative Local Feature Representation</td><td>[2601.09230](http://arxiv.org/pdf/2601.09230)</td><td>◆ Robust local feature representations are essential for spatial intelligence tasks such as robot navigation and augmented reality.
 ◆ Establishing reliable correspondences requires descriptors that provide both high discriminative power and computational efficiency.
 ◆ To address this, we introduce Cross-Layer Independent Deformable Description (CLIDD), a method that achieves superior distinctiveness by sampling directly from independent feature hierarchies.</td></tr>
@@ -596,6 +623,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-20</td><td>Rig-Aware 3D Reconstruction of Vehicle Undercarriages using Gaussian Splatting</td><td>[2601.14208](http://arxiv.org/pdf/2601.14208)</td><td>◆ Inspecting the undercarriage of used vehicles is a labor-intensive task that requires inspectors to crouch or crawl underneath each vehicle to thoroughly examine it.
+◆ Additionally, online buyers rarely see undercarriage photos.
+◆ We present an end-to-end pipeline that utilizes a three-camera rig to capture videos of the undercarriage as the vehicle drives over it, and produces an interactive 3D model of the undercarriage.</td></tr>
+<tr><td>2026-01-20</td><td>One-Shot Refiner: Boosting Feed-forward Novel View Synthesis via One-Step Diffusion</td><td>[2601.14161](http://arxiv.org/pdf/2601.14161)</td><td>◆ We present a novel framework for high-fidelity novel view synthesis (NVS) from sparse images, addressing key limitations in recent feed-forward 3D Gaussian Splatting (3DGS) methods built on Vision Transformer (ViT) backbones.
+◆ While ViT-based pipelines offer strong geometric priors, they are often constrained by low-resolution inputs due to computational costs.
+◆ Moreover, existing generative enhancement methods tend to be 3D-agnostic, resulting in inconsistent structures across views, especially in unseen regions.</td></tr>
+<tr><td>2026-01-20</td><td>ParkingTwin: Training-Free Streaming 3D Reconstruction for Parking-Lot Digital Twins</td><td>[2601.13706](http://arxiv.org/pdf/2601.13706)</td><td>◆ High-fidelity parking-lot digital twins provide essential priors for path planning, collision checking, and perception validation in Automated Valet Parking (AVP).
+◆ Yet robot-oriented reconstruction faces a trilemma: sparse forward-facing views cause weak parallax and ill-posed geometry; dynamic occlusions and extreme lighting hinder stable texture fusion; and neural rendering typically needs expensive offline optimization, violating edge-side streaming constraints.
+◆ We propose ParkingTwin, a training-free, lightweight system for online streaming 3D reconstruction.</td></tr>
+<tr><td>2026-01-19</td><td>GaussExplorer: 3D Gaussian Splatting for Embodied Exploration and Reasoning</td><td>[2601.13132](http://arxiv.org/pdf/2601.13132)</td><td>◆ We present GaussExplorer, a framework for embodied exploration and reasoning built on 3D Gaussian Splatting (3DGS).
+◆ While prior approaches to language-embedded 3DGS have made meaningful progress in aligning simple text queries with Gaussian embeddings, they are generally optimized for relatively simple queries and struggle to interpret more complex, compositional language queries.
+◆ Alternative studies based on object-centric RGB-D structured memories provide spatial grounding but are constrained by pre-fixed viewpoints.</td></tr>
+<tr><td>2026-01-19</td><td>TreeDGS: Aerial Gaussian Splatting for Distant DBH Measurement</td><td>[2601.12823](http://arxiv.org/pdf/2601.12823)</td><td>◆ Aerial remote sensing enables efficient large-area surveying, but accurate direct object-level measurement remains difficult in complex natural scenes.
+◆ Recent advancements in 3D vision, particularly learned radiance-field representations such as NeRF and 3D Gaussian Splatting, have begun to raise the ceiling on reconstruction fidelity and densifiable geometry from posed imagery.
+◆ Nevertheless, direct aerial measurement of important natural attributes such as tree diameter at breast height (DBH) remains challenging.</td></tr>
+<tr><td>2026-01-19</td><td>CSGaussian: Progressive Rate-Distortion Compression and Segmentation for 3D Gaussian Splatting</td><td>[2601.12814](http://arxiv.org/pdf/2601.12814)</td><td>◆ We present the first unified framework for rate-distortion-optimized compression and segmentation of 3D Gaussian Splatting (3DGS).
+◆ While 3DGS has proven effective for both real-time rendering and semantic scene understanding, prior works have largely treated these tasks independently, leaving their joint consideration unexplored.
+◆ Inspired by recent advances in rate-distortion-optimized 3DGS compression, this work integrates semantic learning into the compression pipeline to support decoder-side applications--such as scene editing and manipulation--that extend beyond traditional scene reconstruction and view synthesis.</td></tr>
+<tr><td>2026-01-19</td><td>KaoLRM: Repurposing Pre-trained Large Reconstruction Models for Parametric 3D Face Reconstruction</td><td>[2601.12736](http://arxiv.org/pdf/2601.12736)</td><td>◆ We propose KaoLRM to re-target the learned prior of the Large Reconstruction Model (LRM) for parametric 3D face reconstruction from single-view images.
+◆ Parametric 3D Morphable Models (3DMMs) have been widely used for facial reconstruction due to their compact and interpretable parameterization, yet existing 3DMM regressors often exhibit poor consistency across varying viewpoints.
+◆ To address this, we harness the pre-trained 3D prior of LRM and incorporate FLAME-based 2D Gaussian Splatting into LRM&#x27;s rendering pipeline.</td></tr>
+<tr><td>2026-01-19</td><td>GaussianTrimmer: Online Trimming Boundaries for 3DGS Segmentation</td><td>[2601.12683](http://arxiv.org/pdf/2601.12683)</td><td>◆ With the widespread application of 3D Gaussians in 3D scene representation, 3D scene segmentation methods based on 3D Gaussians have also gradually emerged.
+◆ However, existing 3D Gaussian segmentation methods basically segment on the basis of Gaussian primitives.
+◆ Due to the large variation range of the scale of 3D Gaussians, large-sized Gaussians that often span the foreground and background lead to jagged boundaries of segmented objects.</td></tr>
+<tr><td>2026-01-17</td><td>Active Semantic Mapping of Horticultural Environments Using Gaussian Splatting</td><td>[2601.12122](http://arxiv.org/pdf/2601.12122)</td><td>◆ Semantic reconstruction of agricultural scenes plays a vital role in tasks such as phenotyping and yield estimation.
+◆ However, traditional approaches that rely on manual scanning or fixed camera setups remain a major bottleneck in this process.
+◆ In this work, we propose an active 3D reconstruction framework for horticultural environments using a mobile manipulator.</td></tr>
+<tr><td>2026-01-17</td><td>DIAMOND-SSS: Diffusion-Augmented Multi-View Optimization for Data-efficient SubSurface Scattering</td><td>[2601.12020](http://arxiv.org/pdf/2601.12020)</td><td>◆ Subsurface scattering (SSS) gives translucent materials -- such as wax, jade, marble, and skin -- their characteristic soft shadows, color bleeding, and diffuse glow.
+◆ Modeling these effects in neural rendering remains challenging due to complex light transport and the need for densely captured multi-view, multi-light datasets (often more than 100 views and 112 OLATs).
+◆ We present DIAMOND-SSS, a data-efficient framework for high-fidelity translucent reconstruction from extremely sparse supervision -- even as few as ten images.</td></tr>
 <tr><td>2026-01-15</td><td>RSATalker: Realistic Socially-Aware Talking Head Generation for Multi-Turn Conversation</td><td>[2601.10606](http://arxiv.org/pdf/2601.10606)</td><td>◆ Talking head generation is increasingly important in virtual reality (VR), especially for social scenarios involving multi-turn conversation.
 ◆ Existing approaches face notable limitations: mesh-based 3D methods can model dual-person dialogue but lack realistic textures, while large-model-based 2D methods produce natural appearances but incur prohibitive computational costs.
 ◆ Recently, 3D Gaussian Splatting (3DGS) based methods achieve efficient and realistic rendering but remain speaker-only and ignore social relationships.</td></tr>
@@ -835,6 +892,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-18</td><td>HOT-POT: Optimal Transport for Sparse Stereo Matching</td><td>[2601.12423](http://arxiv.org/pdf/2601.12423)</td><td>◆ Stereo vision between images faces a range of challenges, including occlusions, motion, and camera distortions, across applications in autonomous driving, robotics, and face analysis.
+◆ Due to parameter sensitivity, further complications arise for stereo matching with sparse features, such as facial landmarks.
+◆ To overcome this ill-posedness and enable unsupervised sparse matching, we consider line constraints of the camera geometry from an optimal transport (OT) viewpoint.</td></tr>
+<tr><td>2026-01-16</td><td>studentSplat: Your Student Model Learns Single-view 3D Gaussian Splatting</td><td>[2601.11772](http://arxiv.org/pdf/2601.11772)</td><td>◆ Recent advance in feed-forward 3D Gaussian splatting has enable remarkable multi-view 3D scene reconstruction or single-view 3D object reconstruction but single-view 3D scene reconstruction remain under-explored due to inherited ambiguity in single-view.
+◆ We present \textbf{studentSplat}, a single-view 3D Gaussian splatting method for scene reconstruction.
+◆ To overcome the scale ambiguity and extrapolation problems inherent in novel-view supervision from a single input, we introduce two techniques: 1) a teacher-student architecture where a multi-view teacher model provides geometric supervision to the single-view student during training, addressing scale ambiguity and encourage geometric validity; and 2) an extrapolation network that completes missing scene context, enabling high-quality extrapolation.</td></tr>
+<tr><td>2026-01-16</td><td>SpaRRTa: A Synthetic Benchmark for Evaluating Spatial Intelligence in Visual Foundation Models</td><td>[2601.11729](http://arxiv.org/pdf/2601.11729)</td><td>◆ Visual Foundation Models (VFMs), such as DINO and CLIP, excel in semantic understanding of images but exhibit limited spatial reasoning capabilities, which limits their applicability to embodied systems.
+◆ As a result, recent work incorporates some 3D tasks (such as depth estimation) into VFM training.
+◆ However, VFM performance remains inconsistent across other spatial tasks, raising the question of whether these models truly have spatial awareness or overfit to specific 3D objectives.</td></tr>
 <tr><td>2026-01-15</td><td>SurfSLAM: Sim-to-Real Underwater Stereo Reconstruction For Real-Time SLAM</td><td>[2601.10814](http://arxiv.org/pdf/2601.10814)</td><td>◆ Localization and mapping are core perceptual capabilities for underwater robots.
 ◆ Stereo cameras provide a low-cost means of directly estimating metric depth to support these tasks.
 ◆ However, despite recent advances in stereo depth estimation on land, computing depth from image pairs in underwater scenes remains challenging.</td></tr>
@@ -844,10 +910,10 @@
 <tr><td>2026-01-13</td><td>CogniMap3D: Cognitive 3D Mapping and Rapid Retrieval</td><td>[2601.08175](http://arxiv.org/pdf/2601.08175)</td><td>◆ We present CogniMap3D, a bioinspired framework for dynamic 3D scene understanding and reconstruction that emulates human cognitive processes.
 ◆ Our approach maintains a persistent memory bank of static scenes, enabling efficient spatial knowledge storage and rapid retrieval.
 ◆ CogniMap3D integrates three core capabilities: a multi-stage motion cue framework for identifying dynamic objects, a cognitive mapping system for storing, recalling, and updating static scenes across multiple visits, and a factor graph optimization strategy for refining camera poses.</td></tr>
-<tr><td>2026-01-11</td><td>UDPNet: Unleashing Depth-based Priors for Robust Image Dehazing</td><td>[2601.06909](http://arxiv.org/pdf/2601.06909)</td><td>◆ Image dehazing has witnessed significant advancements with the development of deep learning models.
+<tr><td>2026-01-18</td><td>UDPNet: Unleashing Depth-based Priors for Robust Image Dehazing</td><td>[2601.06909](http://arxiv.org/pdf/2601.06909)</td><td>◆ Image dehazing has witnessed significant advancements with the development of deep learning models.
 ◆ However, a few methods predominantly focus on single-modal RGB features, neglecting the inherent correlation between scene depth and haze distribution.
 ◆ Even those that jointly optimize depth estimation and image dehazing often suffer from suboptimal performance due to inadequate utilization of accurate depth information.</td></tr>
-<tr><td>2026-01-09</td><td>GeoSurDepth: Spatial Geometry-Consistent Self-Supervised Depth Estimation for Surround-View Cameras</td><td>[2601.05839](http://arxiv.org/pdf/2601.05839)</td><td>◆ Accurate surround-view depth estimation provides a competitive alternative to laser-based sensors and is essential for 3D scene understanding in autonomous driving.
+<tr><td>2026-01-20</td><td>GeoSurDepth: Harnessing Foundation Model for Spatial Geometry Consistency-Oriented Self-Supervised Surround-View Depth Estimation</td><td>[2601.05839](http://arxiv.org/pdf/2601.05839)</td><td>◆ Accurate surround-view depth estimation provides a competitive alternative to laser-based sensors and is essential for 3D scene understanding in autonomous driving.
 ◆ While prior studies have proposed various approaches that primarily focus on enforcing cross-view constraints at the photometric level, few explicitly exploit the rich geometric structure inherent in both monocular and surround-view setting.
 ◆ In this work, we propose GeoSurDepth, a framework that leverages geometry consistency as the primary cue for surround-view depth estimation.</td></tr>
 <tr><td>2026-01-08</td><td>Pixel-Perfect Visual Geometry Estimation</td><td>[2601.05246](http://arxiv.org/pdf/2601.05246)</td><td>◆ Recovering clean and accurate geometry from images is essential for robotics and augmented reality.
@@ -1081,4 +1147,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.20
+> 更新于: 2026.01.21
