@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.21)
+# SLAM领域最新论文 (2026.01.22)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -34,7 +34,7 @@
 <tr><td>2026-01-16</td><td>ShapeR: Robust Conditional 3D Shape Generation from Casual Captures</td><td>[2601.11514](http://arxiv.org/pdf/2601.11514)</td><td>◆ Recent advances in 3D shape generation have achieved impressive results, but most existing methods rely on clean, unoccluded, and well-segmented inputs.
 ◆ Such conditions are rarely met in real-world scenarios.
 ◆ We present ShapeR, a novel approach for conditional 3D object shape generation from casually captured sequences.</td></tr>
-<tr><td>2026-01-15</td><td>SurfSLAM: Sim-to-Real Underwater Stereo Reconstruction For Real-Time SLAM</td><td>[2601.10814](http://arxiv.org/pdf/2601.10814)</td><td>◆ Localization and mapping are core perceptual capabilities for underwater robots.
+<tr><td>2026-01-20</td><td>SurfSLAM: Sim-to-Real Underwater Stereo Reconstruction For Real-Time SLAM</td><td>[2601.10814](http://arxiv.org/pdf/2601.10814)</td><td>◆ Localization and mapping are core perceptual capabilities for underwater robots.
 ◆ Stereo cameras provide a low-cost means of directly estimating metric depth to support these tasks.
 ◆ However, despite recent advances in stereo depth estimation on land, computing depth from image pairs in underwater scenes remains challenging.</td></tr>
 <tr><td>2026-01-14</td><td>SCE-SLAM: Scale-Consistent Monocular SLAM via Scene Coordinate Embeddings</td><td>[2601.09665](http://arxiv.org/pdf/2601.09665)</td><td>◆ Monocular visual SLAM enables 3D reconstruction from internet video and autonomous navigation on resource-constrained platforms, yet suffers from scale drift, i.e., the gradual divergence of estimated scale over long sequences.
@@ -282,7 +282,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-01-20</td><td>DroneVLA: VLA based Aerial Manipulation</td><td>[2601.13809](http://arxiv.org/pdf/2601.13809)</td><td>◆ As aerial platforms evolve from passive observers to active manipulators, the challenge shifts toward designing intuitive interfaces that allow non-expert users to command these systems naturally.
+<tr><td>2026-01-21</td><td>Designing DNA nanostar hydrogels with programmable degradation and antibody release</td><td>[2601.14934](http://arxiv.org/pdf/2601.14934)</td><td>◆ DNA nanostar (DNAns) hydrogels are promising materials for in vivo applications, including tissue regeneration and drug and antibody delivery.
+◆ However, a systematic and quantitative understanding of the design principles controlling their degradation is lacking.
+◆ Here, we investigate hydrogels made of three-armed DNAns with varying flexible joints, arm lengths, and mesh sizes and use restriction enzymes to cut the DNAns structures while monitoring the gel&#x27;s degradation.</td></tr>
+<tr><td>2026-01-21</td><td>DroneVLA: VLA based Aerial Manipulation</td><td>[2601.13809](http://arxiv.org/pdf/2601.13809)</td><td>◆ As aerial platforms evolve from passive observers to active manipulators, the challenge shifts toward designing intuitive interfaces that allow non-expert users to command these systems naturally.
 ◆ This work introduces a novel concept of autonomous aerial manipulation system capable of interpreting high-level natural language commands to retrieve objects and deliver them to a human user.
 ◆ The system is intended to integrate a MediaPipe based on Grounding DINO and a Vision-Language-Action (VLA) model with a custom-built drone equipped with a 1-DOF gripper and an Intel RealSense RGB-D camera.</td></tr>
 <tr><td>2026-01-20</td><td>Why Does the LLM Stop Computing: An Empirical Study of User-Reported Failures in Open-Source LLMs</td><td>[2601.13655](http://arxiv.org/pdf/2601.13655)</td><td>◆ The democratization of open-source Large Language Models (LLMs) allows users to fine-tune and deploy models on local infrastructure but exposes them to a First Mile deployment landscape.
@@ -454,6 +457,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-21</td><td>ZENITH: Automated Gradient Norm Informed Stochastic Optimization</td><td>[2601.15212](http://arxiv.org/pdf/2601.15212)</td><td>◆ Training deep computer vision models requires manual oversight or hyperparameter tuning of the learning rate (LR) schedule.
+◆ While existing adaptive optimizers schedule the LR automatically, they suffer from computational and memory overhead, incompatibility with regularization, and suboptimal LR choices.
+◆ In this work, we introduce the ZENITH (Zero-overhead Evolution using Norm-Informed Training History) optimizer, which adapts the LR using the temporal evolution of the gradient norm.</td></tr>
 <tr><td>2026-01-19</td><td>A Streamlined Attention-Based Network for Descriptor Extraction</td><td>[2601.13126](http://arxiv.org/pdf/2601.13126)</td><td>◆ We introduce SANDesc, a Streamlined Attention-Based Network for Descriptor extraction that aims to improve on existing architectures for keypoint description.
 ◆ Our descriptor network learns to compute descriptors that improve matching without modifying the underlying keypoint detector.
 ◆ We employ a revised U-Net-like architecture enhanced with Convolutional Block Attention Modules and residual paths, enabling effective local representation while maintaining computational efficiency.</td></tr>
@@ -623,6 +629,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-21</td><td>LuxRemix: Lighting Decomposition and Remixing for Indoor Scenes</td><td>[2601.15283](http://arxiv.org/pdf/2601.15283)</td><td>◆ We present a novel approach for interactive light editing in indoor scenes from a single multi-view scene capture.
+◆ Our method leverages a generative image-based light decomposition model that factorizes complex indoor scene illumination into its constituent light sources.
+◆ This factorization enables independent manipulation of individual light sources, specifically allowing control over their state (on/off), chromaticity, and intensity.</td></tr>
+<tr><td>2026-01-21</td><td>ScenDi: 3D-to-2D Scene Diffusion Cascades for Urban Generation</td><td>[2601.15221](http://arxiv.org/pdf/2601.15221)</td><td>◆ Recent advancements in 3D object generation using diffusion models have achieved remarkable success, but generating realistic 3D urban scenes remains challenging.
+◆ Existing methods relying solely on 3D diffusion models tend to suffer a degradation in appearance details, while those utilizing only 2D diffusion models typically compromise camera controllability.
+◆ To overcome this limitation, we propose ScenDi, a method for urban scene generation that integrates both 3D and 2D diffusion models.</td></tr>
+<tr><td>2026-01-21</td><td>POTR: Post-Training 3DGS Compression</td><td>[2601.14821](http://arxiv.org/pdf/2601.14821)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently emerged as a promising contender to Neural Radiance Fields (NeRF) in 3D scene reconstruction and real-time novel view synthesis.
+◆ 3DGS outperforms NeRF in training and inference speed but has substantially higher storage requirements.
+◆ To remedy this downside, we propose POTR, a post-training 3DGS codec built on two novel techniques.</td></tr>
+<tr><td>2026-01-20</td><td>Structured Image-based Coding for Efficient Gaussian Splatting Compression</td><td>[2601.14510](http://arxiv.org/pdf/2601.14510)</td><td>◆ Gaussian Splatting (GS) has recently emerged as a state-of-the-art representation for radiance fields, combining real-time rendering with high visual fidelity.
+◆ However, GS models require storing millions of parameters, leading to large file sizes that impair their use in practical multimedia systems.
+◆ To address this limitation, this paper introduces GS Image-based Compression (GSICO), a novel GS codec that efficiently compresses pre-trained GS models while preserving perceptual fidelity.</td></tr>
 <tr><td>2026-01-20</td><td>Rig-Aware 3D Reconstruction of Vehicle Undercarriages using Gaussian Splatting</td><td>[2601.14208](http://arxiv.org/pdf/2601.14208)</td><td>◆ Inspecting the undercarriage of used vehicles is a labor-intensive task that requires inspectors to crouch or crawl underneath each vehicle to thoroughly examine it.
 ◆ Additionally, online buyers rarely see undercarriage photos.
 ◆ We present an end-to-end pipeline that utilizes a three-camera rig to capture videos of the undercarriage as the vehicle drives over it, and produces an interactive 3D model of the undercarriage.</td></tr>
@@ -892,6 +910,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-21</td><td>RayRoPE: Projective Ray Positional Encoding for Multi-view Attention</td><td>[2601.15275](http://arxiv.org/pdf/2601.15275)</td><td>◆ We study positional encodings for multi-view transformers that process tokens from a set of posed input images, and seek a mechanism that encodes patches uniquely, allows SE(3)-invariant attention with multi-frequency similarity, and can be adaptive to the geometry of the underlying scene.
+◆ We find that prior (absolute or relative) encoding schemes for multi-view attention do not meet the above desiderata, and present RayRoPE to address this gap.
+◆ RayRoPE represents patch positions based on associated rays but leverages a predicted point along the ray instead of the direction for a geometry-aware encoding.</td></tr>
 <tr><td>2026-01-18</td><td>HOT-POT: Optimal Transport for Sparse Stereo Matching</td><td>[2601.12423](http://arxiv.org/pdf/2601.12423)</td><td>◆ Stereo vision between images faces a range of challenges, including occlusions, motion, and camera distortions, across applications in autonomous driving, robotics, and face analysis.
 ◆ Due to parameter sensitivity, further complications arise for stereo matching with sparse features, such as facial landmarks.
 ◆ To overcome this ill-posedness and enable unsupervised sparse matching, we consider line constraints of the camera geometry from an optimal transport (OT) viewpoint.</td></tr>
@@ -901,7 +922,7 @@
 <tr><td>2026-01-16</td><td>SpaRRTa: A Synthetic Benchmark for Evaluating Spatial Intelligence in Visual Foundation Models</td><td>[2601.11729](http://arxiv.org/pdf/2601.11729)</td><td>◆ Visual Foundation Models (VFMs), such as DINO and CLIP, excel in semantic understanding of images but exhibit limited spatial reasoning capabilities, which limits their applicability to embodied systems.
 ◆ As a result, recent work incorporates some 3D tasks (such as depth estimation) into VFM training.
 ◆ However, VFM performance remains inconsistent across other spatial tasks, raising the question of whether these models truly have spatial awareness or overfit to specific 3D objectives.</td></tr>
-<tr><td>2026-01-15</td><td>SurfSLAM: Sim-to-Real Underwater Stereo Reconstruction For Real-Time SLAM</td><td>[2601.10814](http://arxiv.org/pdf/2601.10814)</td><td>◆ Localization and mapping are core perceptual capabilities for underwater robots.
+<tr><td>2026-01-20</td><td>SurfSLAM: Sim-to-Real Underwater Stereo Reconstruction For Real-Time SLAM</td><td>[2601.10814](http://arxiv.org/pdf/2601.10814)</td><td>◆ Localization and mapping are core perceptual capabilities for underwater robots.
 ◆ Stereo cameras provide a low-cost means of directly estimating metric depth to support these tasks.
 ◆ However, despite recent advances in stereo depth estimation on land, computing depth from image pairs in underwater scenes remains challenging.</td></tr>
 <tr><td>2026-01-16</td><td>NanoSD: Edge Efficient Foundation Model for Real Time Image Restoration</td><td>[2601.09823](http://arxiv.org/pdf/2601.09823)</td><td>◆ Latent diffusion models such as Stable Diffusion 1.5 offer strong generative priors that are highly valuable for image restoration, yet their full pipelines remain too computationally heavy for deployment on edge devices.
@@ -1147,4 +1168,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.21
+> 更新于: 2026.01.22
