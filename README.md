@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.22)
+# SLAM领域最新论文 (2026.01.23)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-22</td><td>Keyframe-Based Feed-Forward Visual Odometry</td><td>[2601.16020](http://arxiv.org/pdf/2601.16020)</td><td>◆ The emergence of visual foundation models has revolutionized visual odometry~(VO) and SLAM, enabling pose estimation and dense reconstruction within a single feed-forward network.
+◆ However, unlike traditional pipelines that leverage keyframe methods to enhance efficiency and accuracy, current foundation model based methods, such as VGGT-Long, typically process raw image sequences indiscriminately.
+◆ This leads to computational redundancy and degraded performance caused by low inter-frame parallax, which provides limited contextual stereo information.</td></tr>
+<tr><td>2026-01-22</td><td>Accurate Calibration and Robust LiDAR-Inertial Odometry for Spinning Actuated LiDAR Systems</td><td>[2601.15946](http://arxiv.org/pdf/2601.15946)</td><td>◆ Accurate calibration and robust localization are fundamental for downstream tasks in spinning actuated LiDAR applications.
+◆ Existing methods, however, require parameterizing extrinsic parameters based on different mounting configurations, limiting their generalizability.
+◆ Additionally, spinning actuated LiDAR inevitably scans featureless regions, which complicates the balance between scanning coverage and localization robustness.</td></tr>
+<tr><td>2026-01-22</td><td>Parallelizable Riemannian Alternating Direction Method of Multipliers for Non-convex Pose Graph Optimization</td><td>[2601.15684](http://arxiv.org/pdf/2601.15684)</td><td>◆ Pose graph optimization (PGO) is fundamental to robot perception and navigation systems, serving as the mathematical backbone for solving simultaneous localization and mapping (SLAM).
+◆ Existing solvers suffer from polynomial growth in computational complexity with graph size, hindering real-time deployment in large-scale scenarios.
+◆ In this paper, by duplicating variables and introducing equality constraints, we reformulate the problem and propose a Parallelizable Riemannian Alternating Direction Method of Multipliers (PRADMM) to solve it efficiently.</td></tr>
 <tr><td>2026-01-19</td><td>Autonomous Navigation at the Nano-Scale: Algorithms, Architectures, and Constraints</td><td>[2601.13252](http://arxiv.org/pdf/2601.13252)</td><td>◆ Autonomous navigation for nano-scale unmanned aerial vehicles (nano-UAVs) is governed by extreme Size, Weight, and Power (SWaP) constraints (with the weight &lt; 50 g and sub-100 mW onboard processor), distinguishing it fundamentally from standard robotic paradigms.
 ◆ This review synthesizes the state-of-the-art in sensing, computing, and control architectures designed specifically for these sub- 100mW computational envelopes.
 ◆ We critically analyse the transition from classical geometry-based methods to emerging &quot;Edge AI&quot; paradigms, including quantized deep neural networks deployed on ultra-low-power System-on-Chips (SoCs) and neuromorphic event-based control.</td></tr>
@@ -214,6 +223,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-22</td><td>Keyframe-Based Feed-Forward Visual Odometry</td><td>[2601.16020](http://arxiv.org/pdf/2601.16020)</td><td>◆ The emergence of visual foundation models has revolutionized visual odometry~(VO) and SLAM, enabling pose estimation and dense reconstruction within a single feed-forward network.
+◆ However, unlike traditional pipelines that leverage keyframe methods to enhance efficiency and accuracy, current foundation model based methods, such as VGGT-Long, typically process raw image sequences indiscriminately.
+◆ This leads to computational redundancy and degraded performance caused by low inter-frame parallax, which provides limited contextual stereo information.</td></tr>
 <tr><td>2026-01-14</td><td>SCE-SLAM: Scale-Consistent Monocular SLAM via Scene Coordinate Embeddings</td><td>[2601.09665](http://arxiv.org/pdf/2601.09665)</td><td>◆ Monocular visual SLAM enables 3D reconstruction from internet video and autonomous navigation on resource-constrained platforms, yet suffers from scale drift, i.e., the gradual divergence of estimated scale over long sequences.
 ◆ Existing frame-to-frame methods achieve real-time performance through local optimization but accumulate scale drift due to the lack of global constraints among independent windows.
 ◆ To address this, we propose SCE-SLAM, an end-to-end SLAM system that maintains scale consistency through scene coordinate embeddings, which are learned patch-level representations encoding 3D geometric relationships under a canonical scale reference.</td></tr>
@@ -286,6 +298,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-21</td><td>Variable Stepsize Distributed Forward-Backward Splitting Methods as Relocated Fixed-Point Iterations</td><td>[2601.15531](http://arxiv.org/pdf/2601.15531)</td><td>◆ We present a family of distributed forward-backward methods with variable stepsizes to find a solution of structured monotone inclusion problems.
+◆ The framework is constructed by means of relocated fixed-point iterations, extending the approach introduced in arXiv:2507.07428 to conically averaged operators, thus including iteration operators for methods of forward-backward type devised by graphs.
+◆ The family of methods we construct preserve the per-iteration computational cost and the convergence properties of their constant stepsize counterparts.</td></tr>
+<tr><td>2026-01-21</td><td>Multi-Input Ciphertext Multiplication for Homomorphic Encryption</td><td>[2601.15401](http://arxiv.org/pdf/2601.15401)</td><td>◆ Homomorphic encryption (HE) enables arithmetic operations to be performed directly on encrypted data.
+◆ It is essential for privacy-preserving applications such as machine learning, medical diagnosis, and financial data analysis.
+◆ In popular HE schemes, ciphertext multiplication is only defined for two inputs.</td></tr>
 <tr><td>2026-01-21</td><td>Designing DNA nanostar hydrogels with programmable degradation and antibody release</td><td>[2601.14934](http://arxiv.org/pdf/2601.14934)</td><td>◆ DNA nanostar (DNAns) hydrogels are promising materials for in vivo applications, including tissue regeneration and drug and antibody delivery.
 ◆ However, a systematic and quantitative understanding of the design principles controlling their degradation is lacking.
 ◆ Here, we investigate hydrogels made of three-armed DNAns with varying flexible joints, arm lengths, and mesh sizes and use restriction enzymes to cut the DNAns structures while monitoring the gel&#x27;s degradation.</td></tr>
@@ -637,6 +655,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-22</td><td>EVolSplat4D: Efficient Volume-based Gaussian Splatting for 4D Urban Scene Synthesis</td><td>[2601.15951](http://arxiv.org/pdf/2601.15951)</td><td>◆ Novel view synthesis (NVS) of static and dynamic urban scenes is essential for autonomous driving simulation, yet existing methods often struggle to balance reconstruction time with quality.
+◆ While state-of-the-art neural radiance fields and 3D Gaussian Splatting approaches achieve photorealism, they often rely on time-consuming per-scene optimization.
+◆ Conversely, emerging feed-forward methods frequently adopt per-pixel Gaussian representations, which lead to 3D inconsistencies when aggregating multi-view predictions in complex, dynamic environments.</td></tr>
+<tr><td>2026-01-22</td><td>ThermoSplat: Cross-Modal 3D Gaussian Splatting with Feature Modulation and Geometry Decoupling</td><td>[2601.15897](http://arxiv.org/pdf/2601.15897)</td><td>◆ Multi-modal scene reconstruction integrating RGB and thermal infrared data is essential for robust environmental perception across diverse lighting and weather conditions.
+◆ However, extending 3D Gaussian Splatting (3DGS) to multi-spectral scenarios remains challenging.
+◆ Current approaches often struggle to fully leverage the complementary information of multi-modal data, typically relying on mechanisms that either tend to neglect cross-modal correlations or leverage shared representations that fail to adaptively handle the complex structural correlations and physical discrepancies between spectrums.</td></tr>
+<tr><td>2026-01-22</td><td>LL-GaussianImage: Efficient Image Representation for Zero-shot Low-Light Enhancement with 2D Gaussian Splatting</td><td>[2601.15772](http://arxiv.org/pdf/2601.15772)</td><td>◆ 2D Gaussian Splatting (2DGS) is an emerging explicit scene representation method with significant potential for image compression due to high fidelity and high compression ratios.
+◆ However, existing low-light enhancement algorithms operate predominantly within the pixel domain.
+◆ Processing 2DGS-compressed images necessitates a cumbersome decompression-enhancement-recompression pipeline, which compromises efficiency and introduces secondary degradation.</td></tr>
+<tr><td>2026-01-22</td><td>LL-GaussianMap: Zero-shot Low-Light Image Enhancement via 2D Gaussian Splatting Guided Gain Maps</td><td>[2601.15766](http://arxiv.org/pdf/2601.15766)</td><td>◆ Significant progress has been made in low-light image enhancement with respect to visual quality.
+◆ However, most existing methods primarily operate in the pixel domain or rely on implicit feature representations.
+◆ As a result, the intrinsic geometric structural priors of images are often neglected.</td></tr>
+<tr><td>2026-01-21</td><td>SplatBus: A Gaussian Splatting Viewer Framework via GPU Interprocess Communication</td><td>[2601.15431](http://arxiv.org/pdf/2601.15431)</td><td>◆ Radiance field-based rendering methods have attracted significant interest from the computer vision and computer graphics communities.
+◆ They enable high-fidelity rendering with complex real-world lighting effects, but at the cost of high rendering time.
+◆ 3D Gaussian Splatting solves this issue with a rasterisation-based approach for real-time rendering, enabling applications such as autonomous driving, robotics, virtual reality, and extended reality.</td></tr>
 <tr><td>2026-01-21</td><td>LuxRemix: Lighting Decomposition and Remixing for Indoor Scenes</td><td>[2601.15283](http://arxiv.org/pdf/2601.15283)</td><td>◆ We present a novel approach for interactive light editing in indoor scenes from a single multi-view scene capture.
 ◆ Our method leverages a generative image-based light decomposition model that factorizes complex indoor scene illumination into its constituent light sources.
 ◆ This factorization enables independent manipulation of individual light sources, specifically allowing control over their state (on/off), chromaticity, and intensity.</td></tr>
@@ -646,7 +679,7 @@
 <tr><td>2026-01-21</td><td>POTR: Post-Training 3DGS Compression</td><td>[2601.14821](http://arxiv.org/pdf/2601.14821)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently emerged as a promising contender to Neural Radiance Fields (NeRF) in 3D scene reconstruction and real-time novel view synthesis.
 ◆ 3DGS outperforms NeRF in training and inference speed but has substantially higher storage requirements.
 ◆ To remedy this downside, we propose POTR, a post-training 3DGS codec built on two novel techniques.</td></tr>
-<tr><td>2026-01-20</td><td>Structured Image-based Coding for Efficient Gaussian Splatting Compression</td><td>[2601.14510](http://arxiv.org/pdf/2601.14510)</td><td>◆ Gaussian Splatting (GS) has recently emerged as a state-of-the-art representation for radiance fields, combining real-time rendering with high visual fidelity.
+<tr><td>2026-01-22</td><td>Structured Image-based Coding for Efficient Gaussian Splatting Compression</td><td>[2601.14510](http://arxiv.org/pdf/2601.14510)</td><td>◆ Gaussian Splatting (GS) has recently emerged as a state-of-the-art representation for radiance fields, combining real-time rendering with high visual fidelity.
 ◆ However, GS models require storing millions of parameters, leading to large file sizes that impair their use in practical multimedia systems.
 ◆ To address this limitation, this paper introduces GS Image-based Compression (GSICO), a novel GS codec that efficiently compresses pre-trained GS models while preserving perceptual fidelity.</td></tr>
 <tr><td>2026-01-20</td><td>Rig-Aware 3D Reconstruction of Vehicle Undercarriages using Gaussian Splatting</td><td>[2601.14208](http://arxiv.org/pdf/2601.14208)</td><td>◆ Inspecting the undercarriage of used vehicles is a labor-intensive task that requires inspectors to crouch or crawl underneath each vehicle to thoroughly examine it.
@@ -1180,4 +1213,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.22
+> 更新于: 2026.01.23
