@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.25)
+# SLAM领域最新论文 (2026.01.26)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -475,6 +475,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-22</td><td>Coarse-to-Fine Non-rigid Multi-modal Image Registration for Historical Panel Paintings based on Crack Structures</td><td>[2601.16348](http://arxiv.org/pdf/2601.16348)</td><td>◆ Art technological investigations of historical panel paintings rely on acquiring multi-modal image data, including visual light photography, infrared reflectography, ultraviolet fluorescence photography, x-radiography, and macro photography.
+◆ For a comprehensive analysis, the multi-modal images require pixel-wise alignment, which is still often performed manually.
+◆ Multi-modal image registration can reduce this laborious manual work, is substantially faster, and enables higher precision.</td></tr>
 <tr><td>2026-01-21</td><td>ZENITH: Automated Gradient Norm Informed Stochastic Optimization</td><td>[2601.15212](http://arxiv.org/pdf/2601.15212)</td><td>◆ Training deep computer vision models requires manual oversight or hyperparameter tuning of the learning rate (LR) schedule.
 ◆ While existing adaptive optimizers schedule the LR automatically, they suffer from computational and memory overhead, incompatibility with regularization, and suboptimal LR choices.
 ◆ In this work, we introduce the ZENITH (Zero-overhead Evolution using Norm-Informed Training History) optimizer, which adapts the LR using the temporal evolution of the gradient norm.</td></tr>
@@ -647,6 +650,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-23</td><td>A Step to Decouple Optimization in 3DGS</td><td>[2601.16736](http://arxiv.org/pdf/2601.16736)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a powerful technique for real-time novel view synthesis.
+◆ As an explicit representation optimized through gradient propagation among primitives, optimization widely accepted in deep neural networks (DNNs) is actually adopted in 3DGS, such as synchronous weight updating and Adam with the adaptive gradient.
+◆ However, considering the physical significance and specific design in 3DGS, there are two overlooked details in the optimization of 3DGS: (i) update step coupling, which induces optimizer state rescaling and costly attribute updates outside the viewpoints, and (ii) gradient coupling in the moment, which may lead to under- or over-effective regularization.</td></tr>
+<tr><td>2026-01-23</td><td>ReWeaver: Towards Simulation-Ready and Topology-Accurate Garment Reconstruction</td><td>[2601.16672](http://arxiv.org/pdf/2601.16672)</td><td>◆ High-quality 3D garment reconstruction plays a crucial role in mitigating the sim-to-real gap in applications such as digital avatars, virtual try-on and robotic manipulation.
+◆ However, existing garment reconstruction methods typically rely on unstructured representations, such as 3D Gaussian Splats, struggling to provide accurate reconstructions of garment topology and sewing structures.
+◆ As a result, the reconstructed outputs are often unsuitable for high-fidelity physical simulation.</td></tr>
 <tr><td>2026-01-22</td><td>EVolSplat4D: Efficient Volume-based Gaussian Splatting for 4D Urban Scene Synthesis</td><td>[2601.15951](http://arxiv.org/pdf/2601.15951)</td><td>◆ Novel view synthesis (NVS) of static and dynamic urban scenes is essential for autonomous driving simulation, yet existing methods often struggle to balance reconstruction time with quality.
 ◆ While state-of-the-art neural radiance fields and 3D Gaussian Splatting approaches achieve photorealism, they often rely on time-consuming per-scene optimization.
 ◆ Conversely, emerging feed-forward methods frequently adopt per-pixel Gaussian representations, which lead to 3D inconsistencies when aggregating multi-view predictions in complex, dynamic environments.</td></tr>
@@ -943,6 +952,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-23</td><td>AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding</td><td>[2601.16532](http://arxiv.org/pdf/2601.16532)</td><td>◆ Single-view indoor scene generation plays a crucial role in a range of real-world applications.
+◆ However, generating a complete 360° scene from a single image remains a highly ill-posed and challenging problem.
+◆ Recent approaches have made progress by leveraging diffusion models and depth estimation networks, yet they still struggle to maintain appearance consistency and geometric plausibility under large viewpoint changes, limiting their effectiveness in full-scene generation.</td></tr>
 <tr><td>2026-01-21</td><td>RayRoPE: Projective Ray Positional Encoding for Multi-view Attention</td><td>[2601.15275](http://arxiv.org/pdf/2601.15275)</td><td>◆ We study positional encodings for multi-view transformers that process tokens from a set of posed input images, and seek a mechanism that encodes patches uniquely, allows SE(3)-invariant attention with multi-frequency similarity, and can be adaptive to the geometry of the underlying scene.
 ◆ We find that prior (absolute or relative) encoding schemes for multi-view attention do not meet the above desiderata, and present RayRoPE to address this gap.
 ◆ RayRoPE represents patch positions based on associated rays but leverages a predicted point along the ray instead of the direction for a geometry-aware encoding.</td></tr>
@@ -1201,4 +1213,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.25
+> 更新于: 2026.01.26
