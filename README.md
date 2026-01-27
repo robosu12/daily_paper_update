@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.26)
+# SLAM领域最新论文 (2026.01.27)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,10 +22,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-26</td><td>Co-PLNet: A Collaborative Point-Line Network for Prompt-Guided Wireframe Parsing</td><td>[2601.18252](http://arxiv.org/pdf/2601.18252)</td><td>◆ Wireframe parsing aims to recover line segments and their junctions to form a structured geometric representation useful for downstream tasks such as Simultaneous Localization and Mapping (SLAM).
+◆ Existing methods predict lines and junctions separately and reconcile them post-hoc, causing mismatches and reduced robustness.
+◆ We present Co-PLNet, a point-line collaborative framework that exchanges spatial cues between the two tasks, where early detections are converted into spatial prompts via a Point-Line Prompt Encoder (PLP-Encoder), which encodes geometric attributes into compact and spatially aligned maps.</td></tr>
 <tr><td>2026-01-22</td><td>Keyframe-Based Feed-Forward Visual Odometry</td><td>[2601.16020](http://arxiv.org/pdf/2601.16020)</td><td>◆ The emergence of visual foundation models has revolutionized visual odometry~(VO) and SLAM, enabling pose estimation and dense reconstruction within a single feed-forward network.
 ◆ However, unlike traditional pipelines that leverage keyframe methods to enhance efficiency and accuracy, current foundation model based methods, such as VGGT-Long, typically process raw image sequences indiscriminately.
 ◆ This leads to computational redundancy and degraded performance caused by low inter-frame parallax, which provides limited contextual stereo information.</td></tr>
-<tr><td>2026-01-22</td><td>Accurate Calibration and Robust LiDAR-Inertial Odometry for Spinning Actuated LiDAR Systems</td><td>[2601.15946](http://arxiv.org/pdf/2601.15946)</td><td>◆ Accurate calibration and robust localization are fundamental for downstream tasks in spinning actuated LiDAR applications.
+<tr><td>2026-01-24</td><td>Accurate Calibration and Robust LiDAR-Inertial Odometry for Spinning Actuated LiDAR Systems</td><td>[2601.15946](http://arxiv.org/pdf/2601.15946)</td><td>◆ Accurate calibration and robust localization are fundamental for downstream tasks in spinning actuated LiDAR applications.
 ◆ Existing methods, however, require parameterizing extrinsic parameters based on different mounting configurations, limiting their generalizability.
 ◆ Additionally, spinning actuated LiDAR inevitably scans featureless regions, which complicates the balance between scanning coverage and localization robustness.</td></tr>
 <tr><td>2026-01-22</td><td>Parallelizable Riemannian Alternating Direction Method of Multipliers for Non-convex Pose Graph Optimization</td><td>[2601.15684](http://arxiv.org/pdf/2601.15684)</td><td>◆ Pose graph optimization (PGO) is fundamental to robot perception and navigation systems, serving as the mathematical backbone for solving simultaneous localization and mapping (SLAM).
@@ -298,6 +301,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-26</td><td>Low Cost, High Efficiency: LiDAR Place Recognition in Vineyards with Matryoshka Representation Learning</td><td>[2601.18714](http://arxiv.org/pdf/2601.18714)</td><td>◆ Localization in agricultural environments is challenging due to their unstructured nature and lack of distinctive landmarks.
+◆ Although agricultural settings have been studied in the context of object classification and segmentation, the place recognition task for mobile robots is not trivial in the current state of the art.
+◆ In this study, we propose MinkUNeXt-VINE, a lightweight, deep-learning-based method that surpasses state-of-the-art methods in vineyard environments thanks to its pre-processing and Matryoshka Representation Learning multi-loss approach.</td></tr>
+<tr><td>2026-01-26</td><td>MarioChart: Autonomous Tangibles as Active Proxy Interfaces for Embodied Casual Data Exploration</td><td>[2601.18328](http://arxiv.org/pdf/2601.18328)</td><td>◆ We introduce the notion of an Active Proxy interface, i.e.
+◆ tangible models as proxies for physical data referents, supporting interactive exploration of data through active manipulation.
+◆ We realise an active proxy data visualisation system, &quot;MarioChart&quot;, using robot carts relocating themselves on a tabletop, e.g., to align with their data referents in a map or other visual layout.</td></tr>
 <tr><td>2026-01-21</td><td>Variable Stepsize Distributed Forward-Backward Splitting Methods as Relocated Fixed-Point Iterations</td><td>[2601.15531](http://arxiv.org/pdf/2601.15531)</td><td>◆ We present a family of distributed forward-backward methods with variable stepsizes to find a solution of structured monotone inclusion problems.
 ◆ The framework is constructed by means of relocated fixed-point iterations, extending the approach introduced in arXiv:2507.07428 to conically averaged operators, thus including iteration operators for methods of forward-backward type devised by graphs.
 ◆ The family of methods we construct preserve the per-iteration computational cost and the convergence properties of their constant stepsize counterparts.</td></tr>
@@ -658,7 +667,28 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-01-23</td><td>A Step to Decouple Optimization in 3DGS</td><td>[2601.16736](http://arxiv.org/pdf/2601.16736)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a powerful technique for real-time novel view synthesis.
+<tr><td>2026-01-26</td><td>Splat-Portrait: Generalizing Talking Heads with Gaussian Splatting</td><td>[2601.18633](http://arxiv.org/pdf/2601.18633)</td><td>◆ Talking Head Generation aims at synthesizing natural-looking talking videos from speech and a single portrait image.
+◆ Previous 3D talking head generation methods have relied on domain-specific heuristics such as warping-based facial motion representation priors to animate talking motions, yet still produce inaccurate 3D avatar reconstructions, thus undermining the realism of generated animations.
+◆ We introduce Splat-Portrait, a Gaussian-splatting-based method that addresses the challenges of 3D head reconstruction and lip motion synthesis.</td></tr>
+<tr><td>2026-01-26</td><td>ExoGS: A 4D Real-to-Sim-to-Real Framework for Scalable Manipulation Data Collection</td><td>[2601.18629](http://arxiv.org/pdf/2601.18629)</td><td>◆ Real-to-Sim-to-Real technique is gaining increasing interest for robotic manipulation, as it can generate scalable data in simulation while having narrower sim-to-real gap.
+◆ However, previous methods mainly focused on environment-level visual real-to-sim transfer, ignoring the transfer of interactions, which could be challenging and inefficient to obtain purely in simulation especially for contact-rich tasks.
+◆ We propose ExoGS, a robot-free 4D Real-to-Sim-to-Real framework that captures both static environments and dynamic interactions in the real world and transfers them seamlessly to a simulated environment.</td></tr>
+<tr><td>2026-01-26</td><td>LoD-Structured 3D Gaussian Splatting for Streaming Video Reconstruction</td><td>[2601.18475](http://arxiv.org/pdf/2601.18475)</td><td>◆ Free-Viewpoint Video (FVV) reconstruction enables photorealistic and interactive 3D scene visualization; however, real-time streaming is often bottlenecked by sparse-view inputs, prohibitive training costs, and bandwidth constraints.
+◆ While recent 3D Gaussian Splatting (3DGS) has advanced FVV due to its superior rendering speed, Streaming Free-Viewpoint Video (SFVV) introduces additional demands for rapid optimization, high-fidelity reconstruction under sparse constraints, and minimal storage footprints.
+◆ To bridge this gap, we propose StreamLoD-GS, an LoD-based Gaussian Splatting framework designed specifically for SFVV.</td></tr>
+<tr><td>2026-01-25</td><td>Geometry-Grounded Gaussian Splatting</td><td>[2601.17835](http://arxiv.org/pdf/2601.17835)</td><td>◆ Gaussian Splatting (GS) has demonstrated impressive quality and efficiency in novel view synthesis.
+◆ However, shape extraction from Gaussian primitives remains an open problem.
+◆ Due to inadequate geometry parameterization and approximation, existing shape reconstruction methods suffer from poor multi-view consistency and are sensitive to floaters.</td></tr>
+<tr><td>2026-01-25</td><td>Advancing Structured Priors for Sparse-Voxel Surface Reconstruction</td><td>[2601.17720](http://arxiv.org/pdf/2601.17720)</td><td>◆ Reconstructing accurate surfaces with radiance fields has progressed rapidly, yet two promising explicit representations, 3D Gaussian Splatting and sparse-voxel rasterization, exhibit complementary strengths and weaknesses.
+◆ 3D Gaussian Splatting converges quickly and carries useful geometric priors, but surface fidelity is limited by its point-like parameterization.
+◆ Sparse-voxel rasterization provides continuous opacity fields and crisp geometry, but its typical uniform dense-grid initialization slows convergence and underutilizes scene structure.</td></tr>
+<tr><td>2026-01-24</td><td>PocketGS: On-Device Training of 3D Gaussian Splatting for High Perceptual Modeling</td><td>[2601.17354](http://arxiv.org/pdf/2601.17354)</td><td>◆ Efficient and high-fidelity 3D scene modeling is a long-standing pursuit in computer graphics.
+◆ While recent 3D Gaussian Splatting (3DGS) methods achieve impressive real-time modeling performance, they rely on resource-unconstrained training assumptions that fail on mobile devices, which are limited by minute-scale training budgets and hardware-available peak-memory.
+◆ We present PocketGS, a mobile scene modeling paradigm that enables on-device 3DGS training under these tightly coupled constraints while preserving high perceptual fidelity.</td></tr>
+<tr><td>2026-01-23</td><td>LGDWT-GS: Local and Global Discrete Wavelet-Regularized 3D Gaussian Splatting for Sparse-View Scene Reconstruction</td><td>[2601.17185](http://arxiv.org/pdf/2601.17185)</td><td>◆ We propose a new method for few-shot 3D reconstruction that integrates global and local frequency regularization to stabilize geometry and preserve fine details under sparse-view conditions, addressing a key limitation of existing 3D Gaussian Splatting (3DGS) models.
+◆ We also introduce a new multispectral greenhouse dataset containing four spectral bands captured from diverse plant species under controlled conditions.
+◆ Alongside the dataset, we release an open-source benchmarking package that defines standardized few-shot reconstruction protocols for evaluating 3DGS-based methods.</td></tr>
+<tr><td>2026-01-26</td><td>A Step to Decouple Optimization in 3DGS</td><td>[2601.16736](http://arxiv.org/pdf/2601.16736)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a powerful technique for real-time novel view synthesis.
 ◆ As an explicit representation optimized through gradient propagation among primitives, optimization widely accepted in deep neural networks (DNNs) is actually adopted in 3DGS, such as synchronous weight updating and Adam with the adaptive gradient.
 ◆ However, considering the physical significance and specific design in 3DGS, there are two overlooked details in the optimization of 3DGS: (i) update step coupling, which induces optimizer state rescaling and costly attribute updates outside the viewpoints, and (ii) gradient coupling in the moment, which may lead to under- or over-effective regularization.</td></tr>
 <tr><td>2026-01-23</td><td>ReWeaver: Towards Simulation-Ready and Topology-Accurate Garment Reconstruction</td><td>[2601.16672](http://arxiv.org/pdf/2601.16672)</td><td>◆ High-quality 3D garment reconstruction plays a crucial role in mitigating the sim-to-real gap in applications such as digital avatars, virtual try-on and robotic manipulation.
@@ -962,7 +992,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-01-23</td><td>AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding</td><td>[2601.16532](http://arxiv.org/pdf/2601.16532)</td><td>◆ Single-view indoor scene generation plays a crucial role in a range of real-world applications.
+<tr><td>2026-01-25</td><td>SPACE-CLIP: Spatial Perception via Adaptive CLIP Embeddings for Monocular Depth Estimation</td><td>[2601.17657](http://arxiv.org/pdf/2601.17657)</td><td>◆ Contrastive Language-Image Pre-training (CLIP) has accomplished extraordinary success for semantic understanding but inherently struggles to perceive geometric structure.
+◆ Existing methods attempt to bridge this gap by querying CLIP with textual prompts, a process that is often indirect and inefficient.
+◆ This paper introduces a fundamentally different approach using a dual-pathway decoder.</td></tr>
+<tr><td>2026-01-24</td><td>AsterNav: Autonomous Aerial Robot Navigation In Darkness Using Passive Computation</td><td>[2601.17550](http://arxiv.org/pdf/2601.17550)</td><td>◆ Autonomous aerial navigation in absolute darkness is crucial for post-disaster search and rescue operations, which often occur from disaster-zone power outages.
+◆ Yet, due to resource constraints, tiny aerial robots, perfectly suited for these operations, are unable to navigate in the darkness to find survivors safely.
+◆ In this paper, we present an autonomous aerial robot for navigation in the dark by combining an Infra-Red (IR) monocular camera with a large-aperture coded lens and structured light without external infrastructure like GPS or motion-capture.</td></tr>
+<tr><td>2026-01-24</td><td>Cross360: 360° Monocular Depth Estimation via Cross Projections Across Scales</td><td>[2601.17271](http://arxiv.org/pdf/2601.17271)</td><td>◆ 360° depth estimation is a challenging research problem due to the difficulty of finding a representation that both preserves global continuity and avoids distortion in spherical images.
+◆ Existing methods attempt to leverage complementary information from multiple projections, but struggle with balancing global and local consistency.
+◆ Their local patch features have limited global perception, and the combined global representation does not address discrepancies in feature extraction at the boundaries between patches.</td></tr>
+<tr><td>2026-01-20</td><td>Atomic Depth Estimation From Noisy Electron Microscopy Data Via Deep Learning</td><td>[2601.17046](http://arxiv.org/pdf/2601.17046)</td><td>◆ We present a novel approach for extracting 3D atomic-level information from transmission electron microscopy (TEM) images affected by significant noise.
+◆ The approach is based on formulating depth estimation as a semantic segmentation problem.
+◆ We address the resulting segmentation problem by training a deep convolutional neural network to generate pixel-wise depth segmentation maps using simulated data corrupted by synthetic noise.</td></tr>
+<tr><td>2026-01-26</td><td>AnchoredDream: Zero-Shot 360° Indoor Scene Generation from a Single View via Geometric Grounding</td><td>[2601.16532](http://arxiv.org/pdf/2601.16532)</td><td>◆ Single-view indoor scene generation plays a crucial role in a range of real-world applications.
 ◆ However, generating a complete 360° scene from a single image remains a highly ill-posed and challenging problem.
 ◆ Recent approaches have made progress by leveraging diffusion models and depth estimation networks, yet they still struggle to maintain appearance consistency and geometric plausibility under large viewpoint changes, limiting their effectiveness in full-scene generation.</td></tr>
 <tr><td>2026-01-21</td><td>RayRoPE: Projective Ray Positional Encoding for Multi-view Attention</td><td>[2601.15275](http://arxiv.org/pdf/2601.15275)</td><td>◆ We study positional encodings for multi-view transformers that process tokens from a set of posed input images, and seek a mechanism that encodes patches uniquely, allows SE(3)-invariant attention with multi-frequency similarity, and can be adaptive to the geometry of the underlying scene.
@@ -1225,4 +1267,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.26
+> 更新于: 2026.01.27
