@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.27)
+# SLAM领域最新论文 (2026.01.28)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-27</td><td>VGGT-SLAM 2.0: Real time Dense Feed-forward Scene Reconstruction</td><td>[2601.19887](http://arxiv.org/pdf/2601.19887)</td><td>◆ We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT.
+◆ Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics.
+◆ Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures.</td></tr>
+<tr><td>2026-01-27</td><td>The S3LI Vulcano Dataset: A Dataset for Multi-Modal SLAM in Unstructured Planetary Environments</td><td>[2601.19557](http://arxiv.org/pdf/2601.19557)</td><td>◆ We release the S3LI Vulcano dataset, a multi-modal dataset towards development and benchmarking of Simultaneous Localization and Mapping (SLAM) and place recognition algorithms that rely on visual and LiDAR modalities.
+◆ Several sequences are recorded on the volcanic island of Vulcano, from the Aeolian Islands in Sicily, Italy.
+◆ The sequences provide users with data from a variety of environments, textures and terrains, including basaltic or iron-rich rocks, geological formations from old lava channels, as well as dry vegetation and water.</td></tr>
+<tr><td>2026-01-27</td><td>Fast Converging 3D Gaussian Splatting for 1-Minute Reconstruction</td><td>[2601.19489](http://arxiv.org/pdf/2601.19489)</td><td>◆ We present a fast 3DGS reconstruction pipeline designed to converge within one minute, developed for the SIGGRAPH Asia 3DGS Fast Reconstruction Challenge.
+◆ The challenge consists of an initial round using SLAM-generated camera poses (with noisy trajectories) and a final round using COLMAP poses (highly accurate).
+◆ To robustly handle these heterogeneous settings, we develop a two-stage solution.</td></tr>
 <tr><td>2026-01-26</td><td>Co-PLNet: A Collaborative Point-Line Network for Prompt-Guided Wireframe Parsing</td><td>[2601.18252](http://arxiv.org/pdf/2601.18252)</td><td>◆ Wireframe parsing aims to recover line segments and their junctions to form a structured geometric representation useful for downstream tasks such as Simultaneous Localization and Mapping (SLAM).
 ◆ Existing methods predict lines and junctions separately and reconcile them post-hoc, causing mismatches and reduced robustness.
 ◆ We present Co-PLNet, a point-line collaborative framework that exchanges spatial cues between the two tasks, where early detections are converted into spatial prompts via a Point-Line Prompt Encoder (PLP-Encoder), which encodes geometric attributes into compact and spatially aligned maps.</td></tr>
@@ -301,6 +310,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-27</td><td>VGGT-SLAM 2.0: Real time Dense Feed-forward Scene Reconstruction</td><td>[2601.19887](http://arxiv.org/pdf/2601.19887)</td><td>◆ We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT.
+◆ Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics.
+◆ Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures.</td></tr>
+<tr><td>2026-01-27</td><td>The S3LI Vulcano Dataset: A Dataset for Multi-Modal SLAM in Unstructured Planetary Environments</td><td>[2601.19557](http://arxiv.org/pdf/2601.19557)</td><td>◆ We release the S3LI Vulcano dataset, a multi-modal dataset towards development and benchmarking of Simultaneous Localization and Mapping (SLAM) and place recognition algorithms that rely on visual and LiDAR modalities.
+◆ Several sequences are recorded on the volcanic island of Vulcano, from the Aeolian Islands in Sicily, Italy.
+◆ The sequences provide users with data from a variety of environments, textures and terrains, including basaltic or iron-rich rocks, geological formations from old lava channels, as well as dry vegetation and water.</td></tr>
+<tr><td>2026-01-27</td><td>Robust Out-of-Order Retrieval for Grid-Based Storage at Maximum Capacity</td><td>[2601.19144](http://arxiv.org/pdf/2601.19144)</td><td>◆ This paper proposes a framework for improving the operational efficiency of automated storage systems under uncertainty.
+◆ It considers a 2D grid-based storage for uniform-sized loads (e.g., containers, pallets, or totes), which are moved by a robot (or other manipulator) along a collision-free path in the grid.
+◆ The loads are labeled (i.e., unique) and must be stored in a given sequence, and later be retrieved in a different sequence -- an operational pattern that arises in logistics applications, such as last-mile distribution centers and shipyards.</td></tr>
+<tr><td>2026-01-26</td><td>Operationally induced preferred basis in unitary quantum mechanics</td><td>[2601.18856](http://arxiv.org/pdf/2601.18856)</td><td>◆ The preferred-basis problem and the definite-outcome aspect of the measurement problem persist even if the detector is modeled unitarily, because experimental data are necessarily represented in a Boolean event algebra of mutually exclusive records whereas the theoretical description is naturally formulated in a noncommutative operator algebra with continuous unitary symmetry.
+◆ This change of mathematical type constitutes the core of the &#x27;cut&#x27;: a structurally necessary interface from group-based kinematics to set-based counting.
+◆ In the presented view the basis relevant for recorded outcomes is not determined by the system Hamiltonian alone; it is induced by the measurement mapping, i.e., by the detector channel together with the coarse-grained readout that defines an instrument.</td></tr>
 <tr><td>2026-01-26</td><td>Low Cost, High Efficiency: LiDAR Place Recognition in Vineyards with Matryoshka Representation Learning</td><td>[2601.18714](http://arxiv.org/pdf/2601.18714)</td><td>◆ Localization in agricultural environments is challenging due to their unstructured nature and lack of distinctive landmarks.
 ◆ Although agricultural settings have been studied in the context of object classification and segmentation, the place recognition task for mobile robots is not trivial in the current state of the art.
 ◆ In this study, we propose MinkUNeXt-VINE, a lightweight, deep-learning-based method that surpasses state-of-the-art methods in vineyard environments thanks to its pre-processing and Matryoshka Representation Learning multi-loss approach.</td></tr>
@@ -667,6 +688,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-27</td><td>Graphical X Splatting (GraphiXS): A Graphical Model for 4D Gaussian Splatting under Uncertainty</td><td>[2601.19843](http://arxiv.org/pdf/2601.19843)</td><td>◆ We propose a new framework to systematically incorporate data uncertainty in Gaussian Splatting.
+◆ Being the new paradigm of neural rendering, Gaussian Splatting has been investigated in many applications, with the main effort in extending its representation, improving its optimization process, and accelerating its speed.
+◆ However, one orthogonal, much needed, but under-explored area is data uncertainty.</td></tr>
+<tr><td>2026-01-27</td><td>WaterClear-GS: Optical-Aware Gaussian Splatting for Underwater Reconstruction and Restoration</td><td>[2601.19753](http://arxiv.org/pdf/2601.19753)</td><td>◆ Underwater 3D reconstruction and appearance restoration are hindered by the complex optical properties of water, such as wavelength-dependent attenuation and scattering.
+◆ Existing Neural Radiance Fields (NeRF)-based methods struggle with slow rendering speeds and suboptimal color restoration, while 3D Gaussian Splatting (3DGS) inherently lacks the capability to model complex volumetric scattering effects.
+◆ To address these issues, we introduce WaterClear-GS, the first pure 3DGS-based framework that explicitly integrates underwater optical properties of local attenuation and scattering into Gaussian primitives, eliminating the need for an auxiliary medium network.</td></tr>
+<tr><td>2026-01-27</td><td>DiffStyle3D: Consistent 3D Gaussian Stylization via Attention Optimization</td><td>[2601.19717](http://arxiv.org/pdf/2601.19717)</td><td>◆ 3D style transfer enables the creation of visually expressive 3D content, enriching the visual appearance of 3D scenes and objects.
+◆ However, existing VGG- and CLIP-based methods struggle to model multi-view consistency within the model itself, while diffusion-based approaches can capture such consistency but rely on denoising directions, leading to unstable training.
+◆ To address these limitations, we propose DiffStyle3D, a novel diffusion-based paradigm for 3DGS style transfer that directly optimizes in the latent space.</td></tr>
+<tr><td>2026-01-27</td><td>Fast Converging 3D Gaussian Splatting for 1-Minute Reconstruction</td><td>[2601.19489](http://arxiv.org/pdf/2601.19489)</td><td>◆ We present a fast 3DGS reconstruction pipeline designed to converge within one minute, developed for the SIGGRAPH Asia 3DGS Fast Reconstruction Challenge.
+◆ The challenge consists of an initial round using SLAM-generated camera poses (with noisy trajectories) and a final round using COLMAP poses (highly accurate).
+◆ To robustly handle these heterogeneous settings, we develop a two-stage solution.</td></tr>
+<tr><td>2026-01-27</td><td>ClipGS-VR: Immersive and Interactive Cinematic Visualization of Volumetric Medical Data in Mobile Virtual Reality</td><td>[2601.19310](http://arxiv.org/pdf/2601.19310)</td><td>◆ High-fidelity cinematic medical visualization on mobile virtual reality (VR) remains challenging.
+◆ Although ClipGS enables cross-sectional exploration via 3D Gaussian Splatting, it lacks arbitrary-angle slicing on consumer-grade VR headsets.
+◆ To achieve real-time interactive performance, we introduce ClipGS-VR and restructure ClipGS&#x27;s neural inference into a consolidated dataset, integrating high-fidelity layers from multiple pre-computed slicing states into a unified rendering structure.</td></tr>
+<tr><td>2026-01-27</td><td>TIGaussian: Disentangle Gaussians for Spatial-Awared Text-Image-3D Alignment</td><td>[2601.19247](http://arxiv.org/pdf/2601.19247)</td><td>◆ While visual-language models have profoundly linked features between texts and images, the incorporation of 3D modality data, such as point clouds and 3D Gaussians, further enables pretraining for 3D-related tasks, e.g., cross-modal retrieval, zero-shot classification, and scene recognition.
+◆ As challenges remain in extracting 3D modal features and bridging the gap between different modalities, we propose TIGaussian, a framework that harnesses 3D Gaussian Splatting (3DGS) characteristics to strengthen cross-modality alignment through multi-branch 3DGS tokenizer and modality-specific 3D feature alignment strategies.
+◆ Specifically, our multi-branch 3DGS tokenizer decouples the intrinsic properties of 3DGS structures into compact latent representations, enabling more generalizable feature extraction.</td></tr>
+<tr><td>2026-01-27</td><td>UniMGS: Unifying Mesh and 3D Gaussian Splatting with Single-Pass Rasterization and Proxy-Based Deformation</td><td>[2601.19233](http://arxiv.org/pdf/2601.19233)</td><td>◆ Joint rendering and deformation of mesh and 3D Gaussian Splatting (3DGS) have significant value as both representa tions offer complementary advantages for graphics applica tions.
+◆ However, due to differences in representation and ren dering pipelines, existing studies render meshes and 3DGS separately, making it difficult to accurately handle occlusions and transparency.
+◆ Moreover, the deformed 3DGS still suffers from visual artifacts due to the sensitivity to the topology quality of the proxy mesh.</td></tr>
+<tr><td>2026-01-27</td><td>Bridging Visual and Wireless Sensing: A Unified Radiation Field for 3D Radio Map Construction</td><td>[2601.19216](http://arxiv.org/pdf/2601.19216)</td><td>◆ The emerging applications of next-generation wireless networks (e.g., immersive 3D communication, low-altitude networks, and integrated sensing and communication) necessitate high-fidelity environmental intelligence.
+◆ 3D radio maps have emerged as a critical tool for this purpose, enabling spectrum-aware planning and environment-aware sensing by bridging the gap between physical environments and electromagnetic signal propagation.
+◆ However, constructing accurate 3D radio maps requires fine-grained 3D geometric information and a profound understanding of electromagnetic wave propagation.</td></tr>
 <tr><td>2026-01-26</td><td>Splat-Portrait: Generalizing Talking Heads with Gaussian Splatting</td><td>[2601.18633](http://arxiv.org/pdf/2601.18633)</td><td>◆ Talking Head Generation aims at synthesizing natural-looking talking videos from speech and a single portrait image.
 ◆ Previous 3D talking head generation methods have relied on domain-specific heuristics such as warping-based facial motion representation priors to animate talking motions, yet still produce inaccurate 3D avatar reconstructions, thus undermining the realism of generated animations.
 ◆ We introduce Splat-Portrait, a Gaussian-splatting-based method that addresses the challenges of 3D head reconstruction and lip motion synthesis.</td></tr>
@@ -992,6 +1037,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-27</td><td>Fast Converging 3D Gaussian Splatting for 1-Minute Reconstruction</td><td>[2601.19489](http://arxiv.org/pdf/2601.19489)</td><td>◆ We present a fast 3DGS reconstruction pipeline designed to converge within one minute, developed for the SIGGRAPH Asia 3DGS Fast Reconstruction Challenge.
+◆ The challenge consists of an initial round using SLAM-generated camera poses (with noisy trajectories) and a final round using COLMAP poses (highly accurate).
+◆ To robustly handle these heterogeneous settings, we develop a two-stage solution.</td></tr>
+<tr><td>2026-01-27</td><td>Towards Gold-Standard Depth Estimation for Tree Branches in UAV Forestry: Benchmarking Deep Stereo Matching Methods</td><td>[2601.19461](http://arxiv.org/pdf/2601.19461)</td><td>◆ Autonomous UAV forestry operations require robust depth estimation with strong cross-domain generalization, yet existing evaluations focus on urban and indoor scenarios, leaving a critical gap for vegetation-dense environments.
+◆ We present the first systematic zero-shot evaluation of eight stereo methods spanning iterative refinement, foundation model, diffusion-based, and 3D CNN paradigms.
+◆ All methods use officially released pretrained weights (trained on Scene Flow) and are evaluated on four standard benchmarks (ETH3D, KITTI 2012/2015, Middlebury) plus a novel 5,313-pair Canterbury Tree Branches dataset ($1920 \times 1080$).</td></tr>
+<tr><td>2026-01-27</td><td>MIRAGE: Enabling Real-Time Automotive Mediated Reality</td><td>[2601.19385](http://arxiv.org/pdf/2601.19385)</td><td>◆ Traffic is inherently dangerous, with around 1.19 million fatalities annually.
+◆ Automotive Mediated Reality (AMR) can enhance driving safety by overlaying critical information (e.g., outlines, icons, text) on key objects to improve awareness, altering objects&#x27; appearance to simplify traffic situations, and diminishing their appearance to minimize distractions.
+◆ However, real-world AMR evaluation remains limited due to technical challenges.</td></tr>
+<tr><td>2026-01-27</td><td>Instance-Guided Radar Depth Estimation for 3D Object Detection</td><td>[2601.19314](http://arxiv.org/pdf/2601.19314)</td><td>◆ Accurate depth estimation is fundamental to 3D perception in autonomous driving, supporting tasks such as detection, tracking, and motion planning.
+◆ However, monocular camera-based 3D detection suffers from depth ambiguity and reduced robustness under challenging conditions.
+◆ Radar provides complementary advantages such as resilience to poor lighting and adverse weather, but its sparsity and low resolution limit its direct use in detection frameworks.</td></tr>
+<tr><td>2026-01-26</td><td>On the Role of Depth in Surgical Vision Foundation Models: An Empirical Study of RGB-D Pre-training</td><td>[2601.18929](http://arxiv.org/pdf/2601.18929)</td><td>◆ Vision foundation models (VFMs) have emerged as powerful tools for surgical scene understanding.
+◆ However, current approaches predominantly rely on unimodal RGB pre-training, overlooking the complex 3D geometry inherent to surgical environments.
+◆ Although several architectures support multimodal or geometry-aware inputs in general computer vision, the benefits of incorporating depth information in surgical settings remain underexplored.</td></tr>
 <tr><td>2026-01-25</td><td>SPACE-CLIP: Spatial Perception via Adaptive CLIP Embeddings for Monocular Depth Estimation</td><td>[2601.17657](http://arxiv.org/pdf/2601.17657)</td><td>◆ Contrastive Language-Image Pre-training (CLIP) has accomplished extraordinary success for semantic understanding but inherently struggles to perceive geometric structure.
 ◆ Existing methods attempt to bridge this gap by querying CLIP with textual prompts, a process that is often indirect and inefficient.
 ◆ This paper introduces a fundamentally different approach using a dual-pathway decoder.</td></tr>
@@ -1267,4 +1327,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.27
+> 更新于: 2026.01.28
