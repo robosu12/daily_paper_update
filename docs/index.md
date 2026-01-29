@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.28)
+# SLAM领域最新论文 (2026.01.29)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -28,7 +28,7 @@
 <tr><td>2026-01-27</td><td>The S3LI Vulcano Dataset: A Dataset for Multi-Modal SLAM in Unstructured Planetary Environments</td><td>[2601.19557](http://arxiv.org/pdf/2601.19557)</td><td>◆ We release the S3LI Vulcano dataset, a multi-modal dataset towards development and benchmarking of Simultaneous Localization and Mapping (SLAM) and place recognition algorithms that rely on visual and LiDAR modalities.
 ◆ Several sequences are recorded on the volcanic island of Vulcano, from the Aeolian Islands in Sicily, Italy.
 ◆ The sequences provide users with data from a variety of environments, textures and terrains, including basaltic or iron-rich rocks, geological formations from old lava channels, as well as dry vegetation and water.</td></tr>
-<tr><td>2026-01-27</td><td>Fast Converging 3D Gaussian Splatting for 1-Minute Reconstruction</td><td>[2601.19489](http://arxiv.org/pdf/2601.19489)</td><td>◆ We present a fast 3DGS reconstruction pipeline designed to converge within one minute, developed for the SIGGRAPH Asia 3DGS Fast Reconstruction Challenge.
+<tr><td>2026-01-28</td><td>Fast Converging 3D Gaussian Splatting for 1-Minute Reconstruction</td><td>[2601.19489](http://arxiv.org/pdf/2601.19489)</td><td>◆ We present a fast 3DGS reconstruction pipeline designed to converge within one minute, developed for the SIGGRAPH Asia 3DGS Fast Reconstruction Challenge.
 ◆ The challenge consists of an initial round using SLAM-generated camera poses (with noisy trajectories) and a final round using COLMAP poses (highly accurate).
 ◆ To robustly handle these heterogeneous settings, we develop a two-stage solution.</td></tr>
 <tr><td>2026-01-26</td><td>Co-PLNet: A Collaborative Point-Line Network for Prompt-Guided Wireframe Parsing</td><td>[2601.18252](http://arxiv.org/pdf/2601.18252)</td><td>◆ Wireframe parsing aims to recover line segments and their junctions to form a structured geometric representation useful for downstream tasks such as Simultaneous Localization and Mapping (SLAM).
@@ -680,6 +680,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-28</td><td>FreeFix: Boosting 3D Gaussian Splatting via Fine-Tuning-Free Diffusion Models</td><td>[2601.20857](http://arxiv.org/pdf/2601.20857)</td><td>◆ Neural Radiance Fields and 3D Gaussian Splatting have advanced novel view synthesis, yet still rely on dense inputs and often degrade at extrapolated views.
+◆ Recent approaches leverage generative models, such as diffusion models, to provide additional supervision, but face a trade-off between generalization and fidelity: fine-tuning diffusion models for artifact removal improves fidelity but risks overfitting, while fine-tuning-free methods preserve generalization but often yield lower fidelity.
+◆ We introduce FreeFix, a fine-tuning-free approach that pushes the boundary of this trade-off by enhancing extrapolated rendering with pretrained image diffusion models.</td></tr>
+<tr><td>2026-01-28</td><td>GRTX: Efficient Ray Tracing for 3D Gaussian-Based Rendering</td><td>[2601.20429](http://arxiv.org/pdf/2601.20429)</td><td>◆ 3D Gaussian Splatting has gained widespread adoption across diverse applications due to its exceptional rendering performance and visual quality.
+◆ While most existing methods rely on rasterization to render Gaussians, recent research has started investigating ray tracing approaches to overcome the fundamental limitations inherent in rasterization.
+◆ However, current Gaussian ray tracing methods suffer from inefficiencies such as bloated acceleration structures and redundant node traversals, which greatly degrade ray tracing performance.</td></tr>
+<tr><td>2026-01-28</td><td>GVGS: Gaussian Visibility-Aware Multi-View Geometry for Accurate Surface Reconstruction</td><td>[2601.20331](http://arxiv.org/pdf/2601.20331)</td><td>◆ 3D Gaussian Splatting enables efficient optimization and high-quality rendering, yet accurate surface reconstruction remains challenging.
+◆ Prior methods improve surface reconstruction by refining Gaussian depth estimates, either via multi-view geometric consistency or through monocular depth priors.
+◆ However, multi-view constraints become unreliable under large geometric discrepancies, while monocular priors suffer from scale ambiguity and local inconsistency, ultimately leading to inaccurate Gaussian depth supervision.</td></tr>
 <tr><td>2026-01-27</td><td>Graphical X Splatting (GraphiXS): A Graphical Model for 4D Gaussian Splatting under Uncertainty</td><td>[2601.19843](http://arxiv.org/pdf/2601.19843)</td><td>◆ We propose a new framework to systematically incorporate data uncertainty in Gaussian Splatting.
 ◆ Being the new paradigm of neural rendering, Gaussian Splatting has been investigated in many applications, with the main effort in extending its representation, improving its optimization process, and accelerating its speed.
 ◆ However, one orthogonal, much needed, but under-explored area is data uncertainty.</td></tr>
@@ -689,7 +698,7 @@
 <tr><td>2026-01-27</td><td>DiffStyle3D: Consistent 3D Gaussian Stylization via Attention Optimization</td><td>[2601.19717](http://arxiv.org/pdf/2601.19717)</td><td>◆ 3D style transfer enables the creation of visually expressive 3D content, enriching the visual appearance of 3D scenes and objects.
 ◆ However, existing VGG- and CLIP-based methods struggle to model multi-view consistency within the model itself, while diffusion-based approaches can capture such consistency but rely on denoising directions, leading to unstable training.
 ◆ To address these limitations, we propose DiffStyle3D, a novel diffusion-based paradigm for 3DGS style transfer that directly optimizes in the latent space.</td></tr>
-<tr><td>2026-01-27</td><td>Fast Converging 3D Gaussian Splatting for 1-Minute Reconstruction</td><td>[2601.19489](http://arxiv.org/pdf/2601.19489)</td><td>◆ We present a fast 3DGS reconstruction pipeline designed to converge within one minute, developed for the SIGGRAPH Asia 3DGS Fast Reconstruction Challenge.
+<tr><td>2026-01-28</td><td>Fast Converging 3D Gaussian Splatting for 1-Minute Reconstruction</td><td>[2601.19489](http://arxiv.org/pdf/2601.19489)</td><td>◆ We present a fast 3DGS reconstruction pipeline designed to converge within one minute, developed for the SIGGRAPH Asia 3DGS Fast Reconstruction Challenge.
 ◆ The challenge consists of an initial round using SLAM-generated camera poses (with noisy trajectories) and a final round using COLMAP poses (highly accurate).
 ◆ To robustly handle these heterogeneous settings, we develop a two-stage solution.</td></tr>
 <tr><td>2026-01-27</td><td>ClipGS-VR: Immersive and Interactive Cinematic Visualization of Volumetric Medical Data in Mobile Virtual Reality</td><td>[2601.19310](http://arxiv.org/pdf/2601.19310)</td><td>◆ High-fidelity cinematic medical visualization on mobile virtual reality (VR) remains challenging.
@@ -1027,7 +1036,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-01-27</td><td>Fast Converging 3D Gaussian Splatting for 1-Minute Reconstruction</td><td>[2601.19489](http://arxiv.org/pdf/2601.19489)</td><td>◆ We present a fast 3DGS reconstruction pipeline designed to converge within one minute, developed for the SIGGRAPH Asia 3DGS Fast Reconstruction Challenge.
+<tr><td>2026-01-28</td><td>GVGS: Gaussian Visibility-Aware Multi-View Geometry for Accurate Surface Reconstruction</td><td>[2601.20331](http://arxiv.org/pdf/2601.20331)</td><td>◆ 3D Gaussian Splatting enables efficient optimization and high-quality rendering, yet accurate surface reconstruction remains challenging.
+◆ Prior methods improve surface reconstruction by refining Gaussian depth estimates, either via multi-view geometric consistency or through monocular depth priors.
+◆ However, multi-view constraints become unreliable under large geometric discrepancies, while monocular priors suffer from scale ambiguity and local inconsistency, ultimately leading to inaccurate Gaussian depth supervision.</td></tr>
+<tr><td>2026-01-28</td><td>Physically Guided Visual Mass Estimation from a Single RGB Image</td><td>[2601.20303](http://arxiv.org/pdf/2601.20303)</td><td>◆ Estimating object mass from visual input is challenging because mass depends jointly on geometric volume and material-dependent density, neither of which is directly observable from RGB appearance.
+◆ Consequently, mass prediction from pixels is ill-posed and therefore benefits from physically meaningful representations to constrain the space of plausible solutions.
+◆ We propose a physically structured framework for single-image mass estimation that addresses this ambiguity by aligning visual cues with the physical factors governing mass.</td></tr>
+<tr><td>2026-01-28</td><td>Fast Converging 3D Gaussian Splatting for 1-Minute Reconstruction</td><td>[2601.19489](http://arxiv.org/pdf/2601.19489)</td><td>◆ We present a fast 3DGS reconstruction pipeline designed to converge within one minute, developed for the SIGGRAPH Asia 3DGS Fast Reconstruction Challenge.
 ◆ The challenge consists of an initial round using SLAM-generated camera poses (with noisy trajectories) and a final round using COLMAP poses (highly accurate).
 ◆ To robustly handle these heterogeneous settings, we develop a two-stage solution.</td></tr>
 <tr><td>2026-01-27</td><td>Towards Gold-Standard Depth Estimation for Tree Branches in UAV Forestry: Benchmarking Deep Stereo Matching Methods</td><td>[2601.19461](http://arxiv.org/pdf/2601.19461)</td><td>◆ Autonomous UAV forestry operations require robust depth estimation with strong cross-domain generalization, yet existing evaluations focus on urban and indoor scenarios, leaving a critical gap for vegetation-dense environments.
@@ -1315,4 +1330,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.28
+> 更新于: 2026.01.29
