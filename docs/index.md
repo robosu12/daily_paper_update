@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.01.29)
+# SLAM领域最新论文 (2026.01.30)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-29</td><td>IROS: A Dual-Process Architecture for Real-Time VLM-Based Indoor Navigation</td><td>[2601.21506](http://arxiv.org/pdf/2601.21506)</td><td>◆ Indoor mobile robot navigation requires fast responsiveness and robust semantic understanding, yet existing methods struggle to provide both.
+◆ Classical geometric approaches such as SLAM offer reliable localization but depend on detailed maps and cannot interpret human-targeted cues (e.g., signs, room numbers) essential for indoor reasoning.
+◆ Vision-Language-Action (VLA) models introduce semantic grounding but remain strictly reactive, basing decisions only on visible frames and failing to anticipate unseen intersections or reason about distant textual cues.</td></tr>
+<tr><td>2026-01-28</td><td>Multi-Robot Decentralized Collaborative SLAM in Planetary Analogue Environments: Dataset, Challenges, and Lessons Learned</td><td>[2601.21063](http://arxiv.org/pdf/2601.21063)</td><td>◆ Decentralized collaborative simultaneous localization and mapping (C-SLAM) is essential to enable multirobot missions in unknown environments without relying on preexisting localization and communication infrastructure.
+◆ This technology is anticipated to play a key role in the exploration of the Moon, Mars, and other planets.
+◆ In this article, we share insights and lessons learned from C-SLAM experiments involving three robots operating on a Mars analogue terrain and communicating over an ad hoc network.</td></tr>
 <tr><td>2026-01-27</td><td>VGGT-SLAM 2.0: Real time Dense Feed-forward Scene Reconstruction</td><td>[2601.19887](http://arxiv.org/pdf/2601.19887)</td><td>◆ We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT.
 ◆ Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics.
 ◆ Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures.</td></tr>
@@ -680,6 +686,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-29</td><td>PLANING: A Loosely Coupled Triangle-Gaussian Framework for Streaming 3D Reconstruction</td><td>[2601.22046](http://arxiv.org/pdf/2601.22046)</td><td>◆ Streaming reconstruction from monocular image sequences remains challenging, as existing methods typically favor either high-quality rendering or accurate geometry, but rarely both.
+◆ We present PLANING, an efficient on-the-fly reconstruction framework built on a hybrid representation that loosely couples explicit geometric primitives with neural Gaussians, enabling geometry and appearance to be modeled in a decoupled manner.
+◆ This decoupling supports an online initialization and optimization strategy that separates geometry and appearance updates, yielding stable streaming reconstruction with substantially reduced structural redundancy.</td></tr>
+<tr><td>2026-01-29</td><td>Hybrid Foveated Path Tracing with Peripheral Gaussians for Immersive Anatomy</td><td>[2601.22026](http://arxiv.org/pdf/2601.22026)</td><td>◆ Volumetric medical imaging offers great potential for understanding complex pathologies.
+◆ Yet, traditional 2D slices provide little support for interpreting spatial relationships, forcing users to mentally reconstruct anatomy into three dimensions.
+◆ Direct volumetric path tracing and VR rendering can improve perception but are computationally expensive, while precomputed representations, like Gaussian Splatting, require planning ahead.</td></tr>
+<tr><td>2026-01-29</td><td>Lightweight High-Fidelity Low-Bitrate Talking Face Compression for 3D Video Conference</td><td>[2601.21269](http://arxiv.org/pdf/2601.21269)</td><td>◆ The demand for immersive and interactive communication has driven advancements in 3D video conferencing, yet achieving high-fidelity 3D talking face representation at low bitrates remains a challenge.
+◆ Traditional 2D video compression techniques fail to preserve fine-grained geometric and appearance details, while implicit neural rendering methods like NeRF suffer from prohibitive computational costs.
+◆ To address these challenges, we propose a lightweight, high-fidelity, low-bitrate 3D talking face compression framework that integrates FLAME-based parametric modeling with 3DGS neural rendering.</td></tr>
 <tr><td>2026-01-28</td><td>FreeFix: Boosting 3D Gaussian Splatting via Fine-Tuning-Free Diffusion Models</td><td>[2601.20857](http://arxiv.org/pdf/2601.20857)</td><td>◆ Neural Radiance Fields and 3D Gaussian Splatting have advanced novel view synthesis, yet still rely on dense inputs and often degrade at extrapolated views.
 ◆ Recent approaches leverage generative models, such as diffusion models, to provide additional supervision, but face a trade-off between generalization and fidelity: fine-tuning diffusion models for artifact removal improves fidelity but risks overfitting, while fine-tuning-free methods preserve generalization but often yield lower fidelity.
 ◆ We introduce FreeFix, a fine-tuning-free approach that pushes the boundary of this trade-off by enhancing extrapolated rendering with pretrained image diffusion models.</td></tr>
@@ -1036,6 +1051,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-29</td><td>MetricAnything: Scaling Metric Depth Pretraining with Noisy Heterogeneous Sources</td><td>[2601.22054](http://arxiv.org/pdf/2601.22054)</td><td>◆ Scaling has powered recent advances in vision foundation models, yet extending this paradigm to metric depth estimation remains challenging due to heterogeneous sensor noise, camera-dependent biases, and metric ambiguity in noisy cross-source 3D data.
+◆ We introduce Metric Anything, a simple and scalable pretraining framework that learns metric depth from noisy, diverse 3D sources without manually engineered prompts, camera-specific modeling, or task-specific architectures.
+◆ Central to our approach is the Sparse Metric Prompt, created by randomly masking depth maps, which serves as a universal interface that decouples spatial reasoning from sensor and camera biases.</td></tr>
+<tr><td>2026-01-29</td><td>Belief Propagation Converges to Gaussian Distributions in Sparsely-Connected Factor Graphs</td><td>[2601.21935](http://arxiv.org/pdf/2601.21935)</td><td>◆ Belief Propagation (BP) is a powerful algorithm for distributed inference in probabilistic graphical models, however it quickly becomes infeasible for practical compute and memory budgets.
+◆ Many efficient, non-parametric forms of BP have been developed, but the most popular is Gaussian Belief Propagation (GBP), a variant that assumes all distributions are locally Gaussian.
+◆ GBP is widely used due to its efficiency and empirically strong performance in applications like computer vision or sensor networks - even when modelling non-Gaussian problems.</td></tr>
 <tr><td>2026-01-28</td><td>GVGS: Gaussian Visibility-Aware Multi-View Geometry for Accurate Surface Reconstruction</td><td>[2601.20331](http://arxiv.org/pdf/2601.20331)</td><td>◆ 3D Gaussian Splatting enables efficient optimization and high-quality rendering, yet accurate surface reconstruction remains challenging.
 ◆ Prior methods improve surface reconstruction by refining Gaussian depth estimates, either via multi-view geometric consistency or through monocular depth priors.
 ◆ However, multi-view constraints become unreliable under large geometric discrepancies, while monocular priors suffer from scale ambiguity and local inconsistency, ultimately leading to inaccurate Gaussian depth supervision.</td></tr>
@@ -1330,4 +1351,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.01.29
+> 更新于: 2026.01.30
