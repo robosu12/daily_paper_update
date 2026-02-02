@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.02.01)
+# SLAM领域最新论文 (2026.02.02)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -312,6 +312,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-29</td><td>Advanced techniques and applications of LiDAR Place Recognition in Agricultural Environments: A Comprehensive Survey</td><td>[2601.22198](http://arxiv.org/pdf/2601.22198)</td><td>◆ An optimal solution to the localization problem is essential for developing autonomous robotic systems.
+◆ Apart from autonomous vehicles, precision agriculture is one of the elds that can bene t most from these systems.
+◆ Although LiDAR place recognition is a widely used technique in recent years to achieve accurate localization, it is mostly used in urban settings.</td></tr>
 <tr><td>2026-01-27</td><td>VGGT-SLAM 2.0: Real time Dense Feed-forward Scene Reconstruction</td><td>[2601.19887](http://arxiv.org/pdf/2601.19887)</td><td>◆ We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT.
 ◆ Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics.
 ◆ Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures.</td></tr>
@@ -686,7 +689,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-01-29</td><td>PLANING: A Loosely Coupled Triangle-Gaussian Framework for Streaming 3D Reconstruction</td><td>[2601.22046](http://arxiv.org/pdf/2601.22046)</td><td>◆ Streaming reconstruction from monocular image sequences remains challenging, as existing methods typically favor either high-quality rendering or accurate geometry, but rarely both.
+<tr><td>2026-01-30</td><td>EAG-PT: Emission-Aware Gaussians and Path Tracing for Indoor Scene Reconstruction and Editing</td><td>[2601.23065](http://arxiv.org/pdf/2601.23065)</td><td>◆ Recent reconstruction methods based on radiance field such as NeRF and 3DGS reproduce indoor scenes with high visual fidelity, but break down under scene editing due to baked illumination and the lack of explicit light transport.
+◆ In contrast, physically based inverse rendering relies on mesh representations and path tracing, which enforce correct light transport but place strong requirements on geometric fidelity, becoming a practical bottleneck for real indoor scenes.
+◆ In this work, we propose Emission-Aware Gaussians and Path Tracing (EAG-PT), aiming for physically based light transport with a unified 2D Gaussian representation.</td></tr>
+<tr><td>2026-01-30</td><td>Learning Geometrically-Grounded 3D Visual Representations for View-Generalizable Robotic Manipulation</td><td>[2601.22988](http://arxiv.org/pdf/2601.22988)</td><td>◆ Real-world robotic manipulation demands visuomotor policies capable of robust spatial scene understanding and strong generalization across diverse camera viewpoints.
+◆ While recent advances in 3D-aware visual representations have shown promise, they still suffer from several key limitations, including reliance on multi-view observations during inference which is impractical in single-view restricted scenarios, incomplete scene modeling that fails to capture holistic and fine-grained geometric structures essential for precise manipulation, and lack of effective policy training strategies to retain and exploit the acquired 3D knowledge.
+◆ To address these challenges, we present MethodName, a unified representation-policy learning framework for view-generalizable robotic manipulation.</td></tr>
+<tr><td>2026-01-30</td><td>Diachronic Stereo Matching for Multi-Date Satellite Imagery</td><td>[2601.22808](http://arxiv.org/pdf/2601.22808)</td><td>◆ Recent advances in image-based satellite 3D reconstruction have progressed along two complementary directions.
+◆ On one hand, multi-date approaches using NeRF or Gaussian-splatting jointly model appearance and geometry across many acquisitions, achieving accurate reconstructions on opportunistic imagery with numerous observations.
+◆ On the other hand, classical stereoscopic reconstruction pipelines deliver robust and scalable results for simultaneous or quasi-simultaneous image pairs.</td></tr>
+<tr><td>2026-01-30</td><td>PLANING: A Loosely Coupled Triangle-Gaussian Framework for Streaming 3D Reconstruction</td><td>[2601.22046](http://arxiv.org/pdf/2601.22046)</td><td>◆ Streaming reconstruction from monocular image sequences remains challenging, as existing methods typically favor either high-quality rendering or accurate geometry, but rarely both.
 ◆ We present PLANING, an efficient on-the-fly reconstruction framework built on a hybrid representation that loosely couples explicit geometric primitives with neural Gaussians, enabling geometry and appearance to be modeled in a decoupled manner.
 ◆ This decoupling supports an online initialization and optimization strategy that separates geometry and appearance updates, yielding stable streaming reconstruction with substantially reduced structural redundancy.</td></tr>
 <tr><td>2026-01-29</td><td>Hybrid Foveated Path Tracing with Peripheral Gaussians for Immersive Anatomy</td><td>[2601.22026](http://arxiv.org/pdf/2601.22026)</td><td>◆ Volumetric medical imaging offers great potential for understanding complex pathologies.
@@ -1051,6 +1063,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-01-30</td><td>Deep in the Jungle: Towards Automating Chimpanzee Population Estimation</td><td>[2601.22917](http://arxiv.org/pdf/2601.22917)</td><td>◆ The estimation of abundance and density in unmarked populations of great apes relies on statistical frameworks that require animal-to-camera distance measurements.
+◆ In practice, acquiring these distances depends on labour-intensive manual interpretation of animal observations across large camera trap video corpora.
+◆ This study introduces and evaluates an only sparsely explored alternative: the integration of computer vision-based monocular depth estimation (MDE) pipelines directly into ecological camera trap workflows for great ape conservation.</td></tr>
+<tr><td>2026-01-30</td><td>Diachronic Stereo Matching for Multi-Date Satellite Imagery</td><td>[2601.22808](http://arxiv.org/pdf/2601.22808)</td><td>◆ Recent advances in image-based satellite 3D reconstruction have progressed along two complementary directions.
+◆ On one hand, multi-date approaches using NeRF or Gaussian-splatting jointly model appearance and geometry across many acquisitions, achieving accurate reconstructions on opportunistic imagery with numerous observations.
+◆ On the other hand, classical stereoscopic reconstruction pipelines deliver robust and scalable results for simultaneous or quasi-simultaneous image pairs.</td></tr>
+<tr><td>2026-01-30</td><td>High-Definition 5MP Stereo Vision Sensing for Robotics</td><td>[2601.22445](http://arxiv.org/pdf/2601.22445)</td><td>◆ High-resolution (5MP+) stereo vision systems are essential for advancing robotic capabilities, enabling operation over longer ranges and generating significantly denser and accurate 3D point clouds.
+◆ However, realizing the full potential of high-angular-resolution sensors requires a commensurately higher level of calibration accuracy and faster processing -- requirements often unmet by conventional methods.
+◆ This study addresses that critical gap by processing 5MP camera imagery using a novel, advanced frame-to-frame calibration and stereo matching methodology designed to achieve both high accuracy and speed.</td></tr>
 <tr><td>2026-01-29</td><td>MetricAnything: Scaling Metric Depth Pretraining with Noisy Heterogeneous Sources</td><td>[2601.22054](http://arxiv.org/pdf/2601.22054)</td><td>◆ Scaling has powered recent advances in vision foundation models, yet extending this paradigm to metric depth estimation remains challenging due to heterogeneous sensor noise, camera-dependent biases, and metric ambiguity in noisy cross-source 3D data.
 ◆ We introduce Metric Anything, a simple and scalable pretraining framework that learns metric depth from noisy, diverse 3D sources without manually engineered prompts, camera-specific modeling, or task-specific architectures.
 ◆ Central to our approach is the Sparse Metric Prompt, created by randomly masking depth maps, which serves as a universal interface that decouples spatial reasoning from sensor and camera biases.</td></tr>
@@ -1351,4 +1372,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.01
+> 更新于: 2026.02.02
