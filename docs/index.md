@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.02.02)
+# SLAM领域最新论文 (2026.02.03)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,13 +22,25 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-02</td><td>Relationship-Aware Hierarchical 3D Scene Graph for Task Reasoning</td><td>[2602.02456](http://arxiv.org/pdf/2602.02456)</td><td>◆ Representing and understanding 3D environments in a structured manner is crucial for autonomous agents to navigate and reason about their surroundings.
+◆ While traditional Simultaneous Localization and Mapping (SLAM) methods generate metric reconstructions and can be extended to metric-semantic mapping, they lack a higher level of abstraction and relational reasoning.
+◆ To address this gap, 3D scene graphs have emerged as a powerful representation for capturing hierarchical structures and object relationships.</td></tr>
+<tr><td>2026-02-02</td><td>3D Foundation Model-Based Loop Closing for Decentralized Collaborative SLAM</td><td>[2602.02430](http://arxiv.org/pdf/2602.02430)</td><td>◆ Decentralized Collaborative Simultaneous Localization And Mapping (C-SLAM) techniques often struggle to identify map overlaps due to significant viewpoint variations among robots.
+◆ Motivated by recent advancements in 3D foundation models, which can register images despite large viewpoint differences, we propose a robust loop closing approach that leverages these models to establish inter-robot measurements.
+◆ In contrast to resource-intensive methods requiring full 3D reconstruction within a centralized map, our approach integrates foundation models into existing SLAM pipelines, yielding scalable and robust multi-robot mapping.</td></tr>
+<tr><td>2026-02-02</td><td>Mapping-Guided Task Discovery and Allocation for Robotic Inspection of Underwater Structures</td><td>[2602.02389](http://arxiv.org/pdf/2602.02389)</td><td>◆ Task generation for underwater multi-robot inspections without prior knowledge of existing geometry can be achieved and optimized through examination of simultaneous localization and mapping (SLAM) data.
+◆ By considering hardware parameters and environmental conditions, a set of tasks is generated from SLAM meshes and optimized through expected keypoint scores and distance-based pruning.
+◆ In-water tests are used to demonstrate the effectiveness of the algorithm and determine the appropriate parameters.</td></tr>
+<tr><td>2026-02-02</td><td>Real-Time Loop Closure Detection in Visual SLAM via NetVLAD and Faiss</td><td>[2602.01673](http://arxiv.org/pdf/2602.01673)</td><td>◆ Loop closure detection (LCD) is a core component of simultaneous localization and mapping (SLAM): it identifies revisited places and enables pose-graph constraints that correct accumulated drift.
+◆ Classic bag-of-words approaches such as DBoW are efficient but often degrade under appearance change and perceptual aliasing.
+◆ In parallel, deep learning-based visual place recognition (VPR) descriptors (e.g., NetVLAD and Transformer-based models) offer stronger robustness, but their computational cost is often viewed as a barrier to real-time SLAM.</td></tr>
 <tr><td>2026-01-29</td><td>IROS: A Dual-Process Architecture for Real-Time VLM-Based Indoor Navigation</td><td>[2601.21506](http://arxiv.org/pdf/2601.21506)</td><td>◆ Indoor mobile robot navigation requires fast responsiveness and robust semantic understanding, yet existing methods struggle to provide both.
 ◆ Classical geometric approaches such as SLAM offer reliable localization but depend on detailed maps and cannot interpret human-targeted cues (e.g., signs, room numbers) essential for indoor reasoning.
 ◆ Vision-Language-Action (VLA) models introduce semantic grounding but remain strictly reactive, basing decisions only on visible frames and failing to anticipate unseen intersections or reason about distant textual cues.</td></tr>
 <tr><td>2026-01-28</td><td>Multi-Robot Decentralized Collaborative SLAM in Planetary Analogue Environments: Dataset, Challenges, and Lessons Learned</td><td>[2601.21063](http://arxiv.org/pdf/2601.21063)</td><td>◆ Decentralized collaborative simultaneous localization and mapping (C-SLAM) is essential to enable multirobot missions in unknown environments without relying on preexisting localization and communication infrastructure.
 ◆ This technology is anticipated to play a key role in the exploration of the Moon, Mars, and other planets.
 ◆ In this article, we share insights and lessons learned from C-SLAM experiments involving three robots operating on a Mars analogue terrain and communicating over an ad hoc network.</td></tr>
-<tr><td>2026-01-27</td><td>VGGT-SLAM 2.0: Real time Dense Feed-forward Scene Reconstruction</td><td>[2601.19887](http://arxiv.org/pdf/2601.19887)</td><td>◆ We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT.
+<tr><td>2026-01-30</td><td>VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction</td><td>[2601.19887](http://arxiv.org/pdf/2601.19887)</td><td>◆ We present VGGT-SLAM 2.0, a real time RGB feed-forward SLAM system which substantially improves upon VGGT-SLAM for incrementally aligning submaps created from VGGT.
 ◆ Firstly, we remove high-dimensional 15-degree-of-freedom drift and planar degeneracy from VGGT-SLAM by creating a new factor graph design while still addressing the reconstruction ambiguity of VGGT given unknown camera intrinsics.
 ◆ Secondly, by studying the attention layers of VGGT, we show that one of the layers is well suited to assist in image retrieval verification for free without additional training, which enables both rejecting false positive matches and allows for completing more loop closures.</td></tr>
 <tr><td>2026-01-27</td><td>The S3LI Vulcano Dataset: A Dataset for Multi-Modal SLAM in Unstructured Planetary Environments</td><td>[2601.19557](http://arxiv.org/pdf/2601.19557)</td><td>◆ We release the S3LI Vulcano dataset, a multi-modal dataset towards development and benchmarking of Simultaneous Localization and Mapping (SLAM) and place recognition algorithms that rely on visual and LiDAR modalities.
@@ -239,6 +251,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-02</td><td>Vision-only UAV State Estimation for Fast Flights Without External Localization Systems: A2RL Drone Racing Finalist Approach</td><td>[2602.01860](http://arxiv.org/pdf/2602.01860)</td><td>◆ Fast flights with aggressive maneuvers in cluttered GNSS-denied environments require fast, reliable, and accurate UAV state estimation.
+◆ In this paper, we present an approach for onboard state estimation of a high-speed UAV using a monocular RGB camera and an IMU.
+◆ Our approach fuses data from Visual-Inertial Odometry (VIO), an onboard landmark-based camera measurement system, and an IMU to produce an accurate state estimate.</td></tr>
+<tr><td>2026-02-02</td><td>Real-Time Loop Closure Detection in Visual SLAM via NetVLAD and Faiss</td><td>[2602.01673](http://arxiv.org/pdf/2602.01673)</td><td>◆ Loop closure detection (LCD) is a core component of simultaneous localization and mapping (SLAM): it identifies revisited places and enables pose-graph constraints that correct accumulated drift.
+◆ Classic bag-of-words approaches such as DBoW are efficient but often degrade under appearance change and perceptual aliasing.
+◆ In parallel, deep learning-based visual place recognition (VPR) descriptors (e.g., NetVLAD and Transformer-based models) offer stronger robustness, but their computational cost is often viewed as a barrier to real-time SLAM.</td></tr>
 <tr><td>2026-01-22</td><td>Keyframe-Based Feed-Forward Visual Odometry</td><td>[2601.16020](http://arxiv.org/pdf/2601.16020)</td><td>◆ The emergence of visual foundation models has revolutionized visual odometry~(VO) and SLAM, enabling pose estimation and dense reconstruction within a single feed-forward network.
 ◆ However, unlike traditional pipelines that leverage keyframe methods to enhance efficiency and accuracy, current foundation model based methods, such as VGGT-Long, typically process raw image sequences indiscriminately.
 ◆ This leads to computational redundancy and degraded performance caused by low inter-frame parallax, which provides limited contextual stereo information.</td></tr>
@@ -312,6 +330,33 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-02</td><td>Multi-Agent Monte Carlo Tree Search for Makespan-Efficient Object Rearrangement in Cluttered Spaces</td><td>[2602.02411](http://arxiv.org/pdf/2602.02411)</td><td>◆ Object rearrangement planning in complex, cluttered environments is a common challenge in warehouses, households, and rescue sites.
+◆ Prior studies largely address monotone instances, whereas real-world tasks are often non-monotone-objects block one another and must be temporarily relocated to intermediate positions before reaching their final goals.
+◆ In such settings, effective multi-agent collaboration can substantially reduce the time required to complete tasks.</td></tr>
+<tr><td>2026-02-02</td><td>Infinite-World: Scaling Interactive World Models to 1000-Frame Horizons via Pose-Free Hierarchical Memory</td><td>[2602.02393](http://arxiv.org/pdf/2602.02393)</td><td>◆ We propose Infinite-World, a robust interactive world model capable of maintaining coherent visual memory over 1000+ frames in complex real-world environments.
+◆ While existing world models can be efficiently optimized on synthetic data with perfect ground-truth, they lack an effective training paradigm for real-world videos due to noisy pose estimations and the scarcity of viewpoint revisits.
+◆ To bridge this gap, we first introduce a Hierarchical Pose-free Memory Compressor (HPMC) that recursively distills historical latents into a fixed-budget representation.</td></tr>
+<tr><td>2026-02-02</td><td>A Two-Stage Stochastic Optimization Model for the Equitable Deployment of Fixed and Mobile Electric Vehicle Charging Stations</td><td>[2602.02333](http://arxiv.org/pdf/2602.02333)</td><td>◆ A major barrier to wide adoption of Electric Vehicles (EVs) is the absence of reliable and equitable charging infrastructure.
+◆ Poorly located charging stations create coverage gaps and slow down EV adoption, especially in underserved communities.
+◆ This paper proposes a two-stage stochastic mixed-integer programming model for the optimal deployment of Fixed and Mobile Charging Stations (FCSs and MCSs) across multiple zones and periods.</td></tr>
+<tr><td>2026-02-02</td><td>Tidehunter: Large-Value Storage With Minimal Data Relocation</td><td>[2602.01873](http://arxiv.org/pdf/2602.01873)</td><td>◆ Log-Structured Merge-Trees (LSM-trees) dominate persistent key-value storage but suffer from high write amplification from 10x to 30x under random workloads due to repeated compaction.
+◆ This overhead becomes prohibitive for large values with uniformly distributed keys, a workload common in content-addressable storage, deduplication systems, and blockchain validators.
+◆ We present Tidehunter, a storage engine that eliminates value compaction by treating the Write-Ahead Log (WAL) as permanent storage rather than a temporary recovery buffer.</td></tr>
+<tr><td>2026-02-02</td><td>Real-Time Loop Closure Detection in Visual SLAM via NetVLAD and Faiss</td><td>[2602.01673](http://arxiv.org/pdf/2602.01673)</td><td>◆ Loop closure detection (LCD) is a core component of simultaneous localization and mapping (SLAM): it identifies revisited places and enables pose-graph constraints that correct accumulated drift.
+◆ Classic bag-of-words approaches such as DBoW are efficient but often degrade under appearance change and perceptual aliasing.
+◆ In parallel, deep learning-based visual place recognition (VPR) descriptors (e.g., NetVLAD and Transformer-based models) offer stronger robustness, but their computational cost is often viewed as a barrier to real-time SLAM.</td></tr>
+<tr><td>2026-02-02</td><td>TreeLoc: 6-DoF LiDAR Global Localization in Forests via Inter-Tree Geometric Matching</td><td>[2602.01501](http://arxiv.org/pdf/2602.01501)</td><td>◆ Reliable localization is crucial for navigation in forests, where GPS is often degraded and LiDAR measurements are repetitive, occluded, and structurally complex.
+◆ These conditions weaken the assumptions of traditional urban-centric localization methods, which assume that consistent features arise from unique structural patterns, necessitating forest-centric solutions to achieve robustness in these environments.
+◆ To address these challenges, we propose TreeLoc, a LiDAR-based global localization framework for forests that handles place recognition and 6-DoF pose estimation.</td></tr>
+<tr><td>2026-01-31</td><td>Invariance on Manifolds: Understanding Robust Visual Representations for Place Recognition</td><td>[2602.00841](http://arxiv.org/pdf/2602.00841)</td><td>◆ Visual Place Recognition (VPR) demands representations robust to drastic environmental and viewpoint shifts.
+◆ Current aggregation paradigms, however, either rely on data-hungry supervision or simplistic first-order statistics, often neglecting intrinsic structural correlations.
+◆ In this work, we propose a Second-Order Geometric Statistics framework that inherently captures geometric stability without training.</td></tr>
+<tr><td>2026-01-31</td><td>Refining Strokes by Learning Offset Attributes between Strokes for Flexible Sketch Edit at Stroke-Level</td><td>[2602.00489](http://arxiv.org/pdf/2602.00489)</td><td>◆ Sketch edit at stroke-level aims to transplant source strokes onto a target sketch via stroke expansion or replacement, while preserving semantic consistency and visual fidelity with the target sketch.
+◆ Recent studies addressed it by relocating source strokes at appropriate canvas positions.
+◆ However, as source strokes could exhibit significant variations in both size and orientation, we may fail to produce plausible sketch editing results by merely repositioning them without further adjustments.</td></tr>
+<tr><td>2026-01-30</td><td>Fragmentation of a longitudinal population-scale social network: Decreasing network closure in the Netherlands</td><td>[2602.00234](http://arxiv.org/pdf/2602.00234)</td><td>◆ Population-level dynamics of social cohesion and its underlying mechanisms remain difficult to study.
+◆ In this paper, we propose a network approach to measure the evolution of social cohesion at the population scale and identify mechanisms driving the change.
+◆ We use twelve annual snapshots (2010-2021) of a population-scale social network from the Netherlands linking all residents through family, household, work, school, and neighbor relations.</td></tr>
 <tr><td>2026-01-29</td><td>Advanced techniques and applications of LiDAR Place Recognition in Agricultural Environments: A Comprehensive Survey</td><td>[2601.22198](http://arxiv.org/pdf/2601.22198)</td><td>◆ An optimal solution to the localization problem is essential for developing autonomous robotic systems.
 ◆ Apart from autonomous vehicles, precision agriculture is one of the elds that can bene t most from these systems.
 ◆ Although LiDAR place recognition is a widely used technique in recent years to achieve accurate localization, it is mostly used in urban settings.</td></tr>
@@ -689,6 +734,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-02</td><td>SoMA: A Real-to-Sim Neural Simulator for Robotic Soft-body Manipulation</td><td>[2602.02402](http://arxiv.org/pdf/2602.02402)</td><td>◆ Simulating deformable objects under rich interactions remains a fundamental challenge for real-to-sim robot manipulation, with dynamics jointly driven by environmental effects and robot actions.
+◆ Existing simulators rely on predefined physics or data-driven dynamics without robot-conditioned control, limiting accuracy, stability, and generalization.
+◆ This paper presents SoMA, a 3D Gaussian Splat simulator for soft-body manipulation.</td></tr>
+<tr><td>2026-02-02</td><td>UrbanGS: A Scalable and Efficient Architecture for Geometrically Accurate Large-Scene Reconstruction</td><td>[2602.02089](http://arxiv.org/pdf/2602.02089)</td><td>◆ While 3D Gaussian Splatting (3DGS) enables high-quality, real-time rendering for bounded scenes, its extension to large-scale urban environments gives rise to critical challenges in terms of geometric consistency, memory efficiency, and computational scalability.
+◆ To address these issues, we present UrbanGS, a scalable reconstruction framework that effectively tackles these challenges for city-scale applications.
+◆ First, we propose a Depth-Consistent D-Normal Regularization module.</td></tr>
+<tr><td>2026-02-02</td><td>SurfSplat: Conquering Feedforward 2D Gaussian Splatting with Surface Continuity Priors</td><td>[2602.02000](http://arxiv.org/pdf/2602.02000)</td><td>◆ Reconstructing 3D scenes from sparse images remains a challenging task due to the difficulty of recovering accurate geometry and texture without optimization.
+◆ Recent approaches leverage generalizable models to generate 3D scenes using 3D Gaussian Splatting (3DGS) primitive.
+◆ However, they often fail to produce continuous surfaces and instead yield discrete, color-biased point clouds that appear plausible at normal resolution but reveal severe artifacts under close-up views.</td></tr>
+<tr><td>2026-02-02</td><td>CloDS: Visual-Only Unsupervised Cloth Dynamics Learning in Unknown Conditions</td><td>[2602.01844](http://arxiv.org/pdf/2602.01844)</td><td>◆ Deep learning has demonstrated remarkable capabilities in simulating complex dynamic systems.
+◆ However, existing methods require known physical properties as supervision or inputs, limiting their applicability under unknown conditions.
+◆ To explore this challenge, we introduce Cloth Dynamics Grounding (CDG), a novel scenario for unsupervised learning of cloth dynamics from multi-view visual observations.</td></tr>
+<tr><td>2026-02-02</td><td>FastPhysGS: Accelerating Physics-based Dynamic 3DGS Simulation via Interior Completion and Adaptive Optimization</td><td>[2602.01723](http://arxiv.org/pdf/2602.01723)</td><td>◆ Extending 3D Gaussian Splatting (3DGS) to 4D physical simulation remains challenging.
+◆ Based on the Material Point Method (MPM), existing methods either rely on manual parameter tuning or distill dynamics from video diffusion models, limiting the generalization and optimization efficiency.
+◆ Recent attempts using LLMs/VLMs suffer from a text/image-to-3D perceptual gap, yielding unstable physics behavior.</td></tr>
+<tr><td>2026-02-02</td><td>VRGaussianAvatar: Integrating 3D Gaussian Avatars into VR</td><td>[2602.01674](http://arxiv.org/pdf/2602.01674)</td><td>◆ We present VRGaussianAvatar, an integrated system that enables real-time full-body 3D Gaussian Splatting (3DGS) avatars in virtual reality using only head-mounted display (HMD) tracking signals.
+◆ The system adopts a parallel pipeline with a VR Frontend and a GA Backend.
+◆ The VR Frontend uses inverse kinematics to estimate full-body pose and streams the resulting pose along with stereo camera parameters to the backend.</td></tr>
+<tr><td>2026-02-02</td><td>MarkCleaner: High-Fidelity Watermark Removal via Imperceptible Micro-Geometric Perturbation</td><td>[2602.01513](http://arxiv.org/pdf/2602.01513)</td><td>◆ Semantic watermarks exhibit strong robustness against conventional image-space attacks.
+◆ In this work, we show that such robustness does not survive under micro-geometric perturbations: spatial displacements can remove watermarks by breaking the phase alignment.
+◆ Motivated by this observation, we introduce MarkCleaner, a watermark removal framework that avoids semantic drift caused by regeneration-based watermark removal.</td></tr>
+<tr><td>2026-02-01</td><td>Radioactive 3D Gaussian Ray Tracing for Tomographic Reconstruction</td><td>[2602.01057](http://arxiv.org/pdf/2602.01057)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently emerged in computer vision as a promising rendering technique.
+◆ By adapting the principles of Elliptical Weighted Average (EWA) splatting to a modern differentiable pipeline, 3DGS enables real-time, high-quality novel view synthesis.
+◆ Building upon this, R2-Gaussian extended the 3DGS paradigm to tomographic reconstruction by rectifying integration bias, achieving state-of-the-art performance in computed tomography (CT).</td></tr>
+<tr><td>2026-01-31</td><td>HPC: Hierarchical Point-based Latent Representation for Streaming Dynamic Gaussian Splatting Compression</td><td>[2602.00671](http://arxiv.org/pdf/2602.00671)</td><td>◆ While dynamic Gaussian Splatting has driven significant advances in free-viewpoint video, maintaining its rendering quality with a small memory footprint for efficient streaming transmission still presents an ongoing challenge.
+◆ Existing streaming dynamic Gaussian Splatting compression methods typically leverage a latent representation to drive the neural network for predicting Gaussian residuals between frames.
+◆ Their core latent representations can be categorized into structured grid-based and unstructured point-based paradigms.</td></tr>
+<tr><td>2026-01-31</td><td>Tune-Your-Style: Intensity-tunable 3D Style Transfer with Gaussian Splatting</td><td>[2602.00618](http://arxiv.org/pdf/2602.00618)</td><td>◆ 3D style transfer refers to the artistic stylization of 3D assets based on reference style images.
+◆ Recently, 3DGS-based stylization methods have drawn considerable attention, primarily due to their markedly enhanced training and rendering speeds.
+◆ However, a vital challenge for 3D style transfer is to strike a balance between the content and the patterns and colors of the style.</td></tr>
 <tr><td>2026-01-30</td><td>EAG-PT: Emission-Aware Gaussians and Path Tracing for Indoor Scene Reconstruction and Editing</td><td>[2601.23065](http://arxiv.org/pdf/2601.23065)</td><td>◆ Recent reconstruction methods based on radiance field such as NeRF and 3DGS reproduce indoor scenes with high visual fidelity, but break down under scene editing due to baked illumination and the lack of explicit light transport.
 ◆ In contrast, physically based inverse rendering relies on mesh representations and path tracing, which enforce correct light transport but place strong requirements on geometric fidelity, becoming a practical bottleneck for real indoor scenes.
 ◆ In this work, we propose Emission-Aware Gaussians and Path Tracing (EAG-PT), aiming for physically based light transport with a unified 2D Gaussian representation.</td></tr>
@@ -1063,6 +1138,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-02</td><td>Multi-Task Learning for Robot Perception with Imbalanced Data</td><td>[2602.01899](http://arxiv.org/pdf/2602.01899)</td><td>◆ Multi-task problem solving has been shown to improve the accuracy of the individual tasks, which is an important feature for robots, as they have a limited resource.
+◆ However, when the number of labels for each task is not equal, namely imbalanced data exist, a problem may arise due to insufficient number of samples, and labeling is not very easy for mobile robots in every environment.
+◆ We propose a method that can learn tasks even in the absence of the ground truth labels for some of the tasks.</td></tr>
+<tr><td>2026-02-01</td><td>OASIS-DC: Generalizable Depth Completion via Output-level Alignment of Sparse-Integrated Monocular Pseudo Depth</td><td>[2602.01268](http://arxiv.org/pdf/2602.01268)</td><td>◆ Recent monocular foundation models excel at zero-shot depth estimation, yet their outputs are inherently relative rather than metric, limiting direct use in robotics and autonomous driving.
+◆ We leverage the fact that relative depth preserves global layout and boundaries: by calibrating it with sparse range measurements, we transform it into a pseudo metric depth prior.
+◆ Building on this prior, we design a refinement network that follows the prior where reliable and deviates where necessary, enabling accurate metric predictions from very few labeled samples.</td></tr>
 <tr><td>2026-01-30</td><td>Deep in the Jungle: Towards Automating Chimpanzee Population Estimation</td><td>[2601.22917](http://arxiv.org/pdf/2601.22917)</td><td>◆ The estimation of abundance and density in unmarked populations of great apes relies on statistical frameworks that require animal-to-camera distance measurements.
 ◆ In practice, acquiring these distances depends on labour-intensive manual interpretation of animal observations across large camera trap video corpora.
 ◆ This study introduces and evaluates an only sparsely explored alternative: the integration of computer vision-based monocular depth estimation (MDE) pipelines directly into ecological camera trap workflows for great ape conservation.</td></tr>
@@ -1372,4 +1453,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.02
+> 更新于: 2026.02.03
