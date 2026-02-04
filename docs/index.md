@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.02.03)
+# SLAM领域最新论文 (2026.02.04)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -251,6 +251,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-03</td><td>LEVIO: Lightweight Embedded Visual Inertial Odometry for Resource-Constrained Devices</td><td>[2602.03294](http://arxiv.org/pdf/2602.03294)</td><td>◆ Accurate, infrastructure-less sensor systems for motion tracking are essential for mobile robotics and augmented reality (AR) applications.
+◆ The most popular state-of-the-art visual-inertial odometry (VIO) systems, however, are too computationally demanding for resource-constrained hardware, such as micro-drones and smart glasses.
+◆ This work presents LEVIO, a fully featured VIO pipeline optimized for ultra-low-power compute platforms, allowing six-degrees-of-freedom (DoF) real-time sensing.</td></tr>
 <tr><td>2026-02-02</td><td>Vision-only UAV State Estimation for Fast Flights Without External Localization Systems: A2RL Drone Racing Finalist Approach</td><td>[2602.01860](http://arxiv.org/pdf/2602.01860)</td><td>◆ Fast flights with aggressive maneuvers in cluttered GNSS-denied environments require fast, reliable, and accurate UAV state estimation.
 ◆ In this paper, we present an approach for onboard state estimation of a high-speed UAV using a monocular RGB camera and an IMU.
 ◆ Our approach fuses data from Visual-Inertial Odometry (VIO), an onboard landmark-based camera measurement system, and an IMU to produce an accurate state estimate.</td></tr>
@@ -330,10 +333,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-03</td><td>LaVPR: Benchmarking Language and Vision for Place Recognition</td><td>[2602.03253](http://arxiv.org/pdf/2602.03253)</td><td>◆ Visual Place Recognition (VPR) often fails under extreme environmental changes and perceptual aliasing.
+◆ Furthermore, standard systems cannot perform &quot;blind&quot; localization from verbal descriptions alone, a capability needed for applications such as emergency response.
+◆ To address these challenges, we introduce LaVPR, a large-scale benchmark that extends existing VPR datasets with over 650,000 rich natural-language descriptions.</td></tr>
+<tr><td>2026-02-03</td><td>From Single Scan to Sequential Consistency: A New Paradigm for LIDAR Relocalization</td><td>[2602.03198](http://arxiv.org/pdf/2602.03198)</td><td>◆ LiDAR relocalization aims to estimate the global 6-DoF pose of a sensor in the environment.
+◆ However, existing regression-based approaches are prone to dynamic or ambiguous scenarios, as they either solely rely on single-frame inference or neglect the spatio-temporal consistency across scans.
+◆ In this paper, we propose TempLoc, a new LiDAR relocalization framework that enhances the robustness of localization by effectively modeling sequential consistency.</td></tr>
 <tr><td>2026-02-02</td><td>Multi-Agent Monte Carlo Tree Search for Makespan-Efficient Object Rearrangement in Cluttered Spaces</td><td>[2602.02411](http://arxiv.org/pdf/2602.02411)</td><td>◆ Object rearrangement planning in complex, cluttered environments is a common challenge in warehouses, households, and rescue sites.
 ◆ Prior studies largely address monotone instances, whereas real-world tasks are often non-monotone-objects block one another and must be temporarily relocated to intermediate positions before reaching their final goals.
 ◆ In such settings, effective multi-agent collaboration can substantially reduce the time required to complete tasks.</td></tr>
-<tr><td>2026-02-02</td><td>Infinite-World: Scaling Interactive World Models to 1000-Frame Horizons via Pose-Free Hierarchical Memory</td><td>[2602.02393](http://arxiv.org/pdf/2602.02393)</td><td>◆ We propose Infinite-World, a robust interactive world model capable of maintaining coherent visual memory over 1000+ frames in complex real-world environments.
+<tr><td>2026-02-03</td><td>Infinite-World: Scaling Interactive World Models to 1000-Frame Horizons via Pose-Free Hierarchical Memory</td><td>[2602.02393](http://arxiv.org/pdf/2602.02393)</td><td>◆ We propose Infinite-World, a robust interactive world model capable of maintaining coherent visual memory over 1000+ frames in complex real-world environments.
 ◆ While existing world models can be efficiently optimized on synthetic data with perfect ground-truth, they lack an effective training paradigm for real-world videos due to noisy pose estimations and the scarcity of viewpoint revisits.
 ◆ To bridge this gap, we first introduce a Hierarchical Pose-free Memory Compressor (HPMC) that recursively distills historical latents into a fixed-budget representation.</td></tr>
 <tr><td>2026-02-02</td><td>A Two-Stage Stochastic Optimization Model for the Equitable Deployment of Fixed and Mobile Electric Vehicle Charging Stations</td><td>[2602.02333](http://arxiv.org/pdf/2602.02333)</td><td>◆ A major barrier to wide adoption of Electric Vehicles (EVs) is the absence of reliable and equitable charging infrastructure.
@@ -345,7 +354,7 @@
 <tr><td>2026-02-02</td><td>Real-Time Loop Closure Detection in Visual SLAM via NetVLAD and Faiss</td><td>[2602.01673](http://arxiv.org/pdf/2602.01673)</td><td>◆ Loop closure detection (LCD) is a core component of simultaneous localization and mapping (SLAM): it identifies revisited places and enables pose-graph constraints that correct accumulated drift.
 ◆ Classic bag-of-words approaches such as DBoW are efficient but often degrade under appearance change and perceptual aliasing.
 ◆ In parallel, deep learning-based visual place recognition (VPR) descriptors (e.g., NetVLAD and Transformer-based models) offer stronger robustness, but their computational cost is often viewed as a barrier to real-time SLAM.</td></tr>
-<tr><td>2026-02-02</td><td>TreeLoc: 6-DoF LiDAR Global Localization in Forests via Inter-Tree Geometric Matching</td><td>[2602.01501](http://arxiv.org/pdf/2602.01501)</td><td>◆ Reliable localization is crucial for navigation in forests, where GPS is often degraded and LiDAR measurements are repetitive, occluded, and structurally complex.
+<tr><td>2026-02-03</td><td>TreeLoc: 6-DoF LiDAR Global Localization in Forests via Inter-Tree Geometric Matching</td><td>[2602.01501](http://arxiv.org/pdf/2602.01501)</td><td>◆ Reliable localization is crucial for navigation in forests, where GPS is often degraded and LiDAR measurements are repetitive, occluded, and structurally complex.
 ◆ These conditions weaken the assumptions of traditional urban-centric localization methods, which assume that consistent features arise from unique structural patterns, necessitating forest-centric solutions to achieve robustness in these environments.
 ◆ To address these challenges, we propose TreeLoc, a LiDAR-based global localization framework for forests that handles place recognition and 6-DoF pose estimation.</td></tr>
 <tr><td>2026-01-31</td><td>Invariance on Manifolds: Understanding Robust Visual Representations for Place Recognition</td><td>[2602.00841](http://arxiv.org/pdf/2602.00841)</td><td>◆ Visual Place Recognition (VPR) demands representations robust to drastic environmental and viewpoint shifts.
@@ -734,13 +743,25 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-03</td><td>Constrained Dynamic Gaussian Splatting</td><td>[2602.03538](http://arxiv.org/pdf/2602.03538)</td><td>◆ While Dynamic Gaussian Splatting enables high-fidelity 4D reconstruction, its deployment is severely hindered by a fundamental dilemma: unconstrained densification leads to excessive memory consumption incompatible with edge devices, whereas heuristic pruning fails to achieve optimal rendering quality under preset Gaussian budgets.
+◆ In this work, we propose Constrained Dynamic Gaussian Splatting (CDGS), a novel framework that formulates dynamic scene reconstruction as a budget-constrained optimization problem to enforce a strict, user-defined Gaussian budget during training.
+◆ Our key insight is to introduce a differentiable budget controller as the core optimization driver.</td></tr>
+<tr><td>2026-02-03</td><td>Pi-GS: Sparse-View Gaussian Splatting with Dense π^3 Initialization</td><td>[2602.03327](http://arxiv.org/pdf/2602.03327)</td><td>◆ Novel view synthesis has evolved rapidly, advancing from Neural Radiance Fields to 3D Gaussian Splatting (3DGS), which offers real-time rendering and rapid training without compromising visual fidelity.
+◆ However, 3DGS relies heavily on accurate camera poses and high-quality point cloud initialization, which are difficult to obtain in sparse-view scenarios.
+◆ While traditional Structure from Motion (SfM) pipelines often fail in these settings, existing learning-based point estimation alternatives typically require reliable reference views and remain sensitive to pose or depth errors.</td></tr>
+<tr><td>2026-02-03</td><td>WebSplatter: Enabling Cross-Device Efficient Gaussian Splatting in Web Browsers via WebGPU</td><td>[2602.03207](http://arxiv.org/pdf/2602.03207)</td><td>◆ We present WebSplatter, an end-to-end GPU rendering pipeline for the heterogeneous web ecosystem.
+◆ Unlike naive ports, WebSplatter introduces a wait-free hierarchical radix sort that circumvents the lack of global atomics in WebGPU, ensuring deterministic execution across diverse hardware.
+◆ Furthermore, we propose an opacity-aware geometry culling stage that dynamically prunes splats before rasterization, significantly reducing overdraw and peak memory footprint.</td></tr>
+<tr><td>2026-02-03</td><td>SharpTimeGS: Sharp and Stable Dynamic Gaussian Splatting via Lifespan Modulation</td><td>[2602.02989](http://arxiv.org/pdf/2602.02989)</td><td>◆ Novel view synthesis of dynamic scenes is fundamental to achieving photorealistic 4D reconstruction and immersive visual experiences.
+◆ Recent progress in Gaussian-based representations has significantly improved real-time rendering quality, yet existing methods still struggle to maintain a balance between long-term static and short-term dynamic regions in both representation and optimization.
+◆ To address this, we present SharpTimeGS, a lifespan-aware 4D Gaussian framework that achieves temporally adaptive modeling of both static and dynamic regions under a unified representation.</td></tr>
 <tr><td>2026-02-02</td><td>SoMA: A Real-to-Sim Neural Simulator for Robotic Soft-body Manipulation</td><td>[2602.02402](http://arxiv.org/pdf/2602.02402)</td><td>◆ Simulating deformable objects under rich interactions remains a fundamental challenge for real-to-sim robot manipulation, with dynamics jointly driven by environmental effects and robot actions.
 ◆ Existing simulators rely on predefined physics or data-driven dynamics without robot-conditioned control, limiting accuracy, stability, and generalization.
 ◆ This paper presents SoMA, a 3D Gaussian Splat simulator for soft-body manipulation.</td></tr>
 <tr><td>2026-02-02</td><td>UrbanGS: A Scalable and Efficient Architecture for Geometrically Accurate Large-Scene Reconstruction</td><td>[2602.02089](http://arxiv.org/pdf/2602.02089)</td><td>◆ While 3D Gaussian Splatting (3DGS) enables high-quality, real-time rendering for bounded scenes, its extension to large-scale urban environments gives rise to critical challenges in terms of geometric consistency, memory efficiency, and computational scalability.
 ◆ To address these issues, we present UrbanGS, a scalable reconstruction framework that effectively tackles these challenges for city-scale applications.
 ◆ First, we propose a Depth-Consistent D-Normal Regularization module.</td></tr>
-<tr><td>2026-02-02</td><td>SurfSplat: Conquering Feedforward 2D Gaussian Splatting with Surface Continuity Priors</td><td>[2602.02000](http://arxiv.org/pdf/2602.02000)</td><td>◆ Reconstructing 3D scenes from sparse images remains a challenging task due to the difficulty of recovering accurate geometry and texture without optimization.
+<tr><td>2026-02-03</td><td>SurfSplat: Conquering Feedforward 2D Gaussian Splatting with Surface Continuity Priors</td><td>[2602.02000](http://arxiv.org/pdf/2602.02000)</td><td>◆ Reconstructing 3D scenes from sparse images remains a challenging task due to the difficulty of recovering accurate geometry and texture without optimization.
 ◆ Recent approaches leverage generalizable models to generate 3D scenes using 3D Gaussian Splatting (3DGS) primitive.
 ◆ However, they often fail to produce continuous surfaces and instead yield discrete, color-biased point clouds that appear plausible at normal resolution but reveal severe artifacts under close-up views.</td></tr>
 <tr><td>2026-02-02</td><td>CloDS: Visual-Only Unsupervised Cloth Dynamics Learning in Unknown Conditions</td><td>[2602.01844](http://arxiv.org/pdf/2602.01844)</td><td>◆ Deep learning has demonstrated remarkable capabilities in simulating complex dynamic systems.
@@ -1138,6 +1159,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-03</td><td>Depth Completion in Unseen Field Robotics Environments Using Extremely Sparse Depth Measurements</td><td>[2602.03209](http://arxiv.org/pdf/2602.03209)</td><td>◆ Autonomous field robots operating in unstructured environments require robust perception to ensure safe and reliable operations.
+◆ Recent advances in monocular depth estimation have demonstrated the potential of low-cost cameras as depth sensors; however, their adoption in field robotics remains limited due to the absence of reliable scale cues, ambiguous or low-texture conditions, and the scarcity of large-scale datasets.
+◆ To address these challenges, we propose a depth completion model that trains on synthetic data and uses extremely sparse measurements from depth sensors to predict dense metric depth in unseen field robotics environments.</td></tr>
 <tr><td>2026-02-02</td><td>Multi-Task Learning for Robot Perception with Imbalanced Data</td><td>[2602.01899](http://arxiv.org/pdf/2602.01899)</td><td>◆ Multi-task problem solving has been shown to improve the accuracy of the individual tasks, which is an important feature for robots, as they have a limited resource.
 ◆ However, when the number of labels for each task is not equal, namely imbalanced data exist, a problem may arise due to insufficient number of samples, and labeling is not very easy for mobile robots in every environment.
 ◆ We propose a method that can learn tasks even in the absence of the ground truth labels for some of the tasks.</td></tr>
@@ -1453,4 +1477,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.03
+> 更新于: 2026.02.04
