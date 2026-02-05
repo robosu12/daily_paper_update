@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.02.04)
+# SLAM领域最新论文 (2026.02.05)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-04</td><td>Towards Next-Generation SLAM: A Survey on 3DGS-SLAM Focusing on Performance, Robustness, and Future Directions</td><td>[2602.04251](http://arxiv.org/pdf/2602.04251)</td><td>◆ Traditional Simultaneous Localization and Mapping (SLAM) systems often face limitations including coarse rendering quality, insufficient recovery of scene details, and poor robustness in dynamic environments.
+◆ 3D Gaussian Splatting (3DGS), with its efficient explicit representation and high-quality rendering capabilities, offers a new reconstruction paradigm for SLAM.
+◆ This survey comprehensively reviews key technical approaches for integrating 3DGS with SLAM.</td></tr>
+<tr><td>2026-02-03</td><td>Beyond the Vehicle: Cooperative Localization by Fusing Point Clouds for GPS-Challenged Urban Scenarios</td><td>[2602.03908](http://arxiv.org/pdf/2602.03908)</td><td>◆ Accurate vehicle localization is a critical challenge in urban environments where GPS signals are often unreliable.
+◆ This paper presents a cooperative multi-sensor and multi-modal localization approach to address this issue by fusing data from vehicle-to-vehicle (V2V) and vehicle-to-infrastructure (V2I) systems.
+◆ Our approach integrates cooperative data with a point cloud registration-based simultaneous localization and mapping (SLAM) algorithm.</td></tr>
 <tr><td>2026-02-02</td><td>Relationship-Aware Hierarchical 3D Scene Graph for Task Reasoning</td><td>[2602.02456](http://arxiv.org/pdf/2602.02456)</td><td>◆ Representing and understanding 3D environments in a structured manner is crucial for autonomous agents to navigate and reason about their surroundings.
 ◆ While traditional Simultaneous Localization and Mapping (SLAM) methods generate metric reconstructions and can be extended to metric-semantic mapping, they lack a higher level of abstraction and relational reasoning.
 ◆ To address this gap, 3D scene graphs have emerged as a powerful representation for capturing hierarchical structures and object relationships.</td></tr>
@@ -333,6 +339,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-04</td><td>S-MUSt3R: Sliding Multi-view 3D Reconstruction</td><td>[2602.04517](http://arxiv.org/pdf/2602.04517)</td><td>◆ The recent paradigm shift in 3D vision led to the rise of foundation models with remarkable capabilities in 3D perception from uncalibrated images.
+◆ However, extending these models to large-scale RGB stream 3D reconstruction remains challenging due to memory limitations.
+◆ This work proposes S-MUSt3R, a simple and efficient pipeline that extends the limits of foundation models for monocular 3D reconstruction.</td></tr>
+<tr><td>2026-02-04</td><td>Quantile Transfer for Reliable Operating Point Selection in Visual Place Recognition</td><td>[2602.04401](http://arxiv.org/pdf/2602.04401)</td><td>◆ Visual Place Recognition (VPR) is a key component for localisation in GNSS-denied environments, but its performance critically depends on selecting an image matching threshold (operating point) that balances precision and recall.
+◆ Thresholds are typically hand-tuned offline for a specific environment and fixed during deployment, leading to degraded performance under environmental change.
+◆ We propose a method that, given a user-defined precision requirement, automatically selects the operating point of a VPR system to maximise recall.</td></tr>
 <tr><td>2026-02-03</td><td>LaVPR: Benchmarking Language and Vision for Place Recognition</td><td>[2602.03253](http://arxiv.org/pdf/2602.03253)</td><td>◆ Visual Place Recognition (VPR) often fails under extreme environmental changes and perceptual aliasing.
 ◆ Furthermore, standard systems cannot perform &quot;blind&quot; localization from verbal descriptions alone, a capability needed for applications such as emergency response.
 ◆ To address these challenges, we introduce LaVPR, a large-scale benchmark that extends existing VPR datasets with over 650,000 rich natural-language descriptions.</td></tr>
@@ -348,7 +360,7 @@
 <tr><td>2026-02-02</td><td>A Two-Stage Stochastic Optimization Model for the Equitable Deployment of Fixed and Mobile Electric Vehicle Charging Stations</td><td>[2602.02333](http://arxiv.org/pdf/2602.02333)</td><td>◆ A major barrier to wide adoption of Electric Vehicles (EVs) is the absence of reliable and equitable charging infrastructure.
 ◆ Poorly located charging stations create coverage gaps and slow down EV adoption, especially in underserved communities.
 ◆ This paper proposes a two-stage stochastic mixed-integer programming model for the optimal deployment of Fixed and Mobile Charging Stations (FCSs and MCSs) across multiple zones and periods.</td></tr>
-<tr><td>2026-02-02</td><td>Tidehunter: Large-Value Storage With Minimal Data Relocation</td><td>[2602.01873](http://arxiv.org/pdf/2602.01873)</td><td>◆ Log-Structured Merge-Trees (LSM-trees) dominate persistent key-value storage but suffer from high write amplification from 10x to 30x under random workloads due to repeated compaction.
+<tr><td>2026-02-03</td><td>Tidehunter: Large-Value Storage With Minimal Data Relocation</td><td>[2602.01873](http://arxiv.org/pdf/2602.01873)</td><td>◆ Log-Structured Merge-Trees (LSM-trees) dominate persistent key-value storage but suffer from high write amplification from 10x to 30x under random workloads due to repeated compaction.
 ◆ This overhead becomes prohibitive for large values with uniformly distributed keys, a workload common in content-addressable storage, deduplication systems, and blockchain validators.
 ◆ We present Tidehunter, a storage engine that eliminates value compaction by treating the Write-Ahead Log (WAL) as permanent storage rather than a temporary recovery buffer.</td></tr>
 <tr><td>2026-02-02</td><td>Real-Time Loop Closure Detection in Visual SLAM via NetVLAD and Faiss</td><td>[2602.01673](http://arxiv.org/pdf/2602.01673)</td><td>◆ Loop closure detection (LCD) is a core component of simultaneous localization and mapping (SLAM): it identifies revisited places and enables pose-graph constraints that correct accumulated drift.
@@ -568,6 +580,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-04</td><td>Quantile Transfer for Reliable Operating Point Selection in Visual Place Recognition</td><td>[2602.04401](http://arxiv.org/pdf/2602.04401)</td><td>◆ Visual Place Recognition (VPR) is a key component for localisation in GNSS-denied environments, but its performance critically depends on selecting an image matching threshold (operating point) that balances precision and recall.
+◆ Thresholds are typically hand-tuned offline for a specific environment and fixed during deployment, leading to degraded performance under environmental change.
+◆ We propose a method that, given a user-defined precision requirement, automatically selects the operating point of a VPR system to maximise recall.</td></tr>
 <tr><td>2026-01-22</td><td>Coarse-to-Fine Non-rigid Multi-modal Image Registration for Historical Panel Paintings based on Crack Structures</td><td>[2601.16348](http://arxiv.org/pdf/2601.16348)</td><td>◆ Art technological investigations of historical panel paintings rely on acquiring multi-modal image data, including visual light photography, infrared reflectography, ultraviolet fluorescence photography, x-radiography, and macro photography.
 ◆ For a comprehensive analysis, the multi-modal images require pixel-wise alignment, which is still often performed manually.
 ◆ Multi-modal image registration can reduce this laborious manual work, is substantially faster, and enables higher precision.</td></tr>
@@ -743,6 +758,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-04</td><td>Nix and Fix: Targeting 1000x Compression of 3D Gaussian Splatting with Diffusion Models</td><td>[2602.04549](http://arxiv.org/pdf/2602.04549)</td><td>◆ 3D Gaussian Splatting (3DGS) revolutionized novel view rendering.
+◆ Instead of inferring from dense spatial points, as implicit representations do, 3DGS uses sparse Gaussians.
+◆ This enables real-time performance but increases space requirements, hindering applications such as immersive communication.</td></tr>
+<tr><td>2026-02-04</td><td>VecSet-Edit: Unleashing Pre-trained LRM for Mesh Editing from Single Image</td><td>[2602.04349](http://arxiv.org/pdf/2602.04349)</td><td>◆ 3D editing has emerged as a critical research area to provide users with flexible control over 3D assets.
+◆ While current editing approaches predominantly focus on 3D Gaussian Splatting or multi-view images, the direct editing of 3D meshes remains underexplored.
+◆ Prior attempts, such as VoxHammer, rely on voxel-based representations that suffer from limited resolution and necessitate labor-intensive 3D mask.</td></tr>
+<tr><td>2026-02-04</td><td>JOintGS: Joint Optimization of Cameras, Bodies and 3D Gaussians for In-the-Wild Monocular Reconstruction</td><td>[2602.04317](http://arxiv.org/pdf/2602.04317)</td><td>◆ Reconstructing high-fidelity animatable 3D human avatars from monocular RGB videos remains challenging, particularly in unconstrained in-the-wild scenarios where camera parameters and human poses from off-the-shelf methods (e.g., COLMAP, HMR2.0) are often inaccurate.
+◆ Splatting (3DGS) advances demonstrate impressive rendering quality and real-time performance, they critically depend on precise camera calibration and pose annotations, limiting their applicability in real-world settings.
+◆ We present JOintGS, a unified framework that jointly optimizes camera extrinsics, human poses, and 3D Gaussian representations from coarse initialization through a synergistic refinement mechanism.</td></tr>
+<tr><td>2026-02-04</td><td>Towards Next-Generation SLAM: A Survey on 3DGS-SLAM Focusing on Performance, Robustness, and Future Directions</td><td>[2602.04251](http://arxiv.org/pdf/2602.04251)</td><td>◆ Traditional Simultaneous Localization and Mapping (SLAM) systems often face limitations including coarse rendering quality, insufficient recovery of scene details, and poor robustness in dynamic environments.
+◆ 3D Gaussian Splatting (3DGS), with its efficient explicit representation and high-quality rendering capabilities, offers a new reconstruction paradigm for SLAM.
+◆ This survey comprehensively reviews key technical approaches for integrating 3DGS with SLAM.</td></tr>
+<tr><td>2026-02-03</td><td>AnyStyle: Single-Pass Multimodal Stylization for 3D Gaussian Splatting</td><td>[2602.04043](http://arxiv.org/pdf/2602.04043)</td><td>◆ The growing demand for rapid and scalable 3D asset creation has driven interest in feed-forward 3D reconstruction methods, with 3D Gaussian Splatting (3DGS) emerging as an effective scene representation.
+◆ While recent approaches have demonstrated pose-free reconstruction from unposed image collections, integrating stylization or appearance control into such pipelines remains underexplored.
+◆ Existing attempts largely rely on image-based conditioning, which limits both controllability and flexibility.</td></tr>
 <tr><td>2026-02-03</td><td>Constrained Dynamic Gaussian Splatting</td><td>[2602.03538](http://arxiv.org/pdf/2602.03538)</td><td>◆ While Dynamic Gaussian Splatting enables high-fidelity 4D reconstruction, its deployment is severely hindered by a fundamental dilemma: unconstrained densification leads to excessive memory consumption incompatible with edge devices, whereas heuristic pruning fails to achieve optimal rendering quality under preset Gaussian budgets.
 ◆ In this work, we propose Constrained Dynamic Gaussian Splatting (CDGS), a novel framework that formulates dynamic scene reconstruction as a budget-constrained optimization problem to enforce a strict, user-defined Gaussian budget during training.
 ◆ Our key insight is to introduce a differentiable budget controller as the core optimization driver.</td></tr>
@@ -1159,6 +1189,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-03</td><td>Seeing Through Clutter: Structured 3D Scene Reconstruction via Iterative Object Removal</td><td>[2602.04053](http://arxiv.org/pdf/2602.04053)</td><td>◆ We present SeeingThroughClutter, a method for reconstructing structured 3D representations from single images by segmenting and modeling objects individually.
+◆ Prior approaches rely on intermediate tasks such as semantic segmentation and depth estimation, which often underperform in complex scenes, particularly in the presence of occlusion and clutter.
+◆ We address this by introducing an iterative object removal and reconstruction pipeline that decomposes complex scenes into a sequence of simpler subtasks.</td></tr>
 <tr><td>2026-02-03</td><td>Depth Completion in Unseen Field Robotics Environments Using Extremely Sparse Depth Measurements</td><td>[2602.03209](http://arxiv.org/pdf/2602.03209)</td><td>◆ Autonomous field robots operating in unstructured environments require robust perception to ensure safe and reliable operations.
 ◆ Recent advances in monocular depth estimation have demonstrated the potential of low-cost cameras as depth sensors; however, their adoption in field robotics remains limited due to the absence of reliable scale cues, ambiguous or low-texture conditions, and the scarcity of large-scale datasets.
 ◆ To address these challenges, we propose a depth completion model that trains on synthetic data and uses extremely sparse measurements from depth sensors to predict dense metric depth in unseen field robotics environments.</td></tr>
@@ -1477,4 +1510,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.04
+> 更新于: 2026.02.05
