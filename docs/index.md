@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.02.05)
+# SLAM领域最新论文 (2026.02.06)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-05</td><td>Geometric Observability Index: An Operator-Theoretic Framework for Per-Feature Sensitivity, Weak Observability, and Dynamic Effects in SE(3) Pose Estimation</td><td>[2602.05582](http://arxiv.org/pdf/2602.05582)</td><td>◆ We present a unified operator-theoretic framework for analyzing per-feature sensitivity in camera pose estimation on the Lie group SE(3).
+◆ Classical sensitivity tools - conditioning analyses, Euclidean perturbation arguments, and Fisher information bounds - do not explain how individual image features influence the pose estimate, nor why dynamic or inconsistent observations can disproportionately distort modern SLAM and structure-from-motion systems.
+◆ To address this gap, we extend influence function theory to matrix Lie groups and derive an intrinsic perturbation operator for left-trivialized M-estimators on SE(3).</td></tr>
+<tr><td>2026-02-05</td><td>VGGT-Motion: Motion-Aware Calibration-Free Monocular SLAM for Long-Range Consistency</td><td>[2602.05508](http://arxiv.org/pdf/2602.05508)</td><td>◆ Despite recent progress in calibration-free monocular SLAM via 3D vision foundation models, scale drift remains severe on long sequences.
+◆ Motion-agnostic partitioning breaks contextual coherence and causes zero-motion drift, while conventional geometric alignment is computationally expensive.
+◆ To address these issues, we propose VGGT-Motion, a calibration-free SLAM system for efficient and robust global consistency over kilometer-scale trajectories.</td></tr>
 <tr><td>2026-02-04</td><td>Towards Next-Generation SLAM: A Survey on 3DGS-SLAM Focusing on Performance, Robustness, and Future Directions</td><td>[2602.04251](http://arxiv.org/pdf/2602.04251)</td><td>◆ Traditional Simultaneous Localization and Mapping (SLAM) systems often face limitations including coarse rendering quality, insufficient recovery of scene details, and poor robustness in dynamic environments.
 ◆ 3D Gaussian Splatting (3DGS), with its efficient explicit representation and high-quality rendering capabilities, offers a new reconstruction paradigm for SLAM.
 ◆ This survey comprehensively reviews key technical approaches for integrating 3DGS with SLAM.</td></tr>
@@ -257,6 +263,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-05</td><td>Feature points evaluation on omnidirectional vision with a photorealistic fisheye sequence -- A report on experiments done in 2014</td><td>[2602.05487](http://arxiv.org/pdf/2602.05487)</td><td>◆ What is this report: This is a scientific report, contributing with a detailed bibliography, a dataset which we will call now PFSeq for &#x27;&#x27;Photorealistic Fisheye Sequence&#x27;&#x27; and make available at https://doi.org/10.
+◆ 57745/DYIVVU, and comprehensive experiments.
+◆ This work should be considered as a draft, and has been done during my PhD thesis &#x27;&#x27;Construction of 3D models from fisheye video data-Application to the localisation in urban area&#x27;&#x27; in 2014 [Mor16].</td></tr>
 <tr><td>2026-02-03</td><td>LEVIO: Lightweight Embedded Visual Inertial Odometry for Resource-Constrained Devices</td><td>[2602.03294](http://arxiv.org/pdf/2602.03294)</td><td>◆ Accurate, infrastructure-less sensor systems for motion tracking are essential for mobile robotics and augmented reality (AR) applications.
 ◆ The most popular state-of-the-art visual-inertial odometry (VIO) systems, however, are too computationally demanding for resource-constrained hardware, such as micro-drones and smart glasses.
 ◆ This work presents LEVIO, a fully featured VIO pipeline optimized for ultra-low-power compute platforms, allowing six-degrees-of-freedom (DoF) real-time sensing.</td></tr>
@@ -339,6 +348,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-05</td><td>Location-Aware Dispersion on Anonymous Graphs</td><td>[2602.05948](http://arxiv.org/pdf/2602.05948)</td><td>◆ The well-studied DISPERSION problem is a fundamental coordination problem in distributed robotics, where a set of mobile robots must relocate so that each occupies a distinct node of a network.
+◆ DISPERSION assumes that a robot can settle at any node as long as no other robot settles on that node.
+◆ In this work, we introduce LOCATION-AWARE DISPERSION, a novel generalization of DISPERSION that incorporates location awareness: Let $G = (V, E)$ be an anonymous, connected, undirected graph with $n =</td></tr>
+<tr><td>2026-02-05</td><td>VGGT-Motion: Motion-Aware Calibration-Free Monocular SLAM for Long-Range Consistency</td><td>[2602.05508](http://arxiv.org/pdf/2602.05508)</td><td>◆ Despite recent progress in calibration-free monocular SLAM via 3D vision foundation models, scale drift remains severe on long sequences.
+◆ Motion-agnostic partitioning breaks contextual coherence and causes zero-motion drift, while conventional geometric alignment is computationally expensive.
+◆ To address these issues, we propose VGGT-Motion, a calibration-free SLAM system for efficient and robust global consistency over kilometer-scale trajectories.</td></tr>
 <tr><td>2026-02-04</td><td>S-MUSt3R: Sliding Multi-view 3D Reconstruction</td><td>[2602.04517](http://arxiv.org/pdf/2602.04517)</td><td>◆ The recent paradigm shift in 3D vision led to the rise of foundation models with remarkable capabilities in 3D perception from uncalibrated images.
 ◆ However, extending these models to large-scale RGB stream 3D reconstruction remains challenging due to memory limitations.
 ◆ This work proposes S-MUSt3R, a simple and efficient pipeline that extends the limits of foundation models for monocular 3D reconstruction.</td></tr>
@@ -580,6 +595,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-05</td><td>SOMA-1M: A Large-Scale SAR-Optical Multi-resolution Alignment Dataset for Multi-Task Remote Sensing</td><td>[2602.05480](http://arxiv.org/pdf/2602.05480)</td><td>◆ Synthetic Aperture Radar (SAR) and optical imagery provide complementary strengths that constitute the critical foundation for transcending single-modality constraints and facilitating cross-modal collaborative processing and intelligent interpretation.
+◆ However, existing benchmark datasets often suffer from limitations such as single spatial resolution, insufficient data scale, and low alignment accuracy, making them inadequate for supporting the training and generalization of multi-scale foundation models.
+◆ To address these challenges, we introduce SOMA-1M (SAR-Optical Multi-resolution Alignment), a pixel-level precisely aligned dataset containing over 1.3 million pairs of georeferenced images with a specification of 512 x 512 pixels.</td></tr>
 <tr><td>2026-02-04</td><td>Quantile Transfer for Reliable Operating Point Selection in Visual Place Recognition</td><td>[2602.04401](http://arxiv.org/pdf/2602.04401)</td><td>◆ Visual Place Recognition (VPR) is a key component for localisation in GNSS-denied environments, but its performance critically depends on selecting an image matching threshold (operating point) that balances precision and recall.
 ◆ Thresholds are typically hand-tuned offline for a specific environment and fixed during deployment, leading to degraded performance under environmental change.
 ◆ We propose a method that, given a user-defined precision requirement, automatically selects the operating point of a VPR system to maximise recall.</td></tr>
@@ -758,6 +776,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-05</td><td>NVS-HO: A Benchmark for Novel View Synthesis of Handheld Objects</td><td>[2602.05822](http://arxiv.org/pdf/2602.05822)</td><td>◆ We propose NVS-HO, the first benchmark designed for novel view synthesis of handheld objects in real-world environments using only RGB inputs.
+◆ Each object is recorded in two complementary RGB sequences: (1) a handheld sequence, where the object is manipulated in front of a static camera, and (2) a board sequence, where the object is fixed on a ChArUco board to provide accurate camera poses via marker detection.
+◆ The goal of NVS-HO is to learn a NVS model that captures the full appearance of an object from (1), whereas (2) provides the ground-truth images used for evaluation.</td></tr>
+<tr><td>2026-02-05</td><td>PoseGaussian: Pose-Driven Novel View Synthesis for Robust 3D Human Reconstruction</td><td>[2602.05190](http://arxiv.org/pdf/2602.05190)</td><td>◆ We propose PoseGaussian, a pose-guided Gaussian Splatting framework for high-fidelity human novel view synthesis.
+◆ Human body pose serves a dual purpose in our design: as a structural prior, it is fused with a color encoder to refine depth estimation; as a temporal cue, it is processed by a dedicated pose encoder to enhance temporal consistency across frames.
+◆ These components are integrated into a fully differentiable, end-to-end trainable pipeline.</td></tr>
+<tr><td>2026-02-04</td><td>QuantumGS: Quantum Encoding Framework for Gaussian Splatting</td><td>[2602.05047](http://arxiv.org/pdf/2602.05047)</td><td>◆ Recent advances in neural rendering, particularly 3D Gaussian Splatting (3DGS), have enabled real-time rendering of complex scenes.
+◆ However, standard 3DGS relies on spherical harmonics, which often struggle to accurately capture high-frequency view-dependent effects such as sharp reflections and transparency.
+◆ While hybrid approaches like Viewing Direction Gaussian Splatting (VDGS) mitigate this limitation using classical Multi-Layer Perceptrons (MLPs), they remain limited by the expressivity of classical networks in low-parameter regimes.</td></tr>
 <tr><td>2026-02-04</td><td>Nix and Fix: Targeting 1000x Compression of 3D Gaussian Splatting with Diffusion Models</td><td>[2602.04549](http://arxiv.org/pdf/2602.04549)</td><td>◆ 3D Gaussian Splatting (3DGS) revolutionized novel view rendering.
 ◆ Instead of inferring from dense spatial points, as implicit representations do, 3DGS uses sparse Gaussians.
 ◆ This enables real-time performance but increases space requirements, hindering applications such as immersive communication.</td></tr>
@@ -1189,6 +1216,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-05</td><td>Splat and Distill: Augmenting Teachers with Feed-Forward 3D Reconstruction For 3D-Aware Distillation</td><td>[2602.06032](http://arxiv.org/pdf/2602.06032)</td><td>◆ Vision Foundation Models (VFMs) have achieved remarkable success when applied to various downstream 2D tasks.
+◆ Despite their effectiveness, they often exhibit a critical lack of 3D awareness.
+◆ To this end, we introduce Splat and Distill, a framework that instills robust 3D awareness into 2D VFMs by augmenting the teacher model with a fast, feed-forward 3D reconstruction pipeline.</td></tr>
+<tr><td>2026-02-05</td><td>Depth as Prior Knowledge for Object Detection</td><td>[2602.05730](http://arxiv.org/pdf/2602.05730)</td><td>◆ Detecting small and distant objects remains challenging for object detectors due to scale variation, low resolution, and background clutter.
+◆ Safety-critical applications require reliable detection of these objects for safe planning.
+◆ Depth information can improve detection, but existing approaches require complex, model-specific architectural modifications.</td></tr>
+<tr><td>2026-02-05</td><td>UniSurg: A Video-Native Foundation Model for Universal Understanding of Surgical Videos</td><td>[2602.05638](http://arxiv.org/pdf/2602.05638)</td><td>◆ While foundation models have advanced surgical video analysis, current approaches rely predominantly on pixel-level reconstruction objectives that waste model capacity on low-level visual details - such as smoke, specular reflections, and fluid motion - rather than semantic structures essential for surgical understanding.
+◆ We present UniSurg, a video-native foundation model that shifts the learning paradigm from pixel-level reconstruction to latent motion prediction.
+◆ Built on the Video Joint Embedding Predictive Architecture (V-JEPA), UniSurg introduces three key technical innovations tailored to surgical videos: 1) motion-guided latent prediction to prioritize semantically meaningful regions, 2) spatiotemporal affinity self-distillation to enforce relational consistency, and 3) feature diversity regularization to prevent representation collapse in texture-sparse surgical scenes.</td></tr>
+<tr><td>2026-02-05</td><td>Depth estimation of a monoharmonic source using a vertical linear array at fixed distance</td><td>[2602.05560](http://arxiv.org/pdf/2602.05560)</td><td>◆ Estimating the depth of a monoharmonic sound source at a fixed range using a vertical linear array (VLA) is challenging in the absence of seabed environmental parameters, and relevant research remains scarce.
+◆ The orthogonality constrained modal search based depth estimation (OCMS-D) method is proposed in this paper, which enables the estimation of the depth of a monoharmonic source at a fixed range using a VLA under unknown seabed parameters.
+◆ Using the sparsity of propagating normal modes and the orthogonality of mode depth functions, OCMS-D estimates the normal mode parameters under a fixed source-array distance at first.</td></tr>
+<tr><td>2026-02-05</td><td>NeVStereo: A NeRF-Driven NVS-Stereo Architecture for High-Fidelity 3D Tasks</td><td>[2602.05423](http://arxiv.org/pdf/2602.05423)</td><td>◆ In modern dense 3D reconstruction, feed-forward systems (e.g., VGGT, pi3) focus on end-to-end matching and geometry prediction but do not explicitly output the novel view synthesis (NVS).
+◆ Neural rendering-based approaches offer high-fidelity NVS and detailed geometry from posed images, yet they typically assume fixed camera poses and can be sensitive to pose errors.
+◆ As a result, it remains non-trivial to obtain a single framework that can offer accurate poses, reliable depth, high-quality rendering, and accurate 3D surfaces from casually captured views.</td></tr>
+<tr><td>2026-02-05</td><td>PoseGaussian: Pose-Driven Novel View Synthesis for Robust 3D Human Reconstruction</td><td>[2602.05190](http://arxiv.org/pdf/2602.05190)</td><td>◆ We propose PoseGaussian, a pose-guided Gaussian Splatting framework for high-fidelity human novel view synthesis.
+◆ Human body pose serves a dual purpose in our design: as a structural prior, it is fused with a color encoder to refine depth estimation; as a temporal cue, it is processed by a dedicated pose encoder to enhance temporal consistency across frames.
+◆ These components are integrated into a fully differentiable, end-to-end trainable pipeline.</td></tr>
 <tr><td>2026-02-03</td><td>Seeing Through Clutter: Structured 3D Scene Reconstruction via Iterative Object Removal</td><td>[2602.04053](http://arxiv.org/pdf/2602.04053)</td><td>◆ We present SeeingThroughClutter, a method for reconstructing structured 3D representations from single images by segmenting and modeling objects individually.
 ◆ Prior approaches rely on intermediate tasks such as semantic segmentation and depth estimation, which often underperform in complex scenes, particularly in the presence of occlusion and clutter.
 ◆ We address this by introducing an iterative object removal and reconstruction pipeline that decomposes complex scenes into a sequence of simpler subtasks.</td></tr>
@@ -1510,4 +1555,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.05
+> 更新于: 2026.02.06
