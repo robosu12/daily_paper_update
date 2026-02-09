@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.02.08)
+# SLAM领域最新论文 (2026.02.09)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-06</td><td>A Consistency-Improved LiDAR-Inertial Bundle Adjustment</td><td>[2602.06380](http://arxiv.org/pdf/2602.06380)</td><td>◆ Simultaneous Localization and Mapping (SLAM) using 3D LiDAR has emerged as a cornerstone for autonomous navigation in robotics.
+◆ While feature-based SLAM systems have achieved impressive results by leveraging edge and planar structures, they often suffer from the inconsistent estimator associated with feature parameterization and estimated covariance.
+◆ In this work, we present a consistency-improved LiDAR-inertial bundle adjustment (BA) with tailored parameterization and estimator.</td></tr>
 <tr><td>2026-02-05</td><td>Geometric Observability Index: An Operator-Theoretic Framework for Per-Feature Sensitivity, Weak Observability, and Dynamic Effects in SE(3) Pose Estimation</td><td>[2602.05582](http://arxiv.org/pdf/2602.05582)</td><td>◆ We present a unified operator-theoretic framework for analyzing per-feature sensitivity in camera pose estimation on the Lie group SE(3).
 ◆ Classical sensitivity tools - conditioning analyses, Euclidean perturbation arguments, and Fisher information bounds - do not explain how individual image features influence the pose estimate, nor why dynamic or inconsistent observations can disproportionately distort modern SLAM and structure-from-motion systems.
 ◆ To address this gap, we extend influence function theory to matrix Lie groups and derive an intrinsic perturbation operator for left-trivialized M-estimators on SE(3).</td></tr>
@@ -265,6 +268,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-06</td><td>POPL-KF: A Pose-Only Geometric Representation-Based Kalman Filter for Point-Line-Based Visual-Inertial Odometry</td><td>[2602.06425](http://arxiv.org/pdf/2602.06425)</td><td>◆ Mainstream Visual-inertial odometry  (VIO) systems rely on point features for motion estimation and localization.
+◆ However, their performance degrades in challenging scenarios.
+◆ Moreover, the localization accuracy of multi-state constraint Kalman filter (MSCKF)-based VIO systems suffers from linearization errors associated with feature 3D coordinates and delayed measurement updates.</td></tr>
 <tr><td>2026-02-05</td><td>Feature points evaluation on omnidirectional vision with a photorealistic fisheye sequence -- A report on experiments done in 2014</td><td>[2602.05487](http://arxiv.org/pdf/2602.05487)</td><td>◆ What is this report: This is a scientific report, contributing with a detailed bibliography, a dataset which we will call now PFSeq for &#x27;&#x27;Photorealistic Fisheye Sequence&#x27;&#x27; and make available at https://doi.org/10.
 ◆ 57745/DYIVVU, and comprehensive experiments.
 ◆ This work should be considered as a draft, and has been done during my PhD thesis &#x27;&#x27;Construction of 3D models from fisheye video data-Application to the localisation in urban area&#x27;&#x27; in 2014 [Mor16].</td></tr>
@@ -352,6 +358,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-05</td><td>AnyThermal: Towards Learning Universal Representations for Thermal Perception</td><td>[2602.06203](http://arxiv.org/pdf/2602.06203)</td><td>◆ We present AnyThermal, a thermal backbone that captures robust task-agnostic thermal features suitable for a variety of tasks such as cross-modal place recognition, thermal segmentation, and monocular depth estimation using thermal images.
+◆ Existing thermal backbones that follow task-specific training from small-scale data result in utility limited to a specific environment and task.
+◆ Unlike prior methods, AnyThermal can be used for a wide range of environments (indoor, aerial, off-road, urban) and tasks, all without task-specific training.</td></tr>
 <tr><td>2026-02-05</td><td>Location-Aware Dispersion on Anonymous Graphs</td><td>[2602.05948](http://arxiv.org/pdf/2602.05948)</td><td>◆ The well-studied DISPERSION problem is a fundamental coordination problem in distributed robotics, where a set of mobile robots must relocate so that each occupies a distinct node of a network.
 ◆ DISPERSION assumes that a robot can settle at any node as long as no other robot settles on that node.
 ◆ In this work, we introduce LOCATION-AWARE DISPERSION, a novel generalization of DISPERSION that incorporates location awareness: Let $G = (V, E)$ be an anonymous, connected, undirected graph with $n =</td></tr>
@@ -601,6 +610,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-06</td><td>Perception-Control Coupled Visual Servoing for Textureless Objects Using Keypoint-Based EKF</td><td>[2602.06834](http://arxiv.org/pdf/2602.06834)</td><td>◆ Visual servoing is fundamental to robotic applications, enabling precise positioning and control.
+◆ However, applying it to textureless objects remains a challenge due to the absence of reliable visual features.
+◆ Moreover, adverse visual conditions, such as occlusions, often corrupt visual feedback, leading to reduced accuracy and instability in visual servoing.</td></tr>
+<tr><td>2026-02-05</td><td>DroneKey++: A Size Prior-free Method and New Benchmark for Drone 3D Pose Estimation from Sequential Images</td><td>[2602.06211](http://arxiv.org/pdf/2602.06211)</td><td>◆ Accurate 3D pose estimation of drones is essential for security and surveillance systems.
+◆ However, existing methods often rely on prior drone information such as physical sizes or 3D meshes.
+◆ At the same time, current datasets are small-scale, limited to single models, and collected under constrained environments, which makes reliable validation of generalization difficult.</td></tr>
 <tr><td>2026-02-05</td><td>SOMA-1M: A Large-Scale SAR-Optical Multi-resolution Alignment Dataset for Multi-Task Remote Sensing</td><td>[2602.05480](http://arxiv.org/pdf/2602.05480)</td><td>◆ Synthetic Aperture Radar (SAR) and optical imagery provide complementary strengths that constitute the critical foundation for transcending single-modality constraints and facilitating cross-modal collaborative processing and intelligent interpretation.
 ◆ However, existing benchmark datasets often suffer from limitations such as single spatial resolution, insufficient data scale, and low alignment accuracy, making them inadequate for supporting the training and generalization of multi-scale foundation models.
 ◆ To address these challenges, we introduce SOMA-1M (SAR-Optical Multi-resolution Alignment), a pixel-level precisely aligned dataset containing over 1.3 million pairs of georeferenced images with a specification of 512 x 512 pixels.</td></tr>
@@ -784,6 +799,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-06</td><td>DynFOA: Generating First-Order Ambisonics with Conditional Diffusion for Dynamic and Acoustically Complex 360-Degree Videos</td><td>[2602.06846](http://arxiv.org/pdf/2602.06846)</td><td>◆ Spatial audio is crucial for creating compelling immersive 360-degree video experiences.
+◆ However, generating realistic spatial audio, such as first-order ambisonics (FOA), from 360-degree videos in complex acoustic scenes remains challenging.
+◆ Existing methods often overlook the dynamic nature and acoustic complexity of 360-degree scenes, fail to fully account for dynamic sound sources, and neglect complex environmental effects such as occlusion, reflections, and reverberation, which are influenced by scene geometries and materials.</td></tr>
+<tr><td>2026-02-06</td><td>GaussianPOP: Principled Simplification Framework for Compact 3D Gaussian Splatting via Error Quantification</td><td>[2602.06830](http://arxiv.org/pdf/2602.06830)</td><td>◆ Existing 3D Gaussian Splatting simplification methods commonly use importance scores, such as blending weights or sensitivity, to identify redundant Gaussians.
+◆ However, these scores are not driven by visual error metrics, often leading to suboptimal trade-offs between compactness and rendering fidelity.
+◆ We present GaussianPOP, a principled simplification framework based on analytical Gaussian error quantification.</td></tr>
+<tr><td>2026-02-06</td><td>Uncertainty-Aware 4D Gaussian Splatting for Monocular Occluded Human Rendering</td><td>[2602.06343](http://arxiv.org/pdf/2602.06343)</td><td>◆ High-fidelity rendering of dynamic humans from monocular videos typically degrades catastrophically under occlusions.
+◆ Existing solutions incorporate external priors-either hallucinating missing content via generative models, which induces severe temporal flickering, or imposing rigid geometric heuristics that fail to capture diverse appearances.
+◆ To this end, we reformulate the task as a Maximum A Posteriori estimation problem under heteroscedastic observation noise.</td></tr>
+<tr><td>2026-02-05</td><td>From Blurry to Believable: Enhancing Low-quality Talking Heads with 3D Generative Priors</td><td>[2602.06122](http://arxiv.org/pdf/2602.06122)</td><td>◆ Creating high-fidelity, animatable 3D talking heads is crucial for immersive applications, yet often hindered by the prevalence of low-quality image or video sources, which yield poor 3D reconstructions.
+◆ In this paper, we introduce SuperHead, a novel framework for enhancing low-resolution, animatable 3D head avatars.
+◆ The core challenge lies in synthesizing high-quality geometry and textures, while ensuring both 3D and temporal consistency during animation and preserving subject identity.</td></tr>
 <tr><td>2026-02-05</td><td>NVS-HO: A Benchmark for Novel View Synthesis of Handheld Objects</td><td>[2602.05822](http://arxiv.org/pdf/2602.05822)</td><td>◆ We propose NVS-HO, the first benchmark designed for novel view synthesis of handheld objects in real-world environments using only RGB inputs.
 ◆ Each object is recorded in two complementary RGB sequences: (1) a handheld sequence, where the object is manipulated in front of a static camera, and (2) a board sequence, where the object is fixed on a ChArUco board to provide accurate camera poses via marker detection.
 ◆ The goal of NVS-HO is to learn a NVS model that captures the full appearance of an object from (1), whereas (2) provides the ground-truth images used for evaluation.</td></tr>
@@ -1226,6 +1253,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-06</td><td>Forest canopy height estimation from satellite RGB imagery using large-scale airborne LiDAR-derived training data and monocular depth estimation</td><td>[2602.06503](http://arxiv.org/pdf/2602.06503)</td><td>◆ Large-scale, high-resolution forest canopy height mapping plays a crucial role in understanding regional and global carbon and water cycles.
+◆ Spaceborne LiDAR missions, including the Ice, Cloud, and Land Elevation Satellite-2 (ICESat-2) and the Global Ecosystem Dynamics Investigation (GEDI), provide global observations of forest structure but are spatially sparse and subject to inherent uncertainties.
+◆ In contrast, near-surface LiDAR platforms, such as airborne and unmanned aerial vehicle (UAV) LiDAR systems, offer much finer measurements of forest canopy structure, and a growing number of countries have made these datasets openly available.</td></tr>
+<tr><td>2026-02-06</td><td>Now You See That: Learning End-to-End Humanoid Locomotion from Raw Pixels</td><td>[2602.06382](http://arxiv.org/pdf/2602.06382)</td><td>◆ Achieving robust vision-based humanoid locomotion remains challenging due to two fundamental issues: the sim-to-real gap introduces significant perception noise that degrades performance on fine-grained tasks, and training a unified policy across diverse terrains is hindered by conflicting learning objectives.
+◆ To address these challenges, we present an end-to-end framework for vision-driven humanoid locomotion.
+◆ For robust sim-to-real transfer, we develop a high-fidelity depth sensor simulation that captures stereo matching artifacts and calibration uncertainties inherent in real-world sensing.</td></tr>
+<tr><td>2026-02-05</td><td>AnyThermal: Towards Learning Universal Representations for Thermal Perception</td><td>[2602.06203](http://arxiv.org/pdf/2602.06203)</td><td>◆ We present AnyThermal, a thermal backbone that captures robust task-agnostic thermal features suitable for a variety of tasks such as cross-modal place recognition, thermal segmentation, and monocular depth estimation using thermal images.
+◆ Existing thermal backbones that follow task-specific training from small-scale data result in utility limited to a specific environment and task.
+◆ Unlike prior methods, AnyThermal can be used for a wide range of environments (indoor, aerial, off-road, urban) and tasks, all without task-specific training.</td></tr>
 <tr><td>2026-02-05</td><td>Splat and Distill: Augmenting Teachers with Feed-Forward 3D Reconstruction For 3D-Aware Distillation</td><td>[2602.06032](http://arxiv.org/pdf/2602.06032)</td><td>◆ Vision Foundation Models (VFMs) have achieved remarkable success when applied to various downstream 2D tasks.
 ◆ Despite their effectiveness, they often exhibit a critical lack of 3D awareness.
 ◆ To this end, we introduce Splat and Distill, a framework that instills robust 3D awareness into 2D VFMs by augmenting the teacher model with a fast, feed-forward 3D reconstruction pipeline.</td></tr>
@@ -1567,4 +1603,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.08
+> 更新于: 2026.02.09
