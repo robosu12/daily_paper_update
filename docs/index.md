@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.02.09)
+# SLAM领域最新论文 (2026.02.10)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-09</td><td>Thegra: Graph-based SLAM for Thermal Imagery</td><td>[2602.08531](http://arxiv.org/pdf/2602.08531)</td><td>该论文的核心贡献是提出了一种适用于热成像的、基于图优化的单目SLAM系统，旨在解决热图像纹理少、对比度低和噪声高导致的特征提取与匹配难题。
+
+◆ 创新性地将在大规模可见光谱数据上训练的通用学习特征（SuperPoint检测器与LightGlue匹配器）应用于热成像SLAM，提升了系统的跨域泛化能力。
+◆ 设计了一个针对热图像的前处理流程，以增强图像质量，使其更适合后续特征提取。
+◆ 改进了核心SLAM模块，使其能够有效处理热图像中稀疏且易产生异常值的特征匹配。
+◆ 将SuperPoint生成的关键点置信度分数融入一个置信度加权的因子图优化框架，提高了位姿估计的鲁棒性。
+◆ 整个系统在公开热数据集上验证有效，且无需针对特定数据集进行训练或微调特征检测器，缓解了高质量热数据稀缺的制约。</td></tr>
+<tr><td>2026-02-09</td><td>Chamelion: Reliable Change Detection for Long-Term LiDAR Mapping in Transient Environments</td><td>[2602.08189](http://arxiv.org/pdf/2602.08189)</td><td>该论文针对动态变化环境（如建筑工地、室内空间）中的长期激光雷达建图，提出了一种可靠的在线变化检测方法Chamelion。其核心贡献与创新点如下：
+
+◆ 提出了一种双分支网络架构，专门用于在线变化检测与长期地图维护，解决了现有方法在瞬变环境中难以检测变化并更新地图的难题。
+◆ 针对真实世界数据难以采集和对齐的瓶颈，创新性地开发了一种数据增强策略，通过从不同场景导入元素来合成结构变化，从而无需大量人工标注即可有效训练模型。
+◆ 所提出的方法在真实建筑工地和室内办公环境等多种场景中进行了验证，表现出良好的泛化能力，能够实现高效且准确的地图更新。</td></tr>
+<tr><td>2026-02-07</td><td>Thermal odometry and dense mapping using learned ddometry and Gaussian splatting</td><td>[2602.07493](http://arxiv.org/pdf/2602.07493)</td><td>本文提出了一种名为TOM-GS的新型热成像里程计与稠密建图方法，其核心贡献在于首次将基于学习的方法与高斯泼溅技术相结合，以解决热成像在恶劣环境下的鲁棒感知与稠密重建问题。
+
+◆ 提出了首个专为热成像相机设计的高斯泼溅SLAM系统（TOM-GS），将基于学习的里程计与基于高斯泼溅的稠密建图相集成。
+◆ 设计了专门的热图像增强模块，以优化热成像的输入质量，并集成了单目深度估计，以提升几何感知能力。
+◆ 在运动估计和新视角渲染任务上进行了广泛实验，证明该方法优于现有的基于学习的方法，验证了学习框架在热成像里程计和稠密重建中的优势。
+◆ 解决了现有几何方法在多样化数据集上易失效且无法生成稠密地图的局限性，利用高斯泼溅的高效性与高质量重建能力，实现了鲁棒的稠密环境建模。</td></tr>
 <tr><td>2026-02-06</td><td>A Consistency-Improved LiDAR-Inertial Bundle Adjustment</td><td>[2602.06380](http://arxiv.org/pdf/2602.06380)</td><td>◆ Simultaneous Localization and Mapping (SLAM) using 3D LiDAR has emerged as a cornerstone for autonomous navigation in robotics.
 ◆ While feature-based SLAM systems have achieved impressive results by leveraging edge and planar structures, they often suffer from the inconsistent estimator associated with feature parameterization and estimated covariance.
 ◆ In this work, we present a consistency-improved LiDAR-inertial bundle adjustment (BA) with tailored parameterization and estimator.</td></tr>
@@ -266,6 +284,31 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-09</td><td>Thegra: Graph-based SLAM for Thermal Imagery</td><td>[2602.08531](http://arxiv.org/pdf/2602.08531)</td><td>该论文提出了一种基于图优化的稀疏单目热成像SLAM系统，旨在解决热图像纹理低、对比度差和噪声高导致的特征提取与匹配难题。
+
+◆ 首次将通用学习特征SuperPoint检测器和LightGlue匹配器应用于热成像SLAM，利用可见光光谱大数据训练以获得跨域泛化能力，无需针对热数据重新训练或微调。
+◆ 设计了一套针对热图像的预处理流程，以增强输入图像对学习特征的适配性，提升特征提取质量。
+◆ 改进了核心SLAM模块，使其能够有效处理热图像中稀疏且易含异常值的特征匹配，增强了系统的稳定性。
+◆ 创新地将SuperPoint生成的关键点置信度分数融入置信度加权因子图优化中，提高了位姿估计的鲁棒性和准确性。
+实验表明，该系统在公开热数据集上实现了可靠性能，为视觉退化环境下的SLAM提供了实用解决方案。</td></tr>
+<tr><td>2026-02-09</td><td>Aerial Manipulation with Contact-Aware Onboard Perception and Hybrid Control</td><td>[2602.08251](http://arxiv.org/pdf/2602.08251)</td><td>该论文提出了一套完全基于机载感知与控制的空中机器人操作方案，旨在实现无需外部动捕的、接触丰富的精确操作。
+
+◆ 设计了增强型视觉惯性里程计（VIO），其创新在于引入了仅在机械臂与环境接触时才激活的接触一致性约束。这有效收紧了接触坐标系的不确定性，显著减少了估计漂移。
+
+◆ 提出了一种结合图像视觉伺服（IBVS）与混合力-运动控制的策略。IBVS用于减轻感知与控制间的耦合干扰，而混合控制器则能同时调节接触力/力矩和横向运动。
+
+◆ 实现了完全基于机载传感器的“感知-力控”闭环系统。实验表明，该系统在接触时的速度估计精度提升了66.01%，能可靠接近目标并保持稳定的接触力，推动了空中操作在真实野外环境的部署应用。</td></tr>
+<tr><td>2026-01-28</td><td>When Simultaneous Localization and Mapping Meets Wireless Communications: A Survey</td><td>[2602.06995](http://arxiv.org/pdf/2602.06995)</td><td>本文综述了同步定位与建图（SLAM）与无线通信融合领域的最新进展，核心贡献在于系统阐述了两者间的双向赋能关系与集成路径。其创新点可总结如下：
+
+◆ 首次系统性地综述了SLAM（尤其是视觉SLAM）与无线通信之间的交叉领域，阐明两者存在双向互惠的深刻联系。
+
+◆ 提出无线通信信息（如射频信号）可辅助解决单目视觉SLAM中的尺度模糊问题，从而增强SLAM的鲁棒性与精度。
+
+◆ 指出SLAM中的视觉里程计等技术可为5G及后续移动通信网络提供环境感知与路径预测能力，优化无线信道资源配置。
+
+◆ 分析了利用概率模型、空间信号处理等数学方法，以及多天线等技术，实现机器人状态高效估计的多种技术路径。
+
+◆ 揭示当前通信与SLAM的联合解决方案仍处于起步阶段，未来需在理论与实践中融入更高层次的定位和语义感知能力。</td></tr>
 <tr><td>2026-02-06</td><td>POPL-KF: A Pose-Only Geometric Representation-Based Kalman Filter for Point-Line-Based Visual-Inertial Odometry</td><td>[2602.06425](http://arxiv.org/pdf/2602.06425)</td><td>◆ Mainstream Visual-inertial odometry  (VIO) systems rely on point features for motion estimation and localization.
 ◆ However, their performance degrades in challenging scenarios.
 ◆ Moreover, the localization accuracy of multi-state constraint Kalman filter (MSCKF)-based VIO systems suffers from linearization errors associated with feature 3D coordinates and delayed measurement updates.</td></tr>
@@ -354,6 +397,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-08</td><td>Geometry-Aware Rotary Position Embedding for Consistent Video World Model</td><td>[2602.07854](http://arxiv.org/pdf/2602.07854)</td><td>该论文的核心贡献是提出了一种几何感知的旋转位置编码方法，以解决视频世界模型中长期空间一致性的难题。现有模型因依赖屏幕空间位置编码而产生几何漂移，导致在长轨迹中场景结构不稳定。本文的创新点如下：
+
+◆ 提出了ViewRope，一种几何感知编码机制，将相机光线方向直接注入视频Transformer的自注意力层，通过相对射线几何而非像素局部性来参数化注意力，从而为跨时间间隙检索三维一致内容提供了模型固有的归纳偏置。
+
+◆ 设计了Geometry-Aware Frame-Sparse Attention，利用几何线索选择性地关注相关的历史帧，在保持记忆一致性的同时显著提升了计算效率。
+
+◆ 构建了ViewBench诊断基准，专门用于评估模型在闭环轨迹中的保真度和几何漂移程度，为相关研究提供了量化工具。
+
+实验证明，该方法能大幅提升长期一致性并降低计算成本。</td></tr>
 <tr><td>2026-02-05</td><td>AnyThermal: Towards Learning Universal Representations for Thermal Perception</td><td>[2602.06203](http://arxiv.org/pdf/2602.06203)</td><td>◆ We present AnyThermal, a thermal backbone that captures robust task-agnostic thermal features suitable for a variety of tasks such as cross-modal place recognition, thermal segmentation, and monocular depth estimation using thermal images.
 ◆ Existing thermal backbones that follow task-specific training from small-scale data result in utility limited to a specific environment and task.
 ◆ Unlike prior methods, AnyThermal can be used for a wide range of environments (indoor, aerial, off-road, urban) and tasks, all without task-specific training.</td></tr>
@@ -604,6 +656,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-09</td><td>Understanding and Optimizing Attention-Based Sparse Matching for Diverse Local Features</td><td>[2602.08430](http://arxiv.org/pdf/2602.08430)</td><td>该论文的核心贡献在于对基于注意力的稀疏图像匹配模型进行了深入分析与优化，并提出了一个通用的匹配模型。其创新点可总结如下：
+
+◆ 首次指出了一个先前被忽视、但对LightGlue模型性能有关键影响的设计选择，为模型理解提供了新视角。
+
+◆ 系统研究了在基于Transformer的匹配框架中，检测器与描述子的作用，发现性能差异的主要来源通常是检测器而非描述子。
+
+◆ 提出了一种新颖的微调方法，能够利用来自多种不同检测器的关键点数据来训练现有图像匹配模型。
+
+◆ 最终训练出一个通用的、与检测器无关的模型，该模型在作为新检测器的零样本匹配器时，其精度能达到甚至超过为特定特征专门训练的模型。
+
+这些发现为基于Transformer的匹配模型的部署以及未来局部特征的设计提供了宝贵的见解。</td></tr>
+<tr><td>2026-01-31</td><td>Gaussian-Constrained LeJEPA Representations for Unsupervised Scene Discovery and Pose Consistency</td><td>[2602.07016](http://arxiv.org/pdf/2602.07016)</td><td>本文的核心贡献在于探索并实证了高斯约束表征在无监督三维场景重建中的应用，特别是在多场景发现与相机姿态估计任务中。其创新点可总结如下：
+
+◆ 首次将受LeJEPA启发的各向同性高斯约束应用于无监督场景发现的图像嵌入学习，旨在提升表征的区分度。
+◆ 提出了三种逐步优化的处理流程，最终形成一种约束嵌入以服从高斯分布的方法，增强聚类一致性。
+◆ 不追求理论证明，而是通过实证评估，验证了高斯约束在实际任务中对场景分离和姿态估计鲁棒性的积极影响。
+◆ 在IMC2025挑战赛的复杂真实数据（包含异常值和视觉模糊内容）上验证了方法的有效性，表明其优于启发式基线方法。
+◆ 为连接自监督学习原理与实际运动恢复结构流程提供了一个有前景的研究方向，即通过理论驱动的表征约束来提升实际系统性能。</td></tr>
 <tr><td>2026-02-06</td><td>Perception-Control Coupled Visual Servoing for Textureless Objects Using Keypoint-Based EKF</td><td>[2602.06834](http://arxiv.org/pdf/2602.06834)</td><td>◆ Visual servoing is fundamental to robotic applications, enabling precise positioning and control.
 ◆ However, applying it to textureless objects remains a challenge due to the absence of reliable visual features.
 ◆ Moreover, adverse visual conditions, such as occlusions, often corrupt visual feedback, leading to reduced accuracy and instability in visual servoing.</td></tr>
@@ -791,6 +861,56 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-09</td><td>Grow with the Flow: 4D Reconstruction of Growing Plants with Gaussian Flow Fields</td><td>[2602.08958](http://arxiv.org/pdf/2602.08958)</td><td>该论文针对植物生长这一独特动态场景，提出了一种新颖的4D重建方法，其核心贡献与创新点如下：
+
+◆ 首创了适用于植物生长的3D高斯流场表示。该方法将生长过程建模为高斯参数（位置、尺度、朝向、颜色、不透明度）随时间变化的导数，从而能够表达非线性和连续时间的生长动态。
+
+◆ 解决了新生几何结构的建模难题。与传统的变形场或4D高斯溅射方法不同，本方法不依赖固定的高斯集合或线性运动轨迹，能够自然地模拟植物在生长过程中几何结构的扩张、分枝与分化。
+
+◆ 提出了“逆向生长”的初始化策略。为了获得足够的高斯基元，该方法先重建成熟植株，然后学习一个逆向生长过程，以此模拟植物的发展历史，为正向生长建模提供了高质量的初始状态。
+
+◆ 在多个植物生长时序数据集上验证了优越性。实验表明，该方法在图像质量和几何精度方面均优于现有方法，为生长中的三维结构的外观建模提供了新途径。</td></tr>
+<tr><td>2026-02-09</td><td>Analysis of Converged 3D Gaussian Splatting Solutions: Density Effects and Prediction Limit</td><td>[2602.08909](http://arxiv.org/pdf/2602.08909)</td><td>该论文的核心贡献在于对标准多视图优化产生的3D高斯泼溅（3DGS）解，即“渲染最优参考”，进行了系统性分析，并揭示了其内在规律与预测极限。
+
+◆ 首次将标准3DGS优化结果定义为“渲染最优参考”，并系统分析了其统计特性，发现其尺度呈混合结构、辐射度呈双峰分布等跨场景稳定模式。
+◆ 通过可学习性探测，揭示了参数可预测性根本取决于点云密度，发现了“密度分层”现象：稠密区域参数与几何相关可无渲染预测，稀疏区域则普遍预测失败。
+◆ 通过方差分解进行形式化论证，阐明稀疏区域因可见性异质性导致几何与外观参数强耦合，其协方差主导，难以解耦预测。
+◆ 据此阐明了ROR的双重本质：在稠密区是可由点云推断的“几何基元”，在稀疏区则是必须依赖多视图约束的“视图合成基元”。
+◆ 基于上述发现，提出了提升训练鲁棒性的密度感知策略，并讨论了能自适应平衡前馈预测与基于渲染优化的系统架构方向。</td></tr>
+<tr><td>2026-02-09</td><td>GaussianCaR: Gaussian Splatting for Efficient Camera-Radar Fusion</td><td>[2602.08784](http://arxiv.org/pdf/2602.08784)</td><td>该论文的核心贡献是提出了GaussianCaR，一个用于鸟瞰图分割的端到端相机-雷达融合网络。其创新点主要体现在以下方面：
+
+◆ 首次将高斯泼溅技术重新定位为一种高效的通用视图转换器，用以桥接相机与雷达之间的视图差异。
+◆ 提出了一种新颖的融合范式，直接映射原始传感器数据（图像像素和雷达点）到共享的鸟瞰图潜在特征空间，而非依赖中间表示。
+◆ 设计了一个结合多尺度融合与Transformer解码器的架构，能够高效地提取鸟瞰图特征。
+◆ 在nuScenes数据集上的实验表明，该方法在车辆、道路和车道分隔线的分割任务上达到了领先的性能（IoU分别为57.3%、82.9%和50.1%）。
+◆ 在实现优异性能的同时，保持了高达3.2倍的推理速度优势，显著提升了效率。</td></tr>
+<tr><td>2026-02-09</td><td>Rotated Lights for Consistent and Efficient 2D Gaussians Inverse Rendering</td><td>[2602.08724](http://arxiv.org/pdf/2602.08724)</td><td>该论文针对基于2D高斯泼溅的逆向渲染中材质反照率估计不准确、存在阴影残留的问题，提出了名为RotLight的创新解决方案。其核心贡献与创新点如下：
+
+◆ 提出一种简单实用的RotLight数据采集设置，仅需在采集过程中旋转物体数次（如两次），即可有效减少反照率估计中的歧义性，缓解颜色失真与阴影残留问题。
+
+◆ 引入一个代理网格模型，该模型不仅能实现精确的入射光线追踪，还通过启用残差约束改善了全局光照的处理，从而提升了逆向渲染的整体精度。
+
+◆ 将上述旋转采集策略与代理网格增强的2D高斯逆向渲染框架相结合，在合成与真实世界数据集上验证了该方法在保持高效计算的同时，实现了更优的反照率分解质量。</td></tr>
+<tr><td>2026-02-09</td><td>Informative Object-centric Next Best View for Object-aware 3D Gaussian Splatting in Cluttered Scenes</td><td>[2602.08266](http://arxiv.org/pdf/2602.08266)</td><td>该论文针对杂乱场景中因遮挡导致观测不全的问题，提出了一种面向对象的下一代最佳视角选择方法，并与对象感知的3D高斯泼溅技术结合，以构建更可靠的场景表示。其核心贡献与创新点如下：
+
+◆ 提出了一种实例感知的下一代最佳视角策略，克服了现有方法仅依赖几何线索、忽略操作相关语义以及过度偏向利用而非探索的局限。
+◆ 开发了对象感知的3D高斯泼溅表示，能将实例级信息蒸馏为独热对象向量，从而显式编码语义信息。
+◆ 利用对象特征计算置信加权的信息增益，以此指导识别与错误及不确定高斯分布相关的区域，优先探索未充分观测的区域。
+◆ 该方法可灵活调整为以对象为中心的下一代最佳视角策略，能将视角选择聚焦于目标物体，从而提升对物体摆放位置的重建鲁棒性。
+◆ 实验证明，该方法在合成和真实数据集上显著降低了深度误差，并在真实机器人操作任务中验证了有效性。</td></tr>
+<tr><td>2026-02-07</td><td>Thermal odometry and dense mapping using learned ddometry and Gaussian splatting</td><td>[2602.07493](http://arxiv.org/pdf/2602.07493)</td><td>本文针对热红外传感器在黑暗、烟尘等恶劣条件下成像稳定的优势，提出了一种新型的热视觉里程计与稠密建图系统TOM-GS。其核心贡献与创新点如下：
+
+◆ 首次将高斯泼溅（Gaussian Splatting）重建技术引入热相机SLAM系统，实现了高效且高质量的稠密三维地图构建。
+◆ 提出了一种融合学习式里程计与高斯泼溅建图的完整框架，克服了传统几何方法在多样化数据上易失效且无法生成稠密地图的局限。
+◆ 设计了专门的热图像增强模块，优化了热红外图像的输入质量，提升了系统的感知能力。
+◆ 集成了单目深度估计信息，增强了在单热相机配置下的场景几何理解与建图效果。
+◆ 通过大量实验验证，该系统在运动估计和新视角渲染任务上均优于现有学习方法，证明了学习式流程在热视觉里程计与稠密重建中的优越性。</td></tr>
+<tr><td>2026-02-06</td><td>Zero-Shot UAV Navigation in Forests via Relightable 3D Gaussian Splatting</td><td>[2602.07101](http://arxiv.org/pdf/2602.07101)</td><td>该论文的核心贡献是提出一个端到端强化学习框架，实现了无人机在复杂森林环境中的零样本、高速、避障导航。其创新点主要在于：
+
+◆ 提出可重光照的3D高斯溅射技术，将场景的几何外观与光照分离，解决了传统神经渲染中光照与场景耦合的问题。
+◆ 构建了一个基于真实数据的高保真仿真环境，并利用上述技术合成从强烈日光到漫射阴天等多种逼真光照条件，用于策略训练。
+◆ 设计了一种强化学习策略，能够直接根据单目RGB图像输出连续控制指令，并通过光照增强训练迫使策略学习光照不变的鲁棒视觉特征。
+◆ 最终实现了无需微调即可零样本迁移到真实世界，使轻型四旋翼无人机能在复杂森林中以高达10米/秒的速度进行抗光照干扰的稳健导航。</td></tr>
 <tr><td>2026-02-06</td><td>DynFOA: Generating First-Order Ambisonics with Conditional Diffusion for Dynamic and Acoustically Complex 360-Degree Videos</td><td>[2602.06846](http://arxiv.org/pdf/2602.06846)</td><td>◆ Spatial audio is crucial for creating compelling immersive 360-degree video experiences.
 ◆ However, generating realistic spatial audio, such as first-order ambisonics (FOA), from 360-degree videos in complex acoustic scenes remains challenging.
 ◆ Existing methods often overlook the dynamic nature and acoustic complexity of 360-degree scenes, fail to fully account for dynamic sound sources, and neglect complex environmental effects such as occlusion, reflections, and reverberation, which are influenced by scene geometries and materials.</td></tr>
@@ -1243,7 +1363,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-02-06</td><td>Forest canopy height estimation from satellite RGB imagery using large-scale airborne LiDAR-derived training data and monocular depth estimation</td><td>[2602.06503](http://arxiv.org/pdf/2602.06503)</td><td>◆ Large-scale, high-resolution forest canopy height mapping plays a crucial role in understanding regional and global carbon and water cycles.
+<tr><td>2026-02-09</td><td>Forest canopy height estimation from satellite RGB imagery using large-scale airborne LiDAR-derived training data and monocular depth estimation</td><td>[2602.06503](http://arxiv.org/pdf/2602.06503)</td><td>◆ Large-scale, high-resolution forest canopy height mapping plays a crucial role in understanding regional and global carbon and water cycles.
 ◆ Spaceborne LiDAR missions, including the Ice, Cloud, and Land Elevation Satellite-2 (ICESat-2) and the Global Ecosystem Dynamics Investigation (GEDI), provide global observations of forest structure but are spatially sparse and subject to inherent uncertainties.
 ◆ In contrast, near-surface LiDAR platforms, such as airborne and unmanned aerial vehicle (UAV) LiDAR systems, offer much finer measurements of forest canopy structure, and a growing number of countries have made these datasets openly available.</td></tr>
 <tr><td>2026-02-06</td><td>Now You See That: Learning End-to-End Humanoid Locomotion from Raw Pixels</td><td>[2602.06382](http://arxiv.org/pdf/2602.06382)</td><td>◆ Achieving robust vision-based humanoid locomotion remains challenging due to two fundamental issues: the sim-to-real gap introduces significant perception noise that degrades performance on fine-grained tasks, and training a unified policy across diverse terrains is hindered by conflicting learning objectives.
@@ -1591,4 +1711,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.09
+> 更新于: 2026.02.10
