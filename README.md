@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.02.10)
+# SLAM领域最新论文 (2026.02.11)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -869,7 +869,37 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-02-09</td><td>Grow with the Flow: 4D Reconstruction of Growing Plants with Gaussian Flow Fields</td><td>[2602.08958](http://arxiv.org/pdf/2602.08958)</td><td>该论文针对植物生长这一独特动态场景，提出了一种新颖的4D重建方法，其核心贡献与创新点如下：
+<tr><td>2026-02-10</td><td>Faster-GS: Analyzing and Improving Gaussian Splatting Optimization</td><td>[2602.09999](http://arxiv.org/pdf/2602.09999)</td><td>本文的核心贡献在于系统性地整合、评估并改进了3D高斯泼溅（3DGS）的优化过程，提出了一个名为Faster-GS的高效新系统。其创新点主要包括：
+
+◆ 系统性地整合与评估了先前3DGS研究中最有效且广泛适用的优化策略，厘清了算法本质改进与工程实现优化的关系，为公平比较建立了基础。
+
+◆ 提出了多项新颖的优化技术，并深入研究了原框架中未被充分探索的方面，如数值稳定性、高斯截断和梯度近似等问题。
+
+◆ 最终实现的Faster-GS系统，在保持视觉质量的前提下，实现了高达5倍的训练加速，为3DGS优化建立了一个新的高性价比、资源高效的基准。
+
+◆ 进一步证明了所提出的优化方案可成功应用于4D高斯重建（即动态非刚性场景），实现了高效的动态场景优化。</td></tr>
+<tr><td>2026-02-10</td><td>CompSplat: Compression-aware 3D Gaussian Splatting for Real-world Video</td><td>[2602.09816](http://arxiv.org/pdf/2602.09816)</td><td>本文提出CompSplat框架，旨在解决真实世界长视频在新视角合成任务中因压缩和相机位姿问题导致的渲染质量下降难题。其核心贡献与创新点如下：
+
+◆ 首次在3D高斯泼溅框架中显式建模逐帧压缩特性，直接针对视频压缩带来的帧间不一致性进行优化。
+◆ 提出压缩感知的帧加权机制，在训练中区分处理不同压缩程度的帧，以减轻累积几何误差。
+◆ 设计自适应修剪策略，增强场景表示的鲁棒性与几何一致性，尤其在重度压缩条件下效果显著。
+◆ 整体框架能同时处理长序列、未知相机位姿与多样化压缩模式，克服了现有方法通常只侧重其中单一问题的局限。
+◆ 在多个高难度基准测试上实现领先的渲染质量与位姿估计精度，尤其在严重压缩环境下大幅超越现有先进方法。</td></tr>
+<tr><td>2026-02-10</td><td>Toward Fine-Grained Facial Control in 3D Talking Head Generation</td><td>[2602.09736](http://arxiv.org/pdf/2602.09736)</td><td>该论文的核心贡献是提出了一个名为FG-3DGS的新框架，旨在解决3D说话头生成中细粒度面部控制不足的难题，特别是唇部同步不准确和面部抖动问题，以生成时序一致且高保真的结果。
+
+其核心创新点包括：
+◆ 提出了一种频率感知的解耦策略，根据面部区域的不同运动特性进行显式建模。将面颊、鼻子等低频运动区域与眼睛、嘴巴等高频运动区域分开处理。
+◆ 针对高频运动区域（如眼、口），设计了由面部区域掩码引导的专用网络进行独立捕捉，以实现更精细的控制。
+◆ 采用高斯增量来表示预测的运动动态，并将其应用于静态高斯点以生成最终帧，保持了表示的灵活性。
+◆ 引入了一个高频细化的渲染后对齐机制，该机制通过预训练模型从大规模音视频对中学习，以增强单帧生成质量并实现更精准的唇部同步。</td></tr>
+<tr><td>2026-02-10</td><td>Stability and Concentration in Nonlinear Inverse Problems with Block-Structured Parameters: Lipschitz Geometry, Identifiability, and an Application to Gaussian Splatting</td><td>[2602.09415](http://arxiv.org/pdf/2602.09415)</td><td>本文针对具有块结构参数的非线性逆问题，建立了一个统一的算子理论框架，以分析其稳定性和统计集中性。
+
+◆ 提出了一套统一假设，将块状Lipschitz几何、局部可辨识性与次高斯噪声相结合，为一大类高维非线性逆问题提供了普适的分析基础。
+◆ 在该框架下，同时建立了确定性稳定性不等式、最小二乘失配函数的全局Lipschitz界，以及非渐近的集中性估计。
+◆ 推导出了不依赖于具体重建算法、仅由前向算子本质决定的高概率参数误差界，揭示了算法无关的算子级性能极限。
+◆ 将理论具体应用于高斯泼溅渲染算子，验证了其满足所提假设，并导出了控制其Lipschitz连续性和分辨率相关可观测性的显式常数。
+◆ 由此揭示了一个根本性的稳定性-分辨率权衡，证明估计误差本质上受图像分辨率与模型复杂度之比的制约。</td></tr>
+<tr><td>2026-02-10</td><td>Grow with the Flow: 4D Reconstruction of Growing Plants with Gaussian Flow Fields</td><td>[2602.08958](http://arxiv.org/pdf/2602.08958)</td><td>该论文针对植物生长这一独特动态场景，提出了一种新颖的4D重建方法，其核心贡献与创新点如下：
 
 ◆ 首创了适用于植物生长的3D高斯流场表示。该方法将生长过程建模为高斯参数（位置、尺度、朝向、颜色、不透明度）随时间变化的导数，从而能够表达非线性和连续时间的生长动态。
 
@@ -1373,6 +1403,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-10</td><td>VersaViT: Enhancing MLLM Vision Backbones via Task-Guided Optimization</td><td>[2602.09934](http://arxiv.org/pdf/2602.09934)</td><td>该论文针对MLLM视觉编码器在密集预测任务上表现不足的问题，提出了一种增强视觉主干网络通用性的方法。其核心贡献与创新点如下：
+
+◆ 揭示了当前多模态大语言模型（MLLMs）中视觉编码器的局限性，即其虽然具备高层语义对齐能力，但在语义分割、深度估计等需要密集像素级理解的任务上表现欠佳。
+
+◆ 提出了VersaViT，一个全面的视觉Transformer架构。它实例化了一个新颖的多任务协作后训练框架，旨在提升视觉主干网络的通用能力。
+
+◆ 该框架通过轻量级的任务头，并利用多粒度监督信号，来协同优化视觉主干网络，从而使其能够同时适应以语言为中介的推理任务和像素级的视觉理解任务。
+
+◆ 通过在下游多种任务上的广泛实验，验证了该方法的有效性，最终得到了一个既服务于高级语义对齐又能可靠执行经典视觉任务的通用视觉主干网络。</td></tr>
+<tr><td>2026-02-10</td><td>RAD: Retrieval-Augmented Monocular Metric Depth Estimation for Underrepresented Classes</td><td>[2602.09532](http://arxiv.org/pdf/2602.09532)</td><td>该论文提出了一种检索增强的单目度量深度估计框架RAD，旨在解决复杂场景中少数类别物体深度估计不准的难题。其核心贡献与创新点如下：
+
+◆ 提出检索增强框架，通过检索相似场景的RGB-D样本作为几何代理，模拟多视图立体视觉的优势，增强对少数类别的深度感知。
+
+◆ 设计不确定性感知检索机制，能自动识别输入图像中低置信度区域，并针对性地检索包含相似语义内容的RGB-D上下文样本。
+
+◆ 采用双流网络架构处理输入图像与检索样本，并通过匹配交叉注意力模块进行融合，该模块仅依赖可靠的点对应关系传递几何信息，避免错误匹配干扰。
+
+◆ 在多个标准数据集上验证了框架的有效性，显著提升了少数类别的深度估计精度，如在NYU Depth v2上相对绝对误差降低29.2%，同时保持主流类别的竞争力。</td></tr>
 <tr><td>2026-02-09</td><td>Forest canopy height estimation from satellite RGB imagery using large-scale airborne LiDAR-derived training data and monocular depth estimation</td><td>[2602.06503](http://arxiv.org/pdf/2602.06503)</td><td>◆ Large-scale, high-resolution forest canopy height mapping plays a crucial role in understanding regional and global carbon and water cycles.
 ◆ Spaceborne LiDAR missions, including the Ice, Cloud, and Land Elevation Satellite-2 (ICESat-2) and the Global Ecosystem Dynamics Investigation (GEDI), provide global observations of forest structure but are spatially sparse and subject to inherent uncertainties.
 ◆ In contrast, near-surface LiDAR platforms, such as airborne and unmanned aerial vehicle (UAV) LiDAR systems, offer much finer measurements of forest canopy structure, and a growing number of countries have made these datasets openly available.</td></tr>
@@ -1723,4 +1771,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.10
+> 更新于: 2026.02.11
