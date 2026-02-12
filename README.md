@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.02.11)
+# SLAM领域最新论文 (2026.02.12)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -34,7 +34,7 @@
 ◆ 提出了一种双分支网络架构，专门用于在线变化检测与长期地图维护，解决了现有方法在瞬变环境中难以检测变化并更新地图的难题。
 ◆ 针对真实世界数据难以采集和对齐的瓶颈，创新性地开发了一种数据增强策略，通过从不同场景导入元素来合成结构变化，从而无需大量人工标注即可有效训练模型。
 ◆ 所提出的方法在真实建筑工地和室内办公环境等多种场景中进行了验证，表现出良好的泛化能力，能够实现高效且准确的地图更新。</td></tr>
-<tr><td>2026-02-07</td><td>Thermal odometry and dense mapping using learned ddometry and Gaussian splatting</td><td>[2602.07493](http://arxiv.org/pdf/2602.07493)</td><td>本文提出了一种名为TOM-GS的新型热成像里程计与稠密建图方法，其核心贡献在于首次将基于学习的方法与高斯泼溅技术相结合，以解决热成像在恶劣环境下的鲁棒感知与稠密重建问题。
+<tr><td>2026-02-11</td><td>Thermal odometry and dense mapping using learned odometry and Gaussian splatting</td><td>[2602.07493](http://arxiv.org/pdf/2602.07493)</td><td>本文提出了一种名为TOM-GS的新型热成像里程计与稠密建图方法，其核心贡献在于首次将基于学习的方法与高斯泼溅技术相结合，以解决热成像在恶劣环境下的鲁棒感知与稠密重建问题。
 
 ◆ 提出了首个专为热成像相机设计的高斯泼溅SLAM系统（TOM-GS），将基于学习的里程计与基于高斯泼溅的稠密建图相集成。
 ◆ 设计了专门的热图像增强模块，以优化热成像的输入质量，并集成了单目深度估计，以提升几何感知能力。
@@ -869,6 +869,29 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-10</td><td>ERGO: Excess-Risk-Guided Optimization for High-Fidelity Monocular 3D Gaussian Splatting</td><td>[2602.10278](http://arxiv.org/pdf/2602.10278)</td><td>本文针对单图像3D重建中因遮挡导致信息缺失的难题，提出了一种名为ERGO的自适应优化框架。其核心贡献与创新点如下：
+
+◆ 提出了基于超额风险分解的优化框架，将3D高斯泼溅的损失分解为可优化的超额风险与不可约的贝叶斯误差，从而量化合成监督信号中的噪声。
+
+◆ 通过动态估计视图特定的超额风险，自适应调整优化过程中的损失权重，使模型能有效抵抗合成多视角图像中的几何与纹理不一致噪声。
+
+◆ 引入了几何感知与纹理感知的优化目标，与超额风险权重机制形成互补，构建了一个协同的全局-局部优化范式。
+
+◆ 该框架显著提升了重建3D内容的几何保真度与纹理质量，在多个公开数据集上的实验证明了其优于现有先进方法的性能。</td></tr>
+<tr><td>2026-02-10</td><td>XSPLAIN: XAI-enabling Splat-based Prototype Learning for Attribute-aware INterpretability</td><td>[2602.10239](http://arxiv.org/pdf/2602.10239)</td><td>该论文针对3D高斯泼溅（3DGS）模型缺乏可解释性的问题，提出了首个专门为其分类任务设计的原型学习解释框架XSPLAIN。其核心贡献与创新点如下：
+
+◆ 提出了首个面向3DGS分类的事前可解释性框架，填补了该领域空白。
+◆ 设计了一种新颖的可逆正交变换，能在保持模型原始决策边界严格不变的前提下，解耦特征通道以实现可解释性。
+◆ 采用基于原型的解释方法，将预测关联到有代表性的训练样本，提供直观的“此像彼”式推理，且不牺牲分类性能。
+◆ 通过体素聚合的PointNet主干网络有效处理3DGS数据，克服了传统点云解释方法中显著性图模糊、无法捕捉高斯基元体积一致性的缺陷。
+◆ 严格的用户研究（51人）证实了其解释的优越性与用户信任度，显著优于基线方法。</td></tr>
+<tr><td>2026-02-10</td><td>ArtisanGS: Interactive Tools for Gaussian Splat Selection with AI and Human in the Loop</td><td>[2602.10173](http://arxiv.org/pdf/2602.10173)</td><td>该论文的核心贡献是开发了一套名为ArtisanGS的交互式工具集，旨在解决从非结构化3D高斯泼溅（3DGS）场景中精确选择和分割对象的难题，并支持可控的局部编辑。
+
+◆ 提出了一套以灵活的高斯泼溅选择和分割为核心的交互式工具集，而非专注于全自动或高级编辑，填补了该领域交互工具的空白。
+◆ 引入了一种快速的AI驱动方法，能将用户引导的2D选择掩码传播到3DGS选择中，并允许用户在出现错误时进行干预修正。
+◆ 结合了灵活的手动选择和分割工具，使得用户能够对非结构化的3DGS场景实现几乎任意的二进制分割。
+◆ 开发了一种用户引导的局部编辑方法，利用定制的视频扩散模型，并让用户通过选择工具直接控制AI可修改的区域，实现了下游应用。
+◆ 整个工具集无需额外优化即可适用于任何野外捕获的3DGS场景，提升了实用性和易用性。</td></tr>
 <tr><td>2026-02-10</td><td>Faster-GS: Analyzing and Improving Gaussian Splatting Optimization</td><td>[2602.09999](http://arxiv.org/pdf/2602.09999)</td><td>本文的核心贡献在于系统性地整合、评估并改进了3D高斯泼溅（3DGS）的优化过程，提出了一个名为Faster-GS的高效新系统。其创新点主要包括：
 
 ◆ 系统性地整合与评估了先前3DGS研究中最有效且广泛适用的优化策略，厘清了算法本质改进与工程实现优化的关系，为公平比较建立了基础。
@@ -1403,6 +1426,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-11</td><td>PuriLight: A Lightweight Shuffle and Purification Framework for Monocular Depth Estimation</td><td>[2602.11066](http://arxiv.org/pdf/2602.11066)</td><td>该论文提出名为PuriLight的轻量级自监督单目深度估计框架，旨在同时解决计算效率与细节保留的双重挑战。其核心贡献在于设计了一个三阶段架构，通过三个创新模块协同工作，实现了在极低参数量下保持高精度与高效率。
+
+◆ 提出Shuffle-Dilation Convolution（SDC）模块，用于高效的局部特征提取，平衡感受野与计算负担。
+◆ 设计Rotation-Adaptive Kernel Attention（RAKA）模块，通过自适应注意力机制增强分层特征表示能力。
+◆ 引入Deep Frequency Signal Purification（DFSP）模块，在频域进行全局特征纯化，提升细节保留与结构精度。
+◆ 整体框架将上述模块有效整合，实现了轻量化与高精度特征处理的统一，在自监督条件下减少了对真实标注数据的依赖。
+◆ 大量实验验证该框架以极少的训练参数达到了先进性能，同时保持了优异的计算效率，推动了实用化轻量深度估计模型的发展。</td></tr>
+<tr><td>2026-02-11</td><td>Interpretable Vision Transformers in Monocular Depth Estimation via SVDA</td><td>[2602.11005](http://arxiv.org/pdf/2602.11005)</td><td>该论文的核心贡献是将一种新型的、可解释的注意力机制引入单目深度估计任务，重新定义了Transformer模型在该领域的透明度。
+
+◆ 提出了SVD启发式注意力机制，首次为密集预测任务提供了具有光谱结构的注意力公式化表达。
+◆ 该机制通过在学习到的对角矩阵中嵌入归一化的查询-键交互，将方向对齐与光谱调制解耦，使注意力图本身具有内在可解释性，而非事后近似。
+◆ 在保持甚至略微提升预测精度的同时，该方法仅增加了微小的计算开销，在KITTI和NYU-v2数据集上得到验证。
+◆ 其关键创新在于衍生出六个可量化的光谱指标，用于评估注意力机制的熵、秩、稀疏性、对齐性、选择性和鲁棒性。
+◆ 这些指标揭示了训练过程中注意力组织方式具有一致的跨数据集和深度维度模式，这是标准Transformer模型无法提供的洞察。
+◆ 总体而言，该方法将注意力的角色从不透明的机制转变为可量化的描述符，为构建透明的密集预测模型开辟了新途径。</td></tr>
+<tr><td>2026-02-11</td><td>AugVLA-3D: Depth-Driven Feature Augmentation for Vision-Language-Action Models</td><td>[2602.10698](http://arxiv.org/pdf/2602.10698)</td><td>该论文针对现有视觉-语言-动作模型因依赖二维图像训练而导致三维空间理解不足的问题，提出了一种融合深度信息以增强三维特征表征的新框架。其核心贡献与创新点如下：
+
+◆ 提出将深度估计集成到视觉-语言-动作模型中的新框架，利用名为VGGT的深度估计基线，从标准RGB输入中提取几何感知的三维线索，从而在无需大规模三维数据集的情况下隐式恢复三维结构信息。
+
+◆ 引入一个称为“动作助手”的新模块，该模块利用动作先验知识对学习到的三维表征进行约束，确保其与下游控制任务保持一致，从而提升了深度特征的可信度与实用性。
+
+◆ 通过将增强后的三维特征与传统的二维视觉标记相融合，显著提高了模型在复杂三维环境中的泛化能力和鲁棒性，有效弥补了二维观测与三维感知决策之间的差距。
+
+实验结果表明，该方法不仅增强了模型在几何模糊场景中的感知能力，还实现了更优的动作预测精度。这项工作凸显了深度驱动数据增强与辅助专家监督在机器人系统二维到三维感知升级中的潜力。</td></tr>
 <tr><td>2026-02-10</td><td>VersaViT: Enhancing MLLM Vision Backbones via Task-Guided Optimization</td><td>[2602.09934](http://arxiv.org/pdf/2602.09934)</td><td>该论文针对MLLM视觉编码器在密集预测任务上表现不足的问题，提出了一种增强视觉主干网络通用性的方法。其核心贡献与创新点如下：
 
 ◆ 揭示了当前多模态大语言模型（MLLMs）中视觉编码器的局限性，即其虽然具备高层语义对齐能力，但在语义分割、深度估计等需要密集像素级理解的任务上表现欠佳。
@@ -1430,7 +1477,7 @@
 <tr><td>2026-02-05</td><td>AnyThermal: Towards Learning Universal Representations for Thermal Perception</td><td>[2602.06203](http://arxiv.org/pdf/2602.06203)</td><td>◆ We present AnyThermal, a thermal backbone that captures robust task-agnostic thermal features suitable for a variety of tasks such as cross-modal place recognition, thermal segmentation, and monocular depth estimation using thermal images.
 ◆ Existing thermal backbones that follow task-specific training from small-scale data result in utility limited to a specific environment and task.
 ◆ Unlike prior methods, AnyThermal can be used for a wide range of environments (indoor, aerial, off-road, urban) and tasks, all without task-specific training.</td></tr>
-<tr><td>2026-02-05</td><td>Splat and Distill: Augmenting Teachers with Feed-Forward 3D Reconstruction For 3D-Aware Distillation</td><td>[2602.06032](http://arxiv.org/pdf/2602.06032)</td><td>◆ Vision Foundation Models (VFMs) have achieved remarkable success when applied to various downstream 2D tasks.
+<tr><td>2026-02-11</td><td>Splat and Distill: Augmenting Teachers with Feed-Forward 3D Reconstruction For 3D-Aware Distillation</td><td>[2602.06032](http://arxiv.org/pdf/2602.06032)</td><td>◆ Vision Foundation Models (VFMs) have achieved remarkable success when applied to various downstream 2D tasks.
 ◆ Despite their effectiveness, they often exhibit a critical lack of 3D awareness.
 ◆ To this end, we introduce Splat and Distill, a framework that instills robust 3D awareness into 2D VFMs by augmenting the teacher model with a fast, feed-forward 3D reconstruction pipeline.</td></tr>
 <tr><td>2026-02-05</td><td>Depth as Prior Knowledge for Object Detection</td><td>[2602.05730](http://arxiv.org/pdf/2602.05730)</td><td>◆ Detecting small and distant objects remains challenging for object detectors due to scale variation, low resolution, and background clutter.
@@ -1771,4 +1818,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.11
+> 更新于: 2026.02.12
