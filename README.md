@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.02.25)
+# SLAM领域最新论文 (2026.02.26)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,26 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-25</td><td>Parallel Continuous-Time Relative Localization with Augmented Clamped Non-Uniform B-Splines</td><td>[2602.22006](http://arxiv.org/pdf/2602.22006)</td><td>本文提出了一种名为CT-RIO的新型连续时间相对惯性里程计框架，旨在解决多机器人系统中高精度、低延迟的相对定位问题。其核心贡献与创新点如下：
+
+◆ 首次将钳位非均匀B样条（C-NUBS）应用于机器人状态表示，从根本上消除了传统非钳位样条固有的查询时间延迟问题。
+◆ 为C-NUBS设计了具有闭式解的样条扩展与收缩操作，该操作能保持样条形状，从而实现了适用于在线估计的灵活节点管理。
+◆ 基于上述灵活性，提出了“节点-关键节点”策略，能够支持高频下的样条扩展，同时保留稀疏的关键节点以用于自适应的相对运动建模。
+◆ 构建了一个纯基于相对运动学与机器人间约束的滑动窗口相对定位问题，避免了全局状态的依赖。
+◆ 为满足大规模集群的计算需求，将紧耦合优化问题分解为按机器人划分的子问题，并采用增量式异步块坐标下降法进行并行求解，显著提升了计算效率。</td></tr>
+<tr><td>2026-02-25</td><td>Dream-SLAM: Dreaming the Unseen for Active SLAM in Dynamic Environments</td><td>[2602.21967](http://arxiv.org/pdf/2602.21967)</td><td>Dream-SLAM提出了一种新颖的单目主动SLAM方法，旨在解决动态环境中传统方法存在的三大局限。其核心贡献在于通过“梦境”生成与融合机制，提升了系统的感知与规划能力。
+
+◆ 创新性地引入“梦境”机制，生成动态环境中未观测区域的跨时空图像和语义结构，以补全不完整信息。
+◆ 将梦境生成的数据与真实观测相融合，有效降低了噪声影响，从而提高了相机位姿估计的精度和三维场景重建的连贯性。
+◆ 综合利用梦境与观测得到的场景结构进行长视距规划，生成具有远见的机器人运动轨迹，实现了更高效、更彻底的自主探索。
+◆ 整体框架显著提升了在动态场景下的性能，在定位精度、建图质量和探索效率上均优于现有先进方法。</td></tr>
+<tr><td>2026-02-25</td><td>DAGS-SLAM: Dynamic-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty-Aware Scheduling</td><td>[2602.21644](http://arxiv.org/pdf/2602.21644)</td><td>DAGS-SLAM的核心贡献是提出了一种面向移动部署的动态感知3D高斯溅射SLAM系统，在动态环境中实现了鲁棒的实时定位与重建。其创新点如下：
+
+◆ 引入了时空运动概率（MP）状态，为每个3D高斯点维护一个动态概率估计，替代了传统上依赖逐帧分割或计算量大的光流方法。
+◆ 设计了一个不确定性感知的调度器，根据系统跟踪的不确定性按需触发语义分割（如YOLO），显著减少了计算开销，提升了移动端的实用性。
+◆ 提出了一种融合策略，将轻量级实例语义先验与几何线索相结合，以估计并随时间更新MP状态，增强了动态判断的鲁棒性，特别是在光照挑战下。
+◆ 将MP状态传播至系统前端，用于动态感知的特征对应点选择，从而提升了跟踪的鲁棒性。
+◆ 在后端优化中，利用MP引导的优化来抑制动态伪影，改善了静态场景的重建质量。实验表明，该系统在公开动态RGB-D数据集上实现了更好的重建与跟踪，同时在消费级GPU上保持了实时吞吐。</td></tr>
 <tr><td>2026-02-24</td><td>LST-SLAM: A Stereo Thermal SLAM System for Kilometer-Scale Dynamic Environments</td><td>[2602.20925](http://arxiv.org/pdf/2602.20925)</td><td>该论文提出了LST-SLAM，一个面向公里级动态环境的大规模立体热成像SLAM系统，旨在解决热成像SLAM在特征提取、运动跟踪和全局建图方面的核心难题。其核心贡献与创新点如下：
 
 ◆ 提出了一种自监督的热成像特征学习方法，提升了在复杂光照和天气条件下特征提取的可靠性。
@@ -38,7 +58,7 @@
 ◆ 引入了可学习的不透明度权重，支持自适应的4D地图构建，提高了重建的灵活性与准确性。
 
 实验表明，该方法在轨迹精度和4D场景重建质量上显著优于现有技术，尤其在包含运动物体和低质量输入的动态环境中表现突出。</td></tr>
-<tr><td>2026-02-24</td><td>From Pairs to Sequences: Track-Aware Policy Gradients for Keypoint Detection</td><td>[2602.20630](http://arxiv.org/pdf/2602.20630)</td><td>该论文的核心贡献是提出了一种基于强化学习的全新关键点检测框架，旨在直接优化关键点在图像序列中的长期跟踪能力。
+<tr><td>2026-02-25</td><td>From Pairs to Sequences: Track-Aware Policy Gradients for Keypoint Detection</td><td>[2602.20630](http://arxiv.org/pdf/2602.20630)</td><td>该论文的核心贡献是提出了一种基于强化学习的全新关键点检测框架，旨在直接优化关键点在图像序列中的长期跟踪能力。
 
 ◆ 将关键点检测重新定义为序列决策问题，突破了传统基于图像对训练的范式。
 ◆ 提出了名为TraqPoint的端到端强化学习框架，可直接在图像序列上训练。
@@ -589,6 +609,28 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-25</td><td>Fermi-LAT 16-year Source List</td><td>[2602.22148](http://arxiv.org/pdf/2602.22148)</td><td>本文基于费米大面积望远镜累积16年的观测数据，发布了早期16年源表（FL16Y），其核心贡献在于利用翻倍的数据量实现了对伽马射线天空更精确的普查。主要创新点如下：
+
+◆ 利用长达16年的观测数据，显著提升了源定位精度，平均改善幅度达24%。
+
+◆ 生成了一个全新的独立星表，而非在旧版基础上增量更新，这涉及对所有现有源进行重新定位与命名。
+
+◆ 源表包含7220个源，在增加新发现源的同时，系统性地审查并更新了已有源的坐标与天体物理关联。
+
+◆ 在星表分析流程中改进了若干环节，提升了数据处理的可靠性。
+
+◆ 本次发布为早期版本，仍沿用上一版本（4FGL-DR4）的星际弥漫辐射模型，为未来最终完整星表的建立奠定了基础。</td></tr>
+<tr><td>2026-02-25</td><td>Automatic Map Density Selection for Locally-Performant Visual Place Recognition</td><td>[2602.21473](http://arxiv.org/pdf/2602.21473)</td><td>该论文的核心贡献是提出了一种动态视觉位置识别地图构建方法，旨在根据用户定义的局部性能要求自动选择最合适的地图参考点密度，从而实现对局部性能的先验控制。
+
+◆ 首次将满足用户定义的局部性能要求（而非全局平均性能）作为地图密度选择的明确目标，引入了“召回达成率”这一新指标来量化在多大比例的操作环境中能达到目标局部召回率。
+
+◆ 提出了一种基于多参考轨迹匹配模式的预测方法，通过分析不同地图密度下的匹配模式，能够预测在未见过的部署数据上达到特定性能目标所需的地图密度。
+
+◆ 所提出的系统能够自动选择满足局部性能要求的最小适宜地图密度，有效避免了不必要的过度密集化建图，从而节省了存储和计算资源。
+
+◆ 通过大量实验验证了该方法的有效性，证明其能在用户指定的环境比例内稳定达到或超过目标局部召回率，并且所选密度操作点优于其他基线方法。
+
+◆ 研究还揭示了传统的全局平均召回率指标并不能很好地预测对实际运营更有意义的局部召回达成率，凸显了所提新评估维度的重要性。</td></tr>
 <tr><td>2026-02-24</td><td>LST-SLAM: A Stereo Thermal SLAM System for Kilometer-Scale Dynamic Environments</td><td>[2602.20925](http://arxiv.org/pdf/2602.20925)</td><td>该论文提出了LST-SLAM，一个面向公里级动态环境的大规模立体热成像SLAM系统，旨在解决热成像SLAM在特征提取、运动跟踪和全局建图方面的核心难题。其核心贡献与创新点如下：
 
 ◆ 提出了一种自监督的热成像特征学习方法，提升了在复杂环境下特征提取的可靠性。
@@ -964,7 +1006,23 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-02-24</td><td>From Pairs to Sequences: Track-Aware Policy Gradients for Keypoint Detection</td><td>[2602.20630](http://arxiv.org/pdf/2602.20630)</td><td>该论文的核心贡献是将关键点检测重新构建为序列决策问题，并提出了一种基于强化学习的端到端框架TraqPoint，以直接在图像序列上优化关键点的长期跟踪质量。
+<tr><td>2026-02-25</td><td>UNet-Based Keypoint Regression for 3D Cone Localization in Autonomous Racing</td><td>[2602.21904](http://arxiv.org/pdf/2602.21904)</td><td>该论文的核心贡献是提出了一种基于UNet神经网络的新方法，用于在自动驾驶赛车场景中实现高精度的三维锥桶定位。
+
+◆ 提出了一种基于UNet架构的关键点回归网络，用于检测锥桶上的关键点，从而估计其精确的三维位置。
+◆ 构建并利用了目前该领域最大规模的自定义标注数据集进行模型训练，增强了模型的鲁棒性。
+◆ 该方法在关键点检测精度上相比传统计算机视觉方法有显著提升，并且克服了传统方法对环境变化敏感、以及以往神经网络数据有限或难以实时运行的问题。
+◆ 所提出的模型不仅实现了位置估计，还具备预测锥桶颜色的潜力，丰富了感知信息。
+◆ 将预测的关键点集成到完整的感知系统中，并进行了端到端的自动驾驶系统评估，在实际赛道场景中展现了全面的高性能，证明了其在竞技性自动驾驶系统中的实用潜力。</td></tr>
+<tr><td>2026-02-24</td><td>FlowFixer: Towards Detail-Preserving Subject-Driven Generation</td><td>[2602.21402](http://arxiv.org/pdf/2602.21402)</td><td>FlowFixer是一个用于主体驱动生成的精细化框架，其核心贡献在于有效恢复生成过程中因主体尺度与视角变化而丢失的细节。其创新点主要包括：
+
+◆ 提出了一种直接的图像到图像转换方法，利用视觉参考进行细节修复，避免了语言提示的模糊性。
+
+◆ 引入了一步去噪方案来生成自监督训练数据，该方案能自动去除高频细节同时保留全局结构，从而有效模拟真实的主体驱动生成错误。
+
+◆ 提出了一种基于关键点匹配的评估指标，该指标能够超越CLIP或DINO通常测量的语义相似性，更准确地评估细节层面的保真度。
+
+实验结果表明，FlowFixer在定性和定量评估上均优于现有先进方法，为高保真度的主体驱动生成设立了新基准。</td></tr>
+<tr><td>2026-02-25</td><td>From Pairs to Sequences: Track-Aware Policy Gradients for Keypoint Detection</td><td>[2602.20630](http://arxiv.org/pdf/2602.20630)</td><td>该论文的核心贡献是将关键点检测重新构建为序列决策问题，并提出了一种基于强化学习的端到端框架TraqPoint，以直接在图像序列上优化关键点的长期跟踪质量。
 
 ◆ 创新性地将关键点检测从传统的图像对训练范式转变为序列决策问题，强调跨多视角的长期可跟踪性。
 ◆ 提出了TraqPoint这一端到端强化学习框架，通过策略梯度方法直接优化关键点的轨迹质量（Traq）。
@@ -1025,7 +1083,7 @@
 ◆ 不追求理论证明，而是通过实证评估，验证了高斯约束在实际任务中对场景分离和姿态估计鲁棒性的积极影响。
 ◆ 在IMC2025挑战赛的复杂真实数据（包含异常值和视觉模糊内容）上验证了方法的有效性，表明其优于启发式基线方法。
 ◆ 为连接自监督学习原理与实际运动恢复结构流程提供了一个有前景的研究方向，即通过理论驱动的表征约束来提升实际系统性能。</td></tr>
-<tr><td>2026-02-06</td><td>Perception-Control Coupled Visual Servoing for Textureless Objects Using Keypoint-Based EKF</td><td>[2602.06834](http://arxiv.org/pdf/2602.06834)</td><td>◆ Visual servoing is fundamental to robotic applications, enabling precise positioning and control.
+<tr><td>2026-02-25</td><td>Perception-Control Coupled Visual Servoing for Textureless Objects Using Keypoint-Based EKF</td><td>[2602.06834](http://arxiv.org/pdf/2602.06834)</td><td>◆ Visual servoing is fundamental to robotic applications, enabling precise positioning and control.
 ◆ However, applying it to textureless objects remains a challenge due to the absence of reliable visual features.
 ◆ Moreover, adverse visual conditions, such as occlusions, often corrupt visual feedback, leading to reduced accuracy and instability in visual servoing.</td></tr>
 <tr><td>2026-02-05</td><td>DroneKey++: A Size Prior-free Method and New Benchmark for Drone 3D Pose Estimation from Sequential Images</td><td>[2602.06211](http://arxiv.org/pdf/2602.06211)</td><td>◆ Accurate 3D pose estimation of drones is essential for security and surveillance systems.
@@ -1214,6 +1272,32 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-25</td><td>Interactive Augmented Reality-enabled Outdoor Scene Visualization For Enhanced Real-time Disaster Response</td><td>[2602.21874](http://arxiv.org/pdf/2602.21874)</td><td>本论文的核心贡献是开发了一个面向灾害响应的用户中心增强现实（AR）系统，旨在通过直观的可视化与交互提升实时决策与协调效率。
+
+◆ 创新性地将新兴的3D高斯溅射（3DGS）技术用于户外场景的详细重建与AR可视化，在保证高细节度的同时维持了用户的情境感知并降低了认知负荷。
+◆ 提出了一种轻量级的交互范式，结合了“微缩世界”（WIM）导航与可过滤的语义兴趣点（POIs），使用户能快速浏览、筛选关键信息，从而支持高效决策。
+◆ 设计了一个支持重建数据流式更新的系统架构，确保可视化内容能随场景变化而动态更新，适应灾害响应的实时性要求。
+◆ 通过以用户为中心的性能评估验证了系统的高可用性和高接受度，初步用户反馈证实该设计易于使用，并能有效支持实时协调与快速决策。</td></tr>
+<tr><td>2026-02-25</td><td>Space-Time Forecasting of Dynamic Scenes with Motion-aware Gaussian Grouping</td><td>[2602.21668](http://arxiv.org/pdf/2602.21668)</td><td>该论文的核心贡献是提出了一个用于动态场景长期时空预测的新框架MoGaF。其核心创新点在于：
+
+◆ 提出了基于4D高斯溅射表示的新框架MoGaF，用于解决从有限观测中预测动态场景的长期演化难题。
+◆ 创新性地引入了运动感知的高斯分组机制，以及分组优化策略，从而能够分别处理刚性和非刚性区域，确保其运动在物理上保持一致。
+◆ 通过上述结构化表示，构建了一个轻量级的预测模块，专门用于预测未来的运动，实现了真实且时间稳定的场景演化。
+◆ 在合成与真实数据集上的实验表明，该方法在渲染质量、运动合理性和长期预测稳定性方面均优于现有基线方法。</td></tr>
+<tr><td>2026-02-25</td><td>DAGS-SLAM: Dynamic-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty-Aware Scheduling</td><td>[2602.21644](http://arxiv.org/pdf/2602.21644)</td><td>DAGS-SLAM的核心贡献在于提出了一种面向移动部署、高效且鲁棒的动态场景3D高斯溅射SLAM系统。其创新点可总结如下：
+
+◆ 引入了时空运动概率（MP）作为每个高斯点的状态，以轻量方式持续估计和更新其动态可能性，替代了传统依赖繁重光流或逐帧分割的方法。
+◆ 设计了一个不确定性感知的调度器，仅在高斯点不确定性高时按需触发语义分割（如YOLO），大幅减少了计算开销，提升了系统实时性。
+◆ 将轻量级实例语义先验与几何线索相融合，共同估计MP，增强了动态判断在光照挑战下的鲁棒性。
+◆ 在前端将MP传播用于动态感知的特征点匹配选择，提升了跟踪鲁棒性；在后端通过MP引导的优化抑制动态伪影，改善了重建质量。
+◆ 在公开动态RGB-D数据集上的实验表明，该系统在消费级GPU上实现了实时性能，在保持高精度跟踪与重建的同时，为移动部署提供了更优的速度-精度权衡。</td></tr>
+<tr><td>2026-02-24</td><td>HorizonForge: Driving Scene Editing with Any Trajectories and Any Vehicles</td><td>[2602.21333](http://arxiv.org/pdf/2602.21333)</td><td>该论文的核心贡献是提出了一个名为HorizonForge的统一框架，用于实现高保真且精确可控的驾驶场景编辑与生成。
+
+◆ 提出了一种新颖的“高斯-网格”混合三维场景表示方法，将场景重建为可编辑的高斯泼溅与网格，实现了比现有三维表示方法更高的保真度和细粒度的三维操控能力。
+◆ 引入了支持语言驱动的车辆插入功能，允许用户通过自然语言指令在场景中添加任意车辆。
+◆ 设计了一种噪声感知的视频扩散渲染流程，该流程能有效保证编辑后视频在空间和时间上的一致性，并能通过单次前向传播生成多样化的场景变体，无需针对每条轨迹进行繁琐的优化。
+◆ 构建了一个名为HorizonSuite的综合评估基准，涵盖了自车层面和智能体层面的多种编辑任务（如轨迹修改、物体操控），为标准化的性能评估提供了基础。
+◆ 通过整合上述创新，该框架在逼真度和可控性上显著超越了现有最佳方法，获得了83.4%的用户偏好提升和25.19%的FID指标改进，为自动驾驶仿真建立了一个强大而简洁的新范式。</td></tr>
 <tr><td>2026-02-24</td><td>BrepGaussian: CAD reconstruction from Multi-View Images with Gaussian Splatting</td><td>[2602.21105](http://arxiv.org/pdf/2602.21105)</td><td>该论文的核心贡献是提出了BrepGaussian框架，能够仅从多视角二维图像中直接重建出高质量的CAD边界表示模型。其创新点主要体现在方法框架和策略设计上。
 
 ◆ 首创了将高斯泼溅渲染技术应用于从图像中学习三维CAD边界表示的任务，通过可学习特征的高斯泼溅渲染器进行高效建模。
@@ -2066,6 +2150,20 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-02-25</td><td>EndoDDC: Learning Sparse to Dense Reconstruction for Endoscopic Robotic Navigation via Diffusion Depth Completion</td><td>[2602.21893](http://arxiv.org/pdf/2602.21893)</td><td>该论文针对内窥镜手术机器人导航中深度估计的挑战，提出了一种名为EndoDDC的新型深度补全方法。其核心贡献与创新点如下：
+
+◆ 提出了一种专为内窥镜环境设计的深度补全方法（EndoDDC），旨在解决该场景下弱纹理和光线反射导致的深度估计难题。
+◆ 创新性地融合了内窥镜图像、稀疏深度信息以及深度梯度特征，为深度重建提供了更丰富的多模态线索。
+◆ 首次将扩散模型引入内窥镜深度补全任务，通过其强大的生成优化能力，将稀疏重建结果优化为高精度、高鲁棒性的稠密深度图。
+◆ 在两个公开内窥镜数据集上的实验表明，该方法在深度准确性和鲁棒性上均超越了现有先进模型，验证了其有效性。
+◆ 该方法不依赖精确的深度标注，降低了数据获取门槛，并有望减少复杂内窥镜环境中的视觉误差，提升手术导航安全性。</td></tr>
+<tr><td>2026-02-25</td><td>Structure-to-Image: Zero-Shot Depth Estimation in Colonoscopy via High-Fidelity Sim-to-Real Adaptation</td><td>[2602.21740](http://arxiv.org/pdf/2602.21740)</td><td>该论文针对结肠镜单目深度估计中仿真与真实图像间的域适应难题，提出了创新解决方案。其核心贡献在于提出了一种“结构到图像”的新范式，显著提升了零样本深度估计的精度。
+
+◆ 首创了“结构到图像”的新范式，将深度图从后置约束转变为主动生成的基石，从根本上改变了域适应的思路。
+◆ 首次将相位一致性引入结肠镜域适应任务，有效捕捉对光照变化不敏感的结构信息。
+◆ 设计了一种跨层级结构约束，能够协同优化整体几何结构与血管纹理等细粒度细节，平衡真实感与结构一致性。
+◆ 所提出的方法在公开数据集上的零样本评估中表现优异，使深度估计模型的RMSE最大降低了44.18%，远超现有方法。
+◆ 通过高质量仿真到真实的适应，有效克服了传统图像翻译方法产生的结构扭曲和高光伪影问题。</td></tr>
 <tr><td>2026-02-24</td><td>Pip-Stereo: Progressive Iterations Pruner for Iterative Optimization based Stereo Matching</td><td>[2602.20496](http://arxiv.org/pdf/2602.20496)</td><td>该论文针对基于迭代优化的立体匹配算法在边缘设备部署时的效率瓶颈，提出了Pip-Stereo系统，其核心贡献与创新点如下：
 
 ◆ 提出渐进式迭代剪枝策略，通过分析发现视差更新具有时空冗余性，从而抑制冗余迭代步骤，将递归计算压缩至接近单次前向推理，极大提升效率。
@@ -2547,4 +2645,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.02.25
+> 更新于: 2026.02.26
