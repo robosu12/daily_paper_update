@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.15)
+# SLAM领域最新论文 (2026.03.16)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-13</td><td>Consistent and Efficient MSCKF-based LiDAR-Inertial Odometry with Inferred Cluster-to-Plane Constraints for UAVs</td><td>[2603.12904](http://arxiv.org/pdf/2603.12904)</td><td>◆ Robust and accurate navigation is critical for Unmanned Aerial Vehicles (UAVs) especially for those with stringent Size, Weight, and Power (SWaP) constraints.
+◆ However, most state-of-the-art (SOTA) LiDAR-Inertial Odometry (LIO) systems still suffer from estimation inconsistency and computational bottlenecks when deployed on such platforms.
+◆ To address these issues, this paper proposes a consistent and efficient tightly-coupled LIO framework tailored for UAVs.</td></tr>
+<tr><td>2026-03-13</td><td>CMHANet: A Cross-Modal Hybrid Attention Network for Point Cloud Registration</td><td>[2603.12721](http://arxiv.org/pdf/2603.12721)</td><td>◆ Robust point cloud registration is a fundamental task in 3D computer vision and geometric deep learning, essential for applications such as large-scale 3D reconstruction, augmented reality, and scene understanding.
+◆ However, the performance of established learning-based methods often degrades in complex, real world scenarios characterized by incomplete data, sensor noise, and low overlap regions.
+◆ To address these limitations, we propose CMHANet, a novel Cross-Modal Hybrid Attention Network.</td></tr>
 <tr><td>2026-03-12</td><td>Dense Dynamic Scene Reconstruction and Camera Pose Estimation from Multi-View Videos</td><td>[2603.12064](http://arxiv.org/pdf/2603.12064)</td><td>该论文针对多台自由移动相机拍摄的动态场景，提出了一个创新的两阶段优化框架，用于实现稠密三维重建与相机姿态估计。其核心贡献与创新点如下：
 
 ◆ 提出了一个两阶段优化框架，将任务解耦为鲁棒的相机跟踪和稠密深度优化，解决了多自由移动相机场景下的重建难题。
@@ -911,6 +917,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-13</td><td>Ridged Lagrangian Perturbation Theory (RLPT)</td><td>[2603.13106](http://arxiv.org/pdf/2603.13106)</td><td>◆ Galaxy surveys demand fast large-scale structure forward models that preserve large-scale phases while providing realistic nonlinear morphology at fixed force resolution.
+◆ Single-step Lagrangian Perturbation Theory (LPT) solvers are efficient, but they typically yield overly diffuse filaments and knots and underpredict small-scale clustering.
+◆ We introduce Ridged Lagrangian Perturbation Theory (RLPT), a modular two-step scheme: a standard long-range LPT/ALPT transport is followed by a single post-processing Eulerian {ridging} update that reconstructs a short-range, curl-free displacement from the realised density field through a smooth scale separation and a Poisson inversion.</td></tr>
+<tr><td>2026-03-13</td><td>Improving critical buildings energy resilience via shared autonomous electric vehicles -- A sequential optimization framework</td><td>[2603.12771](http://arxiv.org/pdf/2603.12771)</td><td>◆ The interdependence between electric power systems and transportation systems is rapidly increasing due to the high adoption of Electric Vehicles (EVs) and their charging infrastructures.
+◆ Electric vehicles can represent additional load for the power system, but can also bring new opportunities for contributing to the efficient and resilient operations of the power grid.
+◆ This is mainly because of their ability to provide back power to the system when it is not used for transportation, essentially serving as a moving battery source for the power grid.</td></tr>
+<tr><td>2026-03-12</td><td>ABRA: Teleporting Fine-Tuned Knowledge Across Domains for Open-Vocabulary Object Detection</td><td>[2603.12409](http://arxiv.org/pdf/2603.12409)</td><td>◆ Although recent Open-Vocabulary Object Detection architectures, such as Grounding DINO, demonstrate strong zero-shot capabilities, their performance degrades significantly under domain shifts.
+◆ Moreover, many domains of practical interest, such as nighttime or foggy scenes, lack large annotated datasets, preventing direct fine-tuning.
+◆ In this paper, we introduce Aligned Basis Relocation for Adaptation(ABRA), a method that transfers class-specific detection knowledge from a labeled source domain to a target domain where no training images containing these classes are accessible.</td></tr>
 <tr><td>2026-03-12</td><td>TopoBench: Benchmarking LLMs on Hard Topological Reasoning</td><td>[2603.12133](http://arxiv.org/pdf/2603.12133)</td><td>该论文的核心贡献是系统性地评估和诊断大语言模型在复杂拓扑推理任务上的能力瓶颈。
 
 ◆ 提出了TopoBench基准测试，包含六个拓扑网格谜题家族和三个难度等级，为评估大语言模型的拓扑推理能力提供了受控环境。
@@ -943,7 +958,7 @@
 ◆ 对识别出的安全关键注意力头进行了详细的行为分析，揭示了不同模型架构中安全头在功能和行为上的显著差异。
 
 ◆ 这些发现不仅深化了对大模型越狱漏洞根源的理论认识，也为从模型内部机制出发改进安全性提供了实践方向。</td></tr>
-<tr><td>2026-03-09</td><td>ZK-ACE: Identity-Centric Zero-Knowledge Authorization for Post-Quantum Blockchain Systems</td><td>[2603.07974](http://arxiv.org/pdf/2603.07974)</td><td>ZK-ACE的核心贡献是提出了一种面向后量子区块链的身份中心零知识授权层，从根本上改变了传统的签名验证范式。其创新点主要包括：
+<tr><td>2026-03-13</td><td>ZK-ACE: Identity-Centric Zero-Knowledge Authorization for Post-Quantum Blockchain Systems</td><td>[2603.07974](http://arxiv.org/pdf/2603.07974)</td><td>ZK-ACE的核心贡献是提出了一种面向后量子区块链的身份中心零知识授权层，从根本上改变了传统的签名验证范式。其创新点主要包括：
 
 ◆ 彻底摒弃了交易携带大型后量子签名的模式，代之以身份绑定的零知识授权声明，将授权核心从验证具体签名转移到证明身份一致性上。
 
@@ -1479,6 +1494,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-13</td><td>CM-Bench: A Comprehensive Cross-Modal Feature Matching Benchmark Bridging Visible and Infrared Images</td><td>[2603.12690](http://arxiv.org/pdf/2603.12690)</td><td>◆ Infrared-visible (IR-VIS) feature matching plays an essential role in cross-modality visual localization, navigation and perception.
+◆ Along with the rapid development of deep learning techniques, a number of representative image matching methods have been proposed.
+◆ However, crossmodal feature matching is still a challenging task due to the significant appearance difference.</td></tr>
 <tr><td>2026-03-09</td><td>Enhancing Cross-View UAV Geolocalization via LVLM-Driven Relational Modeling</td><td>[2603.08063](http://arxiv.org/pdf/2603.08063)</td><td>该论文的核心贡献是提出了一种新颖的、即插即用的排序架构，以解决跨视角无人机地理定位中不同视图间交互关系建模不足的问题，从而显著提升了无人机图像与卫星图像的匹配精度。
 
 ◆ 提出了一种新颖的即插即用排序架构，能够显式地对无人机和卫星视图进行联合关系建模，突破了现有方法独立提取特征和依赖简单启发式相似度计算的局限。
@@ -1786,6 +1804,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-13</td><td>Spectral Defense Against Resource-Targeting Attack in 3D Gaussian Splatting</td><td>[2603.12796](http://arxiv.org/pdf/2603.12796)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) deliver high-quality rendering, yet the Gaussian representation exposes a new attack surface, the resource-targeting attack.
+◆ This attack poisons training images, excessively inducing Gaussian growth to cause resource exhaustion.
+◆ Although efficiency-oriented methods such as smoothing, thresholding, and pruning have been explored, these spatial-domain strategies operate on visible structures but overlook how stealthy perturbations distort the underlying spectral behaviors of training data.</td></tr>
+<tr><td>2026-03-13</td><td>Catalyst4D: High-Fidelity 3D-to-4D Scene Editing via Dynamic Propagation</td><td>[2603.12766](http://arxiv.org/pdf/2603.12766)</td><td>◆ Recent advances in 3D scene editing using NeRF and 3DGS enable high-quality static scene editing.
+◆ In contrast, dynamic scene editing remains challenging, as methods that directly extend 2D diffusion models to 4D often produce motion artifacts, temporal flickering, and inconsistent style propagation.
+◆ We introduce Catalyst4D, a framework that transfers high-quality 3D edits to dynamic 4D Gaussian scenes while maintaining spatial and temporal coherence.</td></tr>
+<tr><td>2026-03-13</td><td>LR-SGS: Robust LiDAR-Reflectance-Guided Salient Gaussian Splatting for Self-Driving Scene Reconstruction</td><td>[2603.12647](http://arxiv.org/pdf/2603.12647)</td><td>◆ Recent 3D Gaussian Splatting (3DGS) methods have demonstrated the feasibility of self-driving scene reconstruction and novel view synthesis.
+◆ However, most existing methods either rely solely on cameras or use LiDAR only for Gaussian initialization or depth supervision, while the rich scene information contained in point clouds, such as reflectance, and the complementarity between LiDAR and RGB have not been fully exploited, leading to degradation in challenging self-driving scenes, such as those with high ego-motion and complex lighting.
+◆ To address these issues, we propose a robust and efficient LiDAR-reflectance-guided Salient Gaussian Splatting method (LR-SGS) for self-driving scenes, which introduces a structure-aware Salient Gaussian representation, initialized from geometric and reflectance feature points extracted from LiDAR and refined through a salient transform and improved density control to capture edge and planar structures.</td></tr>
 <tr><td>2026-03-12</td><td>AstroSplat: Physics-Based Gaussian Splatting for Rendering and Reconstruction of Small Celestial Bodies</td><td>[2603.11969](http://arxiv.org/pdf/2603.11969)</td><td>该论文的核心贡献是提出了AstroSplat，一个用于小天体渲染与重建的、基于物理的神经渲染框架。其核心创新点在于将神经辐射场技术与天体物理模型相结合，解决了传统方法在空间任务应用中的关键局限。
 
 ◆ 核心创新是首次将基于物理的行星反射率模型引入高斯泼溅框架，取代了传统仅基于外观的球谐函数参数化。
@@ -3903,4 +3930,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.15
+> 更新于: 2026.03.16
