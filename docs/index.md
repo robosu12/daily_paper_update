@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.16)
+# SLAM领域最新论文 (2026.03.17)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,13 +22,28 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-16</td><td>On the Derivation of Tightly-Coupled LiDAR-Inertial Odometry with VoxelMap</td><td>[2603.15471](http://arxiv.org/pdf/2603.15471)</td><td>◆ This note presents a concise mathematical formulation of tightly-coupled LiDAR-Inertial Odometry within an iterated error-state Kalman filter framework using a VoxelMap representation.
+◆ Rather than proposing a new algorithm, it provides a clear and self-contained derivation that unifies the geometric modeling and probabilistic state estimation through consistent notation and explicit formulations.
+◆ The document is intended to serve both as a technical reference and as an accessible entry point for a foundational understanding of the system architecture and estimation principles.</td></tr>
+<tr><td>2026-03-16</td><td>Thermal Image Refinement with Depth Estimation using Recurrent Networks for Monocular ORB-SLAM3</td><td>[2603.14998](http://arxiv.org/pdf/2603.14998)</td><td>◆ Autonomous navigation in GPS-denied and visually degraded environments remains challenging for unmanned aerial vehicles (UAVs).
+◆ To this end, we investigate the use of a monocular thermal camera as a standalone sensor on a UAV platform for real-time depth estimation and simultaneous localization and mapping (SLAM).
+◆ To extract depth information from thermal images, we propose a novel pipeline employing a lightweight supervised network with recurrent blocks (RBs) integrated to capture temporal dependencies, enabling more robust predictions.</td></tr>
+<tr><td>2026-03-15</td><td>eNavi: Event-based Imitation Policies for Low-Light Indoor Mobile Robot Navigation</td><td>[2603.14397](http://arxiv.org/pdf/2603.14397)</td><td>◆ Event cameras provide high dynamic range and microsecond-level temporal resolution, making them well-suited for indoor robot navigation, where conventional RGB cameras degrade under fast motion or low-light conditions.
+◆ Despite advances in event-based perception spanning detection, SLAM, and pose estimation, there remains limited research on end-to-end control policies that exploit the asynchronous nature of event streams.
+◆ To address this gap, we introduce a real-world indoor person-following dataset collected using a TurtleBot 2 robot, featuring synchronized raw event streams, RGB frames, and expert control actions across multiple indoor maps, trajectories under both normal and low-light conditions.</td></tr>
+<tr><td>2026-03-14</td><td>Evaluation of Visual Place Recognition Methods for Image Pair Retrieval in 3D Vision and Robotics</td><td>[2603.13917](http://arxiv.org/pdf/2603.13917)</td><td>◆ Visual Place Recognition (VPR) is a core component in computer vision, typically formulated as an image retrieval task for localization, mapping, and navigation.
+◆ In this work, we instead study VPR as an image pair retrieval front-end for registration pipelines, where the goal is to find top-matching image pairs between two disjoint image sets for downstream tasks such as scene registration, SLAM, and Structure-from-Motion.
+◆ We comparatively evaluate state-of-the-art VPR families - NetVLAD-style baselines, classification-based global descriptors (CosPlace, EigenPlaces), feature-mixing (MixVPR), and foundation-model-driven methods (AnyLoc, SALAD, MegaLoc) - on three challenging datasets: object-centric outdoor scenes (Tanks and Temples), indoor RGB-D scans (ScanNet-GS), and autonomous-driving sequences (KITTI).</td></tr>
+<tr><td>2026-03-13</td><td>Semantic Aware Feature Extraction for Enhanced 3D Reconstruction</td><td>[2603.13556](http://arxiv.org/pdf/2603.13556)</td><td>◆ Feature matching is a fundamental problem in computer vision with wide-ranging applications, including simultaneous localization and mapping (SLAM), image stitching, and 3D reconstruction.
+◆ While recent advances in deep learning have improved keypoint detection and description, most approaches focus primarily on geometric attributes and often neglect higher-level semantic information.
+◆ This work proposes a semantic-aware feature extraction framework that employs multi-task learning to jointly train keypoint detection, keypoint description, and semantic segmentation.</td></tr>
 <tr><td>2026-03-13</td><td>Consistent and Efficient MSCKF-based LiDAR-Inertial Odometry with Inferred Cluster-to-Plane Constraints for UAVs</td><td>[2603.12904](http://arxiv.org/pdf/2603.12904)</td><td>◆ Robust and accurate navigation is critical for Unmanned Aerial Vehicles (UAVs) especially for those with stringent Size, Weight, and Power (SWaP) constraints.
 ◆ However, most state-of-the-art (SOTA) LiDAR-Inertial Odometry (LIO) systems still suffer from estimation inconsistency and computational bottlenecks when deployed on such platforms.
 ◆ To address these issues, this paper proposes a consistent and efficient tightly-coupled LIO framework tailored for UAVs.</td></tr>
 <tr><td>2026-03-13</td><td>CMHANet: A Cross-Modal Hybrid Attention Network for Point Cloud Registration</td><td>[2603.12721](http://arxiv.org/pdf/2603.12721)</td><td>◆ Robust point cloud registration is a fundamental task in 3D computer vision and geometric deep learning, essential for applications such as large-scale 3D reconstruction, augmented reality, and scene understanding.
 ◆ However, the performance of established learning-based methods often degrades in complex, real world scenarios characterized by incomplete data, sensor noise, and low overlap regions.
 ◆ To address these limitations, we propose CMHANet, a novel Cross-Modal Hybrid Attention Network.</td></tr>
-<tr><td>2026-03-12</td><td>Dense Dynamic Scene Reconstruction and Camera Pose Estimation from Multi-View Videos</td><td>[2603.12064](http://arxiv.org/pdf/2603.12064)</td><td>该论文针对多台自由移动相机拍摄的动态场景，提出了一个创新的两阶段优化框架，用于实现稠密三维重建与相机姿态估计。其核心贡献与创新点如下：
+<tr><td>2026-03-14</td><td>Dense Dynamic Scene Reconstruction and Camera Pose Estimation from Multi-View Videos</td><td>[2603.12064](http://arxiv.org/pdf/2603.12064)</td><td>该论文针对多台自由移动相机拍摄的动态场景，提出了一个创新的两阶段优化框架，用于实现稠密三维重建与相机姿态估计。其核心贡献与创新点如下：
 
 ◆ 提出了一个两阶段优化框架，将任务解耦为鲁棒的相机跟踪和稠密深度优化，解决了多自由移动相机场景下的重建难题。
 
@@ -677,7 +692,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-03-12</td><td>Dense Dynamic Scene Reconstruction and Camera Pose Estimation from Multi-View Videos</td><td>[2603.12064](http://arxiv.org/pdf/2603.12064)</td><td>本文针对多自由移动相机下的稠密动态场景重建与相机姿态估计难题，提出了一种两阶段优化框架。其核心贡献与创新点如下：
+<tr><td>2026-03-16</td><td>Perception-Aware Autonomous Exploration in Feature-Limited Environments</td><td>[2603.15605](http://arxiv.org/pdf/2603.15605)</td><td>◆ Autonomous exploration in unknown environments typically relies on onboard state estimation for localisation and mapping.
+◆ Existing exploration methods primarily maximise coverage efficiency, but often overlook that visual-inertial odometry (VIO) performance strongly depends on the availability of robust visual features.
+◆ As a result, exploration policies can drive a robot into feature-sparse regions where tracking degrades, leading to odometry drift, corrupted maps, and mission failure.</td></tr>
+<tr><td>2026-03-14</td><td>Dense Dynamic Scene Reconstruction and Camera Pose Estimation from Multi-View Videos</td><td>[2603.12064](http://arxiv.org/pdf/2603.12064)</td><td>本文针对多自由移动相机下的稠密动态场景重建与相机姿态估计难题，提出了一种两阶段优化框架。其核心贡献与创新点如下：
 
 ◆ 提出了一种两阶段优化框架，将任务解耦为鲁棒的相机跟踪与稠密深度优化，解决了多自由移动相机（非固定标定阵列）在此类任务中的适用性问题。
 
@@ -917,6 +935,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-16</td><td>Voronoi-based Second-order Descriptor with Whitened Metric in LiDAR Place Recognition</td><td>[2603.14974](http://arxiv.org/pdf/2603.14974)</td><td>◆ The pooling layer plays a vital role in aggregating local descriptors into the metrizable global descriptor in the LiDAR Place Recognition (LPR).
+◆ In particular, the second-order pooling is capable of capturing higher-order interactions among local descriptors.
+◆ However, its existing methods in the LPR adhere to conventional implementations and post-normalization, and incur the descriptor unsuitable for Euclidean distancing.</td></tr>
+<tr><td>2026-03-16</td><td>The impact of machine learning forecasting on strategic decision-making for Bike Sharing Systems</td><td>[2603.14901](http://arxiv.org/pdf/2603.14901)</td><td>◆ In this paper, machine learning techniques are used to forecast the difference between bike returns and withdrawals at each station of a bike sharing system.
+◆ The forecasts are integrated into a simulation framework that is used to support long-term decisions and model the daily dynamics, including the relocation of bikes.
+◆ We assess the quality of the machine learning-based forecasts in two ways.</td></tr>
+<tr><td>2026-03-14</td><td>H-RINS: Hierarchical Tightly-coupled Radar-Inertial Navigation via Smoothing and Mapping</td><td>[2603.14109](http://arxiv.org/pdf/2603.14109)</td><td>◆ Millimeter-wave radar provides robust perception in visually degraded environments.
+◆ However, radar-inertial state estimation is inherently susceptible to drift.
+◆ Because radar yields only sparse, body-frame velocity measurements, it provides weak constraints on absolute orientation.</td></tr>
+<tr><td>2026-03-14</td><td>Evaluation of Visual Place Recognition Methods for Image Pair Retrieval in 3D Vision and Robotics</td><td>[2603.13917](http://arxiv.org/pdf/2603.13917)</td><td>◆ Visual Place Recognition (VPR) is a core component in computer vision, typically formulated as an image retrieval task for localization, mapping, and navigation.
+◆ In this work, we instead study VPR as an image pair retrieval front-end for registration pipelines, where the goal is to find top-matching image pairs between two disjoint image sets for downstream tasks such as scene registration, SLAM, and Structure-from-Motion.
+◆ We comparatively evaluate state-of-the-art VPR families - NetVLAD-style baselines, classification-based global descriptors (CosPlace, EigenPlaces), feature-mixing (MixVPR), and foundation-model-driven methods (AnyLoc, SALAD, MegaLoc) - on three challenging datasets: object-centric outdoor scenes (Tanks and Temples), indoor RGB-D scans (ScanNet-GS), and autonomous-driving sequences (KITTI).</td></tr>
+<tr><td>2026-03-14</td><td>Exploring the Dimensions of a Variational Neuron</td><td>[2603.13849](http://arxiv.org/pdf/2603.13849)</td><td>◆ We introduce EVE (Elemental Variational Expanse), a variational distributional neuron formulated as a local probabilistic computational unit with an explicit prior, an amortized posterior, and unit-level variational regularization.
+◆ In most modern architectures, uncertainty is modeled through global latent variables or parameter uncertainty, while the computational unit itself remains scalar.
+◆ EVE instead relocates probabilistic structure to the neuron level, making it locally observable and controllable.</td></tr>
 <tr><td>2026-03-13</td><td>Ridged Lagrangian Perturbation Theory (RLPT)</td><td>[2603.13106](http://arxiv.org/pdf/2603.13106)</td><td>◆ Galaxy surveys demand fast large-scale structure forward models that preserve large-scale phases while providing realistic nonlinear morphology at fixed force resolution.
 ◆ Single-step Lagrangian Perturbation Theory (LPT) solvers are efficient, but they typically yield overly diffuse filaments and knots and underpredict small-scale clustering.
 ◆ We introduce Ridged Lagrangian Perturbation Theory (RLPT), a modular two-step scheme: a standard long-range LPT/ALPT transport is followed by a single post-processing Eulerian {ridging} update that reconstructs a short-range, curl-free displacement from the realised density field through a smooth scale separation and a Poisson inversion.</td></tr>
@@ -1494,6 +1527,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-13</td><td>Semantic Aware Feature Extraction for Enhanced 3D Reconstruction</td><td>[2603.13556](http://arxiv.org/pdf/2603.13556)</td><td>◆ Feature matching is a fundamental problem in computer vision with wide-ranging applications, including simultaneous localization and mapping (SLAM), image stitching, and 3D reconstruction.
+◆ While recent advances in deep learning have improved keypoint detection and description, most approaches focus primarily on geometric attributes and often neglect higher-level semantic information.
+◆ This work proposes a semantic-aware feature extraction framework that employs multi-task learning to jointly train keypoint detection, keypoint description, and semantic segmentation.</td></tr>
 <tr><td>2026-03-13</td><td>CM-Bench: A Comprehensive Cross-Modal Feature Matching Benchmark Bridging Visible and Infrared Images</td><td>[2603.12690](http://arxiv.org/pdf/2603.12690)</td><td>◆ Infrared-visible (IR-VIS) feature matching plays an essential role in cross-modality visual localization, navigation and perception.
 ◆ Along with the rapid development of deep learning techniques, a number of representative image matching methods have been proposed.
 ◆ However, crossmodal feature matching is still a challenging task due to the significant appearance difference.</td></tr>
@@ -1804,6 +1840,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-16</td><td>IRIS: Intersection-aware Ray-based Implicit Editable Scenes</td><td>[2603.15368](http://arxiv.org/pdf/2603.15368)</td><td>◆ Neural Radiance Fields achieve high-fidelity scene representation but suffer from costly training and rendering, while 3D Gaussian splatting offers real-time performance with strong empirical results.
+◆ Recently, solutions that harness the best of both worlds by using Gaussians as proxies to guide neural field evaluations, still suffer from significant computational inefficiencies.
+◆ They typically rely on stochastic volumetric sampling to aggregate features, which severely limits rendering performance.</td></tr>
+<tr><td>2026-03-16</td><td>NavGSim: High-Fidelity Gaussian Splatting Simulator for Large-Scale Navigation</td><td>[2603.15186](http://arxiv.org/pdf/2603.15186)</td><td>◆ Simulating realistic environments for robots is widely recognized as a critical challenge in robot learning, particularly in terms of rendering and physical simulation.
+◆ This challenge becomes even more pronounced in navigation tasks, where trajectories often extend across multiple rooms or entire floors.
+◆ In this work, we present NavGSim, a Gaussian Splatting-based simulator designed to generate high-fidelity, large-scale navigation environments.</td></tr>
+<tr><td>2026-03-16</td><td>GeoNVS: Geometry Grounded Video Diffusion for Novel View Synthesis</td><td>[2603.14965](http://arxiv.org/pdf/2603.14965)</td><td>◆ Novel view synthesis requires strong 3D geometric consistency and the ability to generate visually coherent images across diverse viewpoints.
+◆ While recent camera-controlled video diffusion models show promising results, they often suffer from geometric distortions and limited camera controllability.
+◆ To overcome these challenges, we introduce GeoNVS, a geometry-grounded novel-view synthesizer that enhances both geometric fidelity and camera controllability through explicit 3D geometric guidance.</td></tr>
+<tr><td>2026-03-16</td><td>LiDAR-EVS: Enhance Extrapolated View Synthesis for 3D Gaussian Splatting with Pseudo-LiDAR Supervision</td><td>[2603.14763](http://arxiv.org/pdf/2603.14763)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a powerful technique for real-time LiDAR and camera synthesis in autonomous driving simulation.
+◆ However, simulating LiDAR with 3DGS remains challenging for extrapolated views beyond the training trajectory, as existing methods are typically trained on single-traversal sensor scans, suffer from severe overfitting and poor generalization to novel ego-vehicle paths.
+◆ To enable reliable simulation of LiDAR along unseen driving trajectories without external multi-pass data, we present LiDAR-EVS, a lightweight framework for robust extrapolated-view LiDAR simulation in autonomous driving.</td></tr>
+<tr><td>2026-03-16</td><td>E2EGS: Event-to-Edge Gaussian Splatting for Pose-Free 3D Reconstruction</td><td>[2603.14684](http://arxiv.org/pdf/2603.14684)</td><td>◆ The emergence of neural radiance fields (NeRF) and 3D Gaussian splatting (3DGS) has advanced novel view synthesis (NVS).
+◆ These methods, however, require high-quality RGB inputs and accurate corresponding poses, limiting robustness under real-world conditions such as fast camera motion or adverse lighting.
+◆ Event cameras, which capture brightness changes at each pixel with high temporal resolution and wide dynamic range, enable precise sensing of dynamic scenes and offer a promising solution.</td></tr>
+<tr><td>2026-03-15</td><td>Direct Object-Level Reconstruction via Probabilistic Gaussian Splatting</td><td>[2603.14316](http://arxiv.org/pdf/2603.14316)</td><td>◆ Object-level 3D reconstruction play important roles across domains such as cultural heritage digitization, industrial manufacturing, and virtual reality.
+◆ However, existing Gaussian Splatting-based approaches generally rely on full-scene reconstruction, in which substantial redundant background information is introduced, leading to increased computational and storage overhead.
+◆ To address this limitation, we propose an efficient single-object 3D reconstruction method based on 2D Gaussian Splatting.</td></tr>
+<tr><td>2026-03-15</td><td>In-Field 3D Wheat Head Instance Segmentation From TLS Point Clouds Using Deep Learning Without Manual Labels</td><td>[2603.14309](http://arxiv.org/pdf/2603.14309)</td><td>◆ 3D instance segmentation for laser scanning (LiDAR) point clouds remains a challenge in many remote sensing-related domains.
+◆ Successful solutions typically rely on supervised deep learning and manual annotations, and consequently focus on objects that can be well delineated through visual inspection and manual labeling of point clouds.
+◆ However, for tasks with more complex and cluttered scenes, such as in-field plant phenotyping in agriculture, such approaches are often infeasible.</td></tr>
+<tr><td>2026-03-15</td><td>4D Synchronized Fields: Motion-Language Gaussian Splatting for Temporal Scene Understanding</td><td>[2603.14301](http://arxiv.org/pdf/2603.14301)</td><td>◆ Current 4D representations decouple geometry, motion, and semantics: reconstruction methods discard interpretable motion structure; language-grounded methods attach semantics after motion is learned, blind to how objects move; and motion-aware methods encode dynamics as opaque per-point residuals without object-level organization.
+◆ We propose 4D Synchronized Fields, a 4D Gaussian representation that learns object-factored motion in-loop during reconstruction and synchronizes language to the resulting kinematics through a per-object conditioned field.
+◆ Each Gaussian trajectory is decomposed into shared object motion plus an implicit residual, and a kinematic-conditioned ridge map predicts temporal semantic variation, yielding a single representation in which reconstruction, motion, and semantics are structurally coupled and enabling open-vocabulary temporal queries that retrieve both objects and moments.</td></tr>
+<tr><td>2026-03-15</td><td>S2GS: Streaming Semantic Gaussian Splatting for Online Scene Understanding and Reconstruction</td><td>[2603.14232](http://arxiv.org/pdf/2603.14232)</td><td>◆ Existing offline feed-forward methods for joint scene understanding and reconstruction on long image streams often repeatedly perform global computation over an ever-growing set of past observations, causing runtime and GPU memory to increase rapidly with sequence length and limiting scalability.
+◆ We propose Streaming Semantic Gaussian Splatting (S2GS), a strictly causal, incremental 3D Gaussian semantic field framework: it does not leverage future frames and continuously updates scene geometry, appearance, and instance-level semantics without reprocessing historical frames, enabling scalable online joint reconstruction and understanding.
+◆ S2GS adopts a geometry-semantic decoupled dual-backbone design: the geometry branch performs causal modeling to drive incremental Gaussian updates, while the semantic branch leverages a 2D foundation vision model and a query-driven decoder to predict segmentation masks and identity embeddings, further stabilized by query-level contrastive alignment and lightweight online association with an instance memory.</td></tr>
+<tr><td>2026-03-14</td><td>PhyGaP: Physically-Grounded Gaussians with Polarization Cues</td><td>[2603.14001](http://arxiv.org/pdf/2603.14001)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have demonstrated great success in modeling reflective 3D objects and their interaction with the environment via deferred rendering (DR).
+◆ However, existing methods often struggle with correctly reconstructing physical attributes such as albedo and reflectance, and therefore they do not support high-fidelity relighting.
+◆ Observing that this limitation stems from the lack of shape and material information in RGB images, we present PhyGaP, a physically-grounded 3DGS method that leverages polarization cues to facilitate precise reflection decomposition and visually consistent relighting of reconstructed objects.</td></tr>
 <tr><td>2026-03-13</td><td>Spectral Defense Against Resource-Targeting Attack in 3D Gaussian Splatting</td><td>[2603.12796](http://arxiv.org/pdf/2603.12796)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) deliver high-quality rendering, yet the Gaussian representation exposes a new attack surface, the resource-targeting attack.
 ◆ This attack poisons training images, excessively inducing Gaussian growth to cause resource exhaustion.
 ◆ Although efficiency-oriented methods such as smoothing, thresholding, and pruning have been explored, these spatial-domain strategies operate on visible structures but overlook how stealthy perturbations distort the underlying spectral behaviors of training data.</td></tr>
@@ -3244,6 +3310,33 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-16</td><td>Pointing-Based Object Recognition</td><td>[2603.15403](http://arxiv.org/pdf/2603.15403)</td><td>◆ This paper presents a comprehensive pipeline for recognizing objects targeted by human pointing gestures using RGB images.
+◆ As human-robot interaction moves toward more intuitive interfaces, the ability to identify targets of non-verbal communication becomes crucial.
+◆ Our proposed system integrates several existing state-of-the-art methods, including object detection, body pose estimation, monocular depth estimation, and vision-language models.</td></tr>
+<tr><td>2026-03-16</td><td>Spectral Rectification for Parameter-Efficient Adaptation of Foundation Models in Colonoscopy Depth Estimation</td><td>[2603.15374](http://arxiv.org/pdf/2603.15374)</td><td>◆ Accurate monocular depth estimation is critical in colonoscopy for lesion localization and navigation.
+◆ Foundation models trained on natural images fail to generalize directly to colonoscopy.
+◆ We identify the core issue not as a semantic gap, but as a statistical shift in the frequency domain: colonoscopy images lack the strong high-frequency edge and texture gradients that these models rely on for geometric reasoning.</td></tr>
+<tr><td>2026-03-13</td><td>UE5-Forest: A Photorealistic Synthetic Stereo Dataset for UAV Forestry Depth Estimation</td><td>[2603.15304](http://arxiv.org/pdf/2603.15304)</td><td>◆ Dense ground-truth disparity maps are practically unobtainable in forestry environments, where thin overlapping branches and complex canopy geometry defeat conventional depth sensors -- a critical bottleneck for training supervised stereo matching networks for autonomous UAV-based pruning.
+◆ We present UE5-Forest, a photorealistic synthetic stereo dataset built entirely in Unreal Engine 5 (UE5).
+◆ One hundred and fifteen photogrammetry-scanned trees from the Quixel Megascans library are placed in virtual scenes and captured by a simulated stereo rig whose intrinsics -- 63 mm baseline, 2.8 mm focal length, 3.84 mm sensor width -- replicate the ZED Mini camera mounted on our drone.</td></tr>
+<tr><td>2026-03-16</td><td>Reference-Free Omnidirectional Stereo Matching via Multi-View Consistency Maximization</td><td>[2603.15019](http://arxiv.org/pdf/2603.15019)</td><td>◆ Reliable omnidirectional depth estimation from multi-fisheye stereo matching is pivotal to many applications, such as embodied robotics.
+◆ Existing approaches either rely on spherical sweeping with heuristic fusion strategies to build the cost columns or perform reference-centric stereo matching based on rectified views.
+◆ However, these methods fail to explicitly exploit geometric relationships between multiple views, rendering them less capable of capturing the global dependencies, visibility, or scale changes.</td></tr>
+<tr><td>2026-03-16</td><td>Thermal Image Refinement with Depth Estimation using Recurrent Networks for Monocular ORB-SLAM3</td><td>[2603.14998](http://arxiv.org/pdf/2603.14998)</td><td>◆ Autonomous navigation in GPS-denied and visually degraded environments remains challenging for unmanned aerial vehicles (UAVs).
+◆ To this end, we investigate the use of a monocular thermal camera as a standalone sensor on a UAV platform for real-time depth estimation and simultaneous localization and mapping (SLAM).
+◆ To extract depth information from thermal images, we propose a novel pipeline employing a lightweight supervised network with recurrent blocks (RBs) integrated to capture temporal dependencies, enabling more robust predictions.</td></tr>
+<tr><td>2026-03-16</td><td>Fractal Autoregressive Depth Estimation with Continuous Token Diffusion</td><td>[2603.14702](http://arxiv.org/pdf/2603.14702)</td><td>◆ Monocular depth estimation can benefit from autoregressive (AR) generation, but direct AR modeling is hindered by the modality gap between RGB and depth, inefficient pixel-wise generation, and instability in continuous depth prediction.
+◆ We propose a Fractal Visual Autoregressive Diffusion framework that reformulates depth estimation as a coarse-to-fine, next-scale autoregressive generation process.
+◆ A VCFR module fuses multi-scale image features with current depth predictions to improve cross-modal conditioning, while a conditional denoising diffusion loss models depth distributions directly in continuous space and mitigates errors caused by discrete quantization.</td></tr>
+<tr><td>2026-03-16</td><td>E2EGS: Event-to-Edge Gaussian Splatting for Pose-Free 3D Reconstruction</td><td>[2603.14684](http://arxiv.org/pdf/2603.14684)</td><td>◆ The emergence of neural radiance fields (NeRF) and 3D Gaussian splatting (3DGS) has advanced novel view synthesis (NVS).
+◆ These methods, however, require high-quality RGB inputs and accurate corresponding poses, limiting robustness under real-world conditions such as fast camera motion or adverse lighting.
+◆ Event cameras, which capture brightness changes at each pixel with high temporal resolution and wide dynamic range, enable precise sensing of dynamic scenes and offer a promising solution.</td></tr>
+<tr><td>2026-03-15</td><td>V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning</td><td>[2603.14482](http://arxiv.org/pdf/2603.14482)</td><td>◆ We present V-JEPA 2.1, a family of self-supervised models that learn dense, high-quality visual representations for both images and videos while retaining strong global scene understanding.
+◆ The approach combines four key components.
+◆ First, a dense predictive loss uses a masking-based objective in which both visible and masked tokens contribute to the training signal, encouraging explicit spatial and temporal grounding.</td></tr>
+<tr><td>2026-03-14</td><td>ALTIS: Automated Loss Triage and Impact Scoring from Sentinel-1 SAR for Property-Level Flood Damage Assessment</td><td>[2603.13803](http://arxiv.org/pdf/2603.13803)</td><td>◆ Floods are among the costliest natural catastrophes globally, yet the property and casualty insurance industry&#x27;s post-event response remains heavily reliant on manual field inspection: slow, expensive, and geographically constrained.
+◆ Satellite Synthetic Aperture Radar (SAR) offers cloud-penetrating, all-weather imaging uniquely suited to rapid post-flood assessment, but existing research evaluates SAR flood detection against academic benchmarks such as IoU and F1-score that do not capture insurance-workflow requirements.
+◆ We present ALTIS: a five-stage pipeline transforming raw Sentinel-1 GRD and SLC imagery into property-level impact scores within 24-48 hours of flood peak.</td></tr>
 <tr><td>2026-03-12</td><td>DVD: Deterministic Video Depth Estimation with Generative Priors</td><td>[2603.12250](http://arxiv.org/pdf/2603.12250)</td><td>该论文提出了DVD框架，首次将预训练视频扩散模型确定性地转化为单次深度估计器，解决了生成模型几何幻觉与判别模型数据依赖之间的固有矛盾。
 
 ◆ 创新性地将扩散时间步作为结构锚点，平衡全局稳定性与高频细节，实现确定性深度回归。
@@ -3930,4 +4023,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.16
+> 更新于: 2026.03.17
