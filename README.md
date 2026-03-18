@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.17)
+# SLAM领域最新论文 (2026.03.18)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-17</td><td>M^3: Dense Matching Meets Multi-View Foundation Models for Monocular Gaussian Splatting SLAM</td><td>[2603.16844](http://arxiv.org/pdf/2603.16844)</td><td>◆ Streaming reconstruction from uncalibrated monocular video remains challenging, as it requires both high-precision pose estimation and computationally efficient online refinement in dynamic environments.
+◆ While coupling 3D foundation models with SLAM frameworks is a promising paradigm, a critical bottleneck persists: most multi-view foundation models estimate poses in a feed-forward manner, yielding pixel-level correspondences that lack the requisite precision for rigorous geometric optimization.
+◆ To address this, we present M^3, which augments the Multi-view foundation model with a dedicated Matching head to facilitate fine-grained dense correspondences and integrates it into a robust Monocular Gaussian Splatting SLAM.</td></tr>
+<tr><td>2026-03-17</td><td>GenZ-LIO: Generalizable LiDAR-Inertial Odometry Beyond Indoor--Outdoor Boundaries</td><td>[2603.16273](http://arxiv.org/pdf/2603.16273)</td><td>◆ Light detection and ranging (LiDAR)-inertial odometry (LIO) enables accurate localization and mapping for autonomous navigation in various scenes.
+◆ However, its performance remains sensitive to variations in spatial scale, which refers to the spatial extent of the scene reflected in the distribution of point ranges in a LiDAR scan.
+◆ Transitions between confined indoor and expansive outdoor spaces induce substantial variations in point density, which may reduce robustness and computational efficiency.</td></tr>
+<tr><td>2026-03-17</td><td>Industrial cuVSLAM Benchmark &amp; Integration</td><td>[2603.16240](http://arxiv.org/pdf/2603.16240)</td><td>◆ This work presents a comprehensive benchmark evaluation of visual odometry (VO) and visual SLAM (VSLAM) systems for mobile robot navigation in real-world logistical environments.
+◆ We compare multiple visual odometry approaches across controlled trajectories covering translational, rotational, and mixed motion patterns, as well as a large-scale production facility dataset spanning approximately 1.7 km.
+◆ Performance is evaluated using Absolute Pose Error (APE) against ground truth from a Vicon motion capture system and a LiDAR-based SLAM reference.</td></tr>
+<tr><td>2026-03-17</td><td>SE(3)-LIO: Smooth IMU Propagation With Jointly Distributed Poses on SE(3) Manifold for Accurate and Robust LiDAR-Inertial Odometry</td><td>[2603.16118](http://arxiv.org/pdf/2603.16118)</td><td>◆ In estimating odometry accurately, an inertial measurement unit (IMU) is widely used owing to its high-rate measurements, which can be utilized to obtain motion information through IMU propagation.
+◆ In this paper, we address the limitations of existing IMU propagation methods in terms of motion prediction and motion compensation.
+◆ In motion prediction, the existing methods typically represent a 6-DoF pose by separating rotation and translation and propagate them on their respective manifold, so that the rotational variation is not effectively incorporated into translation propagation.</td></tr>
 <tr><td>2026-03-16</td><td>On the Derivation of Tightly-Coupled LiDAR-Inertial Odometry with VoxelMap</td><td>[2603.15471](http://arxiv.org/pdf/2603.15471)</td><td>◆ This note presents a concise mathematical formulation of tightly-coupled LiDAR-Inertial Odometry within an iterated error-state Kalman filter framework using a VoxelMap representation.
 ◆ Rather than proposing a new algorithm, it provides a clear and self-contained derivation that unifies the geometric modeling and probabilistic state estimation through consistent notation and explicit formulations.
 ◆ The document is intended to serve both as a technical reference and as an accessible entry point for a foundational understanding of the system architecture and estimation principles.</td></tr>
@@ -694,6 +706,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-17</td><td>Industrial cuVSLAM Benchmark &amp; Integration</td><td>[2603.16240](http://arxiv.org/pdf/2603.16240)</td><td>◆ This work presents a comprehensive benchmark evaluation of visual odometry (VO) and visual SLAM (VSLAM) systems for mobile robot navigation in real-world logistical environments.
+◆ We compare multiple visual odometry approaches across controlled trajectories covering translational, rotational, and mixed motion patterns, as well as a large-scale production facility dataset spanning approximately 1.7 km.
+◆ Performance is evaluated using Absolute Pose Error (APE) against ground truth from a Vicon motion capture system and a LiDAR-based SLAM reference.</td></tr>
+<tr><td>2026-03-17</td><td>PA-LVIO: Real-Time LiDAR-Visual-Inertial Odometry and Mapping with Pose-Only Bundle Adjustment</td><td>[2603.16228](http://arxiv.org/pdf/2603.16228)</td><td>◆ Real-time LiDAR-visual-inertial odometry and mapping is crucial for navigation and planning tasks in intelligent transportation systems.
+◆ This study presents a pose-only bundle adjustment (PA) LiDAR-visual-inertial odometry (LVIO), named PA-LVIO, to meet the urgent need for real-time navigation and mapping.
+◆ The proposed PA framework for LiDAR and visual measurements is highly accurate and efficient, and it can derive reliable frame-to-frame constraints within multiple frames.</td></tr>
 <tr><td>2026-03-16</td><td>Perception-Aware Autonomous Exploration in Feature-Limited Environments</td><td>[2603.15605](http://arxiv.org/pdf/2603.15605)</td><td>◆ Autonomous exploration in unknown environments typically relies on onboard state estimation for localisation and mapping.
 ◆ Existing exploration methods primarily maximise coverage efficiency, but often overlook that visual-inertial odometry (VIO) performance strongly depends on the availability of robust visual features.
 ◆ As a result, exploration policies can drive a robot into feature-sparse regions where tracking degrades, leading to odometry drift, corrupted maps, and mission failure.</td></tr>
@@ -939,6 +957,27 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-17</td><td>Search2Motion: Training-Free Object-Level Motion Control via Attention-Consensus Search</td><td>[2603.16711](http://arxiv.org/pdf/2603.16711)</td><td>◆ We present Search2Motion, a training-free framework for object-level motion editing in image-to-video generation.
+◆ Unlike prior methods requiring trajectories, bounding boxes, masks, or motion fields, Search2Motion adopts target-frame-based control, leveraging first-last-frame motion priors to realize object relocation while preserving scene stability without fine-tuning.
+◆ Reliable target-frame construction is achieved through semantic-guided object insertion and robust background inpainting.</td></tr>
+<tr><td>2026-03-17</td><td>Reconciling distributed compliance with high-performance control in continuum soft robotics</td><td>[2603.16630](http://arxiv.org/pdf/2603.16630)</td><td>◆ High-performance closed-loop control of truly soft continuum manipulators has remained elusive.
+◆ Experimental demonstrations have largely relied on sufficiently stiff, piecewise architectures in which each actuated segment behaves as a distributed yet effectively rigid element, while deformation modes beyond simple bending are suppressed.
+◆ This strategy simplifies modeling and control, but sidesteps the intrinsic complexity of a fully compliant body and makes the system behave as a serial kinematic chain, much like a conventional articulated robot.</td></tr>
+<tr><td>2026-03-17</td><td>Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty</td><td>[2603.16538](http://arxiv.org/pdf/2603.16538)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently emerged as a powerful scene representation and is increasingly used for visual localization and pose refinement.
+◆ However, despite its high-quality differentiable rendering, the robustness of 3DGS-based pose refinement remains highly sensitive to both the initial camera pose and the reconstructed geometry.
+◆ In this work, we take a closer look at these limitations and identify two major sources of uncertainty: (i) pose prior uncertainty, which often arises from regression or retrieval models that output a single deterministic estimate, and (ii) geometric uncertainty, caused by imperfections in the 3DGS reconstruction that propagate errors into PnP solvers.</td></tr>
+<tr><td>2026-03-17</td><td>Kamino: GPU-based Massively Parallel Simulation of Multi-Body Systems with Challenging Topologies</td><td>[2603.16536](http://arxiv.org/pdf/2603.16536)</td><td>◆ We present Kamino, a GPU-based physics solver for massively parallel simulations of heterogeneous highly-coupled mechanical systems.
+◆ Implemented in Python using NVIDIA Warp and integrated into the Newton framework, it enables the application of data-driven methods, such as large-scale reinforcement learning, to complex robotic systems that exhibit strongly coupled kinematic and dynamic constraints such as kinematic loops.
+◆ The latter are often circumvented by practitioners; approximating the system topology as a kinematic tree and incorporating explicit loop-closure constraints or so-called mimic joints.</td></tr>
+<tr><td>2026-03-16</td><td>Optimizing Hospital Capacity During Pandemics: A Dual-Component Framework for Strategic Patient Relocation</td><td>[2603.15960](http://arxiv.org/pdf/2603.15960)</td><td>◆ The COVID-19 pandemic has placed immense strain on hospital systems worldwide, leading to critical capacity challenges.
+◆ This research proposes a two-part framework to optimize hospital capacity through patient relocation strategies.
+◆ The first component involves developing a time series prediction model to forecast patient arrival rates.</td></tr>
+<tr><td>2026-03-16</td><td>Multi-Year Spectral Structure of 6G Candidate Bands at 2.7 GHz and 4.4 GHz</td><td>[2603.15837](http://arxiv.org/pdf/2603.15837)</td><td>◆ Mid-band spectrum between 2 and 8 GHz is a critical resource for sixth-generation (6G) systems as it uniquely balances favorable propagation characteristics with scalable bandwidth.
+◆ Recent U.S.
+◆ policy highlights candidate bands near 2.7, 4.4, and 7.1 GHz, all of which host substantial federal and non-federal incumbency, including high-power radiolocation and aeronautical telemetry systems.</td></tr>
+<tr><td>2026-03-16</td><td>CLRNet: Targetless Extrinsic Calibration for Camera, Lidar and 4D Radar Using Deep Learning</td><td>[2603.15767](http://arxiv.org/pdf/2603.15767)</td><td>◆ In this paper, we address extrinsic calibration for camera, lidar, and 4D radar sensors.
+◆ Accurate extrinsic calibration of radar remains a challenge due to the sparsity of its data.
+◆ We propose CLRNet, a novel, multi-modal end-to-end deep learning (DL) calibration network capable of addressing joint camera-lidar-radar calibration, or pairwise calibration between any two of these sensors.</td></tr>
 <tr><td>2026-03-16</td><td>Voronoi-based Second-order Descriptor with Whitened Metric in LiDAR Place Recognition</td><td>[2603.14974](http://arxiv.org/pdf/2603.14974)</td><td>◆ The pooling layer plays a vital role in aggregating local descriptors into the metrizable global descriptor in the LiDAR Place Recognition (LPR).
 ◆ In particular, the second-order pooling is capable of capturing higher-order interactions among local descriptors.
 ◆ However, its existing methods in the LPR adhere to conventional implementations and post-normalization, and incur the descriptor unsuitable for Euclidean distancing.</td></tr>
@@ -1848,6 +1887,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-17</td><td>M^3: Dense Matching Meets Multi-View Foundation Models for Monocular Gaussian Splatting SLAM</td><td>[2603.16844](http://arxiv.org/pdf/2603.16844)</td><td>◆ Streaming reconstruction from uncalibrated monocular video remains challenging, as it requires both high-precision pose estimation and computationally efficient online refinement in dynamic environments.
+◆ While coupling 3D foundation models with SLAM frameworks is a promising paradigm, a critical bottleneck persists: most multi-view foundation models estimate poses in a feed-forward manner, yielding pixel-level correspondences that lack the requisite precision for rigorous geometric optimization.
+◆ To address this, we present M^3, which augments the Multi-view foundation model with a dedicated Matching head to facilitate fine-grained dense correspondences and integrates it into a robust Monocular Gaussian Splatting SLAM.</td></tr>
+<tr><td>2026-03-17</td><td>Rethinking Pose Refinement in 3D Gaussian Splatting under Pose Prior and Geometric Uncertainty</td><td>[2603.16538](http://arxiv.org/pdf/2603.16538)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently emerged as a powerful scene representation and is increasingly used for visual localization and pose refinement.
+◆ However, despite its high-quality differentiable rendering, the robustness of 3DGS-based pose refinement remains highly sensitive to both the initial camera pose and the reconstructed geometry.
+◆ In this work, we take a closer look at these limitations and identify two major sources of uncertainty: (i) pose prior uncertainty, which often arises from regression or retrieval models that output a single deterministic estimate, and (ii) geometric uncertainty, caused by imperfections in the 3DGS reconstruction that propagate errors into PnP solvers.</td></tr>
+<tr><td>2026-03-17</td><td>Leveling3D: Leveling Up 3D Reconstruction with Feed-Forward 3D Gaussian Splatting and Geometry-Aware Generation</td><td>[2603.16211](http://arxiv.org/pdf/2603.16211)</td><td>◆ Feed-forward 3D reconstruction has revolutionized 3D vision, providing a powerful baseline for downstream tasks such as novel-view synthesis with 3D Gaussian Splatting.
+◆ Previous works explore fixing the corrupted rendering results with a diffusion model.
+◆ However, they lack geometric concern and fail at filling the missing area on the extrapolated view.</td></tr>
+<tr><td>2026-03-17</td><td>NanoGS: Training-Free Gaussian Splat Simplification</td><td>[2603.16103](http://arxiv.org/pdf/2603.16103)</td><td>◆ 3D Gaussian Splat (3DGS) enables high-fidelity, real-time novel view synthesis by representing scenes with large sets of anisotropic primitives, but often requires millions of Splats, incurring significant storage and transmission costs.
+◆ Most existing compression methods rely on GPU-intensive post-training optimization with calibrated images, limiting practical deployment.
+◆ We introduce NanoGS, a training-free and lightweight framework for Gaussian Splat simplification.</td></tr>
+<tr><td>2026-03-16</td><td>Feed-forward Gaussian Registration for Head Avatar Creation and Editing</td><td>[2603.15811](http://arxiv.org/pdf/2603.15811)</td><td>◆ We present MATCH (Multi-view Avatars from Topologically Corresponding Heads), a multi-view Gaussian registration method for high-quality head avatar creation and editing.
+◆ State-of-the-art multi-view head avatar methods require time-consuming head tracking followed by expensive avatar optimization, often resulting in a total creation time of more than one day.
+◆ MATCH, in contrast, directly predicts Gaussian splat textures in correspondence from calibrated multi-view images in just 0.5 seconds per frame, without requiring data preprocessing.</td></tr>
 <tr><td>2026-03-16</td><td>IRIS: Intersection-aware Ray-based Implicit Editable Scenes</td><td>[2603.15368](http://arxiv.org/pdf/2603.15368)</td><td>◆ Neural Radiance Fields achieve high-fidelity scene representation but suffer from costly training and rendering, while 3D Gaussian splatting offers real-time performance with strong empirical results.
 ◆ Recently, solutions that harness the best of both worlds by using Gaussians as proxies to guide neural field evaluations, still suffer from significant computational inefficiencies.
 ◆ They typically rely on stochastic volumetric sampling to aggregate features, which severely limits rendering performance.</td></tr>
@@ -3320,6 +3374,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-17</td><td>MessyKitchens: Contact-rich object-level 3D scene reconstruction</td><td>[2603.16868](http://arxiv.org/pdf/2603.16868)</td><td>◆ Monocular 3D scene reconstruction has recently seen significant progress.
+◆ Powered by the modern neural architectures and large-scale data, recent methods achieve high performance in depth estimation from a single image.
+◆ Meanwhile, reconstructing and decomposing common scenes into individual 3D objects remains a hard challenge due to the large variety of objects, frequent occlusions and complex object relations.</td></tr>
+<tr><td>2026-03-17</td><td>WildDepth: A Multimodal Dataset for 3D Wildlife Perception and Depth Estimation</td><td>[2603.16816](http://arxiv.org/pdf/2603.16816)</td><td>◆ Depth estimation and 3D reconstruction have been extensively studied as core topics in computer vision.
+◆ Starting from rigid objects with relatively simple geometric shapes, such as vehicles, the research has expanded to address general objects, including challenging deformable objects, such as humans and animals.
+◆ However, for the animal, in particular, the majority of existing models are trained based on datasets without metric scale, which can help validate image-only models.</td></tr>
+<tr><td>2026-03-17</td><td>$D^3$-RSMDE: 40$\times$ Faster and High-Fidelity Remote Sensing Monocular Depth Estimation</td><td>[2603.16362](http://arxiv.org/pdf/2603.16362)</td><td>◆ Real-time, high-fidelity monocular depth estimation from remote sensing imagery is crucial for numerous applications, yet existing methods face a stark trade-off between accuracy and efficiency.
+◆ Although using Vision Transformer (ViT) backbones for dense prediction is fast, they often exhibit poor perceptual quality.
+◆ Conversely, diffusion models offer high fidelity but at a prohibitive computational cost.</td></tr>
+<tr><td>2026-03-17</td><td>Iris: Bringing Real-World Priors into Diffusion Model for Monocular Depth Estimation</td><td>[2603.16340](http://arxiv.org/pdf/2603.16340)</td><td>◆ In this paper, we propose \textbf{Iris}, a deterministic framework for Monocular Depth Estimation (MDE) that integrates real-world priors into the diffusion model.
+◆ Conventional feed-forward methods rely on massive training data, yet still miss details.
+◆ Previous diffusion-based methods leverage rich generative priors yet struggle with synthetic-to-real domain transfer.</td></tr>
+<tr><td>2026-03-17</td><td>PureCLIP-Depth: Prompt-Free and Decoder-Free Monocular Depth Estimation within CLIP Embedding Space</td><td>[2603.16238](http://arxiv.org/pdf/2603.16238)</td><td>◆ We propose PureCLIP-Depth, a completely prompt-free, decoder-free Monocular Depth Estimation (MDE) model that operates entirely within the Contrastive Language-Image Pre-training (CLIP) embedding space.
+◆ Unlike recent models that rely heavily on geometric features, we explore a novel approach to MDE driven by conceptual information, performing computations directly within the conceptual CLIP space.
+◆ The core of our method lies in learning a direct mapping from the RGB domain to the depth domain strictly inside this embedding space.</td></tr>
+<tr><td>2026-03-17</td><td>Leveling3D: Leveling Up 3D Reconstruction with Feed-Forward 3D Gaussian Splatting and Geometry-Aware Generation</td><td>[2603.16211](http://arxiv.org/pdf/2603.16211)</td><td>◆ Feed-forward 3D reconstruction has revolutionized 3D vision, providing a powerful baseline for downstream tasks such as novel-view synthesis with 3D Gaussian Splatting.
+◆ Previous works explore fixing the corrupted rendering results with a diffusion model.
+◆ However, they lack geometric concern and fail at filling the missing area on the extrapolated view.</td></tr>
 <tr><td>2026-03-16</td><td>Pointing-Based Object Recognition</td><td>[2603.15403](http://arxiv.org/pdf/2603.15403)</td><td>◆ This paper presents a comprehensive pipeline for recognizing objects targeted by human pointing gestures using RGB images.
 ◆ As human-robot interaction moves toward more intuitive interfaces, the ability to identify targets of non-verbal communication becomes crucial.
 ◆ Our proposed system integrates several existing state-of-the-art methods, including object detection, body pose estimation, monocular depth estimation, and vision-language models.</td></tr>
@@ -4035,4 +4107,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.17
+> 更新于: 2026.03.18
