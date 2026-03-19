@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.18)
+# SLAM领域最新论文 (2026.03.19)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-18</td><td>Compressive Structures in the Foreshock of Collisionless Shocks</td><td>[2603.17882](http://arxiv.org/pdf/2603.17882)</td><td>◆ Collisionless shocks are fundamental accelerators of energetic particles; yet, the observations of nonlinear foreshock structures, which are essential in acceleration processes, differ significantly between Interplanetary (IP) shocks and planetary bow shocks.
+◆ We present a direct comparison of two high-Mach-number, quasi-parallel shocks: an IP shock observed by Solar Orbiter and the Earth&#x27;s bow shock measured by the Magnetospheric Multiscale (MMS) mission during the 2024-2025 ``string-of-pearls&#x27;&#x27; campaign.
+◆ We show that Foreshock Compressive Structures (FCSs) initiate upstream of both shocks at similar normalized distances ($\lesssim$50 ion inertial lengths, $d_i$) when the suprathermal ($&gt;10$ keV) ion density exceeds $\sim$1\% of the background.</td></tr>
+<tr><td>2026-03-18</td><td>OnlineHMR: Video-based Online World-Grounded Human Mesh Recovery</td><td>[2603.17355](http://arxiv.org/pdf/2603.17355)</td><td>◆ Human mesh recovery (HMR) models 3D human body from monocular videos, with recent works extending it to world-coordinate human trajectory and motion reconstruction.
+◆ However, most existing methods remain offline, relying on future frames or global optimization, which limits their applicability in interactive feedback and perception-action loop scenarios such as AR/VR and telepresence.
+◆ To address this, we propose OnlineHMR, a fully online framework that jointly satisfies four essential criteria of online processing, including system-level causality, faithfulness, temporal consistency, and efficiency.</td></tr>
+<tr><td>2026-03-18</td><td>Full Stack Navigation, Mapping, and Planning for the Lunar Autonomy Challenge</td><td>[2603.17232](http://arxiv.org/pdf/2603.17232)</td><td>◆ We present a modular, full-stack autonomy system for lunar surface navigation and mapping developed for the Lunar Autonomy Challenge.
+◆ Operating in a GNSS-denied, visually challenging environment, our pipeline integrates semantic segmentation, stereo visual odometry, pose graph SLAM with loop closures, and layered planning and control.
+◆ We leverage lightweight learning-based perception models for real-time segmentation and feature tracking and use a factor-graph backend to maintain globally consistent localization.</td></tr>
+<tr><td>2026-03-18</td><td>Visual SLAM with DEM Anchoring for Lunar Surface Navigation</td><td>[2603.17229](http://arxiv.org/pdf/2603.17229)</td><td>◆ Future lunar missions will require autonomous rovers capable of traversing tens of kilometers across challenging terrain while maintaining accurate localization and producing globally consistent maps.
+◆ However, the absence of global positioning systems, extreme illumination, and low-texture regolith make long-range navigation on the Moon particularly difficult, as visual-inertial odometry pipelines accumulate drift over extended traverses.
+◆ To address this challenge, we present a stereo visual simultaneous localization and mapping (SLAM) system that integrates learned feature detection and matching with global constraints from digital elevation models (DEMs).</td></tr>
+<tr><td>2026-03-17</td><td>FastLoop: Parallel Loop Closing with GPU-Acceleration in Visual SLAM</td><td>[2603.17201](http://arxiv.org/pdf/2603.17201)</td><td>◆ Visual SLAM systems combine visual tracking with global loop closure to maintain a consistent map and accurate localization.
+◆ Loop closure is a computationally expensive process as we need to search across the whole map for matches.
+◆ This paper presents FastLoop, a GPU-accelerated loop closing module to alleviate this computational complexity.</td></tr>
+<tr><td>2026-03-17</td><td>SLAM Adversarial Lab: An Extensible Framework for Visual SLAM Robustness Evaluation under Adverse Conditions</td><td>[2603.17165](http://arxiv.org/pdf/2603.17165)</td><td>◆ We present SAL (SLAM Adversarial Lab), a modular framework for evaluating visual SLAM systems under adversarial conditions such as fog and rain.
+◆ SAL represents each adversarial condition as a perturbation that transforms an existing dataset into an adversarial dataset.
+◆ When transforming a dataset, SAL supports severity levels using easily-interpretable real-world units such as meters for fog visibility.</td></tr>
 <tr><td>2026-03-17</td><td>M^3: Dense Matching Meets Multi-View Foundation Models for Monocular Gaussian Splatting SLAM</td><td>[2603.16844](http://arxiv.org/pdf/2603.16844)</td><td>◆ Streaming reconstruction from uncalibrated monocular video remains challenging, as it requires both high-precision pose estimation and computationally efficient online refinement in dynamic environments.
 ◆ While coupling 3D foundation models with SLAM frameworks is a promising paradigm, a critical bottleneck persists: most multi-view foundation models estimate poses in a feed-forward manner, yielding pixel-level correspondences that lack the requisite precision for rigorous geometric optimization.
 ◆ To address this, we present M^3, which augments the Multi-view foundation model with a dedicated Matching head to facilitate fine-grained dense correspondences and integrates it into a robust Monocular Gaussian Splatting SLAM.</td></tr>
@@ -706,6 +724,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-18</td><td>Full Stack Navigation, Mapping, and Planning for the Lunar Autonomy Challenge</td><td>[2603.17232](http://arxiv.org/pdf/2603.17232)</td><td>◆ We present a modular, full-stack autonomy system for lunar surface navigation and mapping developed for the Lunar Autonomy Challenge.
+◆ Operating in a GNSS-denied, visually challenging environment, our pipeline integrates semantic segmentation, stereo visual odometry, pose graph SLAM with loop closures, and layered planning and control.
+◆ We leverage lightweight learning-based perception models for real-time segmentation and feature tracking and use a factor-graph backend to maintain globally consistent localization.</td></tr>
+<tr><td>2026-03-18</td><td>Visual SLAM with DEM Anchoring for Lunar Surface Navigation</td><td>[2603.17229](http://arxiv.org/pdf/2603.17229)</td><td>◆ Future lunar missions will require autonomous rovers capable of traversing tens of kilometers across challenging terrain while maintaining accurate localization and producing globally consistent maps.
+◆ However, the absence of global positioning systems, extreme illumination, and low-texture regolith make long-range navigation on the Moon particularly difficult, as visual-inertial odometry pipelines accumulate drift over extended traverses.
+◆ To address this challenge, we present a stereo visual simultaneous localization and mapping (SLAM) system that integrates learned feature detection and matching with global constraints from digital elevation models (DEMs).</td></tr>
+<tr><td>2026-03-17</td><td>FastLoop: Parallel Loop Closing with GPU-Acceleration in Visual SLAM</td><td>[2603.17201](http://arxiv.org/pdf/2603.17201)</td><td>◆ Visual SLAM systems combine visual tracking with global loop closure to maintain a consistent map and accurate localization.
+◆ Loop closure is a computationally expensive process as we need to search across the whole map for matches.
+◆ This paper presents FastLoop, a GPU-accelerated loop closing module to alleviate this computational complexity.</td></tr>
+<tr><td>2026-03-17</td><td>SLAM Adversarial Lab: An Extensible Framework for Visual SLAM Robustness Evaluation under Adverse Conditions</td><td>[2603.17165](http://arxiv.org/pdf/2603.17165)</td><td>◆ We present SAL (SLAM Adversarial Lab), a modular framework for evaluating visual SLAM systems under adversarial conditions such as fog and rain.
+◆ SAL represents each adversarial condition as a perturbation that transforms an existing dataset into an adversarial dataset.
+◆ When transforming a dataset, SAL supports severity levels using easily-interpretable real-world units such as meters for fog visibility.</td></tr>
 <tr><td>2026-03-17</td><td>Industrial cuVSLAM Benchmark &amp; Integration</td><td>[2603.16240](http://arxiv.org/pdf/2603.16240)</td><td>◆ This work presents a comprehensive benchmark evaluation of visual odometry (VO) and visual SLAM (VSLAM) systems for mobile robot navigation in real-world logistical environments.
 ◆ We compare multiple visual odometry approaches across controlled trajectories covering translational, rotational, and mixed motion patterns, as well as a large-scale production facility dataset spanning approximately 1.7 km.
 ◆ Performance is evaluated using Absolute Pose Error (APE) against ground truth from a Vicon motion capture system and a LiDAR-based SLAM reference.</td></tr>
@@ -957,7 +987,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-03-17</td><td>Search2Motion: Training-Free Object-Level Motion Control via Attention-Consensus Search</td><td>[2603.16711](http://arxiv.org/pdf/2603.16711)</td><td>◆ We present Search2Motion, a training-free framework for object-level motion editing in image-to-video generation.
+<tr><td>2026-03-18</td><td>Full Stack Navigation, Mapping, and Planning for the Lunar Autonomy Challenge</td><td>[2603.17232](http://arxiv.org/pdf/2603.17232)</td><td>◆ We present a modular, full-stack autonomy system for lunar surface navigation and mapping developed for the Lunar Autonomy Challenge.
+◆ Operating in a GNSS-denied, visually challenging environment, our pipeline integrates semantic segmentation, stereo visual odometry, pose graph SLAM with loop closures, and layered planning and control.
+◆ We leverage lightweight learning-based perception models for real-time segmentation and feature tracking and use a factor-graph backend to maintain globally consistent localization.</td></tr>
+<tr><td>2026-03-17</td><td>FastLoop: Parallel Loop Closing with GPU-Acceleration in Visual SLAM</td><td>[2603.17201](http://arxiv.org/pdf/2603.17201)</td><td>◆ Visual SLAM systems combine visual tracking with global loop closure to maintain a consistent map and accurate localization.
+◆ Loop closure is a computationally expensive process as we need to search across the whole map for matches.
+◆ This paper presents FastLoop, a GPU-accelerated loop closing module to alleviate this computational complexity.</td></tr>
+<tr><td>2026-03-17</td><td>A Longitudinal Study of Usability in Identity-Based Software Signing</td><td>[2603.17133](http://arxiv.org/pdf/2603.17133)</td><td>◆ Identity-based software signing tools aim to make software artifact provenance verifiable while reducing the operational burden of long-lived key management.
+◆ However, there is limited cross-tool longitudinal evidence about which usability problems arise in practice and how those problems evolve as tools mature.
+◆ This gap matters because unusable signing and verification workflows can lead to incomplete adoption, misconfiguration, or skipped verification, undermining intended integrity guarantees.</td></tr>
+<tr><td>2026-03-18</td><td>Search2Motion: Training-Free Object-Level Motion Control via Attention-Consensus Search</td><td>[2603.16711](http://arxiv.org/pdf/2603.16711)</td><td>◆ We present Search2Motion, a training-free framework for object-level motion editing in image-to-video generation.
 ◆ Unlike prior methods requiring trajectories, bounding boxes, masks, or motion fields, Search2Motion adopts target-frame-based control, leveraging first-last-frame motion priors to realize object relocation while preserving scene stability without fine-tuning.
 ◆ Reliable target-frame construction is achieved through semantic-guided object insertion and robust background inpainting.</td></tr>
 <tr><td>2026-03-17</td><td>Reconciling distributed compliance with high-performance control in continuum soft robotics</td><td>[2603.16630](http://arxiv.org/pdf/2603.16630)</td><td>◆ High-performance closed-loop control of truly soft continuum manipulators has remained elusive.
@@ -1887,6 +1926,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-18</td><td>AHOY! Animatable Humans under Occlusion from YouTube Videos with Gaussian Splatting and Video Diffusion Priors</td><td>[2603.17975](http://arxiv.org/pdf/2603.17975)</td><td>◆ We present AHOY, a method for reconstructing complete, animatable 3D Gaussian avatars from in-the-wild monocular video despite heavy occlusion.
+◆ Existing methods assume unoccluded input-a fully visible subject, often in a canonical pose-excluding the vast majority of real-world footage where people are routinely occluded by furniture, objects, or other people.
+◆ Reconstructing from such footage poses fundamental challenges: large body regions may never be observed, and multi-view supervision per pose is unavailable.</td></tr>
+<tr><td>2026-03-18</td><td>CrowdGaussian: Reconstructing High-Fidelity 3D Gaussians for Human Crowd from a Single Image</td><td>[2603.17779](http://arxiv.org/pdf/2603.17779)</td><td>◆ Single-view 3D human reconstruction has garnered significant attention in recent years.
+◆ Despite numerous advancements, prior research has concentrated on reconstructing 3D models from clear, close-up images of individual subjects, often yielding subpar results in the more prevalent multi-person scenarios.
+◆ Reconstructing 3D human crowd models is a highly intricate task, laden with challenges such as: 1) extensive occlusions, 2) low clarity, and 3) numerous and various appearances.</td></tr>
+<tr><td>2026-03-18</td><td>TAPESTRY: From Geometry to Appearance via Consistent Turntable Videos</td><td>[2603.17735](http://arxiv.org/pdf/2603.17735)</td><td>◆ Automatically generating photorealistic and self-consistent appearances for untextured 3D models is a critical challenge in digital content creation.
+◆ The advancement of large-scale video generation models offers a natural approach: directly synthesizing 360-degree turntable videos (TTVs), which can serve not only as high-quality dynamic previews but also as an intermediate representation to drive texture synthesis and neural rendering.
+◆ However, existing general-purpose video diffusion models struggle to maintain strict geometric consistency and appearance stability across the full range of views, making their outputs ill-suited for high-quality 3D reconstruction.</td></tr>
+<tr><td>2026-03-18</td><td>ReLaGS: Relational Language Gaussian Splatting</td><td>[2603.17605](http://arxiv.org/pdf/2603.17605)</td><td>◆ Achieving unified 3D perception and reasoning across tasks such as segmentation, retrieval, and relation understanding remains challenging, as existing methods are either object-centric or rely on costly training for inter-object reasoning.
+◆ We present a novel framework that constructs a hierarchical language-distilled Gaussian scene and its 3D semantic scene graph without scene-specific training.
+◆ A Gaussian pruning mechanism refines scene geometry, while a robust multi-view language alignment strategy aggregates noisy 2D features into accurate 3D object embeddings.</td></tr>
+<tr><td>2026-03-18</td><td>UniSem: Generalizable Semantic 3D Reconstruction from Sparse Unposed Images</td><td>[2603.17519](http://arxiv.org/pdf/2603.17519)</td><td>◆ Semantic-aware 3D reconstruction from sparse, unposed images remains challenging for feed-forward 3D Gaussian Splatting (3DGS).
+◆ Existing methods often predict an over-complete set of Gaussian primitives under sparse-view supervision, leading to unstable geometry and inferior depth quality.
+◆ Meanwhile, they rely solely on 2D segmenter features for semantic lifting, which provides weak 3D-level and limited generalizable supervision, resulting in incomplete 3D semantics in novel scenes.</td></tr>
+<tr><td>2026-03-18</td><td>A Tutorial on Learning-Based Radio Map Construction: Data, Paradigms, and Physics-Awarenes</td><td>[2603.17499](http://arxiv.org/pdf/2603.17499)</td><td>◆ The integration of artificial intelligence into next-generation wireless networks necessitates the accurate construction of radio maps (RMs) as a foundational prerequisite for electromagnetic digital twins.
+◆ A RM provides the digital representation of the wireless propagation environment, mapping complex geographical and topological boundary conditions to critical spatial-spectral metrics that range from received signal strength to full channel state information matrices.
+◆ This tutorial presents a comprehensive survey of learning-based RM construction, systematically addressing three intertwined dimensions: data, paradigms, and physics-awareness.</td></tr>
+<tr><td>2026-03-18</td><td>Adaptive Anchor Policies for Efficient 4D Gaussian Streaming</td><td>[2603.17227](http://arxiv.org/pdf/2603.17227)</td><td>◆ Dynamic scene reconstruction with Gaussian Splatting has enabled efficient streaming for real-time rendering and free-viewpoint video.
+◆ However, most pipelines rely on fixed anchor selection such as Farthest Point Sampling (FPS), typically using 8,192 anchors regardless of scene complexity, which over-allocates computation under strict budgets.
+◆ We propose Efficient Gaussian Streaming (EGS), a plug-in, budget-aware anchor sampler that replaces FPS with a reinforcement-learned policy while keeping the Gaussian streaming reconstruction backbone unchanged.</td></tr>
+<tr><td>2026-03-17</td><td>SMAL-pets: SMAL Based Avatars of Pets from Single Image</td><td>[2603.17131](http://arxiv.org/pdf/2603.17131)</td><td>◆ Creating high-fidelity, animatable 3D dog avatars remains a formidable challenge in computer vision.
+◆ Unlike human digital doubles, animal reconstruction faces a critical shortage of large-scale, annotated datasets for specialized applications.
+◆ Furthermore, the immense morphological diversity across species, breeds, and crosses, which varies significantly in size, proportions, and features, complicates the generalization of existing models.</td></tr>
 <tr><td>2026-03-17</td><td>M^3: Dense Matching Meets Multi-View Foundation Models for Monocular Gaussian Splatting SLAM</td><td>[2603.16844](http://arxiv.org/pdf/2603.16844)</td><td>◆ Streaming reconstruction from uncalibrated monocular video remains challenging, as it requires both high-precision pose estimation and computationally efficient online refinement in dynamic environments.
 ◆ While coupling 3D foundation models with SLAM frameworks is a promising paradigm, a critical bottleneck persists: most multi-view foundation models estimate poses in a feed-forward manner, yielding pixel-level correspondences that lack the requisite precision for rigorous geometric optimization.
 ◆ To address this, we present M^3, which augments the Multi-view foundation model with a dedicated Matching head to facilitate fine-grained dense correspondences and integrates it into a robust Monocular Gaussian Splatting SLAM.</td></tr>
@@ -3374,6 +3437,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-18</td><td>UniSem: Generalizable Semantic 3D Reconstruction from Sparse Unposed Images</td><td>[2603.17519](http://arxiv.org/pdf/2603.17519)</td><td>◆ Semantic-aware 3D reconstruction from sparse, unposed images remains challenging for feed-forward 3D Gaussian Splatting (3DGS).
+◆ Existing methods often predict an over-complete set of Gaussian primitives under sparse-view supervision, leading to unstable geometry and inferior depth quality.
+◆ Meanwhile, they rely solely on 2D segmenter features for semantic lifting, which provides weak 3D-level and limited generalizable supervision, resulting in incomplete 3D semantics in novel scenes.</td></tr>
+<tr><td>2026-03-18</td><td>Stereo World Model: Camera-Guided Stereo Video Generation</td><td>[2603.17375](http://arxiv.org/pdf/2603.17375)</td><td>◆ We present StereoWorld, a camera-conditioned stereo world model that jointly learns appearance and binocular geometry for end-to-end stereo video generation.Unlike monocular RGB or RGBD approaches, StereoWorld operates exclusively within the RGB modality, while simultaneously grounding geometry directly from disparity.
+◆ To efficiently achieve consistent stereo generation, our approach introduces two key designs: (1) a unified camera-frame RoPE that augments latent tokens with camera-aware rotary positional encoding, enabling relative, view- and time-consistent conditioning while preserving pretrained video priors via a stable attention initialization; and (2) a stereo-aware attention decomposition that factors full 4D attention into 3D intra-view attention plus horizontal row attention, leveraging the epipolar prior to capture disparity-aligned correspondences with substantially lower compute.
+◆ Across benchmarks, StereoWorld improves stereo consistency, disparity accuracy, and camera-motion fidelity over strong monocular-then-convert pipelines, achieving more than 3x faster generation with an additional 5% gain in viewpoint consistency.</td></tr>
+<tr><td>2026-03-17</td><td>LLM-Powered Flood Depth Estimation from Social Media Imagery: A Vision-Language Model Framework with Mechanistic Interpretability for Transportation Resilience</td><td>[2603.17108](http://arxiv.org/pdf/2603.17108)</td><td>◆ Urban flooding poses an escalating threat to transportation network continuity, yet no operational system currently provides real-time, street-level flood depth information at the centimeter resolution required for dynamic routing, electric vehicle (EV) safety, and autonomous vehicle (AV) operations.
+◆ This study presents FloodLlama, a fine-tuned open-source vision-language model (VLM) for continuous flood depth estimation from single street-level images, supported by a multimodal sensing pipeline using TikTok data.
+◆ A synthetic dataset of approximately 190000 images was generated, covering seven vehicle types, four weather conditions, and 41 depth levels (0-40 cm at 1 cm resolution).</td></tr>
 <tr><td>2026-03-17</td><td>MessyKitchens: Contact-rich object-level 3D scene reconstruction</td><td>[2603.16868](http://arxiv.org/pdf/2603.16868)</td><td>◆ Monocular 3D scene reconstruction has recently seen significant progress.
 ◆ Powered by the modern neural architectures and large-scale data, recent methods achieve high performance in depth estimation from a single image.
 ◆ Meanwhile, reconstructing and decomposing common scenes into individual 3D objects remains a hard challenge due to the large variety of objects, frequent occlusions and complex object relations.</td></tr>
@@ -4107,4 +4179,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.18
+> 更新于: 2026.03.19
