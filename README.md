@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.19)
+# SLAM领域最新论文 (2026.03.20)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-19</td><td>DROID-SLAM in the Wild</td><td>[2603.19076](http://arxiv.org/pdf/2603.19076)</td><td>◆ We present a robust, real-time RGB SLAM system that handles dynamic environments by leveraging differentiable Uncertainty-aware Bundle Adjustment.
+◆ Traditional SLAM methods typically assume static scenes, leading to tracking failures in the presence of motion.
+◆ Recent dynamic SLAM approaches attempt to address this challenge using predefined dynamic priors or uncertainty-aware mapping, but they remain limited when confronted with unknown dynamic objects or highly cluttered scenes where geometric mapping becomes unreliable.</td></tr>
+<tr><td>2026-03-19</td><td>ROFT-VINS: Robust Feature Tracking-based Visual-Inertial State Estimation for Harsh Environment</td><td>[2603.18746](http://arxiv.org/pdf/2603.18746)</td><td>◆ SLAM (Simultaneous Localization and Mapping) and Odometry are important systems for estimating the position of mobile devices, such as robots and cars, utilizing one or more sensors.
+◆ Particularly in camera-based SLAM or Odometry, effectively tracking visual features is important as it significantly impacts system performance.
+◆ In this paper, we propose a method that leverages deep learning to robustly track visual features in monocular camera images.</td></tr>
+<tr><td>2026-03-18</td><td>Semantic Segmentation and Depth Estimation for Real-Time Lunar Surface Mapping Using 3D Gaussian Splatting</td><td>[2603.18218](http://arxiv.org/pdf/2603.18218)</td><td>◆ Navigation and mapping on the lunar surface require robust perception under challenging conditions, including poorly textured environments, high-contrast lighting, and limited computational resources.
+◆ This paper presents a real-time mapping framework that integrates dense perception models with a 3D Gaussian Splatting (3DGS) representation.
+◆ We first benchmark several models on synthetic datasets generated with the LuPNT simulator, selecting a stereo dense depth estimation model based on Gated Recurrent Units for its balance of speed and accuracy in depth estimation, and a convolutional neural network for its superior performance in detecting semantic segments.</td></tr>
 <tr><td>2026-03-18</td><td>Compressive Structures in the Foreshock of Collisionless Shocks</td><td>[2603.17882](http://arxiv.org/pdf/2603.17882)</td><td>◆ Collisionless shocks are fundamental accelerators of energetic particles; yet, the observations of nonlinear foreshock structures, which are essential in acceleration processes, differ significantly between Interplanetary (IP) shocks and planetary bow shocks.
 ◆ We present a direct comparison of two high-Mach-number, quasi-parallel shocks: an IP shock observed by Solar Orbiter and the Earth&#x27;s bow shock measured by the Magnetospheric Multiscale (MMS) mission during the 2024-2025 ``string-of-pearls&#x27;&#x27; campaign.
 ◆ We show that Foreshock Compressive Structures (FCSs) initiate upstream of both shocks at similar normalized distances ($\lesssim$50 ion inertial lengths, $d_i$) when the suprathermal ($&gt;10$ keV) ion density exceeds $\sim$1\% of the background.</td></tr>
@@ -724,6 +733,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-19</td><td>ROFT-VINS: Robust Feature Tracking-based Visual-Inertial State Estimation for Harsh Environment</td><td>[2603.18746](http://arxiv.org/pdf/2603.18746)</td><td>◆ SLAM (Simultaneous Localization and Mapping) and Odometry are important systems for estimating the position of mobile devices, such as robots and cars, utilizing one or more sensors.
+◆ Particularly in camera-based SLAM or Odometry, effectively tracking visual features is important as it significantly impacts system performance.
+◆ In this paper, we propose a method that leverages deep learning to robustly track visual features in monocular camera images.</td></tr>
+<tr><td>2026-03-19</td><td>Benchmarking Visual Feature Representations for LiDAR-Inertial-Visual Odometry Under Challenging Conditions</td><td>[2603.18589](http://arxiv.org/pdf/2603.18589)</td><td>◆ Accurate localization in autonomous driving is critical for successful missions including environmental mapping and survivor searches.
+◆ In visually challenging environments, including low-light conditions, overexposure, illumination changes, and high parallax, the performance of conventional visual odometry methods significantly degrade undermining robust robotic navigation.
+◆ Researchers have recently proposed LiDAR-inertial-visual odometry (LIVO) frameworks, that integrate LiDAR, IMU, and camera sensors, to address these challenges.</td></tr>
 <tr><td>2026-03-18</td><td>Full Stack Navigation, Mapping, and Planning for the Lunar Autonomy Challenge</td><td>[2603.17232](http://arxiv.org/pdf/2603.17232)</td><td>◆ We present a modular, full-stack autonomy system for lunar surface navigation and mapping developed for the Lunar Autonomy Challenge.
 ◆ Operating in a GNSS-denied, visually challenging environment, our pipeline integrates semantic segmentation, stereo visual odometry, pose graph SLAM with loop closures, and layered planning and control.
 ◆ We leverage lightweight learning-based perception models for real-time segmentation and feature tracking and use a factor-graph backend to maintain globally consistent localization.</td></tr>
@@ -1611,6 +1626,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-19</td><td>Pixel-Accurate Epipolar Guided Matching</td><td>[2603.18401](http://arxiv.org/pdf/2603.18401)</td><td>◆ Keypoint matching can be slow and unreliable in challenging conditions such as repetitive textures or wide-baseline views.
+◆ In such cases, known geometric relations (e.g., the fundamental matrix) can be used to restrict potential correspondences to a narrow epipolar envelope, thereby reducing the search space and improving robustness.
+◆ These epipolar-guided matching approaches have proved effective in tasks such as SfM; however, most rely on coarse spatial binning, which introduces approximation errors, requires costly post-processing, and may miss valid correspondences.</td></tr>
 <tr><td>2026-03-13</td><td>Semantic Aware Feature Extraction for Enhanced 3D Reconstruction</td><td>[2603.13556](http://arxiv.org/pdf/2603.13556)</td><td>◆ Feature matching is a fundamental problem in computer vision with wide-ranging applications, including simultaneous localization and mapping (SLAM), image stitching, and 3D reconstruction.
 ◆ While recent advances in deep learning have improved keypoint detection and description, most approaches focus primarily on geometric attributes and often neglect higher-level semantic information.
 ◆ This work proposes a semantic-aware feature extraction framework that employs multi-task learning to jointly train keypoint detection, keypoint description, and semantic segmentation.</td></tr>
@@ -1926,6 +1944,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-19</td><td>Matryoshka Gaussian Splatting</td><td>[2603.19234](http://arxiv.org/pdf/2603.19234)</td><td>◆ The ability to render scenes at adjustable fidelity from a single model, known as level of detail (LoD), is crucial for practical deployment of 3D Gaussian Splatting (3DGS).
+◆ Existing discrete LoD methods expose only a limited set of operating points, while concurrent continuous LoD approaches enable smoother scaling but often suffer noticeable quality degradation at full capacity, making LoD a costly design decision.
+◆ We introduce Matryoshka Gaussian Splatting (MGS), a training framework that enables continuous LoD for standard 3DGS pipelines without sacrificing full-capacity rendering quality.</td></tr>
+<tr><td>2026-03-19</td><td>Reconstruction Matters: Learning Geometry-Aligned BEV Representation through 3D Gaussian Splatting</td><td>[2603.19193](http://arxiv.org/pdf/2603.19193)</td><td>◆ Bird&#x27;s-Eye-View (BEV) perception serves as a cornerstone for autonomous driving, offering a unified spatial representation that fuses surrounding-view images to enable reasoning for various downstream tasks, such as semantic segmentation, 3D object detection, and motion prediction.
+◆ However, most existing BEV perception frameworks adopt an end-to-end training paradigm, where image features are directly transformed into the BEV space and optimized solely through downstream task supervision.
+◆ This formulation treats the entire perception process as a black box, often lacking explicit 3D geometric understanding and interpretability, leading to suboptimal performance.</td></tr>
+<tr><td>2026-03-19</td><td>GSMem: 3D Gaussian Splatting as Persistent Spatial Memory for Zero-Shot Embodied Exploration and Reasoning</td><td>[2603.19137](http://arxiv.org/pdf/2603.19137)</td><td>◆ Effective embodied exploration requires agents to accumulate and retain spatial knowledge over time.
+◆ However, existing scene representations, such as discrete scene graphs or static view-based snapshots, lack \textit{post-hoc re-observability}.
+◆ If an initial observation misses a target, the resulting memory omission is often irrecoverable.</td></tr>
+<tr><td>2026-03-19</td><td>GHOST: Fast Category-agnostic Hand-Object Interaction Reconstruction from RGB Videos using Gaussian Splatting</td><td>[2603.18912](http://arxiv.org/pdf/2603.18912)</td><td>◆ Understanding realistic hand-object interactions from monocular RGB videos is essential for AR/VR, robotics, and embodied AI.
+◆ Existing methods rely on category-specific templates or heavy computation, yet still produce physically inconsistent hand-object alignment in 3D.
+◆ We introduce GHOST (Gaussian Hand-Object Splatting), a fast, category-agnostic framework for reconstructing dynamic hand-object interactions using 2D Gaussian Splatting.</td></tr>
+<tr><td>2026-03-19</td><td>From ex(p) to poly: Gaussian Splatting with Polynomial Kernels</td><td>[2603.18707](http://arxiv.org/pdf/2603.18707)</td><td>◆ Recent advancements in Gaussian Splatting (3DGS) have introduced various modifications to the original kernel, resulting in significant performance improvements.
+◆ However, many of these kernel changes are incompatible with existing datasets optimized for the original Gaussian kernel, presenting a challenge for widespread adoption.
+◆ In this work, we address this challenge by proposing an alternative kernel that maintains compatibility with existing datasets while improving computational efficiency.</td></tr>
+<tr><td>2026-03-19</td><td>OnlinePG: Online Open-Vocabulary Panoptic Mapping with 3D Gaussian Splatting</td><td>[2603.18510](http://arxiv.org/pdf/2603.18510)</td><td>◆ Open-vocabulary scene understanding with online panoptic mapping is essential for embodied applications to perceive and interact with environments.
+◆ However, existing methods are predominantly offline or lack instance-level understanding, limiting their applicability to real-world robotic tasks.
+◆ In this paper, we propose OnlinePG, a novel and effective system that integrates geometric reconstruction and open-vocabulary perception using 3D Gaussian Splatting in an online setting.</td></tr>
+<tr><td>2026-03-19</td><td>Inst4DGS: Instance-Decomposed 4D Gaussian Splatting with Multi-Video Label Permutation Learning</td><td>[2603.18402](http://arxiv.org/pdf/2603.18402)</td><td>◆ We present Inst4DGS, an instance-decomposed 4D Gaussian Splatting (4DGS) approach with long-horizon per-Gaussian trajectories.
+◆ While dynamic 4DGS has advanced rapidly, instance-decomposed 4DGS remains underexplored, largely due to the difficulty of associating inconsistent instance labels across independently segmented multi-view videos.
+◆ We address this challenge by introducing per-video label-permutation latents that learn cross-video instance matches through a differentiable Sinkhorn layer, enabling direct multi-view supervision with consistent identity preservation.</td></tr>
+<tr><td>2026-03-18</td><td>Semantic Segmentation and Depth Estimation for Real-Time Lunar Surface Mapping Using 3D Gaussian Splatting</td><td>[2603.18218](http://arxiv.org/pdf/2603.18218)</td><td>◆ Navigation and mapping on the lunar surface require robust perception under challenging conditions, including poorly textured environments, high-contrast lighting, and limited computational resources.
+◆ This paper presents a real-time mapping framework that integrates dense perception models with a 3D Gaussian Splatting (3DGS) representation.
+◆ We first benchmark several models on synthetic datasets generated with the LuPNT simulator, selecting a stereo dense depth estimation model based on Gated Recurrent Units for its balance of speed and accuracy in depth estimation, and a convolutional neural network for its superior performance in detecting semantic segments.</td></tr>
 <tr><td>2026-03-18</td><td>AHOY! Animatable Humans under Occlusion from YouTube Videos with Gaussian Splatting and Video Diffusion Priors</td><td>[2603.17975](http://arxiv.org/pdf/2603.17975)</td><td>◆ We present AHOY, a method for reconstructing complete, animatable 3D Gaussian avatars from in-the-wild monocular video despite heavy occlusion.
 ◆ Existing methods assume unoccluded input-a fully visible subject, often in a canonical pose-excluding the vast majority of real-world footage where people are routinely occluded by furniture, objects, or other people.
 ◆ Reconstructing from such footage poses fundamental challenges: large body regions may never be observed, and multi-view supervision per pose is unavailable.</td></tr>
@@ -3437,6 +3479,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-19</td><td>VGGT-360: Geometry-Consistent Zero-Shot Panoramic Depth Estimation</td><td>[2603.18943](http://arxiv.org/pdf/2603.18943)</td><td>◆ This paper presents VGGT-360, a novel training-free framework for zero-shot, geometry-consistent panoramic depth estimation.
+◆ Unlike prior view-independent training-free approaches, VGGT-360 reformulates the task as panoramic reprojection over multi-view reconstructed 3D models by leveraging the intrinsic 3D consistency of VGGT-like foundation models, thereby unifying fragmented per-view reasoning into a coherent panoramic understanding.
+◆ To achieve robust and accurate estimation, VGGT-360 integrates three plug-and-play modules that form a unified panorama-to-3D-to-depth framework: (i) Uncertainty-guided adaptive projection slices panoramas into perspective views to bridge the domain gap between panoramic inputs and VGGT&#x27;s perspective prior.</td></tr>
+<tr><td>2026-03-18</td><td>Semantic Segmentation and Depth Estimation for Real-Time Lunar Surface Mapping Using 3D Gaussian Splatting</td><td>[2603.18218](http://arxiv.org/pdf/2603.18218)</td><td>◆ Navigation and mapping on the lunar surface require robust perception under challenging conditions, including poorly textured environments, high-contrast lighting, and limited computational resources.
+◆ This paper presents a real-time mapping framework that integrates dense perception models with a 3D Gaussian Splatting (3DGS) representation.
+◆ We first benchmark several models on synthetic datasets generated with the LuPNT simulator, selecting a stereo dense depth estimation model based on Gated Recurrent Units for its balance of speed and accuracy in depth estimation, and a convolutional neural network for its superior performance in detecting semantic segments.</td></tr>
 <tr><td>2026-03-18</td><td>UniSem: Generalizable Semantic 3D Reconstruction from Sparse Unposed Images</td><td>[2603.17519](http://arxiv.org/pdf/2603.17519)</td><td>◆ Semantic-aware 3D reconstruction from sparse, unposed images remains challenging for feed-forward 3D Gaussian Splatting (3DGS).
 ◆ Existing methods often predict an over-complete set of Gaussian primitives under sparse-view supervision, leading to unstable geometry and inferior depth quality.
 ◆ Meanwhile, they rely solely on 2D segmenter features for semantic lifting, which provides weak 3D-level and limited generalizable supervision, resulting in incomplete 3D semantics in novel scenes.</td></tr>
@@ -3455,7 +3503,7 @@
 <tr><td>2026-03-17</td><td>$D^3$-RSMDE: 40$\times$ Faster and High-Fidelity Remote Sensing Monocular Depth Estimation</td><td>[2603.16362](http://arxiv.org/pdf/2603.16362)</td><td>◆ Real-time, high-fidelity monocular depth estimation from remote sensing imagery is crucial for numerous applications, yet existing methods face a stark trade-off between accuracy and efficiency.
 ◆ Although using Vision Transformer (ViT) backbones for dense prediction is fast, they often exhibit poor perceptual quality.
 ◆ Conversely, diffusion models offer high fidelity but at a prohibitive computational cost.</td></tr>
-<tr><td>2026-03-17</td><td>Iris: Bringing Real-World Priors into Diffusion Model for Monocular Depth Estimation</td><td>[2603.16340](http://arxiv.org/pdf/2603.16340)</td><td>◆ In this paper, we propose \textbf{Iris}, a deterministic framework for Monocular Depth Estimation (MDE) that integrates real-world priors into the diffusion model.
+<tr><td>2026-03-19</td><td>Iris: Bringing Real-World Priors into Diffusion Model for Monocular Depth Estimation</td><td>[2603.16340](http://arxiv.org/pdf/2603.16340)</td><td>◆ In this paper, we propose \textbf{Iris}, a deterministic framework for Monocular Depth Estimation (MDE) that integrates real-world priors into the diffusion model.
 ◆ Conventional feed-forward methods rely on massive training data, yet still miss details.
 ◆ Previous diffusion-based methods leverage rich generative priors yet struggle with synthetic-to-real domain transfer.</td></tr>
 <tr><td>2026-03-17</td><td>PureCLIP-Depth: Prompt-Free and Decoder-Free Monocular Depth Estimation within CLIP Embedding Space</td><td>[2603.16238](http://arxiv.org/pdf/2603.16238)</td><td>◆ We propose PureCLIP-Depth, a completely prompt-free, decoder-free Monocular Depth Estimation (MDE) model that operates entirely within the Contrastive Language-Image Pre-training (CLIP) embedding space.
@@ -4179,4 +4227,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.19
+> 更新于: 2026.03.20
