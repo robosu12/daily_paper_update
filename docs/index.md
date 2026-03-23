@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.22)
+# SLAM领域最新论文 (2026.03.23)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-20</td><td>HortiMulti: A Multi-Sensor Dataset for Localisation and Mapping in Horticultural Polytunnels</td><td>[2603.20150](http://arxiv.org/pdf/2603.20150)</td><td>◆ Agricultural robotics is gaining increasing relevance in both research and real-world deployment.
+◆ As these systems are expected to operate autonomously in more complex tasks, the availability of representative real-world datasets becomes essential.
+◆ While domains such as urban and forestry robotics benefit from large and established benchmarks, horticultural environments remain comparatively under-explored despite the economic significance of this sector.</td></tr>
+<tr><td>2026-03-20</td><td>IUP-Pose: Decoupled Iterative Uncertainty Propagation for Real-time Relative Pose Regression via Implicit Dense Alignment v1</td><td>[2603.19625](http://arxiv.org/pdf/2603.19625)</td><td>◆ Relative pose estimation is fundamental for SLAM, visual localization, and 3D reconstruction.
+◆ Existing Relative Pose Regression (RPR) methods face a key trade-off: feature-matching pipelines achieve high accuracy but block gradient flow via non-differentiable RANSAC, while ViT-based regressors are end-to-end trainable but prohibitively expensive for real-time deployment.
+◆ We identify the core bottlenecks as the coupling between rotation and translation estimation and insufficient cross-view feature alignment.</td></tr>
 <tr><td>2026-03-19</td><td>DROID-SLAM in the Wild</td><td>[2603.19076](http://arxiv.org/pdf/2603.19076)</td><td>◆ We present a robust, real-time RGB SLAM system that handles dynamic environments by leveraging differentiable Uncertainty-aware Bundle Adjustment.
 ◆ Traditional SLAM methods typically assume static scenes, leading to tracking failures in the presence of motion.
 ◆ Recent dynamic SLAM approaches attempt to address this challenge using predefined dynamic priors or uncertainty-aware mapping, but they remain limited when confronted with unknown dynamic objects or highly cluttered scenes where geometric mapping becomes unreliable.</td></tr>
@@ -998,6 +1004,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-20</td><td>Offshore oil and gas platform dynamics in the North Sea, Gulf of Mexico, and Persian Gulf: Exploiting the Sentinel-1 archive</td><td>[2603.19801](http://arxiv.org/pdf/2603.19801)</td><td>◆ The increasing use of marine spaces by offshore infrastructure, including oil and gas platforms, underscores the need for consistent, scalable monitoring.
+◆ Offshore development has economic, environmental, and regulatory implications, yet maritime areas remain difficult to monitor systematically due to their inaccessibility and spatial extent.
+◆ This study presents an automated approach to the spatiotemporal detection of offshore oil and gas platforms based on freely available Earth observation data.</td></tr>
 <tr><td>2026-03-18</td><td>Full Stack Navigation, Mapping, and Planning for the Lunar Autonomy Challenge</td><td>[2603.17232](http://arxiv.org/pdf/2603.17232)</td><td>◆ We present a modular, full-stack autonomy system for lunar surface navigation and mapping developed for the Lunar Autonomy Challenge.
 ◆ Operating in a GNSS-denied, visually challenging environment, our pipeline integrates semantic segmentation, stereo visual odometry, pose graph SLAM with loop closures, and layered planning and control.
 ◆ We leverage lightweight learning-based perception models for real-time segmentation and feature tracking and use a factor-graph backend to maintain globally consistent localization.</td></tr>
@@ -1620,6 +1629,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-20</td><td>Physics-aware neural networks enable robust and full atomic structure determination via low-dose atomic electron tomography</td><td>[2603.19942](http://arxiv.org/pdf/2603.19942)</td><td>◆ Atomic electron tomography (AET) determines the three-dimensional (3D) coordinates and chemical identities of individual atoms from a series of scanning transmission electron microscopy images taken at different tilt angles.
+◆ However, under the low dose conditions required to mitigate beam damage, the reduced signal-to-noise ratio forces a trade off among accuracy, robustness, and throughput, which ultimately limits the broader application of AET.
+◆ Here, we introduce a physics aware, two stage neural networks (PANN) that incorporates physical constraints throughout its workflow to achieve accurate AET under low-dose imaging.</td></tr>
 <tr><td>2026-03-19</td><td>Pixel-Accurate Epipolar Guided Matching</td><td>[2603.18401](http://arxiv.org/pdf/2603.18401)</td><td>◆ Keypoint matching can be slow and unreliable in challenging conditions such as repetitive textures or wide-baseline views.
 ◆ In such cases, known geometric relations (e.g., the fundamental matrix) can be used to restrict potential correspondences to a narrow epipolar envelope, thereby reducing the search space and improving robustness.
 ◆ These epipolar-guided matching approaches have proved effective in tasks such as SfM; however, most rely on coarse spatial binning, which introduces approximation errors, requires costly post-processing, and may miss valid correspondences.</td></tr>
@@ -1936,7 +1948,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-03-19</td><td>Matryoshka Gaussian Splatting</td><td>[2603.19234](http://arxiv.org/pdf/2603.19234)</td><td>◆ The ability to render scenes at adjustable fidelity from a single model, known as level of detail (LoD), is crucial for practical deployment of 3D Gaussian Splatting (3DGS).
+<tr><td>2026-03-20</td><td>Fourier Splatting: Generalized Fourier encoded primitives for scalable radiance fields</td><td>[2603.19834](http://arxiv.org/pdf/2603.19834)</td><td>◆ Novel view synthesis has recently been revolutionized by 3D Gaussian Splatting (3DGS), which enables real-time rendering through explicit primitive rasterization.
+◆ However, existing methods tie visual fidelity strictly to the number of primitives: quality downscaling is achieved only through pruning primitives.
+◆ We propose the first inherently scalable primitive for radiance field rendering.</td></tr>
+<tr><td>2026-03-20</td><td>HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks</td><td>[2603.19822](http://arxiv.org/pdf/2603.19822)</td><td>◆ Existing UAV vision-language navigation (VLN) benchmarks have enabled language-guided flight, but they largely focus on long, step-wise route descriptions with goal-centric evaluation, making them less diagnostic for real operations where brief, high-level commands must be grounded into safe multi-stage behaviors.
+◆ We present HUGE-Bench, a benchmark for High-Level UAV Vision-Language-Action (HL-VLA) tasks that tests whether an agent can interpret concise language and execute complex, process-oriented trajectories with safety awareness.
+◆ HUGE-Bench comprises 4 real-world digital twin scenes, 8 high-level tasks, and 2.56M meters of trajectories, and is built on an aligned 3D Gaussian Splatting (3DGS)-Mesh representation that combines photorealistic rendering with collision-capable geometry for scalable generation and collision-aware evaluation.</td></tr>
+<tr><td>2026-03-20</td><td>3D Gaussian Splatting with Self-Constrained Priors for High Fidelity Surface Reconstruction</td><td>[2603.19682](http://arxiv.org/pdf/2603.19682)</td><td>◆ Rendering 3D surfaces has been revolutionized within the modeling of radiance fields through either 3DGS or NeRF.
+◆ Although 3DGS has shown advantages over NeRF in terms of rendering quality or speed, there is still room for improvement in recovering high fidelity surfaces through 3DGS.
+◆ To resolve this issue, we propose a self-constrained prior to constrain the learning of 3D Gaussians, aiming for more accurate depth rendering.</td></tr>
+<tr><td>2026-03-20</td><td>StreetForward: Perceiving Dynamic Street with Feedforward Causal Attention</td><td>[2603.19552](http://arxiv.org/pdf/2603.19552)</td><td>◆ Feedforward reconstruction is crucial for autonomous driving applications, where rapid scene reconstruction enables efficient utilization of large-scale driving datasets in closed-loop simulation and other downstream tasks, eliminating the need for time-consuming per-scene optimization.
+◆ We present StreetForward, a pose-free and tracker-free feedforward framework for dynamic street reconstruction.
+◆ Building upon the alternating attention mechanism from Visual Geometry Grounded Transformer (VGGT), we propose a simple yet effective temporal mask attention module that captures dynamic motion information from image sequences and produces motion-aware latent representations.</td></tr>
+<tr><td>2026-03-20</td><td>Matryoshka Gaussian Splatting</td><td>[2603.19234](http://arxiv.org/pdf/2603.19234)</td><td>◆ The ability to render scenes at adjustable fidelity from a single model, known as level of detail (LoD), is crucial for practical deployment of 3D Gaussian Splatting (3DGS).
 ◆ Existing discrete LoD methods expose only a limited set of operating points, while concurrent continuous LoD approaches enable smoother scaling but often suffer noticeable quality degradation at full capacity, making LoD a costly design decision.
 ◆ We introduce Matryoshka Gaussian Splatting (MGS), a training framework that enables continuous LoD for standard 3DGS pipelines without sacrificing full-capacity rendering quality.</td></tr>
 <tr><td>2026-03-19</td><td>Reconstruction Matters: Learning Geometry-Aligned BEV Representation through 3D Gaussian Splatting</td><td>[2603.19193](http://arxiv.org/pdf/2603.19193)</td><td>◆ Bird&#x27;s-Eye-View (BEV) perception serves as a cornerstone for autonomous driving, offering a unified spatial representation that fuses surrounding-view images to enable reasoning for various downstream tasks, such as semantic segmentation, 3D object detection, and motion prediction.
@@ -3469,6 +3493,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-20</td><td>CeRLP: A Cross-embodiment Robot Local Planning Framework for Visual Navigation</td><td>[2603.19602](http://arxiv.org/pdf/2603.19602)</td><td>◆ Visual navigation for cross-embodiment robots is challenging due to variations in robot and camera configurations, which can lead to the failure of navigation tasks.
+◆ Previous approaches typically rely on collecting massive datasets across different robots, which is highly data-intensive, or fine-tuning models, which is time-consuming.
+◆ Furthermore, both methods often lack explicit consideration of robot geometry.</td></tr>
+<tr><td>2026-03-20</td><td>StreetForward: Perceiving Dynamic Street with Feedforward Causal Attention</td><td>[2603.19552](http://arxiv.org/pdf/2603.19552)</td><td>◆ Feedforward reconstruction is crucial for autonomous driving applications, where rapid scene reconstruction enables efficient utilization of large-scale driving datasets in closed-loop simulation and other downstream tasks, eliminating the need for time-consuming per-scene optimization.
+◆ We present StreetForward, a pose-free and tracker-free feedforward framework for dynamic street reconstruction.
+◆ Building upon the alternating attention mechanism from Visual Geometry Grounded Transformer (VGGT), we propose a simple yet effective temporal mask attention module that captures dynamic motion information from image sequences and produces motion-aware latent representations.</td></tr>
+<tr><td>2026-03-20</td><td>SeeClear: Reliable Transparent Object Depth Estimation via Generative Opacification</td><td>[2603.19547](http://arxiv.org/pdf/2603.19547)</td><td>◆ Monocular depth estimation remains challenging for transparent objects, where refraction and transmission are difficult to model and break the appearance assumptions used by depth networks.
+◆ As a result, state-of-the-art estimators often produce unstable or incorrect depth predictions for transparent materials.
+◆ We propose SeeClear, a novel framework that converts transparent objects into generative opaque images, enabling stable monocular depth estimation for transparent objects.</td></tr>
 <tr><td>2026-03-19</td><td>VGGT-360: Geometry-Consistent Zero-Shot Panoramic Depth Estimation</td><td>[2603.18943](http://arxiv.org/pdf/2603.18943)</td><td>◆ This paper presents VGGT-360, a novel training-free framework for zero-shot, geometry-consistent panoramic depth estimation.
 ◆ Unlike prior view-independent training-free approaches, VGGT-360 reformulates the task as panoramic reprojection over multi-view reconstructed 3D models by leveraging the intrinsic 3D consistency of VGGT-like foundation models, thereby unifying fragmented per-view reasoning into a coherent panoramic understanding.
 ◆ To achieve robust and accurate estimation, VGGT-360 integrates three plug-and-play modules that form a unified panorama-to-3D-to-depth framework: (i) Uncertainty-guided adaptive projection slices panoramas into perspective views to bridge the domain gap between panoramic inputs and VGGT&#x27;s perspective prior.</td></tr>
@@ -4215,4 +4248,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.22
+> 更新于: 2026.03.23
