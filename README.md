@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.23)
+# SLAM领域最新论文 (2026.03.24)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,7 +22,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-03-20</td><td>HortiMulti: A Multi-Sensor Dataset for Localisation and Mapping in Horticultural Polytunnels</td><td>[2603.20150](http://arxiv.org/pdf/2603.20150)</td><td>◆ Agricultural robotics is gaining increasing relevance in both research and real-world deployment.
+<tr><td>2026-03-22</td><td>SGAD-SLAM: Splatting Gaussians at Adjusted Depth for Better Radiance Fields in RGBD SLAM</td><td>[2603.21055](http://arxiv.org/pdf/2603.21055)</td><td>◆ 3D Gaussian Splatting (3DGS) has made remarkable progress in RGBD SLAM.
+◆ Current methods usually use 3D Gaussians or view-tied 3D Gaussians to represent radiance fields in tracking and mapping.
+◆ However, these Gaussians are either too flexible or too limited in movements, resulting in slow convergence or limited rendering quality.</td></tr>
+<tr><td>2026-03-21</td><td>Implementing Robust M-Estimators with Certifiable Factor Graph Optimization</td><td>[2603.20932](http://arxiv.org/pdf/2603.20932)</td><td>◆ Parameter estimation in robotics and computer vision faces formidable challenges from both outlier contamination and nonconvex optimization landscapes.
+◆ While M-estimation addresses the problem of outliers through robust loss functions, it creates severely nonconvex problems that are difficult to solve globally.
+◆ Adaptive reweighting schemes provide one particularly appealing strategy for implementing M-estimation in practice: these methods solve a sequence of simpler weighted least squares (WLS) subproblems, enabling both the use of standard least squares solvers and the recovery of higher-quality estimates than simple local search.</td></tr>
+<tr><td>2026-03-21</td><td>ToFormer: Towards Large-scale Scenario Depth Completion for Lightweight ToF Camera</td><td>[2603.20669](http://arxiv.org/pdf/2603.20669)</td><td>◆ Time-of-Flight (ToF) cameras possess compact design and high measurement precision to be applied to various robot tasks.
+◆ However, their limited sensing range restricts deployment in large-scale scenarios.
+◆ Depth completion has emerged as a potential solution to expand the sensing range of ToF cameras, but existing research lacks dedicated datasets and struggles to generalize to ToF measurements.</td></tr>
+<tr><td>2026-03-20</td><td>TRGS-SLAM: IMU-Aided Gaussian Splatting SLAM for Blurry, Rolling Shutter, and Noisy Thermal Images</td><td>[2603.20443](http://arxiv.org/pdf/2603.20443)</td><td>◆ Thermal cameras offer several advantages for simultaneous localization and mapping (SLAM) with mobile robots: they provide a passive, low-power solution to operating in darkness, are invariant to rapidly changing or high dynamic range illumination, and can see through fog, dust, and smoke.
+◆ However, uncooled microbolometer thermal cameras, the only practical option in most robotics applications, suffer from significant motion blur, rolling shutter distortions, and fixed pattern noise.
+◆ In this paper, we present TRGS-SLAM, a 3D Gaussian Splatting (3DGS) based thermal inertial SLAM system uniquely capable of handling these degradations.</td></tr>
+<tr><td>2026-03-23</td><td>HortiMulti: A Multi-Sensor Dataset for Localisation and Mapping in Horticultural Polytunnels</td><td>[2603.20150](http://arxiv.org/pdf/2603.20150)</td><td>◆ Agricultural robotics is gaining increasing relevance in both research and real-world deployment.
 ◆ As these systems are expected to operate autonomously in more complex tasks, the availability of representative real-world datasets becomes essential.
 ◆ While domains such as urban and forestry robotics benefit from large and established benchmarks, horticultural environments remain comparatively under-explored despite the economic significance of this sector.</td></tr>
 <tr><td>2026-03-20</td><td>IUP-Pose: Decoupled Iterative Uncertainty Propagation for Real-time Relative Pose Regression via Implicit Dense Alignment v1</td><td>[2603.19625](http://arxiv.org/pdf/2603.19625)</td><td>◆ Relative pose estimation is fundamental for SLAM, visual localization, and 3D reconstruction.
@@ -739,6 +751,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-23</td><td>Image-Conditioned Adaptive Parameter Tuning for Visual Odometry Frontends</td><td>[2603.21785](http://arxiv.org/pdf/2603.21785)</td><td>◆ Resource-constrained autonomous robots rely on sparse direct and semi-direct visual-(inertial)-odometry (VO) pipelines, as they provide a favorable tradeoff between accuracy, robustness, and computational cost.
+◆ However, the performance of most systems depends critically on hand-tuned hyperparameters governing feature detection, tracking, and outlier rejection.
+◆ These parameters are typically fixed during deployment, even though their optimal values vary with scene characteristics such as texture density, illumination, motion blur, and sensor noise, leading to brittle performance in real-world environments.</td></tr>
+<tr><td>2026-03-21</td><td>PiLoT: Neural Pixel-to-3D Registration for UAV-based Ego and Target Geo-localization</td><td>[2603.20778](http://arxiv.org/pdf/2603.20778)</td><td>◆ We present PiLoT, a unified framework that tackles UAV-based ego and target geo-localization.
+◆ Conventional approaches rely on decoupled pipelines that fuse GNSS and Visual-Inertial Odometry (VIO) for ego-pose estimation, and active sensors like laser rangefinders for target localization.
+◆ However, these methods are susceptible to failure in GNSS-denied environments and incur substantial hardware costs and complexity.</td></tr>
+<tr><td>2026-03-21</td><td>ToFormer: Towards Large-scale Scenario Depth Completion for Lightweight ToF Camera</td><td>[2603.20669](http://arxiv.org/pdf/2603.20669)</td><td>◆ Time-of-Flight (ToF) cameras possess compact design and high measurement precision to be applied to various robot tasks.
+◆ However, their limited sensing range restricts deployment in large-scale scenarios.
+◆ Depth completion has emerged as a potential solution to expand the sensing range of ToF cameras, but existing research lacks dedicated datasets and struggles to generalize to ToF measurements.</td></tr>
 <tr><td>2026-03-19</td><td>ROFT-VINS: Robust Feature Tracking-based Visual-Inertial State Estimation for Harsh Environment</td><td>[2603.18746](http://arxiv.org/pdf/2603.18746)</td><td>◆ SLAM (Simultaneous Localization and Mapping) and Odometry are important systems for estimating the position of mobile devices, such as robots and cars, utilizing one or more sensors.
 ◆ Particularly in camera-based SLAM or Odometry, effectively tracking visual features is important as it significantly impacts system performance.
 ◆ In this paper, we propose a method that leverages deep learning to robustly track visual features in monocular camera images.</td></tr>
@@ -1008,6 +1029,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-23</td><td>MineRobot: A Unified Framework for Kinematics Modeling and Solving of Underground Mining Robots in Virtual Environments</td><td>[2603.22055](http://arxiv.org/pdf/2603.22055)</td><td>◆ Underground mining robots are increasingly operated in virtual environments (VEs) for training, planning, and digital-twin applications, where reliable kinematics is essential for avoiding hazardous in-situ trials.
+◆ Unlike typical open-chain industrial manipulators, mining robots are often closed-chain mechanisms driven by linear actuators and involving planar four-bar linkages, which makes both kinematics modeling and real-time solving challenging.
+◆ We present \emph{MineRobot}, a unified framework for modeling and solving the kinematics of underground mining robots in VEs.</td></tr>
+<tr><td>2026-03-23</td><td>IGV-RRT: Prior-Real-Time Observation Fusion for Active Object Search in Changing Environments</td><td>[2603.21887](http://arxiv.org/pdf/2603.21887)</td><td>◆ Object Goal Navigation (ObjectNav) in temporally changing indoor environments is challenging because object relocation can invalidate historical scene knowledge.
+◆ To address this issue, we propose a probabilistic planning framework that combines uncertainty-aware scene priors with online target relevance estimates derived from a Vision Language Model (VLM).
+◆ The framework contains a dual-layer semantic mapping module and a real-time planner.</td></tr>
+<tr><td>2026-03-21</td><td>PlanaReLoc: Camera Relocalization in 3D Planar Primitives via Region-Based Structure Matching</td><td>[2603.20818](http://arxiv.org/pdf/2603.20818)</td><td>◆ While structure-based relocalizers have long strived for point correspondences when establishing or regressing query-map associations, in this paper, we pioneer the use of planar primitives and 3D planar maps for lightweight 6-DoF camera relocalization in structured environments.
+◆ Planar primitives, beyond being fundamental entities in projective geometry, also serve as region-based representations that encapsulate both structural and semantic richness.
+◆ This motivates us to introduce PlanaReLoc, a streamlined plane-centric paradigm where a deep matcher associates planar primitives across the query image and the map within a learned unified embedding space, after which the 6-DoF pose is solved and refined under a robust framework.</td></tr>
 <tr><td>2026-03-20</td><td>Offshore oil and gas platform dynamics in the North Sea, Gulf of Mexico, and Persian Gulf: Exploiting the Sentinel-1 archive</td><td>[2603.19801](http://arxiv.org/pdf/2603.19801)</td><td>◆ The increasing use of marine spaces by offshore infrastructure, including oil and gas platforms, underscores the need for consistent, scalable monitoring.
 ◆ Offshore development has economic, environmental, and regulatory implications, yet maritime areas remain difficult to monitor systematically due to their inaccessibility and spatial extent.
 ◆ This study presents an automated approach to the spatiotemporal detection of offshore oil and gas platforms based on freely available Earth observation data.</td></tr>
@@ -1635,6 +1665,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-23</td><td>EpiMask: Leveraging Epipolar Distance Based Masks in Cross-Attention for Satellite Image Matching</td><td>[2603.21463](http://arxiv.org/pdf/2603.21463)</td><td>◆ The deep-learning based image matching networks can now handle significantly larger variations in viewpoints and illuminations while providing matched pairs of pixels with sub-pixel precision.
+◆ These networks have been trained with ground-based image datasets and, implicitly, their performance is optimized for the pinhole camera geometry.
+◆ Consequently, you get suboptimal performance when such networks are used to match satellite images since those images are synthesized as a moving satellite camera records one line at a time of the points on the ground.</td></tr>
+<tr><td>2026-03-20</td><td>Benchmarking Efficient &amp; Effective Camera Pose Estimation Strategies for Novel View Synthesis</td><td>[2603.20428](http://arxiv.org/pdf/2603.20428)</td><td>◆ Novel view synthesis (NVS) approaches such as NeRFs or 3DGS can produce photo-realistic 3D scene representation from a set of images with known extrinsic and intrinsic parameters.
+◆ The necessary camera poses and calibrations are typically obtained from the images via Structure-from-Motion (SfM).
+◆ Classical SfM approaches rely on local feature matches between the images to estimate both the poses and a sparse 3D model of the scene, using bundle adjustment to refine initial pose, intrinsics, and geometry estimates.</td></tr>
 <tr><td>2026-03-20</td><td>Physics-aware neural networks enable robust and full atomic structure determination via low-dose atomic electron tomography</td><td>[2603.19942](http://arxiv.org/pdf/2603.19942)</td><td>◆ Atomic electron tomography (AET) determines the three-dimensional (3D) coordinates and chemical identities of individual atoms from a series of scanning transmission electron microscopy images taken at different tilt angles.
 ◆ However, under the low dose conditions required to mitigate beam damage, the reduced signal-to-noise ratio forces a trade off among accuracy, robustness, and throughput, which ultimately limits the broader application of AET.
 ◆ Here, we introduce a physics aware, two stage neural networks (PANN) that incorporates physical constraints throughout its workflow to achieve accurate AET under low-dose imaging.</td></tr>
@@ -1956,6 +1992,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-23</td><td>FreeArtGS: Articulated Gaussian Splatting Under Free-moving Scenario</td><td>[2603.22102](http://arxiv.org/pdf/2603.22102)</td><td>◆ The increasing demand for augmented reality and robotics is driving the need for articulated object reconstruction with high scalability.
+◆ However, existing settings for reconstructing from discrete articulation states or casual monocular videos require non-trivial axis alignment or suffer from insufficient coverage, limiting their applicability.
+◆ In this paper, we introduce FreeArtGS, a novel method for reconstructing articulated objects under free-moving scenario, a new setting with a simple setup and high scalability.</td></tr>
+<tr><td>2026-03-23</td><td>GTSR: Subsurface Scattering Awared 3D Gaussians for Translucent Surface Reconstruction</td><td>[2603.22036](http://arxiv.org/pdf/2603.22036)</td><td>◆ Reconstructing translucent objects from multi-view images is a difficult problem.
+◆ Previously, researchers have used differentiable path tracing and the neural implicit field, which require relatively large computational costs.
+◆ Recently, many works have achieved good reconstruction results for opaque objects based on a 3DGS pipeline with much higher efficiency.</td></tr>
+<tr><td>2026-03-23</td><td>Fast undersampled dynamic MRI reconstruction using explicit representation learning with Gaussian splatting</td><td>[2603.21980](http://arxiv.org/pdf/2603.21980)</td><td>◆ Motivation: Quickly obtaining high-quality MRI from accelerated acquisitions is important to mitigate motion artifacts, maintain patient comfort, and improve clinical efficiency.
+◆ Goals: To obtain high-quality dynamic MRI using efficient, personalized models.
+◆ Approach: We propose a novel explicit representation learning approach using Gaussian splatting.</td></tr>
+<tr><td>2026-03-23</td><td>Cross-Instance Gaussian Splatting Registration via Geometry-Aware Feature-Guided Alignment</td><td>[2603.21936](http://arxiv.org/pdf/2603.21936)</td><td>◆ We present Gaussian Splatting Alignment (GSA), a novel method for aligning two independent 3D Gaussian Splatting (3DGS) models via a similarity transformation (rotation, translation, and scale), even when they are of different objects in the same category (e.g., different cars).
+◆ In contrast, existing methods can only align 3DGS models of the same object (e.g., the same car) and often must be given true scale as input, while we estimate it successfully.
+◆ GSA leverages viewpoint-guided spherical map features to obtain robust correspondences and introduces a two-step optimization framework that aligns 3DGS models while keeping them fixed.</td></tr>
+<tr><td>2026-03-23</td><td>Camera-Agnostic Pruning of 3D Gaussian Splats via Descriptor-Based Beta Evidence</td><td>[2603.21933](http://arxiv.org/pdf/2603.21933)</td><td>◆ The pruning of 3D Gaussian splats is essential for reducing their complexity to enable efficient storage, transmission, and downstream processing.
+◆ However, most of the existing pruning strategies depend on camera parameters, rendered images, or view-dependent measures.
+◆ This dependency becomes a hindrance in emerging camera-agnostic exchange settings, where splats are shared directly as point-based representations (e.g., .ply).</td></tr>
+<tr><td>2026-03-23</td><td>RefracGS: Novel View Synthesis Through Refractive Water Surfaces with 3D Gaussian Ray Tracing</td><td>[2603.21695](http://arxiv.org/pdf/2603.21695)</td><td>◆ Novel view synthesis (NVS) through non-planar refractive surfaces presents fundamental challenges due to severe, spatially varying optical distortions.
+◆ While recent representations like NeRF and 3D Gaussian Splatting (3DGS) excel at NVS, their assumption of straight-line ray propagation fails under these conditions, leading to significant artifacts.
+◆ To overcome this limitation, we introduce RefracGS, a framework that jointly reconstructs the refractive water surface and the scene beneath the interface.</td></tr>
+<tr><td>2026-03-22</td><td>EmoTaG: Emotion-Aware Talking Head Synthesis on Gaussian Splatting with Few-Shot Personalization</td><td>[2603.21332](http://arxiv.org/pdf/2603.21332)</td><td>◆ Audio-driven 3D talking head synthesis has advanced rapidly with Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS).
+◆ By leveraging rich pre-trained priors, few-shot methods enable instant personalization from just a few seconds of video.
+◆ However, under expressive facial motion, existing few-shot approaches often suffer from geometric instability and audio-emotion mismatch, highlighting the need for more effective emotion-aware motion modeling.</td></tr>
+<tr><td>2026-03-22</td><td>F4Splat: Feed-Forward Predictive Densification for Feed-Forward 3D Gaussian Splatting</td><td>[2603.21304](http://arxiv.org/pdf/2603.21304)</td><td>◆ Feed-forward 3D Gaussian Splatting methods enable single-pass reconstruction and real-time rendering.
+◆ However, they typically adopt rigid pixel-to-Gaussian or voxel-to-Gaussian pipelines that uniformly allocate Gaussians, leading to redundant Gaussians across views.
+◆ Moreover, they lack an effective mechanism to control the total number of Gaussians while maintaining reconstruction fidelity.</td></tr>
+<tr><td>2026-03-22</td><td>Two Experts Are Better Than One Generalist: Decoupling Geometry and Appearance for Feed-Forward 3D Gaussian Splatting</td><td>[2603.21064](http://arxiv.org/pdf/2603.21064)</td><td>◆ Pose-free feed-forward 3D Gaussian Splatting (3DGS) has opened a new frontier for rapid 3D modeling, enabling high-quality Gaussian representations to be generated from uncalibrated multi-view images in a single forward pass.
+◆ The dominant approach in this space adopts unified monolithic architectures, often built on geometry-centric 3D foundation models, to jointly estimate camera poses and synthesize 3DGS representations within a single network.
+◆ While architecturally streamlined, such &quot;all-in-one&quot; designs may be suboptimal for high-fidelity 3DGS generation, as they entangle geometric reasoning and appearance modeling within a shared representation.</td></tr>
+<tr><td>2026-03-22</td><td>SGAD-SLAM: Splatting Gaussians at Adjusted Depth for Better Radiance Fields in RGBD SLAM</td><td>[2603.21055](http://arxiv.org/pdf/2603.21055)</td><td>◆ 3D Gaussian Splatting (3DGS) has made remarkable progress in RGBD SLAM.
+◆ Current methods usually use 3D Gaussians or view-tied 3D Gaussians to represent radiance fields in tracking and mapping.
+◆ However, these Gaussians are either too flexible or too limited in movements, resulting in slow convergence or limited rendering quality.</td></tr>
 <tr><td>2026-03-20</td><td>Fourier Splatting: Generalized Fourier encoded primitives for scalable radiance fields</td><td>[2603.19834](http://arxiv.org/pdf/2603.19834)</td><td>◆ Novel view synthesis has recently been revolutionized by 3D Gaussian Splatting (3DGS), which enables real-time rendering through explicit primitive rasterization.
 ◆ However, existing methods tie visual fidelity strictly to the number of primitives: quality downscaling is achieved only through pruning primitives.
 ◆ We propose the first inherently scalable primitive for radiance field rendering.</td></tr>
@@ -3503,6 +3569,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-23</td><td>GenOpticalFlow: A Generative Approach to Unsupervised Optical Flow Learning</td><td>[2603.22270](http://arxiv.org/pdf/2603.22270)</td><td>◆ Optical flow estimation is a fundamental problem in computer vision, yet the reliance on expensive ground-truth annotations limits the scalability of supervised approaches.
+◆ Although unsupervised and semi-supervised methods alleviate this issue, they often suffer from unreliable supervision signals based on brightness constancy and smoothness assumptions, leading to inaccurate motion estimation in complex real-world scenarios.
+◆ To overcome these limitations, we introduce \textbf{\modelname}, a novel framework that synthesizes large-scale, perfectly aligned frame--flow data pairs for supervised optical flow training without human annotations.</td></tr>
+<tr><td>2026-03-23</td><td>Deep S2P: Integrating Learning Based Stereo Matching Into the Satellite Stereo Pipeline</td><td>[2603.21882](http://arxiv.org/pdf/2603.21882)</td><td>◆ Digital Surface Model generation from satellite imagery is a core task in Earth observation and is commonly addressed using classical stereoscopic matching algorithms in satellite pipelines as in the Satellite Stereo Pipeline (S2P).
+◆ While recent learning-based stereo matchers achieve state-of-the-art performance on standard benchmarks, their integration into operational satellite pipelines remains challenging due to differences in viewing geometry and disparity assumptions.
+◆ In this work, we integrate several modern learning-based stereo matchers, including StereoAnywhere, MonSter, Foundation Stereo, and a satellite fine-tuned variant of MonSter, into the Satellite Stereo Pipeline, adapting the rectification stage to enforce compatible disparity polarity and range.</td></tr>
+<tr><td>2026-03-22</td><td>PAS3R: Pose-Adaptive Streaming 3D Reconstruction for Long Video Sequences</td><td>[2603.21436](http://arxiv.org/pdf/2603.21436)</td><td>◆ Online monocular 3D reconstruction enables dense scene recovery from streaming video but remains fundamentally limited by the stability-adaptation dilemma: the reconstruction model must rapidly incorporate novel viewpoints while preserving previously accumulated scene structure.
+◆ Existing streaming approaches rely on uniform or attention-based update mechanisms that often fail to account for abrupt viewpoint transitions, leading to trajectory drift and geometric inconsistencies over long sequences.
+◆ We introduce PAS3R, a pose-adaptive streaming reconstruction framework that dynamically modulates state updates according to camera motion and scene structure.</td></tr>
+<tr><td>2026-03-22</td><td>Single-Eye View: Monocular Real-time Perception Package for Autonomous Driving</td><td>[2603.21061](http://arxiv.org/pdf/2603.21061)</td><td>◆ Amidst the rapid advancement of camera-based autonomous driving technology, effectiveness is often prioritized with limited attention to computational efficiency.
+◆ To address this issue, this paper introduces LRHPerception, a real-time monocular perception package for autonomous driving that uses single-view camera video to interpret the surrounding environment.
+◆ The proposed system combines the computational efficiency of end-to-end learning with the rich representational detail of local mapping methodologies.</td></tr>
+<tr><td>2026-03-21</td><td>The Role and Relationship of Initialization and Densification in 3D Gaussian Splatting</td><td>[2603.20714](http://arxiv.org/pdf/2603.20714)</td><td>◆ 3D Gaussian Splatting (3DGS) has become the method of choice for photo-realistic 3D reconstruction of scenes, due to being able to efficiently and accurately recover the scene appearance and geometry from images.
+◆ 3DGS represents the scene through a set of 3D Gaussians, parameterized by their position, spatial extent, and view-dependent color.
+◆ Starting from an initial point cloud, 3DGS refines the Gaussians&#x27; parameters as to reconstruct a set of training images as accurately as possible.</td></tr>
 <tr><td>2026-03-20</td><td>CeRLP: A Cross-embodiment Robot Local Planning Framework for Visual Navigation</td><td>[2603.19602](http://arxiv.org/pdf/2603.19602)</td><td>◆ Visual navigation for cross-embodiment robots is challenging due to variations in robot and camera configurations, which can lead to the failure of navigation tasks.
 ◆ Previous approaches typically rely on collecting massive datasets across different robots, which is highly data-intensive, or fine-tuning models, which is time-consuming.
 ◆ Furthermore, both methods often lack explicit consideration of robot geometry.</td></tr>
@@ -4260,4 +4341,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.23
+> 更新于: 2026.03.24
