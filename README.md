@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.24)
+# SLAM领域最新论文 (2026.03.25)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-24</td><td>Digital Twin Enabled Simultaneous Learning and Modeling for UAV-assisted Secure Communications with Eavesdropping Attacks</td><td>[2603.22753](http://arxiv.org/pdf/2603.22753)</td><td>◆ This paper focuses on secure communications in UAV-assisted wireless networks, which comprise multiple legitimate UAVs (LE-UAVs) and an intelligent eavesdropping UAV (EA-UAV).
+◆ The intelligent EA-UAV can observe the LE-UAVs&#x27;transmission strategies and adaptively adjust its trajectory to maximize information interception.
+◆ To counter this threat, we propose a mode-switching scheme that enables LE-UAVs to dynamically switch between the data transmission and jamming modes, thereby balancing data collection efficiency and communication security.</td></tr>
+<tr><td>2026-03-24</td><td>Variable-Resolution Virtual Maps for Autonomous Exploration with Unmanned Surface Vehicles (USVs)</td><td>[2603.22667](http://arxiv.org/pdf/2603.22667)</td><td>◆ Autonomous exploration by unmanned surface vehicles (USVs) in near-shore waters requires reliable localisation and consistent mapping over extended areas, but this is challenged by GNSS degradation, environment-induced localisation uncertainty, and limited on-board computation.
+◆ Virtual map-based methods explicitly model localisation and mapping uncertainty by tightly coupling factor-graph SLAM with a map uncertainty criterion.
+◆ However, their storage and computational costs scale poorly with fixed-resolution workspace discretisations, leading to inefficiency in large near-shore environments.</td></tr>
 <tr><td>2026-03-22</td><td>SGAD-SLAM: Splatting Gaussians at Adjusted Depth for Better Radiance Fields in RGBD SLAM</td><td>[2603.21055](http://arxiv.org/pdf/2603.21055)</td><td>◆ 3D Gaussian Splatting (3DGS) has made remarkable progress in RGBD SLAM.
 ◆ Current methods usually use 3D Gaussians or view-tied 3D Gaussians to represent radiance fields in tracking and mapping.
 ◆ However, these Gaussians are either too flexible or too limited in movements, resulting in slow convergence or limited rendering quality.</td></tr>
@@ -751,10 +757,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-24</td><td>Tightly-Coupled Radar-Visual-Inertial Odometry</td><td>[2603.23052](http://arxiv.org/pdf/2603.23052)</td><td>◆ Visual-Inertial Odometry (VIO) is a staple for reliable state estimation on constrained and lightweight platforms due to its versatility and demonstrated performance.
+◆ However, pertinent challenges regarding robust operation in dark, low-texture, obscured environments complicate the use of such methods.
+◆ Alternatively, Frequency Modulated Continuous Wave (FMCW) radars, and by extension Radar-Inertial Odometry (RIO), offer robustness to these visual challenges, albeit at the cost of reduced information density and worse long-term accuracy.</td></tr>
 <tr><td>2026-03-23</td><td>Image-Conditioned Adaptive Parameter Tuning for Visual Odometry Frontends</td><td>[2603.21785](http://arxiv.org/pdf/2603.21785)</td><td>◆ Resource-constrained autonomous robots rely on sparse direct and semi-direct visual-(inertial)-odometry (VO) pipelines, as they provide a favorable tradeoff between accuracy, robustness, and computational cost.
 ◆ However, the performance of most systems depends critically on hand-tuned hyperparameters governing feature detection, tracking, and outlier rejection.
 ◆ These parameters are typically fixed during deployment, even though their optimal values vary with scene characteristics such as texture density, illumination, motion blur, and sensor noise, leading to brittle performance in real-world environments.</td></tr>
-<tr><td>2026-03-21</td><td>PiLoT: Neural Pixel-to-3D Registration for UAV-based Ego and Target Geo-localization</td><td>[2603.20778](http://arxiv.org/pdf/2603.20778)</td><td>◆ We present PiLoT, a unified framework that tackles UAV-based ego and target geo-localization.
+<tr><td>2026-03-24</td><td>PiLoT: Neural Pixel-to-3D Registration for UAV-based Ego and Target Geo-localization</td><td>[2603.20778](http://arxiv.org/pdf/2603.20778)</td><td>◆ We present PiLoT, a unified framework that tackles UAV-based ego and target geo-localization.
 ◆ Conventional approaches rely on decoupled pipelines that fuse GNSS and Visual-Inertial Odometry (VIO) for ego-pose estimation, and active sensors like laser rangefinders for target localization.
 ◆ However, these methods are susceptible to failure in GNSS-denied environments and incur substantial hardware costs and complexity.</td></tr>
 <tr><td>2026-03-21</td><td>ToFormer: Towards Large-scale Scenario Depth Completion for Lightweight ToF Camera</td><td>[2603.20669](http://arxiv.org/pdf/2603.20669)</td><td>◆ Time-of-Flight (ToF) cameras possess compact design and high measurement precision to be applied to various robot tasks.
@@ -1665,6 +1674,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-24</td><td>Instrument-Splatting++: Towards Controllable Surgical Instrument Digital Twin Using Gaussian Splatting</td><td>[2603.22792](http://arxiv.org/pdf/2603.22792)</td><td>◆ High-quality and controllable digital twins of surgical instruments are critical for Real2Sim in robot-assisted surgery, as they enable realistic simulation, synthetic data generation, and perception learning under novel poses.
+◆ We present Instrument-Splatting++, a monocular 3D Gaussian Splatting (3DGS) framework that reconstructs surgical instruments as a fully controllable Gaussian asset with high fidelity.
+◆ Our pipeline starts with part-wise geometry pretraining that injects CAD priors into Gaussian primitives and equips the representation with part-aware semantic rendering.</td></tr>
 <tr><td>2026-03-23</td><td>EpiMask: Leveraging Epipolar Distance Based Masks in Cross-Attention for Satellite Image Matching</td><td>[2603.21463](http://arxiv.org/pdf/2603.21463)</td><td>◆ The deep-learning based image matching networks can now handle significantly larger variations in viewpoints and illuminations while providing matched pairs of pixels with sub-pixel precision.
 ◆ These networks have been trained with ground-based image datasets and, implicitly, their performance is optimized for the pinhole camera geometry.
 ◆ Consequently, you get suboptimal performance when such networks are used to match satellite images since those images are synthesized as a moving satellite camera records one line at a time of the points on the ground.</td></tr>
@@ -1992,6 +2004,27 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-24</td><td>Pose-Free Omnidirectional Gaussian Splatting for 360-Degree Videos with Consistent Depth Priors</td><td>[2603.23324](http://arxiv.org/pdf/2603.23324)</td><td>◆ Omnidirectional 3D Gaussian Splatting with panoramas is a key technique for 3D scene representation, and existing methods typically rely on slow SfM to provide camera poses and sparse points priors.
+◆ In this work, we propose a pose-free omnidirectional 3DGS method, named PFGS360, that reconstructs 3D Gaussians from unposed omnidirectional videos.
+◆ To achieve accurate camera pose estimation, we first construct a spherical consistency-aware pose estimation module, which recovers poses by establishing consistent 2D-3D correspondences between the reconstructed Gaussians and the unposed images using Gaussians&#x27; internal depth priors.</td></tr>
+<tr><td>2026-03-23</td><td>Drop-In Perceptual Optimization for 3D Gaussian Splatting</td><td>[2603.23297](http://arxiv.org/pdf/2603.23297)</td><td>◆ Despite their output being ultimately consumed by human viewers, 3D Gaussian Splatting (3DGS) methods often rely on ad-hoc combinations of pixel-level losses, resulting in blurry renderings.
+◆ To address this, we systematically explore perceptual optimization strategies for 3DGS by searching over a diverse set of distortion losses.
+◆ We conduct the first-of-its-kind large-scale human subjective study on 3DGS, involving 39,320 pairwise ratings across several datasets and 3DGS frameworks.</td></tr>
+<tr><td>2026-03-24</td><td>GTLR-GS: Geometry-Texture Aware LiDAR-Regularized 3D Gaussian Splatting for Realistic Scene Reconstruction</td><td>[2603.23192](http://arxiv.org/pdf/2603.23192)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled real-time, photorealistic scene reconstruction.
+◆ However, conventional 3DGS frameworks typically rely on sparse point clouds derived from Structure-from-Motion (SfM), which inherently suffer from scale ambiguity, limited geometric consistency, and strong view dependency due to the lack of geometric priors.
+◆ In this work, a LiDAR-centric 3D Gaussian Splatting framework is proposed that explicitly incorporates metric geometric priors into the entire Gaussian optimization process.</td></tr>
+<tr><td>2026-03-24</td><td>PhotoAgent: A Robotic Photographer with Spatial and Aesthetic Understanding</td><td>[2603.22796](http://arxiv.org/pdf/2603.22796)</td><td>◆ Embodied agents for creative tasks like photography must bridge the semantic gap between high-level language commands and geometric control.
+◆ We introduce PhotoAgent, an agent that achieves this by integrating Large Multimodal Models (LMMs) reasoning with a novel control paradigm.
+◆ PhotoAgent first translates subjective aesthetic goals into solvable geometric constraints via LMM-driven, chain-of-thought (CoT) reasoning, allowing an analytical solver to compute a high-quality initial viewpoint.</td></tr>
+<tr><td>2026-03-24</td><td>Instrument-Splatting++: Towards Controllable Surgical Instrument Digital Twin Using Gaussian Splatting</td><td>[2603.22792](http://arxiv.org/pdf/2603.22792)</td><td>◆ High-quality and controllable digital twins of surgical instruments are critical for Real2Sim in robot-assisted surgery, as they enable realistic simulation, synthetic data generation, and perception learning under novel poses.
+◆ We present Instrument-Splatting++, a monocular 3D Gaussian Splatting (3DGS) framework that reconstructs surgical instruments as a fully controllable Gaussian asset with high fidelity.
+◆ Our pipeline starts with part-wise geometry pretraining that injects CAD priors into Gaussian primitives and equips the representation with part-aware semantic rendering.</td></tr>
+<tr><td>2026-03-24</td><td>Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis</td><td>[2603.22786](http://arxiv.org/pdf/2603.22786)</td><td>◆ Recent advances in 3D Gaussian Splatting have enabled impressive photorealistic novel view synthesis.
+◆ However, to transition from a pure rendering engine to a reliable spatial map for autonomous agents and safety-critical applications, knowing where the representation is uncertain is as important as the rendering fidelity itself.
+◆ We bridge this critical gap by introducing a lightweight, plug-and-play framework for pixel-wise, view-dependent predictive uncertainty estimation.</td></tr>
+<tr><td>2026-03-23</td><td>FullCircle: Effortless 3D Reconstruction from Casual 360$^\circ$ Captures</td><td>[2603.22572](http://arxiv.org/pdf/2603.22572)</td><td>◆ Radiance fields have emerged as powerful tools for 3D scene reconstruction.
+◆ However, casual capture remains challenging due to the narrow field of view of perspective cameras, which limits viewpoint coverage and feature correspondences necessary for reliable camera calibration and reconstruction.
+◆ While commercially available 360$^\circ$ cameras offer significantly broader coverage than perspective cameras for the same capture effort, existing 360$^\circ$ reconstruction methods require special capture protocols and pre-processing steps that undermine the promise of radiance fields: effortless workflows to capture and reconstruct 3D scenes.</td></tr>
 <tr><td>2026-03-23</td><td>FreeArtGS: Articulated Gaussian Splatting Under Free-moving Scenario</td><td>[2603.22102](http://arxiv.org/pdf/2603.22102)</td><td>◆ The increasing demand for augmented reality and robotics is driving the need for articulated object reconstruction with high scalability.
 ◆ However, existing settings for reconstructing from discrete articulation states or casual monocular videos require non-trivial axis alignment or suffer from insufficient coverage, limiting their applicability.
 ◆ In this paper, we introduce FreeArtGS, a novel method for reconstructing articulated objects under free-moving scenario, a new setting with a simple setup and high scalability.</td></tr>
@@ -3569,6 +3602,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-24</td><td>One View Is Enough! Monocular Training for In-the-Wild Novel View Generation</td><td>[2603.23488](http://arxiv.org/pdf/2603.23488)</td><td>◆ Monocular novel-view synthesis has long required multi-view image pairs for supervision, limiting training data scale and diversity.
+◆ We argue it is not necessary: one view is enough.
+◆ We present OVIE, trained entirely on unpaired internet images.</td></tr>
+<tr><td>2026-03-24</td><td>Active Robotic Perception for Disease Detection and Mapping in Apple Trees</td><td>[2603.23112](http://arxiv.org/pdf/2603.23112)</td><td>◆ Large-scale orchard production requires timely and precise disease monitoring, yet routine manual scouting is labor-intensive and financially impractical at the scale of modern operations.
+◆ As a result, disease outbreaks are often detected late and tracked at coarse spatial resolutions, typically at the orchard-block level.
+◆ We present an autonomous mobile active perception system for targeted disease detection and mapping in dormant apple trees, demonstrated on one of the most devastating diseases affecting apple today -- fire blight.</td></tr>
+<tr><td>2026-03-24</td><td>Generative Event Pretraining with Foundation Model Alignment</td><td>[2603.23032](http://arxiv.org/pdf/2603.23032)</td><td>◆ Event cameras provide robust visual signals under fast motion and challenging illumination conditions thanks to their microsecond latency and high dynamic range.
+◆ However, their unique sensing characteristics and limited labeled data make it challenging to train event-based visual foundation models (VFMs), which are crucial for learning visual features transferable across tasks.
+◆ To tackle this problem, we propose GEP (Generative Event Pretraining), a two-stage framework that transfers semantic knowledge learned from internet-scale image datasets to event data while learning event-specific temporal dynamics.</td></tr>
 <tr><td>2026-03-23</td><td>GenOpticalFlow: A Generative Approach to Unsupervised Optical Flow Learning</td><td>[2603.22270](http://arxiv.org/pdf/2603.22270)</td><td>◆ Optical flow estimation is a fundamental problem in computer vision, yet the reliance on expensive ground-truth annotations limits the scalability of supervised approaches.
 ◆ Although unsupervised and semi-supervised methods alleviate this issue, they often suffer from unreliable supervision signals based on brightness constancy and smoothness assumptions, leading to inaccurate motion estimation in complex real-world scenarios.
 ◆ To overcome these limitations, we introduce \textbf{\modelname}, a novel framework that synthesizes large-scale, perfectly aligned frame--flow data pairs for supervised optical flow training without human annotations.</td></tr>
@@ -4341,4 +4383,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.24
+> 更新于: 2026.03.25
