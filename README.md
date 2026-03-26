@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.25)
+# SLAM领域最新论文 (2026.03.26)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -40,7 +40,7 @@
 <tr><td>2026-03-20</td><td>TRGS-SLAM: IMU-Aided Gaussian Splatting SLAM for Blurry, Rolling Shutter, and Noisy Thermal Images</td><td>[2603.20443](http://arxiv.org/pdf/2603.20443)</td><td>◆ Thermal cameras offer several advantages for simultaneous localization and mapping (SLAM) with mobile robots: they provide a passive, low-power solution to operating in darkness, are invariant to rapidly changing or high dynamic range illumination, and can see through fog, dust, and smoke.
 ◆ However, uncooled microbolometer thermal cameras, the only practical option in most robotics applications, suffer from significant motion blur, rolling shutter distortions, and fixed pattern noise.
 ◆ In this paper, we present TRGS-SLAM, a 3D Gaussian Splatting (3DGS) based thermal inertial SLAM system uniquely capable of handling these degradations.</td></tr>
-<tr><td>2026-03-23</td><td>HortiMulti: A Multi-Sensor Dataset for Localisation and Mapping in Horticultural Polytunnels</td><td>[2603.20150](http://arxiv.org/pdf/2603.20150)</td><td>◆ Agricultural robotics is gaining increasing relevance in both research and real-world deployment.
+<tr><td>2026-03-25</td><td>HortiMulti: A Multi-Sensor Dataset for Localisation and Mapping in Horticultural Polytunnels</td><td>[2603.20150](http://arxiv.org/pdf/2603.20150)</td><td>◆ Agricultural robotics is gaining increasing relevance in both research and real-world deployment.
 ◆ As these systems are expected to operate autonomously in more complex tasks, the availability of representative real-world datasets becomes essential.
 ◆ While domains such as urban and forestry robotics benefit from large and established benchmarks, horticultural environments remain comparatively under-explored despite the economic significance of this sector.</td></tr>
 <tr><td>2026-03-20</td><td>IUP-Pose: Decoupled Iterative Uncertainty Propagation for Real-time Relative Pose Regression via Implicit Dense Alignment v1</td><td>[2603.19625](http://arxiv.org/pdf/2603.19625)</td><td>◆ Relative pose estimation is fundamental for SLAM, visual localization, and 3D reconstruction.
@@ -1038,6 +1038,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-25</td><td>A Sensorless, Inherently Compliant Anthropomorphic Musculoskeletal Hand Driven by Electrohydraulic Actuators</td><td>[2603.24357](http://arxiv.org/pdf/2603.24357)</td><td>◆ Robotic manipulation in unstructured environments requires end-effectors that combine high kinematic dexterity with physical compliance.
+◆ While traditional rigid hands rely on complex external sensors for safe interaction, electrohydraulic actuators offer a promising alternative.
+◆ This paper presents the design, control, and evaluation of a novel musculoskeletal robotic hand architecture powered entirely by remote Peano-HASEL actuators, specifically optimized for safe manipulation.</td></tr>
+<tr><td>2026-03-25</td><td>Reconfigurable topological valley-Hall interfaces: Asymptotics of arrays of Dirichlet and Neumann inclusions for multiple scattering in metamaterials</td><td>[2603.24297](http://arxiv.org/pdf/2603.24297)</td><td>◆ We study two-dimensional periodic metamaterials in which idealised cylindrical inclusions are modelled by boundary conditions.
+◆ In the scalar time-harmonic setting, the background field satisfies the Helmholtz equation, and high-contrast inclusion limits reduce to Dirichlet or Neumann conditions, with direct analogues in dielectric and acoustic media.
+◆ By switching the condition assigned to selected inclusions, we break point-group symmetries of the primitive cell and thereby lift symmetry-induced degeneracies in the Floquet--Bloch spectrum of hexagonal and square lattices, opening valley-type band gaps with Berry curvature localised near opposite valleys.</td></tr>
+<tr><td>2026-03-25</td><td>High-Density Automated Valet Parking with Relocation-Free Sequential Operations</td><td>[2603.23803](http://arxiv.org/pdf/2603.23803)</td><td>◆ In this paper, we present DROP, high-Density Relocation-free sequential OPerations in automated valet parking.
+◆ DROP addresses the challenges in high-density parking &amp; vehicle retrieval without relocations.
+◆ Each challenge is handled by jointly providing area-efficient layouts and relocation-free parking &amp; exit sequences, considering accessibility with relocation-free sequential operations.</td></tr>
+<tr><td>2026-03-24</td><td>Space Fabric: A Satellite-Enhanced Trusted Execution Architecture</td><td>[2603.23745](http://arxiv.org/pdf/2603.23745)</td><td>◆ The emergence of decentralized satellite networks creates a pressing need for trust architectures that operate without physical access to hardware, without pre-provisioned vendor secrets, and without dependence on a single manufacturer&#x27;s attestation service.
+◆ Terrestrial TEEs are insufficient: hardware-based designs are susceptible to physical attacks, and most platforms root their attestation chains in secrets provisioned during manufacturing, creating a pre-launch trust window and single-vendor dependency that cannot be independently audited.
+◆ We present Space Fabric, an architecture that provides the missing trust foundation for orbital computing by relocating the trusted computing stack to satellite infrastructure, exploiting post-launch physical inaccessibility as a tamper barrier unattainable by terrestrial deployments.</td></tr>
 <tr><td>2026-03-23</td><td>MineRobot: A Unified Framework for Kinematics Modeling and Solving of Underground Mining Robots in Virtual Environments</td><td>[2603.22055](http://arxiv.org/pdf/2603.22055)</td><td>◆ Underground mining robots are increasingly operated in virtual environments (VEs) for training, planning, and digital-twin applications, where reliable kinematics is essential for avoiding hazardous in-situ trials.
 ◆ Unlike typical open-chain industrial manipulators, mining robots are often closed-chain mechanisms driven by linear actuators and involving planar four-bar linkages, which makes both kinematics modeling and real-time solving challenging.
 ◆ We present \emph{MineRobot}, a unified framework for modeling and solving the kinematics of underground mining robots in VEs.</td></tr>
@@ -1674,7 +1686,7 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-03-24</td><td>Instrument-Splatting++: Towards Controllable Surgical Instrument Digital Twin Using Gaussian Splatting</td><td>[2603.22792](http://arxiv.org/pdf/2603.22792)</td><td>◆ High-quality and controllable digital twins of surgical instruments are critical for Real2Sim in robot-assisted surgery, as they enable realistic simulation, synthetic data generation, and perception learning under novel poses.
+<tr><td>2026-03-25</td><td>Instrument-Splatting++: Towards Controllable Surgical Instrument Digital Twin Using Gaussian Splatting</td><td>[2603.22792](http://arxiv.org/pdf/2603.22792)</td><td>◆ High-quality and controllable digital twins of surgical instruments are critical for Real2Sim in robot-assisted surgery, as they enable realistic simulation, synthetic data generation, and perception learning under novel poses.
 ◆ We present Instrument-Splatting++, a monocular 3D Gaussian Splatting (3DGS) framework that reconstructs surgical instruments as a fully controllable Gaussian asset with high fidelity.
 ◆ Our pipeline starts with part-wise geometry pretraining that injects CAD priors into Gaussian primitives and equips the representation with part-aware semantic rendering.</td></tr>
 <tr><td>2026-03-23</td><td>EpiMask: Leveraging Epipolar Distance Based Masks in Cross-Attention for Satellite Image Matching</td><td>[2603.21463](http://arxiv.org/pdf/2603.21463)</td><td>◆ The deep-learning based image matching networks can now handle significantly larger variations in viewpoints and illuminations while providing matched pairs of pixels with sub-pixel precision.
@@ -2004,6 +2016,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-25</td><td>SpectralSplats: Robust Differentiable Tracking via Spectral Moment Supervision</td><td>[2603.24036](http://arxiv.org/pdf/2603.24036)</td><td>◆ 3D Gaussian Splatting (3DGS) enables real-time, photorealistic novel view synthesis, making it a highly attractive representation for model-based video tracking.
+◆ However, leveraging the differentiability of the 3DGS renderer &quot;in the wild&quot; remains notoriously fragile.
+◆ A fundamental bottleneck lies in the compact, local support of the Gaussian primitives.</td></tr>
+<tr><td>2026-03-25</td><td>FilterGS: Traversal-Free Parallel Filtering and Adaptive Shrinking for Large-Scale LoD 3D Gaussian Splatting</td><td>[2603.23891](http://arxiv.org/pdf/2603.23891)</td><td>◆ 3D Gaussian Splatting has revolutionized neural rendering with real-time performance.
+◆ However, scaling this approach to large scenes using Level-of-Detail methods faces critical challenges: inefficient serial traversal consuming over 60\% of rendering time, and redundant Gaussian-tile pairs that incur unnecessary processing overhead.
+◆ To address these limitations, we introduce FilterGS, featuring a parallel filtering mechanism with two complementary filters that select Gaussian elements efficiently without tree traversal.</td></tr>
+<tr><td>2026-03-24</td><td>AdvSplat: Adversarial Attacks on Feed-Forward Gaussian Splatting Models</td><td>[2603.23686](http://arxiv.org/pdf/2603.23686)</td><td>◆ 3D Gaussian Splatting (3DGS) is increasingly recognized as a powerful paradigm for real-time, high-fidelity 3D reconstruction.
+◆ However, its per-scene optimization pipeline limits scalability and generalization, and prevents efficient inference.
+◆ Recently emerged feed-forward 3DGS models address these limitations by enabling fast reconstruction from a few input views after large-scale pretraining, without scene-specific optimization.</td></tr>
+<tr><td>2026-03-24</td><td>Stochastic Ray Tracing for the Reconstruction of 3D Gaussian Splatting</td><td>[2603.23637](http://arxiv.org/pdf/2603.23637)</td><td>◆ Ray-tracing-based 3D Gaussian splatting (3DGS) methods overcome the limitations of rasterization -- rigid pinhole camera assumptions, inaccurate shadows, and lack of native reflection or refraction -- but remain slower due to the cost of sorting all intersecting Gaussians along every ray.
+◆ Moreover, existing ray-tracing methods still rely on rasterization-style approximations such as shadow mapping for relightable scenes, undermining the generality that ray tracing promises.
+◆ We present a differentiable, sorting-free stochastic formulation for ray-traced 3DGS -- the first framework that uses stochastic ray tracing to both reconstruct and render standard and relightable 3DGS scenes.</td></tr>
 <tr><td>2026-03-24</td><td>Pose-Free Omnidirectional Gaussian Splatting for 360-Degree Videos with Consistent Depth Priors</td><td>[2603.23324](http://arxiv.org/pdf/2603.23324)</td><td>◆ Omnidirectional 3D Gaussian Splatting with panoramas is a key technique for 3D scene representation, and existing methods typically rely on slow SfM to provide camera poses and sparse points priors.
 ◆ In this work, we propose a pose-free omnidirectional 3DGS method, named PFGS360, that reconstructs 3D Gaussians from unposed omnidirectional videos.
 ◆ To achieve accurate camera pose estimation, we first construct a spherical consistency-aware pose estimation module, which recovers poses by establishing consistent 2D-3D correspondences between the reconstructed Gaussians and the unposed images using Gaussians&#x27; internal depth priors.</td></tr>
@@ -2016,7 +2040,7 @@
 <tr><td>2026-03-24</td><td>PhotoAgent: A Robotic Photographer with Spatial and Aesthetic Understanding</td><td>[2603.22796](http://arxiv.org/pdf/2603.22796)</td><td>◆ Embodied agents for creative tasks like photography must bridge the semantic gap between high-level language commands and geometric control.
 ◆ We introduce PhotoAgent, an agent that achieves this by integrating Large Multimodal Models (LMMs) reasoning with a novel control paradigm.
 ◆ PhotoAgent first translates subjective aesthetic goals into solvable geometric constraints via LMM-driven, chain-of-thought (CoT) reasoning, allowing an analytical solver to compute a high-quality initial viewpoint.</td></tr>
-<tr><td>2026-03-24</td><td>Instrument-Splatting++: Towards Controllable Surgical Instrument Digital Twin Using Gaussian Splatting</td><td>[2603.22792](http://arxiv.org/pdf/2603.22792)</td><td>◆ High-quality and controllable digital twins of surgical instruments are critical for Real2Sim in robot-assisted surgery, as they enable realistic simulation, synthetic data generation, and perception learning under novel poses.
+<tr><td>2026-03-25</td><td>Instrument-Splatting++: Towards Controllable Surgical Instrument Digital Twin Using Gaussian Splatting</td><td>[2603.22792](http://arxiv.org/pdf/2603.22792)</td><td>◆ High-quality and controllable digital twins of surgical instruments are critical for Real2Sim in robot-assisted surgery, as they enable realistic simulation, synthetic data generation, and perception learning under novel poses.
 ◆ We present Instrument-Splatting++, a monocular 3D Gaussian Splatting (3DGS) framework that reconstructs surgical instruments as a fully controllable Gaussian asset with high fidelity.
 ◆ Our pipeline starts with part-wise geometry pretraining that injects CAD priors into Gaussian primitives and equips the representation with part-aware semantic rendering.</td></tr>
 <tr><td>2026-03-24</td><td>Predictive Photometric Uncertainty in Gaussian Splatting for Novel View Synthesis</td><td>[2603.22786](http://arxiv.org/pdf/2603.22786)</td><td>◆ Recent advances in 3D Gaussian Splatting have enabled impressive photorealistic novel view synthesis.
@@ -3602,6 +3626,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-25</td><td>EndoVGGT: GNN-Enhanced Depth Estimation for Surgical 3D Reconstruction</td><td>[2603.24577](http://arxiv.org/pdf/2603.24577)</td><td>◆ Accurate 3D reconstruction of deformable soft tissues is essential for surgical robotic perception.
+◆ However, low-texture surfaces, specular highlights, and instrument occlusions often fragment geometric continuity, posing a challenge for existing fixed-topology approaches.
+◆ To address this, we propose EndoVGGT, a geometry-centric framework equipped with a Deformation-aware Graph Attention (DeGAT) module.</td></tr>
 <tr><td>2026-03-24</td><td>One View Is Enough! Monocular Training for In-the-Wild Novel View Generation</td><td>[2603.23488](http://arxiv.org/pdf/2603.23488)</td><td>◆ Monocular novel-view synthesis has long required multi-view image pairs for supervision, limiting training data scale and diversity.
 ◆ We argue it is not necessary: one view is enough.
 ◆ We present OVIE, trained entirely on unpaired internet images.</td></tr>
@@ -4383,4 +4410,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.25
+> 更新于: 2026.03.26
