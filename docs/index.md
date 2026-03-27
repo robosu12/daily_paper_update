@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.26)
+# SLAM领域最新论文 (2026.03.27)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -1680,6 +1680,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-26</td><td>Towards Comprehensive Real-Time Scene Understanding in Ophthalmic Surgery through Multimodal Image Fusion</td><td>[2603.25555](http://arxiv.org/pdf/2603.25555)</td><td>◆ Purpose: The integration of multimodal imaging into operating rooms paves the way for comprehensive surgical scene understanding.
+◆ In ophthalmic surgery, by now, two complementary imaging modalities are available: operating microscope (OPMI) imaging and real-time intraoperative optical coherence tomography (iOCT).
+◆ This first work toward temporal OPMI and iOCT feature fusion demonstrates the potential of multimodal image processing for multi-head prediction through the example of precise instrument tracking in vitreoretinal surgery.</td></tr>
 <tr><td>2026-03-25</td><td>Instrument-Splatting++: Towards Controllable Surgical Instrument Digital Twin Using Gaussian Splatting</td><td>[2603.22792](http://arxiv.org/pdf/2603.22792)</td><td>◆ High-quality and controllable digital twins of surgical instruments are critical for Real2Sim in robot-assisted surgery, as they enable realistic simulation, synthetic data generation, and perception learning under novel poses.
 ◆ We present Instrument-Splatting++, a monocular 3D Gaussian Splatting (3DGS) framework that reconstructs surgical instruments as a fully controllable Gaussian asset with high fidelity.
 ◆ Our pipeline starts with part-wise geometry pretraining that injects CAD priors into Gaussian primitives and equips the representation with part-aware semantic rendering.</td></tr>
@@ -1701,7 +1704,7 @@
 <tr><td>2026-03-13</td><td>CM-Bench: A Comprehensive Cross-Modal Feature Matching Benchmark Bridging Visible and Infrared Images</td><td>[2603.12690](http://arxiv.org/pdf/2603.12690)</td><td>◆ Infrared-visible (IR-VIS) feature matching plays an essential role in cross-modality visual localization, navigation and perception.
 ◆ Along with the rapid development of deep learning techniques, a number of representative image matching methods have been proposed.
 ◆ However, crossmodal feature matching is still a challenging task due to the significant appearance difference.</td></tr>
-<tr><td>2026-03-09</td><td>Enhancing Cross-View UAV Geolocalization via LVLM-Driven Relational Modeling</td><td>[2603.08063](http://arxiv.org/pdf/2603.08063)</td><td>该论文的核心贡献是提出了一种新颖的、即插即用的排序架构，以解决跨视角无人机地理定位中不同视图间交互关系建模不足的问题，从而显著提升了无人机图像与卫星图像的匹配精度。
+<tr><td>2026-03-26</td><td>Enhancing Cross-View UAV Geolocalization via LVLM-Driven Relational Modeling</td><td>[2603.08063](http://arxiv.org/pdf/2603.08063)</td><td>该论文的核心贡献是提出了一种新颖的、即插即用的排序架构，以解决跨视角无人机地理定位中不同视图间交互关系建模不足的问题，从而显著提升了无人机图像与卫星图像的匹配精度。
 
 ◆ 提出了一种新颖的即插即用排序架构，能够显式地对无人机和卫星视图进行联合关系建模，突破了现有方法独立提取特征和依赖简单启发式相似度计算的局限。
 ◆ 创新性地利用大型视觉-语言模型的能力，通过学习深层的视觉-语义关联，来有效捕捉连接无人机图像与卫星图像之间的复杂相关性。
@@ -2008,6 +2011,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-26</td><td>Less Gaussians, Texture More: 4K Feed-Forward Textured Splatting</td><td>[2603.25745](http://arxiv.org/pdf/2603.25745)</td><td>◆ Existing feed-forward 3D Gaussian Splatting methods predict pixel-aligned primitives, leading to a quadratic growth in primitive count as resolution increases.
+◆ This fundamentally limits their scalability, making high-resolution synthesis such as 4K intractable.
+◆ We introduce LGTM (Less Gaussians, Texture More), a feed-forward framework that overcomes this resolution scaling barrier.</td></tr>
+<tr><td>2026-03-26</td><td>ViewSplat: View-Adaptive Dynamic Gaussian Splatting for Feed-Forward Synthesis</td><td>[2603.25265](http://arxiv.org/pdf/2603.25265)</td><td>◆ We present ViewSplat, a view-adaptive 3D Gaussian splatting network for novel view synthesis from unposed images.
+◆ While recent feed-forward 3D Gaussian splatting has significantly accelerated 3D scene reconstruction by bypassing per-scene optimization, a fundamental fidelity gap remains.
+◆ We attribute this bottleneck to the limited capacity of single-step feed-forward networks to regress static Gaussian primitives that satisfy all viewpoints.</td></tr>
+<tr><td>2026-03-26</td><td>AirSplat: Alignment and Rating for Robust Feed-Forward 3D Gaussian Splatting</td><td>[2603.25129](http://arxiv.org/pdf/2603.25129)</td><td>◆ While 3D Vision Foundation Models (3DVFMs) have demonstrated remarkable zero-shot capabilities in visual geometry estimation, their direct application to generalizable novel view synthesis (NVS) remains challenging.
+◆ In this paper, we propose AirSplat, a novel training framework that effectively adapts the robust geometric priors of 3DVFMs into high-fidelity, pose-free NVS.
+◆ Our approach introduces two key technical contributions:   (1) Self-Consistent Pose Alignment (SCPA), a training-time feedback loop that ensures pixel-aligned supervision to resolve pose-geometry discrepancy; and   (2) Rating-based Opacity Matching (ROM), which leverages the local 3D geometry consistency knowledge from a sparse-view NVS teacher model to filter out degraded primitives.</td></tr>
+<tr><td>2026-03-26</td><td>Learning Explicit Continuous Motion Representation for Dynamic Gaussian Splatting from Monocular Videos</td><td>[2603.25058](http://arxiv.org/pdf/2603.25058)</td><td>◆ We present an approach for high-quality dynamic Gaussian Splatting from monocular videos.
+◆ To this end, we in this work go one step further beyond previous methods to explicitly model continuous position and orientation deformation of dynamic Gaussians, using an SE(3) B-spline motion bases with a compact set of control points.
+◆ To improve computational efficiency while enhancing the ability to model complex motions, an adaptive control mechanism is devised to dynamically adjust the number of motion bases and control points.</td></tr>
+<tr><td>2026-03-26</td><td>GaussFusion: Improving 3D Reconstruction in the Wild with A Geometry-Informed Video Generator</td><td>[2603.25053](http://arxiv.org/pdf/2603.25053)</td><td>◆ We present GaussFusion, a novel approach for improving 3D Gaussian splatting (3DGS) reconstructions in the wild through geometry-informed video generation.
+◆ GaussFusion mitigates common 3DGS artifacts, including floaters, flickering, and blur caused by camera pose errors, incomplete coverage, and noisy geometry initialization.
+◆ Unlike prior RGB-based approaches limited to a single reconstruction pipeline, our method introduces a geometry-informed video-to-video generator that refines 3DGS renderings across both optimization-based and feed-forward methods.</td></tr>
+<tr><td>2026-03-26</td><td>MoRGS: Efficient Per-Gaussian Motion Reasoning for Streamable Dynamic 3D Scenes</td><td>[2603.25042](http://arxiv.org/pdf/2603.25042)</td><td>◆ Online reconstruction of dynamic scenes aims to learn from streaming multi-view inputs under low-latency constraints.
+◆ The fast training and real-time rendering capabilities of 3D Gaussian Splatting have made on-the-fly reconstruction practically feasible, enabling online 4D reconstruction.
+◆ However, existing online approaches, despite their efficiency and visual quality, fail to learn per-Gaussian motion that reflects true scene dynamics.</td></tr>
+<tr><td>2026-03-26</td><td>$π$, But Make It Fly: Physics-Guided Transfer of VLA Models to Aerial Manipulation</td><td>[2603.25038](http://arxiv.org/pdf/2603.25038)</td><td>◆ Vision-Language-Action (VLA) models such as $π_0$ have demonstrated remarkable generalization across diverse fixed-base manipulators.
+◆ However, transferring these foundation models to aerial platforms remains an open challenge due to the fundamental mismatch between the quasi-static dynamics of fixed-base arms and the underactuated, highly dynamic nature of flight.
+◆ In this work, we introduce AirVLA, a system that investigates the transferability of manipulation-pretrained VLAs to aerial pick-and-place tasks.</td></tr>
+<tr><td>2026-03-26</td><td>Relaxed Rigidity with Ray-based Grouping for Dynamic Gaussian Splatting</td><td>[2603.24994](http://arxiv.org/pdf/2603.24994)</td><td>◆ The reconstruction of dynamic 3D scenes using 3D Gaussian Splatting has shown significant promise.
+◆ A key challenge, however, remains in modeling realistic motion, as most methods fail to align the motion of Gaussians with real-world physical dynamics.
+◆ This misalignment is particularly problematic for monocular video datasets, where failing to maintain coherent motion undermines local geometric structure, ultimately leading to degraded reconstruction quality.</td></tr>
+<tr><td>2026-03-25</td><td>Confidence-Based Mesh Extraction from 3D Gaussians</td><td>[2603.24725](http://arxiv.org/pdf/2603.24725)</td><td>◆ Recently, 3D Gaussian Splatting (3DGS) greatly accelerated mesh extraction from posed images due to its explicit representation and fast software rasterization.
+◆ While the addition of geometric losses and other priors has improved the accuracy of extracted surfaces, mesh extraction remains difficult in scenes with abundant view-dependent effects.
+◆ To resolve the resulting ambiguities, prior works rely on multi-view techniques, iterative mesh extraction, or large pre-trained models, sacrificing the inherent efficiency of 3DGS.</td></tr>
+<tr><td>2026-03-25</td><td>Accurate Point Measurement in 3DGS -- A New Alternative to Traditional Stereoscopic-View Based Measurements</td><td>[2603.24716](http://arxiv.org/pdf/2603.24716)</td><td>◆ 3D Gaussian Splatting (3DGS) has revolutionized real-time rendering with its state-of-the-art novel view synthesis, but its utility for accurate geometric measurement remains underutilized.
+◆ Compared to multi-view stereo (MVS) point clouds or meshes, 3DGS rendered views present superior visual quality and completeness.
+◆ However, current point measurement methods still rely on demanding stereoscopic workstations or direct picking on often-incomplete and inaccurate 3D meshes.</td></tr>
 <tr><td>2026-03-25</td><td>SpectralSplats: Robust Differentiable Tracking via Spectral Moment Supervision</td><td>[2603.24036](http://arxiv.org/pdf/2603.24036)</td><td>◆ 3D Gaussian Splatting (3DGS) enables real-time, photorealistic novel view synthesis, making it a highly attractive representation for model-based video tracking.
 ◆ However, leveraging the differentiability of the 3DGS renderer &quot;in the wild&quot; remains notoriously fragile.
 ◆ A fundamental bottleneck lies in the compact, local support of the Gaussian primitives.</td></tr>
@@ -3616,6 +3649,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-25</td><td>WAFT-Stereo: Warping-Alone Field Transforms for Stereo Matching</td><td>[2603.24836](http://arxiv.org/pdf/2603.24836)</td><td>◆ We introduce WAFT-Stereo, a simple and effective warping-based method for stereo matching.
+◆ WAFT-Stereo demonstrates that cost volumes, a common design used in many leading methods, are not necessary for strong performance and can be replaced by warping with improved efficiency.
+◆ WAFT-Stereo ranks first on ETH3D, KITTI and Middlebury public benchmarks, reducing the zero-shot error by 81% on ETH3D benchmark, while being 1.8-6.7x faster than competitive methods.</td></tr>
 <tr><td>2026-03-25</td><td>EndoVGGT: GNN-Enhanced Depth Estimation for Surgical 3D Reconstruction</td><td>[2603.24577](http://arxiv.org/pdf/2603.24577)</td><td>◆ Accurate 3D reconstruction of deformable soft tissues is essential for surgical robotic perception.
 ◆ However, low-texture surfaces, specular highlights, and instrument occlusions often fragment geometric continuity, posing a challenge for existing fixed-topology approaches.
 ◆ To address this, we propose EndoVGGT, a geometry-centric framework equipped with a Deformation-aware Graph Attention (DeGAT) module.</td></tr>
@@ -4398,4 +4434,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.26
+> 更新于: 2026.03.27
