@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.29)
+# SLAM领域最新论文 (2026.03.30)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-26</td><td>Massive Parallel Deep Reinforcement Learning for Active SLAM</td><td>[2603.25834](http://arxiv.org/pdf/2603.25834)</td><td>◆ Recent advances in parallel computing and GPU acceleration have created new opportunities for computation-intensive learning problems such as Active SLAM -- where actions are selected to reduce uncertainty and improve joint mapping and localization.
+◆ However, existing DRL-based approaches remain constrained by the lack of scalable parallel training.
+◆ In this work, we address this challenge by proposing a scalable end-to-end DRL framework for Active SLAM that enables massively parallel training.</td></tr>
+<tr><td>2026-03-26</td><td>Occlusion-Aware Multimodal Beam Prediction and Pose Estimation for mmWave V2I</td><td>[2603.25799](http://arxiv.org/pdf/2603.25799)</td><td>◆ We propose an occlusion-aware multimodal learning framework that is inspired by simultaneous localization and mapping (SLAM) concepts for trajectory interpretation and pose prediction.
+◆ Targeting mmWave vehicle-to-infrastructure (V2I) beam management under dynamic blockage, our Transformer-based fusion network ingests synchronized RGB images, LiDAR point clouds, radar range-angle maps, GNSS, and short-term mmWave power history.
+◆ It jointly predicts the receive beam index, blockage probability, and 2D position using labels automatically derived from 64-beam sweep power vectors, while an offline LiDAR map enables SLAM-style trajectory visualization.</td></tr>
 <tr><td>2026-03-24</td><td>Digital Twin Enabled Simultaneous Learning and Modeling for UAV-assisted Secure Communications with Eavesdropping Attacks</td><td>[2603.22753](http://arxiv.org/pdf/2603.22753)</td><td>◆ This paper focuses on secure communications in UAV-assisted wireless networks, which comprise multiple legitimate UAVs (LE-UAVs) and an intelligent eavesdropping UAV (EA-UAV).
 ◆ The intelligent EA-UAV can observe the LE-UAVs&#x27;transmission strategies and adaptively adjust its trajectory to maximize information interception.
 ◆ To counter this threat, we propose a mode-switching scheme that enables LE-UAVs to dynamically switch between the data transmission and jamming modes, thereby balancing data collection efficiency and communication security.</td></tr>
@@ -763,7 +769,7 @@
 <tr><td>2026-03-23</td><td>Image-Conditioned Adaptive Parameter Tuning for Visual Odometry Frontends</td><td>[2603.21785](http://arxiv.org/pdf/2603.21785)</td><td>◆ Resource-constrained autonomous robots rely on sparse direct and semi-direct visual-(inertial)-odometry (VO) pipelines, as they provide a favorable tradeoff between accuracy, robustness, and computational cost.
 ◆ However, the performance of most systems depends critically on hand-tuned hyperparameters governing feature detection, tracking, and outlier rejection.
 ◆ These parameters are typically fixed during deployment, even though their optimal values vary with scene characteristics such as texture density, illumination, motion blur, and sensor noise, leading to brittle performance in real-world environments.</td></tr>
-<tr><td>2026-03-24</td><td>PiLoT: Neural Pixel-to-3D Registration for UAV-based Ego and Target Geo-localization</td><td>[2603.20778](http://arxiv.org/pdf/2603.20778)</td><td>◆ We present PiLoT, a unified framework that tackles UAV-based ego and target geo-localization.
+<tr><td>2026-03-27</td><td>PiLoT: Neural Pixel-to-3D Registration for UAV-based Ego and Target Geo-localization</td><td>[2603.20778](http://arxiv.org/pdf/2603.20778)</td><td>◆ We present PiLoT, a unified framework that tackles UAV-based ego and target geo-localization.
 ◆ Conventional approaches rely on decoupled pipelines that fuse GNSS and Visual-Inertial Odometry (VIO) for ego-pose estimation, and active sensors like laser rangefinders for target localization.
 ◆ However, these methods are susceptible to failure in GNSS-denied environments and incur substantial hardware costs and complexity.</td></tr>
 <tr><td>2026-03-21</td><td>ToFormer: Towards Large-scale Scenario Depth Completion for Lightweight ToF Camera</td><td>[2603.20669](http://arxiv.org/pdf/2603.20669)</td><td>◆ Time-of-Flight (ToF) cameras possess compact design and high measurement precision to be applied to various robot tasks.
@@ -1038,6 +1044,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-27</td><td>4DRaL: Bridging 4D Radar with LiDAR for Place Recognition using Knowledge Distillation</td><td>[2603.26206](http://arxiv.org/pdf/2603.26206)</td><td>◆ Place recognition is crucial for loop closure detection and global localization in robotics.
+◆ Although mainstream algorithms typically rely on cameras and LiDAR, these sensors are susceptible to adverse weather conditions.
+◆ Fortunately, the recently developed 4D millimeter-wave radar (4D radar) offers a promising solution for all-weather place recognition.</td></tr>
+<tr><td>2026-03-26</td><td>Starlink Constellation: Deployment, Configuration, and Dynamics</td><td>[2603.25835](http://arxiv.org/pdf/2603.25835)</td><td>◆ Starlink has rapidly emerged as the world&#x27;s largest satellite constellation and the de facto reference system for low Earth orbit (LEO) networking research.
+◆ Existing literature predominantly models Starlink as a static, symmetric, and fully deployed structure with uniformly distributed satellites.
+◆ However, we reveal that Starlink&#x27;s actual deployment, orbital configurations, and operational dynamics fundamentally deviate from these idealized assumptions.</td></tr>
+<tr><td>2026-03-26</td><td>Exploiting the Degrees of Freedom: Multi-Dimensional Spatially-Coupled Codes Based on Gradient Descent</td><td>[2603.25824](http://arxiv.org/pdf/2603.25824)</td><td>◆ Spatially-coupled (SC) codes are a class of low-density parity-check (LDPC) codes that is gaining increasing attention.
+◆ Multi-dimensional (MD) SC codes are constructed by connecting copies of an SC code via relocations in order to mitigate various sources of non-uniformity and improve performance in many storage and transmission systems.
+◆ As the number of degrees of freedom in the MD-SC code design increases, appropriately exploiting them becomes more difficult because of the complexity growth of the design process.</td></tr>
 <tr><td>2026-03-25</td><td>A Sensorless, Inherently Compliant Anthropomorphic Musculoskeletal Hand Driven by Electrohydraulic Actuators</td><td>[2603.24357](http://arxiv.org/pdf/2603.24357)</td><td>◆ Robotic manipulation in unstructured environments requires end-effectors that combine high kinematic dexterity with physical compliance.
 ◆ While traditional rigid hands rely on complex external sensors for safe interaction, electrohydraulic actuators offer a promising alternative.
 ◆ This paper presents the design, control, and evaluation of a novel musculoskeletal robotic hand architecture powered entirely by remote Peano-HASEL actuators, specifically optimized for safe manipulation.</td></tr>
@@ -2019,6 +2034,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-27</td><td>Detailed Geometry and Appearance from Opportunistic Motion</td><td>[2603.26665](http://arxiv.org/pdf/2603.26665)</td><td>◆ Reconstructing 3D geometry and appearance from a sparse set of fixed cameras is a foundational task with broad applications, yet it remains fundamentally constrained by the limited viewpoints.
+◆ We show that this bound can be broken by exploiting opportunistic object motion: as a person manipulates an object~(e.g., moving a chair or lifting a mug), the static cameras effectively ``orbit&#x27;&#x27; the object in its local coordinate frame, providing additional virtual viewpoints.
+◆ Harnessing this object motion, however, poses two challenges: the tight coupling of object pose and geometry estimation and the complex appearance variations of a moving object under static illumination.</td></tr>
+<tr><td>2026-03-27</td><td>Drive-Through 3D Vehicle Exterior Reconstruction via Dynamic-Scene SfM and Distortion-Aware Gaussian Splatting</td><td>[2603.26638](http://arxiv.org/pdf/2603.26638)</td><td>◆ High-fidelity 3D reconstruction of vehicle exteriors improves buyer confidence in online automotive marketplaces, but generating these models in cluttered dealership drive-throughs presents severe technical challenges.
+◆ Unlike static-scene photogrammetry, this setting features a dynamic vehicle moving against heavily cluttered, static backgrounds.
+◆ This problem is further compounded by wide-angle lens distortion, specular automotive paint, and non-rigid wheel rotations that violate classical epipolar constraints.</td></tr>
+<tr><td>2026-03-27</td><td>Scene Grounding In the Wild</td><td>[2603.26584](http://arxiv.org/pdf/2603.26584)</td><td>◆ Reconstructing accurate 3D models of large-scale real-world scenes from unstructured, in-the-wild imagery remains a core challenge in computer vision, especially when the input views have little or no overlap.
+◆ In such cases, existing reconstruction pipelines often produce multiple disconnected partial reconstructions or erroneously merge non-overlapping regions into overlapping geometry.
+◆ In this work, we propose a framework that grounds each partial reconstruction to a complete reference model of the scene, enabling globally consistent alignment even in the absence of visual overlap.</td></tr>
+<tr><td>2026-03-27</td><td>GLINT: Modeling Scene-Scale Transparency via Gaussian Radiance Transport</td><td>[2603.26181](http://arxiv.org/pdf/2603.26181)</td><td>◆ While 3D Gaussian splatting has emerged as a powerful paradigm, it fundamentally fails to model transparency such as glass panels.
+◆ The core challenge lies in decoupling the intertwined radiance contributions from transparent interfaces and the transmitted geometry observed through the glass.
+◆ We present GLINT, a framework that models scene-scale transparency through explicit decomposed Gaussian representation.</td></tr>
+<tr><td>2026-03-27</td><td>R-PGA: Robust Physical Adversarial Camouflage Generation via Relightable 3D Gaussian Splatting</td><td>[2603.26067](http://arxiv.org/pdf/2603.26067)</td><td>◆ Physical adversarial camouflage poses a severe security threat to autonomous driving systems by mapping adversarial textures onto 3D objects.
+◆ Nevertheless, current methods remain brittle in complex dynamic scenarios, failing to generalize across diverse geometric (e.g., viewing configurations) and radiometric (e.g., dynamic illumination, atmospheric scattering) variations.
+◆ We attribute this deficiency to two fundamental limitations in simulation and optimization.</td></tr>
 <tr><td>2026-03-26</td><td>Less Gaussians, Texture More: 4K Feed-Forward Textured Splatting</td><td>[2603.25745](http://arxiv.org/pdf/2603.25745)</td><td>◆ Existing feed-forward 3D Gaussian Splatting methods predict pixel-aligned primitives, leading to a quadratic growth in primitive count as resolution increases.
 ◆ This fundamentally limits their scalability, making high-resolution synthesis such as 4K intractable.
 ◆ We introduce LGTM (Less Gaussians, Texture More), a feed-forward framework that overcomes this resolution scaling barrier.</td></tr>
@@ -3659,6 +3689,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-26</td><td>Seeing Through Smoke: Surgical Desmoking for Improved Visual Perception</td><td>[2603.25867](http://arxiv.org/pdf/2603.25867)</td><td>◆ Minimally invasive and robot-assisted surgery relies heavily on endoscopic imaging, yet surgical smoke produced by electrocautery and vessel-sealing instruments can severely degrade visual perception and hinder vision-based functionalities.
+◆ We present a transformer-based surgical desmoking model with a physics-inspired desmoking head that jointly predicts smoke-free image and corresponding smoke map.
+◆ To address the scarcity of paired smoky-to-smoke-free training data, we develop a synthetic data generation pipeline that blends artificial smoke patterns with real endoscopic images, yielding over 80,000 paired samples for supervised training.</td></tr>
 <tr><td>2026-03-25</td><td>WAFT-Stereo: Warping-Alone Field Transforms for Stereo Matching</td><td>[2603.24836](http://arxiv.org/pdf/2603.24836)</td><td>◆ We introduce WAFT-Stereo, a simple and effective warping-based method for stereo matching.
 ◆ WAFT-Stereo demonstrates that cost volumes, a common design used in many leading methods, are not necessary for strong performance and can be replaced by warping with improved efficiency.
 ◆ WAFT-Stereo ranks first on ETH3D, KITTI and Middlebury public benchmarks, reducing the zero-shot error by 81% on ETH3D benchmark, while being 1.8-6.7x faster than competitive methods.</td></tr>
@@ -4446,4 +4479,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.29
+> 更新于: 2026.03.30
