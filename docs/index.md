@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.30)
+# SLAM领域最新论文 (2026.03.31)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,27 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-30</td><td>osmAG-Nav: A Hierarchical Semantic Topometric Navigation Stack for Robust Lifelong Indoor Autonomy</td><td>[2603.28271](http://arxiv.org/pdf/2603.28271)</td><td>◆ The deployment of mobile robots in large-scale, multi-floor environments demands navigation systems that achieve spatial scalability without compromising local kinematic precision.
+◆ Traditional navigation stacks, reliant on monolithic occupancy grid maps, face severe bottlenecks in storage efficiency, cross-floor reasoning, and long-horizon planning.
+◆ To address these limitations, this paper presents osmAG-Nav, a complete, open-source ROS2 navigation stack built upon the hierarchical semantic topometric OpenStreetMap Area Graph (osmAG) map standard.</td></tr>
+<tr><td>2026-03-30</td><td>Ghost-FWL: A Large-Scale Full-Waveform LiDAR Dataset for Ghost Detection and Removal</td><td>[2603.28224](http://arxiv.org/pdf/2603.28224)</td><td>◆ LiDAR has become an essential sensing modality in autonomous driving, robotics, and smart-city applications.
+◆ However, ghost points (or ghosts), which are false reflections caused by multi-path laser returns from glass and reflective surfaces, severely degrade 3D mapping and localization accuracy.
+◆ Prior ghost removal relies on geometric consistency in dense point clouds, failing on mobile LiDAR&#x27;s sparse, dynamic data.</td></tr>
+<tr><td>2026-03-30</td><td>On the Role of Encoder Depth: Pruning Whisper and LoRA Fine-Tuning in SLAM-ASR</td><td>[2603.27981](http://arxiv.org/pdf/2603.27981)</td><td>◆ Automatic speech recognition (ASR) has advanced rapidly in recent years, driven by large-scale pretrained models and end-to-end architectures such as SLAM-ASR.
+◆ A key component of SLAM-ASR systems is the Whisper speech encoder, which provides robust acoustic representations.
+◆ While model pruning has been explored for the full Whisper encoder-decoder architecture, its impact within the SLAM-ASR setting remains under-investigated.</td></tr>
+<tr><td>2026-03-29</td><td>GS3LAM: Gaussian Semantic Splatting SLAM</td><td>[2603.27781](http://arxiv.org/pdf/2603.27781)</td><td>◆ Recently, the multi-modal fusion of RGB, depth, and semantics has shown great potential in dense Simultaneous Localization and Mapping (SLAM).
+◆ However, a prerequisite for generating consistent semantic maps is the availability of dense, efficient, and scalable scene representations.
+◆ Existing semantic SLAM systems based on explicit representations are often limited by resolution and an inability to predict unknown areas.</td></tr>
+<tr><td>2026-03-29</td><td>Annotation-Free Detection of Drivable Areas and Curbs Leveraging LiDAR Point Cloud Maps</td><td>[2603.27553](http://arxiv.org/pdf/2603.27553)</td><td>◆ Drivable areas and curbs are critical traffic elements for autonomous driving, forming essential components of the vehicle visual perception system and ensuring driving safety.
+◆ Deep neural networks (DNNs) have significantly improved perception performance for drivable area and curb detection, but most DNN-based methods rely on large manually labeled datasets, which are costly, time-consuming, and expert-dependent, limiting their real-world application.
+◆ Thus, we developed an automated training data generation module.</td></tr>
+<tr><td>2026-03-29</td><td>S3KF: Spherical State-Space Kalman Filtering for Panoramic 3D Multi-Object Tracking</td><td>[2603.27534](http://arxiv.org/pdf/2603.27534)</td><td>◆ Panoramic multi-object tracking is important for industrial safety monitoring, wide-area robotic perception, and infrastructure-light deployment in large workspaces.
+◆ In these settings, the sensing system must provide full-surround coverage, metric geometric cues, and stable target association under wide field-of-view distortion and occlusion.
+◆ Existing image-plane trackers are tightly coupled to the camera projection and become unreliable in panoramic imagery, while conventional Euclidean 3D formulations introduce redundant directional parameters and do not naturally unify angular, scale, and depth estimation.</td></tr>
+<tr><td>2026-03-26</td><td>Unblur-SLAM: Dense Neural SLAM for Blurry Inputs</td><td>[2603.26810](http://arxiv.org/pdf/2603.26810)</td><td>◆ We propose Unblur-SLAM, a novel RGB SLAM pipeline for sharp 3D reconstruction from blurred image inputs.
+◆ In contrast to previous work, our approach is able to handle different types of blur and demonstrates state-of-the-art performance in the presence of both motion blur and defocus blur.
+◆ Moreover, we adjust the computation effort with the amount of blur in the input image.</td></tr>
 <tr><td>2026-03-26</td><td>Massive Parallel Deep Reinforcement Learning for Active SLAM</td><td>[2603.25834](http://arxiv.org/pdf/2603.25834)</td><td>◆ Recent advances in parallel computing and GPU acceleration have created new opportunities for computation-intensive learning problems such as Active SLAM -- where actions are selected to reduce uncertainty and improve joint mapping and localization.
 ◆ However, existing DRL-based approaches remain constrained by the lack of scalable parallel training.
 ◆ In this work, we address this challenge by proposing a scalable end-to-end DRL framework for Active SLAM that enables massively parallel training.</td></tr>
@@ -761,6 +782,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-22</td><td>Motion as a Sensing Modality for Metric Scale in Monocular Visual-Inertial Odometry</td><td>[2603.26740](http://arxiv.org/pdf/2603.26740)</td><td>◆ Monocular visual-inertial odometry (VIO) cannot recover metric scale from vision alone; scale must be resolved through inertial measurements.
+◆ We present a trajectory-dependent observability analysis showing that translational acceleration, produced by curvature, not constant-speed straight-line travel, is the fundamental source that couples scale to the inertial state.
+◆ This relationship is formalized through the gravity-acceleration asymmetry in the IMU model, from which we derive rank conditions on the observability matrix and propose a lightweight excitation metric computable from raw IMU data.</td></tr>
 <tr><td>2026-03-24</td><td>Tightly-Coupled Radar-Visual-Inertial Odometry</td><td>[2603.23052](http://arxiv.org/pdf/2603.23052)</td><td>◆ Visual-Inertial Odometry (VIO) is a staple for reliable state estimation on constrained and lightweight platforms due to its versatility and demonstrated performance.
 ◆ However, pertinent challenges regarding robust operation in dark, low-texture, obscured environments complicate the use of such methods.
 ◆ Alternatively, Frequency Modulated Continuous Wave (FMCW) radars, and by extension Radar-Inertial Odometry (RIO), offer robustness to these visual challenges, albeit at the cost of reduced information density and worse long-term accuracy.</td></tr>
@@ -1040,6 +1064,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-27</td><td>Optimal Hiding with Partial Information of the Seeker&#x27;s Route</td><td>[2603.26956](http://arxiv.org/pdf/2603.26956)</td><td>◆ We consider a hide-and-seek game between a Hider and a Seeker over a finite set of locations.
+◆ The Hider chooses one location to conceal a stationary treasure, while the Seeker visits the locations sequentially along a route.
+◆ As the search progresses, the Hider observes a prefix of the Seeker&#x27;s route.</td></tr>
+<tr><td>2026-03-26</td><td>Unblur-SLAM: Dense Neural SLAM for Blurry Inputs</td><td>[2603.26810](http://arxiv.org/pdf/2603.26810)</td><td>◆ We propose Unblur-SLAM, a novel RGB SLAM pipeline for sharp 3D reconstruction from blurred image inputs.
+◆ In contrast to previous work, our approach is able to handle different types of blur and demonstrates state-of-the-art performance in the presence of both motion blur and defocus blur.
+◆ Moreover, we adjust the computation effort with the amount of blur in the input image.</td></tr>
 <tr><td>2026-03-27</td><td>4DRaL: Bridging 4D Radar with LiDAR for Place Recognition using Knowledge Distillation</td><td>[2603.26206](http://arxiv.org/pdf/2603.26206)</td><td>◆ Place recognition is crucial for loop closure detection and global localization in robotics.
 ◆ Although mainstream algorithms typically rely on cameras and LiDAR, these sensors are susceptible to adverse weather conditions.
 ◆ Fortunately, the recently developed 4D millimeter-wave radar (4D radar) offers a promising solution for all-weather place recognition.</td></tr>
@@ -1695,6 +1725,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-30</td><td>AffordMatcher: Affordance Learning in 3D Scenes from Visual Signifiers</td><td>[2603.27970](http://arxiv.org/pdf/2603.27970)</td><td>◆ Affordance learning is a complex challenge in many applications, where existing approaches primarily focus on the geometric structures, visual knowledge, and affordance labels of objects to determine interactable regions.
+◆ However, extending this learning capability to a scene is significantly more complicated, as incorporating object- and scene-level semantics is not straightforward.
+◆ In this work, we introduce AffordBridge, a large-scale dataset with 291,637 functional interaction annotations across 685 high-resolution indoor scenes in the form of point clouds.</td></tr>
 <tr><td>2026-03-26</td><td>Towards Comprehensive Real-Time Scene Understanding in Ophthalmic Surgery through Multimodal Image Fusion</td><td>[2603.25555](http://arxiv.org/pdf/2603.25555)</td><td>◆ Purpose: The integration of multimodal imaging into operating rooms paves the way for comprehensive surgical scene understanding.
 ◆ In ophthalmic surgery, by now, two complementary imaging modalities are available: operating microscope (OPMI) imaging and real-time intraoperative optical coherence tomography (iOCT).
 ◆ This first work toward temporal OPMI and iOCT feature fusion demonstrates the potential of multimodal image processing for multi-head prediction through the example of precise instrument tracking in vitreoretinal surgery.</td></tr>
@@ -2026,6 +2059,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-30</td><td>GeoHCC: Local Geometry-Aware Hierarchical Context Compression for 3D Gaussian Splatting</td><td>[2603.28431](http://arxiv.org/pdf/2603.28431)</td><td>◆ Although 3D Gaussian Splatting (3DGS) enables high-fidelity real-time rendering, its prohibitive storage overhead severely hinders practical deployment.
+◆ Recent anchor-based 3DGS compression schemes reduce redundancy through context modeling, yet overlook explicit geometric dependencies, leading to structural degradation and suboptimal rate-distortion performance.
+◆ In this paper, we propose GeoHCC, a geometry-aware 3DGS compression framework that incorporates inter-anchor geometric correlations into anchor pruning and entropy coding for compact representation.</td></tr>
+<tr><td>2026-03-30</td><td>ObjectMorpher: 3D-Aware Image Editing via Deformable 3DGS Models</td><td>[2603.28152](http://arxiv.org/pdf/2603.28152)</td><td>◆ Achieving precise, object-level control in image editing remains challenging: 2D methods lack 3D awareness and often yield ambiguous or implausible results, while existing 3D-aware approaches rely on heavy optimization or incomplete monocular reconstructions.
+◆ We present ObjectMorpher, a unified, interactive framework that converts ambiguous 2D edits into geometry-grounded operations.
+◆ ObjectMorpher lifts target instances with an image-to-3D generator into editable 3D Gaussian Splatting (3DGS), enabling fast, identity-preserving manipulation.</td></tr>
+<tr><td>2026-03-30</td><td>SVGS: Single-View to 3D Object Editing via Gaussian Splatting</td><td>[2603.28126](http://arxiv.org/pdf/2603.28126)</td><td>◆ Text-driven 3D scene editing has attracted considerable interest due to its convenience and user-friendliness.
+◆ However, methods that rely on implicit 3D representations, such as Neural Radiance Fields (NeRF), while effective in rendering complex scenes, are hindered by slow processing speeds and limited control over specific regions of the scene.
+◆ Moreover, existing approaches, including Instruct-NeRF2NeRF and GaussianEditor, which utilize multi-view editing strategies, frequently produce inconsistent results across different views when executing text instructions.</td></tr>
+<tr><td>2026-03-30</td><td>\textit{4DSurf}: High-Fidelity Dynamic Scene Surface Reconstruction</td><td>[2603.28064](http://arxiv.org/pdf/2603.28064)</td><td>◆ This paper addresses the problem of dynamic scene surface reconstruction using Gaussian Splatting (GS), aiming to recover temporally consistent geometry.
+◆ While existing GS-based dynamic surface reconstruction methods can yield superior reconstruction, they are typically limited to either a single object or objects with only small deformations, struggling to maintain temporally consistent surface reconstruction of large deformations over time.
+◆ We propose ``\textit{4DSurf}&#x27;&#x27;, a novel and unified framework for generic dynamic surface reconstruction that does not require specifying the number or types of objects in the scene, can handle large surface deformations and temporal inconsistency in reconstruction.</td></tr>
+<tr><td>2026-03-30</td><td>Physically Inspired Gaussian Splatting for HDR Novel View Synthesis</td><td>[2603.28020](http://arxiv.org/pdf/2603.28020)</td><td>◆ High dynamic range novel view synthesis (HDR-NVS) reconstructs scenes with dynamic details by fusing multi-exposure low dynamic range (LDR) views, yet it struggles to capture ambient illumination-dependent appearance.
+◆ Implicitly supervising HDR content by constraining tone-mapped results fails in correcting abnormal HDR values, and results in limited gradients for Gaussians in under/over-exposed regions.
+◆ To this end, we introduce PhysHDR-GS, a physically inspired HDR-NVS framework that models scene appearance via intrinsic reflectance and adjustable ambient illumination.</td></tr>
+<tr><td>2026-03-29</td><td>GS3LAM: Gaussian Semantic Splatting SLAM</td><td>[2603.27781](http://arxiv.org/pdf/2603.27781)</td><td>◆ Recently, the multi-modal fusion of RGB, depth, and semantics has shown great potential in dense Simultaneous Localization and Mapping (SLAM).
+◆ However, a prerequisite for generating consistent semantic maps is the availability of dense, efficient, and scalable scene representations.
+◆ Existing semantic SLAM systems based on explicit representations are often limited by resolution and an inability to predict unknown areas.</td></tr>
+<tr><td>2026-03-29</td><td>SGS-Intrinsic: Semantic-Invariant Gaussian Splatting for Sparse-View Indoor Inverse Rendering</td><td>[2603.27516](http://arxiv.org/pdf/2603.27516)</td><td>◆ We present SGS-Intrinsic, an indoor inverse rendering framework that works well for sparse-view images.
+◆ Unlike existing 3D Gaussian Splatting (3DGS) based methods that focus on object-centric reconstruction and fail to work under sparse view settings, our method allows to achieve high-quality geometry reconstruction and accurate disentanglement of material and illumination.
+◆ The core idea is to construct a dense and geometry-consistent Gaussian semantic field guided by semantic and geometric priors, providing a reliable foundation for subsequent inverse rendering.</td></tr>
+<tr><td>2026-03-28</td><td>DiffSoup: Direct Differentiable Rasterization of Triangle Soup for Extreme Radiance Field Simplification</td><td>[2603.27151](http://arxiv.org/pdf/2603.27151)</td><td>◆ Radiance field reconstruction aims to recover high-quality 3D representations from multi-view RGB images.
+◆ Recent advances, such as 3D Gaussian splatting, enable real-time rendering with high visual fidelity on sufficiently powerful graphics hardware.
+◆ However, efficient online transmission and rendering across diverse platforms requires drastic model simplification, reducing the number of primitives by several orders of magnitude.</td></tr>
 <tr><td>2026-03-27</td><td>Detailed Geometry and Appearance from Opportunistic Motion</td><td>[2603.26665](http://arxiv.org/pdf/2603.26665)</td><td>◆ Reconstructing 3D geometry and appearance from a sparse set of fixed cameras is a foundational task with broad applications, yet it remains fundamentally constrained by the limited viewpoints.
 ◆ We show that this bound can be broken by exploiting opportunistic object motion: as a person manipulates an object~(e.g., moving a chair or lifting a mug), the static cameras effectively ``orbit&#x27;&#x27; the object in its local coordinate frame, providing additional virtual viewpoints.
 ◆ Harnessing this object motion, however, poses two challenges: the tight coupling of object pose and geometry estimation and the complex appearance variations of a moving object under static illumination.</td></tr>
@@ -3679,10 +3736,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-29</td><td>S3KF: Spherical State-Space Kalman Filtering for Panoramic 3D Multi-Object Tracking</td><td>[2603.27534](http://arxiv.org/pdf/2603.27534)</td><td>◆ Panoramic multi-object tracking is important for industrial safety monitoring, wide-area robotic perception, and infrastructure-light deployment in large workspaces.
+◆ In these settings, the sensing system must provide full-surround coverage, metric geometric cues, and stable target association under wide field-of-view distortion and occlusion.
+◆ Existing image-plane trackers are tightly coupled to the camera projection and become unreliable in panoramic imagery, while conventional Euclidean 3D formulations introduce redundant directional parameters and do not naturally unify angular, scale, and depth estimation.</td></tr>
+<tr><td>2026-03-28</td><td>UniDAC: Universal Metric Depth Estimation for Any Camera</td><td>[2603.27105](http://arxiv.org/pdf/2603.27105)</td><td>◆ Monocular metric depth estimation (MMDE) is a core challenge in computer vision, playing a pivotal role in real-world applications that demand accurate spatial understanding.
+◆ Although prior works have shown promising zero-shot performance in MMDE, they often struggle with generalization across diverse camera types, such as fisheye and $360^\circ$ cameras.
+◆ Recent advances have addressed this through unified camera representations or canonical representation spaces, but they require either including large-FoV camera data during training or separately trained models for different domains.</td></tr>
+<tr><td>2026-03-27</td><td>Computer Vision with a Superpixelation Camera</td><td>[2603.26900](http://arxiv.org/pdf/2603.26900)</td><td>◆ Conventional cameras generate a lot of data that can be challenging to process in resource-constrained applications.
+◆ Usually, cameras generate data streams on the order of the number of pixels in the image.
+◆ However, most of this captured data is redundant for many downstream computer vision algorithms.</td></tr>
+<tr><td>2026-03-26</td><td>Deep Learning Aided Vision System for Planetary Rovers</td><td>[2603.26802](http://arxiv.org/pdf/2603.26802)</td><td>◆ This study presents a vision system for planetary rovers, combining real-time perception with offline terrain reconstruction.
+◆ The real-time module integrates CLAHE enhanced stereo imagery, YOLOv11n based object detection, and a neural network to estimate object distances.
+◆ The offline module uses the Depth Anything V2 metric monocular depth estimation model to generate depth maps from captured images, which are fused into dense point clouds using Open3D.</td></tr>
 <tr><td>2026-03-26</td><td>Seeing Through Smoke: Surgical Desmoking for Improved Visual Perception</td><td>[2603.25867](http://arxiv.org/pdf/2603.25867)</td><td>◆ Minimally invasive and robot-assisted surgery relies heavily on endoscopic imaging, yet surgical smoke produced by electrocautery and vessel-sealing instruments can severely degrade visual perception and hinder vision-based functionalities.
 ◆ We present a transformer-based surgical desmoking model with a physics-inspired desmoking head that jointly predicts smoke-free image and corresponding smoke map.
 ◆ To address the scarcity of paired smoky-to-smoke-free training data, we develop a synthetic data generation pipeline that blends artificial smoke patterns with real endoscopic images, yielding over 80,000 paired samples for supervised training.</td></tr>
-<tr><td>2026-03-25</td><td>WAFT-Stereo: Warping-Alone Field Transforms for Stereo Matching</td><td>[2603.24836](http://arxiv.org/pdf/2603.24836)</td><td>◆ We introduce WAFT-Stereo, a simple and effective warping-based method for stereo matching.
+<tr><td>2026-03-30</td><td>WAFT-Stereo: Warping-Alone Field Transforms for Stereo Matching</td><td>[2603.24836](http://arxiv.org/pdf/2603.24836)</td><td>◆ We introduce WAFT-Stereo, a simple and effective warping-based method for stereo matching.
 ◆ WAFT-Stereo demonstrates that cost volumes, a common design used in many leading methods, are not necessary for strong performance and can be replaced by warping with improved efficiency.
 ◆ WAFT-Stereo ranks first on ETH3D, KITTI and Middlebury public benchmarks, reducing the zero-shot error by 81% on ETH3D benchmark, while being 1.8-6.7x faster than competitive methods.</td></tr>
 <tr><td>2026-03-25</td><td>EndoVGGT: GNN-Enhanced Depth Estimation for Surgical 3D Reconstruction</td><td>[2603.24577](http://arxiv.org/pdf/2603.24577)</td><td>◆ Accurate 3D reconstruction of deformable soft tissues is essential for surgical robotic perception.
@@ -4467,4 +4536,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.30
+> 更新于: 2026.03.31
