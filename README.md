@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.03.31)
+# SLAM领域最新论文 (2026.04.01)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-31</td><td>Semantic Zone-Based Map Management for Stable AI-Integrated Mobile Robots</td><td>[2603.29627](http://arxiv.org/pdf/2603.29627)</td><td>◆ Recent advances in large AI models (VLMs and LLMs) and joint use of the 3D dense maps, enable mobile robots to provide more powerful and interactive services grounded in rich spatial context.
+◆ However, deploying both heavy AI models and dense maps on edge robots is challenging under strict memory budgets.
+◆ When the memory budget is exceeded, required keyframes may not be loaded in time, which can degrade the stability of position estimation and interfering model performance.</td></tr>
+<tr><td>2026-03-31</td><td>M2H-MX: Multi-Task Dense Visual Perception for Real-Time Monocular Spatial Understanding</td><td>[2603.29236](http://arxiv.org/pdf/2603.29236)</td><td>◆ Monocular cameras are attractive for robotic perception due to their low cost and ease of deployment, yet achieving reliable real-time spatial understanding from a single image stream remains challenging.
+◆ While recent multi-task dense prediction models have improved per-pixel depth and semantic estimation, translating these advances into stable monocular mapping systems is still non-trivial.
+◆ This paper presents M2H-MX, a real-time multi-task perception model for monocular spatial understanding.</td></tr>
+<tr><td>2026-03-30</td><td>A Classification of Heterogeneity in Uncrewed Vehicle Swarms and the Effects of Its Inclusion on Overall Swarm Resilience</td><td>[2603.28831](http://arxiv.org/pdf/2603.28831)</td><td>◆ Combining different types of agents in uncrewed vehicle (UV) swarms has emerged as an approach to enhance mission resilience and operational capabilities across a wide range of applications.
+◆ This study offers a systematic framework for grouping different types of swarms based on three main factors: agent nature (behavior and function), hardware structure (physical configuration and sensing capabilities), and operational space (domain of operation).
+◆ A literature review indicates that strategic heterogeneity significantly improves swarm performance.</td></tr>
 <tr><td>2026-03-30</td><td>osmAG-Nav: A Hierarchical Semantic Topometric Navigation Stack for Robust Lifelong Indoor Autonomy</td><td>[2603.28271](http://arxiv.org/pdf/2603.28271)</td><td>◆ The deployment of mobile robots in large-scale, multi-floor environments demands navigation systems that achieve spatial scalability without compromising local kinematic precision.
 ◆ Traditional navigation stacks, reliant on monolithic occupancy grid maps, face severe bottlenecks in storage efficiency, cross-floor reasoning, and long-horizon planning.
 ◆ To address these limitations, this paper presents osmAG-Nav, a complete, open-source ROS2 navigation stack built upon the hierarchical semantic topometric OpenStreetMap Area Graph (osmAG) map standard.</td></tr>
@@ -1068,6 +1077,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-31</td><td>All-in-One Augmented Reality Guided Head and Neck Tumor Resection</td><td>[2603.29495](http://arxiv.org/pdf/2603.29495)</td><td>◆ Positive margins are common in head and neck squamous cell carcinoma, yet intraoperative re-resection is often imprecise because margin locations are typically communicated verbally from pathology.
+◆ We present an all-in-one augmented reality (AR) system that relocalizes positive margins from a resected specimen to the resection bed and visualizes them in situ using HoloLens 2 depth sensing and fully automated markerless surface registration.
+◆ In a silicone phantom study with six medical trainees, markerless registration achieved target registration errors comparable to a marker-based baseline (median 1.8 mm vs.</td></tr>
+<tr><td>2026-03-31</td><td>Hierarchical Visual Relocalization with Nearest View Synthesis from Feature Gaussian Splatting</td><td>[2603.29185](http://arxiv.org/pdf/2603.29185)</td><td>◆ Visual relocalization is a fundamental task in the field of 3D computer vision, estimating a camera&#x27;s pose when it revisits a previously known scene.
+◆ While point-based hierarchical relocalization methods have shown strong scalability and efficiency, they are often limited by sparse image observations and weak feature matching.
+◆ In this work, we propose SplatHLoc, a novel hierarchical visual relocalization framework that uses Feature Gaussian Splatting as the scene representation.</td></tr>
 <tr><td>2026-03-27</td><td>Optimal Hiding with Partial Information of the Seeker&#x27;s Route</td><td>[2603.26956](http://arxiv.org/pdf/2603.26956)</td><td>◆ We consider a hide-and-seek game between a Hider and a Seeker over a finite set of locations.
 ◆ The Hider chooses one location to conceal a stationary treasure, while the Seeker visits the locations sequentially along a route.
 ◆ As the search progresses, the Hider observes a prefix of the Seeker&#x27;s route.</td></tr>
@@ -2067,7 +2082,25 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-03-30</td><td>GeoHCC: Local Geometry-Aware Hierarchical Context Compression for 3D Gaussian Splatting</td><td>[2603.28431](http://arxiv.org/pdf/2603.28431)</td><td>◆ Although 3D Gaussian Splatting (3DGS) enables high-fidelity real-time rendering, its prohibitive storage overhead severely hinders practical deployment.
+<tr><td>2026-03-31</td><td>GRVS: a Generalizable and Recurrent Approach to Monocular Dynamic View Synthesis</td><td>[2603.29734](http://arxiv.org/pdf/2603.29734)</td><td>◆ Synthesizing novel views from monocular videos of dynamic scenes remains a challenging problem.
+◆ Scene-specific methods that optimize 4D representations with explicit motion priors often break down in highly dynamic regions where multi-view information is hard to exploit.
+◆ Diffusion-based approaches that integrate camera control into large pre-trained models can produce visually plausible videos but frequently suffer from geometric inconsistencies across both static and dynamic areas.</td></tr>
+<tr><td>2026-03-31</td><td>AA-Splat: Anti-Aliased Feed-forward Gaussian Splatting</td><td>[2603.29394](http://arxiv.org/pdf/2603.29394)</td><td>◆ Feed-forward 3D Gaussian Splatting (FF-3DGS) emerges as a fast and robust solution for sparse-view 3D reconstruction and novel view synthesis (NVS).
+◆ However, existing FF-3DGS methods are built on incorrect screen-space dilation filters, causing severe rendering artifacts when rendering at out-of-distribution sampling rates.
+◆ We firstly propose an FF-3DGS model, called AA-Splat, to enable robust anti-aliased rendering at any resolution.</td></tr>
+<tr><td>2026-03-31</td><td>MotionScale: Reconstructing Appearance, Geometry, and Motion of Dynamic Scenes with Scalable 4D Gaussian Splatting</td><td>[2603.29296](http://arxiv.org/pdf/2603.29296)</td><td>◆ Realistic reconstruction of dynamic 4D scenes from monocular videos is essential for understanding the physical world.
+◆ Despite recent progress in neural rendering, existing methods often struggle to recover accurate 3D geometry and temporally consistent motion in complex environments.
+◆ To address these challenges, we propose MotionScale, a 4D Gaussian Splatting framework that scales efficiently to large scenes and extended sequences while maintaining high-fidelity structural and motion coherence.</td></tr>
+<tr><td>2026-03-31</td><td>LightHarmony3D: Harmonizing Illumination and Shadows for Object Insertion in 3D Gaussian Splatting</td><td>[2603.29209](http://arxiv.org/pdf/2603.29209)</td><td>◆ 3D Gaussian Splatting (3DGS) enables high-fidelity reconstruction of scene geometry and appearance.
+◆ Building on this capability, inserting external mesh objects into reconstructed 3DGS scenes enables interactive editing and content augmentation for immersive applications such as AR/VR, virtual staging, and digital content creation.
+◆ However, achieving physically consistent lighting and shadows for mesh insertion remains challenging, as it requires accurate scene illumination estimation and multi-view consistent rendering.</td></tr>
+<tr><td>2026-03-31</td><td>Efficient Camera Pose Augmentation for View Generalization in Robotic Policy Learning</td><td>[2603.29192](http://arxiv.org/pdf/2603.29192)</td><td>◆ Prevailing 2D-centric visuomotor policies exhibit a pronounced deficiency in novel view generalization, as their reliance on static observations hinders consistent action mapping across unseen views.
+◆ In response, we introduce GenSplat, a feed-forward 3D Gaussian Splatting framework that facilitates view-generalized policy learning through novel view rendering.
+◆ GenSplat employs a permutation-equivariant architecture to reconstruct high-fidelity 3D scenes from sparse, uncalibrated inputs in a single forward pass.</td></tr>
+<tr><td>2026-03-31</td><td>Hierarchical Visual Relocalization with Nearest View Synthesis from Feature Gaussian Splatting</td><td>[2603.29185](http://arxiv.org/pdf/2603.29185)</td><td>◆ Visual relocalization is a fundamental task in the field of 3D computer vision, estimating a camera&#x27;s pose when it revisits a previously known scene.
+◆ While point-based hierarchical relocalization methods have shown strong scalability and efficiency, they are often limited by sparse image observations and weak feature matching.
+◆ In this work, we propose SplatHLoc, a novel hierarchical visual relocalization framework that uses Feature Gaussian Splatting as the scene representation.</td></tr>
+<tr><td>2026-03-31</td><td>LG-HCC: Local Geometry-Aware Hierarchical Context Compression for 3D Gaussian Splatting</td><td>[2603.28431](http://arxiv.org/pdf/2603.28431)</td><td>◆ Although 3D Gaussian Splatting (3DGS) enables high-fidelity real-time rendering, its prohibitive storage overhead severely hinders practical deployment.
 ◆ Recent anchor-based 3DGS compression schemes reduce redundancy through context modeling, yet overlook explicit geometric dependencies, leading to structural degradation and suboptimal rate-distortion performance.
 ◆ In this paper, we propose GeoHCC, a geometry-aware 3DGS compression framework that incorporates inter-anchor geometric correlations into anchor pruning and entropy coding for compact representation.</td></tr>
 <tr><td>2026-03-30</td><td>ObjectMorpher: 3D-Aware Image Editing via Deformable 3DGS Models</td><td>[2603.28152](http://arxiv.org/pdf/2603.28152)</td><td>◆ Achieving precise, object-level control in image editing remains challenging: 2D methods lack 3D awareness and often yield ambiguous or implausible results, while existing 3D-aware approaches rely on heavy optimization or incomplete monocular reconstructions.
@@ -3746,6 +3779,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-03-31</td><td>Extend3D: Town-Scale 3D Generation</td><td>[2603.29387](http://arxiv.org/pdf/2603.29387)</td><td>◆ In this paper, we propose Extend3D, a training-free pipeline for 3D scene generation from a single image, built upon an object-centric 3D generative model.
+◆ To overcome the limitations of fixed-size latent spaces in object-centric models for representing wide scenes, we extend the latent space in the $x$ and $y$ directions.
+◆ Then, by dividing the extended latent space into overlapping patches, we apply the object-centric 3D generative model to each patch and couple them at each time step.</td></tr>
+<tr><td>2026-03-31</td><td>StereoVGGT: A Training-Free Visual Geometry Transformer for Stereo Vision</td><td>[2603.29368](http://arxiv.org/pdf/2603.29368)</td><td>◆ Driven by the advancement of 3D devices, stereo vision tasks including stereo matching and stereo conversion have emerged as a critical research frontier.
+◆ Contemporary stereo vision backbones typically rely on either monocular depth estimation (MDE) models or visual foundation models (VFMs).
+◆ Crucially, these models are predominantly pretrained without explicit supervision of camera poses.</td></tr>
 <tr><td>2026-03-29</td><td>S3KF: Spherical State-Space Kalman Filtering for Panoramic 3D Multi-Object Tracking</td><td>[2603.27534](http://arxiv.org/pdf/2603.27534)</td><td>◆ Panoramic multi-object tracking is important for industrial safety monitoring, wide-area robotic perception, and infrastructure-light deployment in large workspaces.
 ◆ In these settings, the sensing system must provide full-surround coverage, metric geometric cues, and stable target association under wide field-of-view distortion and occlusion.
 ◆ Existing image-plane trackers are tightly coupled to the camera projection and become unreliable in panoramic imagery, while conventional Euclidean 3D formulations introduce redundant directional parameters and do not naturally unify angular, scale, and depth estimation.</td></tr>
@@ -4548,4 +4587,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.03.31
+> 更新于: 2026.04.01
