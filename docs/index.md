@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.02)
+# SLAM领域最新论文 (2026.04.03)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-02</td><td>HyVGGT-VO: Tightly Coupled Hybrid Dense Visual Odometry with Feed-Forward Models</td><td>[2604.02107](http://arxiv.org/pdf/2604.02107)</td><td>◆ Dense visual odometry (VO), which provides pose estimation and dense 3D reconstruction, serves as the cornerstone for applications ranging from robotics to augmented reality.
+◆ Recently, feed-forward models have demonstrated remarkable capabilities in dense mapping.
+◆ However, when these models are used in dense visual SLAM systems, their heavy computational burden restricts them to yielding sparse pose outputs at keyframes while still failing to achieve real-time pose estimation.</td></tr>
+<tr><td>2026-04-02</td><td>Hi-LOAM: Hierarchical Implicit Neural Fields for LiDAR Odometry and Mapping</td><td>[2604.01720](http://arxiv.org/pdf/2604.01720)</td><td>◆ LiDAR Odometry and Mapping (LOAM) is a pivotal technique for embodied-AI applications such as autonomous driving and robot navigation.
+◆ Most existing LOAM frameworks are either contingent on the supervision signal, or lack of the reconstruction fidelity, which are deficient in depicting details of large-scale complex scenes.
+◆ To overcome these limitations, we propose a multi-scale implicit neural localization and mapping framework using LiDAR sensor, called Hi-LOAM.</td></tr>
 <tr><td>2026-04-01</td><td>PanoAir: A Panoramic Visual-Inertial SLAM with Cross-Time Real-World UAV Dataset</td><td>[2604.00852](http://arxiv.org/pdf/2604.00852)</td><td>◆ Accurate pose estimation is fundamental for unmanned aerial vehicle (UAV) applications, where Visual-Inertial SLAM (VI-SLAM) provides a cost-effective solution for localization and mapping.
 ◆ However, existing VI-SLAM methods mainly rely on sensors with limited fields of view (FoV), which can lead to drift and even failure in complex UAV scenarios.
 ◆ Although panoramic cameras provide omnidirectional perception to improve robustness, panoramic VI-SLAM and corresponding real-world datasets for UAVs remain underexplored.</td></tr>
@@ -800,6 +806,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-02</td><td>HyVGGT-VO: Tightly Coupled Hybrid Dense Visual Odometry with Feed-Forward Models</td><td>[2604.02107](http://arxiv.org/pdf/2604.02107)</td><td>◆ Dense visual odometry (VO), which provides pose estimation and dense 3D reconstruction, serves as the cornerstone for applications ranging from robotics to augmented reality.
+◆ Recently, feed-forward models have demonstrated remarkable capabilities in dense mapping.
+◆ However, when these models are used in dense visual SLAM systems, their heavy computational burden restricts them to yielding sparse pose outputs at keyframes while still failing to achieve real-time pose estimation.</td></tr>
 <tr><td>2026-03-22</td><td>Motion as a Sensing Modality for Metric Scale in Monocular Visual-Inertial Odometry</td><td>[2603.26740](http://arxiv.org/pdf/2603.26740)</td><td>◆ Monocular visual-inertial odometry (VIO) cannot recover metric scale from vision alone; scale must be resolved through inertial measurements.
 ◆ We present a trajectory-dependent observability analysis showing that translational acceleration, produced by curvature, not constant-speed straight-line travel, is the fundamental source that couples scale to the inertial state.
 ◆ This relationship is formalized through the gravity-acceleration asymmetry in the IMU model, from which we derive rank conditions on the observability matrix and propose a lightweight excitation metric computable from raw IMU data.</td></tr>
@@ -1082,6 +1091,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-02</td><td>Unifying UAV Cross-View Geo-Localization via 3D Geometric Perception</td><td>[2604.01747](http://arxiv.org/pdf/2604.01747)</td><td>◆ Cross-view geo-localization for Unmanned Aerial Vehicles (UAVs) operating in GNSS-denied environments remains challenging due to the severe geometric discrepancy between oblique UAV imagery and orthogonal satellite maps.
+◆ Most existing methods address this problem through a decoupled pipeline of place retrieval and pose estimation, implicitly treating perspective distortion as appearance noise rather than an explicit geometric transformation.
+◆ In this work, we propose a geometry-aware UAV geo-localization framework that explicitly models the 3D scene geometry to unify coarse place recognition and fine-grained pose estimation within a single inference pipeline.</td></tr>
+<tr><td>2026-04-02</td><td>Riemannian and Symplectic Geometry for Hierarchical Text-Driven Place Recognition</td><td>[2604.01598](http://arxiv.org/pdf/2604.01598)</td><td>◆ Text-to-point-cloud localization enables robots to understand spatial positions through natural language descriptions, which is crucial for human-robot collaboration in applications such as autonomous driving and last-mile delivery.
+◆ However, existing methods employ pooled global descriptors for similarity retrieval, which suffer from severe information loss and fail to capture discriminative scene structures.
+◆ To address these issues, we propose SympLoc, a novel coarse-to-fine localization framework with multi-level alignment in the coarse stage.</td></tr>
 <tr><td>2026-04-01</td><td>PanoAir: A Panoramic Visual-Inertial SLAM with Cross-Time Real-World UAV Dataset</td><td>[2604.00852](http://arxiv.org/pdf/2604.00852)</td><td>◆ Accurate pose estimation is fundamental for unmanned aerial vehicle (UAV) applications, where Visual-Inertial SLAM (VI-SLAM) provides a cost-effective solution for localization and mapping.
 ◆ However, existing VI-SLAM methods mainly rely on sensors with limited fields of view (FoV), which can lead to drift and even failure in complex UAV scenarios.
 ◆ Although panoramic cameras provide omnidirectional perception to improve robustness, panoramic VI-SLAM and corresponding real-world datasets for UAVs remain underexplored.</td></tr>
@@ -2089,6 +2104,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-02</td><td>GEMM-GS: Accelerating 3D Gaussian Splatting on Tensor Cores with GEMM-Compatible Blending</td><td>[2604.02120](http://arxiv.org/pdf/2604.02120)</td><td>◆ Neural Radiance Fields (NeRF) enables 3D scene reconstruction from several 2D images but incurs high rendering latency via its point-sampling design.
+◆ 3D Gaussian Splatting (3DGS) improves on NeRF with explicit scene representation and an optimized pipeline yet still fails to meet practical real-time demands.
+◆ Existing acceleration works overlook the evolving Tensor Cores of modern GPUs because 3DGS pipeline lacks General Matrix Multiplication (GEMM) operations.</td></tr>
+<tr><td>2026-04-02</td><td>ProDiG: Progressive Diffusion-Guided Gaussian Splatting for Aerial to Ground Reconstruction</td><td>[2604.02003](http://arxiv.org/pdf/2604.02003)</td><td>◆ Generating ground-level views and coherent 3D site models from aerial-only imagery is challenging due to extreme viewpoint changes, missing intermediate observations, and large scale variations.
+◆ Existing methods either refine renderings post-hoc, often producing geometrically inconsistent results, or rely on multi-altitude ground-truth, which is rarely available.
+◆ Gaussian Splatting and diffusion-based refinements improve fidelity under small variations but fail under wide aerial-to-ground gaps.</td></tr>
+<tr><td>2026-04-02</td><td>Resonance4D: Frequency-Domain Motion Supervision for Preset-Free Physical Parameter Learning in 4D Dynamic Physical Scene Simulation</td><td>[2604.01994](http://arxiv.org/pdf/2604.01994)</td><td>◆ Physics-driven 4D dynamic simulation from static 3D scenes remains constrained by an overlooked contradiction: reliable motion supervision often relies on online video diffusion or optical-flow pipelines whose computational cost exceeds that of the simulator itself.
+◆ Existing methods further simplify inverse physical modeling by optimizing only partial material parameters, limiting realism in scenes with complex materials and dynamics.
+◆ We present Resonance4D, a physics-driven 4D dynamic simulation framework that couples 3D Gaussian Splatting with the Material Point Method through lightweight yet physically expressive supervision.</td></tr>
+<tr><td>2026-04-02</td><td>GS^2: Graph-based Spatial Distribution Optimization for Compact 3D Gaussian Splatting</td><td>[2604.01884](http://arxiv.org/pdf/2604.01884)</td><td>◆ 3D Gaussian Splatting (3DGS) has demonstrated breakthrough performance in novel view synthesis and real-time rendering.
+◆ Nevertheless, its practicality is constrained by the high memory cost due to a huge number of Gaussian points.
+◆ Many pruning-based 3DGS variants have been proposed for memory saving, but often compromise spatial consistency and may lead to rendering artifacts.</td></tr>
+<tr><td>2026-04-02</td><td>FaCT-GS: Fast and Scalable CT Reconstruction with Gaussian Splatting</td><td>[2604.01844](http://arxiv.org/pdf/2604.01844)</td><td>◆ Gaussian Splatting (GS) has emerged as a dominating technique for image rendering and has quickly been adapted for the X-ray Computed Tomography (CT) reconstruction task.
+◆ However, despite being on par or better than many of its predecessors, the benefits of GS are typically not substantial enough to motivate a transition from well-established reconstruction algorithms.
+◆ This paper addresses the most significant remaining limitations of the GS-based approach by introducing FaCT-GS, a framework for fast and flexible CT reconstruction.</td></tr>
+<tr><td>2026-04-02</td><td>Director: Instance-aware Gaussian Splatting for Dynamic Scene Modeling and Understanding</td><td>[2604.01678](http://arxiv.org/pdf/2604.01678)</td><td>◆ Volumetric video seeks to model dynamic scenes as temporally coherent 4D representations.
+◆ While recent Gaussian-based approaches achieve impressive rendering fidelity, they primarily emphasize appearance but are largely agnostic to instance-level structure, limiting stable tracking and semantic reasoning in highly dynamic scenarios.
+◆ In this paper, we present Director, a unified spatio-temporal Gaussian representation that jointly models human performance, high-fidelity rendering, and instance-level semantics.</td></tr>
+<tr><td>2026-04-02</td><td>F3DGS: Federated 3D Gaussian Splatting for Decentralized Multi-Agent World Modeling</td><td>[2604.01605](http://arxiv.org/pdf/2604.01605)</td><td>◆ We present F3DGS, a federated 3D Gaussian Splatting framework for decentralized multi-agent 3D reconstruction.
+◆ Existing 3DGS pipelines assume centralized access to all observations, which limits their applicability in distributed robotic settings where agents operate independently, and centralized data aggregation may be restricted.
+◆ Directly extending centralized training to multi-agent systems introduces communication overhead and geometric inconsistency.</td></tr>
+<tr><td>2026-04-02</td><td>Satellite-Free Training for Drone-View Geo-Localization</td><td>[2604.01581](http://arxiv.org/pdf/2604.01581)</td><td>◆ Drone-view geo-localization (DVGL) aims to determine the location of drones in GPS-denied environments by retrieving the corresponding geotagged satellite tile from a reference gallery given UAV observations of a location.
+◆ In many existing formulations, these observations are represented by a single oblique UAV image.
+◆ In contrast, our satellite-free setting is designed for multi-view UAV sequences, which are used to construct a geometry-normalized UAV-side location representation before cross-view retrieval.</td></tr>
+<tr><td>2026-04-02</td><td>ColorGradedGaussians: Palette-Based Color Grading for 3D Gaussian Splatting via View-Space Sparse Decomposition</td><td>[2604.01551](http://arxiv.org/pdf/2604.01551)</td><td>◆ Professional color editing requires precise control over both color (hue and saturation) and lightness, ideally through separate, independent controls.
+◆ We present a real-time interactive color editing framework for 3D Gaussian Splatting (3DGS) that enables palette-based recoloring, per-palette tone curves for color-aware lightness adjustment, and accurate pixel-level constraints -- capabilities unavailable in prior palette-based 3DGS methods.
+◆ Existing approaches decompose colors at the primitive level, optimizing per-Gaussian palette weights before splatting.</td></tr>
+<tr><td>2026-04-01</td><td>Better Rigs, Not Bigger Networks: A Body Model Ablation for Gaussian Avatars</td><td>[2604.01447](http://arxiv.org/pdf/2604.01447)</td><td>◆ Recent 3D Gaussian splatting methods built atop SMPL achieve remarkable visual fidelity while continually increasing the complexity of the overall training architecture.
+◆ We demonstrate that much of this complexity is unnecessary: by replacing SMPL with the Momentum Human Rig (MHR), estimated via SAM-3D-Body, a minimal pipeline with no learned deformations or pose-dependent corrections achieves the highest reported PSNR and competitive or superior LPIPS and SSIM on PeopleSnapshot and ZJU-MoCap.
+◆ To disentangle pose estimation quality from body model representational capacity, we perform two controlled ablations: translating SAM-3D-Body meshes to SMPL-X, and translating the original dataset&#x27;s SMPL poses into MHR both retrained under identical conditions.</td></tr>
 <tr><td>2026-04-01</td><td>TRACE: High-Fidelity 3D Scene Editing via Tangible Reconstruction and Geometry-Aligned Contextual Video Masking</td><td>[2604.01207](http://arxiv.org/pdf/2604.01207)</td><td>◆ We present TRACE, a mesh-guided 3DGS editing framework that achieves automated, high-fidelity scene transformation.
 ◆ By anchoring video diffusion with explicit 3D geometry, TRACE uniquely enables fine-grained, part-level manipulatio--such as local pose shifting or component replacemen--while preserving the structural integrity of the central subject, a capability largely absent in existing editing methods.
 ◆ Our approach comprises three key stages: (1) Multi-view 3D-Anchor Synthesis, which leverages a sparse-view editor trained on our MV-TRACE datase--the first multi-view consistent dataset dedicated to scene-coherent object addition and modificatio--to generate spatially consistent 3D-anchors; (2) Tangible Geometry Anchoring (TGA), which ensures precise spatial synchronization between inserted meshes and the 3DGS scene via two-phase registration; and (3) Contextual Video Masking (CVM), which integrates 3D projections into an autoregressive video pipeline to achieve temporally stable, physically-grounded rendering.</td></tr>
@@ -3811,6 +3856,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-02</td><td>Test-Time Adaptation for Height Completion via Self-Supervised ViT Features and Monocular Foundation Models</td><td>[2604.02009](http://arxiv.org/pdf/2604.02009)</td><td>◆ Accurate digital surface models (DSMs) are essential for many geospatial applications, including urban monitoring, environmental analyses, infrastructure management, and change detection.
+◆ However, large-scale DSMs frequently contain incomplete or outdated regions due to acquisition limitations, reconstruction artifacts, or changes in the built environment.
+◆ Traditional height completion approaches primarily rely on spatial interpolation or which assume spatial continuity and therefore fail when objects are missing.</td></tr>
+<tr><td>2026-04-02</td><td>PTC-Depth: Pose-Refined Monocular Depth Estimation with Temporal Consistency</td><td>[2604.01791](http://arxiv.org/pdf/2604.01791)</td><td>◆ Monocular depth estimation (MDE) has been widely adopted in the perception systems of autonomous vehicles and mobile robots.
+◆ However, existing approaches often struggle to maintain temporal consistency in depth estimation across consecutive frames.
+◆ This inconsistency not only causes jitter but can also lead to estimation failures when the depth range changes abruptly.</td></tr>
+<tr><td>2026-04-02</td><td>MonoSAOD: Monocular 3D Object Detection with Sparsely Annotated Label</td><td>[2604.01646](http://arxiv.org/pdf/2604.01646)</td><td>◆ Monocular 3D object detection has achieved impressive performance on densely annotated datasets.
+◆ However, it struggles when only a fraction of objects are labeled due to the high cost of 3D annotation.
+◆ This sparsely annotated setting is common in real-world scenarios where annotating every object is impractical.</td></tr>
 <tr><td>2026-04-01</td><td>Lightweight Prompt-Guided CLIP Adaptation for Monocular Depth Estimation</td><td>[2604.01118](http://arxiv.org/pdf/2604.01118)</td><td>◆ Leveraging the rich semantic features of vision-language models (VLMs) like CLIP for monocular depth estimation tasks is a promising direction, yet often requires extensive fine-tuning or lacks geometric precision.
 ◆ We present a parameter-efficient framework, named MoA-DepthCLIP, that adapts pretrained CLIP representations for monocular depth estimation with minimal supervision.
 ◆ Our method integrates a lightweight Mixture-of-Adapters (MoA) module into the pretrained Vision Transformer (ViT-B/32) backbone combined with selective fine-tuning of the final layers.</td></tr>
@@ -4623,4 +4677,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.02
+> 更新于: 2026.04.03
