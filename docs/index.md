@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.05)
+# SLAM领域最新论文 (2026.04.06)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-03</td><td>An Open-Source LiDAR and Monocular Off-Road Autonomous Navigation Stack</td><td>[2604.03096](http://arxiv.org/pdf/2604.03096)</td><td>◆ Off-road autonomous navigation demands reliable 3D perception for robust obstacle detection in challenging unstructured terrain.
+◆ While LiDAR is accurate, it is costly and power-intensive.
+◆ Monocular depth estimation using foundation models offers a lightweight alternative, but its integration into outdoor navigation stacks remains underexplored.</td></tr>
+<tr><td>2026-04-03</td><td>Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM</td><td>[2604.03092](http://arxiv.org/pdf/2604.03092)</td><td>◆ Monocular 3D Gaussian Splatting SLAM suffers from critical limitations in time efficiency, geometric accuracy, and multi-view consistency.
+◆ These issues stem from the time-consuming $\textit{Train-from-Scratch}$ optimization and the lack of inter-frame scale consistency from single-frame geometry priors.
+◆ We contend that a feed-forward paradigm, leveraging multi-frame context to predict Gaussian attributes directly, is crucial for addressing these challenges.</td></tr>
+<tr><td>2026-04-03</td><td>ALIVE-LIO: Degeneracy-Aware Learning of Inertial Velocity for Enhancing ESKF-Based LiDAR-Inertial Odometry</td><td>[2604.02706](http://arxiv.org/pdf/2604.02706)</td><td>◆ Odometry estimation using light detection and ranging (LiDAR) and an inertial measurement unit (IMU), known as LiDAR-inertial odometry (LIO), often suffers from performance degradation in degenerate environments, such as long corridors or single-wall scenarios with narrow field-of-view LiDAR.
+◆ To address this limitation, we propose ALIVE-LIO, a degeneracy-aware LiDAR-inertial odometry framework that explicitly enhances state estimation in degenerate directions.
+◆ The key contribution of ALIVE-LIO is the strategic integration of a deep neural network into a classical error-state Kalman filter (ESKF) to compensate for the loss of LiDAR observability.</td></tr>
+<tr><td>2026-04-03</td><td>VBGS-SLAM: Variational Bayesian Gaussian Splatting Simultaneous Localization and Mapping</td><td>[2604.02696](http://arxiv.org/pdf/2604.02696)</td><td>◆ 3D Gaussian Splatting (3DGS) has shown promising results for 3D scene modeling using mixtures of Gaussians, yet its existing simultaneous localization and mapping (SLAM) variants typically rely on direct, deterministic pose optimization against the splat map, making them sensitive to initialization and susceptible to catastrophic forgetting as map evolves.
+◆ We propose Variational Bayesian Gaussian Splatting SLAM (VBGS-SLAM), a novel framework that couples the splat map refinement and camera pose tracking in a generative probabilistic form.
+◆ By leveraging conjugate properties of multivariate Gaussians and variational inference, our method admits efficient closed-form updates and explicitly maintains posterior uncertainty over both poses and scene parameters.</td></tr>
 <tr><td>2026-04-02</td><td>HyVGGT-VO: Tightly Coupled Hybrid Dense Visual Odometry with Feed-Forward Models</td><td>[2604.02107](http://arxiv.org/pdf/2604.02107)</td><td>◆ Dense visual odometry (VO), which provides pose estimation and dense 3D reconstruction, serves as the cornerstone for applications ranging from robotics to augmented reality.
 ◆ Recently, feed-forward models have demonstrated remarkable capabilities in dense mapping.
 ◆ However, when these models are used in dense visual SLAM systems, their heavy computational burden restricts them to yielding sparse pose outputs at keyframes while still failing to achieve real-time pose estimation.</td></tr>
@@ -1091,6 +1103,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-03</td><td>Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM</td><td>[2604.03092](http://arxiv.org/pdf/2604.03092)</td><td>◆ Monocular 3D Gaussian Splatting SLAM suffers from critical limitations in time efficiency, geometric accuracy, and multi-view consistency.
+◆ These issues stem from the time-consuming $\textit{Train-from-Scratch}$ optimization and the lack of inter-frame scale consistency from single-frame geometry priors.
+◆ We contend that a feed-forward paradigm, leveraging multi-frame context to predict Gaussian attributes directly, is crucial for addressing these challenges.</td></tr>
+<tr><td>2026-04-02</td><td>TrackerSplat: Exploiting Point Tracking for Fast and Robust Dynamic 3D Gaussians Reconstruction</td><td>[2604.02586](http://arxiv.org/pdf/2604.02586)</td><td>◆ Recent advancements in 3D Gaussian Splatting (3DGS) have demonstrated its potential for efficient and photorealistic 3D reconstructions, which is crucial for diverse applications such as robotics and immersive media.
+◆ However, current Gaussian-based methods for dynamic scene reconstruction struggle with large inter-frame displacements, leading to artifacts and temporal inconsistencies under fast object motions.
+◆ To address this, we introduce \textit{TrackerSplat}, a novel method that integrates advanced point tracking methods to enhance the robustness and scalability of 3DGS for dynamic scene reconstruction.</td></tr>
 <tr><td>2026-04-02</td><td>Unifying UAV Cross-View Geo-Localization via 3D Geometric Perception</td><td>[2604.01747](http://arxiv.org/pdf/2604.01747)</td><td>◆ Cross-view geo-localization for Unmanned Aerial Vehicles (UAVs) operating in GNSS-denied environments remains challenging due to the severe geometric discrepancy between oblique UAV imagery and orthogonal satellite maps.
 ◆ Most existing methods address this problem through a decoupled pipeline of place retrieval and pose estimation, implicitly treating perspective distortion as appearance noise rather than an explicit geometric transformation.
 ◆ In this work, we propose a geometry-aware UAV geo-localization framework that explicitly models the 3D scene geometry to unify coarse place recognition and fine-grained pose estimation within a single inference pipeline.</td></tr>
@@ -2104,6 +2122,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-03</td><td>Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM</td><td>[2604.03092](http://arxiv.org/pdf/2604.03092)</td><td>◆ Monocular 3D Gaussian Splatting SLAM suffers from critical limitations in time efficiency, geometric accuracy, and multi-view consistency.
+◆ These issues stem from the time-consuming $\textit{Train-from-Scratch}$ optimization and the lack of inter-frame scale consistency from single-frame geometry priors.
+◆ We contend that a feed-forward paradigm, leveraging multi-frame context to predict Gaussian attributes directly, is crucial for addressing these challenges.</td></tr>
+<tr><td>2026-04-03</td><td>SparseSplat: Towards Applicable Feed-Forward 3D Gaussian Splatting with Pixel-Unaligned Prediction</td><td>[2604.03069](http://arxiv.org/pdf/2604.03069)</td><td>◆ Recent progress in feed-forward 3D Gaussian Splatting (3DGS) has notably improved rendering quality.
+◆ However, the spatially uniform and highly redundant 3DGS map generated by previous feed-forward 3DGS methods limits their integration into downstream reconstruction tasks.
+◆ We propose SparseSplat, the first feed-forward 3DGS model that adaptively adjusts Gaussian density according to scene structure and information richness of local regions, yielding highly compact 3DGS maps.</td></tr>
+<tr><td>2026-04-03</td><td>GenSmoke-GS: A Multi-Stage Method for Novel View Synthesis from Smoke-Degraded Images Using a Generative Model</td><td>[2604.03039](http://arxiv.org/pdf/2604.03039)</td><td>◆ This paper describes our method for Track 2 of the NTIRE 2026 3D Restoration and Reconstruction (3DRR) Challenge on smoke-degraded images.
+◆ In this task, smoke reduces image visibility and weakens the cross-view consistency required by scene optimization and rendering.
+◆ We address this problem with a multi-stage pipeline consisting of image restoration, dehazing, MLLM-based enhancement, 3DGS-MCMC optimization, and averaging over repeated runs.</td></tr>
+<tr><td>2026-04-03</td><td>Rendering Multi-Human and Multi-Object with 3D Gaussian Splatting</td><td>[2604.02996](http://arxiv.org/pdf/2604.02996)</td><td>◆ Reconstructing dynamic scenes with multiple interacting humans and objects from sparse-view inputs is a critical yet challenging task, essential for creating high-fidelity digital twins for robotics and VR/AR.
+◆ This problem, which we term Multi-Human Multi-Object (MHMO) rendering, presents two significant obstacles: achieving view-consistent representations for individual instances under severe mutual occlusion, and explicitly modeling the complex and combinatorial dependencies that arise from their interactions.
+◆ To overcome these challenges, we propose MM-GS, a novel hierarchical framework built upon 3D Gaussian Splatting.</td></tr>
+<tr><td>2026-04-03</td><td>GP-4DGS: Probabilistic 4D Gaussian Splatting from Monocular Video via Variational Gaussian Processes</td><td>[2604.02915](http://arxiv.org/pdf/2604.02915)</td><td>◆ We present GP-4DGS, a novel framework that integrates Gaussian Processes (GPs) into 4D Gaussian Splatting (4DGS) for principled probabilistic modeling of dynamic scenes.
+◆ While existing 4DGS methods focus on deterministic reconstruction, they are inherently limited in capturing motion ambiguity and lack mechanisms to assess prediction reliability.
+◆ By leveraging the kernel-based probabilistic nature of GPs, our approach introduces three key capabilities: (i) uncertainty quantification for motion predictions, (ii) motion estimation for unobserved or sparsely sampled regions, and (iii) temporal extrapolation beyond observed training frames.</td></tr>
+<tr><td>2026-04-03</td><td>Streaming Real-Time Rendered Scenes as 3D Gaussians</td><td>[2604.02851](http://arxiv.org/pdf/2604.02851)</td><td>◆ Cloud rendering is widely used in gaming and XR to overcome limited client-side GPU resources and to support heterogeneous devices.
+◆ Existing systems typically deliver the rendered scene as a 2D video stream, which tightly couples the transmitted content to the server-rendered viewpoint and limits latency compensation to image-space reprojection or warping.
+◆ In this paper, we investigate an alternative approach based on streaming a live 3D Gaussian Splatting (3DGS) scene representation instead of only rendered video.</td></tr>
+<tr><td>2026-04-03</td><td>NavCrafter: Exploring 3D Scenes from a Single Image</td><td>[2604.02828](http://arxiv.org/pdf/2604.02828)</td><td>◆ Creating flexible 3D scenes from a single image is vital when direct 3D data acquisition is costly or impractical.
+◆ We introduce NavCrafter, a novel framework that explores 3D scenes from a single image by synthesizing novel-view video sequences with camera controllability and temporal-spatial consistency.
+◆ NavCrafter leverages video diffusion models to capture rich 3D priors and adopts a geometry-aware expansion strategy to progressively extend scene coverage.</td></tr>
+<tr><td>2026-04-03</td><td>UNICA: A Unified Neural Framework for Controllable 3D Avatars</td><td>[2604.02799](http://arxiv.org/pdf/2604.02799)</td><td>◆ Controllable 3D human avatars have found widespread applications in 3D games, the metaverse, and AR/VR scenarios.
+◆ The conventional approach to creating such a 3D avatar requires a lengthy, intricate pipeline encompassing appearance modeling, motion planning, rigging, and physical simulation.
+◆ In this paper, we introduce UNICA (UNIfied neural Controllable Avatar), a skeleton-free generative model that unifies all avatar control components into a single neural framework.</td></tr>
+<tr><td>2026-04-03</td><td>DynFOA: Generating First-Order Ambisonics with Conditional Diffusion for Dynamic and Acoustically Complex 360-Degree Videos</td><td>[2604.02781](http://arxiv.org/pdf/2604.02781)</td><td>◆ Spatial audio is crucial for immersive 360-degree video experiences, yet most 360-degree videos lack it due to the difficulty of capturing spatial audio during recording.
+◆ Automatically generating spatial audio such as first-order ambisonics (FOA) from video therefore remains an important but challenging problem.
+◆ In complex scenes, sound perception depends not only on sound source locations but also on scene geometry, materials, and dynamic interactions with the environment.</td></tr>
+<tr><td>2026-04-03</td><td>Differentiable Stroke Planning with Dual Parameterization for Efficient and High-Fidelity Painting Creation</td><td>[2604.02752](http://arxiv.org/pdf/2604.02752)</td><td>◆ In stroke-based rendering, search methods often get trapped in local minima due to discrete stroke placement, while differentiable optimizers lack structural awareness and produce unstructured layouts.
+◆ To bridge this gap, we propose a dual representation that couples discrete polylines with continuous Bézier control points via a bidirectional mapping mechanism.
+◆ This enables collaborative optimization: local gradients refine global stroke structures, while content-aware stroke proposals help escape poor local optima.</td></tr>
 <tr><td>2026-04-02</td><td>GEMM-GS: Accelerating 3D Gaussian Splatting on Tensor Cores with GEMM-Compatible Blending</td><td>[2604.02120](http://arxiv.org/pdf/2604.02120)</td><td>◆ Neural Radiance Fields (NeRF) enables 3D scene reconstruction from several 2D images but incurs high rendering latency via its point-sampling design.
 ◆ 3D Gaussian Splatting (3DGS) improves on NeRF with explicit scene representation and an optimized pipeline yet still fails to meet practical real-time demands.
 ◆ Existing acceleration works overlook the evolving Tensor Cores of modern GPUs because 3DGS pipeline lacks General Matrix Multiplication (GEMM) operations.</td></tr>
@@ -3856,6 +3904,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-03</td><td>An Open-Source LiDAR and Monocular Off-Road Autonomous Navigation Stack</td><td>[2604.03096](http://arxiv.org/pdf/2604.03096)</td><td>◆ Off-road autonomous navigation demands reliable 3D perception for robust obstacle detection in challenging unstructured terrain.
+◆ While LiDAR is accurate, it is costly and power-intensive.
+◆ Monocular depth estimation using foundation models offers a lightweight alternative, but its integration into outdoor navigation stacks remains underexplored.</td></tr>
+<tr><td>2026-04-03</td><td>Cross-Vehicle 3D Geometric Consistency for Self-Supervised Surround Depth Estimation on Articulated Vehicles</td><td>[2604.02639](http://arxiv.org/pdf/2604.02639)</td><td>◆ Surround depth estimation provides a cost-effective alternative to LiDAR for 3D perception in autonomous driving.
+◆ While recent self-supervised methods explore multi-camera settings to improve scale awareness and scene coverage, they are primarily designed for passenger vehicles and rarely consider articulated vehicles or robotics platforms.
+◆ The articulated structure introduces complex cross-segment geometry and motion coupling, making consistent depth reasoning across views more challenging.</td></tr>
+<tr><td>2026-04-02</td><td>Environment-Aware Channel Prediction for Vehicular Communications: A Multimodal Visual Feature Fusion Framework</td><td>[2604.02396](http://arxiv.org/pdf/2604.02396)</td><td>◆ The deep integration of communication with intelligence and sensing, as a defining vision of 6G, renders environment-aware channel prediction a key enabling technology.
+◆ As a representative 6G application, vehicular communications require accurate and forward-looking channel prediction under stringent reliability, latency, and adaptability demands.
+◆ Traditional empirical and deterministic models remain limited in balancing accuracy, generalization, and deployability, while the growing availability of onboard and roadside sensing devices offers a promising source of environmental priors.</td></tr>
 <tr><td>2026-04-02</td><td>Test-Time Adaptation for Height Completion via Self-Supervised ViT Features and Monocular Foundation Models</td><td>[2604.02009](http://arxiv.org/pdf/2604.02009)</td><td>◆ Accurate digital surface models (DSMs) are essential for many geospatial applications, including urban monitoring, environmental analyses, infrastructure management, and change detection.
 ◆ However, large-scale DSMs frequently contain incomplete or outdated regions due to acquisition limitations, reconstruction artifacts, or changes in the built environment.
 ◆ Traditional height completion approaches primarily rely on spatial interpolation or which assume spatial continuity and therefore fail when objects are missing.</td></tr>
@@ -4677,4 +4734,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.05
+> 更新于: 2026.04.06
