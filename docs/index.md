@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.06)
+# SLAM领域最新论文 (2026.04.07)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-06</td><td>ZeD-MAP: Bundle Adjustment Guided Zero-Shot Depth Maps for Real-Time Aerial Imaging</td><td>[2604.04667](http://arxiv.org/pdf/2604.04667)</td><td>◆ Real-time depth reconstruction from ultra-high-resolution UAV imagery is essential for time-critical geospatial tasks such as disaster response, yet remains challenging due to wide-baseline parallax, large image sizes, low-texture or specular surfaces, occlusions, and strict computational constraints.
+◆ Recent zero-shot diffusion models offer fast per-image dense predictions without task-specific retraining, and require fewer labelled datasets than transformer-based predictors while avoiding the rigid capture geometry requirement of classical multi-view stereo.
+◆ However, their probabilistic inference prevents reliable metric accuracy and temporal consistency across sequential frames and overlapping tiles.</td></tr>
+<tr><td>2026-04-06</td><td>WaterSplat-SLAM: Photorealistic Monocular SLAM in Underwater Environment</td><td>[2604.04642](http://arxiv.org/pdf/2604.04642)</td><td>◆ Underwater monocular SLAM is a challenging problem with applications from autonomous underwater vehicles to marine archaeology.
+◆ However, existing underwater SLAM methods struggle to produce maps with high-fidelity rendering.
+◆ In this paper, we propose WaterSplat-SLAM, a novel monocular underwater SLAM system that achieves robust pose estimation and photorealistic dense mapping.</td></tr>
+<tr><td>2026-04-06</td><td>MPTF-Net: Multi-view Pyramid Transformer Fusion Network for LiDAR-based Place Recognition</td><td>[2604.04513](http://arxiv.org/pdf/2604.04513)</td><td>◆ LiDAR-based place recognition (LPR) is essential for global localization and loop-closure detection in large-scale SLAM systems.
+◆ Existing methods typically construct global descriptors from Range Images or BEV representations for matching.
+◆ BEV is widely adopted due to its explicit 2D spatial layout encoding and efficient retrieval.</td></tr>
+<tr><td>2026-04-04</td><td>CT-VoxelMap: Efficient Continuous-Time LiDAR-Inertial Odometry with Probabilistic Adaptive Voxel Mapping</td><td>[2604.03747](http://arxiv.org/pdf/2604.03747)</td><td>◆ Maintaining stable and accurate localization during fast motion or on rough terrain remains highly challenging for mobile robots with onboard resources.
+◆ Currently, multi-sensor fusion methods based on continuous-time representation offer a potential and effective solution to this challenge.
+◆ Among these, spline-based methods provide an efficient and intuitive approach for continuous-time representation.</td></tr>
 <tr><td>2026-04-03</td><td>An Open-Source LiDAR and Monocular Off-Road Autonomous Navigation Stack</td><td>[2604.03096](http://arxiv.org/pdf/2604.03096)</td><td>◆ Off-road autonomous navigation demands reliable 3D perception for robust obstacle detection in challenging unstructured terrain.
 ◆ While LiDAR is accurate, it is costly and power-intensive.
 ◆ Monocular depth estimation using foundation models offers a lightweight alternative, but its integration into outdoor navigation stacks remains underexplored.</td></tr>
@@ -818,6 +830,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-05</td><td>DINO-VO: Learning Where to Focus for Enhanced State Estimation</td><td>[2604.04055](http://arxiv.org/pdf/2604.04055)</td><td>◆ We present DINO Patch Visual Odometry (DINO-VO), an end-to-end monocular visual odometry system with strong scene generalization.
+◆ Current Visual Odometry (VO) systems often rely on heuristic feature extraction strategies, which can degrade accuracy and robustness, particularly in large-scale outdoor environments.
+◆ DINO-VO addresses these limitations by incorporating a differentiable adaptive patch selector into the end-to-end pipeline, improving the quality of extracted patches and enhancing generalization across diverse datasets.</td></tr>
+<tr><td>2026-04-03</td><td>ViBA: Implicit Bundle Adjustment with Geometric and Temporal Consistency for Robust Visual Matching</td><td>[2604.03377](http://arxiv.org/pdf/2604.03377)</td><td>◆ Most existing image keypoint detection and description methods rely on datasets with accurate pose and depth annotations, limiting scalability and generalization, and often degrading navigation and localization performance.
+◆ We propose ViBA, a sustainable learning framework that integrates geometric optimization with feature learning for continuous online training on unconstrained video streams.
+◆ Embedded in a standard visual odometry pipeline, it consists of an implicitly differentiable geometric residual framework: (i) an initial tracking network for inter-frame correspondences, (ii) depth-based outlier filtering, and (iii) differentiable global bundle adjustment that jointly refines camera poses and feature positions by minimizing reprojection errors.</td></tr>
 <tr><td>2026-04-02</td><td>HyVGGT-VO: Tightly Coupled Hybrid Dense Visual Odometry with Feed-Forward Models</td><td>[2604.02107](http://arxiv.org/pdf/2604.02107)</td><td>◆ Dense visual odometry (VO), which provides pose estimation and dense 3D reconstruction, serves as the cornerstone for applications ranging from robotics to augmented reality.
 ◆ Recently, feed-forward models have demonstrated remarkable capabilities in dense mapping.
 ◆ However, when these models are used in dense visual SLAM systems, their heavy computational burden restricts them to yielding sparse pose outputs at keyframes while still failing to achieve real-time pose estimation.</td></tr>
@@ -1103,6 +1121,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-06</td><td>MPTF-Net: Multi-view Pyramid Transformer Fusion Network for LiDAR-based Place Recognition</td><td>[2604.04513](http://arxiv.org/pdf/2604.04513)</td><td>◆ LiDAR-based place recognition (LPR) is essential for global localization and loop-closure detection in large-scale SLAM systems.
+◆ Existing methods typically construct global descriptors from Range Images or BEV representations for matching.
+◆ BEV is widely adopted due to its explicit 2D spatial layout encoding and efficient retrieval.</td></tr>
+<tr><td>2026-04-04</td><td>Moving Detector Quantum Walk with Random Relocation</td><td>[2604.03593](http://arxiv.org/pdf/2604.03593)</td><td>◆ We study a discrete-time quantum walk in presence of a detector at $x_D$ initially.
+◆ The detector here is repeatedly removed after a span of $t_R$, the removal time, and reinserted at random locations.
+◆ Two relocation rules are considered here: In Model~1, the detector is reinserted at any site beyond $x_D$, while in Model~2, reinsertion is done within a restricted window around the position of the detector at that time.</td></tr>
 <tr><td>2026-04-03</td><td>Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM</td><td>[2604.03092](http://arxiv.org/pdf/2604.03092)</td><td>◆ Monocular 3D Gaussian Splatting SLAM suffers from critical limitations in time efficiency, geometric accuracy, and multi-view consistency.
 ◆ These issues stem from the time-consuming $\textit{Train-from-Scratch}$ optimization and the lack of inter-frame scale consistency from single-frame geometry priors.
 ◆ We contend that a feed-forward paradigm, leveraging multi-frame context to predict Gaussian attributes directly, is crucial for addressing these challenges.</td></tr>
@@ -1788,6 +1812,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-06</td><td>LoMa: Local Feature Matching Revisited</td><td>[2604.04931](http://arxiv.org/pdf/2604.04931)</td><td>◆ Local feature matching has long been a fundamental component of 3D vision systems such as Structure-from-Motion (SfM), yet progress has lagged behind the rapid advances of modern data-driven approaches.
+◆ The newer approaches, such as feed-forward reconstruction models, have benefited extensively from scaling dataset sizes, whereas local feature matching models are still only trained on a few mid-sized datasets.
+◆ In this paper, we revisit local feature matching from a data-driven perspective.</td></tr>
+<tr><td>2026-04-03</td><td>ViBA: Implicit Bundle Adjustment with Geometric and Temporal Consistency for Robust Visual Matching</td><td>[2604.03377](http://arxiv.org/pdf/2604.03377)</td><td>◆ Most existing image keypoint detection and description methods rely on datasets with accurate pose and depth annotations, limiting scalability and generalization, and often degrading navigation and localization performance.
+◆ We propose ViBA, a sustainable learning framework that integrates geometric optimization with feature learning for continuous online training on unconstrained video streams.
+◆ Embedded in a standard visual odometry pipeline, it consists of an implicitly differentiable geometric residual framework: (i) an initial tracking network for inter-frame correspondences, (ii) depth-based outlier filtering, and (iii) differentiable global bundle adjustment that jointly refines camera poses and feature positions by minimizing reprojection errors.</td></tr>
 <tr><td>2026-03-30</td><td>AffordMatcher: Affordance Learning in 3D Scenes from Visual Signifiers</td><td>[2603.27970](http://arxiv.org/pdf/2603.27970)</td><td>◆ Affordance learning is a complex challenge in many applications, where existing approaches primarily focus on the geometric structures, visual knowledge, and affordance labels of objects to determine interactable regions.
 ◆ However, extending this learning capability to a scene is significantly more complicated, as incorporating object- and scene-level semantics is not straightforward.
 ◆ In this work, we introduce AffordBridge, a large-scale dataset with 291,637 functional interaction annotations across 685 high-resolution indoor scenes in the form of point clouds.</td></tr>
@@ -2122,6 +2152,33 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-06</td><td>AvatarPointillist: AutoRegressive 4D Gaussian Avatarization</td><td>[2604.04787](http://arxiv.org/pdf/2604.04787)</td><td>◆ We introduce AvatarPointillist, a novel framework for generating dynamic 4D Gaussian avatars from a single portrait image.
+◆ At the core of our method is a decoder-only Transformer that autoregressively generates a point cloud for 3D Gaussian Splatting.
+◆ This sequential approach allows for precise, adaptive construction, dynamically adjusting point density and the total number of points based on the subject&#x27;s complexity.</td></tr>
+<tr><td>2026-04-06</td><td>3D Gaussian Splatting for Annular Dark Field Scanning Transmission Electron Microscopy Tomography Reconstruction</td><td>[2604.04693](http://arxiv.org/pdf/2604.04693)</td><td>◆ Analytical Dark Field Scanning Transmission Electron Microscopy (ADF-STEM) tomography reconstructs nanoscale materials in 3D by integrating multi-view tilt-series images, enabling precise analysis of their structural and compositional features.
+◆ Although integrating more tilt views improves 3D reconstruction, it requires extended electron exposure that risks damaging dose-sensitive materials and introduces drift and misalignment, making it difficult to balance reconstruction fidelity with sample preservation.
+◆ In practice, sparse-view acquisition is frequently required, yet conventional ADF-STEM methods degrade under limited views, exhibiting artifacts and reduced structural fidelity.</td></tr>
+<tr><td>2026-04-06</td><td>PR-IQA: Partial-Reference Image Quality Assessment for Diffusion-Based Novel View Synthesis</td><td>[2604.04576](http://arxiv.org/pdf/2604.04576)</td><td>◆ Diffusion models are promising for sparse-view novel view synthesis (NVS), as they can generate pseudo-ground-truth views to aid 3D reconstruction pipelines like 3D Gaussian Splatting (3DGS).
+◆ However, these synthesized images often contain photometric and geometric inconsistencies, and their direct use for supervision can impair reconstruction.
+◆ To address this, we propose Partial-Reference Image Quality Assessment (PR-IQA), a framework that evaluates diffusion-generated views using reference images from different poses, eliminating the need for ground truth.</td></tr>
+<tr><td>2026-04-06</td><td>GA-GS: Generation-Assisted Gaussian Splatting for Static Scene Reconstruction</td><td>[2604.04331](http://arxiv.org/pdf/2604.04331)</td><td>◆ Reconstructing static 3D scene from monocular video with dynamic objects is important for numerous applications such as virtual reality and autonomous driving.
+◆ Current approaches typically rely on background for static scene reconstruction, limiting the ability to recover regions occluded by dynamic objects.
+◆ In this paper, we propose GA-GS, a Generation-Assisted Gaussian Splatting method for Static Scene Reconstruction.</td></tr>
+<tr><td>2026-04-05</td><td>4C4D: 4 Camera 4D Gaussian Splatting</td><td>[2604.04063](http://arxiv.org/pdf/2604.04063)</td><td>◆ This paper tackles the challenge of recovering 4D dynamic scenes from videos captured by as few as four portable cameras.
+◆ Learning to model scene dynamics for temporally consistent novel-view rendering is a foundational task in computer graphics, where previous works often require dense multi-view captures using camera arrays of dozens or even hundreds of views.
+◆ We propose \textbf{4C4D}, a novel framework that enables high-fidelity 4D Gaussian Splatting from video captures of extremely sparse cameras.</td></tr>
+<tr><td>2026-04-05</td><td>HOIGS: Human-Object Interaction Gaussian Splatting</td><td>[2604.04016](http://arxiv.org/pdf/2604.04016)</td><td>◆ Reconstructing dynamic scenes with complex human-object interactions is a fundamental challenge in computer vision and graphics.
+◆ Existing Gaussian Splatting methods either rely on human pose priors while neglecting dynamic objects, or approximate all motions within a single field, limiting their ability to capture interaction-rich dynamics.
+◆ To address this gap, we propose Human-Object Interaction Gaussian Splatting (HOIGS), which explicitly models interaction-induced deformation between humans and objects through a cross-attention-based HOI module.</td></tr>
+<tr><td>2026-04-04</td><td>M2StyleGS: Multi-Modality 3D Style Transfer with Gaussian Splatting</td><td>[2604.03773](http://arxiv.org/pdf/2604.03773)</td><td>◆ Conventional 3D style transfer methods rely on a fixed reference image to apply artistic patterns to 3D scenes.
+◆ However, in practical applications such as virtual or augmented reality, users often prefer more flexible inputs, including textual descriptions and diverse imagery.
+◆ In this work, we introduce a novel real-time styling technique M2StyleGS to generate a sequence of precisely color-mapped views.</td></tr>
+<tr><td>2026-04-04</td><td>CGHair: Compact Gaussian Hair Reconstruction with Card Clustering</td><td>[2604.03716](http://arxiv.org/pdf/2604.03716)</td><td>◆ We present a compact pipeline for high-fidelity hair reconstruction from multi-view images.
+◆ While recent 3D Gaussian Splatting (3DGS) methods achieve realistic results, they often require millions of primitives, leading to high storage and rendering costs.
+◆ Observing that hair exhibits structural and visual similarities across a hairstyle, we cluster strands into representative hair cards and group these into shared texture codebooks.</td></tr>
+<tr><td>2026-04-03</td><td>SpectralSplat: Appearance-Disentangled Feed-Forward Gaussian Splatting for Driving Scenes</td><td>[2604.03462](http://arxiv.org/pdf/2604.03462)</td><td>◆ Feed-forward 3D Gaussian Splatting methods have achieved impressive reconstruction quality for autonomous driving scenes, yet they entangle scene geometry with transient appearance properties such as lighting, weather, and time of day.
+◆ This coupling prevents relighting, appearance transfer, and consistent rendering across multi-traversal data captured under varying environmental conditions.
+◆ We present SpectralSplat, a method that disentangles appearance from geometry within a feed-forward Gaussian Splatting framework.</td></tr>
 <tr><td>2026-04-03</td><td>Flash-Mono: Feed-Forward Accelerated Gaussian Splatting Monocular SLAM</td><td>[2604.03092](http://arxiv.org/pdf/2604.03092)</td><td>◆ Monocular 3D Gaussian Splatting SLAM suffers from critical limitations in time efficiency, geometric accuracy, and multi-view consistency.
 ◆ These issues stem from the time-consuming $\textit{Train-from-Scratch}$ optimization and the lack of inter-frame scale consistency from single-frame geometry priors.
 ◆ We contend that a feed-forward paradigm, leveraging multi-frame context to predict Gaussian attributes directly, is crucial for addressing these challenges.</td></tr>
@@ -3904,6 +3961,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-06</td><td>Pickalo: Leveraging 6D Pose Estimation for Low-Cost Industrial Bin Picking</td><td>[2604.04690](http://arxiv.org/pdf/2604.04690)</td><td>◆ Bin picking in real industrial environments remains challenging due to severe clutter, occlusions, and the high cost of traditional 3D sensing setups.
+◆ We present Pickalo, a modular 6D pose-based bin-picking pipeline built entirely on low-cost hardware.
+◆ A wrist-mounted RGB-D camera actively explores the scene from multiple viewpoints, while raw stereo streams are processed with BridgeDepth to obtain refined depth maps suitable for accurate collision reasoning.</td></tr>
+<tr><td>2026-04-06</td><td>ZeD-MAP: Bundle Adjustment Guided Zero-Shot Depth Maps for Real-Time Aerial Imaging</td><td>[2604.04667](http://arxiv.org/pdf/2604.04667)</td><td>◆ Real-time depth reconstruction from ultra-high-resolution UAV imagery is essential for time-critical geospatial tasks such as disaster response, yet remains challenging due to wide-baseline parallax, large image sizes, low-texture or specular surfaces, occlusions, and strict computational constraints.
+◆ Recent zero-shot diffusion models offer fast per-image dense predictions without task-specific retraining, and require fewer labelled datasets than transformer-based predictors while avoiding the rigid capture geometry requirement of classical multi-view stereo.
+◆ However, their probabilistic inference prevents reliable metric accuracy and temporal consistency across sequential frames and overlapping tiles.</td></tr>
+<tr><td>2026-04-06</td><td>WaterSplat-SLAM: Photorealistic Monocular SLAM in Underwater Environment</td><td>[2604.04642](http://arxiv.org/pdf/2604.04642)</td><td>◆ Underwater monocular SLAM is a challenging problem with applications from autonomous underwater vehicles to marine archaeology.
+◆ However, existing underwater SLAM methods struggle to produce maps with high-fidelity rendering.
+◆ In this paper, we propose WaterSplat-SLAM, a novel monocular underwater SLAM system that achieves robust pose estimation and photorealistic dense mapping.</td></tr>
+<tr><td>2026-04-06</td><td>NAIMA: Semantics Aware RGB Guided Depth Super-Resolution</td><td>[2604.04407](http://arxiv.org/pdf/2604.04407)</td><td>◆ Guided depth super-resolution (GDSR) is a multi-modal approach for depth map super-resolution that relies on a low-resolution depth map and a high-resolution RGB image to restore finer structural details.
+◆ However, the misleading color and texture cues indicating depth discontinuities in RGB images often lead to artifacts and blurred depth boundaries in the generated depth map.
+◆ We propose a solution that introduces global contextual semantic priors, generated from pretrained vision transformer token embeddings.</td></tr>
+<tr><td>2026-04-03</td><td>Hierarchical Awareness Adapters with Hybrid Pyramid Feature Fusion for Dense Depth Prediction</td><td>[2604.03339](http://arxiv.org/pdf/2604.03339)</td><td>◆ Monocular depth estimation from a single RGB image remains a fundamental challenge in computer vision due to inherent scale ambiguity and the absence of explicit geometric cues.
+◆ Existing approaches typically rely on increasingly complex network architectures to regress depth maps, which escalates training costs and computational overhead without fully exploiting inter-pixel spatial dependencies.
+◆ We propose a multilevel perceptual conditional random field (CRF) model built upon the Swin Transformer backbone that addresses these limitations through three synergistic innovations: (1) an adaptive hybrid pyramid feature fusion (HPF) strategy that captures both short-range and long-range dependencies by combining multi-scale spatial pyramid pooling with biaxial feature aggregation, enabling effective integration of global and local contextual information; (2) a hierarchical awareness adapter (HA) that enriches cross-level feature interactions within the encoder through lightweight broadcast modules with learnable dimensional scaling, reducing computational complexity while enhancing representational capacity; and (3) a fully-connected CRF decoder with dynamic scaling attention that models fine-grained pixel-level spatial relationships, incorporating a bias learning unit to prevent extreme-value collapse and ensure stable training.</td></tr>
 <tr><td>2026-04-03</td><td>An Open-Source LiDAR and Monocular Off-Road Autonomous Navigation Stack</td><td>[2604.03096](http://arxiv.org/pdf/2604.03096)</td><td>◆ Off-road autonomous navigation demands reliable 3D perception for robust obstacle detection in challenging unstructured terrain.
 ◆ While LiDAR is accurate, it is costly and power-intensive.
 ◆ Monocular depth estimation using foundation models offers a lightweight alternative, but its integration into outdoor navigation stacks remains underexplored.</td></tr>
@@ -4734,4 +4806,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.06
+> 更新于: 2026.04.07
