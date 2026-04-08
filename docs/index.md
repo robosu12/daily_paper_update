@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.07)
+# SLAM领域最新论文 (2026.04.08)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-06</td><td>Synchronous Observer Design for Landmark-Inertial SLAM with Magnetometer and Intermittent GNSS Measurements</td><td>[2604.05156](http://arxiv.org/pdf/2604.05156)</td><td>◆ In Landmark-Inertial Simultaneous Localisation and Mapping (LI-SLAM), the positions of landmarks in the environment and the robot&#x27;s pose relative to these landmarks are estimated using landmark position measurements, and measurements from the Inertial Measurement Unit (IMU).
+◆ However, the robot and landmark positions in the inertial frame, and the yaw of the robot, are not observable in LI-SLAM.
+◆ This paper proposes a nonlinear observer for LI-SLAM that overcomes the observability constraints with the addition of intermittent GNSS position and magnetometer measurements.</td></tr>
 <tr><td>2026-04-06</td><td>ZeD-MAP: Bundle Adjustment Guided Zero-Shot Depth Maps for Real-Time Aerial Imaging</td><td>[2604.04667](http://arxiv.org/pdf/2604.04667)</td><td>◆ Real-time depth reconstruction from ultra-high-resolution UAV imagery is essential for time-critical geospatial tasks such as disaster response, yet remains challenging due to wide-baseline parallax, large image sizes, low-texture or specular surfaces, occlusions, and strict computational constraints.
 ◆ Recent zero-shot diffusion models offer fast per-image dense predictions without task-specific retraining, and require fewer labelled datasets than transformer-based predictors while avoiding the rigid capture geometry requirement of classical multi-view stereo.
 ◆ However, their probabilistic inference prevents reliable metric accuracy and temporal consistency across sequential frames and overlapping tiles.</td></tr>
@@ -1121,6 +1124,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-07</td><td>Machine-State Embeddings as an Operational Coordinate System for Accelerator Operation</td><td>[2604.05914](http://arxiv.org/pdf/2604.05914)</td><td>◆ We demonstrate that graph neural network (GNN) embeddings of injector configurations provide a practical operational coordinate system for the Continuous Electron Beam Accelerator Facility (CEBAF) injector at Jefferson Lab.
+◆ Using 137,389 snapshots spanning January 2022 through March 2023, we show that injector operation occupies a small number of persistent, well-separated neighborhoods in a 16-dimensional learned state space rather than a featureless continuum.
+◆ Density-based clustering identifies ten recurring operating regimes with strong operational run alignment, and regime persistence statistics confirm that these regimes are stable over timescales of hours to weeks.</td></tr>
+<tr><td>2026-04-07</td><td>Ultrasound-controlled stream splitting in a microfluidic coflow</td><td>[2604.05419](http://arxiv.org/pdf/2604.05419)</td><td>◆ Precise control of multiphase microfluidic flows underpins applications ranging from chemical processing to biomedical diagnostics.
+◆ We investigate the response of a liquid--liquid coflow in a rectangular microchannel to an externally applied standing acoustic field.
+◆ Acoustic excitation destabilizes an otherwise stable interface, giving rise to a sequence of reversible interfacial regimes: waviness, splitting, relocation, and stream-droplet breakup.</td></tr>
 <tr><td>2026-04-06</td><td>MPTF-Net: Multi-view Pyramid Transformer Fusion Network for LiDAR-based Place Recognition</td><td>[2604.04513](http://arxiv.org/pdf/2604.04513)</td><td>◆ LiDAR-based place recognition (LPR) is essential for global localization and loop-closure detection in large-scale SLAM systems.
 ◆ Existing methods typically construct global descriptors from Range Images or BEV representations for matching.
 ◆ BEV is widely adopted due to its explicit 2D spatial layout encoding and efficient retrieval.</td></tr>
@@ -2152,6 +2161,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-07</td><td>Appearance Decomposition Gaussian Splatting for Multi-Traversal Reconstruction</td><td>[2604.05908](http://arxiv.org/pdf/2604.05908)</td><td>◆ Multi-traversal scene reconstruction is important for high-fidelity autonomous driving simulation and digital twin construction.
+◆ This task involves integrating multiple sequences captured from the same geographical area at different times.
+◆ In this context, a primary challenge is the significant appearance inconsistency across traversals caused by varying illumination and environmental conditions, despite the shared underlying geometry.</td></tr>
+<tr><td>2026-04-07</td><td>GaussianGrow: Geometry-aware Gaussian Growing from 3D Point Clouds with Text Guidance</td><td>[2604.05721](http://arxiv.org/pdf/2604.05721)</td><td>◆ 3D Gaussian Splatting has demonstrated superior performance in rendering efficiency and quality, yet the generation of 3D Gaussians still remains a challenge without proper geometric priors.
+◆ Existing methods have explored predicting point maps as geometric references for inferring Gaussian primitives, while the unreliable estimated geometries may lead to poor generations.
+◆ In this work, we introduce GaussianGrow, a novel approach that generates 3D Gaussians by learning to grow them from easily accessible 3D point clouds, naturally enforcing geometric accuracy in Gaussian generation.</td></tr>
+<tr><td>2026-04-07</td><td>In Depth We Trust: Reliable Monocular Depth Supervision for Gaussian Splatting</td><td>[2604.05715](http://arxiv.org/pdf/2604.05715)</td><td>◆ Using accurate depth priors in 3D Gaussian Splatting helps mitigate artifacts caused by sparse training data and textureless surfaces.
+◆ However, acquiring accurate depth maps requires specialized acquisition systems.
+◆ Foundation monocular depth estimation models offer a cost-effective alternative, but they suffer from scale ambiguity, multi-view inconsistency, and local geometric inaccuracies, which can degrade rendering performance when applied naively.</td></tr>
+<tr><td>2026-04-07</td><td>3D Smoke Scene Reconstruction Guided by Vision Priors from Multimodal Large Language Models</td><td>[2604.05687](http://arxiv.org/pdf/2604.05687)</td><td>◆ Reconstructing 3D scenes from smoke-degraded multi-view images is particularly difficult because smoke introduces strong scattering effects, view-dependent appearance changes, and severe degradation of cross-view consistency.
+◆ To address these issues, we propose a framework that integrates visual priors with efficient 3D scene modeling.
+◆ We employ Nano-Banana-Pro to enhance smoke-degraded images and provide clearer visual observations for reconstruction and develop Smoke-GS, a medium-aware 3D Gaussian Splatting framework for smoke scene reconstruction and restoration-oriented novel view synthesis.</td></tr>
+<tr><td>2026-04-07</td><td>PanopticQuery: Unified Query-Time Reasoning for 4D Scenes</td><td>[2604.05638](http://arxiv.org/pdf/2604.05638)</td><td>◆ Understanding dynamic 4D environments through natural language queries requires not only accurate scene reconstruction but also robust semantic grounding across space, time, and viewpoints.
+◆ While recent methods using neural representations have advanced 4D reconstruction, they remain limited in contextual reasoning, especially for complex semantics such as interactions, temporal actions, and spatial relations.
+◆ A key challenge lies in transforming noisy, view-dependent predictions into globally consistent 4D interpretations.</td></tr>
+<tr><td>2026-04-07</td><td>LSGS-Loc: Towards Robust 3DGS-Based Visual Localization for Large-Scale UAV Scenarios</td><td>[2604.05402](http://arxiv.org/pdf/2604.05402)</td><td>◆ Visual localization in large-scale UAV scenarios is a critical capability for autonomous systems, yet it remains challenging due to geometric complexity and environmental variations.
+◆ While 3D Gaussian Splatting (3DGS) has emerged as a promising scene representation, existing 3DGS-based visual localization methods struggle with robust pose initialization and sensitivity to rendering artifacts in large-scale settings.
+◆ To address these limitations, we propose LSGS-Loc, a novel visual localization pipeline tailored for large-scale 3DGS scenes.</td></tr>
+<tr><td>2026-04-07</td><td>3DTurboQuant: Training-Free Near-Optimal Quantization for 3D Reconstruction Models</td><td>[2604.05366](http://arxiv.org/pdf/2604.05366)</td><td>◆ Every existing method for compressing 3D Gaussian Splatting, NeRF, or transformer-based 3D reconstructors requires learning a data-dependent codebook through per-scene fine-tuning.
+◆ We show this is unnecessary.
+◆ The parameter vectors that dominate storage in these models, 45-dimensional spherical harmonics in 3DGS and 1024-dimensional key-value vectors in DUSt3R, fall in a dimension range where a single random rotation transforms any input into coordinates with a known Beta distribution.</td></tr>
+<tr><td>2026-04-07</td><td>Indoor Asset Detection in Large Scale 360° Drone-Captured Imagery via 3D Gaussian Splatting</td><td>[2604.05316](http://arxiv.org/pdf/2604.05316)</td><td>◆ We present an approach for object-level detection and segmentation of target indoor assets in 3D Gaussian Splatting (3DGS) scenes, reconstructed from 360° drone-captured imagery.
+◆ We introduce a 3D object codebook that jointly leverages mask semantics and spatial information of their corresponding Gaussian primitives to guide multi-view mask association and indoor asset detection.
+◆ By integrating 2D object detection and segmentation models with semantically and spatially constrained merging procedures, our method aggregates masks from multiple views into coherent 3D object instances.</td></tr>
+<tr><td>2026-04-07</td><td>SmokeGS-R: Physics-Guided Pseudo-Clean 3DGS for Real-World Multi-View Smoke Restoration</td><td>[2604.05301](http://arxiv.org/pdf/2604.05301)</td><td>◆ Real-world smoke simultaneously attenuates scene radiance, adds airlight, and destabilizes multi-view appearance consistency, making robust 3D reconstruction particularly difficult.
+◆ We present \textbf{SmokeGS-R}, a practical pipeline developed for the NTIRE 2026 3D Restoration and Reconstruction Track 2 challenge.
+◆ The key idea is to decouple geometry recovery from appearance correction: we generate physics-guided pseudo-clean supervision with a refined dark channel prior and guided filtering, train a sharp clean-only 3D Gaussian Splatting source model, and then harmonize its renderings with a donor ensemble using geometric-mean reference aggregation, LAB-space Reinhard transfer, and light Gaussian smoothing.</td></tr>
+<tr><td>2026-04-06</td><td>GaussFly: Contrastive Reinforcement Learning for Visuomotor Policies in 3D Gaussian Fields</td><td>[2604.05062](http://arxiv.org/pdf/2604.05062)</td><td>◆ Learning visuomotor policies for Autonomous Aerial Vehicles (AAVs) relying solely on monocular vision is an attractive yet highly challenging paradigm.
+◆ Existing end-to-end learning approaches directly map high-dimensional RGB observations to action commands, which frequently suffer from low sample efficiency and severe sim-to-real gaps due to the visual discrepancy between simulation and physical domains.
+◆ To address these long-standing challenges, we propose GaussFly, a novel framework that explicitly decouples representation learning from policy optimization through a cohesive real-to-sim-to-real paradigm.</td></tr>
 <tr><td>2026-04-06</td><td>AvatarPointillist: AutoRegressive 4D Gaussian Avatarization</td><td>[2604.04787](http://arxiv.org/pdf/2604.04787)</td><td>◆ We introduce AvatarPointillist, a novel framework for generating dynamic 4D Gaussian avatars from a single portrait image.
 ◆ At the core of our method is a decoder-only Transformer that autoregressively generates a point cloud for 3D Gaussian Splatting.
 ◆ This sequential approach allows for precise, adaptive construction, dynamically adjusting point density and the total number of points based on the subject&#x27;s complexity.</td></tr>
@@ -3961,6 +4000,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-07</td><td>In Depth We Trust: Reliable Monocular Depth Supervision for Gaussian Splatting</td><td>[2604.05715](http://arxiv.org/pdf/2604.05715)</td><td>◆ Using accurate depth priors in 3D Gaussian Splatting helps mitigate artifacts caused by sparse training data and textureless surfaces.
+◆ However, acquiring accurate depth maps requires specialized acquisition systems.
+◆ Foundation monocular depth estimation models offer a cost-effective alternative, but they suffer from scale ambiguity, multi-view inconsistency, and local geometric inaccuracies, which can degrade rendering performance when applied naively.</td></tr>
 <tr><td>2026-04-06</td><td>Pickalo: Leveraging 6D Pose Estimation for Low-Cost Industrial Bin Picking</td><td>[2604.04690](http://arxiv.org/pdf/2604.04690)</td><td>◆ Bin picking in real industrial environments remains challenging due to severe clutter, occlusions, and the high cost of traditional 3D sensing setups.
 ◆ We present Pickalo, a modular 6D pose-based bin-picking pipeline built entirely on low-cost hardware.
 ◆ A wrist-mounted RGB-D camera actively explores the scene from multiple viewpoints, while raw stereo streams are processed with BridgeDepth to obtain refined depth maps suitable for accurate collision reasoning.</td></tr>
@@ -4806,4 +4848,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.07
+> 更新于: 2026.04.08
