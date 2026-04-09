@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.08)
+# SLAM领域最新论文 (2026.04.09)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-08</td><td>RoSHI: A Versatile Robot-oriented Suit for Human Data In-the-Wild</td><td>[2604.07331](http://arxiv.org/pdf/2604.07331)</td><td>◆ Scaling up robot learning will likely require human data containing rich and long-horizon interactions in the wild.
+◆ Existing approaches for collecting such data trade off portability, robustness to occlusion, and global consistency.
+◆ We introduce RoSHI, a hybrid wearable that fuses low-cost sparse IMUs with the Project Aria glasses to estimate the full 3D pose and body shape of the wearer in a metric global coordinate frame from egocentric perception.</td></tr>
+<tr><td>2026-04-08</td><td>An RTK-SLAM Dataset for Absolute Accuracy Evaluation in GNSS-Degraded Environments</td><td>[2604.07151](http://arxiv.org/pdf/2604.07151)</td><td>◆ RTK-SLAM systems integrate simultaneous localization and mapping (SLAM) with real-time kinematic (RTK) GNSS positioning, promising both relative consistency and globally referenced coordinates for efficient georeferenced surveying.
+◆ A critical and underappreciated issue is that the standard evaluation metric, Absolute Trajectory Error (ATE), first fits an optimal rigid-body transformation between the estimated trajectory and reference before computing errors.
+◆ This so-called SE(3) alignment absorbs global drift and systematic errors, making trajectories appear more accurate than they are in practice, and is unsuitable for evaluating the global accuracy of RTK-SLAM.</td></tr>
+<tr><td>2026-04-08</td><td>VGGT-SLAM++</td><td>[2604.06830](http://arxiv.org/pdf/2604.06830)</td><td>◆ We introduce VGGT-SLAM++, a complete visual SLAM system that leverages the geometry-rich outputs of the Visual Geometry Grounded Transformer (VGGT).
+◆ The system comprises a visual odometry (front-end) fusing the VGGT feed-forward transformer and a Sim(3) solution, a Digital Elevation Map (DEM)-based graph construction module, and a back-end that jointly enable accurate large-scale mapping with bounded memory.
+◆ While prior transformer-based SLAM pipelines such as VGGT-SLAM rely primarily on sparse loop closures or global Sim(3) manifold constraints - allowing short-horizon pose drift - VGGT-SLAM++ restores high-cadence local bundle adjustment (LBA) through a spatially corrective back-end.</td></tr>
+<tr><td>2026-04-08</td><td>Exploring 6D Object Pose Estimation with Deformation</td><td>[2604.06720](http://arxiv.org/pdf/2604.06720)</td><td>◆ We present DeSOPE, a large-scale dataset for 6DoF deformed objects.
+◆ Most 6D object pose methods assume rigid or articulated objects, an assumption that fails in practice as objects deviate from their canonical shapes due to wear, impact, or deformation.
+◆ To model this, we introduce the DeSOPE dataset, which features high-fidelity 3D scans of 26 common object categories, each captured in one canonical state and three deformed configurations, with accurate 3D registration to the canonical mesh.</td></tr>
+<tr><td>2026-04-08</td><td>The Theorems of Dr. David Blackwell and Their Contributions to Artificial Intelligence</td><td>[2604.06621](http://arxiv.org/pdf/2604.06621)</td><td>◆ Dr.
+◆ David Blackwell was a mathematician and statistician of the first rank, whose contributions to statistical theory, game theory, and decision theory predated many of the algorithmic breakthroughs that define modern artificial intelligence.
+◆ This survey examines three of his most consequential theoretical results the Rao Blackwell theorem, the Blackwell Approachability theorem, and the Blackwell Informativeness theorem (comparison of experiments) and traces their direct influence on contemporary AI and machine learning.</td></tr>
 <tr><td>2026-04-06</td><td>Synchronous Observer Design for Landmark-Inertial SLAM with Magnetometer and Intermittent GNSS Measurements</td><td>[2604.05156](http://arxiv.org/pdf/2604.05156)</td><td>◆ In Landmark-Inertial Simultaneous Localisation and Mapping (LI-SLAM), the positions of landmarks in the environment and the robot&#x27;s pose relative to these landmarks are estimated using landmark position measurements, and measurements from the Inertial Measurement Unit (IMU).
 ◆ However, the robot and landmark positions in the inertial frame, and the yaw of the robot, are not observable in LI-SLAM.
 ◆ This paper proposes a nonlinear observer for LI-SLAM that overcomes the observability constraints with the addition of intermittent GNSS position and magnetometer measurements.</td></tr>
@@ -833,6 +848,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-08</td><td>VGGT-SLAM++</td><td>[2604.06830](http://arxiv.org/pdf/2604.06830)</td><td>◆ We introduce VGGT-SLAM++, a complete visual SLAM system that leverages the geometry-rich outputs of the Visual Geometry Grounded Transformer (VGGT).
+◆ The system comprises a visual odometry (front-end) fusing the VGGT feed-forward transformer and a Sim(3) solution, a Digital Elevation Map (DEM)-based graph construction module, and a back-end that jointly enable accurate large-scale mapping with bounded memory.
+◆ While prior transformer-based SLAM pipelines such as VGGT-SLAM rely primarily on sparse loop closures or global Sim(3) manifold constraints - allowing short-horizon pose drift - VGGT-SLAM++ restores high-cadence local bundle adjustment (LBA) through a spatially corrective back-end.</td></tr>
 <tr><td>2026-04-05</td><td>DINO-VO: Learning Where to Focus for Enhanced State Estimation</td><td>[2604.04055](http://arxiv.org/pdf/2604.04055)</td><td>◆ We present DINO Patch Visual Odometry (DINO-VO), an end-to-end monocular visual odometry system with strong scene generalization.
 ◆ Current Visual Odometry (VO) systems often rely on heuristic feature extraction strategies, which can degrade accuracy and robustness, particularly in large-scale outdoor environments.
 ◆ DINO-VO addresses these limitations by incorporating a differentiable adaptive patch selector into the end-to-end pipeline, improving the quality of extracted patches and enhancing generalization across diverse datasets.</td></tr>
@@ -1124,6 +1142,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-08</td><td>VGGT-SLAM++</td><td>[2604.06830](http://arxiv.org/pdf/2604.06830)</td><td>◆ We introduce VGGT-SLAM++, a complete visual SLAM system that leverages the geometry-rich outputs of the Visual Geometry Grounded Transformer (VGGT).
+◆ The system comprises a visual odometry (front-end) fusing the VGGT feed-forward transformer and a Sim(3) solution, a Digital Elevation Map (DEM)-based graph construction module, and a back-end that jointly enable accurate large-scale mapping with bounded memory.
+◆ While prior transformer-based SLAM pipelines such as VGGT-SLAM rely primarily on sparse loop closures or global Sim(3) manifold constraints - allowing short-horizon pose drift - VGGT-SLAM++ restores high-cadence local bundle adjustment (LBA) through a spatially corrective back-end.</td></tr>
+<tr><td>2026-04-07</td><td>The End of Human Judgment in the Kill Chain? Relocating Initiative and Interpretation with Agentic AI</td><td>[2604.06300](http://arxiv.org/pdf/2604.06300)</td><td>◆ Large language model-based agents are increasingly being integrated into core battlefield functions, including intelligence analysis, data fusion, and battlefield management.
+◆ This paper argues that the very features that make such agents operationally attractive, namely their capacity for initiative, interpretation, their goal-directedness, and dynamic memory, are the same features that render context-appropriate human judgment and control substantively ineffectual in those parts of the kill chain where agents operate.
+◆ Drawing on specific use cases, the paper argues that by relocating initiative and interpretation, LLM-based agents displace human decision-making in ways that makes their use incompatible with the requirement of human judgment and control which is central to existing governance frameworks, like those proposed by the GGE-CCW and REAIM.</td></tr>
 <tr><td>2026-04-07</td><td>Machine-State Embeddings as an Operational Coordinate System for Accelerator Operation</td><td>[2604.05914](http://arxiv.org/pdf/2604.05914)</td><td>◆ We demonstrate that graph neural network (GNN) embeddings of injector configurations provide a practical operational coordinate system for the Continuous Electron Beam Accelerator Facility (CEBAF) injector at Jefferson Lab.
 ◆ Using 137,389 snapshots spanning January 2022 through March 2023, we show that injector operation occupies a small number of persistent, well-separated neighborhoods in a 16-dimensional learned state space rather than a featureless continuum.
 ◆ Density-based clustering identifies ten recurring operating regimes with strong operational run alignment, and regime persistence statistics confirm that these regimes are stable over timescales of hours to weeks.</td></tr>
@@ -1821,6 +1845,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-08</td><td>Improving Local Feature Matching by Entropy-inspired Scale Adaptability and Flow-endowed Local Consistency</td><td>[2604.06713](http://arxiv.org/pdf/2604.06713)</td><td>◆ Recent semi-dense image matching methods have achieved remarkable success, but two long-standing issues still impair their performance.
+◆ At the coarse stage, the over-exclusion issue of their mutual nearest neighbor (MNN) matching layer makes them struggle to handle cases with scale difference between images.
+◆ To this end, we comprehensively revisit the matching mechanism and make a key observation that the hint concealed in the score matrix can be exploited to indicate the scale ratio.</td></tr>
 <tr><td>2026-04-06</td><td>LoMa: Local Feature Matching Revisited</td><td>[2604.04931](http://arxiv.org/pdf/2604.04931)</td><td>◆ Local feature matching has long been a fundamental component of 3D vision systems such as Structure-from-Motion (SfM), yet progress has lagged behind the rapid advances of modern data-driven approaches.
 ◆ The newer approaches, such as feed-forward reconstruction models, have benefited extensively from scaling dataset sizes, whereas local feature matching models are still only trained on a few mid-sized datasets.
 ◆ In this paper, we revisit local feature matching from a data-driven perspective.</td></tr>
@@ -2161,6 +2188,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-08</td><td>From Blobs to Spokes: High-Fidelity Surface Reconstruction via Oriented Gaussians</td><td>[2604.07337](http://arxiv.org/pdf/2604.07337)</td><td>◆ 3D Gaussian Splatting (3DGS) has revolutionized fast novel view synthesis, yet its opacity-based formulation makes surface extraction fundamentally difficult.
+◆ Unlike implicit methods built on Signed Distance Fields or occupancy, 3DGS lacks a global geometric field, forcing existing approaches to resort to heuristics such as TSDF fusion of blended depth maps.
+◆ Inspired by the Objects as Volumes framework, we derive a principled occupancy field for Gaussian Splatting and show how it can be used to extract highly accurate watertight meshes of complex scenes.</td></tr>
+<tr><td>2026-04-08</td><td>Splats under Pressure: Exploring Performance-Energy Trade-offs in Real-Time 3D Gaussian Splatting under Constrained GPU Budgets</td><td>[2604.07177](http://arxiv.org/pdf/2604.07177)</td><td>◆ We investigate the feasibility of real-time 3D Gaussian Splatting (3DGS) rasterisation on edge clients with varying Gaussian splat counts and GPU computational budgets.
+◆ Instead of evaluating multiple physical devices, we adopt an emulation-based approach that approximates different GPU capability tiers on a single high-end GPU.
+◆ By systematically under-clocking the GPU core frequency and applying power caps, we emulate a controlled range of floating-point performance levels that approximate different GPU capability tiers.</td></tr>
+<tr><td>2026-04-08</td><td>Genie Sim PanoRecon: Fast Immersive Scene Generation from Single-View Panorama</td><td>[2604.07105](http://arxiv.org/pdf/2604.07105)</td><td>◆ We present Genie Sim PanoRecon, a feed-forward Gaussian-splatting pipeline that delivers high-fidelity, low-cost 3D scenes for robotic manipulation simulation.
+◆ The panorama input is decomposed into six non-overlapping cube-map faces, processed in parallel, and seamlessly reassembled.
+◆ To guarantee geometric consistency across views, we devise a depth-aware fusion strategy coupled with a training-free depth-injection module that steers the monocular feed-forward network to generate coherent 3D Gaussians.</td></tr>
+<tr><td>2026-04-08</td><td>Radio-Frequency Inverse Rendering for Wireless Environment Modeling</td><td>[2604.07086](http://arxiv.org/pdf/2604.07086)</td><td>◆ Neural rendering paradigms have recently emerged as powerful tools for radio frequency (RF).
+◆ However, by entangling RF sources with scene geometry and material properties, existing approaches limit downstream manipulation of scene geometry, wireless system configuration, and RF reasoning.
+◆ To address this, we propose a physically grounded RF inverse rendering (RFIR) framework that explicitly decouples RF emission, geometry, and material electromagnetic properties.</td></tr>
+<tr><td>2026-04-08</td><td>AnchorSplat: Feed-Forward 3D Gaussian SplattingWith 3D Geometric Priors</td><td>[2604.07053](http://arxiv.org/pdf/2604.07053)</td><td>◆ Recent feed-forward Gaussian reconstruction models adopt a pixel-aligned formulation that maps each 2D pixel to a 3D Gaussian, entangling Gaussian representations tightly with the input images.
+◆ In this paper, we propose AnchorSplat, a novel feed-forward 3DGS framework for scene-level reconstruction that represents the scene directly in 3D space.
+◆ AnchorSplat introduces an anchor-aligned Gaussian representation guided by 3D geometric priors (e.g., sparse point clouds, voxels, or RGB-D point clouds), enabling a more geometry-aware renderable 3D Gaussians that is independent of image resolution and number of views.</td></tr>
+<tr><td>2026-04-08</td><td>DOC-GS: Dual-Domain Observation and Calibration for Reliable Sparse-View Gaussian Splatting</td><td>[2604.06739](http://arxiv.org/pdf/2604.06739)</td><td>◆ Sparse-view reconstruction with 3D Gaussian Splatting (3DGS) is fundamentally ill-posed due to insufficient geometric supervision, often leading to severe overfitting and the emergence of structural distortions and translucent haze-like artifacts.
+◆ While existing approaches attempt to alleviate this issue via dropout-based regularization, they are largely heuristic and lack a unified understanding of artifact formation.
+◆ In this paper, we revisit sparse-view 3DGS reconstruction from a new perspective and identify the core challenge as the unobservability of Gaussian primitive reliability.</td></tr>
+<tr><td>2026-04-08</td><td>4D Vessel Reconstruction for Benchtop Thrombectomy Analysis</td><td>[2604.06671](http://arxiv.org/pdf/2604.06671)</td><td>◆ Introduction: Mechanical thrombectomy can cause vessel deformation and procedure-related injury.
+◆ Benchtop models are widely used for device testing, but time-resolved, full-field 3D vessel-motion measurements remain limited.
+◆ Methods: We developed a nine-camera, low-cost multi-view workflow for benchtop thrombectomy in silicone middle cerebral artery phantoms (2160p, 20 fps).</td></tr>
+<tr><td>2026-04-07</td><td>GS-Surrogate: Deformable Gaussian Splatting for Parameter Space Exploration of Ensemble Simulations</td><td>[2604.06358](http://arxiv.org/pdf/2604.06358)</td><td>◆ Exploring ensemble simulations is increasingly important across many scientific domains.
+◆ However, supporting flexible post-hoc exploration remains challenging due to the trade-off between storing the expensive raw data and flexibly adjusting visualization settings.
+◆ Existing visualization surrogate models have improved this workflow, but they either operate in image space without an explicit 3D representation or rely on neural radiance fields that are computationally expensive for interactive exploration and encode all parameter-driven variations within a single implicit field.</td></tr>
 <tr><td>2026-04-07</td><td>Appearance Decomposition Gaussian Splatting for Multi-Traversal Reconstruction</td><td>[2604.05908](http://arxiv.org/pdf/2604.05908)</td><td>◆ Multi-traversal scene reconstruction is important for high-fidelity autonomous driving simulation and digital twin construction.
 ◆ This task involves integrating multiple sequences captured from the same geographical area at different times.
 ◆ In this context, a primary challenge is the significant appearance inconsistency across traversals caused by varying illumination and environmental conditions, despite the shared underlying geometry.</td></tr>
@@ -4000,6 +4051,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-08</td><td>CADENCE: Context-Adaptive Depth Estimation for Navigation and Computational Efficiency</td><td>[2604.07286](http://arxiv.org/pdf/2604.07286)</td><td>◆ Autonomous vehicles deployed in remote environments typically rely on embedded processors, compact batteries, and lightweight sensors.
+◆ These hardware limitations conflict with the need to derive robust representations of the environment, which often requires executing computationally intensive deep neural networks for perception.
+◆ To address this challenge, we present CADENCE, an adaptive system that dynamically scales the computational complexity of a slimmable monocular depth estimation network in response to navigation needs and environmental context.</td></tr>
+<tr><td>2026-04-08</td><td>Mem3R: Streaming 3D Reconstruction with Hybrid Memory via Test-Time Training</td><td>[2604.07279](http://arxiv.org/pdf/2604.07279)</td><td>◆ Streaming 3D perception is well suited to robotics and augmented reality, where long visual streams must be processed efficiently and consistently.
+◆ Recent recurrent models offer a promising solution by maintaining fixed-size states and enabling linear-time inference, but they often suffer from drift accumulation and temporal forgetting over long sequences due to the limited capacity of compressed latent memories.
+◆ We propose Mem3R, a streaming 3D reconstruction model with a hybrid memory design that decouples camera tracking from geometric mapping to improve temporal consistency over long sequences.</td></tr>
+<tr><td>2026-04-08</td><td>VDPP: Video Depth Post-Processing for Speed and Scalability</td><td>[2604.06665](http://arxiv.org/pdf/2604.06665)</td><td>◆ Video depth estimation is essential for providing 3D scene structure in applications ranging from autonomous driving to mixed reality.
+◆ Current end-to-end video depth models have established state-of-the-art performance.
+◆ Although current end-to-end (E2E) models have achieved state-of-the-art performance, they function as tightly coupled systems that suffer from a significant adaptation lag whenever superior single-image depth estimators are released.</td></tr>
+<tr><td>2026-04-08</td><td>LiftFormer: Lifting and Frame Theory Based Monocular Depth Estimation Using Depth and Edge Oriented Subspace Representation</td><td>[2604.06576](http://arxiv.org/pdf/2604.06576)</td><td>◆ Monocular depth estimation (MDE) has attracted increasing interest in the past few years, owing to its important role in 3D vision.
+◆ MDE is the estimation of a depth map from a monocular image/video to represent the 3D structure of a scene, which is a highly ill-posed problem.
+◆ To solve this problem, in this paper, we propose a LiftFormer based on lifting theory topology, for constructing an intermediate subspace that bridges the image color features and depth values, and a subspace that enhances the depth prediction around edges.</td></tr>
 <tr><td>2026-04-07</td><td>In Depth We Trust: Reliable Monocular Depth Supervision for Gaussian Splatting</td><td>[2604.05715](http://arxiv.org/pdf/2604.05715)</td><td>◆ Using accurate depth priors in 3D Gaussian Splatting helps mitigate artifacts caused by sparse training data and textureless surfaces.
 ◆ However, acquiring accurate depth maps requires specialized acquisition systems.
 ◆ Foundation monocular depth estimation models offer a cost-effective alternative, but they suffer from scale ambiguity, multi-view inconsistency, and local geometric inaccuracies, which can degrade rendering performance when applied naively.</td></tr>
@@ -4848,4 +4911,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.08
+> 更新于: 2026.04.09
