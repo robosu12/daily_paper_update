@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.09)
+# SLAM领域最新论文 (2026.04.10)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-09</td><td>MotionScape: A Large-Scale Real-World Highly Dynamic UAV Video Dataset for World Models</td><td>[2604.07991](http://arxiv.org/pdf/2604.07991)</td><td>◆ Recent advances in world models have demonstrated strong capabilities in simulating physical reality, making them an increasingly important foundation for embodied intelligence.
+◆ For UAV agents in particular, accurate prediction of complex 3D dynamics is essential for autonomous navigation and robust decision-making in unconstrained environments.
+◆ However, under the highly dynamic camera trajectories typical of UAV views, existing world models often struggle to maintain spatiotemporal physical consistency.</td></tr>
 <tr><td>2026-04-08</td><td>RoSHI: A Versatile Robot-oriented Suit for Human Data In-the-Wild</td><td>[2604.07331](http://arxiv.org/pdf/2604.07331)</td><td>◆ Scaling up robot learning will likely require human data containing rich and long-horizon interactions in the wild.
 ◆ Existing approaches for collecting such data trade off portability, robustness to occlusion, and global consistency.
 ◆ We introduce RoSHI, a hybrid wearable that fuses low-cost sparse IMUs with the Project Aria glasses to estimate the full 3D pose and body shape of the wearer in a metric global coordinate frame from egocentric perception.</td></tr>
@@ -850,6 +853,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-09</td><td>TinyDEVO: Deep Event-based Visual Odometry on Ultra-low-power Multi-core Microcontrollers</td><td>[2604.08060](http://arxiv.org/pdf/2604.08060)</td><td>◆ A key task in embedded vision is visual odometry (VO), which estimates camera motion from visual sensors, and it is a core component in many embedded power-constrained systems, from autonomous robots to augmented and virtual reality wearable devices.
+◆ The newest class of VO systems combines deep learning models with bio-inspired event-based cameras, which are robust to motion blur and lighting conditions.
+◆ However, state-of-the-art (SoA) event-based VO algorithms require significant memory and computation.</td></tr>
+<tr><td>2026-04-09</td><td>MotionScape: A Large-Scale Real-World Highly Dynamic UAV Video Dataset for World Models</td><td>[2604.07991](http://arxiv.org/pdf/2604.07991)</td><td>◆ Recent advances in world models have demonstrated strong capabilities in simulating physical reality, making them an increasingly important foundation for embodied intelligence.
+◆ For UAV agents in particular, accurate prediction of complex 3D dynamics is essential for autonomous navigation and robust decision-making in unconstrained environments.
+◆ However, under the highly dynamic camera trajectories typical of UAV views, existing world models often struggle to maintain spatiotemporal physical consistency.</td></tr>
 <tr><td>2026-04-08</td><td>VGGT-SLAM++</td><td>[2604.06830](http://arxiv.org/pdf/2604.06830)</td><td>◆ We introduce VGGT-SLAM++, a complete visual SLAM system that leverages the geometry-rich outputs of the Visual Geometry Grounded Transformer (VGGT).
 ◆ The system comprises a visual odometry (front-end) fusing the VGGT feed-forward transformer and a Sim(3) solution, a Digital Elevation Map (DEM)-based graph construction module, and a back-end that jointly enable accurate large-scale mapping with bounded memory.
 ◆ While prior transformer-based SLAM pipelines such as VGGT-SLAM rely primarily on sparse loop closures or global Sim(3) manifold constraints - allowing short-horizon pose drift - VGGT-SLAM++ restores high-cadence local bundle adjustment (LBA) through a spatially corrective back-end.</td></tr>
@@ -1146,6 +1155,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-09</td><td>Robust Multi-Objective Optimization for Bicycle Rebalancing in Shared Mobility Systems</td><td>[2604.08296](http://arxiv.org/pdf/2604.08296)</td><td>◆ Dock-based bike-sharing systems exhibit spatial imbalances between bicycle supply and user demand, often addressed through overnight truck-based rebalancing.
+◆ This work studies static overnight rebalancing under demand uncertainty modeled as a tri-objective optimization problem.
+◆ The objectives minimize total travel distance, expected unmet demand, and a robustness-oriented unmet demand measure over high-demand scenarios.</td></tr>
+<tr><td>2026-04-09</td><td>From Core to Periphery? Assessing Remote Works Potential to Rebalance EU Regional Development</td><td>[2604.08252](http://arxiv.org/pdf/2604.08252)</td><td>◆ The rapid expansion of remote work following the last pandemic has renewed interest in whether spatial decoupling of residence from workplace can contribute to rebalancing regional development across the European Union.
+◆ This paper examines four interrelated dimensions of remote work-induced residential mobility using the R-MAP survey dataset, a large-scale cross-sectional survey of over 7,400 remote workers across Europe collected in 2024.
+◆ First, the spatial direction of post-2020 relocations is analysed, revealing that mobility occurs overwhelmingly within the same urbanisation tier, with urban-to-urban moves accounting for 67% of all relocations.</td></tr>
+<tr><td>2026-04-08</td><td>Fast Heterogeneous Serving: Scalable Mixed-Scale LLM Allocation for SLO-Constrained Inference</td><td>[2604.07472](http://arxiv.org/pdf/2604.07472)</td><td>◆ Deploying large language model (LLM) inference at scale requires jointly selecting base models, provisioning heterogeneous GPUs, configuring parallelism, and distributing workloads under tight latency, accuracy, and budget constraints.
+◆ Exact mixed-integer linear programming (MILP) approaches guarantee optimality but scale poorly.
+◆ We propose two constraint-aware heuristics: a Greedy Heuristic (GH) for single-pass allocation, and an Adaptive Greedy Heuristic (AGH) that enhances GH via multi-start construction, relocate-based local search, and GPU consolidation.</td></tr>
 <tr><td>2026-04-08</td><td>VGGT-SLAM++</td><td>[2604.06830](http://arxiv.org/pdf/2604.06830)</td><td>◆ We introduce VGGT-SLAM++, a complete visual SLAM system that leverages the geometry-rich outputs of the Visual Geometry Grounded Transformer (VGGT).
 ◆ The system comprises a visual odometry (front-end) fusing the VGGT feed-forward transformer and a Sim(3) solution, a Digital Elevation Map (DEM)-based graph construction module, and a back-end that jointly enable accurate large-scale mapping with bounded memory.
 ◆ While prior transformer-based SLAM pipelines such as VGGT-SLAM rely primarily on sparse loop closures or global Sim(3) manifold constraints - allowing short-horizon pose drift - VGGT-SLAM++ restores high-cadence local bundle adjustment (LBA) through a spatially corrective back-end.</td></tr>
@@ -1851,6 +1869,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-08</td><td>Mathematical Analysis of Image Matching Techniques</td><td>[2604.07574](http://arxiv.org/pdf/2604.07574)</td><td>◆ Image matching is a fundamental problem in Computer Vision with direct applications in robotics, remote sensing, and geospatial data analysis.
+◆ We present an analytical and experimental evaluation of classical local feature-based image matching algorithms on satellite imagery, focusing on the Scale-Invariant Feature Transform (SIFT) and the Oriented FAST and Rotated BRIEF (ORB).
+◆ Each method is evaluated through a common pipeline: keypoint detection, descriptor extraction, descriptor matching, and geometric verification via RANSAC with homography estimation.</td></tr>
 <tr><td>2026-04-08</td><td>Improving Local Feature Matching by Entropy-inspired Scale Adaptability and Flow-endowed Local Consistency</td><td>[2604.06713](http://arxiv.org/pdf/2604.06713)</td><td>◆ Recent semi-dense image matching methods have achieved remarkable success, but two long-standing issues still impair their performance.
 ◆ At the coarse stage, the over-exclusion issue of their mutual nearest neighbor (MNN) matching layer makes them struggle to handle cases with scale difference between images.
 ◆ To this end, we comprehensively revisit the matching mechanism and make a key observation that the hint concealed in the score matrix can be exploited to indicate the scale ratio.</td></tr>
@@ -2196,6 +2217,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-09</td><td>BLaDA: Bridging Language to Functional Dexterous Actions within 3DGS Fields</td><td>[2604.08410](http://arxiv.org/pdf/2604.08410)</td><td>◆ In unstructured environments, functional dexterous grasping calls for the tight integration of semantic understanding, precise 3D functional localization, and physically interpretable execution.
+◆ Modular hierarchical methods are more controllable and interpretable than end-to-end VLA approaches, but existing ones still rely on predefined affordance labels and lack the tight semantic--pose coupling needed for functional dexterous manipulation.
+◆ To address this, we propose BLaDA (Bridging Language to Dexterous Actions in 3DGS fields), an interpretable zero-shot framework that grounds open-vocabulary instructions as perceptual and control constraints for functional dexterous manipulation.</td></tr>
+<tr><td>2026-04-09</td><td>SurfelSplat: Learning Efficient and Generalizable Gaussian Surfel Representations for Sparse-View Surface Reconstruction</td><td>[2604.08370](http://arxiv.org/pdf/2604.08370)</td><td>◆ 3D Gaussian Splatting (3DGS) has demonstrated impressive performance in 3D scene reconstruction.
+◆ Beyond novel view synthesis, it shows great potential for multi-view surface reconstruction.
+◆ Existing methods employ optimization-based reconstruction pipelines that achieve precise and complete surface extractions.</td></tr>
+<tr><td>2026-04-09</td><td>Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting</td><td>[2604.07928](http://arxiv.org/pdf/2604.07928)</td><td>◆ While AI-based numerical weather prediction (NWP) enables rapid forecasting, generating high-resolution outputs remains computationally demanding due to limited multi-scale adaptability and inefficient data representations.
+◆ We propose the 3D Gaussian splatting-based scale-aware vision transformer (GSSA-ViT), a novel framework for arbitrary-resolution forecasting and flexible downscaling of high-dimensional atmospheric fields.
+◆ Specifically, latitude-longitude grid points are treated as centers of 3D Gaussians.</td></tr>
+<tr><td>2026-04-09</td><td>ReconPhys: Reconstruct Appearance and Physical Attributes from Single Video</td><td>[2604.07882](http://arxiv.org/pdf/2604.07882)</td><td>◆ Reconstructing non-rigid objects with physical plausibility remains a significant challenge.
+◆ Existing approaches leverage differentiable rendering for per-scene optimization, recovering geometry and dynamics but requiring expensive tuning or manual annotation, which limits practicality and generalizability.
+◆ To address this, we propose ReconPhys, the first feedforward framework that jointly learns physical attribute estimation and 3D Gaussian Splatting reconstruction from a single monocular video.</td></tr>
+<tr><td>2026-04-09</td><td>GEAR: GEometry-motion Alternating Refinement for Articulated Object Modeling with Gaussian Splatting</td><td>[2604.07728](http://arxiv.org/pdf/2604.07728)</td><td>◆ High-fidelity interactive digital assets are essential for embodied intelligence and robotic interaction, yet articulated objects remain challenging to reconstruct due to their complex structures and coupled geometry-motion relationships.
+◆ Existing methods suffer from instability in geometry-motion joint optimization, while their generalization remains limited on complex multi-joint or out-of-distribution objects.
+◆ To address these challenges, we propose GEAR, an EM-style alternating optimization framework that jointly models geometry and motion as interdependent components within a Gaussian Splatting representation.</td></tr>
 <tr><td>2026-04-08</td><td>From Blobs to Spokes: High-Fidelity Surface Reconstruction via Oriented Gaussians</td><td>[2604.07337](http://arxiv.org/pdf/2604.07337)</td><td>◆ 3D Gaussian Splatting (3DGS) has revolutionized fast novel view synthesis, yet its opacity-based formulation makes surface extraction fundamentally difficult.
 ◆ Unlike implicit methods built on Signed Distance Fields or occupancy, 3DGS lacks a global geometric field, forcing existing approaches to resort to heuristics such as TSDF fusion of blended depth maps.
 ◆ Inspired by the Objects as Volumes framework, we derive a principled occupancy field for Gaussian Splatting and show how it can be used to extract highly accurate watertight meshes of complex scenes.</td></tr>
@@ -2208,7 +2244,7 @@
 <tr><td>2026-04-08</td><td>Radio-Frequency Inverse Rendering for Wireless Environment Modeling</td><td>[2604.07086](http://arxiv.org/pdf/2604.07086)</td><td>◆ Neural rendering paradigms have recently emerged as powerful tools for radio frequency (RF).
 ◆ However, by entangling RF sources with scene geometry and material properties, existing approaches limit downstream manipulation of scene geometry, wireless system configuration, and RF reasoning.
 ◆ To address this, we propose a physically grounded RF inverse rendering (RFIR) framework that explicitly decouples RF emission, geometry, and material electromagnetic properties.</td></tr>
-<tr><td>2026-04-08</td><td>AnchorSplat: Feed-Forward 3D Gaussian SplattingWith 3D Geometric Priors</td><td>[2604.07053](http://arxiv.org/pdf/2604.07053)</td><td>◆ Recent feed-forward Gaussian reconstruction models adopt a pixel-aligned formulation that maps each 2D pixel to a 3D Gaussian, entangling Gaussian representations tightly with the input images.
+<tr><td>2026-04-09</td><td>AnchorSplat: Feed-Forward 3D Gaussian Splatting with 3D Geometric Priors</td><td>[2604.07053](http://arxiv.org/pdf/2604.07053)</td><td>◆ Recent feed-forward Gaussian reconstruction models adopt a pixel-aligned formulation that maps each 2D pixel to a 3D Gaussian, entangling Gaussian representations tightly with the input images.
 ◆ In this paper, we propose AnchorSplat, a novel feed-forward 3DGS framework for scene-level reconstruction that represents the scene directly in 3D space.
 ◆ AnchorSplat introduces an anchor-aligned Gaussian representation guided by 3D geometric priors (e.g., sparse point clouds, voxels, or RGB-D point clouds), enabling a more geometry-aware renderable 3D Gaussians that is independent of image resolution and number of views.</td></tr>
 <tr><td>2026-04-08</td><td>DOC-GS: Dual-Domain Observation and Calibration for Reliable Sparse-View Gaussian Splatting</td><td>[2604.06739](http://arxiv.org/pdf/2604.06739)</td><td>◆ Sparse-view reconstruction with 3D Gaussian Splatting (3DGS) is fundamentally ill-posed due to insufficient geometric supervision, often leading to severe overfitting and the emergence of structural distortions and translucent haze-like artifacts.
@@ -4061,6 +4097,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-09</td><td>Self-Improving 4D Perception via Self-Distillation</td><td>[2604.08532](http://arxiv.org/pdf/2604.08532)</td><td>◆ Large-scale multi-view reconstruction models have made remarkable progress, but most existing approaches still rely on fully supervised training with ground-truth 3D/4D annotations.
+◆ Such annotations are expensive and particularly scarce for dynamic scenes, limiting scalability.
+◆ We propose SelfEvo, a self-improving framework that continually improves pretrained multi-view reconstruction models using unlabeled videos.</td></tr>
+<tr><td>2026-04-09</td><td>Multimodal Latent Reasoning via Predictive Embeddings</td><td>[2604.08065](http://arxiv.org/pdf/2604.08065)</td><td>◆ Tool-augmented multimodal reasoning enables visual language models (VLMs) to improve perception by interacting with external tools (e.g., cropping, depth estimation).
+◆ However, such approaches incur substantial inference overhead, require specialized supervision, and are prone to erroneous tool calls.
+◆ We propose Pearl (Predictive Embedding Alignment for Reasoning in Latent space), a JEPA-inspired framework that learns from expert tool-use trajectories entirely in the latent space, eliminating the need for explicit tool invocation at inference time.</td></tr>
+<tr><td>2026-04-09</td><td>SceneScribe-1M: A Large-Scale Video Dataset with Comprehensive Geometric and Semantic Annotations</td><td>[2604.07990](http://arxiv.org/pdf/2604.07990)</td><td>◆ The convergence of 3D geometric perception and video synthesis has created an unprecedented demand for large-scale video data that is rich in both semantic and spatio-temporal information.
+◆ While existing datasets have advanced either 3D understanding or video generation, a significant gap remains in providing a unified resource that supports both domains at scale.
+◆ To bridge this chasm, we introduce SceneScribe-1M, a new large-scale, multi-modal video dataset.</td></tr>
+<tr><td>2026-04-09</td><td>Object-Centric Stereo Ranging for Autonomous Driving: From Dense Disparity to Census-Based Template Matching</td><td>[2604.07980](http://arxiv.org/pdf/2604.07980)</td><td>◆ Accurate depth estimation is critical for autonomous driving perception systems, particularly for long range vehicle detection on highways.
+◆ Traditional dense stereo matching methods such as Block Matching (BM) and Semi Global Matching (SGM) produce per pixel disparity maps but suffer from high computational cost, sensitivity to radiometric differences between stereo cameras, and poor accuracy at long range where disparity values are small.
+◆ In this report, we present a comprehensive stereo ranging system that integrates three complementary depth estimation approaches: dense BM/SGM disparity, object centric Census based template matching, and monocular geometric priors, within a unified detection ranging tracking pipeline.</td></tr>
+<tr><td>2026-04-09</td><td>Adaptive Depth-converted-Scale Convolution for Self-supervised Monocular Depth Estimation</td><td>[2604.07665](http://arxiv.org/pdf/2604.07665)</td><td>◆ Self-supervised monocular depth estimation (MDE) has received increasing interests in the last few years.
+◆ The objects in the scene, including the object size and relationship among different objects, are the main clues to extract the scene structure.
+◆ However, previous works lack the explicit handling of the changing sizes of the object due to the change of its depth.</td></tr>
+<tr><td>2026-04-09</td><td>Monocular Depth Estimation From the Perspective of Feature Restoration: A Diffusion Enhanced Depth Restoration Approach</td><td>[2604.07664](http://arxiv.org/pdf/2604.07664)</td><td>◆ Monocular Depth Estimation (MDE) is a fundamental computer vision task with important applications in 3D vision.
+◆ The current mainstream MDE methods employ an encoder-decoder architecture with multi-level/scale feature processing.
+◆ However, the limitations of the current architecture and the effects of different-level features on the prediction accuracy are not evaluated.</td></tr>
 <tr><td>2026-04-08</td><td>CADENCE: Context-Adaptive Depth Estimation for Navigation and Computational Efficiency</td><td>[2604.07286](http://arxiv.org/pdf/2604.07286)</td><td>◆ Autonomous vehicles deployed in remote environments typically rely on embedded processors, compact batteries, and lightweight sensors.
 ◆ These hardware limitations conflict with the need to derive robust representations of the environment, which often requires executing computationally intensive deep neural networks for perception.
 ◆ To address this challenge, we present CADENCE, an adaptive system that dynamically scales the computational complexity of a slimmable monocular depth estimation network in response to navigation needs and environmental context.</td></tr>
@@ -4923,4 +4977,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.09
+> 更新于: 2026.04.10
