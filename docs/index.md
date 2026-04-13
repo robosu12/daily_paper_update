@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.12)
+# SLAM领域最新论文 (2026.04.13)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-10</td><td>Incremental Semantics-Aided Meshing from LiDAR-Inertial Odometry and RGB Direct Label Transfer</td><td>[2604.09478](http://arxiv.org/pdf/2604.09478)</td><td>◆ Geometric high-fidelity mesh reconstruction from LiDAR-inertial scans remains challenging in large, complex indoor environments -- such as cultural buildings -- where point cloud sparsity, geometric drift, and fixed fusion parameters produce holes, over-smoothing, and spurious surfaces at structural boundaries.
+◆ We propose a modular, incremental RGB+LiDAR pipeline that generates incremental semantics-aided high-quality meshes from indoor scans through scan frame-based direct label transfer.
+◆ A vision foundation model labels each incoming RGB frame; labels are incrementally projected and fused onto a LiDAR-inertial odometry map; and an incremental semantics-aware Truncated Signed Distance Function (TSDF) fusion step produces the final mesh via marching cubes.</td></tr>
+<tr><td>2026-04-10</td><td>Characterizing Lidar Range-Measurement Ambiguity due to Multiple Returns</td><td>[2604.09282](http://arxiv.org/pdf/2604.09282)</td><td>◆ Reliable position and attitude sensing is critical for highly automated vehicles that operate on conventional roadways.
+◆ Lidar sensors are increasingly incorporated into pose-estimation systems.
+◆ Despite its great utility, lidar is a complex sensor, and its performance in roadway environments is not yet well understood.</td></tr>
+<tr><td>2026-04-09</td><td>Accelerating Transformer-Based Monocular SLAM via Geometric Utility Scoring</td><td>[2604.08718](http://arxiv.org/pdf/2604.08718)</td><td>◆ Geometric Foundation Models (GFMs) have recently advanced monocular SLAM by providing robust, calibration-free 3D priors.
+◆ However, deploying these models on dense video streams introduces significant computational redundancy.
+◆ Current GFM-based SLAM systems typically rely on post hoc keyframe selection.</td></tr>
 <tr><td>2026-04-09</td><td>MotionScape: A Large-Scale Real-World Highly Dynamic UAV Video Dataset for World Models</td><td>[2604.07991](http://arxiv.org/pdf/2604.07991)</td><td>◆ Recent advances in world models have demonstrated strong capabilities in simulating physical reality, making them an increasingly important foundation for embodied intelligence.
 ◆ For UAV agents in particular, accurate prediction of complex 3D dynamics is essential for autonomous navigation and robust decision-making in unconstrained environments.
 ◆ However, under the highly dynamic camera trajectories typical of UAV views, existing world models often struggle to maintain spatiotemporal physical consistency.</td></tr>
@@ -1151,6 +1160,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-10</td><td>Towards Lifelong Aerial Autonomy: Geometric Memory Management for Continual Visual Place Recognition in Dynamic Environments</td><td>[2604.09038](http://arxiv.org/pdf/2604.09038)</td><td>◆ Robust geo-localization in changing environmental conditions is critical for long-term aerial autonomy.
+◆ While visual place recognition (VPR) models perform well when airborne views match the training domain, adapting them to shifting distributions during sequential missions triggers catastrophic forgetting.
+◆ Existing continual learning (CL) methods often fail here because geographic features exhibit severe intra-class variations.</td></tr>
+<tr><td>2026-04-09</td><td>eBandit: Kernel-Driven Reinforcement Learning for Adaptive Video Streaming</td><td>[2604.08791](http://arxiv.org/pdf/2604.08791)</td><td>◆ User-space Adaptive Bitrate (ABR) algorithms cannot see the transport layer signals that matter most, such as minimum RTT and instantaneous delivery rate, and they respond to network changes only after damage has already propagated to the playout buffer.
+◆ We present eBandit, a framework that relocates both network monitoring and ABR algorithm selection into the Linux kernel using eBPF.
+◆ A lightweight epsilon-greedy Multi-Armed Bandit (MAB) runs inside a sockops program, evaluating three ABR heuristics against a reward derived from live TCP metrics.</td></tr>
+<tr><td>2026-04-09</td><td>Open Preparation, Human Explanation, and Instructor Synthesis: A Human-Scale Methodology for AI-Rich Higher Education</td><td>[2604.08778](http://arxiv.org/pdf/2604.08778)</td><td>◆ In AI-rich higher education, polished written mathematics has become easier to produce than trustworthy evidence of understanding.
+◆ This article develops a human-scale methodology for service mathematics, with informatics as its main running case.
+◆ Its central move is not prohibition of tools but relocation of evidential trust.</td></tr>
 <tr><td>2026-04-09</td><td>Robust Multi-Objective Optimization for Bicycle Rebalancing in Shared Mobility Systems</td><td>[2604.08296](http://arxiv.org/pdf/2604.08296)</td><td>◆ Dock-based bike-sharing systems exhibit spatial imbalances between bicycle supply and user demand, often addressed through overnight truck-based rebalancing.
 ◆ This work studies static overnight rebalancing under demand uncertainty modeled as a tri-objective optimization problem.
 ◆ The objectives minimize total travel distance, expected unmet demand, and a robustness-oriented unmet demand measure over high-demand scenarios.</td></tr>
@@ -1863,6 +1881,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-10</td><td>Multi-task Just Recognizable Difference for Video Coding for Machines: Database, Model, and Coding Application</td><td>[2604.09421](http://arxiv.org/pdf/2604.09421)</td><td>◆ Just Recognizable Difference (JRD) boosts coding efficiency for machine vision through visibility threshold modeling, but is currently limited to a single-task scenario.
+◆ To address this issue, we propose a Multi-Task JRD (MT-JRD) dataset and an Attribute-assisted MT-JRD (AMT-JRD) model for Video Coding for Machines (VCM), enhancing both prediction accuracy and coding efficiency.
+◆ First, we construct a dataset comprising 27,264 JRD annotations from machines, supporting three representative tasks including object detection, instance segmentation, and keypoint detection.</td></tr>
 <tr><td>2026-04-08</td><td>Mathematical Analysis of Image Matching Techniques</td><td>[2604.07574](http://arxiv.org/pdf/2604.07574)</td><td>◆ Image matching is a fundamental problem in Computer Vision with direct applications in robotics, remote sensing, and geospatial data analysis.
 ◆ We present an analytical and experimental evaluation of classical local feature-based image matching algorithms on satellite imagery, focusing on the Scale-Invariant Feature Transform (SIFT) and the Oriented FAST and Rotated BRIEF (ORB).
 ◆ Each method is evaluated through a common pipeline: keypoint detection, descriptor extraction, descriptor matching, and geometric verification via RANSAC with homography estimation.</td></tr>
@@ -2209,13 +2230,25 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-10</td><td>Structure-Aware Fine-Grained Gaussian Splatting for Expressive Avatar Reconstruction</td><td>[2604.09324](http://arxiv.org/pdf/2604.09324)</td><td>◆ Reconstructing photorealistic and topology-aware human avatars from monocular videos remains a significant challenge in the fields of computer vision and graphics.
+◆ While existing 3D human avatar modeling approaches can effectively capture body motion, they often fail to accurately model fine details such as hand movements and facial expressions.
+◆ To address this, we propose Structure-aware Fine-grained Gaussian Splatting (SFGS), a novel method for reconstructing expressive and coherent full-body 3D human avatars from a monocular video sequence.</td></tr>
+<tr><td>2026-04-10</td><td>Scene-Agnostic Object-Centric Representation Learning for 3D Gaussian Splatting</td><td>[2604.09045](http://arxiv.org/pdf/2604.09045)</td><td>◆ Recent works on 3D scene understanding leverage 2D masks from visual foundation models (VFMs) to supervise radiance fields, enabling instance-level 3D segmentation.
+◆ However, the supervision signals from foundation models are not fundamentally object-centric and often require additional mask pre/post-processing or specialized training and loss design to resolve mask identity conflicts across views.
+◆ The learned identity of the 3D scene is scene-dependent, limiting generalizability across scenes.</td></tr>
+<tr><td>2026-04-10</td><td>AudioGS: Spectrogram-Based Audio Gaussian Splatting for Sound Field Reconstruction</td><td>[2604.08967](http://arxiv.org/pdf/2604.08967)</td><td>◆ Spatial audio is fundamental to immersive virtual experiences, yet synthesizing high-fidelity binaural audio from sparse observations remains a significant challenge.
+◆ Existing methods typically rely on implicit neural representations conditioned on visual priors, which often struggle to capture fine-grained acoustic structures.
+◆ Inspired by 3D Gaussian Splatting (3DGS), we introduce AudioGS, a novel visual-free framework that explicitly encodes the sound field as a set of Audio Gaussians based on spectrograms.</td></tr>
+<tr><td>2026-04-09</td><td>SIC3D: Style Image Conditioned Text-to-3D Gaussian Splatting Generation</td><td>[2604.08760](http://arxiv.org/pdf/2604.08760)</td><td>◆ Recent progress in text-to-3D object generation enables the synthesis of detailed geometry from text input by leveraging 2D diffusion models and differentiable 3D representations.
+◆ However, the approaches often suffer from limited controllability and texture ambiguity due to the limitation of the text modality.
+◆ To address this, we present SIC3D, a controllable image-conditioned text-to-3D generation pipeline with 3D Gaussian Splatting (3DGS).</td></tr>
 <tr><td>2026-04-09</td><td>BLaDA: Bridging Language to Functional Dexterous Actions within 3DGS Fields</td><td>[2604.08410](http://arxiv.org/pdf/2604.08410)</td><td>◆ In unstructured environments, functional dexterous grasping calls for the tight integration of semantic understanding, precise 3D functional localization, and physically interpretable execution.
 ◆ Modular hierarchical methods are more controllable and interpretable than end-to-end VLA approaches, but existing ones still rely on predefined affordance labels and lack the tight semantic--pose coupling needed for functional dexterous manipulation.
 ◆ To address this, we propose BLaDA (Bridging Language to Dexterous Actions in 3DGS fields), an interpretable zero-shot framework that grounds open-vocabulary instructions as perceptual and control constraints for functional dexterous manipulation.</td></tr>
 <tr><td>2026-04-09</td><td>SurfelSplat: Learning Efficient and Generalizable Gaussian Surfel Representations for Sparse-View Surface Reconstruction</td><td>[2604.08370](http://arxiv.org/pdf/2604.08370)</td><td>◆ 3D Gaussian Splatting (3DGS) has demonstrated impressive performance in 3D scene reconstruction.
 ◆ Beyond novel view synthesis, it shows great potential for multi-view surface reconstruction.
 ◆ Existing methods employ optimization-based reconstruction pipelines that achieve precise and complete surface extractions.</td></tr>
-<tr><td>2026-04-09</td><td>Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting</td><td>[2604.07928](http://arxiv.org/pdf/2604.07928)</td><td>◆ While AI-based numerical weather prediction (NWP) enables rapid forecasting, generating high-resolution outputs remains computationally demanding due to limited multi-scale adaptability and inefficient data representations.
+<tr><td>2026-04-10</td><td>Generative 3D Gaussian Splatting for Arbitrary-ResolutionAtmospheric Downscaling and Forecasting</td><td>[2604.07928](http://arxiv.org/pdf/2604.07928)</td><td>◆ While AI-based numerical weather prediction (NWP) enables rapid forecasting, generating high-resolution outputs remains computationally demanding due to limited multi-scale adaptability and inefficient data representations.
 ◆ We propose the 3D Gaussian splatting-based scale-aware vision transformer (GSSA-ViT), a novel framework for arbitrary-resolution forecasting and flexible downscaling of high-dimensional atmospheric fields.
 ◆ Specifically, latitude-longitude grid points are treated as centers of 3D Gaussians.</td></tr>
 <tr><td>2026-04-09</td><td>ReconPhys: Reconstruct Appearance and Physical Attributes from Single Video</td><td>[2604.07882](http://arxiv.org/pdf/2604.07882)</td><td>◆ Reconstructing non-rigid objects with physical plausibility remains a significant challenge.
@@ -4087,6 +4120,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-10</td><td>LuMon: A Comprehensive Benchmark and Development Suite with Novel Datasets for Lunar Monocular Depth Estimation</td><td>[2604.09352](http://arxiv.org/pdf/2604.09352)</td><td>◆ Monocular Depth Estimation (MDE) is crucial for autonomous lunar rover navigation using electro-optical cameras.
+◆ However, deploying terrestrial MDE networks to the Moon brings a severe domain gap due to harsh shadows, textureless regolith, and zero atmospheric scattering.
+◆ Existing evaluations rely on analogs that fail to replicate these conditions and lack actual metric ground truth.</td></tr>
+<tr><td>2026-04-10</td><td>Geometry Reinforced Efficient Attention Tuning Equipped with Normals for Robust Stereo Matching</td><td>[2604.09142](http://arxiv.org/pdf/2604.09142)</td><td>◆ Despite remarkable advances in image-driven stereo matching over the past decade, Synthetic-to-Realistic Zero-Shot (Syn-to-Real) generalization remains an open challenge.
+◆ This suboptimal generalization performance mainly stems from cross-domain shifts and ill-posed ambiguities inherent in image textures, particularly in occluded, textureless, repetitive, and non-Lambertian (specular/transparent) regions.
+◆ To improve Syn-to-Real generalization, we propose GREATEN, a framework that incorporates surface normals as domain-invariant, object-intrinsic, and discriminative geometric cues to compensate for the limitations of image textures.</td></tr>
 <tr><td>2026-04-09</td><td>Self-Improving 4D Perception via Self-Distillation</td><td>[2604.08532](http://arxiv.org/pdf/2604.08532)</td><td>◆ Large-scale multi-view reconstruction models have made remarkable progress, but most existing approaches still rely on fully supervised training with ground-truth 3D/4D annotations.
 ◆ Such annotations are expensive and particularly scarce for dynamic scenes, limiting scalability.
 ◆ We propose SelfEvo, a self-improving framework that continually improves pretrained multi-view reconstruction models using unlabeled videos.</td></tr>
@@ -4965,4 +5004,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.12
+> 更新于: 2026.04.13
