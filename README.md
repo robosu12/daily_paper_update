@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.13)
+# SLAM领域最新论文 (2026.04.14)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,13 +22,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-13</td><td>MR.ScaleMaster: Scale-Consistent Collaborative Mapping from Crowd-Sourced Monocular Videos</td><td>[2604.11372](http://arxiv.org/pdf/2604.11372)</td><td>◆ Crowd-sourced cooperative mapping from monocular cameras promises scalable 3D reconstruction without specialized sensors, yet remains hindered by two scale-specific failure modes: abrupt scale collapse from false-positive loop closures in repetitive environments, and gradual scale drift over long trajectories and per-robot scale ambiguity that prevent direct multi-session fusion.
+◆ We present MR.ScaleMaster, a cooperative mapping system for crowd-sourced monocular videos that addresses both failure modes.
+◆ MR.ScaleMaster introduces three key mechanisms.</td></tr>
+<tr><td>2026-04-12</td><td>AWARE: Adaptive Whole-body Active Rotating Control for Enhanced LiDAR-Inertial Odometry under Human-in-the-Loop Interaction</td><td>[2604.10598](http://arxiv.org/pdf/2604.10598)</td><td>◆ Human-in-the-loop (HITL) UAV operation is essential in complex and safety-critical aerial surveying environments, where human operators provide navigation intent while onboard autonomy must maintain accurate and robust state estimation.
+◆ A key challenge in this setting is that resource-constrained UAV platforms are often limited to narrow-field-of-view LiDAR sensors.
+◆ In geometrically degenerate or feature-sparse scenes, limited sensing coverage often weakens LiDAR Inertial Odometry (LIO)&#x27;s observability, causing drift accumulation, degraded geometric accuracy, and unstable state estimation, which directly compromise safe and effective HITL operation and the reliability of downstream surveying products.</td></tr>
+<tr><td>2026-04-12</td><td>MonoEM-GS: Monocular Expectation-Maximization Gaussian Splatting SLAM</td><td>[2604.10593](http://arxiv.org/pdf/2604.10593)</td><td>◆ Feed-forward geometric foundation models can infer dense point clouds and camera motion directly from RGB streams, providing priors for monocular SLAM.
+◆ However, their predictions are often view-dependent and noisy: geometry can vary across viewpoints and under image transformations, and local metric properties may drift between frames.
+◆ We present MonoEM-GS, a monocular mapping pipeline that integrates such geometric predictions into a global Gaussian Splatting representation while explicitly addressing these inconsistencies.</td></tr>
 <tr><td>2026-04-10</td><td>Incremental Semantics-Aided Meshing from LiDAR-Inertial Odometry and RGB Direct Label Transfer</td><td>[2604.09478](http://arxiv.org/pdf/2604.09478)</td><td>◆ Geometric high-fidelity mesh reconstruction from LiDAR-inertial scans remains challenging in large, complex indoor environments -- such as cultural buildings -- where point cloud sparsity, geometric drift, and fixed fusion parameters produce holes, over-smoothing, and spurious surfaces at structural boundaries.
 ◆ We propose a modular, incremental RGB+LiDAR pipeline that generates incremental semantics-aided high-quality meshes from indoor scans through scan frame-based direct label transfer.
 ◆ A vision foundation model labels each incoming RGB frame; labels are incrementally projected and fused onto a LiDAR-inertial odometry map; and an incremental semantics-aware Truncated Signed Distance Function (TSDF) fusion step produces the final mesh via marching cubes.</td></tr>
 <tr><td>2026-04-10</td><td>Characterizing Lidar Range-Measurement Ambiguity due to Multiple Returns</td><td>[2604.09282](http://arxiv.org/pdf/2604.09282)</td><td>◆ Reliable position and attitude sensing is critical for highly automated vehicles that operate on conventional roadways.
 ◆ Lidar sensors are increasingly incorporated into pose-estimation systems.
 ◆ Despite its great utility, lidar is a complex sensor, and its performance in roadway environments is not yet well understood.</td></tr>
-<tr><td>2026-04-09</td><td>Accelerating Transformer-Based Monocular SLAM via Geometric Utility Scoring</td><td>[2604.08718](http://arxiv.org/pdf/2604.08718)</td><td>◆ Geometric Foundation Models (GFMs) have recently advanced monocular SLAM by providing robust, calibration-free 3D priors.
+<tr><td>2026-04-13</td><td>Accelerating Transformer-Based Monocular SLAM via Geometric Utility Scoring</td><td>[2604.08718](http://arxiv.org/pdf/2604.08718)</td><td>◆ Geometric Foundation Models (GFMs) have recently advanced monocular SLAM by providing robust, calibration-free 3D priors.
 ◆ However, deploying these models on dense video streams introduces significant computational redundancy.
 ◆ Current GFM-based SLAM systems typically rely on post hoc keyframe selection.</td></tr>
 <tr><td>2026-04-09</td><td>MotionScape: A Large-Scale Real-World Highly Dynamic UAV Video Dataset for World Models</td><td>[2604.07991](http://arxiv.org/pdf/2604.07991)</td><td>◆ Recent advances in world models have demonstrated strong capabilities in simulating physical reality, making them an increasingly important foundation for embodied intelligence.
@@ -1164,6 +1173,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-13</td><td>MR.ScaleMaster: Scale-Consistent Collaborative Mapping from Crowd-Sourced Monocular Videos</td><td>[2604.11372](http://arxiv.org/pdf/2604.11372)</td><td>◆ Crowd-sourced cooperative mapping from monocular cameras promises scalable 3D reconstruction without specialized sensors, yet remains hindered by two scale-specific failure modes: abrupt scale collapse from false-positive loop closures in repetitive environments, and gradual scale drift over long trajectories and per-robot scale ambiguity that prevent direct multi-session fusion.
+◆ We present MR.ScaleMaster, a cooperative mapping system for crowd-sourced monocular videos that addresses both failure modes.
+◆ MR.ScaleMaster introduces three key mechanisms.</td></tr>
+<tr><td>2026-04-13</td><td>LEADER: Learning Reliable Local-to-Global Correspondences for LiDAR Relocalization</td><td>[2604.11355](http://arxiv.org/pdf/2604.11355)</td><td>◆ LiDAR relocalization has attracted increasing attention as it can deliver accurate 6-DoF pose estimation in complex 3D environments.
+◆ Recent learning-based regression methods offer efficient solutions by directly predicting global poses without the need for explicit map storage.
+◆ However, these methods often struggle in challenging scenes due to their equal treatment of all predicted points, which is vulnerable to noise and outliers.</td></tr>
 <tr><td>2026-04-10</td><td>Towards Lifelong Aerial Autonomy: Geometric Memory Management for Continual Visual Place Recognition in Dynamic Environments</td><td>[2604.09038](http://arxiv.org/pdf/2604.09038)</td><td>◆ Robust geo-localization in changing environmental conditions is critical for long-term aerial autonomy.
 ◆ While visual place recognition (VPR) models perform well when airborne views match the training domain, adapting them to shifting distributions during sequential missions triggers catastrophic forgetting.
 ◆ Existing continual learning (CL) methods often fail here because geographic features exhibit severe intra-class variations.</td></tr>
@@ -1887,6 +1902,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-13</td><td>Who Handles Orientation? Investigating Invariance in Feature Matching</td><td>[2604.11809](http://arxiv.org/pdf/2604.11809)</td><td>◆ Finding matching keypoints between images is a core problem in 3D computer vision.
+◆ However, modern matchers struggle with large in-plane rotations.
+◆ A straightforward mitigation is to learn rotation invariance via data augmentation.</td></tr>
+<tr><td>2026-04-11</td><td>DeepShapeMatchingKit: Accelerated Functional Map Solver and Shape Matching Pipelines Revisited</td><td>[2604.10377](http://arxiv.org/pdf/2604.10377)</td><td>◆ Deep functional maps, leveraging learned feature extractors and spectral correspondence solvers, are fundamental to non-rigid 3D shape matching.
+◆ Based on an analysis of open-source implementations, we find that standard functional map implementations solve k independent linear systems serially, which is a computational bottleneck at higher spectral resolution.
+◆ We thus propose a vectorized reformulation that solves all systems in a single kernel call, achieving up to a 33x speedup while preserving the exact solution.</td></tr>
+<tr><td>2026-04-11</td><td>Are Pretrained Image Matchers Good Enough for SAR-Optical Satellite Registration?</td><td>[2604.10217](http://arxiv.org/pdf/2604.10217)</td><td>◆ Cross-modal optical-SAR (Synthetic Aperture Radar) registration is a bottleneck for disaster-response via remote sensing, yet modern image matchers are developed and benchmarked almost exclusively on natural-image domains.
+◆ We evaluate twenty-four pretrained matcher families--in a zero-shot setting with no fine-tuning or domain adaptation on satellite or SAR data--on SpaceNet9 and two additional cross-modal benchmarks under a deterministic protocol with tiled large-image inference, robust geometric filtering, and tie-point-grounded metrics.
+◆ Our results reveal asymmetric transfer--matchers with explicit cross-modal training do not uniformly outperform those without it.</td></tr>
 <tr><td>2026-04-10</td><td>Multi-task Just Recognizable Difference for Video Coding for Machines: Database, Model, and Coding Application</td><td>[2604.09421](http://arxiv.org/pdf/2604.09421)</td><td>◆ Just Recognizable Difference (JRD) boosts coding efficiency for machine vision through visibility threshold modeling, but is currently limited to a single-task scenario.
 ◆ To address this issue, we propose a Multi-Task JRD (MT-JRD) dataset and an Attribute-assisted MT-JRD (AMT-JRD) model for Video Coding for Machines (VCM), enhancing both prediction accuracy and coding efficiency.
 ◆ First, we construct a dataset comprising 27,264 JRD annotations from machines, supporting three representative tasks including object detection, instance segmentation, and keypoint detection.</td></tr>
@@ -2238,6 +2262,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-13</td><td>Unfolding 3D Gaussian Splatting via Iterative Gaussian Synopsis</td><td>[2604.11685](http://arxiv.org/pdf/2604.11685)</td><td>◆ 3D Gaussian Splatting (3DGS) has become a state-of-the-art framework for real-time, high-fidelity novel view synthesis.
+◆ However, its substantial storage requirements and inherently unstructured representation pose challenges for deployment in streaming and resource-constrained environments.
+◆ Existing Level-of-Detail (LOD) strategies, particularly those based on bottom-up construction, often introduce redundancy or lead to fidelity degradation.</td></tr>
+<tr><td>2026-04-13</td><td>GS4City: Hierarchical Semantic Gaussian Splatting via City-Model Priors</td><td>[2604.11401](http://arxiv.org/pdf/2604.11401)</td><td>◆ Recent semantic 3D Gaussian Splatting (3DGS) methods primarily rely on 2D foundation models, often yielding ambiguous boundaries and limited support for structured urban semantics.
+◆ While city models such as CityGML encode hierarchically organized semantics together with building geometry, these labels cannot be directly mapped to Gaussian primitives.
+◆ We present GS4City, a hierarchical semantic Gaussian Splatting method that incorporates city-model priors for urban scene understanding.</td></tr>
+<tr><td>2026-04-13</td><td>Naka-GS: A Bionics-inspired Dual-Branch Naka Correction and Progressive Point Pruning for Low-Light 3DGS</td><td>[2604.11142](http://arxiv.org/pdf/2604.11142)</td><td>◆ Low-light conditions severely hinder 3D restoration and reconstruction by degrading image visibility, introducing color distortions, and contaminating geometric priors for downstream optimization.
+◆ We present NAKA-GS, a bionics-inspired framework for low-light 3D Gaussian Splatting that jointly improves photometric restoration and geometric initialization.
+◆ Our method starts with a Naka-guided chroma-correction network, which combines physics-prior low-light enhancement, dual-branch input modeling, frequency-decoupled correction, and mask-guided optimization to suppress bright-region chromatic artifacts and edge-structure errors.</td></tr>
+<tr><td>2026-04-13</td><td>ViserDex: Visual Sim-to-Real for Robust Dexterous In-hand Reorientation</td><td>[2604.11138](http://arxiv.org/pdf/2604.11138)</td><td>◆ In-hand object reorientation requires precise estimation of the object pose to handle complex task dynamics.
+◆ While RGB sensing offers rich semantic cues for pose tracking, existing solutions rely on multi-camera setups or costly ray tracing.
+◆ We present a sim-to-real framework for monocular RGB in-hand reorientation that integrates 3D Gaussian Splatting (3DGS) to bridge the visual sim-to-real gap.</td></tr>
+<tr><td>2026-04-13</td><td>Efficient Transceiver Design for Aerial Image Transmission and Large-scale Scene Reconstruction</td><td>[2604.11098](http://arxiv.org/pdf/2604.11098)</td><td>◆ Large-scale three-dimensional (3D) scene reconstruction in low-altitude intelligent networks (LAIN) demands highly efficient wireless image transmission.
+◆ However, existing schemes struggle to balance severe pilot overhead with the transmission accuracy required to maintain reconstruction fidelity.
+◆ To strike a balance between efficiency and reliability, this paper proposes a novel deep learning-based end-to-end (E2E) transceiver design that integrates 3D Gaussian Splatting (3DGS) directly into the training process.</td></tr>
+<tr><td>2026-04-13</td><td>LumiMotion: Improving Gaussian Relighting with Scene Dynamics</td><td>[2604.10994](http://arxiv.org/pdf/2604.10994)</td><td>◆ In 3D reconstruction, the problem of inverse rendering, namely recovering the illumination of the scene and the material properties, is fundamental.
+◆ Existing Gaussian Splatting-based methods primarily target static scenes and often assume simplified or moderate lighting to avoid entangling shadows with surface appearance.
+◆ This limits their ability to accurately separate lighting effects from material properties, particularly in real-world conditions.</td></tr>
+<tr><td>2026-04-13</td><td>Ψ-Map: Panoptic Surface Integrated Mapping Enables Real2Sim Transfer</td><td>[2604.10982](http://arxiv.org/pdf/2604.10982)</td><td>◆ Open-vocabulary panoptic reconstruction is essential for advanced robotics perception and simulation.
+◆ However, existing methods based on 3D Gaussian Splatting (3DGS) often struggle to simultaneously achieve geometric accuracy, coherent panoptic understanding, and real-time inference frequency in large-scale scenes.
+◆ In this paper, we propose a comprehensive framework that integrates geometric reinforcement, end-to-end panoptic learning, and efficient rendering.</td></tr>
+<tr><td>2026-04-13</td><td>Fast-SegSim: Real-Time Open-Vocabulary Segmentation for Robotics in Simulation</td><td>[2604.10951](http://arxiv.org/pdf/2604.10951)</td><td>◆ Open-vocabulary panoptic reconstruction is crucial for advanced robotics and simulation.
+◆ However, existing 3D reconstruction methods, such as NeRF or Gaussian Splatting variants, often struggle to achieve the real-time inference frequency required by robotic control loops.
+◆ Existing methods incur prohibitive latency when processing the high-dimensional features required for robust open-vocabulary segmentation.</td></tr>
+<tr><td>2026-04-13</td><td>STGV: Spatio-Temporal Hash Encoding for Gaussian-based Video Representation</td><td>[2604.10910](http://arxiv.org/pdf/2604.10910)</td><td>◆ 2D Gaussian Splatting (2DGS) has recently become a promising paradigm for high-quality video representation.
+◆ However, existing methods employ content-agnostic or spatio-temporal feature overlapping embeddings to predict canonical Gaussian primitive deformations, which entangles static and dynamic components in videos and prevents modeling their distinct properties effectively.
+◆ These result in inaccurate predictions for spatio-temporal deformations and unsatisfactory representation quality.</td></tr>
+<tr><td>2026-04-12</td><td>WARPED: Wrist-Aligned Rendering for Robot Policy Learning from Egocentric Human Demonstrations</td><td>[2604.10809](http://arxiv.org/pdf/2604.10809)</td><td>◆ Recent advancements in learning from human demonstration have shown promising results in addressing the scalability and high cost of data collection required to train robust visuomotor policies.
+◆ However, existing approaches are often constrained by a reliance on multiview camera setups, depth sensors, or custom hardware and are typically limited to policy execution from third-person or egocentric cameras.
+◆ In this paper, we present WARPED, a framework designed to synthesize realistic wrist-view observations from human demonstration videos to facilitate the training of visuomotor policies using only monocular RGB data.</td></tr>
 <tr><td>2026-04-10</td><td>Structure-Aware Fine-Grained Gaussian Splatting for Expressive Avatar Reconstruction</td><td>[2604.09324](http://arxiv.org/pdf/2604.09324)</td><td>◆ Reconstructing photorealistic and topology-aware human avatars from monocular videos remains a significant challenge in the fields of computer vision and graphics.
 ◆ While existing 3D human avatar modeling approaches can effectively capture body motion, they often fail to accurately model fine details such as hand movements and facial expressions.
 ◆ To address this, we propose Structure-aware Fine-grained Gaussian Splatting (SFGS), a novel method for reconstructing expressive and coherent full-body 3D human avatars from a monocular video sequence.</td></tr>
@@ -4130,6 +4184,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-13</td><td>Dual-Control Frequency-Aware Diffusion Model for Depth-Dependent Optical Microrobot Microscopy Image Generation</td><td>[2604.11680](http://arxiv.org/pdf/2604.11680)</td><td>◆ Optical microrobots actuated by optical tweezers (OT) are important for cell manipulation and microscale assembly, but their autonomous operation depends on accurate 3D perception.
+◆ Developing such perception systems is challenging because large-scale, high-quality microscopy datasets are scarce, owing to complex fabrication processes and labor-intensive annotation.
+◆ Although generative AI offers a promising route for data augmentation, existing generative adversarial network (GAN)-based methods struggle to reproduce key optical characteristics, particularly depth-dependent diffraction and defocus effects.</td></tr>
+<tr><td>2026-04-13</td><td>GeomPrompt: Geometric Prompt Learning for RGB-D Semantic Segmentation Under Missing and Degraded Depth</td><td>[2604.11585](http://arxiv.org/pdf/2604.11585)</td><td>◆ Multimodal perception systems for robotics and embodied AI often assume reliable RGB-D sensing, but in practice, depth is frequently missing, noisy, or corrupted.
+◆ We thus present GeomPrompt, a lightweight cross-modal adaptation module that synthesizes a task-driven geometric prompt from RGB alone for the fourth channel of a frozen RGB-D semantic segmentation model, without depth supervision.
+◆ We further introduce GeomPrompt-Recovery, an adaptation module that compensates for degraded depth by predicting the fourth channel correction relevant for the frozen segmenter.</td></tr>
+<tr><td>2026-04-13</td><td>CDPR: Cross-modal Diffusion with Polarization for Reliable Monocular Depth Estimation</td><td>[2604.11097](http://arxiv.org/pdf/2604.11097)</td><td>◆ Monocular depth estimation is a fundamental yet challenging task in computer vision, especially under complex conditions such as textureless surfaces, transparency, and specular reflections.
+◆ Recent diffusion-based approaches have significantly advanced performance by reformulating depth prediction as a denoising process in the latent space.
+◆ However, existing methods rely solely on RGB inputs, which often lack sufficient cues in challenging regions.</td></tr>
+<tr><td>2026-04-11</td><td>SMFormer: Empowering Self-supervised Stereo Matching via Foundation Models and Data Augmentation</td><td>[2604.10218](http://arxiv.org/pdf/2604.10218)</td><td>◆ Recent self-supervised stereo matching methods have made significant progress.
+◆ They typically rely on the photometric consistency assumption, which presumes corresponding points across views share the same appearance.
+◆ However, this assumption could be compromised by real-world disturbances, resulting in invalid supervisory signals and a significant accuracy gap compared to supervised methods.</td></tr>
+<tr><td>2026-04-10</td><td>FF3R: Feedforward Feature 3D Reconstruction from Unconstrained views</td><td>[2604.09862](http://arxiv.org/pdf/2604.09862)</td><td>◆ Recent advances in vision foundation models have revolutionized geometry reconstruction and semantic understanding.
+◆ Yet, most of the existing approaches treat these capabilities in isolation, leading to redundant pipelines and compounded errors.
+◆ This paper introduces FF3R, a fully annotation-free feed-forward framework that unifies geometric and semantic reasoning from unconstrained multi-view image sequences.</td></tr>
 <tr><td>2026-04-10</td><td>LuMon: A Comprehensive Benchmark and Development Suite with Novel Datasets for Lunar Monocular Depth Estimation</td><td>[2604.09352](http://arxiv.org/pdf/2604.09352)</td><td>◆ Monocular Depth Estimation (MDE) is crucial for autonomous lunar rover navigation using electro-optical cameras.
 ◆ However, deploying terrestrial MDE networks to the Moon brings a severe domain gap due to harsh shadows, textureless regolith, and zero atmospheric scattering.
 ◆ Existing evaluations rely on analogs that fail to replicate these conditions and lack actual metric ground truth.</td></tr>
@@ -5016,4 +5085,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.13
+> 更新于: 2026.04.14
