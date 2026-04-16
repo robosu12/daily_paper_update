@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.15)
+# SLAM领域最新论文 (2026.04.16)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-15</td><td>Geometric Context Transformer for Streaming 3D Reconstruction</td><td>[2604.14141](http://arxiv.org/pdf/2604.14141)</td><td>◆ Streaming 3D reconstruction aims to recover 3D information, such as camera poses and point clouds, from a video stream, which necessitates geometric accuracy, temporal   consistency, and computational efficiency.
+◆ Motivated by the principles of Simultaneous Localization and Mapping (SLAM), we introduce LingBot-Map, a feed-forward 3D foundation   model for reconstructing scenes from streaming data, built upon a geometric context transformer (GCT) architecture.
+◆ A defining aspect of LingBot-Map lies in its carefully   designed attention mechanism, which integrates an anchor context, a pose-reference window, and a trajectory memory to address coordinate grounding, dense geometric cues, and   long-range drift correction, respectively.</td></tr>
+<tr><td>2026-04-15</td><td>UMI-3D: Extending Universal Manipulation Interface from Vision-Limited to 3D Spatial Perception</td><td>[2604.14089](http://arxiv.org/pdf/2604.14089)</td><td>◆ We present UMI-3D, a multimodal extension of the Universal Manipulation Interface (UMI) for robust and scalable data collection in embodied manipulation.
+◆ While UMI enables portable, wrist-mounted data acquisition, its reliance on monocular visual SLAM makes it vulnerable to occlusions, dynamic scenes, and tracking failures, limiting its applicability in real-world environments.
+◆ UMI-3D addresses these limitations by introducing a lightweight and low-cost LiDAR sensor tightly integrated into the wrist-mounted interface, enabling LiDAR-centric SLAM with accurate metric-scale pose estimation under challenging conditions.</td></tr>
+<tr><td>2026-04-15</td><td>Uplink Single-Snapshot Frugal SLAM in Phase-Coherent Distributed MIMO Systems</td><td>[2604.13807](http://arxiv.org/pdf/2604.13807)</td><td>◆ We consider uplink frugal simultaneous localization and mapping (SLAM) in phase-coherent distributed MIMO (D-MIMO) systems, where a network of spatially separated single-antenna access points (APs) coherently receives narrowband, single-snapshot pilot signals from a single-antenna user equipment (UE).
+◆ In contrast to existing phase-coherent localization and SLAM methods that rely on wideband measurements and/or multi-antenna APs, the proposed frugal setting operates with the minimum possible localization resources: a single subcarrier and a single snapshot at each single-antenna AP.
+◆ In this paper, we formulate phase-coherent frugal SLAM as a coherent imaging problem, constructing a spatial image over a region of interest by treating the distributed AP observations as coming from a large synthetic aperture.</td></tr>
+<tr><td>2026-04-15</td><td>RadarSplat-RIO: Indoor Radar-Inertial Odometry with Gaussian Splatting-Based Radar Bundle Adjustment</td><td>[2604.13492](http://arxiv.org/pdf/2604.13492)</td><td>◆ Radar is more resilient to adverse weather and lighting conditions than visual and Lidar simultaneous localization and mapping (SLAM).
+◆ However, most radar SLAM pipelines still rely heavily on frame-to-frame odometry, which leads to substantial drift.
+◆ While loop closure can correct long-term errors, it requires revisiting places and relies on robust place recognition.</td></tr>
 <tr><td>2026-04-14</td><td>RMGS-SLAM: Real-time Multi-sensor Gaussian Splatting SLAM</td><td>[2604.12942](http://arxiv.org/pdf/2604.12942)</td><td>◆ Real-time 3D Gaussian splatting (3DGS)-based Simultaneous Localization and Mapping (SLAM) in large-scale real-world environments remains challenging, as existing methods often struggle to jointly achieve low-latency pose estimation, 3D Gaussian reconstruction in step with incoming sensor streams, and long-term global consistency.
 ◆ In this paper, we present a tightly coupled LiDAR-Inertial-Visual (LIV) 3DGS-based SLAM framework for real-time pose estimation and photorealistic mapping in large-scale real-world scenes.
 ◆ The system executes state estimation and 3D Gaussian primitive initialization in parallel with global Gaussian optimization, thereby enabling continuous dense mapping.</td></tr>
@@ -31,7 +43,7 @@
 <tr><td>2026-04-13</td><td>ReefMapGS: Enabling Large-Scale Underwater Reconstruction by Closing the Loop Between Multimodal SLAM and Gaussian Splatting</td><td>[2604.11992](http://arxiv.org/pdf/2604.11992)</td><td>◆ 3D Gaussian Splatting is a powerful visual representation, providing high-quality and efficient 3D scene reconstruction, but it is crucially dependent on accurate camera poses typically obtained from computationally intensive processes like structure-from-motion that are unsuitable for field robot applications.
 ◆ However, in these domains, multimodal sensor data from acoustic, inertial, pressure, and visual sensors are available and suitable for pose-graph optimization-based SLAM methods that can estimate the vehicle&#x27;s trajectory and thus our needed camera poses while providing uncertainty.
 ◆ We propose a 3DGS-based incremental reconstruction framework, ReefMapGS, that builds an initial model from a high certainty region and progressively expands to incorporate the whole scene.</td></tr>
-<tr><td>2026-04-14</td><td>MR.ScaleMaster: Scale-Consistent Collaborative Mapping from Crowd-Sourced Monocular Videos</td><td>[2604.11372](http://arxiv.org/pdf/2604.11372)</td><td>◆ Crowd-sourced cooperative mapping from monocular cameras promises scalable 3D reconstruction without specialized sensors, yet remains hindered by two scale-specific failure modes: abrupt scale collapse from false-positive loop closures in repetitive environments, and gradual scale drift over long trajectories and per-robot scale ambiguity that prevent direct multi-session fusion.
+<tr><td>2026-04-15</td><td>MR.ScaleMaster: Scale-Consistent Collaborative Mapping from Crowd-Sourced Monocular Videos</td><td>[2604.11372](http://arxiv.org/pdf/2604.11372)</td><td>◆ Crowd-sourced cooperative mapping from monocular cameras promises scalable 3D reconstruction without specialized sensors, yet remains hindered by two scale-specific failure modes: abrupt scale collapse from false-positive loop closures in repetitive environments, and gradual scale drift over long trajectories and per-robot scale ambiguity that prevent direct multi-session fusion.
 ◆ We present MR.ScaleMaster, a cooperative mapping system for crowd-sourced monocular videos that addresses both failure modes.
 ◆ MR.ScaleMaster introduces three key mechanisms.</td></tr>
 <tr><td>2026-04-12</td><td>AWARE: Adaptive Whole-body Active Rotating Control for Enhanced LiDAR-Inertial Odometry under Human-in-the-Loop Interaction</td><td>[2604.10598](http://arxiv.org/pdf/2604.10598)</td><td>◆ Human-in-the-loop (HITL) UAV operation is essential in complex and safety-critical aerial surveying environments, where human operators provide navigation intent while onboard autonomy must maintain accurate and robust state estimation.
@@ -878,6 +890,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-15</td><td>UMI-3D: Extending Universal Manipulation Interface from Vision-Limited to 3D Spatial Perception</td><td>[2604.14089](http://arxiv.org/pdf/2604.14089)</td><td>◆ We present UMI-3D, a multimodal extension of the Universal Manipulation Interface (UMI) for robust and scalable data collection in embodied manipulation.
+◆ While UMI enables portable, wrist-mounted data acquisition, its reliance on monocular visual SLAM makes it vulnerable to occlusions, dynamic scenes, and tracking failures, limiting its applicability in real-world environments.
+◆ UMI-3D addresses these limitations by introducing a lightweight and low-cost LiDAR sensor tightly integrated into the wrist-mounted interface, enabling LiDAR-centric SLAM with accurate metric-scale pose estimation under challenging conditions.</td></tr>
+<tr><td>2026-04-15</td><td>RadarSplat-RIO: Indoor Radar-Inertial Odometry with Gaussian Splatting-Based Radar Bundle Adjustment</td><td>[2604.13492](http://arxiv.org/pdf/2604.13492)</td><td>◆ Radar is more resilient to adverse weather and lighting conditions than visual and Lidar simultaneous localization and mapping (SLAM).
+◆ However, most radar SLAM pipelines still rely heavily on frame-to-frame odometry, which leads to substantial drift.
+◆ While loop closure can correct long-term errors, it requires revisiting places and relies on robust place recognition.</td></tr>
 <tr><td>2026-04-14</td><td>GGD-SLAM: Monocular 3DGS SLAM Powered by Generalizable Motion Model for Dynamic Environments</td><td>[2604.12837](http://arxiv.org/pdf/2604.12837)</td><td>◆ Visual SLAM algorithms achieve significant improvements through the exploration of 3D Gaussian Splatting (3DGS) representations, particularly in generating high-fidelity dense maps.
 ◆ However, they depend on a static environment assumption and experience significant performance degradation in dynamic environments.
 ◆ This paper presents GGD-SLAM, a framework that employs a generalizable motion model to address the challenges of localization and dense mapping in dynamic environments - without predefined semantic annotations or depth input.</td></tr>
@@ -1181,10 +1199,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-15</td><td>RadarSplat-RIO: Indoor Radar-Inertial Odometry with Gaussian Splatting-Based Radar Bundle Adjustment</td><td>[2604.13492](http://arxiv.org/pdf/2604.13492)</td><td>◆ Radar is more resilient to adverse weather and lighting conditions than visual and Lidar simultaneous localization and mapping (SLAM).
+◆ However, most radar SLAM pipelines still rely heavily on frame-to-frame odometry, which leads to substantial drift.
+◆ While loop closure can correct long-term errors, it requires revisiting places and relies on robust place recognition.</td></tr>
 <tr><td>2026-04-14</td><td>RMGS-SLAM: Real-time Multi-sensor Gaussian Splatting SLAM</td><td>[2604.12942](http://arxiv.org/pdf/2604.12942)</td><td>◆ Real-time 3D Gaussian splatting (3DGS)-based Simultaneous Localization and Mapping (SLAM) in large-scale real-world environments remains challenging, as existing methods often struggle to jointly achieve low-latency pose estimation, 3D Gaussian reconstruction in step with incoming sensor streams, and long-term global consistency.
 ◆ In this paper, we present a tightly coupled LiDAR-Inertial-Visual (LIV) 3DGS-based SLAM framework for real-time pose estimation and photorealistic mapping in large-scale real-world scenes.
 ◆ The system executes state estimation and 3D Gaussian primitive initialization in parallel with global Gaussian optimization, thereby enabling continuous dense mapping.</td></tr>
-<tr><td>2026-04-14</td><td>MR.ScaleMaster: Scale-Consistent Collaborative Mapping from Crowd-Sourced Monocular Videos</td><td>[2604.11372](http://arxiv.org/pdf/2604.11372)</td><td>◆ Crowd-sourced cooperative mapping from monocular cameras promises scalable 3D reconstruction without specialized sensors, yet remains hindered by two scale-specific failure modes: abrupt scale collapse from false-positive loop closures in repetitive environments, and gradual scale drift over long trajectories and per-robot scale ambiguity that prevent direct multi-session fusion.
+<tr><td>2026-04-15</td><td>MR.ScaleMaster: Scale-Consistent Collaborative Mapping from Crowd-Sourced Monocular Videos</td><td>[2604.11372](http://arxiv.org/pdf/2604.11372)</td><td>◆ Crowd-sourced cooperative mapping from monocular cameras promises scalable 3D reconstruction without specialized sensors, yet remains hindered by two scale-specific failure modes: abrupt scale collapse from false-positive loop closures in repetitive environments, and gradual scale drift over long trajectories and per-robot scale ambiguity that prevent direct multi-session fusion.
 ◆ We present MR.ScaleMaster, a cooperative mapping system for crowd-sourced monocular videos that addresses both failure modes.
 ◆ MR.ScaleMaster introduces three key mechanisms.</td></tr>
 <tr><td>2026-04-13</td><td>LEADER: Learning Reliable Local-to-Global Correspondences for LiDAR Relocalization</td><td>[2604.11355](http://arxiv.org/pdf/2604.11355)</td><td>◆ LiDAR relocalization has attracted increasing attention as it can deliver accurate 6-DoF pose estimation in complex 3D environments.
@@ -1193,7 +1214,7 @@
 <tr><td>2026-04-10</td><td>Towards Lifelong Aerial Autonomy: Geometric Memory Management for Continual Visual Place Recognition in Dynamic Environments</td><td>[2604.09038](http://arxiv.org/pdf/2604.09038)</td><td>◆ Robust geo-localization in changing environmental conditions is critical for long-term aerial autonomy.
 ◆ While visual place recognition (VPR) models perform well when airborne views match the training domain, adapting them to shifting distributions during sequential missions triggers catastrophic forgetting.
 ◆ Existing continual learning (CL) methods often fail here because geographic features exhibit severe intra-class variations.</td></tr>
-<tr><td>2026-04-09</td><td>eBandit: Kernel-Driven Reinforcement Learning for Adaptive Video Streaming</td><td>[2604.08791](http://arxiv.org/pdf/2604.08791)</td><td>◆ User-space Adaptive Bitrate (ABR) algorithms cannot see the transport layer signals that matter most, such as minimum RTT and instantaneous delivery rate, and they respond to network changes only after damage has already propagated to the playout buffer.
+<tr><td>2026-04-14</td><td>eBandit: Kernel-Driven Reinforcement Learning for Adaptive Video Streaming</td><td>[2604.08791](http://arxiv.org/pdf/2604.08791)</td><td>◆ User-space Adaptive Bitrate (ABR) algorithms cannot see the transport layer signals that matter most, such as minimum RTT and instantaneous delivery rate, and they respond to network changes only after damage has already propagated to the playout buffer.
 ◆ We present eBandit, a framework that relocates both network monitoring and ABR algorithm selection into the Linux kernel using eBPF.
 ◆ A lightweight epsilon-greedy Multi-Armed Bandit (MAB) runs inside a sockops program, evaluating three ABR heuristics against a reward derived from live TCP metrics.</td></tr>
 <tr><td>2026-04-09</td><td>Open Preparation, Human Explanation, and Instructor Synthesis: A Human-Scale Methodology for AI-Rich Higher Education</td><td>[2604.08778](http://arxiv.org/pdf/2604.08778)</td><td>◆ In AI-rich higher education, polished written mathematics has become easier to produce than trustworthy evidence of understanding.
@@ -1911,6 +1932,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-15</td><td>SceneGlue: Scene-Aware Transformer for Feature Matching without Scene-Level Annotation</td><td>[2604.13941](http://arxiv.org/pdf/2604.13941)</td><td>◆ Local feature matching plays a critical role in understanding the correspondence between cross-view images.
+◆ However, traditional methods are constrained by the inherent local nature of feature descriptors, limiting their ability to capture non-local scene information that is essential for accurate cross-view correspondence.
+◆ In this paper, we introduce SceneGlue, a scene-aware feature matching framework designed to overcome these limitations.</td></tr>
+<tr><td>2026-04-14</td><td>Utilizing Inpainting for Keypoint Detection for Vision-Based Control of Robotic Manipulators</td><td>[2604.13309](http://arxiv.org/pdf/2604.13309)</td><td>◆ In this paper we present a novel visual servoing framework to control a robotic manipulator in the configuration space by using purely natural visual features.
+◆ Our goal is to develop methods that can robustly detect and track natural features or keypoints on robotic manipulators that would be used for vision-based control, especially for scenarios where placing external markers on the robot is not feasible or preferred at runtime.
+◆ For the model training process of our data driven approach, we create a data collection pipeline where we attach ArUco markers along the robot&#x27;s body, label their centers as keypoints, and then utilize an inpainting method to remove the markers and reconstruct the occluded regions.</td></tr>
 <tr><td>2026-04-13</td><td>Who Handles Orientation? Investigating Invariance in Feature Matching</td><td>[2604.11809](http://arxiv.org/pdf/2604.11809)</td><td>◆ Finding matching keypoints between images is a core problem in 3D computer vision.
 ◆ However, modern matchers struggle with large in-plane rotations.
 ◆ A straightforward mitigation is to learn rotation invariance via data augmentation.</td></tr>
@@ -2269,6 +2296,27 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-15</td><td>ClipGStream: Clip-Stream Gaussian Splatting for Any Length and Any Motion Multi-View Dynamic Scene Reconstruction</td><td>[2604.13746](http://arxiv.org/pdf/2604.13746)</td><td>◆ Dynamic 3D scene reconstruction is essential for immersive media such as VR, MR, and XR, yet remains challenging for long multi-view sequences with large-scale motion.
+◆ Existing dynamic Gaussian approaches are either Frame-Stream, offering scalability but poor temporal stability, or Clip, achieving local consistency at the cost of high memory and limited sequence length.
+◆ We propose ClipGStream, a hybrid reconstruction framework that performs stream optimization at the clip level rather than the frame level.</td></tr>
+<tr><td>2026-04-15</td><td>Dehaze-then-Splat: Generative Dehazing with Physics-Informed 3D Gaussian Splatting for Smoke-Free Novel View Synthesis</td><td>[2604.13589](http://arxiv.org/pdf/2604.13589)</td><td>◆ We present Dehaze-then-Splat, a two-stage pipeline for multi-view smoke removal and novel view synthesis developed for Track~2 of the NTIRE 2026 3D Restoration and Reconstruction Challenge.
+◆ In the first stage, we produce pseudo-clean training images via per-frame generative dehazing using Nano Banana Pro, followed by brightness normalization.
+◆ In the second stage, we train 3D Gaussian Splatting (3DGS) with physics-informed auxiliary losses -- depth supervision via Pearson correlation with pseudo-depth, dark channel prior regularization, and dual-source gradient matching -- that compensate for cross-view inconsistencies inherent in frame-wise generative processing.</td></tr>
+<tr><td>2026-04-15</td><td>RadarSplat-RIO: Indoor Radar-Inertial Odometry with Gaussian Splatting-Based Radar Bundle Adjustment</td><td>[2604.13492](http://arxiv.org/pdf/2604.13492)</td><td>◆ Radar is more resilient to adverse weather and lighting conditions than visual and Lidar simultaneous localization and mapping (SLAM).
+◆ However, most radar SLAM pipelines still rely heavily on frame-to-frame odometry, which leads to substantial drift.
+◆ While loop closure can correct long-term errors, it requires revisiting places and relies on robust place recognition.</td></tr>
+<tr><td>2026-04-15</td><td>DF3DV-1K: A Large-Scale Dataset and Benchmark for Distractor-Free Novel View Synthesis</td><td>[2604.13416](http://arxiv.org/pdf/2604.13416)</td><td>◆ Advances in radiance fields have enabled photorealistic novel view synthesis.
+◆ In several domains, large-scale real-world datasets have been developed to support comprehensive benchmarking and to facilitate progress beyond scene-specific reconstruction.
+◆ However, for distractor-free radiance fields, a large-scale dataset with clean and cluttered images per scene remains lacking, limiting the development.</td></tr>
+<tr><td>2026-04-14</td><td>MSGS: Multispectral 3D Gaussian Splatting</td><td>[2604.13340](http://arxiv.org/pdf/2604.13340)</td><td>◆ We present a multispectral extension to 3D Gaussian Splatting (3DGS) for wavelength-aware view synthesis.
+◆ Each Gaussian is augmented with spectral radiance, represented via per-band spherical harmonics, and optimized under a dual-loss supervision scheme combining RGB and multispectral signals.
+◆ To improve rendering fidelity, we perform spectral-to-RGB conversion at the pixel level, allowing richer spectral cues to be retained during optimization.</td></tr>
+<tr><td>2026-04-14</td><td>SSD-GS: Scattering and Shadow Decomposition for Relightable 3D Gaussian Splatting</td><td>[2604.13333](http://arxiv.org/pdf/2604.13333)</td><td>◆ We present SSD-GS, a physically-based relighting framework built upon 3D Gaussian Splatting (3DGS) that achieves high-quality reconstruction and photorealistic relighting under novel lighting conditions.
+◆ In physically-based relighting, accurately modeling light-material interactions is essential for faithful appearance reproduction.
+◆ However, existing 3DGS-based relighting methods adopt coarse shading decompositions, either modeling only diffuse and specular reflections or relying on neural networks to approximate shadows and scattering.</td></tr>
+<tr><td>2026-04-14</td><td>PatchPoison: Poisoning Multi-View Datasets to Degrade 3D Reconstruction</td><td>[2604.13153](http://arxiv.org/pdf/2604.13153)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently enabled highly photorealistic 3D reconstruction from casually captured multi-view images.
+◆ However, this accessibility raises a privacy concern: publicly available images or videos can be exploited to reconstruct detailed 3D models of scenes or objects without the owner&#x27;s consent.
+◆ We present PatchPoison, a lightweight dataset-poisoning method that prevents unauthorized 3D reconstruction.</td></tr>
 <tr><td>2026-04-14</td><td>RMGS-SLAM: Real-time Multi-sensor Gaussian Splatting SLAM</td><td>[2604.12942](http://arxiv.org/pdf/2604.12942)</td><td>◆ Real-time 3D Gaussian splatting (3DGS)-based Simultaneous Localization and Mapping (SLAM) in large-scale real-world environments remains challenging, as existing methods often struggle to jointly achieve low-latency pose estimation, 3D Gaussian reconstruction in step with incoming sensor streams, and long-term global consistency.
 ◆ In this paper, we present a tightly coupled LiDAR-Inertial-Visual (LIV) 3DGS-based SLAM framework for real-time pose estimation and photorealistic mapping in large-scale real-world scenes.
 ◆ The system executes state estimation and 3D Gaussian primitive initialization in parallel with global Gaussian optimization, thereby enabling continuous dense mapping.</td></tr>
@@ -4213,6 +4261,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-15</td><td>Reconstruction of a 3D wireframe from a single line drawing via generative depth estimation</td><td>[2604.13549](http://arxiv.org/pdf/2604.13549)</td><td>◆ The conversion of 2D freehand sketches into 3D models remains a pivotal challenge in computer vision, bridging the gap between human creativity and digital fabrication.
+◆ Traditional line drawing reconstruction relies on brittle symbolic logic, while modern approaches are constrained by rigid parametric modeling, limiting users to predefined CAD primitives.
+◆ We propose a generative approach by framing reconstruction as a conditional dense depth estimation task.</td></tr>
+<tr><td>2026-04-14</td><td>PAT-VCM: Plug-and-Play Auxiliary Tokens for Video Coding for Machines</td><td>[2604.13294](http://arxiv.org/pdf/2604.13294)</td><td>◆ Existing video coding for machines is often trained for a specific downstream task and model.
+◆ As a result, the compressed representation becomes tightly coupled to the end task, making it difficult to scale across multiple tasks or adapt to model updates.
+◆ We propose PAT-VCM, a plug-and-play auxiliary-token framework for video coding for machines.</td></tr>
 <tr><td>2026-04-14</td><td>M3D-Stereo: A Multiple-Medium and Multiple-Degradation Dataset for Stereo Image Restoration</td><td>[2604.12917](http://arxiv.org/pdf/2604.12917)</td><td>◆ Image restoration under adverse conditions, such as underwater, haze or fog, and low-light environments, remains a highly challenging problem due to complex physical degradations and severe information loss.
 ◆ Existing datasets are predominantly limited to a single degradation type or heavily rely on synthetic data without stereo consistency, inherently restricting their applicability in real-world scenarios.
 ◆ To address this, we introduce M3D-Stereo, a stereo dataset with 7904 high-resolution image pairs for image restoration research acquired in multiple media with multiple controlled degradation levels.</td></tr>
@@ -5118,4 +5172,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.15
+> 更新于: 2026.04.16
