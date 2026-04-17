@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.16)
+# SLAM领域最新论文 (2026.04.17)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,7 +22,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-04-15</td><td>Geometric Context Transformer for Streaming 3D Reconstruction</td><td>[2604.14141](http://arxiv.org/pdf/2604.14141)</td><td>◆ Streaming 3D reconstruction aims to recover 3D information, such as camera poses and point clouds, from a video stream, which necessitates geometric accuracy, temporal   consistency, and computational efficiency.
+<tr><td>2026-04-16</td><td>Dual Pose-Graph Semantic Localization for Vision-Based Autonomous Drone Racing</td><td>[2604.15168](http://arxiv.org/pdf/2604.15168)</td><td>◆ Autonomous drone racing demands robust real-time localization under extreme conditions: high-speed flight, aggressive maneuvers, and payload-constrained platforms that often rely on a single camera for perception.
+◆ Existing visual SLAM systems, while effective in general scenarios, struggle with motion blur and feature instability inherent to racing dynamics, and do not exploit the structured nature of racing environments.
+◆ In this work, we present a dual pose-graph architecture that fuses odometry with semantic detections for robust localization.</td></tr>
+<tr><td>2026-04-16</td><td>CAVERS: Multimodal SLAM Data from a Natural Karstic Cave with Ground Truth Motion Capture</td><td>[2604.15052](http://arxiv.org/pdf/2604.15052)</td><td>◆ Autonomous robots operating in natural karstic caves face perception and navigation challenges that are qualitatively distinct from those encountered in mines or tunnels: irregular geometry, reflective wet surfaces, near-zero ambient light, and complex branching passages.
+◆ Yet publicly available datasets targeting this environment remain scarce and offer limited sensing modalities and environmental diversity.
+◆ We present CAVERS, a multimodal dataset acquired in two structurally distinct rooms of Cueva de la Victoria, Málaga, Spain, comprising 24 sequences totaling approximately 335 GB of recorded data.</td></tr>
+<tr><td>2026-04-16</td><td>Keep It CALM: Toward Calibration-Free Kilometer-Level SLAM with Visual Geometry Foundation Models via an Assistant Eye</td><td>[2604.14795](http://arxiv.org/pdf/2604.14795)</td><td>◆ Visual Geometry Foundation Models (VGFMs) demonstrate remarkable zero-shot capabilities in local reconstruction.
+◆ However, deploying them for kilometer-level Simultaneous Localization and Mapping (SLAM) remains challenging.
+◆ In such scenarios, current approaches mainly rely on linear transforms (e.g., Sim3 and SL4) for sub-map alignment, while we argue that a single linear transform is fundamentally insufficient to model the complex, non-linear geometric distortions inherent in VGFM outputs.</td></tr>
+<tr><td>2026-04-16</td><td>A multi-platform LiDAR dataset for standardized forest inventory measurement at long term ecological monitoring sites</td><td>[2604.14635](http://arxiv.org/pdf/2604.14635)</td><td>◆ We present a curated multi-platform LiDAR reference dataset from an instrumented ICOS forest plot, explicitly designed to support calibration, benchmarking, and integration of 3D structural data with ecological observations and standard allometric models.
+◆ The dataset integrates UAV-borne laser scanning (ULS) to measure canopy coverage, terrestrial laser scanning (TLS) for detailed stem mapping, and backpack mobile laser scanning (MLS) with real-time SLAM for efficient sub-canopy acquisition.
+◆ We focus on the control plot with the most complete and internally consistent registration, where TLS point clouds (~333 million points) are complemented by ULS and MLS data capturing canopy and understory strata.</td></tr>
+<tr><td>2026-04-15</td><td>BIEVR-LIO: Robust LiDAR-Inertial Odometry through Bump-Image-Enhanced Voxel Maps</td><td>[2604.14421](http://arxiv.org/pdf/2604.14421)</td><td>◆ Reliable odometry is essential for mobile robots as they increasingly enter more challenging environments, which often contain little information to constrain point cloud registration, resulting in degraded LiDAR-Inertial Odometry (LIO) accuracy or even divergence.
+◆ To address this, we present BIEVR-LIO, a novel approach designed specifically to exploit subtle variations in the available geometry for improved robustness.
+◆ We propose a high-resolution map representation that stores surfaces as compact voxel-wise oriented height images.</td></tr>
+<tr><td>2026-04-16</td><td>Geometric Context Transformer for Streaming 3D Reconstruction</td><td>[2604.14141](http://arxiv.org/pdf/2604.14141)</td><td>◆ Streaming 3D reconstruction aims to recover 3D information, such as camera poses and point clouds, from a video stream, which necessitates geometric accuracy, temporal   consistency, and computational efficiency.
 ◆ Motivated by the principles of Simultaneous Localization and Mapping (SLAM), we introduce LingBot-Map, a feed-forward 3D foundation   model for reconstructing scenes from streaming data, built upon a geometric context transformer (GCT) architecture.
 ◆ A defining aspect of LingBot-Map lies in its carefully   designed attention mechanism, which integrates an anchor context, a pose-reference window, and a trajectory memory to address coordinate grounding, dense geometric cues, and   long-range drift correction, respectively.</td></tr>
 <tr><td>2026-04-15</td><td>UMI-3D: Extending Universal Manipulation Interface from Vision-Limited to 3D Spatial Perception</td><td>[2604.14089](http://arxiv.org/pdf/2604.14089)</td><td>◆ We present UMI-3D, a multimodal extension of the Universal Manipulation Interface (UMI) for robust and scalable data collection in embodied manipulation.
@@ -892,6 +907,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-16</td><td>Dual Pose-Graph Semantic Localization for Vision-Based Autonomous Drone Racing</td><td>[2604.15168](http://arxiv.org/pdf/2604.15168)</td><td>◆ Autonomous drone racing demands robust real-time localization under extreme conditions: high-speed flight, aggressive maneuvers, and payload-constrained platforms that often rely on a single camera for perception.
+◆ Existing visual SLAM systems, while effective in general scenarios, struggle with motion blur and feature instability inherent to racing dynamics, and do not exploit the structured nature of racing environments.
+◆ In this work, we present a dual pose-graph architecture that fuses odometry with semantic detections for robust localization.</td></tr>
+<tr><td>2026-04-16</td><td>CT-VIR: Continuous-Time Visual-Inertial-Ranging Fusion for Indoor Localization with Sparse Anchors</td><td>[2604.14545](http://arxiv.org/pdf/2604.14545)</td><td>◆ Visual-inertial odometry (VIO) is widely used for mobile robot localization, but its long-term accuracy degrades without global constraints.
+◆ Incorporating ranging sensors such as ultra-wideband (UWB) can mitigate drift; however, high-accuracy ranging usually requires well-deployed anchors, which is difficult to ensure in narrow or low-power environments.
+◆ Moreover, most existing visual-inertial-ranging (VIR) fusion methods rely on discrete time-based filtering or optimization, making it difficult to balance positioning accuracy, trajectory consistency, and fusion efficiency under asynchronous multi-sensor sampling.</td></tr>
 <tr><td>2026-04-15</td><td>UMI-3D: Extending Universal Manipulation Interface from Vision-Limited to 3D Spatial Perception</td><td>[2604.14089](http://arxiv.org/pdf/2604.14089)</td><td>◆ We present UMI-3D, a multimodal extension of the Universal Manipulation Interface (UMI) for robust and scalable data collection in embodied manipulation.
 ◆ While UMI enables portable, wrist-mounted data acquisition, its reliance on monocular visual SLAM makes it vulnerable to occlusions, dynamic scenes, and tracking failures, limiting its applicability in real-world environments.
 ◆ UMI-3D addresses these limitations by introducing a lightweight and low-cost LiDAR sensor tightly integrated into the wrist-mounted interface, enabling LiDAR-centric SLAM with accurate metric-scale pose estimation under challenging conditions.</td></tr>
@@ -1203,6 +1224,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-16</td><td>Governing Reflective Human-AI Collaboration: A Framework for Epistemic Scaffolding and Traceable Reasoning</td><td>[2604.14898](http://arxiv.org/pdf/2604.14898)</td><td>◆ Large language models have advanced rapidly, from pattern recognition to emerging forms of reasoning, yet they remain confined to linguistic simulation rather than grounded understanding.
+◆ They can produce fluent outputs that resemble reflection, but lack temporal continuity, causal feedback, and anchoring in real-world interaction.
+◆ This paper proposes a complementary approach in which reasoning is treated as a relational process distributed between human and model rather than an internal capability of either.</td></tr>
 <tr><td>2026-04-15</td><td>RadarSplat-RIO: Indoor Radar-Inertial Odometry with Gaussian Splatting-Based Radar Bundle Adjustment</td><td>[2604.13492](http://arxiv.org/pdf/2604.13492)</td><td>◆ Radar is more resilient to adverse weather and lighting conditions than visual and Lidar simultaneous localization and mapping (SLAM).
 ◆ However, most radar SLAM pipelines still rely heavily on frame-to-frame odometry, which leads to substantial drift.
 ◆ While loop closure can correct long-term errors, it requires revisiting places and relies on robust place recognition.</td></tr>
@@ -2304,6 +2328,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-16</td><td>GlobalSplat: Efficient Feed-Forward 3D Gaussian Splatting via Global Scene Tokens</td><td>[2604.15284](http://arxiv.org/pdf/2604.15284)</td><td>◆ The efficient spatial allocation of primitives serves as the foundation of 3D Gaussian Splatting, as it directly dictates the synergy between representation compactness, reconstruction speed, and rendering fidelity.
+◆ Previous solutions, whether based on iterative optimization or feed-forward inference, suffer from significant trade-offs between these goals, mainly due to the reliance on local, heuristic-driven allocation strategies that lack global scene awareness.
+◆ Specifically, current feed-forward methods are largely pixel-aligned or voxel-aligned.</td></tr>
+<tr><td>2026-04-16</td><td>TokenGS: Decoupling 3D Gaussian Prediction from Pixels with Learnable Tokens</td><td>[2604.15239](http://arxiv.org/pdf/2604.15239)</td><td>◆ In this work, we revisit several key design choices of modern Transformer-based approaches for feed-forward 3D Gaussian Splatting (3DGS) prediction.
+◆ We argue that the common practice of regressing Gaussian means as depths along camera rays is suboptimal, and instead propose to directly regress 3D mean coordinates using only a self-supervised rendering loss.
+◆ This formulation allows us to move from the standard encoder-only design to an encoder-decoder architecture with learnable Gaussian tokens, thereby unbinding the number of predicted primitives from input image resolution and number of views.</td></tr>
+<tr><td>2026-04-16</td><td>One-shot Compositional 3D Head Avatars with Deformable Hair</td><td>[2604.14782](http://arxiv.org/pdf/2604.14782)</td><td>◆ We propose a compositional method for constructing a complete 3D head avatar from a single image.
+◆ Prior one-shot holistic approaches frequently fail to produce realistic hair dynamics during animation, largely due to inadequate decoupling of hair from the facial region, resulting in entangled geometry and unnatural deformations.
+◆ Our method explicitly decouples hair from the face, modeling these components using distinct deformation paradigms while integrating them into a unified rendering pipeline.</td></tr>
+<tr><td>2026-04-16</td><td>NG-GS: NeRF-Guided 3D Gaussian Splatting Segmentation</td><td>[2604.14706](http://arxiv.org/pdf/2604.14706)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled highly efficient and photorealistic novel view synthesis.
+◆ However, segmenting objects accurately in 3DGS remains challenging due to the discrete nature of Gaussian representations, which often leads to aliasing and artifacts at object boundaries.
+◆ In this paper, we introduce NG-GS, a novel framework for high-quality object segmentation in 3DGS that explicitly addresses boundary discretization.</td></tr>
+<tr><td>2026-04-15</td><td>HY-World 2.0: A Multi-Modal World Model for Reconstructing, Generating, and Simulating 3D Worlds</td><td>[2604.14268](http://arxiv.org/pdf/2604.14268)</td><td>◆ We introduce HY-World 2.0, a multi-modal world model framework that advances our prior project HY-World 1.0.
+◆ HY-World 2.0 accommodates diverse input modalities, including text prompts, single-view images, multi-view images, and videos, and produces 3D world representations.
+◆ With text or single-view image inputs, the model performs world generation, synthesizing high-fidelity, navigable 3D Gaussian Splatting (3DGS) scenes.</td></tr>
 <tr><td>2026-04-15</td><td>ClipGStream: Clip-Stream Gaussian Splatting for Any Length and Any Motion Multi-View Dynamic Scene Reconstruction</td><td>[2604.13746](http://arxiv.org/pdf/2604.13746)</td><td>◆ Dynamic 3D scene reconstruction is essential for immersive media such as VR, MR, and XR, yet remains challenging for long multi-view sequences with large-scale motion.
 ◆ Existing dynamic Gaussian approaches are either Frame-Stream, offering scalability but poor temporal stability, or Clip, achieving local consistency at the cost of high memory and limited sequence length.
 ◆ We propose ClipGStream, a hybrid reconstruction framework that performs stream optimization at the clip level rather than the frame level.</td></tr>
@@ -4271,6 +4310,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-16</td><td>Bidirectional Cross-Modal Prompting for Event-Frame Asymmetric Stereo</td><td>[2604.15312](http://arxiv.org/pdf/2604.15312)</td><td>◆ Conventional frame-based cameras capture rich contextual information but suffer from limited temporal resolution and motion blur in dynamic scenes.
+◆ Event cameras offer an alternative visual representation with higher dynamic range free from such limitations.
+◆ The complementary characteristics of the two modalities make event-frame asymmetric stereo promising for reliable 3D perception under fast motion and challenging illumination.</td></tr>
+<tr><td>2026-04-16</td><td>Integrating Object Detection, LiDAR-Enhanced Depth Estimation, and Segmentation Models for Railway Environments</td><td>[2604.14781](http://arxiv.org/pdf/2604.14781)</td><td>◆ Obstacle detection in railway environments is crucial for ensuring safety.
+◆ However, very few studies address the problem using a complete, modular, and flexible system that can both detect objects in the scene and estimate their distance from the vehicle.
+◆ Most works focus solely on detection, others attempt to identify the track, and only a few estimate obstacle distances.</td></tr>
 <tr><td>2026-04-15</td><td>Reconstruction of a 3D wireframe from a single line drawing via generative depth estimation</td><td>[2604.13549](http://arxiv.org/pdf/2604.13549)</td><td>◆ The conversion of 2D freehand sketches into 3D models remains a pivotal challenge in computer vision, bridging the gap between human creativity and digital fabrication.
 ◆ Traditional line drawing reconstruction relies on brittle symbolic logic, while modern approaches are constrained by rigid parametric modeling, limiting users to predefined CAD primitives.
 ◆ We propose a generative approach by framing reconstruction as a conditional dense depth estimation task.</td></tr>
@@ -5184,4 +5229,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.16
+> 更新于: 2026.04.17
