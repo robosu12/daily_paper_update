@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.19)
+# SLAM领域最新论文 (2026.04.20)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-17</td><td>Environment-Adaptive Solid-State LiDAR-Inertial Odometry</td><td>[2604.15864](http://arxiv.org/pdf/2604.15864)</td><td>◆ Solid-state LiDAR-inertial SLAM has attracted significant attention due to its advantages in speed and robustness.
+◆ However, achieving accurate mapping in extreme environments remains challenging due to severe geometric degeneracy and unreliable observations, which often lead to ill-conditioned optimization and map inconsistencies.
+◆ To address these challenges, we propose an environment-adaptive solid-state LiDAR-inertial odometry that integrates local normal-vector constraints with degeneracy-aware map maintenance to enhance localization accuracy.</td></tr>
+<tr><td>2026-04-17</td><td>GaussianFlow SLAM: Monocular Gaussian Splatting SLAM Guided by GaussianFlow</td><td>[2604.15612](http://arxiv.org/pdf/2604.15612)</td><td>◆ Gaussian splatting has recently gained traction as a compelling map representation for SLAM systems, enabling dense and photo-realistic scene modeling.
+◆ However, its application to monocular SLAM remains challenging due to the lack of reliable geometric cues from monocular input.
+◆ Without geometric supervision, mapping or tracking could fall in local-minima, resulting in structural degeneracies and inaccuracies.</td></tr>
 <tr><td>2026-04-16</td><td>Dual Pose-Graph Semantic Localization for Vision-Based Autonomous Drone Racing</td><td>[2604.15168](http://arxiv.org/pdf/2604.15168)</td><td>◆ Autonomous drone racing demands robust real-time localization under extreme conditions: high-speed flight, aggressive maneuvers, and payload-constrained platforms that often rely on a single camera for perception.
 ◆ Existing visual SLAM systems, while effective in general scenarios, struggle with motion blur and feature instability inherent to racing dynamics, and do not exploit the structured nature of racing environments.
 ◆ In this work, we present a dual pose-graph architecture that fuses odometry with semantic detections for robust localization.</td></tr>
@@ -1220,6 +1226,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-17</td><td>Where Do Vision-Language Models Fail? World Scale Analysis for Image Geolocalization</td><td>[2604.16248](http://arxiv.org/pdf/2604.16248)</td><td>◆ Image geolocalization has traditionally been addressed through retrieval-based place recognition or geometry-based visual localization pipelines.
+◆ Recent advances in Vision-Language Models (VLMs) have demonstrated strong zero-shot reasoning capabilities across multimodal tasks, yet their performance in geographic inference remains underexplored.
+◆ In this work, we present a systematic evaluation of multiple state-of-the-art VLMs for country-level image geolocalization using ground-view imagery only.</td></tr>
+<tr><td>2026-04-16</td><td>Housing Decisions under Mobility Risk: A Stochastic Threshold Approach</td><td>[2604.15580](http://arxiv.org/pdf/2604.15580)</td><td>◆ We develop a stochastic free-boundary model of housing tenure decisions in markets with high mobility risk, such as areas near military installations.
+◆ Housing prices and rents follow correlated diffusion processes, and households face an uncertain relocation horizon.
+◆ We derive a closed-form characterization of the optimal buy-versus-rent boundary in terms of the price-to-rent ratio.</td></tr>
 <tr><td>2026-04-16</td><td>Governing Reflective Human-AI Collaboration: A Framework for Epistemic Scaffolding and Traceable Reasoning</td><td>[2604.14898](http://arxiv.org/pdf/2604.14898)</td><td>◆ Large language models have advanced rapidly, from pattern recognition to emerging forms of reasoning, yet they remain confined to linguistic simulation rather than grounded understanding.
 ◆ They can produce fluent outputs that resemble reflection, but lack temporal continuity, causal feedback, and anchoring in real-world interaction.
 ◆ This paper proposes a complementary approach in which reasoning is treated as a relational process distributed between human and model rather than an internal capability of either.</td></tr>
@@ -1956,6 +1968,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-17</td><td>Where Do Vision-Language Models Fail? World Scale Analysis for Image Geolocalization</td><td>[2604.16248](http://arxiv.org/pdf/2604.16248)</td><td>◆ Image geolocalization has traditionally been addressed through retrieval-based place recognition or geometry-based visual localization pipelines.
+◆ Recent advances in Vision-Language Models (VLMs) have demonstrated strong zero-shot reasoning capabilities across multimodal tasks, yet their performance in geographic inference remains underexplored.
+◆ In this work, we present a systematic evaluation of multiple state-of-the-art VLMs for country-level image geolocalization using ground-view imagery only.</td></tr>
 <tr><td>2026-04-15</td><td>SceneGlue: Scene-Aware Transformer for Feature Matching without Scene-Level Annotation</td><td>[2604.13941](http://arxiv.org/pdf/2604.13941)</td><td>◆ Local feature matching plays a critical role in understanding the correspondence between cross-view images.
 ◆ However, traditional methods are constrained by the inherent local nature of feature descriptors, limiting their ability to capture non-local scene information that is essential for accurate cross-view correspondence.
 ◆ In this paper, we introduce SceneGlue, a scene-aware feature matching framework designed to overcome these limitations.</td></tr>
@@ -2320,7 +2335,19 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-04-16</td><td>GlobalSplat: Efficient Feed-Forward 3D Gaussian Splatting via Global Scene Tokens</td><td>[2604.15284](http://arxiv.org/pdf/2604.15284)</td><td>◆ The efficient spatial allocation of primitives serves as the foundation of 3D Gaussian Splatting, as it directly dictates the synergy between representation compactness, reconstruction speed, and rendering fidelity.
+<tr><td>2026-04-17</td><td>Neural Gabor Splatting: Enhanced Gaussian Splatting with Neural Gabor for High-frequency Surface Reconstruction</td><td>[2604.15941](http://arxiv.org/pdf/2604.15941)</td><td>◆ Recent years have witnessed the rapid emergence of 3D Gaussian splatting (3DGS) as a powerful approach for 3D reconstruction and novel view synthesis.
+◆ Its explicit representation with Gaussian primitives enables fast training, real-time rendering, and convenient post-processing such as editing and surface reconstruction.
+◆ However, 3DGS suffers from a critical drawback: the number of primitives grows drastically for scenes with high-frequency appearance details, since each primitive can represent only a single color, requiring multiple primitives for every sharp color transition.</td></tr>
+<tr><td>2026-04-17</td><td>CLOTH-HUGS: Cloth Aware Human Gaussian Splatting</td><td>[2604.15875](http://arxiv.org/pdf/2604.15875)</td><td>◆ We present Cloth-HUGS, a Gaussian Splatting based neural rendering framework for photorealistic clothed human reconstruction that explicitly disentangles body and clothing.
+◆ Unlike prior methods that absorb clothing into a single body representation and struggle with loose garments and complex deformations, Cloth-HUGS represents the performer using separate Gaussian layers for body and cloth within a shared canonical space.
+◆ The canonical volume jointly encodes body, cloth, and scene primitives and is deformed through SMPL-driven articulation with learned linear blend skinning weights.</td></tr>
+<tr><td>2026-04-17</td><td>Splats in Splats++: Robust and Generalizable 3D Gaussian Splatting Steganography</td><td>[2604.15862](http://arxiv.org/pdf/2604.15862)</td><td>◆ 3D Gaussian Splatting (3DGS) has recently redefined the paradigm of 3D reconstruction, striking an unprecedented balance between visual fidelity and computational efficiency.
+◆ As its adoption proliferates, safeguarding the copyright of explicit 3DGS assets has become paramount.
+◆ However, existing invisible message embedding frameworks struggle to reconcile secure and high-capacity data embedding with intrinsic asset utility, often disrupting the native rendering pipeline or exhibiting vulnerability to structural perturbations.</td></tr>
+<tr><td>2026-04-17</td><td>GaussianFlow SLAM: Monocular Gaussian Splatting SLAM Guided by GaussianFlow</td><td>[2604.15612](http://arxiv.org/pdf/2604.15612)</td><td>◆ Gaussian splatting has recently gained traction as a compelling map representation for SLAM systems, enabling dense and photo-realistic scene modeling.
+◆ However, its application to monocular SLAM remains challenging due to the lack of reliable geometric cues from monocular input.
+◆ Without geometric supervision, mapping or tracking could fall in local-minima, resulting in structural degeneracies and inaccuracies.</td></tr>
+<tr><td>2026-04-17</td><td>GlobalSplat: Efficient Feed-Forward 3D Gaussian Splatting via Global Scene Tokens</td><td>[2604.15284](http://arxiv.org/pdf/2604.15284)</td><td>◆ The efficient spatial allocation of primitives serves as the foundation of 3D Gaussian Splatting, as it directly dictates the synergy between representation compactness, reconstruction speed, and rendering fidelity.
 ◆ Previous solutions, whether based on iterative optimization or feed-forward inference, suffer from significant trade-offs between these goals, mainly due to the reliance on local, heuristic-driven allocation strategies that lack global scene awareness.
 ◆ Specifically, current feed-forward methods are largely pixel-aligned or voxel-aligned.</td></tr>
 <tr><td>2026-04-16</td><td>TokenGS: Decoupling 3D Gaussian Prediction from Pixels with Learnable Tokens</td><td>[2604.15239](http://arxiv.org/pdf/2604.15239)</td><td>◆ In this work, we revisit several key design choices of modern Transformer-based approaches for feed-forward 3D Gaussian Splatting (3DGS) prediction.
@@ -5217,4 +5244,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.19
+> 更新于: 2026.04.20
