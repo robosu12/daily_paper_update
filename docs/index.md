@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.20)
+# SLAM领域最新论文 (2026.04.21)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-19</td><td>CAR-EnKF: A Covariance-Adaptive and Recalibrated Ensemble Kalman Filter Framework</td><td>[2604.17343](http://arxiv.org/pdf/2604.17343)</td><td>◆ The ensemble Kalman filter (EnKF) is widely used for nonlinear and high-dimensional state estimation because it replaces complex covariance propagation with simple ensemble statistics.
+◆ However, conventional EnKF implementations can become overconfident in the presence of measurement nonlinearity.
+◆ The commonly used covariance inflation technique only partially alleviates this issue.</td></tr>
 <tr><td>2026-04-17</td><td>Environment-Adaptive Solid-State LiDAR-Inertial Odometry</td><td>[2604.15864](http://arxiv.org/pdf/2604.15864)</td><td>◆ Solid-state LiDAR-inertial SLAM has attracted significant attention due to its advantages in speed and robustness.
 ◆ However, achieving accurate mapping in extreme environments remains challenging due to severe geometric degeneracy and unreliable observations, which often lead to ill-conditioned optimization and map inconsistencies.
 ◆ To address these challenges, we propose an environment-adaptive solid-state LiDAR-inertial odometry that integrates local normal-vector constraints with degeneracy-aware map maintenance to enhance localization accuracy.</td></tr>
@@ -1226,6 +1229,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-20</td><td>State Transfer Reveals Reuse in Controlled Routing</td><td>[2604.18158](http://arxiv.org/pdf/2604.18158)</td><td>◆ Prompt-based interventions can change model behavior, but trained success alone does not identify where the behaviorally relevant state is represented.
+◆ We study this question in controlled routing tasks using interfaces chosen on support data, held-out query evaluation, and matched necessity, sufficiency, and wrong-interface controls.
+◆ On GPT-2 triop, an early interface supports exact transfer under these tests.</td></tr>
+<tr><td>2026-04-19</td><td>MM-Hand: A 21-DOF Multi-modal Modular Dexterous Robotic Hand with Remote Actuation</td><td>[2604.17245](http://arxiv.org/pdf/2604.17245)</td><td>◆ High-DOF dexterous hands require compact actuation, rich sensing, and reliable thermal behavior, but conventional designs often occupy valuable in-hand space, increase end-effector mass, and suffer from heat accumulation near the hand.
+◆ Remote tendon-driven actuation offers an alternative by relocating motors to the robot base or an external motor hub, thereby freeing the fingers and palm for additional degrees of freedom, sensing modules, and maintainable mechanical structures.
+◆ This paper presents MM-Hand, a 21-DOF Multimodal Modular dexterous hand based on remote tendon-driven actuation.</td></tr>
 <tr><td>2026-04-17</td><td>Where Do Vision-Language Models Fail? World Scale Analysis for Image Geolocalization</td><td>[2604.16248](http://arxiv.org/pdf/2604.16248)</td><td>◆ Image geolocalization has traditionally been addressed through retrieval-based place recognition or geometry-based visual localization pipelines.
 ◆ Recent advances in Vision-Language Models (VLMs) have demonstrated strong zero-shot reasoning capabilities across multimodal tasks, yet their performance in geographic inference remains underexplored.
 ◆ In this work, we present a systematic evaluation of multiple state-of-the-art VLMs for country-level image geolocalization using ground-view imagery only.</td></tr>
@@ -1968,6 +1977,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-19</td><td>HyKey: Hyperspectral Keypoint Detection and Matching in Minimally Invasive Surgery</td><td>[2604.17446](http://arxiv.org/pdf/2604.17446)</td><td>◆ Purpose: 3D reconstruction in minimally invasive surgery (MIS) enables enhanced surgical guidance through improved visualisation, tool tracking, and augmented reality.
+◆ However, traditional RGB-based keypoint detection and matching pipelines struggle with surgical challenges, such as poor texture and complex illumination.
+◆ We investigate whether using snapshot hyperspectral imaging (HSI) can provide improved results on keypoint detection and matching surgical scenes.</td></tr>
+<tr><td>2026-04-18</td><td>Adaptive receptive field-based spatial-frequency feature reconstruction network for few-shot fine-grained image classification</td><td>[2604.16936](http://arxiv.org/pdf/2604.16936)</td><td>◆ Feature reconstruction techniques are widely applied for few-shot fine-grained image classification (FSFGIC).
+◆ Our research indicates that one of the main challenges facing existing feature-based FSFGIC methods is how to choose the size of the receptive field to extract feature descriptors (including spatial and frequency feature descriptors) from different category input images, thereby better performing the FSFGIC tasks.
+◆ To address this, an adaptive receptive field-based spatial-frequency feature reconstruction network (ARF-SFR-Net) is proposed.</td></tr>
+<tr><td>2026-04-17</td><td>PoInit-of-View: Poisoning Initialization of Views Transfers Across Multiple 3D Reconstruction Systems</td><td>[2604.16540](http://arxiv.org/pdf/2604.16540)</td><td>◆ Poisoning input views of 3D reconstruction systems has been recently studied.
+◆ However, we identify that existing studies simply backpropagate adversarial gradients through the 3D reconstruction pipeline as a whole, without uncovering the new vulnerability rooted in specific modules of the 3D reconstruction pipeline.
+◆ In this paper, we argue that the structure-from-motion (SfM) initialization, as the geometric core of many widely used reconstruction systems, can be targeted to achieve transferable poisoning effects across diverse 3D reconstruction systems.</td></tr>
 <tr><td>2026-04-17</td><td>Where Do Vision-Language Models Fail? World Scale Analysis for Image Geolocalization</td><td>[2604.16248](http://arxiv.org/pdf/2604.16248)</td><td>◆ Image geolocalization has traditionally been addressed through retrieval-based place recognition or geometry-based visual localization pipelines.
 ◆ Recent advances in Vision-Language Models (VLMs) have demonstrated strong zero-shot reasoning capabilities across multimodal tasks, yet their performance in geographic inference remains underexplored.
 ◆ In this work, we present a systematic evaluation of multiple state-of-the-art VLMs for country-level image geolocalization using ground-view imagery only.</td></tr>
@@ -2335,6 +2353,33 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-20</td><td>A Comparative Evaluation of Geometric Accuracy in NeRF and Gaussian Splatting</td><td>[2604.18205](http://arxiv.org/pdf/2604.18205)</td><td>◆ Recent advances in neural rendering have introduced numerous 3D scene representations.
+◆ Although standard computer vision metrics evaluate the visual quality of generated images, they often overlook the fidelity of surface geometry.
+◆ This limitation is particularly critical in robotics, where accurate geometry is essential for tasks such as grasping and object manipulation.</td></tr>
+<tr><td>2026-04-20</td><td>GS-STVSR: Ultra-Efficient Continuous Spatio-Temporal Video Super-Resolution via 2D Gaussian Splatting</td><td>[2604.18047](http://arxiv.org/pdf/2604.18047)</td><td>◆ Continuous Spatio-Temporal Video Super-Resolution (C-STVSR) aims to simultaneously enhance the spatial resolution and frame rate of videos by arbitrary scale factors, offering greater flexibility than fixed-scale methods that are constrained by predefined upsampling ratios.
+◆ In recent years, methods based on Implicit Neural Representations (INR) have made significant progress in C-STVSR by learning continuous mappings from spatio-temporal coordinates to pixel values.
+◆ However, these methods fundamentally rely on dense pixel-wise grid queries, causing computational cost to scale linearly with the number of interpolated frames and severely limiting inference efficiency.</td></tr>
+<tr><td>2026-04-20</td><td>E3VS-Bench: A Benchmark for Viewpoint-Dependent Active Perception in 3D Gaussian Splatting Scenes</td><td>[2604.17969](http://arxiv.org/pdf/2604.17969)</td><td>◆ Visual search in 3D environments requires embodied agents to actively explore their surroundings and acquire task-relevant evidence.
+◆ However, existing visual search and embodied AI benchmarks, including EQA, typically rely on static observations or constrained egocentric motion, and thus do not explicitly evaluate fine-grained viewpoint-dependent phenomena that arise under unrestricted 5-DoF viewpoint control in real-world 3D environments, such as visibility changes caused by vertical viewpoint shifts, revealing contents inside containers, and disambiguating object attributes that are only observable from specific angles.
+◆ To address this limitation, we introduce {E3VS-Bench}, a benchmark for embodied 3D visual search where agents must control their viewpoints in 5-DoF to gather viewpoint-dependent evidence for question answering.</td></tr>
+<tr><td>2026-04-20</td><td>Voronoi-guided Bilateral 2D Gaussian Splatting for Arbitrary-Scale Hyperspectral Image Super-Resolution</td><td>[2604.17727](http://arxiv.org/pdf/2604.17727)</td><td>◆ Most existing hyperspectral image super-resolution methods require modifications for different scales, limiting their flexibility in arbitrary-scale reconstruction.
+◆ 2D Gaussian splatting provides a continuous representation that is compatible with arbitrary-scale super-resolution.
+◆ Existing methods often rely on rasterization strategies, which may limit flexible spatial modeling.</td></tr>
+<tr><td>2026-04-20</td><td>GeGS-PCR: Effective and Robust 3D Point Cloud Registration with Two-Stage Color-Enhanced Geometric-3DGS Fusion</td><td>[2604.17721](http://arxiv.org/pdf/2604.17721)</td><td>◆ We address the challenge of point cloud registration using color information, where traditional methods relying solely on geometric features often struggle in low-overlap and incomplete scenarios.
+◆ To overcome these limitations, we propose GeGS-PCR, a novel two-stage method that combines geometric, color, and Gaussian information for robust registration.
+◆ Our approach incorporates a dedicated color encoder that enhances color features by extracting multi-level geometric and color data from the original point cloud.</td></tr>
+<tr><td>2026-04-18</td><td>Instant Colorization of Gaussian Splats</td><td>[2604.17155](http://arxiv.org/pdf/2604.17155)</td><td>◆ Gaussian Splatting has recently become one of the most popular frameworks for photorealistic 3D scene reconstruction and rendering.
+◆ While current rasterizers allow for efficient mappings of 3D Gaussian splats onto 2D camera views, this work focuses on mapping 2D image information (e.g.
+◆ color, neural features or segmentation masks) efficiently back onto an existing scene of Gaussian splats.</td></tr>
+<tr><td>2026-04-18</td><td>D-Prism: Differentiable Primitives for Structured Dynamic Modeling</td><td>[2604.17082](http://arxiv.org/pdf/2604.17082)</td><td>◆ Capturing both geometry and rigid motion for structured dynamic objects, like multi-part assemblies or jointed mechanisms, remains a key challenge.
+◆ Existing dynamic methods, such as deformable meshes or 3DGS, rely on unstructured representations and fail to jointly model suitable geometry and articulated motion.
+◆ Primitive-based methods excel at structured static scenes, but their dynamic potential is still unexplored.</td></tr>
+<tr><td>2026-04-18</td><td>LAGS: Low-Altitude Gaussian Splatting with Groupwise Heterogeneous Graph Learning</td><td>[2604.16910](http://arxiv.org/pdf/2604.16910)</td><td>◆ Low-altitude Gaussian splatting (LAGS) facilitates 3D scene reconstruction by aggregating aerial images from distributed drones.
+◆ However, as LAGS prioritizes maximizing reconstruction quality over communication throughput, existing low-altitude resource allocation schemes become inefficient.
+◆ This inefficiency stems from their failure to account for image diversity introduced by varying viewpoints.</td></tr>
+<tr><td>2026-04-17</td><td>Incoherent Deformation, Not Capacity: Diagnosing and Mitigating Overfitting in Dynamic Gaussian Splatting</td><td>[2604.16747](http://arxiv.org/pdf/2604.16747)</td><td>◆ Dynamic 3D Gaussian Splatting methods achieve strong training-view PSNR on monocular video but generalize poorly: on the D-NeRF benchmark we measure an average train-test PSNR gap of 6.18 dB, rising to 11 dB on individual scenes.
+◆ We report two findings that together account for most of that gap.
+◆ Finding 1 (the role of splitting).</td></tr>
 <tr><td>2026-04-17</td><td>Neural Gabor Splatting: Enhanced Gaussian Splatting with Neural Gabor for High-frequency Surface Reconstruction</td><td>[2604.15941](http://arxiv.org/pdf/2604.15941)</td><td>◆ Recent years have witnessed the rapid emergence of 3D Gaussian splatting (3DGS) as a powerful approach for 3D reconstruction and novel view synthesis.
 ◆ Its explicit representation with Gaussian primitives enables fast training, real-time rendering, and convenient post-processing such as editing and surface reconstruction.
 ◆ However, 3DGS suffers from a critical drawback: the number of primitives grows drastically for scenes with high-frequency appearance details, since each primitive can represent only a single color, requiring multiple primitives for every sharp color transition.</td></tr>
@@ -4327,6 +4372,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-12</td><td>Positioning radiata pine branches requiring pruning by drone stereo vision</td><td>[2604.16480](http://arxiv.org/pdf/2604.16480)</td><td>◆ This paper presents a stereo-vision-based system mounted on a drone for detecting and localising radiata pine branches to support autonomous pruning.
+◆ The proposed pipeline comprises two stages: branch segmentation and depth estimation.
+◆ For segmentation, YOLOv8, YOLOv9, and Mask R-CNN variants are compared on a custom dataset of 71 stereo image pairs captured with a ZED Mini camera.</td></tr>
 <tr><td>2026-04-16</td><td>Bidirectional Cross-Modal Prompting for Event-Frame Asymmetric Stereo</td><td>[2604.15312](http://arxiv.org/pdf/2604.15312)</td><td>◆ Conventional frame-based cameras capture rich contextual information but suffer from limited temporal resolution and motion blur in dynamic scenes.
 ◆ Event cameras offer an alternative visual representation with higher dynamic range free from such limitations.
 ◆ The complementary characteristics of the two modalities make event-frame asymmetric stereo promising for reliable 3D perception under fast motion and challenging illumination.</td></tr>
@@ -5244,4 +5292,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.20
+> 更新于: 2026.04.21
