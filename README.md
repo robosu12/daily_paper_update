@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.21)
+# SLAM领域最新论文 (2026.04.22)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-21</td><td>Coherent Direct Multipath SLAM</td><td>[2604.19723](http://arxiv.org/pdf/2604.19723)</td><td>◆ Challenging indoor and urban environments with severe multipath propagation and obstructed LoS (OLoS) degrade classical radio frequency (RF) positioning.
+◆ Multipath-based simultaneous localization and mapping (MP-SLAM) is a promising remedy, building and exploiting a map of the propagation environment to enhance the robustness.
+◆ Emerging distributed multiple-input multiple-output (D-MIMO)/extremely large-scale MIMO (XL-MIMO) infrastructures, with single XL antenna arrays or distributed subarrays, offer large spatial apertures and enable high-resolution sensing, in particular when phase coherence is maintained across base stations (BSs), subarrays, or distributed arrays.</td></tr>
+<tr><td>2026-04-20</td><td>Feasibility of Indoor Frame-Wise Lidar Semantic Segmentation via Distillation from Visual Foundation Model</td><td>[2604.18831](http://arxiv.org/pdf/2604.18831)</td><td>◆ Frame-wise semantic segmentation of indoor lidar scans is a fundamental step toward higher-level 3D scene understanding and mapping applications.
+◆ However, acquiring frame-wise ground truth for training deep learning models is costly and time-consuming.
+◆ This challenge is largely addressed, for imagery, by Visual Foundation Models (VFMs) which segment image frames.</td></tr>
 <tr><td>2026-04-19</td><td>CAR-EnKF: A Covariance-Adaptive and Recalibrated Ensemble Kalman Filter Framework</td><td>[2604.17343](http://arxiv.org/pdf/2604.17343)</td><td>◆ The ensemble Kalman filter (EnKF) is widely used for nonlinear and high-dimensional state estimation because it replaces complex covariance propagation with simple ensemble statistics.
 ◆ However, conventional EnKF implementations can become overconfident in the presence of measurement nonlinearity.
 ◆ The commonly used covariance inflation technique only partially alleviates this issue.</td></tr>
@@ -1233,6 +1239,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-21</td><td>CityRAG: Stepping Into a City via Spatially-Grounded Video Generation</td><td>[2604.19741](http://arxiv.org/pdf/2604.19741)</td><td>◆ We address the problem of generating a 3D-consistent, navigable environment that is spatially grounded: a simulation of a real location.
+◆ Existing video generative models can produce a plausible sequence that is consistent with a text (T2V) or image (I2V) prompt.
+◆ However, the capability to reconstruct the real world under arbitrary weather conditions and dynamic object configurations is essential for downstream applications including autonomous driving and robotics simulation.</td></tr>
+<tr><td>2026-04-21</td><td>Coherent Microwave Driving of Domain Wall Depinning in a Ferrimagnetic Garnet</td><td>[2604.19164](http://arxiv.org/pdf/2604.19164)</td><td>◆ Coherent control of domain wall dynamics offers a route to fast manipulation of magnetic textures beyond thermally activated motion.
+◆ We demonstrate resonant excitation of linear and nonlinear dynamics of a pinned domain wall in a ferrimagnetic garnet thin film driven by a microwave field.
+◆ Using scanning nitrogen-vacancy magnetometry and nonlocal spin-pumping measurements, we identify a low-frequency mode inside the magnon gap, originating from the localized oscillatory motion of a domain wall across a pinning line defined by a Pt stripline.</td></tr>
 <tr><td>2026-04-20</td><td>State Transfer Reveals Reuse in Controlled Routing</td><td>[2604.18158](http://arxiv.org/pdf/2604.18158)</td><td>◆ Prompt-based interventions can change model behavior, but trained success alone does not identify where the behaviorally relevant state is represented.
 ◆ We study this question in controlled routing tasks using interfaces chosen on support data, held-out query evaluation, and matched necessity, sufficiency, and wrong-interface controls.
 ◆ On GPT-2 triop, an early interface supports exact transfer under these tests.</td></tr>
@@ -1251,7 +1263,7 @@
 <tr><td>2026-04-15</td><td>RadarSplat-RIO: Indoor Radar-Inertial Odometry with Gaussian Splatting-Based Radar Bundle Adjustment</td><td>[2604.13492](http://arxiv.org/pdf/2604.13492)</td><td>◆ Radar is more resilient to adverse weather and lighting conditions than visual and Lidar simultaneous localization and mapping (SLAM).
 ◆ However, most radar SLAM pipelines still rely heavily on frame-to-frame odometry, which leads to substantial drift.
 ◆ While loop closure can correct long-term errors, it requires revisiting places and relies on robust place recognition.</td></tr>
-<tr><td>2026-04-14</td><td>RMGS-SLAM: Real-time Multi-sensor Gaussian Splatting SLAM</td><td>[2604.12942](http://arxiv.org/pdf/2604.12942)</td><td>◆ Real-time 3D Gaussian splatting (3DGS)-based Simultaneous Localization and Mapping (SLAM) in large-scale real-world environments remains challenging, as existing methods often struggle to jointly achieve low-latency pose estimation, 3D Gaussian reconstruction in step with incoming sensor streams, and long-term global consistency.
+<tr><td>2026-04-21</td><td>RMGS-SLAM: Real-time Multi-sensor Gaussian Splatting SLAM</td><td>[2604.12942](http://arxiv.org/pdf/2604.12942)</td><td>◆ Real-time 3D Gaussian splatting (3DGS)-based Simultaneous Localization and Mapping (SLAM) in large-scale real-world environments remains challenging, as existing methods often struggle to jointly achieve low-latency pose estimation, 3D Gaussian reconstruction in step with incoming sensor streams, and long-term global consistency.
 ◆ In this paper, we present a tightly coupled LiDAR-Inertial-Visual (LIV) 3DGS-based SLAM framework for real-time pose estimation and photorealistic mapping in large-scale real-world scenes.
 ◆ The system executes state estimation and 3D Gaussian primitive initialization in parallel with global Gaussian optimization, thereby enabling continuous dense mapping.</td></tr>
 <tr><td>2026-04-15</td><td>MR.ScaleMaster: Scale-Consistent Collaborative Mapping from Crowd-Sourced Monocular Videos</td><td>[2604.11372](http://arxiv.org/pdf/2604.11372)</td><td>◆ Crowd-sourced cooperative mapping from monocular cameras promises scalable 3D reconstruction without specialized sensors, yet remains hindered by two scale-specific failure modes: abrupt scale collapse from false-positive loop closures in repetitive environments, and gradual scale drift over long trajectories and per-robot scale ambiguity that prevent direct multi-session fusion.
@@ -2361,6 +2373,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-21</td><td>TransSplat: Unbalanced Semantic Transport for Language-Driven 3DGS Editing</td><td>[2604.19571](http://arxiv.org/pdf/2604.19571)</td><td>◆ Language-driven 3D Gaussian Splatting (3DGS) editing provides a more convenient approach for modifying complex scenes in VR/AR.
+◆ Standard pipelines typically adopt a two-stage strategy: first editing multiple 2D views, and then optimizing the 3D representation to match these edited observations.
+◆ Existing methods mainly improve view consistency through multi-view feature fusion, attention filtering, or iterative recalibration.</td></tr>
+<tr><td>2026-04-21</td><td>An Object-Centered Data Acquisition Method for 3D Gaussian Splatting using Mobile Phones</td><td>[2604.19216](http://arxiv.org/pdf/2604.19216)</td><td>◆ Data acquisition through mobile phones remains a challenge for 3D Gaussian Splatting (3DGS).
+◆ In this work we target the object-centered scenario and enable reliable mobile acquisition by providing on-device capture guidance and recording onboard sensor signals for offline reconstruction.
+◆ After the calibration step, the device orientations are aligned to a baseline frame to obtain relative poses, and the optical axis of the camera is mapped to an object-centered spherical grid for uniform viewpoint indexing.</td></tr>
+<tr><td>2026-04-21</td><td>SketchFaceGS: Real-Time Sketch-Driven Face Editing and Generation with Gaussian Splatting</td><td>[2604.19202](http://arxiv.org/pdf/2604.19202)</td><td>◆ 3D Gaussian representations have emerged as a powerful paradigm for digital head modeling, achieving photorealistic quality with real-time rendering.
+◆ However, intuitive and interactive creation or editing of 3D Gaussian head models remains challenging.
+◆ Although 2D sketches provide an ideal interaction modality for fast, intuitive conceptual design, they are sparse, depth-ambiguous, and lack high-frequency appearance cues, making it difficult to infer dense, geometrically consistent 3D Gaussian structures from strokes - especially under real-time constraints.</td></tr>
+<tr><td>2026-04-21</td><td>BALTIC: A Benchmark and Cross-Domain Strategy for 3D Reconstruction Across Air and Underwater Domains Under Varying Illumination</td><td>[2604.19133](http://arxiv.org/pdf/2604.19133)</td><td>◆ Robust 3D reconstruction across varying environmental conditions remains a critical challenge for robotic perception, particularly when transitioning between air and water.
+◆ To address this, we introduce BALTIC, a controlled benchmark designed to systematically evaluate modern 3D reconstruction methods under variations in medium and lighting.
+◆ The benchmark comprises 13 datasets spanning two media (air and water) and three lighting conditions (ambient, artificial, and mixed), with additional variations in motion type, scanning pattern, and initialization trajectory, resulting in a diverse set of sequences.</td></tr>
+<tr><td>2026-04-21</td><td>OT-UVGS: Revisiting UV Mapping for Gaussian Splatting as a Capacity Allocation Problem</td><td>[2604.19127](http://arxiv.org/pdf/2604.19127)</td><td>◆ UV-parameterized Gaussian Splatting (UVGS) maps an unstructured set of 3D Gaussians to a regular UV tensor, enabling compact storage and explicit control of representation capacity.
+◆ Existing UVGS, however, uses a deterministic spherical pro- jection to assign Gaussians to UV locations.
+◆ Because this mapping ignores the global Gaussian distribution, it often leaves many UV slots empty while causing frequent collisions in dense regions.</td></tr>
+<tr><td>2026-04-21</td><td>AdaGScale: Viewpoint-Adaptive Gaussian Scaling in 3D Gaussian Splatting to Reduce Gaussian-Tile Pairs</td><td>[2604.18980](http://arxiv.org/pdf/2604.18980)</td><td>◆ Reducing the number of Gaussian-tile pairs is one of the most promising approaches to improve 3D Gaussian Splatting (3D-GS) rendering speed on GPUs.
+◆ However, the importance difference existing among Gaussian-tile pairs has never been considered in the previous works.
+◆ In this paper, we propose AdaGScale, a novel viewpoint-adaptive Gaussian scaling technique for reducing the number of Gaussian-tile pairs.</td></tr>
 <tr><td>2026-04-20</td><td>A Comparative Evaluation of Geometric Accuracy in NeRF and Gaussian Splatting</td><td>[2604.18205](http://arxiv.org/pdf/2604.18205)</td><td>◆ Recent advances in neural rendering have introduced numerous 3D scene representations.
 ◆ Although standard computer vision metrics evaluate the visual quality of generated images, they often overlook the fidelity of surface geometry.
 ◆ This limitation is particularly critical in robotics, where accurate geometry is essential for tasks such as grasping and object manipulation.</td></tr>
@@ -4382,6 +4412,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-21</td><td>Face Anything: 4D Face Reconstruction from Any Image Sequence</td><td>[2604.19702](http://arxiv.org/pdf/2604.19702)</td><td>◆ Accurate reconstruction and tracking of dynamic human faces from image sequences is challenging because non-rigid deformations, expression changes, and viewpoint variations occur simultaneously, creating significant ambiguity in geometry and correspondence estimation.
+◆ We present a unified method for high-fidelity 4D facial reconstruction based on canonical facial point prediction, a representation that assigns each pixel a normalized facial coordinate in a shared canonical space.
+◆ This formulation transforms dense tracking and dynamic reconstruction into a canonical reconstruction problem, enabling temporally consistent geometry and reliable correspondences within a single feed-forward model.</td></tr>
+<tr><td>2026-04-21</td><td>Evaluation of Winning Solutions of 2025 Low Power Computer Vision Challenge</td><td>[2604.19054](http://arxiv.org/pdf/2604.19054)</td><td>◆ The IEEE Low-Power Computer Vision Challenge (LPCVC) aims to promote the development of efficient vision models for edge devices, balancing accuracy with constraints such as latency, memory capacity, and energy use.
+◆ The 2025 challenge featured three tracks: (1) Image classification under various lighting conditions and styles, (2) Open-Vocabulary Segmentation with Text Prompt, and (3) Monocular Depth Estimation.
+◆ This paper presents the design of LPCVC 2025, including its competition structure and evaluation framework, which integrates the Qualcomm AI Hub for consistent and reproducible benchmarking.</td></tr>
+<tr><td>2026-04-20</td><td>URoPE: Universal Relative Position Embedding across Geometric Spaces</td><td>[2604.18747](http://arxiv.org/pdf/2604.18747)</td><td>◆ Relative position embedding has become a standard mechanism for encoding positional information in Transformers.
+◆ However, existing formulations are typically limited to a fixed geometric space, namely 1D sequences or regular 2D/3D grids, which restricts their applicability to many computer vision tasks that require geometric reasoning across camera views or between 2D and 3D spaces.
+◆ To address this limitation, we propose URoPE, a universal extension of Rotary Position Embedding (RoPE) to cross-view or cross-dimensional geometric spaces.</td></tr>
 <tr><td>2026-04-12</td><td>Positioning radiata pine branches requiring pruning by drone stereo vision</td><td>[2604.16480](http://arxiv.org/pdf/2604.16480)</td><td>◆ This paper presents a stereo-vision-based system mounted on a drone for detecting and localising radiata pine branches to support autonomous pruning.
 ◆ The proposed pipeline comprises two stages: branch segmentation and depth estimation.
 ◆ For segmentation, YOLOv8, YOLOv9, and Mask R-CNN variants are compared on a custom dataset of 71 stereo image pairs captured with a ZED Mini camera.</td></tr>
@@ -5304,4 +5343,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.21
+> 更新于: 2026.04.22
