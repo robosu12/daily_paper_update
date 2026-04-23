@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.22)
+# SLAM领域最新论文 (2026.04.23)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-21</td><td>SL(C)AMma: Simultaneous Localisation, (Calibration) and Mapping With a Magnetometer Array</td><td>[2604.19946](http://arxiv.org/pdf/2604.19946)</td><td>◆ Indoor localisation techniques suffer from attenuated Global Navigation Satellite System (GNSS) signals and from the accumulation of unbounded drift by integration of proprioceptive sensors.
+◆ Magnetic field-based Simultaneous Localisation and Mapping (SLAM) reduces drift through loop closures by revisiting previously seen locations, but extended exploration of unseen areas remains challenging.
+◆ Recently, magnetometer arrays have demonstrated significant benefits over single magnetometers, as they can directly estimate the odometry.</td></tr>
+<tr><td>2026-04-21</td><td>Super Apriel: One Checkpoint, Many Speeds</td><td>[2604.19877](http://arxiv.org/pdf/2604.19877)</td><td>◆ We release Super Apriel, a 15B-parameter supernet in which every decoder layer provides four trained mixer choices -- Full Attention (FA), Sliding Window Attention (SWA), Kimi Delta Attention (KDA), and Gated DeltaNet (GDN).
+◆ A placement selects one mixer per layer; placements can be switched between requests at serving time without reloading weights, enabling multiple speed presets from a single checkpoint.
+◆ The shared checkpoint also enables speculative decoding without a separate draft model.</td></tr>
 <tr><td>2026-04-21</td><td>Coherent Direct Multipath SLAM</td><td>[2604.19723](http://arxiv.org/pdf/2604.19723)</td><td>◆ Challenging indoor and urban environments with severe multipath propagation and obstructed LoS (OLoS) degrade classical radio frequency (RF) positioning.
 ◆ Multipath-based simultaneous localization and mapping (MP-SLAM) is a promising remedy, building and exploiting a map of the propagation environment to enhance the robustness.
 ◆ Emerging distributed multiple-input multiple-output (D-MIMO)/extremely large-scale MIMO (XL-MIMO) infrastructures, with single XL antenna arrays or distributed subarrays, offer large spatial apertures and enable high-resolution sensing, in particular when phase coherence is maintained across base stations (BSs), subarrays, or distributed arrays.</td></tr>
@@ -1239,6 +1245,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-21</td><td>SL(C)AMma: Simultaneous Localisation, (Calibration) and Mapping With a Magnetometer Array</td><td>[2604.19946](http://arxiv.org/pdf/2604.19946)</td><td>◆ Indoor localisation techniques suffer from attenuated Global Navigation Satellite System (GNSS) signals and from the accumulation of unbounded drift by integration of proprioceptive sensors.
+◆ Magnetic field-based Simultaneous Localisation and Mapping (SLAM) reduces drift through loop closures by revisiting previously seen locations, but extended exploration of unseen areas remains challenging.
+◆ Recently, magnetometer arrays have demonstrated significant benefits over single magnetometers, as they can directly estimate the odometry.</td></tr>
+<tr><td>2026-04-21</td><td>Efficient Page Migration in Hybrid Memory Systems</td><td>[2604.19932](http://arxiv.org/pdf/2604.19932)</td><td>◆ Heterogeneous Memory Architecture (HMA) aims to optimize memory usage by leveraging a combination of memory types, such as high-bandwidth memory (HBM), commodity DRAM, and non-volatile memory (NVM), when utilized as main memory.
+◆ To achieve maximum performance benefits, frequently accessed data pages are prioritized for storage in the faster HBM, while less frequently accessed pages are stored in slower memory types like DRAM or NVM.
+◆ This enables a more efficient allocation of memory resources and improves overall system performance.</td></tr>
 <tr><td>2026-04-21</td><td>CityRAG: Stepping Into a City via Spatially-Grounded Video Generation</td><td>[2604.19741](http://arxiv.org/pdf/2604.19741)</td><td>◆ We address the problem of generating a 3D-consistent, navigable environment that is spatially grounded: a simulation of a real location.
 ◆ Existing video generative models can produce a plausible sequence that is consistent with a text (T2V) or image (I2V) prompt.
 ◆ However, the capability to reconstruct the real world under arbitrary weather conditions and dynamic object configurations is essential for downstream applications including autonomous driving and robotics simulation.</td></tr>
@@ -1995,6 +2007,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-22</td><td>MAPRPose: Mask-Aware Proposal and Amodal Refinement for Multi-Object 6D Pose Estimation</td><td>[2604.20650](http://arxiv.org/pdf/2604.20650)</td><td>◆ 6D object pose estimation in cluttered scenes remains challenging due to severe occlusion and sensor noise.
+◆ We propose MAPRPose, a two-stage framework that leverages mask-aware correspondences for pose proposal and amodal-driven Region-of-Interest (ROI) prediction for robust refinement.
+◆ In the Mask-Aware Pose Proposal (MAPP) stage, we lift 2D correspondences into 3D space to establish reliable keypoint matches and generate geometrically consistent pose hypotheses based on correspondence-level scoring, from which the top-$K$ candidates are selected.</td></tr>
 <tr><td>2026-04-19</td><td>HyKey: Hyperspectral Keypoint Detection and Matching in Minimally Invasive Surgery</td><td>[2604.17446](http://arxiv.org/pdf/2604.17446)</td><td>◆ Purpose: 3D reconstruction in minimally invasive surgery (MIS) enables enhanced surgical guidance through improved visualisation, tool tracking, and augmented reality.
 ◆ However, traditional RGB-based keypoint detection and matching pipelines struggle with surgical challenges, such as poor texture and complex illumination.
 ◆ We investigate whether using snapshot hyperspectral imaging (HSI) can provide improved results on keypoint detection and matching surgical scenes.</td></tr>
@@ -2373,6 +2388,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-22</td><td>GeoRect4D: Geometry-Compatible Generative Rectification for Dynamic Sparse-View 3D Reconstruction</td><td>[2604.20784](http://arxiv.org/pdf/2604.20784)</td><td>◆ Reconstructing dynamic 3D scenes from sparse multi-view videos is highly ill-posed, often leading to geometric collapse, trajectory drift, and floating artifacts.
+◆ Recent attempts introduce generative priors to hallucinate missing content, yet naive integration frequently causes structural drift and temporal inconsistency due to the mismatch between stochastic 2D generation and deterministic 3D geometry.
+◆ In this paper, we propose GeoRect4D, a novel unified framework for sparse-view dynamic reconstruction that couples explicit 3D consistency with generative refinement via a closed-loop optimization process.</td></tr>
+<tr><td>2026-04-22</td><td>GSCompleter: A Distillation-Free Plugin for Metric-Aware 3D Gaussian Splatting Completion in Seconds</td><td>[2604.20155](http://arxiv.org/pdf/2604.20155)</td><td>◆ While 3D Gaussian Splatting (3DGS) has revolutionized real-time rendering, its performance degrades significantly under sparse-view extrapolation, manifesting as severe geometric voids and artifacts.
+◆ Existing solutions primarily rely on an iterative &quot;Repair-then-Distill&quot; paradigm, which is inherently unstable and prone to overfitting.
+◆ In this work, we propose GSCompleter, a distillation-free plugin that shifts scene completion to a stable &quot;Generate-then-Register&quot; workflow.</td></tr>
+<tr><td>2026-04-21</td><td>Gaussians on a Diet: High-Quality Memory-Bounded 3D Gaussian Splatting Training</td><td>[2604.20046](http://arxiv.org/pdf/2604.20046)</td><td>◆ 3D Gaussian Splatting (3DGS) has revolutionized novel view synthesis with high-quality rendering through continuous aggregations of millions of 3D Gaussian primitives.
+◆ However, it suffers from a substantial memory footprint, particularly during training due to uncontrolled densification, posing a critical bottleneck for deployment on memory-constrained edge devices.
+◆ While existing methods prune redundant Gaussians post-training, they fail to address the peak memory spikes caused by the abrupt growth of Gaussians early in the training process.</td></tr>
+<tr><td>2026-04-21</td><td>FluSplat: Sparse-View 3D Editing without Test-Time Optimization</td><td>[2604.20038](http://arxiv.org/pdf/2604.20038)</td><td>◆ Recent advances in text-guided image editing and 3D Gaussian Splatting (3DGS) have enabled high-quality 3D scene manipulation.
+◆ However, existing pipelines rely on iterative edit-and-fit optimization at test time, alternating between 2D diffusion editing and 3D reconstruction.
+◆ This process is computationally expensive, scene-specific, and prone to cross-view inconsistencies.</td></tr>
 <tr><td>2026-04-21</td><td>TransSplat: Unbalanced Semantic Transport for Language-Driven 3DGS Editing</td><td>[2604.19571](http://arxiv.org/pdf/2604.19571)</td><td>◆ Language-driven 3D Gaussian Splatting (3DGS) editing provides a more convenient approach for modifying complex scenes in VR/AR.
 ◆ Standard pipelines typically adopt a two-stage strategy: first editing multiple 2D views, and then optimizing the 3D representation to match these edited observations.
 ◆ Existing methods mainly improve view consistency through multi-view feature fusion, attention filtering, or iterative recalibration.</td></tr>
@@ -4412,10 +4439,16 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-22</td><td>MLG-Stereo: ViT Based Stereo Matching with Multi-Stage Local-Global Enhancement</td><td>[2604.20393](http://arxiv.org/pdf/2604.20393)</td><td>◆ With the development of deep learning, ViT-based stereo matching methods have made significant progress due to their remarkable robustness and zero-shot ability.
+◆ However, due to the limitations of ViTs in handling resolution sensitivity and their relative neglect of local information, the ability of ViT-based methods to predict details and handle arbitrary-resolution images is still weaker than that of CNN-based methods.
+◆ To address these shortcomings, we propose MLG-Stereo, a systematic pipeline-level design that extends global modeling beyond the encoder stage.</td></tr>
+<tr><td>2026-04-22</td><td>Image Generators are Generalist Vision Learners</td><td>[2604.20329](http://arxiv.org/pdf/2604.20329)</td><td>◆ Recent works show that image and video generators exhibit zero-shot visual understanding behaviors, in a way reminiscent of how LLMs develop emergent capabilities of language understanding and reasoning from generative pretraining.
+◆ While it has long been conjectured that the ability to create visual content implies an ability to understand it, there has been limited evidence that generative vision models have developed strong understanding capabilities.
+◆ In this work, we demonstrate that image generation training serves a role similar to LLM pretraining, and lets models learn powerful and general visual representations that enable SOTA performance on various vision tasks.</td></tr>
 <tr><td>2026-04-21</td><td>Face Anything: 4D Face Reconstruction from Any Image Sequence</td><td>[2604.19702](http://arxiv.org/pdf/2604.19702)</td><td>◆ Accurate reconstruction and tracking of dynamic human faces from image sequences is challenging because non-rigid deformations, expression changes, and viewpoint variations occur simultaneously, creating significant ambiguity in geometry and correspondence estimation.
 ◆ We present a unified method for high-fidelity 4D facial reconstruction based on canonical facial point prediction, a representation that assigns each pixel a normalized facial coordinate in a shared canonical space.
 ◆ This formulation transforms dense tracking and dynamic reconstruction into a canonical reconstruction problem, enabling temporally consistent geometry and reliable correspondences within a single feed-forward model.</td></tr>
-<tr><td>2026-04-21</td><td>Evaluation of Winning Solutions of 2025 Low Power Computer Vision Challenge</td><td>[2604.19054](http://arxiv.org/pdf/2604.19054)</td><td>◆ The IEEE Low-Power Computer Vision Challenge (LPCVC) aims to promote the development of efficient vision models for edge devices, balancing accuracy with constraints such as latency, memory capacity, and energy use.
+<tr><td>2026-04-22</td><td>Evaluation of Winning Solutions of 2025 Low Power Computer Vision Challenge</td><td>[2604.19054](http://arxiv.org/pdf/2604.19054)</td><td>◆ The IEEE Low-Power Computer Vision Challenge (LPCVC) aims to promote the development of efficient vision models for edge devices, balancing accuracy with constraints such as latency, memory capacity, and energy use.
 ◆ The 2025 challenge featured three tracks: (1) Image classification under various lighting conditions and styles, (2) Open-Vocabulary Segmentation with Text Prompt, and (3) Monocular Depth Estimation.
 ◆ This paper presents the design of LPCVC 2025, including its competition structure and evaluation framework, which integrates the Qualcomm AI Hub for consistent and reproducible benchmarking.</td></tr>
 <tr><td>2026-04-20</td><td>URoPE: Universal Relative Position Embedding across Geometric Spaces</td><td>[2604.18747](http://arxiv.org/pdf/2604.18747)</td><td>◆ Relative position embedding has become a standard mechanism for encoding positional information in Transformers.
@@ -5343,4 +5376,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.22
+> 更新于: 2026.04.23
