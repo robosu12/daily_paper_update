@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.23)
+# SLAM领域最新论文 (2026.04.24)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-23</td><td>SLAM as a Stochastic Control Problem with Partial Information: Optimal Solutions and Rigorous Approximations</td><td>[2604.21693](http://arxiv.org/pdf/2604.21693)</td><td>◆ Simultaneous localization and mapping (SLAM) is a foundational state estimation problem in robotics in which a robot accurately constructs a map of its environment while also localizing itself within this construction.
+◆ We study the active SLAM problem through the lens of optimal stochastic control, thereby recasting it as a decision-making problem under partial information.
+◆ After reviewing several commonly studied models, we present a general stochastic control formulation of active SLAM together with a rigorous treatment of motion, sensing, and map representation.</td></tr>
 <tr><td>2026-04-21</td><td>SL(C)AMma: Simultaneous Localisation, (Calibration) and Mapping With a Magnetometer Array</td><td>[2604.19946](http://arxiv.org/pdf/2604.19946)</td><td>◆ Indoor localisation techniques suffer from attenuated Global Navigation Satellite System (GNSS) signals and from the accumulation of unbounded drift by integration of proprioceptive sensors.
 ◆ Magnetic field-based Simultaneous Localisation and Mapping (SLAM) reduces drift through loop closures by revisiting previously seen locations, but extended exploration of unseen areas remains challenging.
 ◆ Recently, magnetometer arrays have demonstrated significant benefits over single magnetometers, as they can directly estimate the odometry.</td></tr>
@@ -1241,6 +1244,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-23</td><td>Relocation of compact sets in $\mathbb{R}^n$ by diffeomorphisms and linear separability of datasets in $\mathbb{R}^n$</td><td>[2604.21393](http://arxiv.org/pdf/2604.21393)</td><td>◆ Relocation of compact sets in an $n$-dimensional manifold by self-diffeomorphism is of its own interest as well as significant potential applications to data classification in data science.
+◆ This paper presents a theory for relocating a finite number of compact sets in $\mathbb{R}^n$ to be relocated to arbitrary target domains in $\mathbb{R}^n$ by diffeomorphisms of $\mathbb{R}^n$.
+◆ Furthermore, we prove that for any such collection, there exists a differentiable embedding into $\mathbb{R}^{n+1}$ such that their images become linearly separable.</td></tr>
 <tr><td>2026-04-21</td><td>SL(C)AMma: Simultaneous Localisation, (Calibration) and Mapping With a Magnetometer Array</td><td>[2604.19946](http://arxiv.org/pdf/2604.19946)</td><td>◆ Indoor localisation techniques suffer from attenuated Global Navigation Satellite System (GNSS) signals and from the accumulation of unbounded drift by integration of proprioceptive sensors.
 ◆ Magnetic field-based Simultaneous Localisation and Mapping (SLAM) reduces drift through loop closures by revisiting previously seen locations, but extended exploration of unseen areas remains challenging.
 ◆ Recently, magnetometer arrays have demonstrated significant benefits over single magnetometers, as they can directly estimate the odometry.</td></tr>
@@ -2001,6 +2007,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-23</td><td>EdgeFormer: local patch-based edge detection transformer on point clouds</td><td>[2604.21387](http://arxiv.org/pdf/2604.21387)</td><td>◆ Edge points on 3D point clouds can clearly convey 3D geometry and surface characteristics, therefore, edge detection is widely used in many vision applications with high industrial and commercial demands.
+◆ However, the fine-grained edge features are difficult to detect effectively as they are generally densely distributed or exhibit small-scale surface gradients.
+◆ To address this issue, we present a learning-based edge detection network, named EdgeFormer, which mainly consists of two stages.</td></tr>
 <tr><td>2026-04-22</td><td>MAPRPose: Mask-Aware Proposal and Amodal Refinement for Multi-Object 6D Pose Estimation</td><td>[2604.20650](http://arxiv.org/pdf/2604.20650)</td><td>◆ 6D object pose estimation in cluttered scenes remains challenging due to severe occlusion and sensor noise.
 ◆ We propose MAPRPose, a two-stage framework that leverages mask-aware correspondences for pose proposal and amodal-driven Region-of-Interest (ROI) prediction for robust refinement.
 ◆ In the Mask-Aware Pose Proposal (MAPP) stage, we lift 2D correspondences into 3D space to establish reliable keypoint matches and generate geometrically consistent pose hypotheses based on correspondence-level scoring, from which the top-$K$ candidates are selected.</td></tr>
@@ -2380,6 +2389,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-23</td><td>DualSplat: Robust 3D Gaussian Splatting via Pseudo-Mask Bootstrapping from Reconstruction Failures</td><td>[2604.21631](http://arxiv.org/pdf/2604.21631)</td><td>◆ While 3D Gaussian Splatting (3DGS) achieves real-time photorealistic rendering, its performance degrades significantly when training images contain transient objects that violate multi-view consistency.
+◆ Existing methods face a circular dependency: accurate transient detection requires a well-reconstructed static scene, while clean reconstruction itself depends on reliable transient masks.
+◆ We address this challenge with DualSplat, a Failure-to-Prior framework that converts first-pass reconstruction failures into explicit priors for a second reconstruction stage.</td></tr>
+<tr><td>2026-04-23</td><td>You Only Gaussian Once: Controllable 3D Gaussian Splatting for Ultra-Densely Sampled Scenes</td><td>[2604.21400](http://arxiv.org/pdf/2604.21400)</td><td>◆ 3D Gaussian Splatting (3DGS) has revolutionized neural rendering, yet existing methods remain predominantly research prototypes ill-suited for production-level deployment.
+◆ We identify a critical &quot;Industry-Academia Gap&quot; hindering real-world application: unpredictable resource consumption from heuristic Gaussian growth, the &quot;sparsity shield&quot; of current benchmarks that rewards hallucination over physical fidelity, and severe multi-sensor data pollution.
+◆ To bridge this gap, we propose YOGO (You Only Gaussian Once), a system-level framework that reformulates the stochastic growth process into a deterministic, budget-aware equilibrium.</td></tr>
+<tr><td>2026-04-23</td><td>WildSplatter: Feed-forward 3D Gaussian Splatting with Appearance Control from Unconstrained Images</td><td>[2604.21182](http://arxiv.org/pdf/2604.21182)</td><td>◆ We propose WildSplatter, a feed-forward 3D Gaussian Splatting (3DGS) model for unconstrained images with unknown camera parameters and varying lighting conditions.
+◆ 3DGS is an effective scene representation that enables high-quality, real-time rendering; however, it typically requires iterative optimization and multi-view images captured under consistent lighting with known camera parameters.
+◆ WildSplatter is trained on unconstrained photo collections and jointly learns 3D Gaussians and appearance embeddings conditioned on input images.</td></tr>
 <tr><td>2026-04-22</td><td>GeoRect4D: Geometry-Compatible Generative Rectification for Dynamic Sparse-View 3D Reconstruction</td><td>[2604.20784](http://arxiv.org/pdf/2604.20784)</td><td>◆ Reconstructing dynamic 3D scenes from sparse multi-view videos is highly ill-posed, often leading to geometric collapse, trajectory drift, and floating artifacts.
 ◆ Recent attempts introduce generative priors to hallucinate missing content, yet naive integration frequently causes structural drift and temporal inconsistency due to the mismatch between stochastic 2D generation and deterministic 3D geometry.
 ◆ In this paper, we propose GeoRect4D, a novel unified framework for sparse-view dynamic reconstruction that couples explicit 3D consistency with generative refinement via a closed-loop optimization process.</td></tr>
@@ -4429,6 +4447,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-23</td><td>Vista4D: Video Reshooting with 4D Point Clouds</td><td>[2604.21915](http://arxiv.org/pdf/2604.21915)</td><td>◆ We present Vista4D, a robust and flexible video reshooting framework that grounds the input video and target cameras in a 4D point cloud.
+◆ Specifically, given an input video, our method re-synthesizes the scene with the same dynamics from a different camera trajectory and viewpoint.
+◆ Existing video reshooting methods often struggle with depth estimation artifacts of real-world dynamic videos, while also failing to preserve content appearance and failing to maintain precise camera control for challenging new trajectories.</td></tr>
+<tr><td>2026-04-23</td><td>SyMTRS: Benchmark Multi-Task Synthetic Dataset for Depth, Domain Adaptation and Super-Resolution in Aerial Imagery</td><td>[2604.21801](http://arxiv.org/pdf/2604.21801)</td><td>◆ Recent advances in deep learning for remote sensing rely heavily on large annotated datasets, yet acquiring high-quality ground truth for geometric, radiometric, and multi-domain tasks remains costly and often infeasible.
+◆ In particular, the lack of accurate depth annotations, controlled illumination variations, and multi-scale paired imagery limits progress in monocular depth estimation, domain adaptation, and super-resolution for aerial scenes.
+◆ We present SyMTRS, a large-scale synthetic dataset generated using a high-fidelity urban simulation pipeline.</td></tr>
+<tr><td>2026-04-23</td><td>Unlocking the Power of Critical Factors for 3D Visual Geometry Estimation</td><td>[2604.21713](http://arxiv.org/pdf/2604.21713)</td><td>◆ Feed-forward visual geometry estimation has recently made rapid progress.
+◆ However, an important gap remains: multi-frame models usually produce better cross-frame consistency, yet they often underperform strong per-frame methods on single-frame accuracy.
+◆ This observation motivates our systematic investigation into the critical factors driving model performance through rigorous ablation studies, which reveals several key insights: 1) Scaling up data diversity and quality unlocks further performance gains even in state-of-the-art visual geometry estimation methods; 2) Commonly adopted confidence-aware loss and gradient-based loss mechanisms may unintentionally hinder performance; 3) Joint supervision through both per-sequence and per-frame alignment improves results, while local region alignment surprisingly degrades performance.</td></tr>
 <tr><td>2026-04-22</td><td>MLG-Stereo: ViT Based Stereo Matching with Multi-Stage Local-Global Enhancement</td><td>[2604.20393](http://arxiv.org/pdf/2604.20393)</td><td>◆ With the development of deep learning, ViT-based stereo matching methods have made significant progress due to their remarkable robustness and zero-shot ability.
 ◆ However, due to the limitations of ViTs in handling resolution sensitivity and their relative neglect of local information, the ability of ViT-based methods to predict details and handle arbitrary-resolution images is still weaker than that of CNN-based methods.
 ◆ To address these shortcomings, we propose MLG-Stereo, a systematic pipeline-level design that extends global modeling beyond the encoder stage.</td></tr>
@@ -5364,4 +5391,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.23
+> 更新于: 2026.04.24
