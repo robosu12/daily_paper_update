@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.26)
+# SLAM领域最新论文 (2026.04.27)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-24</td><td>Holo360D: A Large-Scale Real-World Dataset with Continuous Trajectories for Advancing Panoramic 3D Reconstruction and Beyond</td><td>[2604.22482](http://arxiv.org/pdf/2604.22482)</td><td>◆ While feed-forward 3D reconstruction models have advanced rapidly, they still exhibit degraded performance on panoramas due to spherical distortions.
+◆ Moreover, existing panoramic 3D datasets are predominantly collected with 360 cameras fixed at discrete locations, resulting in discontinuous trajectories.
+◆ These limitations critically hinder the development of panoramic feed-forward 3D reconstruction, especially for the multi-view setting.</td></tr>
+<tr><td>2026-04-24</td><td>Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM</td><td>[2604.22339](http://arxiv.org/pdf/2604.22339)</td><td>◆ Handling the dynamic environments is a significant research challenge in Visual Simultaneous Localization and Mapping (SLAM).
+◆ Recent research combines 3D Gaussian Splatting (3DGS) with SLAM to achieve both robust camera pose estimation and photorealistic renderings.
+◆ However, using SLAM to efficiently reconstruct both static and dynamic regions remains challenging.</td></tr>
+<tr><td>2026-04-23</td><td>Robust Camera-to-Mocap Calibration and Verification for Large-Scale Multi-Camera Data Capture</td><td>[2604.22118](http://arxiv.org/pdf/2604.22118)</td><td>◆ Optical motion capture (mocap) systems are widely used for ground-truth capture in AR/VR, SLAM and robotics datasets.
+◆ These datasets require extrinsic calibration to align mocap coordinates to external camera frames -- a step that is subject to multiple sources of error in practice, and failures often go undetected until they corrupt downstream data.
+◆ These issues are compounded for fisheye cameras, where spatially non-uniform distortion makes both calibration and verification more challenging.</td></tr>
+<tr><td>2026-04-23</td><td>SNGR: Selective Non-Gaussian Refinement for Ambiguous SLAM Factor Graphs</td><td>[2604.22065](http://arxiv.org/pdf/2604.22065)</td><td>◆ We present Selective Non-Gaussian Refinement (SNGR), a SLAM framework that augments iSAM2 with targeted nested sampling on windows where Gaussian approximations are likely to fail.
+◆ We detect such regions using the condition number of joint marginal covariances and selectively refine them using the full nonlinear factor graph likelihood, with a gating mechanism to avoid degradation in multimodal cases.
+◆ Experiments on range-only SLAM with wrong data association show that SNGR achieves high-precision failure detection and consistent local likelihood improvements while reducing computational cost relative to exhaustive non-Gaussian inference.</td></tr>
 <tr><td>2026-04-23</td><td>SLAM as a Stochastic Control Problem with Partial Information: Optimal Solutions and Rigorous Approximations</td><td>[2604.21693](http://arxiv.org/pdf/2604.21693)</td><td>◆ Simultaneous localization and mapping (SLAM) is a foundational state estimation problem in robotics in which a robot accurately constructs a map of its environment while also localizing itself within this construction.
 ◆ We study the active SLAM problem through the lens of optimal stochastic control, thereby recasting it as a decision-making problem under partial information.
 ◆ After reviewing several commonly studied models, we present a general stochastic control formulation of active SLAM together with a rigorous treatment of motion, sensing, and map representation.</td></tr>
@@ -931,6 +943,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-24</td><td>Railway Artificial Intelligence Learning Benchmark (RAIL-BENCH): A Benchmark Suite for Perception in the Railway Domain</td><td>[2604.22507](http://arxiv.org/pdf/2604.22507)</td><td>◆ Automated train operation on existing railway infrastructure requires robust camera-based perception, yet the railway domain lacks public benchmark suites with standardized evaluation protocols that would enable reproducible comparison of approaches.
+◆ We present RAIL-BENCH, the first perception benchmark suite for the railway domain.
+◆ It comprises five challenges - rail track detection, object detection, vegetation segmentation, multi-object tracking, and monocular visual odometry - each tailored to the specific characteristics of railway environments.</td></tr>
+<tr><td>2026-04-24</td><td>PoseFM: Relative Camera Pose Estimation Through Flow Matching</td><td>[2604.22350](http://arxiv.org/pdf/2604.22350)</td><td>◆ Monocular visual odometry (VO) is a fundamental computer vision problem with applications in autonomous navigation, augmented reality and more.
+◆ While deep learning-based methods have recently shown superior accuracy compared to traditional geometric pipelines, particularly in environments where handcrafted features struggle due to poor structure or lighting conditions, most rely on deterministic regression, which lacks the uncertainty awareness required for robust applications.
+◆ We propose PoseFM, the first framework to reformulate monocular frame-to-frame VO as a generative task using Flow Matching (FM).</td></tr>
 <tr><td>2026-04-16</td><td>Dual Pose-Graph Semantic Localization for Vision-Based Autonomous Drone Racing</td><td>[2604.15168](http://arxiv.org/pdf/2604.15168)</td><td>◆ Autonomous drone racing demands robust real-time localization under extreme conditions: high-speed flight, aggressive maneuvers, and payload-constrained platforms that often rely on a single camera for perception.
 ◆ Existing visual SLAM systems, while effective in general scenarios, struggle with motion blur and feature instability inherent to racing dynamics, and do not exploit the structured nature of racing environments.
 ◆ In this work, we present a dual pose-graph architecture that fuses odometry with semantic detections for robust localization.</td></tr>
@@ -1248,6 +1266,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-24</td><td>Region Matters: Efficient and Reliable Region-Aware Visual Place Recognition</td><td>[2604.22390](http://arxiv.org/pdf/2604.22390)</td><td>◆ Visual Place Recognition (VPR) determines a query image&#x27;s geographic location by matching it against geotagged databases.
+◆ However, existing methods struggle with perceptual aliasing caused by irrelevant regions and inefficient re-ranking due to rigid candidate scheduling.
+◆ To address these issues, we introduce FoL++, a method combining robust discriminative region modeling with adaptive re-ranking.</td></tr>
 <tr><td>2026-04-23</td><td>Relocation of compact sets in $\mathbb{R}^n$ by diffeomorphisms and linear separability of datasets in $\mathbb{R}^n$</td><td>[2604.21393](http://arxiv.org/pdf/2604.21393)</td><td>◆ Relocation of compact sets in an $n$-dimensional manifold by self-diffeomorphism is of its own interest as well as significant potential applications to data classification in data science.
 ◆ This paper presents a theory for relocating a finite number of compact sets in $\mathbb{R}^n$ to be relocated to arbitrary target domains in $\mathbb{R}^n$ by diffeomorphisms of $\mathbb{R}^n$.
 ◆ Furthermore, we prove that for any such collection, there exists a differentiable embedding into $\mathbb{R}^{n+1}$ such that their images become linearly separable.</td></tr>
@@ -2013,6 +2034,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-24</td><td>ArchSym: Detecting 3D-Grounded Architectural Symmetries in the Wild</td><td>[2604.22202](http://arxiv.org/pdf/2604.22202)</td><td>◆ Symmetry detection is a fundamental problem in computer vision, and symmetries serve as powerful priors for downstream tasks.
+◆ However, existing learning-based methods for detecting 3D symmetries from single images have been almost exclusively trained and evaluated on object-centric or synthetic datasets, and thus fail to generalize to real-world scenes.
+◆ Furthermore, due to the inherent scale ambiguity of monocular inputs, which makes localizing the 3D plane an ill-posed problem, many existing works only predict the plane&#x27;s orientation.</td></tr>
 <tr><td>2026-04-23</td><td>EdgeFormer: local patch-based edge detection transformer on point clouds</td><td>[2604.21387](http://arxiv.org/pdf/2604.21387)</td><td>◆ Edge points on 3D point clouds can clearly convey 3D geometry and surface characteristics, therefore, edge detection is widely used in many vision applications with high industrial and commercial demands.
 ◆ However, the fine-grained edge features are difficult to detect effectively as they are generally densely distributed or exhibit small-scale surface gradients.
 ◆ To address this issue, we present a learning-based edge detection network, named EdgeFormer, which mainly consists of two stages.</td></tr>
@@ -2397,10 +2421,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-24</td><td>NRGS: Neural Regularization for Robust 3D Semantic Gaussian Splatting</td><td>[2604.22439](http://arxiv.org/pdf/2604.22439)</td><td>◆ We propose a neural regularization method that refines the noisy 3D semantic field produced by lifting multi-view inconsistent 2D features, in order to obtain an accurate and robust 3D semantic Gaussian Splatting.
+◆ The 2D features extracted from vision foundation models suffer from multi-view inconsistency due to a lack of cross-view constraints.
+◆ Lifting these inconsistent features directly into 3D Gaussians results in a noisy semantic field, which degrades the performance of downstream tasks.</td></tr>
+<tr><td>2026-04-24</td><td>Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM</td><td>[2604.22339](http://arxiv.org/pdf/2604.22339)</td><td>◆ Handling the dynamic environments is a significant research challenge in Visual Simultaneous Localization and Mapping (SLAM).
+◆ Recent research combines 3D Gaussian Splatting (3DGS) with SLAM to achieve both robust camera pose estimation and photorealistic renderings.
+◆ However, using SLAM to efficiently reconstruct both static and dynamic regions remains challenging.</td></tr>
+<tr><td>2026-04-24</td><td>EvFlow-GS: Event Enhanced Motion Deblurring with Optical Flow for 3D Gaussian Splatting</td><td>[2604.22183](http://arxiv.org/pdf/2604.22183)</td><td>◆ Achieving sharp 3D reconstruction from motion-blurred images alone becomes challenging, motivating recent methods to incorporate event cameras, benefiting from microsecond temporal resolution.
+◆ However, they suffer from residual artifacts and blurry texture details due to misleading supervision from inaccurate event double integral priors and noisy, blurry events.
+◆ In this study, we propose EvFlow-GS, a unified framework that leverages event streams and optical flow to optimize an end-to-end learnable double integral (LDI), camera poses, and 3D Gaussian Splatting (3DGS) jointly on-the-fly.</td></tr>
+<tr><td>2026-04-24</td><td>PAGaS: Pixel-Aligned 1DoF Gaussian Splatting for Depth Refinement</td><td>[2604.22129](http://arxiv.org/pdf/2604.22129)</td><td>◆ Gaussian Splatting (GS) has emerged as an efficient approach for high-quality novel view synthesis.
+◆ While early GS variants struggled to accurately model the scene&#x27;s geometry, recent advancements constraining the Gaussians&#x27; spread and shapes, such as 2D Gaussian Splatting, have significantly improved geometric fidelity.
+◆ In this paper, we present Pixel-Aligned 1DoF Gaussian Splatting (PAGaS) that adapts the GS representation from novel view synthesis to the multi-view stereo depth task.</td></tr>
 <tr><td>2026-04-23</td><td>DualSplat: Robust 3D Gaussian Splatting via Pseudo-Mask Bootstrapping from Reconstruction Failures</td><td>[2604.21631](http://arxiv.org/pdf/2604.21631)</td><td>◆ While 3D Gaussian Splatting (3DGS) achieves real-time photorealistic rendering, its performance degrades significantly when training images contain transient objects that violate multi-view consistency.
 ◆ Existing methods face a circular dependency: accurate transient detection requires a well-reconstructed static scene, while clean reconstruction itself depends on reliable transient masks.
 ◆ We address this challenge with DualSplat, a Failure-to-Prior framework that converts first-pass reconstruction failures into explicit priors for a second reconstruction stage.</td></tr>
-<tr><td>2026-04-23</td><td>You Only Gaussian Once: Controllable 3D Gaussian Splatting for Ultra-Densely Sampled Scenes</td><td>[2604.21400](http://arxiv.org/pdf/2604.21400)</td><td>◆ 3D Gaussian Splatting (3DGS) has revolutionized neural rendering, yet existing methods remain predominantly research prototypes ill-suited for production-level deployment.
+<tr><td>2026-04-24</td><td>You Only Gaussian Once: Controllable 3D Gaussian Splatting for Ultra-Densely Sampled Scenes</td><td>[2604.21400](http://arxiv.org/pdf/2604.21400)</td><td>◆ 3D Gaussian Splatting (3DGS) has revolutionized neural rendering, yet existing methods remain predominantly research prototypes ill-suited for production-level deployment.
 ◆ We identify a critical &quot;Industry-Academia Gap&quot; hindering real-world application: unpredictable resource consumption from heuristic Gaussian growth, the &quot;sparsity shield&quot; of current benchmarks that rewards hallucination over physical fidelity, and severe multi-sensor data pollution.
 ◆ To bridge this gap, we propose YOGO (You Only Gaussian Once), a system-level framework that reformulates the stochastic growth process into a deterministic, budget-aware equilibrium.</td></tr>
 <tr><td>2026-04-23</td><td>WildSplatter: Feed-forward 3D Gaussian Splatting with Appearance Control from Unconstrained Images</td><td>[2604.21182](http://arxiv.org/pdf/2604.21182)</td><td>◆ We propose WildSplatter, a feed-forward 3D Gaussian Splatting (3DGS) model for unconstrained images with unknown camera parameters and varying lighting conditions.
@@ -2412,7 +2448,7 @@
 <tr><td>2026-04-22</td><td>GSCompleter: A Distillation-Free Plugin for Metric-Aware 3D Gaussian Splatting Completion in Seconds</td><td>[2604.20155](http://arxiv.org/pdf/2604.20155)</td><td>◆ While 3D Gaussian Splatting (3DGS) has revolutionized real-time rendering, its performance degrades significantly under sparse-view extrapolation, manifesting as severe geometric voids and artifacts.
 ◆ Existing solutions primarily rely on an iterative &quot;Repair-then-Distill&quot; paradigm, which is inherently unstable and prone to overfitting.
 ◆ In this work, we propose GSCompleter, a distillation-free plugin that shifts scene completion to a stable &quot;Generate-then-Register&quot; workflow.</td></tr>
-<tr><td>2026-04-21</td><td>Gaussians on a Diet: High-Quality Memory-Bounded 3D Gaussian Splatting Training</td><td>[2604.20046](http://arxiv.org/pdf/2604.20046)</td><td>◆ 3D Gaussian Splatting (3DGS) has revolutionized novel view synthesis with high-quality rendering through continuous aggregations of millions of 3D Gaussian primitives.
+<tr><td>2026-04-23</td><td>Gaussians on a Diet: High-Quality Memory-Bounded 3D Gaussian Splatting Training</td><td>[2604.20046](http://arxiv.org/pdf/2604.20046)</td><td>◆ 3D Gaussian Splatting (3DGS) has revolutionized novel view synthesis with high-quality rendering through continuous aggregations of millions of 3D Gaussian primitives.
 ◆ However, it suffers from a substantial memory footprint, particularly during training due to uncontrolled densification, posing a critical bottleneck for deployment on memory-constrained edge devices.
 ◆ While existing methods prune redundant Gaussians post-training, they fail to address the peak memory spikes caused by the abrupt growth of Gaussians early in the training process.</td></tr>
 <tr><td>2026-04-21</td><td>FluSplat: Sparse-View 3D Editing without Test-Time Optimization</td><td>[2604.20038](http://arxiv.org/pdf/2604.20038)</td><td>◆ Recent advances in text-guided image editing and 3D Gaussian Splatting (3DGS) have enabled high-quality 3D scene manipulation.
@@ -4457,6 +4493,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-24</td><td>Depth-Aware Rover: A Study of Edge AI and Monocular Vision for Real-World Implementation</td><td>[2604.22331](http://arxiv.org/pdf/2604.22331)</td><td>◆ This study analyses simulated and real-world implementations of depth-aware rover navigation, highlighting the transition from stereo vision to monocular depth estimation using edge AI.
+◆ A Unity-based lunar terrain simulator with stereo cameras and OpenCV&#x27;s StereoSGBM was used to generate disparity maps.
+◆ A physical rover built on Raspberry Pi 4 employed UniDepthV2 for monocular metric depth estimation and YOLO12n for real-time object detection.</td></tr>
 <tr><td>2026-04-23</td><td>Vista4D: Video Reshooting with 4D Point Clouds</td><td>[2604.21915](http://arxiv.org/pdf/2604.21915)</td><td>◆ We present Vista4D, a robust and flexible video reshooting framework that grounds the input video and target cameras in a 4D point cloud.
 ◆ Specifically, given an input video, our method re-synthesizes the scene with the same dynamics from a different camera trajectory and viewpoint.
 ◆ Existing video reshooting methods often struggle with depth estimation artifacts of real-world dynamic videos, while also failing to preserve content appearance and failing to maintain precise camera control for challenging new trajectories.</td></tr>
@@ -5403,4 +5442,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.26
+> 更新于: 2026.04.27
