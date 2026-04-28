@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.27)
+# SLAM领域最新论文 (2026.04.28)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-27</td><td>Passage-Aware Structural Mapping for RGB-D Visual SLAM</td><td>[2604.24707](http://arxiv.org/pdf/2604.24707)</td><td>◆ Doorways and passages are critical structural elements for indoor robot navigation, yet they remain underexplored in modern Visual SLAM (VSLAM) frameworks.
+◆ This paper presents a passage-aware structural mapping approach for RGB-D VSLAM that detects doors and traversable openings by jointly fusing geometric, semantic, and topological cues.
+◆ Doors are modeled as planar entities embedded within walls and classified as traversable or non-traversable based on their coplanarity with the supporting wall.</td></tr>
+<tr><td>2026-04-27</td><td>OpenPodcar2: a robust, ROS2 vehicle for self-driving research</td><td>[2604.24242](http://arxiv.org/pdf/2604.24242)</td><td>◆ OpenPodcar2 is a robust, ROS2-interfaced, low-cost, open source hardware and software, autonomous vehicle platform based on an off-the-shelf, hard-canopy, mobility scooter donor vehicle.
+◆ It is a modification of the previous OpenPodcar design, which extends it with robust electronics and ROS2 interfacing, to enable both research and also potential deployment use cases.
+◆ The platform consists of (a) hardware components: documented as a bill of materials and build instructions; (b) integration to the general purpose OSH R4 mechatronics board and a Gazebo simulation of the vehicle, both presenting a common ROS2 interface (c) higher-level ROS2 software implementations and configurations of standard robot autonomous planning and control, including the nav2 stack which performs SLAM and enacts commands to drive the vehicle from a current to a desired pose around obstacles.</td></tr>
+<tr><td>2026-04-27</td><td>Event-based SLAM Benchmark for High-Speed Maneuvers</td><td>[2604.24033](http://arxiv.org/pdf/2604.24033)</td><td>◆ Event-based cameras are bio-inspired sensors with pixels that independently and asynchronously respond to brightness changes at microsecond resolution, offering the potential to handle visual tasks in high-speed maneuvering scenarios.
+◆ Existing event-based approaches, although successful in mitigating motion blur caused by high-speed maneuvers, suffer from many limitations.
+◆ Some of them highlight a success of pose tracking for a fronto-parallel fast shaking camera closed to the structure, while others assume pure (optionally aggressive) three-degree-of-freedom rotations.</td></tr>
 <tr><td>2026-04-24</td><td>Holo360D: A Large-Scale Real-World Dataset with Continuous Trajectories for Advancing Panoramic 3D Reconstruction and Beyond</td><td>[2604.22482](http://arxiv.org/pdf/2604.22482)</td><td>◆ While feed-forward 3D reconstruction models have advanced rapidly, they still exhibit degraded performance on panoramas due to spherical distortions.
 ◆ Moreover, existing panoramic 3D datasets are predominantly collected with 360 cameras fixed at discrete locations, resulting in discontinuous trajectories.
 ◆ These limitations critically hinder the development of panoramic feed-forward 3D reconstruction, especially for the multi-view setting.</td></tr>
@@ -941,6 +950,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-27</td><td>Passage-Aware Structural Mapping for RGB-D Visual SLAM</td><td>[2604.24707](http://arxiv.org/pdf/2604.24707)</td><td>◆ Doorways and passages are critical structural elements for indoor robot navigation, yet they remain underexplored in modern Visual SLAM (VSLAM) frameworks.
+◆ This paper presents a passage-aware structural mapping approach for RGB-D VSLAM that detects doors and traversable openings by jointly fusing geometric, semantic, and topological cues.
+◆ Doors are modeled as planar entities embedded within walls and classified as traversable or non-traversable based on their coplanarity with the supporting wall.</td></tr>
+<tr><td>2026-04-27</td><td>Event-based SLAM Benchmark for High-Speed Maneuvers</td><td>[2604.24033](http://arxiv.org/pdf/2604.24033)</td><td>◆ Event-based cameras are bio-inspired sensors with pixels that independently and asynchronously respond to brightness changes at microsecond resolution, offering the potential to handle visual tasks in high-speed maneuvering scenarios.
+◆ Existing event-based approaches, although successful in mitigating motion blur caused by high-speed maneuvers, suffer from many limitations.
+◆ Some of them highlight a success of pose tracking for a fronto-parallel fast shaking camera closed to the structure, while others assume pure (optionally aggressive) three-degree-of-freedom rotations.</td></tr>
 <tr><td>2026-04-24</td><td>Railway Artificial Intelligence Learning Benchmark (RAIL-BENCH): A Benchmark Suite for Perception in the Railway Domain</td><td>[2604.22507](http://arxiv.org/pdf/2604.22507)</td><td>◆ Automated train operation on existing railway infrastructure requires robust camera-based perception, yet the railway domain lacks public benchmark suites with standardized evaluation protocols that would enable reproducible comparison of approaches.
 ◆ We present RAIL-BENCH, the first perception benchmark suite for the railway domain.
 ◆ It comprises five challenges - rail track detection, object detection, vegetation segmentation, multi-object tracking, and monocular visual odometry - each tailored to the specific characteristics of railway environments.</td></tr>
@@ -1262,6 +1277,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-26</td><td>StateScribe: Towards Accessible Change Awareness Across Real-World Revisits</td><td>[2604.23749](http://arxiv.org/pdf/2604.23749)</td><td>◆ Real-world environments evolve continuously, yet blind and low-vision (BLV) individuals often have limited access to understanding how they change over time.
+◆ Unexpected or relocated objects, layout modifications, and content updates (e.g., price changes) can introduce safety risks and cognitive burden.
+◆ While existing visual assistive technologies can describe immediate surroundings, they operate as one-off interactions and lack mechanisms to surface meaningful changes across revisits.</td></tr>
+<tr><td>2026-04-26</td><td>Move-Then-Operate: Behavioral Phasing for Human-Like Robotic Manipulation</td><td>[2604.23620](http://arxiv.org/pdf/2604.23620)</td><td>◆ We present Move-Then-Operate, a Vision language action framework that explicitly decouples robotic manipulation into two distinct behavioral phases: coarse relocation (move) and contact-critical interaction (operate).
+◆ Unlike monolithic policies that conflate these heterogeneous regimes, our architecture employs a dual-expert policy routed by a learnable phase selector, introducing a structural inductive bias that isolates phase-specific dynamics.
+◆ Phase labels are automatically generated via an MLLM-based pipeline conditioned on lightweight contextual cues such as end-effector velocity and subtask decomposition to ensure alignment with human motor patterns.</td></tr>
 <tr><td>2026-04-24</td><td>Region Matters: Efficient and Reliable Region-Aware Visual Place Recognition</td><td>[2604.22390](http://arxiv.org/pdf/2604.22390)</td><td>◆ Visual Place Recognition (VPR) determines a query image&#x27;s geographic location by matching it against geotagged databases.
 ◆ However, existing methods struggle with perceptual aliasing caused by irrelevant regions and inefficient re-ranking due to rigid candidate scheduling.
 ◆ To address these issues, we introduce FoL++, a method combining robust discriminative region modeling with adaptive re-ranking.</td></tr>
@@ -2028,6 +2049,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-26</td><td>Deploy DINO with Many-to-Many Association</td><td>[2604.23670](http://arxiv.org/pdf/2604.23670)</td><td>◆ Motivated by the limited generalization of supervised image matching models to unseen image domains, we explore the zero-shot deployment of DINO features for this task.
+◆ The generalist visual representation extracted from DINO has inherent ambiguity when used to match feature points among semantically similar instances, prompting us to adopt a many-to-many (m-to-m) matching paradigm.
+◆ However, the existing robust mechanism under m-to-m data association is computationally heavy, which requires finding a maximum-cardinality matching in the inlier association graph for each parameter evaluation.</td></tr>
+<tr><td>2026-04-25</td><td>Keypoint-based Dynamic Object 6-DoF Pose Tracking via Event Camera</td><td>[2604.23387](http://arxiv.org/pdf/2604.23387)</td><td>◆ Accurate 6-DoF pose estimation of objects is critical for robots to perform precise manipulation tasks.
+◆ However, for dynamic object pose estimation, conventional camera-based approaches face several major challenges, such as motion blur, sensor noise, and low-light limitation.
+◆ To address these issues, we employ event cameras, whose high dynamic range and low latency offer a promising solution.</td></tr>
 <tr><td>2026-04-24</td><td>ArchSym: Detecting 3D-Grounded Architectural Symmetries in the Wild</td><td>[2604.22202](http://arxiv.org/pdf/2604.22202)</td><td>◆ Symmetry detection is a fundamental problem in computer vision, and symmetries serve as powerful priors for downstream tasks.
 ◆ However, existing learning-based methods for detecting 3D symmetries from single images have been almost exclusively trained and evaluated on object-centric or synthetic datasets, and thus fail to generalize to real-world scenes.
 ◆ Furthermore, due to the inherent scale ambiguity of monocular inputs, which makes localizing the 3D plane an ill-posed problem, many existing works only predict the plane&#x27;s orientation.</td></tr>
@@ -2413,6 +2440,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-27</td><td>Large-Scale Photogrammetric Documentation of St. John&#x27;s Co-Cathedral: A Workflow for Cultural Heritage Preservation</td><td>[2604.24316](http://arxiv.org/pdf/2604.24316)</td><td>◆ We present a comprehensive methodology for the large-scale photogrammetric documentation of St.
+◆ John&#x27;s Co-Cathedral in Valletta, Malta, a UNESCO World Heritage site renowned for its ornate Baroque architecture and Caravaggio masterpieces.
+◆ Over seven nights of evening-only data collection, we captured 99,000 images using DSLR cameras, drone photography, and LIDAR scanning to create a highly detailed 3D reconstruction comprising 25-30 billion triangles.</td></tr>
+<tr><td>2026-04-27</td><td>Light &#x27;em Up: Enabling Few-Shot Low-Light 3D Gaussian Splatting with Multi-Scale Explicit Retinex Illumination Decoupling</td><td>[2604.24053](http://arxiv.org/pdf/2604.24053)</td><td>◆ Full 360$^\circ$ novel view synthesis under low-light conditions remains challenging.
+◆ Insufficient illumination, noise amplification, and view-dependent photometric inconsistencies prevent existing methods from jointly preserving geometric consistency and photorealism.
+◆ Unsupervised approaches often exhibit color drift under large viewpoint variations, while supervised low-light enhancement models, though effective for 2D tasks, struggle to generalize to new scenes and typically require retraining.</td></tr>
+<tr><td>2026-04-26</td><td>Bringing a Personal Point of View: Evaluating Dynamic 3D Gaussian Splatting for Egocentric Scene Reconstruction</td><td>[2604.23803](http://arxiv.org/pdf/2604.23803)</td><td>◆ Egocentric video provides a unique view into human perception and interaction, with growing relevance for augmented reality, robotics, and assistive technologies.
+◆ However, rapid camera motion and complex scene dynamics pose major challenges for 3D reconstruction from this perspective.
+◆ While 3D Gaussian Splatting (3DGS) has become a state-of-the-art method for efficient, high-quality novel view synthesis, variants, that focus on reconstructing dynamic scenes from monocular video are rarely evaluated on egocentric video.</td></tr>
+<tr><td>2026-04-26</td><td>GS-DOT: Gaussian splatting-based image reconstruction for diffuse optical tomography</td><td>[2604.23675](http://arxiv.org/pdf/2604.23675)</td><td>◆ This work presents GS-DOT, a novel image reconstruction framework based on Gaussian Splatting (GS) for diffuse optical tomography (DOT).
+◆ Inspired by GS for rendering applications, absorption coefficients are represented as a sparse sum of anisotropic Gaussian primitives optimized to fit measured time-resolved point-spread functions through analytic gradients and Adam optimization.
+◆ This is the first adaptation of GS algorithms in the photon diffusion regime, where the ray transport function is replaced by the diffusion functions to enable accurate modeling of light transport in highly scattering media.</td></tr>
+<tr><td>2026-04-26</td><td>Spatiotemporal Degradation-Aware 3D Gaussian Splatting for Realistic Underwater Scene Reconstruction</td><td>[2604.23551](http://arxiv.org/pdf/2604.23551)</td><td>◆ Reconstructing realistic underwater scenes from underwater video remains a meaningful yet challenging task in the multimedia domain.
+◆ The inherent spatiotemporal degradations in underwater imaging, including caustics, flickering, attenuation, and backscattering, frequently result in inaccurate geometry and appearance in existing 3D reconstruction methods.
+◆ While a few recent works have explored underwater degradation-aware reconstruction, they often address either spatial or temporal degradation alone, falling short in more real-world underwater scenarios where both types of degradation occur.</td></tr>
 <tr><td>2026-04-24</td><td>NRGS: Neural Regularization for Robust 3D Semantic Gaussian Splatting</td><td>[2604.22439](http://arxiv.org/pdf/2604.22439)</td><td>◆ We propose a neural regularization method that refines the noisy 3D semantic field produced by lifting multi-view inconsistent 2D features, in order to obtain an accurate and robust 3D semantic Gaussian Splatting.
 ◆ The 2D features extracted from vision foundation models suffer from multi-view inconsistency due to a lack of cross-view constraints.
 ◆ Lifting these inconsistent features directly into 3D Gaussians results in a noisy semantic field, which degrades the performance of downstream tasks.</td></tr>
@@ -4483,6 +4525,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-27</td><td>Monocular Depth Estimation via Neural Network with Learnable Algebraic Group and Ring Structures</td><td>[2604.24328](http://arxiv.org/pdf/2604.24328)</td><td>◆ Monocular depth estimation (MDE) has witnessed remarkable progress driven by Convolutional Neural Networks and transformer-based architectures.
+◆ However, these approaches typically treat the problem as a generic image-to-image regression on Euclidean grids, thereby overlooking the intrinsic algebraic and geometric structures induced by perspective projection.
+◆ To address this limitation, we propose LAGRNet, a novel framework that fundamentally grounds MDE in algebraic geometry by explicitly embedding learnable group, ring, and sheaf structures into the deep learning pipeline.</td></tr>
+<tr><td>2026-04-25</td><td>Sphere-Depth: A Benchmark for Depth Estimation Methods with Varying Spherical Camera Orientations</td><td>[2604.23432](http://arxiv.org/pdf/2604.23432)</td><td>◆ Reliable depth estimation from spherical images is crucial for 360° vision in robotic navigation and immersive scene understanding.
+◆ However, the onboard spherical camera can experience unintentional pose variations in real-world robotic platforms that, along with the geometric distortions inherent in equirectangular projections, significantly impact the effectiveness of depth estimation.
+◆ To study this issue, a novel public benchmark, called Sphere-Depth, is introduced to systematically evaluate the robustness of monocular depth estimation models from equirectangular images in a reproducible way.</td></tr>
 <tr><td>2026-04-24</td><td>Depth-Aware Rover: A Study of Edge AI and Monocular Vision for Real-World Implementation</td><td>[2604.22331](http://arxiv.org/pdf/2604.22331)</td><td>◆ This study analyses simulated and real-world implementations of depth-aware rover navigation, highlighting the transition from stereo vision to monocular depth estimation using edge AI.
 ◆ A Unity-based lunar terrain simulator with stereo cameras and OpenCV&#x27;s StereoSGBM was used to generate disparity maps.
 ◆ A physical rover built on Raspberry Pi 4 employed UniDepthV2 for monocular metric depth estimation and YOLO12n for real-time object detection.</td></tr>
@@ -5430,4 +5478,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.27
+> 更新于: 2026.04.28
