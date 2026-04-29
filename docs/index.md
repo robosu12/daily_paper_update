@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.28)
+# SLAM领域最新论文 (2026.04.29)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-28</td><td>Robust Graph Matching through Semantic Relationship Generation for SLAM</td><td>[2604.25404](http://arxiv.org/pdf/2604.25404)</td><td>◆ Graph-based representations such as Scene Graphs enable localization in structured indoor environments by matching a locally observed graph, constructed from sensor data, to a prior map.
+◆ This process is particularly challenging in environments with repetitive or symmetric layouts, where structural cues alone are often insufficient to resolve ambiguities.
+◆ We propose a semantic-enhanced graph matching approach that explicitly models relations between detected objects and structural elements, such as rooms and wall planes.</td></tr>
+<tr><td>2026-04-28</td><td>COMPASS: COmpact Multi-channel Prior-map And Scene Signature for Floor-Plan-Based Visual Localization</td><td>[2604.25388](http://arxiv.org/pdf/2604.25388)</td><td>◆ Architectural floor plans are widely available priors which contain not only geometry but also the semantic information of the environment, yet existing localization methods largely ignore this semantic information.
+◆ To address this, we present COMPASS, an algorithm that exploits both geometric and semantic priors from floor plans to estimate the pose of a robot equipped with dual fisheye cameras.
+◆ Inspired by scan context descriptor from LiDAR-based place recognition, we design a multi-channel radial descriptor that encodes the geometric layout surrounding a position.</td></tr>
 <tr><td>2026-04-27</td><td>Passage-Aware Structural Mapping for RGB-D Visual SLAM</td><td>[2604.24707](http://arxiv.org/pdf/2604.24707)</td><td>◆ Doorways and passages are critical structural elements for indoor robot navigation, yet they remain underexplored in modern Visual SLAM (VSLAM) frameworks.
 ◆ This paper presents a passage-aware structural mapping approach for RGB-D VSLAM that detects doors and traversable openings by jointly fusing geometric, semantic, and topological cues.
 ◆ Doors are modeled as planar entities embedded within walls and classified as traversable or non-traversable based on their coplanarity with the supporting wall.</td></tr>
@@ -34,7 +40,7 @@
 <tr><td>2026-04-24</td><td>Holo360D: A Large-Scale Real-World Dataset with Continuous Trajectories for Advancing Panoramic 3D Reconstruction and Beyond</td><td>[2604.22482](http://arxiv.org/pdf/2604.22482)</td><td>◆ While feed-forward 3D reconstruction models have advanced rapidly, they still exhibit degraded performance on panoramas due to spherical distortions.
 ◆ Moreover, existing panoramic 3D datasets are predominantly collected with 360 cameras fixed at discrete locations, resulting in discontinuous trajectories.
 ◆ These limitations critically hinder the development of panoramic feed-forward 3D reconstruction, especially for the multi-view setting.</td></tr>
-<tr><td>2026-04-24</td><td>Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM</td><td>[2604.22339](http://arxiv.org/pdf/2604.22339)</td><td>◆ Handling the dynamic environments is a significant research challenge in Visual Simultaneous Localization and Mapping (SLAM).
+<tr><td>2026-04-28</td><td>Flow4DGS-SLAM: Optical Flow-Guided 4D Gaussian Splatting SLAM</td><td>[2604.22339](http://arxiv.org/pdf/2604.22339)</td><td>◆ Handling the dynamic environments is a significant research challenge in Visual Simultaneous Localization and Mapping (SLAM).
 ◆ Recent research combines 3D Gaussian Splatting (3DGS) with SLAM to achieve both robust camera pose estimation and photorealistic renderings.
 ◆ However, using SLAM to efficiently reconstruct both static and dynamic regions remains challenging.</td></tr>
 <tr><td>2026-04-23</td><td>Robust Camera-to-Mocap Calibration and Verification for Large-Scale Multi-Camera Data Capture</td><td>[2604.22118](http://arxiv.org/pdf/2604.22118)</td><td>◆ Optical motion capture (mocap) systems are widely used for ground-truth capture in AR/VR, SLAM and robotics datasets.
@@ -1277,6 +1283,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-28</td><td>COMPASS: COmpact Multi-channel Prior-map And Scene Signature for Floor-Plan-Based Visual Localization</td><td>[2604.25388](http://arxiv.org/pdf/2604.25388)</td><td>◆ Architectural floor plans are widely available priors which contain not only geometry but also the semantic information of the environment, yet existing localization methods largely ignore this semantic information.
+◆ To address this, we present COMPASS, an algorithm that exploits both geometric and semantic priors from floor plans to estimate the pose of a robot equipped with dual fisheye cameras.
+◆ Inspired by scan context descriptor from LiDAR-based place recognition, we design a multi-channel radial descriptor that encodes the geometric layout surrounding a position.</td></tr>
+<tr><td>2026-04-27</td><td>Relocation without preference: A destination-agnostic Schelling-type metapopulation model</td><td>[2604.24998](http://arxiv.org/pdf/2604.24998)</td><td>◆ In this work, we propose and analyze a novel Schelling-type metapopulation model that examines how random relocations of families between neighborhoods can lead to segregation.
+◆ The model consists of a large number of houses organized into $N$ neighborhoods with $L$ houses each, without any spatial structure.
+◆ Houses can be occupied by either a blue or a red family, and families relocate -- to an empty house selected uniformly at random -- at a rate that depends only on the number of families of the other type within the same neighborhood.</td></tr>
 <tr><td>2026-04-26</td><td>StateScribe: Towards Accessible Change Awareness Across Real-World Revisits</td><td>[2604.23749](http://arxiv.org/pdf/2604.23749)</td><td>◆ Real-world environments evolve continuously, yet blind and low-vision (BLV) individuals often have limited access to understanding how they change over time.
 ◆ Unexpected or relocated objects, layout modifications, and content updates (e.g., price changes) can introduce safety risks and cognitive burden.
 ◆ While existing visual assistive technologies can describe immediate surroundings, they operate as one-off interactions and lack mechanisms to surface meaningful changes across revisits.</td></tr>
@@ -2049,6 +2061,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-28</td><td>GeoSearch: Augmenting Worldwide Geolocalization with Web-Scale Reverse Image Search and Image Matching</td><td>[2604.25390](http://arxiv.org/pdf/2604.25390)</td><td>◆ Worldwide image geolocalization, which aims to predict the GPS coordinates of any image on Earth, remains challenging due to global visual diversity.
+◆ Recent generative approaches based on Retrieval-Augmented Generation (RAG) and Large Multimodal Models (LMMs) leverage candidates retrieved from fixed databases for reasoning, but often struggle with scenes that are absent from the reference set.
+◆ In this work, we propose GeoSearch, an open-world geolocation framework that integrates web-scale reverse image search into the RAG pipeline.</td></tr>
 <tr><td>2026-04-26</td><td>Deploy DINO with Many-to-Many Association</td><td>[2604.23670](http://arxiv.org/pdf/2604.23670)</td><td>◆ Motivated by the limited generalization of supervised image matching models to unseen image domains, we explore the zero-shot deployment of DINO features for this task.
 ◆ The generalist visual representation extracted from DINO has inherent ambiguity when used to match feature points among semantically similar instances, prompting us to adopt a many-to-many (m-to-m) matching paradigm.
 ◆ However, the existing robust mechanism under m-to-m data association is computationally heavy, which requires finding a maximum-cardinality matching in the inlier association graph for each parameter evaluation.</td></tr>
@@ -2440,6 +2455,21 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-28</td><td>Point Group Symmetry of Polyhedral Diagrams in Graphic Statics</td><td>[2604.25695](http://arxiv.org/pdf/2604.25695)</td><td>◆ Symmetry is an implicit objective in structural form-finding that often reconciles efficiency and aesthetics.
+◆ This paper identifies the symmetry of polyhedral diagrams in three-dimensional graphic statics (3DGS) as point groups and formulates them as constraints, enabling the optimization and manipulation of polyhedral diagrams that preserve such symmetry.
+◆ 3DGS has been an efficient and effective tool for the form-finding of funicular structures.</td></tr>
+<tr><td>2026-04-28</td><td>Generalizable Human Gaussian Splatting via Multi-view Semantic Consistency</td><td>[2604.25466](http://arxiv.org/pdf/2604.25466)</td><td>◆ Recently, generalizable human Gaussian splatting from sparse-view inputs has been actively studied for the photorealistic human rendering.
+◆ Most existing methods rely on explicit geometric constraints or predefined structural representations to accurately position 3D Gaussians.
+◆ Although these approaches have shown the remarkable progress in this field, they still suffer from inconsistent feature representations across multi-view inputs due to complex articulations of the human body and limited overlaps between different views.</td></tr>
+<tr><td>2026-04-28</td><td>GS-Playground: A High-Throughput Photorealistic Simulator for Vision-Informed Robot Learning</td><td>[2604.25459](http://arxiv.org/pdf/2604.25459)</td><td>◆ Embodied AI research is undergoing a shift toward vision-centric perceptual paradigms.
+◆ While massively parallel simulators have catalyzed breakthroughs in proprioception-based locomotion, their potential remains largely untapped for vision-informed tasks due to the prohibitive computational overhead of large-scale photorealistic rendering.
+◆ Furthermore, the creation of simulation-ready 3D assets heavily relies on labor-intensive manual modeling, while the significant sim-to-real physical gap hinders the transfer of contact-rich manipulation policies.</td></tr>
+<tr><td>2026-04-28</td><td>Generalizable 3D Gaussian Splatting enabled Semantic Coding for Real-Time Immersive Video Communications</td><td>[2604.25330](http://arxiv.org/pdf/2604.25330)</td><td>◆ Real-time immersive video communications, particularly high-fidelity 3D telepresence, necessitates a synergistic balance between instantaneous dynamic scene reconstruction and high-efficiency data transmission.
+◆ While recent advancements in feed-forward 3D Gaussian Splatting (3DGS) have enabled real-time rendering, performing multi-view video coding and 3D reconstruction in a decoupled manner leads to suboptimal compression efficiency and high computational complexity.
+◆ To address this, we propose GS-SCNet, the first unified end-to-end framework that seamlessly integrates generalizable 3DGS reconstruction with a dedicated deep Semantic Coding pipeline.</td></tr>
+<tr><td>2026-04-27</td><td>Power Foam: Unifying Real-Time Differentiable Ray Tracing and Rasterization</td><td>[2604.24994](http://arxiv.org/pdf/2604.24994)</td><td>◆ We introduce a differentiable 3D representation that unifies the ray tracing capabilities of foam-based ray tracing with the efficiency of modern rasterization pipelines.
+◆ While prior foam representations enable constant-time ray traversal through an explicit volumetric partition of space, their potentially unbounded cells hinder efficient tile-based rasterization.
+◆ We address this limitation by generalizing Voronoi foams to bounded power diagrams with controllable cell extents, enabling spatially bounded primitives without requiring expensive Delaunay triangulations during training.</td></tr>
 <tr><td>2026-04-27</td><td>Large-Scale Photogrammetric Documentation of St. John&#x27;s Co-Cathedral: A Workflow for Cultural Heritage Preservation</td><td>[2604.24316](http://arxiv.org/pdf/2604.24316)</td><td>◆ We present a comprehensive methodology for the large-scale photogrammetric documentation of St.
 ◆ John&#x27;s Co-Cathedral in Valletta, Malta, a UNESCO World Heritage site renowned for its ornate Baroque architecture and Caravaggio masterpieces.
 ◆ Over seven nights of evening-only data collection, we captured 99,000 images using DSLR cameras, drone photography, and LIDAR scanning to create a highly detailed 3D reconstruction comprising 25-30 billion triangles.</td></tr>
@@ -4525,6 +4555,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-28</td><td>Observation-Guided Neural Surrogate Learning for Scientific Simulation Emulation: A Single-Gauge Flood-Inundation Proof of Concept</td><td>[2604.25890](http://arxiv.org/pdf/2604.25890)</td><td>◆ We present an observation-guided neural surrogate-learning framework for scientific simulation emulation, demonstrated on urban flood-inundation mapping.
+◆ The framework combines LISFLOOD-FP hydrodynamic simulations with a real Gauge L stage record that is mapped to the simulation grid and converted to a datum-consistent local water-depth target before being used as single-site supervision.
+◆ Focusing on a 256 x 256 crop around Gauge L in the Chicago metropolitan area, the method first constructs an ensemble-approximated Gaussian-process/local analogue surrogate (EnsCGP) to obtain a coarse flood-depth estimate and an uncertainty proxy.</td></tr>
+<tr><td>2026-04-28</td><td>Target-depth sensing with metasurface-encoder integrated optoelectronic neural network</td><td>[2604.25160](http://arxiv.org/pdf/2604.25160)</td><td>◆ Accurate and real-time sensing of targets in three-dimensional (3D) environments is essential for modern machine vision, underpinning emerging technologies such as autonomous systems, robotic manipulation, augmented reality, and intelligent surveillance.
+◆ However, state-of-the-art 3D sensing approaches typically rely on complex postprocessing of multi-view images or LiDAR point clouds, resulting in considerable computational load, power consumption, and latency.
+◆ To address these challenges, we propose a metasurface-encoder integrated optoelectronic neural network architecture that compresses 3D information into two-dimensional images by encoding depth using double-helix point spread function generated by a metasurface.</td></tr>
 <tr><td>2026-04-27</td><td>Monocular Depth Estimation via Neural Network with Learnable Algebraic Group and Ring Structures</td><td>[2604.24328](http://arxiv.org/pdf/2604.24328)</td><td>◆ Monocular depth estimation (MDE) has witnessed remarkable progress driven by Convolutional Neural Networks and transformer-based architectures.
 ◆ However, these approaches typically treat the problem as a generic image-to-image regression on Euclidean grids, thereby overlooking the intrinsic algebraic and geometric structures induced by perspective projection.
 ◆ To address this limitation, we propose LAGRNet, a novel framework that fundamentally grounds MDE in algebraic geometry by explicitly embedding learnable group, ring, and sheaf structures into the deep learning pipeline.</td></tr>
@@ -5478,4 +5514,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.28
+> 更新于: 2026.04.29
