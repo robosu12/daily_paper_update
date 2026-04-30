@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.29)
+# SLAM领域最新论文 (2026.04.30)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-28</td><td>RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments</td><td>[2604.26067](http://arxiv.org/pdf/2604.26067)</td><td>◆ We present RADIO-ViPE (Reduce All Domains Into One -- Video Pose Engine), an online semantic SLAM system that enables geometry-aware open-vocabulary grounding, associating arbitrary natural language queries with localized 3D regions and objects in dynamic environments.
+◆ Unlike existing approaches that require calibrated, posed RGB-D input, RADIO-ViPE operates directly on raw monocular RGB video streams, requiring no prior camera intrinsics, depth sensors, or pose initialization.
+◆ The system tightly couples multi-modal embeddings -- spanning vision and language -- derived from agglomerative foundation models (e.g., RADIO) with geometric scene information.</td></tr>
 <tr><td>2026-04-28</td><td>Robust Graph Matching through Semantic Relationship Generation for SLAM</td><td>[2604.25404](http://arxiv.org/pdf/2604.25404)</td><td>◆ Graph-based representations such as Scene Graphs enable localization in structured indoor environments by matching a locally observed graph, constructed from sensor data, to a prior map.
 ◆ This process is particularly challenging in environments with repetitive or symmetric layouts, where structural cues alone are often insufficient to resolve ambiguities.
 ◆ We propose a semantic-enhanced graph matching approach that explicitly models relations between detected objects and structural elements, such as rooms and wall planes.</td></tr>
@@ -2061,6 +2064,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-29</td><td>Featurising Pixels from Dynamic 3D Scenes with Linear In-Context Learners</td><td>[2604.26488](http://arxiv.org/pdf/2604.26488)</td><td>◆ One of the most exciting applications of vision models involve pixel-level reasoning.
+◆ Despite the abundance of vision foundation models, we still lack representations that effectively embed spatio-temporal properties of visual scenes at the pixel level.
+◆ Existing frameworks either train on image-based pretext tasks, which do not account for dynamic elements, or on video sequences for action-level reasoning, which does not scale to dense pixel-level prediction.</td></tr>
 <tr><td>2026-04-28</td><td>GeoSearch: Augmenting Worldwide Geolocalization with Web-Scale Reverse Image Search and Image Matching</td><td>[2604.25390](http://arxiv.org/pdf/2604.25390)</td><td>◆ Worldwide image geolocalization, which aims to predict the GPS coordinates of any image on Earth, remains challenging due to global visual diversity.
 ◆ Recent generative approaches based on Retrieval-Augmented Generation (RAG) and Large Multimodal Models (LMMs) leverage candidates retrieved from fixed databases for reasoning, but often struggle with scenes that are absent from the reference set.
 ◆ In this work, we propose GeoSearch, an open-world geolocation framework that integrates web-scale reverse image search into the RAG pipeline.</td></tr>
@@ -2455,6 +2461,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-29</td><td>Color-Encoded Illumination for High-Speed Volumetric Scene Reconstruction</td><td>[2604.26920](http://arxiv.org/pdf/2604.26920)</td><td>◆ The task of capturing and rendering 3D dynamic scenes from 2D images has become increasingly popular in recent years.
+◆ However, most conventional cameras are bandwidth-limited to 30-60 FPS, restricting these methods to static or slowly evolving scenes.
+◆ While overcoming bandwidth limitations is difficult for general scenes, recent years have seen a flurry of computational imaging methods that yield high-speed videos using conventional cameras for specific applications (e.g., motion capture and particle image velocimetry).</td></tr>
+<tr><td>2026-04-29</td><td>MesonGS++: Post-training Compression of 3D Gaussian Splatting with Hyperparameter Searching</td><td>[2604.26799](http://arxiv.org/pdf/2604.26799)</td><td>◆ 3D Gaussian Splatting (3DGS) achieves high-quality novel view synthesis with real-time rendering, but its storage cost remains prohibitive for practical deployment.
+◆ Existing post-training compression methods still rely on many coupled hyperparameters across pruning, transformation, quantization, and entropy coding, making it difficult to control the final compressed size and fully exploit the rate-distortion trade-off.
+◆ We propose MesonGS++, a size-aware post-training codec for 3D Gaussian compression.</td></tr>
+<tr><td>2026-04-29</td><td>Semantic Foam: Unifying Spatial and Semantic Scene Decomposition</td><td>[2604.26262](http://arxiv.org/pdf/2604.26262)</td><td>◆ Modern scene reconstruction methods, such as 3D Gaussian Splatting, enable photo-realistic novel view synthesis at real-time speeds.
+◆ However, their adoption in interactive graphics applications remains limited due to the difficulty of interacting with these representations compared to traditional, human-authored 3D assets.
+◆ While prior work has attempted to impose semantic decomposition on these models, significant challenges remain in segmentation quality and cross-view consistency.To address these limitations, we introduce Semantic Foam, which extends the recently proposed Radiant Foam representation to semantic decomposition tasks.</td></tr>
+<tr><td>2026-04-29</td><td>EnerGS: Energy-Based Gaussian Splatting with Partial Geometric Priors</td><td>[2604.26238](http://arxiv.org/pdf/2604.26238)</td><td>◆ 3D Gaussian Splatting (3DGS) has been widely adopted for scene reconstruction, where training inherently constitutes a highly coupled and non-convex optimization problem.
+◆ Recent works commonly incorporate geometric priors, such as LiDAR measurements, either for initialization or as training constraints, with the goal of improving photometric reconstruction quality.
+◆ However, in large-scale outdoor scenarios, such geometric supervision is often spatially incomplete and uneven, which limits its effectiveness as a reliable prior and can even be detrimental to the final reconstruction.</td></tr>
 <tr><td>2026-04-28</td><td>Point Group Symmetry of Polyhedral Diagrams in Graphic Statics</td><td>[2604.25695](http://arxiv.org/pdf/2604.25695)</td><td>◆ Symmetry is an implicit objective in structural form-finding that often reconciles efficiency and aesthetics.
 ◆ This paper identifies the symmetry of polyhedral diagrams in three-dimensional graphic statics (3DGS) as point groups and formulates them as constraints, enabling the optimization and manipulation of polyhedral diagrams that preserve such symmetry.
 ◆ 3DGS has been an efficient and effective tool for the form-finding of funicular structures.</td></tr>
@@ -4555,6 +4573,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-29</td><td>Last-Layer-Centric Feature Recombination: Unleashing 3D Geometric Knowledge in DINOv3 for Monocular Depth Estimation</td><td>[2604.26454](http://arxiv.org/pdf/2604.26454)</td><td>◆ Monocular depth estimation (MDE) is a fundamental yet inherently ill-posed task.
+◆ Recent vision foundation models (VFMs), particularly DINO-based transformers, have significantly improved accuracy and generalization for dense prediction.
+◆ Prior works generally follow a unified paradigm: sampling a fixed set of intermediate transformer layers at uniform intervals to build multi-scale features.</td></tr>
 <tr><td>2026-04-28</td><td>Observation-Guided Neural Surrogate Learning for Scientific Simulation Emulation: A Single-Gauge Flood-Inundation Proof of Concept</td><td>[2604.25890](http://arxiv.org/pdf/2604.25890)</td><td>◆ We present an observation-guided neural surrogate-learning framework for scientific simulation emulation, demonstrated on urban flood-inundation mapping.
 ◆ The framework combines LISFLOOD-FP hydrodynamic simulations with a real Gauge L stage record that is mapped to the simulation grid and converted to a datum-consistent local water-depth target before being used as single-site supervision.
 ◆ Focusing on a 256 x 256 crop around Gauge L in the Chicago metropolitan area, the method first constructs an ensemble-approximated Gaussian-process/local analogue surrogate (EnsCGP) to obtain a coarse flood-depth estimate and an uncertainty proxy.</td></tr>
@@ -5514,4 +5535,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.29
+> 更新于: 2026.04.30
