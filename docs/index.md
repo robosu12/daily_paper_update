@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.04.30)
+# SLAM领域最新论文 (2026.05.01)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-30</td><td>FreeOcc: Training-Free Embodied Open-Vocabulary Occupancy Prediction</td><td>[2604.28115](http://arxiv.org/pdf/2604.28115)</td><td>◆ Existing learning-based occupancy prediction methods rely on large-scale 3D annotations and generalize poorly across environments.
+◆ We present FreeOcc, a training-free framework for open-vocabulary occupancy prediction from monocular or RGB-D sequences.
+◆ Unlike prior approaches that require voxel-level supervision and ground-truth camera poses, FreeOcc operates without 3D annotations, pose ground truth, or any learning stage.</td></tr>
+<tr><td>2026-04-30</td><td>Learning-Based Hierarchical Scene Graph Matching for Robot Localization Leveraging Prior Maps</td><td>[2604.27821](http://arxiv.org/pdf/2604.27821)</td><td>◆ Accurate localization is a fundamental requirement for autonomous robots operating in indoor environments.
+◆ Scene graphs encode the spatial structure of an environment as a hierarchy of semantic entities and their relationships, and can be constructed both online from robot sensor data and offline from architectural priors such as Building Information Models (BIM).
+◆ Matching these two complementary representations enables drift correction in SLAM by grounding robot observations against a known structural prior.</td></tr>
 <tr><td>2026-04-28</td><td>RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments</td><td>[2604.26067](http://arxiv.org/pdf/2604.26067)</td><td>◆ We present RADIO-ViPE (Reduce All Domains Into One -- Video Pose Engine), an online semantic SLAM system that enables geometry-aware open-vocabulary grounding, associating arbitrary natural language queries with localized 3D regions and objects in dynamic environments.
 ◆ Unlike existing approaches that require calibrated, posed RGB-D input, RADIO-ViPE operates directly on raw monocular RGB video streams, requiring no prior camera intrinsics, depth sensors, or pose initialization.
 ◆ The system tightly couples multi-modal embeddings -- spanning vision and language -- derived from agglomerative foundation models (e.g., RADIO) with geometric scene information.</td></tr>
@@ -1286,6 +1292,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-30</td><td>AI Inference as Relocatable Electricity Demand: A Latency-Constrained Energy-Geography Framework</td><td>[2604.27855](http://arxiv.org/pdf/2604.27855)</td><td>◆ AI inference is becoming a persistent and geographically distributed source of electricity demand.
+◆ Unlike many traditional electrical loads, inference workloads can sometimes be executed away from the user-facing service location, provided that latency, state locality, capacity, and regulatory constraints remain acceptable.
+◆ This paper studies when such digital relocation of computation can be interpreted as latency-constrained relocation of electricity demand.</td></tr>
+<tr><td>2026-04-30</td><td>Separating Feasibility and Movement in Solution Discovery: The Case of Path Discovery</td><td>[2604.27802](http://arxiv.org/pdf/2604.27802)</td><td>◆ We study solution discovery, where the goal is to obtain a feasible solution to a problem from an initial configuration by a bounded sequence of local moves.
+◆ In many applications, however, the graph that defines which vertex sets are feasible is not the same as the graph that governs how tokens, agents, or resources may move.
+◆ Existing models such as token sliding and token jumping typically do not distinguish the problem graph and the movement graph.</td></tr>
+<tr><td>2026-04-29</td><td>Dynamic Adversarial Fine-Tuning Reorganizes Refusal Geometry</td><td>[2604.27019](http://arxiv.org/pdf/2604.27019)</td><td>◆ Safety-aligned language models must refuse harmful requests without collapsing into broad over-refusal, but the training-time mechanisms behind this tradeoff remain unclear.
+◆ Prior work characterizes refusal directions and jailbreak robustness, yet does not explain how dynamic adversarial fine-tuning changes refusal carriers across training.
+◆ We present a measurement-driven mechanism study, not a new defense, on one 7B backbone under supervised fine-tuning (SFT) and R2D2-style dynamic adversarial fine-tuning.</td></tr>
+<tr><td>2026-04-29</td><td>When Continual Learning Moves to Memory: A Study of Experience Reuse in LLM Agents</td><td>[2604.27003](http://arxiv.org/pdf/2604.27003)</td><td>◆ Memory-augmented LLM agents offer an appealing shortcut to continual learning: rather than updating model parameters, they accumulate experience in external memory, seemingly sidestepping the stability-plasticity dilemma of parametric learning.
+◆ We show that this challenge does not disappear but resurfaces at the memory level.
+◆ Under a limited context window, old and new experiences compete during retrieval, relocating the continual-learning bottleneck from parameter updates to memory access.</td></tr>
 <tr><td>2026-04-28</td><td>COMPASS: COmpact Multi-channel Prior-map And Scene Signature for Floor-Plan-Based Visual Localization</td><td>[2604.25388](http://arxiv.org/pdf/2604.25388)</td><td>◆ Architectural floor plans are widely available priors which contain not only geometry but also the semantic information of the environment, yet existing localization methods largely ignore this semantic information.
 ◆ To address this, we present COMPASS, an algorithm that exploits both geometric and semantic priors from floor plans to estimate the pose of a robot equipped with dual fisheye cameras.
 ◆ Inspired by scan context descriptor from LiDAR-based place recognition, we design a multi-channel radial descriptor that encodes the geometric layout surrounding a position.</td></tr>
@@ -2461,6 +2479,30 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-30</td><td>Stop Holding Your Breath: CT-Informed Gaussian Splatting for Dynamic Bronchoscopy</td><td>[2604.28179](http://arxiv.org/pdf/2604.28179)</td><td>◆ Bronchoscopic navigation relies on registering endoscopic video to a preoperative CT scan, but respiratory motion deforms the airway by 5-20 mm, creating CT-to-body divergence that limits localization accuracy.
+◆ In practice, this is mitigated through breath-hold protocols, which attempt to match the intraoperative anatomy to a static CT, but are difficult to reproduce and disrupt clinical workflow.
+◆ We propose to eliminate the need for breath-hold protocols by leveraging patient-specific respiratory modeling.</td></tr>
+<tr><td>2026-04-30</td><td>GSDrive: Reinforcing Driving Policies by Multi-mode Trajectory Probing with 3D Gaussian Splatting Environment</td><td>[2604.28111](http://arxiv.org/pdf/2604.28111)</td><td>◆ End-to-end (E2E) autonomous driving presents a promising approach for translating perceptual inputs directly into driving actions.
+◆ However, prohibitive annotation costs and temporal data quality degradation hinder long-term real-world deployment.
+◆ While combining imitation learning (IL) and reinforcement learning (RL) is a common strategy for policy improvement, conventional RL training relies on delayed, event-based rewards-policies learn only from catastrophic outcomes such as collisions, leading to premature convergence to suboptimal behaviors.</td></tr>
+<tr><td>2026-04-30</td><td>Faster 3D Gaussian Splatting Convergence via Structure-Aware Densification</td><td>[2604.28016](http://arxiv.org/pdf/2604.28016)</td><td>◆ 3D Gaussian Splatting has emerged as a powerful scene representation for real-time novel-view synthesis.
+◆ However, its standard adaptive density control relies on screen-space positional gradients, which do not distinguish between geometric misplacement and frequency aliasing, often leading to either over-blurred high-frequency textures or inefficient over-densification.
+◆ We present a structure-aware densification framework.</td></tr>
+<tr><td>2026-04-30</td><td>Fake3DGS: A Benchmark for 3D Manipulation Detection in Neural Rendering</td><td>[2604.27590](http://arxiv.org/pdf/2604.27590)</td><td>◆ Recent advances in 3D reconstruction and neural rendering,particularly 3D Gaussian Splatting, make it feasible and simple to edit 3D scenes and re-render them as highly realistic images.
+◆ Therefore, security concerns arise regarding the authenticity of 3D content.
+◆ Despite this threat, 3D fake detection remains largely unexplored in the literature, and most existing work is limited to 2D space.</td></tr>
+<tr><td>2026-04-30</td><td>SandSim: Curve-Guided Gaussian Splatting for Reconstructing Sand Painting Processes</td><td>[2604.27572](http://arxiv.org/pdf/2604.27572)</td><td>◆ Sand painting is a process-driven art where visual appearance emerges from granular accumulation.
+◆ Given a single image, reconstructing a plausible sand painting process requires modeling coherent stroke structures and material-dependent effects.
+◆ Existing methods, including stroke-based optimization and diffusion-based video synthesis, often lack structural coherence and material consistency, leading to unrealistic drawing sequences.</td></tr>
+<tr><td>2026-04-30</td><td>Residual Gaussian Splatting for Ultra Sparse-View CBCT Reconstruction</td><td>[2604.27552](http://arxiv.org/pdf/2604.27552)</td><td>◆ While 3D Gaussian splatting (3DGS) offers explicit and efficient scene representations for cone-beam computed tomography reconstruction, conventional photometric optimization inherently suffers from spectral bias under ultra sparse-view conditions, leading to over-smoothing and a loss of high-frequency anatomical details.
+◆ Since wavelet transforms provide rich high-frequency information and have been widely utilized to enhance sparse reconstruction, this work integrates wavelet multi-resolution analysis with 3DGS.
+◆ To circumvent the mathematical mismatch between the strict non-negativity of physical X-ray attenuation and the bipolar nature of high-frequency wavelet coefficients, we propose Residual Gaussian Splatting (RGS).</td></tr>
+<tr><td>2026-04-30</td><td>Softmax-GS: Generalized Gaussians Learning When to Blend or Bound</td><td>[2604.27437](http://arxiv.org/pdf/2604.27437)</td><td>◆ 3D Gaussian Splatting (3D GS) is widely adopted for novel view synthesis due to its high training and rendering efficiency.
+◆ However, its efficiency relies on the key assumption that Gaussians do not overlap in the 3D space, which leads to noticeable artifacts and view inconsistencies.
+◆ In addition, the inherently diffuse boundaries of Gaussians hinder accurate reconstruction of sharp object edges.</td></tr>
+<tr><td>2026-04-30</td><td>Sparse-View 3D Gaussian Splatting in the Wild</td><td>[2604.27422](http://arxiv.org/pdf/2604.27422)</td><td>◆ We propose a 3D novel sparse-view synthesis framework for unconstrained real-world scenarios that contain distractors.
+◆ Unlike existing methods that primarily perform novel-view synthesis from a sparse set of constrained images without transient elements or leverage unconstrained dense image collections to enhance 3D representation in real-world scenarios, our method not only effectively tackles sparse unconstrained image collections, but also shows high-quality 3D rendering results.
+◆ To do this, we introduce reference-guided view refinement with a diffusion model using a transient mask and a reference image to enhance the 3D representation and mitigate artifacts in rendered views.</td></tr>
 <tr><td>2026-04-29</td><td>Color-Encoded Illumination for High-Speed Volumetric Scene Reconstruction</td><td>[2604.26920](http://arxiv.org/pdf/2604.26920)</td><td>◆ The task of capturing and rendering 3D dynamic scenes from 2D images has become increasingly popular in recent years.
 ◆ However, most conventional cameras are bandwidth-limited to 30-60 FPS, restricting these methods to static or slowly evolving scenes.
 ◆ While overcoming bandwidth limitations is difficult for general scenes, recent years have seen a flurry of computational imaging methods that yield high-speed videos using conventional cameras for specific applications (e.g., motion capture and particle image velocimetry).</td></tr>
@@ -4573,6 +4615,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-04-30</td><td>Beyond Gaussian Bottlenecks: Topologically Aligned Encoding of Vision-Transformer Feature Spaces</td><td>[2604.28122](http://arxiv.org/pdf/2604.28122)</td><td>◆ Modern visual world modeling systems increasingly rely on high-capacity architectures and large-scale data to produce plausible motion, yet they often fail to preserve underlying 3D geometry or physically consistent camera dynamics.
+◆ A key limitation lies not only in model capacity, but in the latent representations used to encode geometric structure.
+◆ We propose S$^2$VAE, a geometry-first latent learning framework that focuses on compressing and representing the latent 3D state of a scene, including camera motion, depth, and point-level structure, rather than modeling appearance alone.</td></tr>
 <tr><td>2026-04-29</td><td>Last-Layer-Centric Feature Recombination: Unleashing 3D Geometric Knowledge in DINOv3 for Monocular Depth Estimation</td><td>[2604.26454](http://arxiv.org/pdf/2604.26454)</td><td>◆ Monocular depth estimation (MDE) is a fundamental yet inherently ill-posed task.
 ◆ Recent vision foundation models (VFMs), particularly DINO-based transformers, have significantly improved accuracy and generalization for dense prediction.
 ◆ Prior works generally follow a unified paradigm: sampling a fixed set of intermediate transformer layers at uniform intervals to build multi-scale features.</td></tr>
@@ -5535,4 +5580,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.04.30
+> 更新于: 2026.05.01
