@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.05.03)
+# SLAM领域最新论文 (2026.05.04)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -1292,7 +1292,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-04-30</td><td>AI Inference as Relocatable Electricity Demand: A Latency-Constrained Energy-Geography Framework</td><td>[2604.27855](http://arxiv.org/pdf/2604.27855)</td><td>◆ AI inference is becoming a persistent and geographically distributed source of electricity demand.
+<tr><td>2026-05-01</td><td>Urban to Rural Migration in Eastern Europe: Unpacking digital ruralities through TikTok video analysis</td><td>[2605.00453](http://arxiv.org/pdf/2605.00453)</td><td>◆ Urban to rural migration is a less-researched phenomenon compared to its counterpart: rural to urban migration.
+◆ In parts of Europe, an increasing number of people living in big urban centers within the country, or moving from other countries decide to relocate to rural areas.
+◆ In this paper, we examine this phenomenon by analysing content posted on TikTok that documents this transition.</td></tr>
+<tr><td>2026-05-01</td><td>AI Inference as Relocatable Electricity Demand: A Latency-Constrained Energy-Geography Framework</td><td>[2604.27855](http://arxiv.org/pdf/2604.27855)</td><td>◆ AI inference is becoming a persistent and geographically distributed source of electricity demand.
 ◆ Unlike many traditional electrical loads, inference workloads can sometimes be executed away from the user-facing service location, provided that latency, state locality, capacity, and regulatory constraints remain acceptable.
 ◆ This paper studies when such digital relocation of computation can be interpreted as latency-constrained relocation of electricity demand.</td></tr>
 <tr><td>2026-04-30</td><td>Separating Feasibility and Movement in Solution Discovery: The Case of Path Discovery</td><td>[2604.27802](http://arxiv.org/pdf/2604.27802)</td><td>◆ We study solution discovery, where the goal is to obtain a feasible solution to a problem from an initial configuration by a bounded sequence of local moves.
@@ -2082,6 +2085,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-01</td><td>TrueEBSD in MTEX: automatic image matching for correlative microscopy applications</td><td>[2605.00703](http://arxiv.org/pdf/2605.00703)</td><td>◆ TrueEBSD is an open-source MATLAB program for image alignment and spatial distortion correction of images and electron backscatter diffraction (EBSD) maps.
+◆ We have re-implemented TrueEBSD as an add-on to MTEX, an established toolbox for EBSD data analysis.
+◆ Spatial alignment enables correlative analysis methods, such as augmenting EBSD orientation maps with data from other imaging modes.</td></tr>
 <tr><td>2026-04-29</td><td>Featurising Pixels from Dynamic 3D Scenes with Linear In-Context Learners</td><td>[2604.26488](http://arxiv.org/pdf/2604.26488)</td><td>◆ One of the most exciting applications of vision models involve pixel-level reasoning.
 ◆ Despite the abundance of vision foundation models, we still lack representations that effectively embed spatio-temporal properties of visual scenes at the pixel level.
 ◆ Existing frameworks either train on image-based pretext tasks, which do not account for dynamic elements, or on video sequences for action-level reasoning, which does not scale to dense pixel-level prediction.</td></tr>
@@ -2479,10 +2485,25 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-01</td><td>2D-SuGaR: Surface-Aware Gaussian Splatting for Geometrically Accurate Mesh Reconstruction</td><td>[2605.00569](http://arxiv.org/pdf/2605.00569)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a powerful technique for generating photorealistic renderings of a scene in real-time.
+◆ However, the volumetric nature of 3DGS limits its ability to accurately capture surface geometry.
+◆ To address this, 2D Gaussian Splatting (2DGS) was proposed to enable view-consistent and geometrically accurate surface reconstruction from multi-view images.</td></tr>
+<tr><td>2026-05-01</td><td>GOR-IS: 3D Gaussian Object Removal in the Intrinsic Space</td><td>[2605.00498](http://arxiv.org/pdf/2605.00498)</td><td>◆ Recent advances in Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) have made it standard practice to reconstruct 3D scenes from multi-view images.
+◆ Removing objects from such 3D representations is a fundamental editing task that requires complete and seamless inpainting of occluded regions, ensuring consistency in geometry and appearance.
+◆ Although existing methods have made notable progress in improving inpainting consistency, they often neglect global lighting effects, leading to physically implausible results.</td></tr>
+<tr><td>2026-05-01</td><td>Beyond Heuristics: Learnable Density Control for 3D Gaussian Splatting</td><td>[2605.00408](http://arxiv.org/pdf/2605.00408)</td><td>◆ While 3D Gaussian Splatting (3DGS) has demonstrated impressive real-time rendering performance, its efficacy remains constrained by a reliance on heuristic density control.
+◆ Despite numerous refinements to these handcrafted rules, such methods inherently lack the flexibility to adapt to diverse scenes with complex geometries.
+◆ In this paper, we propose a paradigm shift for density control from rigid heuristics to fully learnable policies.</td></tr>
+<tr><td>2026-04-30</td><td>VkSplat: High-Performance 3DGS Training in Vulkan Compute</td><td>[2605.00219](http://arxiv.org/pdf/2605.00219)</td><td>◆ We present VkSplat, a high-performance, cross-vendor 3D Gaussian Splatting (3DGS) training pipeline implemented fully in Vulkan compute, addressing performance and compatibility limitation of existing training pipelines.
+◆ With various optimizations, we achieve $3.3\times$ speed and $33\%$ VRAM reduction over CUDA+PyTorch baseline, maintaining quality, and demonstrating compatibility across GPU vendors.
+◆ To the best of our knowledge, this is the first fully-Vulkan-based 3DGS training pipeline that achieves state-of-the-art performance.</td></tr>
+<tr><td>2026-04-30</td><td>FieryGS: In-the-Wild Fire Synthesis with Physics-Integrated Gaussian Splatting</td><td>[2605.00177](http://arxiv.org/pdf/2605.00177)</td><td>◆ We consider the problem of synthesizing photorealistic, physically plausible combustion effects in in-the-wild 3D scenes.
+◆ Traditional CFD and graphics pipelines can produce realistic fire effects but rely on handcrafted geometry, expert-tuned parameters, and labor-intensive workflows, limiting their scalability to the real world.
+◆ Recent scene modeling advances like 3D Gaussian Splatting (3DGS) enable high-fidelity real-world scene reconstruction, yet lack physical grounding for combustion.</td></tr>
 <tr><td>2026-04-30</td><td>Stop Holding Your Breath: CT-Informed Gaussian Splatting for Dynamic Bronchoscopy</td><td>[2604.28179](http://arxiv.org/pdf/2604.28179)</td><td>◆ Bronchoscopic navigation relies on registering endoscopic video to a preoperative CT scan, but respiratory motion deforms the airway by 5-20 mm, creating CT-to-body divergence that limits localization accuracy.
 ◆ In practice, this is mitigated through breath-hold protocols, which attempt to match the intraoperative anatomy to a static CT, but are difficult to reproduce and disrupt clinical workflow.
 ◆ We propose to eliminate the need for breath-hold protocols by leveraging patient-specific respiratory modeling.</td></tr>
-<tr><td>2026-04-30</td><td>GSDrive: Reinforcing Driving Policies by Multi-mode Trajectory Probing with 3D Gaussian Splatting Environment</td><td>[2604.28111](http://arxiv.org/pdf/2604.28111)</td><td>◆ End-to-end (E2E) autonomous driving presents a promising approach for translating perceptual inputs directly into driving actions.
+<tr><td>2026-05-01</td><td>GSDrive: Reinforcing Driving Policies by Multi-mode Trajectory Probing with 3D Gaussian Splatting Environment</td><td>[2604.28111](http://arxiv.org/pdf/2604.28111)</td><td>◆ End-to-end (E2E) autonomous driving presents a promising approach for translating perceptual inputs directly into driving actions.
 ◆ However, prohibitive annotation costs and temporal data quality degradation hinder long-term real-world deployment.
 ◆ While combining imitation learning (IL) and reinforcement learning (RL) is a common strategy for policy improvement, conventional RL training relies on delayed, event-based rewards-policies learn only from catastrophic outcomes such as collisions, leading to premature convergence to suboptimal behaviors.</td></tr>
 <tr><td>2026-04-30</td><td>Faster 3D Gaussian Splatting Convergence via Structure-Aware Densification</td><td>[2604.28016](http://arxiv.org/pdf/2604.28016)</td><td>◆ 3D Gaussian Splatting has emerged as a powerful scene representation for real-time novel-view synthesis.
@@ -4615,6 +4636,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-01</td><td>Foundation AI Models for Aerosol Optical Depth Estimation from PACE Satellite Data</td><td>[2605.00678](http://arxiv.org/pdf/2605.00678)</td><td>◆ Aerosol Optical Depth (AOD) retrieval is essential for Earth observation, supporting applications from air quality monitoring to climate studies.
+◆ Conventional physics-based AOD retrieval methods formulate the problem as a pixel-wise inversion, relying on radiative transfer modeling, memory-intensive look-up tables, and auxiliary meteorological data.
+◆ While recent data-driven approaches have shown promise, many fail to exploit the spatial-spectral coherence of hyperspectral imagery, leading to spatially inconsistent and noise-sensitive retrievals.</td></tr>
+<tr><td>2026-04-30</td><td>REALM: An RGB and Event Aligned Latent Manifold for Cross-Modal Perception</td><td>[2605.00271](http://arxiv.org/pdf/2605.00271)</td><td>◆ Event cameras provide several unique advantages over standard frame-based sensors, including high temporal resolution, low latency, and robustness to extreme lighting.
+◆ However, existing learning-based approaches for event processing are typically confined to narrow, task-specific silos and lack the ability to generalize across modalities.
+◆ We address this gap with REALM, a cross-modal framework that learns an RGB and Event Aligned Latent Manifold by projecting event representations into the pretrained latent space of RGB foundation models.</td></tr>
 <tr><td>2026-04-30</td><td>Beyond Gaussian Bottlenecks: Topologically Aligned Encoding of Vision-Transformer Feature Spaces</td><td>[2604.28122](http://arxiv.org/pdf/2604.28122)</td><td>◆ Modern visual world modeling systems increasingly rely on high-capacity architectures and large-scale data to produce plausible motion, yet they often fail to preserve underlying 3D geometry or physically consistent camera dynamics.
 ◆ A key limitation lies not only in model capacity, but in the latent representations used to encode geometric structure.
 ◆ We propose S$^2$VAE, a geometry-first latent learning framework that focuses on compressing and representing the latent 3D state of a scene, including camera motion, depth, and point-level structure, rather than modeling appearance alone.</td></tr>
@@ -5580,4 +5607,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.03
+> 更新于: 2026.05.04
