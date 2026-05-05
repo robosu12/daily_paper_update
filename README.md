@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.05.04)
+# SLAM领域最新论文 (2026.05.05)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-04</td><td>DynoSLAM: Dynamic SLAM with Generative Graph Neural Networks for Real-World Social Navigation</td><td>[2605.02759](http://arxiv.org/pdf/2605.02759)</td><td>◆ Traditional Simultaneous Localization and Mapping (SLAM) algorithms rely heavily on the static environment assumption, which severely limits their applicability in real-world spaces populated by moving entities, such as pedestrians.
+◆ In this work, we propose DynoSLAM, a tightly-coupled Dynamic GraphSLAM architecture that integrates socially-aware Graph Neural Networks (GNNs) directly into the factor graph optimization.
+◆ Unlike conventional approaches that use rigid constant-velocity heuristics or deterministic single-agent neural priors, our framework formulates pedestrian motion forecasting as a stochastic World Model.</td></tr>
+<tr><td>2026-05-04</td><td>Multi-User XR Offloading via Massive MIMO: A System-Level Analysis using a Real-Life Dataset</td><td>[2605.02631](http://arxiv.org/pdf/2605.02631)</td><td>◆ SLAM is one of the biggest bottlenecks of XR devices, which have strict requirements for latency, power consumption, and user satisfaction.
+◆ A solution that has been proposed and studied to meet the requirements is to offload SLAM to a remote server, which leverages computational hardware but may suffer due to incurred delays and transmission power.
+◆ In this work, we propose offloading SLAM using Massive MIMO, which is attractive due to lower latencies, transmission power, and a more reliable link for multiple users.</td></tr>
+<tr><td>2026-05-04</td><td>Change-Robust Online Spatial-Semantic Topological Mapping</td><td>[2605.02227](http://arxiv.org/pdf/2605.02227)</td><td>◆ Autonomous robots require change-robust spatial-semantic reasoning: using spatial and semantic knowledge to decide where to go, how to get there, and where the robot is despite environmental change.
+◆ Existing approaches typically attach semantics to SLAM-built metric maps, but these pipelines are brittle under appearance shifts and scene dynamics, where data association and relocalization degrade.
+◆ We propose a Change-Robust Online Spatial-Semantic (CROSS) representation that replaces a globally consistent metric substrate with an online, pose-aware topological graph of RGB-D keyframes.</td></tr>
 <tr><td>2026-04-30</td><td>FreeOcc: Training-Free Embodied Open-Vocabulary Occupancy Prediction</td><td>[2604.28115](http://arxiv.org/pdf/2604.28115)</td><td>◆ Existing learning-based occupancy prediction methods rely on large-scale 3D annotations and generalize poorly across environments.
 ◆ We present FreeOcc, a training-free framework for open-vocabulary occupancy prediction from monocular or RGB-D sequences.
 ◆ Unlike prior approaches that require voxel-level supervision and ground-truth camera poses, FreeOcc operates without 3D annotations, pose ground truth, or any learning stage.</td></tr>
@@ -1296,6 +1305,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-04</td><td>EdgeLPR: On the Deep Neural Network trade-off between Precision and Performance in LiDAR Place Recognition</td><td>[2605.02275](http://arxiv.org/pdf/2605.02275)</td><td>◆ Place recognition is essential for long-term autonomous navigation, enabling loop closure and consistent mapping.
+◆ Although deep learning has improved performance, deploying such models on resource-constrained platforms remains challenging.
+◆ This work explores efficient LiDAR-based place recognition for EdgeAI by leveraging Bird&#x27;s Eye View representations to enable lightweight image-based networks.</td></tr>
+<tr><td>2026-05-04</td><td>Change-Robust Online Spatial-Semantic Topological Mapping</td><td>[2605.02227](http://arxiv.org/pdf/2605.02227)</td><td>◆ Autonomous robots require change-robust spatial-semantic reasoning: using spatial and semantic knowledge to decide where to go, how to get there, and where the robot is despite environmental change.
+◆ Existing approaches typically attach semantics to SLAM-built metric maps, but these pipelines are brittle under appearance shifts and scene dynamics, where data association and relocalization degrade.
+◆ We propose a Change-Robust Online Spatial-Semantic (CROSS) representation that replaces a globally consistent metric substrate with an online, pose-aware topological graph of RGB-D keyframes.</td></tr>
+<tr><td>2026-05-03</td><td>Modeling and Mitigation of 7.125-7.40 GHz Terrestrial Network RFI on the Passive Earth Exploration Satellite Service in 6.725-7.125 GHz Band</td><td>[2605.02079](http://arxiv.org/pdf/2605.02079)</td><td>◆ The 7.125-7.4 GHz band is attractive for next generation Terrestrial Network (TN) deployments owing to the large bandwidths available and favorable propagation characteristics.
+◆ Furthermore, recent U.S.
+◆ Presidential actions have cleared the usage of this band for 6G by stipulating relocation of federal incumbents that share this band.</td></tr>
+<tr><td>2026-05-03</td><td>PipeRTL: Timing-Aware Pipeline Optimization at IR-Level for RTL Generation</td><td>[2605.01836](http://arxiv.org/pdf/2605.01836)</td><td>◆ Modern hardware compilers increasingly rely on rich intermediate representations (IRs) to preserve optimization-relevant semantics before generating RTL code.
+◆ However, one important optimization is still largely deferred to backend tools: pipeline optimization.
+◆ In common RTL flows, registers are inserted by frontend heuristics or hardware designers and later adjusted by backend retiming after the design has been lowered to a much lower-level netlist representation.</td></tr>
 <tr><td>2026-05-01</td><td>Urban to Rural Migration in Eastern Europe: Unpacking digital ruralities through TikTok video analysis</td><td>[2605.00453](http://arxiv.org/pdf/2605.00453)</td><td>◆ Urban to rural migration is a less-researched phenomenon compared to its counterpart: rural to urban migration.
 ◆ In parts of Europe, an increasing number of people living in big urban centers within the country, or moving from other countries decide to relocate to rural areas.
 ◆ In this paper, we examine this phenomenon by analysing content posted on TikTok that documents this transition.</td></tr>
@@ -2091,6 +2112,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-02</td><td>SIFT-VTON: Geometric Correspondence Supervision on Cross-Attention for Virtual Try-On</td><td>[2605.01296](http://arxiv.org/pdf/2605.01296)</td><td>◆ Diffusion-based virtual try-on methods achieve photorealistic synthesis through cross-attention mechanisms that transfer garment features to target body regions.
+◆ However, these approaches rely on implicit learning of spatial correspondences, struggling to preserve fine details such as text and illustrations.
+◆ We propose a novel approach, which we call SIFT-VTON, that utilizes SIFT keypoint matching to provide explicit geometric guidance for diffusion-based virtual try-on.</td></tr>
 <tr><td>2026-05-01</td><td>TrueEBSD in MTEX: automatic image matching for correlative microscopy applications</td><td>[2605.00703](http://arxiv.org/pdf/2605.00703)</td><td>◆ TrueEBSD is an open-source MATLAB program for image alignment and spatial distortion correction of images and electron backscatter diffraction (EBSD) maps.
 ◆ We have re-implemented TrueEBSD as an add-on to MTEX, an established toolbox for EBSD data analysis.
 ◆ Spatial alignment enables correlative analysis methods, such as augmenting EBSD orientation maps with data from other imaging modes.</td></tr>
@@ -2493,6 +2517,27 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-04</td><td>HumanSplatHMR: Closing the Loop Between Human Mesh Recovery and Gaussian Splatting Avatar</td><td>[2605.02784](http://arxiv.org/pdf/2605.02784)</td><td>◆ Accurately recovering human pose and appearance from video is an essential component of scene reconstruction, with applications to motion capture, motion prediction, virtual reality, and digital twinning.
+◆ Despite significant interest in building realistic human avatars from video, this paper demonstrates that existing methods do not accurately recover the 3D geometry of humans.
+◆ ViT-based approaches are not consistently reliable and can overfit to 2D views, while NeRF- and Gaussian Splatting-based avatars treat pose and appearance separately, limiting rendering generalization to new poses.</td></tr>
+<tr><td>2026-05-03</td><td>GETA-3DGS: Automatic Joint Structured Pruning and Quantization for 3D Gaussian Splatting</td><td>[2605.02086](http://arxiv.org/pdf/2605.02086)</td><td>◆ 3D Gaussian splatting (3DGS) is a state-of-the-art representation for real-time photorealistic novel-view synthesis, yet a single high-fidelity scene typically occupies hundreds of megabytes to several gigabytes, exceeding the budgets of mobile, immersive, and volumetric video platforms.
+◆ Existing 3DGS compression methods (e.g., HAC++, FlexGaussian, LP-3DGS) treat pruning, quantization, and entropy coding as separate stages and rely on hand-tuned heuristics (opacity thresholds, fixed bit-widths, SH truncation), limiting cross-scene generalization and preventing users from specifying a target rate or quality budget.
+◆ We propose GETA-3DGS, to our knowledge the first end-to-end automatic joint structured pruning and quantization framework for 3DGS.</td></tr>
+<tr><td>2026-05-03</td><td>From Concept to Capability: Evaluating 3D Gaussian Splatting for Synthetic Scene Editing in Autonomous Driving</td><td>[2605.01995](http://arxiv.org/pdf/2605.01995)</td><td>◆ The perception of an Autonomous Driving System (ADS) critically depends on relevant, comprehensive, and diverse datasets to ensure its safety while operating in the environment.
+◆ Field data collection lacks completeness with respect to the list of rare but still possible safety-related scenarios needed for the development, verification, and validation of the ADS.
+◆ 3D Gaussian Splatting (3DGS) has shown promising capabilities for the reconstruction and editing of scenes based on data collected by cameras and LiDAR sensors.</td></tr>
+<tr><td>2026-05-03</td><td>Multi-Scale Gaussian-Language Map for Zero-shot Embodied Navigation and Reasoning</td><td>[2605.01736](http://arxiv.org/pdf/2605.01736)</td><td>◆ Understanding the geometric and semantic structure of environments is essential for embodied navigation and reasoning.
+◆ Existing semantic mapping methods trade off between explicit geometry and multi-scale semantics, and lack a native interface for large models, thus requiring additional training of feature projection for semantic alignment.
+◆ To this end, we propose the multi-scale Gaussian-Language Map (GLMap), which introduces three key designs: (1) explicit geometry, (2) multi-scale semantics covering both instance and region concepts, and (3) a dual-modality interface where each semantic unit jointly stores a natural language description and a 3D Gaussian representation.</td></tr>
+<tr><td>2026-05-02</td><td>SplAttN: Bridging 2D and 3D with Gaussian Soft Splatting and Attention for Point Cloud Completion</td><td>[2605.01466](http://arxiv.org/pdf/2605.01466)</td><td>◆ Although multi-modal learning has advanced point cloud completion, the theoretical mechanisms remain unclear.
+◆ Recent works attribute success to the connection between modalities, yet we identify that standard hard projection severs this connection: projecting a sparse point cloud onto the image plane yields an extremely sparse support, which hinders visual prior propagation, a failure mode we term Cross-Modal Entropy Collapse.
+◆ To address this practical limitation, we propose SplAttN, which replaces hard projection with Differentiable Gaussian Splatting to produce a dense, continuous image-plane representation.</td></tr>
+<tr><td>2026-05-02</td><td>A Principled Approach for Creating High-fidelity Synthetic Demonstrations for Imitation Learning</td><td>[2605.01232](http://arxiv.org/pdf/2605.01232)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled visually realistic demonstration generation from a single expert trajectory and a short multi-view scan.
+◆ However, existing 3DGS-based synthesis pipelines typically generate new motions using sampling-based planners or trajectory optimization, which often deviate substantially from the expert&#x27;s demonstrated path.
+◆ While such deviations may be acceptable for tasks insensitive to motion shape, they discard subtle spatial and temporal structure that is critical for contact-rich and shape-sensitive manipulation, causing increased demonstration diversity to harm downstream policy learning.</td></tr>
+<tr><td>2026-05-02</td><td>TAIL-Safe: Task-Agnostic Safety Monitoring for Imitation Learning Policies</td><td>[2605.01195](http://arxiv.org/pdf/2605.01195)</td><td>◆ Recent imitation learning (IL) algorithms such as flow-matching and diffusion policies demonstrate remarkable performance in learning complex manipulation tasks.
+◆ However, these policies often fail even when operating within their training distribution due to extreme sensitivity to initial conditions and irreducible approximation errors that lead to compounding drift.
+◆ This makes it unsafe to deploy IL policies in the field where out-of-distribution scenarios are prevalent.</td></tr>
 <tr><td>2026-05-01</td><td>2D-SuGaR: Surface-Aware Gaussian Splatting for Geometrically Accurate Mesh Reconstruction</td><td>[2605.00569](http://arxiv.org/pdf/2605.00569)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a powerful technique for generating photorealistic renderings of a scene in real-time.
 ◆ However, the volumetric nature of 3DGS limits its ability to accurately capture surface geometry.
 ◆ To address this, 2D Gaussian Splatting (2DGS) was proposed to enable view-consistent and geometrically accurate surface reconstruction from multi-view images.</td></tr>
@@ -4646,10 +4691,13 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-04</td><td>AnchorD: Metric Grounding of Monocular Depth Using Factor Graphs</td><td>[2605.02667](http://arxiv.org/pdf/2605.02667)</td><td>◆ Dense and accurate depth estimation is essential for robotic manipulation, grasping, and navigation, yet currently available depth sensors are prone to errors on transparent, specular, and general non-Lambertian surfaces.
+◆ To mitigate these errors, large-scale monocular depth estimation approaches provide strong structural priors, but their predictions can be potentially skewed or mis-scaled in metric units, limiting their direct use in robotics.
+◆ Thus, in this work, we propose a training-free depth grounding framework that anchors monocular depth estimation priors from a depth foundation model in raw sensor depth through factor graph optimization.</td></tr>
 <tr><td>2026-05-01</td><td>Foundation AI Models for Aerosol Optical Depth Estimation from PACE Satellite Data</td><td>[2605.00678](http://arxiv.org/pdf/2605.00678)</td><td>◆ Aerosol Optical Depth (AOD) retrieval is essential for Earth observation, supporting applications from air quality monitoring to climate studies.
 ◆ Conventional physics-based AOD retrieval methods formulate the problem as a pixel-wise inversion, relying on radiative transfer modeling, memory-intensive look-up tables, and auxiliary meteorological data.
 ◆ While recent data-driven approaches have shown promise, many fail to exploit the spatial-spectral coherence of hyperspectral imagery, leading to spatially inconsistent and noise-sensitive retrievals.</td></tr>
-<tr><td>2026-04-30</td><td>REALM: An RGB and Event Aligned Latent Manifold for Cross-Modal Perception</td><td>[2605.00271](http://arxiv.org/pdf/2605.00271)</td><td>◆ Event cameras provide several unique advantages over standard frame-based sensors, including high temporal resolution, low latency, and robustness to extreme lighting.
+<tr><td>2026-05-04</td><td>REALM: An RGB and Event Aligned Latent Manifold for Cross-Modal Perception</td><td>[2605.00271](http://arxiv.org/pdf/2605.00271)</td><td>◆ Event cameras provide several unique advantages over standard frame-based sensors, including high temporal resolution, low latency, and robustness to extreme lighting.
 ◆ However, existing learning-based approaches for event processing are typically confined to narrow, task-specific silos and lack the ability to generalize across modalities.
 ◆ We address this gap with REALM, a cross-modal framework that learns an RGB and Event Aligned Latent Manifold by projecting event representations into the pretrained latent space of RGB foundation models.</td></tr>
 <tr><td>2026-04-30</td><td>Beyond Gaussian Bottlenecks: Topologically Aligned Encoding of Vision-Transformer Feature Spaces</td><td>[2604.28122](http://arxiv.org/pdf/2604.28122)</td><td>◆ Modern visual world modeling systems increasingly rely on high-capacity architectures and large-scale data to produce plausible motion, yet they often fail to preserve underlying 3D geometry or physically consistent camera dynamics.
@@ -5619,4 +5667,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.04
+> 更新于: 2026.05.05
