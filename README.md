@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.05.05)
+# SLAM领域最新论文 (2026.05.06)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-05</td><td>Robust Visual SLAM for UAV Navigation in GPS-Denied and Degraded Environments: A Multi-Paradigm Evaluation and Deployment Study</td><td>[2605.03678](http://arxiv.org/pdf/2605.03678)</td><td>◆ Reliable localization in GPS-denied, visually degraded environments is critical for autonomous UAV opera- tions.
+◆ This paper presents a systematic comparative evaluation of five V-SLAM systems ORB-SLAM3, DPVO, DROID-SLAM, DUSt3R, and MASt3R spanning classical, deep learning, recurrent, and Vision Transformer (ViT) paradigms.
+◆ Experiments are conducted on curated sequences from four public benchmarks (TUM RGB-D, EuRoC MAV, UMA-VI, SubT-MRS) and a custom monocular indoor dataset under five controlled degradation conditions (normal, low light, dust haze, motion blur, and combined), with sub-millimeter Vicon ground truth.</td></tr>
 <tr><td>2026-05-04</td><td>DynoSLAM: Dynamic SLAM with Generative Graph Neural Networks for Real-World Social Navigation</td><td>[2605.02759](http://arxiv.org/pdf/2605.02759)</td><td>◆ Traditional Simultaneous Localization and Mapping (SLAM) algorithms rely heavily on the static environment assumption, which severely limits their applicability in real-world spaces populated by moving entities, such as pedestrians.
 ◆ In this work, we propose DynoSLAM, a tightly-coupled Dynamic GraphSLAM architecture that integrates socially-aware Graph Neural Networks (GNNs) directly into the factor graph optimization.
 ◆ Unlike conventional approaches that use rigid constant-velocity heuristics or deterministic single-agent neural priors, our framework formulates pedestrian motion forecasting as a stochastic World Model.</td></tr>
@@ -976,6 +979,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-05</td><td>Robust Visual SLAM for UAV Navigation in GPS-Denied and Degraded Environments: A Multi-Paradigm Evaluation and Deployment Study</td><td>[2605.03678](http://arxiv.org/pdf/2605.03678)</td><td>◆ Reliable localization in GPS-denied, visually degraded environments is critical for autonomous UAV opera- tions.
+◆ This paper presents a systematic comparative evaluation of five V-SLAM systems ORB-SLAM3, DPVO, DROID-SLAM, DUSt3R, and MASt3R spanning classical, deep learning, recurrent, and Vision Transformer (ViT) paradigms.
+◆ Experiments are conducted on curated sequences from four public benchmarks (TUM RGB-D, EuRoC MAV, UMA-VI, SubT-MRS) and a custom monocular indoor dataset under five controlled degradation conditions (normal, low light, dust haze, motion blur, and combined), with sub-millimeter Vicon ground truth.</td></tr>
 <tr><td>2026-04-27</td><td>Passage-Aware Structural Mapping for RGB-D Visual SLAM</td><td>[2604.24707](http://arxiv.org/pdf/2604.24707)</td><td>◆ Doorways and passages are critical structural elements for indoor robot navigation, yet they remain underexplored in modern Visual SLAM (VSLAM) frameworks.
 ◆ This paper presents a passage-aware structural mapping approach for RGB-D VSLAM that detects doors and traversable openings by jointly fusing geometric, semantic, and topological cues.
 ◆ Doors are modeled as planar entities embedded within walls and classified as traversable or non-traversable based on their coplanarity with the supporting wall.</td></tr>
@@ -1305,6 +1311,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-05</td><td>TACO: Trajectory Aligning Cross-view Optimisation</td><td>[2605.03315](http://arxiv.org/pdf/2605.03315)</td><td>◆ Cross-View Geo-localisation (CVGL) matches ground imagery against satellite tiles to give absolute position fixes, an alternative to GNSS where signals are occluded, jammed, or spoofed.
+◆ Recent fine-grained CVGL methods regress sub-tile metric pose, but have only been evaluated as one-shot localisers, never as the primary fix in a live pipeline.
+◆ Inertial sensing provides high-rate relative motion, but accumulates unbounded drift without an absolute anchor.</td></tr>
+<tr><td>2026-05-03</td><td>Non-Monotone Response Modules and Cascades from the EML Operator for Reduced Models of Biological Dynamics</td><td>[2605.02972](http://arxiv.org/pdf/2605.02972)</td><td>◆ Standard saturating response functions, such as the Hill function, are monotone and therefore cannot represent recruitment-induced overshoot or adaptive transients with a single block.
+◆ Reproducing such non-monotone responses from saturating primitives requires at least a difference of two blocks with opposing amplitudes, doubling the static-block parameter count.
+◆ Here, building on a recent mathematical result that a single binary operator, EML, generates all standard elementary functions, we use EML as a structured grammar for reduced nonlinear ODEs.</td></tr>
 <tr><td>2026-05-04</td><td>EdgeLPR: On the Deep Neural Network trade-off between Precision and Performance in LiDAR Place Recognition</td><td>[2605.02275](http://arxiv.org/pdf/2605.02275)</td><td>◆ Place recognition is essential for long-term autonomous navigation, enabling loop closure and consistent mapping.
 ◆ Although deep learning has improved performance, deploying such models on resource-constrained platforms remains challenging.
 ◆ This work explores efficient LiDAR-based place recognition for EdgeAI by leveraging Bird&#x27;s Eye View representations to enable lightweight image-based networks.</td></tr>
@@ -2517,6 +2529,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-05</td><td>FreeTimeGS++: Secrets of Dynamic Gaussian Splatting and Their Principles</td><td>[2605.03337](http://arxiv.org/pdf/2605.03337)</td><td>◆ The recent surge in 4D Gaussian Splatting (4DGS) has achieved impressive dynamic scene reconstruction.
+◆ While these methods demonstrate remarkable performance, the specific drivers behind such gains remain less explored, making a systematic understanding of the underlying principles challenging.
+◆ In this paper, we perform a comprehensive analysis of these hidden factors to provide a clearer perspective on the 4DGS framework.</td></tr>
 <tr><td>2026-05-04</td><td>HumanSplatHMR: Closing the Loop Between Human Mesh Recovery and Gaussian Splatting Avatar</td><td>[2605.02784](http://arxiv.org/pdf/2605.02784)</td><td>◆ Accurately recovering human pose and appearance from video is an essential component of scene reconstruction, with applications to motion capture, motion prediction, virtual reality, and digital twinning.
 ◆ Despite significant interest in building realistic human avatars from video, this paper demonstrates that existing methods do not accurately recover the 3D geometry of humans.
 ◆ ViT-based approaches are not consistently reliable and can overfit to 2D views, while NeRF- and Gaussian Splatting-based avatars treat pose and appearance separately, limiting rendering generalization to new poses.</td></tr>
@@ -5667,4 +5682,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.05
+> 更新于: 2026.05.06
