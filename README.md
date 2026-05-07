@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.05.06)
+# SLAM领域最新论文 (2026.05.07)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -2529,6 +2529,24 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-06</td><td>Aes3D: Aesthetic Assessment in 3D Gaussian Splatting</td><td>[2605.05155](http://arxiv.org/pdf/2605.05155)</td><td>◆ As 3D Gaussian Splatting (3DGS) gains attention in immersive media and digital content creation, assessing the aesthetics of 3D scenes becomes important in helping creators build more visually compelling 3D content.
+◆ However, existing evaluation methods for 3D scenes primarily emphasize reconstruction fidelity and perceptual realism, largely overlooking higher-level aesthetic attributes such as composition, harmony, and visual appeal.
+◆ This limitation comes from two key challenges: (1) the absence of general 3DGS datasets with aesthetic annotations, and (2) the intrinsic nature of 3DGS as a low-level primitive representation, which makes it difficult to capture high-level aesthetic features.</td></tr>
+<tr><td>2026-05-06</td><td>QuadBox: Accelerating 3D Gaussian Splatting with Geometry-Aware Boxes</td><td>[2605.04844](http://arxiv.org/pdf/2605.04844)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as an advanced technique for real-time novel view synthesis by representing scene geometry and appearance using differentiable Gaussian primitives.
+◆ However, efficiently computing precise Gaussian-tile intersections remains a critical task in the rasterization pipeline.
+◆ To this end, we propose QuadBox, a method that leverages four axis-aligned bounding boxes to tightly encapsulate projected Gaussians in a discrete manner.</td></tr>
+<tr><td>2026-05-06</td><td>ULF-Loc: Unbiased Landmark Feature for Robust Visual Localization with 3D Gaussian Splatting</td><td>[2605.04730](http://arxiv.org/pdf/2605.04730)</td><td>◆ Visual localization is a core technology for augmented reality and autonomous navigation.
+◆ Recent methods combine the efficient rendering of 3D Gaussian Splatting (3DGS) with feature-based localization.
+◆ These methods rely on direct matching between 2D query features and the 3D Gaussian feature field, but this often results in mismatches due to an inherent bias in the learned Gaussian feature.</td></tr>
+<tr><td>2026-05-06</td><td>CoherentRaster: Efficient 3D Gaussian Splatting for Light Field Displays</td><td>[2605.04509](http://arxiv.org/pdf/2605.04509)</td><td>◆ Light field displays (LFDs) require rendering an interlaced image that encodes many view-dependent observations.
+◆ This multi-view requirement introduces substantial computational overhead, making real-time rendering difficult to achieve.
+◆ While 3D Gaussian Splatting (3DGS) is efficient for single-view rendering on 2D displays, directly extending it to LFDs is computationally expensive.</td></tr>
+<tr><td>2026-05-06</td><td>Ilov3Splat: Instance-Level Open-Vocabulary 3D Scene Understanding in Gaussian Splatting</td><td>[2605.04506](http://arxiv.org/pdf/2605.04506)</td><td>◆ We introduce Ilov3Splat, a novel framework for instance-level open-vocabulary 3D scene understanding built on 3D Gaussian Splatting (3D-GS).
+◆ Most prior work depends on 2D rendering-based matching or point-level semantic association, which undermines cross-view consistency, lacks coherent instance-level reasoning, and limits precision in downstream 3D tasks.
+◆ To address these limitations, our method jointly optimizes scene geometry and semantic representations by augmenting Gaussian splats with view-consistent feature fields.</td></tr>
+<tr><td>2026-05-06</td><td>Ground4D: Spatially-Grounded Feedforward 4D Reconstruction for Unstructured Off-Road Scenes</td><td>[2605.04435](http://arxiv.org/pdf/2605.04435)</td><td>◆ Feedforward Gaussian Splatting has recently emerged as an efficient paradigm for 4D reconstruction in autonomous driving.
+◆ However, in unstructured off-road scenes, its performance degrades due to high-frequency geometry, ego-motion jitter, and increased non-rigid dynamics.
+◆ These factors introduce conflicting Gaussian observations across timestamps, leading to either over-smoothed renderings or structural artifacts.</td></tr>
 <tr><td>2026-05-05</td><td>FreeTimeGS++: Secrets of Dynamic Gaussian Splatting and Their Principles</td><td>[2605.03337](http://arxiv.org/pdf/2605.03337)</td><td>◆ The recent surge in 4D Gaussian Splatting (4DGS) has achieved impressive dynamic scene reconstruction.
 ◆ While these methods demonstrate remarkable performance, the specific drivers behind such gains remain less explored, making a systematic understanding of the underlying principles challenging.
 ◆ In this paper, we perform a comprehensive analysis of these hidden factors to provide a clearer perspective on the 4DGS framework.</td></tr>
@@ -4706,6 +4724,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-06</td><td>CARD: A Multi-Modal Automotive Dataset for Dense 3D Reconstruction in Challenging Road Topography</td><td>[2605.05014](http://arxiv.org/pdf/2605.05014)</td><td>◆ Autonomous driving must operate across diverse surfaces to enable safe mobility.
+◆ However, most driving datasets are captured on well-paved flat roads.
+◆ Moreover, recent driving datasets primarily provide sparse LiDAR ground truth for images, which is insufficient for assessing fine-grained geometry in depth estimation and completion.</td></tr>
+<tr><td>2026-05-06</td><td>Open-Source Image Editing Models Are Zero-Shot Vision Learners</td><td>[2605.04566](http://arxiv.org/pdf/2605.04566)</td><td>◆ Recent studies have shown that large generative models can solve vision tasks they were not explicitly trained for.
+◆ However, existing evidence relies on closed-source models~(Veo~3, Nano Banana Pro) or requires task-specific instruction tuning, leaving open whether publicly available image-editing models possess zero-shot vision abilities out of the box.
+◆ We conduct a systematic evaluation of three open-source image-editing models -- Qwen-Image-Edit, FireRed-Image-Edit, and LongCat-Image-Edit -- on dense visual prediction tasks \emph{without any fine-tuning}.</td></tr>
+<tr><td>2026-05-06</td><td>Deep Learning-Based Computer Vision for Beam Selection and Proactive Blockage Prediction</td><td>[2605.04514](http://arxiv.org/pdf/2605.04514)</td><td>◆ Millimeter-wave communication faces two critical challenges: propagation losses requiring costly narrow-beam alignment, and penetration losses causing link failures from blocked line-of-sight paths.
+◆ We address propagation loss through a novel vision-aided beam selection framework that integrates RGB imagery with received power profiles for efficient transmitter identification and beam prediction.
+◆ This framework achieves 98.96% top-5 beam prediction accuracy, surpassing current state-of-the-art methods by at least 6% across all metrics.</td></tr>
 <tr><td>2026-05-04</td><td>AnchorD: Metric Grounding of Monocular Depth Using Factor Graphs</td><td>[2605.02667](http://arxiv.org/pdf/2605.02667)</td><td>◆ Dense and accurate depth estimation is essential for robotic manipulation, grasping, and navigation, yet currently available depth sensors are prone to errors on transparent, specular, and general non-Lambertian surfaces.
 ◆ To mitigate these errors, large-scale monocular depth estimation approaches provide strong structural priors, but their predictions can be potentially skewed or mis-scaled in metric units, limiting their direct use in robotics.
 ◆ Thus, in this work, we propose a training-free depth grounding framework that anchors monocular depth estimation priors from a depth foundation model in raw sensor depth through factor graph optimization.</td></tr>
@@ -5682,4 +5709,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.06
+> 更新于: 2026.05.07
