@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.05.07)
+# SLAM领域最新论文 (2026.05.08)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,27 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-07</td><td>GA3T: A Ground-Aerial Terrain Traversability Dataset for Heterogeneous Robot Teams in Unstructured Environments</td><td>[2605.06478](http://arxiv.org/pdf/2605.06478)</td><td>◆ Heterogeneous air-ground robot teams combine complementary sensing modalities, mobility characteristics, and spatial viewpoints that can significantly enhance perception in complex outdoor environments.
+◆ However, progress in multi-robot collaborative perception has been constrained by the lack of real-world datasets featuring overlapping multi-modal observations from platforms operating in unstructured terrain.
+◆ We present GA3T (Ground-Aerial Team for Terrain Traversal), a real-world multi-robot collaborative perception dataset collected using a Clearpath Husky UGV and an Autel EVO~II UAV across diverse unstructured environments, including forest trails, rocky paths, muddy terrain, snow piles, and grass-covered fields.</td></tr>
+<tr><td>2026-05-07</td><td>Indoor 60 GHz Radio Channel Dataset Enabling Digital Twin Construction</td><td>[2605.05824](http://arxiv.org/pdf/2605.05824)</td><td>◆ The ambitious performance targets of modern wireless networks, including 6G and Industrial IoT (IIoT) systems, necessitate advanced hardware platforms utilizing millimeter-wave (mmWave) technology.
+◆ High-frequency signals provide the bandwidth and low latency required for these systems, but rely on beamforming to overcome path loss and exploit channel sparsity.
+◆ This kind of architecture provides all the specifications needed to build a SLAM (Simultaneous Localization and Mapping) system.</td></tr>
+<tr><td>2026-05-06</td><td>SLAM: Structural Linguistic Activation Marking for Language Models</td><td>[2605.05443](http://arxiv.org/pdf/2605.05443)</td><td>◆ LLM watermarks must be detectable without compromising text quality, yet most existing schemes bias the next-token distribution and pay for detection with measurable quality loss.
+◆ We present SLAM (Structural Linguistic Activation Marking), a novel white-box watermarking scheme that sidesteps this cost by writing the mark into structural geometry rather than token frequencies: sparse autoencoders identify residual-stream directions encoding linguistic structure (e.g., voice, tense, clause order), and we causally steer those directions at generation time, leaving lexical sampling and semantics unconstrained.
+◆ On Gemma-2 2B and 9B, SLAM achieves 100% detection accuracy with a quality cost of only 1-2 reward points - compared to 7.5-11.5 for KGW, EWD, and Unigram - with naturalness and diversity preserved at near-unwatermarked levels across both models.</td></tr>
+<tr><td>2026-05-06</td><td>A Closed-Form Dual-Barrier CBF Safety Filter for Holonomic Robots on Incrementally Built Occupancy Grid Maps</td><td>[2605.05182](http://arxiv.org/pdf/2605.05182)</td><td>◆ We present a dual-barrier control barrier function (CBF) safety filter for real-time, safety-critical velocity control of holonomic robots operating in incrementally built occupancy grid maps.
+◆ As a robot explores an unknown environment, unmapped regions introduce irreducible uncertainty, since obstacle geometry beyond the explored frontier is unknown, making entry into such regions a source of collision risk, especially with front-facing sensors.
+◆ To address this, we enforce two constraints: avoidance of mapped obstacles and restriction from unexplored regions.</td></tr>
+<tr><td>2026-05-07</td><td>CARD: A Multi-Modal Automotive Dataset for Dense 3D Reconstruction in Challenging Road Topography</td><td>[2605.05014](http://arxiv.org/pdf/2605.05014)</td><td>◆ Autonomous driving must operate across diverse surfaces to enable safe mobility.
+◆ However, most driving datasets are captured on well-paved flat roads.
+◆ Moreover, recent driving datasets primarily provide sparse LiDAR ground truth for images, which is insufficient for assessing fine-grained geometry in depth estimation and completion.</td></tr>
+<tr><td>2026-05-06</td><td>Dr-PoGO: Direct Radar Pose-Graph Optimization</td><td>[2605.04806](http://arxiv.org/pdf/2605.04806)</td><td>◆ This paper introduces Dr-PoGO, a method for Simultaneous Localization And Mapping (SLAM) using a 2D spinning radar.
+◆ Unlike cameras or lidars that require line-of-sight, millimetre-wave radars can `see&#x27; through dust, falling snow, rain, etc.
+◆ Accordingly, it is a great modality for robust perception regardless of the weather conditions.</td></tr>
+<tr><td>2026-05-07</td><td>Hardware-Aware Neural Feature Extraction for Resource-Constrained Devices</td><td>[2605.04282](http://arxiv.org/pdf/2605.04282)</td><td>◆ Visual SLAM is a core component of spatial computing systems, yet deploying learned local feature extractors on microcontroller-class hardware remains challenging due to memory, bandwidth, and quantization constraints.
+◆ While modern neural descriptors provide strong robustness, their practical adoption is often hindered by system-level bottlenecks that are not captured by FLOP-based efficiency metrics.
+◆ In this work, we introduce Gideon, a hardware-aware neural feature extractor explicitly designed for resource-constrained devices.</td></tr>
 <tr><td>2026-05-05</td><td>Robust Visual SLAM for UAV Navigation in GPS-Denied and Degraded Environments: A Multi-Paradigm Evaluation and Deployment Study</td><td>[2605.03678](http://arxiv.org/pdf/2605.03678)</td><td>◆ Reliable localization in GPS-denied, visually degraded environments is critical for autonomous UAV opera- tions.
 ◆ This paper presents a systematic comparative evaluation of five V-SLAM systems ORB-SLAM3, DPVO, DROID-SLAM, DUSt3R, and MASt3R spanning classical, deep learning, recurrent, and Vision Transformer (ViT) paradigms.
 ◆ Experiments are conducted on curated sequences from four public benchmarks (TUM RGB-D, EuRoC MAV, UMA-VI, SubT-MRS) and a custom monocular indoor dataset under five controlled degradation conditions (normal, low light, dust haze, motion blur, and combined), with sub-millimeter Vicon ground truth.</td></tr>
@@ -977,6 +998,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-07</td><td>Hardware-Aware Neural Feature Extraction for Resource-Constrained Devices</td><td>[2605.04282](http://arxiv.org/pdf/2605.04282)</td><td>◆ Visual SLAM is a core component of spatial computing systems, yet deploying learned local feature extractors on microcontroller-class hardware remains challenging due to memory, bandwidth, and quantization constraints.
+◆ While modern neural descriptors provide strong robustness, their practical adoption is often hindered by system-level bottlenecks that are not captured by FLOP-based efficiency metrics.
+◆ In this work, we introduce Gideon, a hardware-aware neural feature extractor explicitly designed for resource-constrained devices.</td></tr>
 <tr><td>2026-05-05</td><td>Robust Visual SLAM for UAV Navigation in GPS-Denied and Degraded Environments: A Multi-Paradigm Evaluation and Deployment Study</td><td>[2605.03678](http://arxiv.org/pdf/2605.03678)</td><td>◆ Reliable localization in GPS-denied, visually degraded environments is critical for autonomous UAV opera- tions.
 ◆ This paper presents a systematic comparative evaluation of five V-SLAM systems ORB-SLAM3, DPVO, DROID-SLAM, DUSt3R, and MASt3R spanning classical, deep learning, recurrent, and Vision Transformer (ViT) paradigms.
 ◆ Experiments are conducted on curated sequences from four public benchmarks (TUM RGB-D, EuRoC MAV, UMA-VI, SubT-MRS) and a custom monocular indoor dataset under five controlled degradation conditions (normal, low light, dust haze, motion blur, and combined), with sub-millimeter Vicon ground truth.</td></tr>
@@ -1307,6 +1331,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-06</td><td>Dr-PoGO: Direct Radar Pose-Graph Optimization</td><td>[2605.04806](http://arxiv.org/pdf/2605.04806)</td><td>◆ This paper introduces Dr-PoGO, a method for Simultaneous Localization And Mapping (SLAM) using a 2D spinning radar.
+◆ Unlike cameras or lidars that require line-of-sight, millimetre-wave radars can `see&#x27; through dust, falling snow, rain, etc.
+◆ Accordingly, it is a great modality for robust perception regardless of the weather conditions.</td></tr>
 <tr><td>2026-05-05</td><td>TACO: Trajectory Aligning Cross-view Optimisation</td><td>[2605.03315](http://arxiv.org/pdf/2605.03315)</td><td>◆ Cross-View Geo-localisation (CVGL) matches ground imagery against satellite tiles to give absolute position fixes, an alternative to GNSS where signals are occluded, jammed, or spoofed.
 ◆ Recent fine-grained CVGL methods regress sub-tile metric pose, but have only been evaluated as one-shot localisers, never as the primary fix in a live pipeline.
 ◆ Inertial sensing provides high-rate relative motion, but accumulates unbounded drift without an absolute anchor.</td></tr>
@@ -2118,6 +2145,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-06</td><td>Creative Robot Tool Use by Counterfactual Reasoning</td><td>[2605.05411](http://arxiv.org/pdf/2605.05411)</td><td>◆ We propose a causal reasoning framework for creative robot tool use where a suitable tool for a task is correctly identified for use beyond its primary objectives.
+◆ The proposed framework first discovers the causal relationships between the tool and the task by conducting simulated experiments in a dynamics model.
+◆ We decouple the causal discovery problem into two complementary components: VLM-based feature suggestion and counterfactual tool generation via targeted geometric and physical feature perturbations.</td></tr>
 <tr><td>2026-05-02</td><td>SIFT-VTON: Geometric Correspondence Supervision on Cross-Attention for Virtual Try-On</td><td>[2605.01296](http://arxiv.org/pdf/2605.01296)</td><td>◆ Diffusion-based virtual try-on methods achieve photorealistic synthesis through cross-attention mechanisms that transfer garment features to target body regions.
 ◆ However, these approaches rely on implicit learning of spatial correspondences, struggling to preserve fine details such as text and illustrations.
 ◆ We propose a novel approach, which we call SIFT-VTON, that utilizes SIFT keypoint matching to provide explicit geometric guidance for diffusion-based virtual try-on.</td></tr>
@@ -2521,6 +2551,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-07</td><td>OpenGaFF: Open-Vocabulary Gaussian Feature Field with Codebook Attention</td><td>[2605.06088](http://arxiv.org/pdf/2605.06088)</td><td>◆ Understanding open-vocabulary 3D scenes with Gaussian-based representations remains challenging due to fragmented and spatially inconsistent semantic predictions across multi-view observations.
+◆ In this paper, we present OpenGaFF, a novel framework for open-vocabulary 3D scene understanding built upon 3D Gaussian Splatting.
+◆ At the core of our method is a Gaussian Feature Field that models semantics as a continuous function of Gaussian geometry and appearance.</td></tr>
+<tr><td>2026-05-07</td><td>3DSS: 3D Surface Splatting for Inverse Rendering</td><td>[2605.05876](http://arxiv.org/pdf/2605.05876)</td><td>◆ We present 3D Surface Splatting (3DSS), the first differentiable surface splatting renderer for physically-based inverse rendering from multi-view images.
+◆ Our central insight is that the surface separation problem at the heart of surface splatting admits a direct formulation in terms of the reconstruction kernels themselves.
+◆ From this foundation we derive a coverage-based compositing model whose per-layer opacity arises directly from the accumulated Elliptical Weighted Average reconstruction weight, yielding anti-aliased silhouettes and informative visibility gradients at sparsely covered edges.</td></tr>
 <tr><td>2026-05-06</td><td>Aes3D: Aesthetic Assessment in 3D Gaussian Splatting</td><td>[2605.05155](http://arxiv.org/pdf/2605.05155)</td><td>◆ As 3D Gaussian Splatting (3DGS) gains attention in immersive media and digital content creation, assessing the aesthetics of 3D scenes becomes important in helping creators build more visually compelling 3D content.
 ◆ However, existing evaluation methods for 3D scenes primarily emphasize reconstruction fidelity and perceptual realism, largely overlooking higher-level aesthetic attributes such as composition, harmony, and visual appeal.
 ◆ This limitation comes from two key challenges: (1) the absence of general 3DGS datasets with aesthetic annotations, and (2) the intrinsic nature of 3DGS as a low-level primitive representation, which makes it difficult to capture high-level aesthetic features.</td></tr>
@@ -4714,7 +4750,10 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-05-06</td><td>CARD: A Multi-Modal Automotive Dataset for Dense 3D Reconstruction in Challenging Road Topography</td><td>[2605.05014](http://arxiv.org/pdf/2605.05014)</td><td>◆ Autonomous driving must operate across diverse surfaces to enable safe mobility.
+<tr><td>2026-05-07</td><td>$\mathcal{B}^{3}$-Net: Controlled Posterior Bridge Learning for Multi-Task Dense Prediction</td><td>[2605.05722](http://arxiv.org/pdf/2605.05722)</td><td>◆ Multi-task dense prediction solves complementary pixel-level tasks in a unified model, such as semantic segmentation, depth estimation, surface normal estimation, and edge detection.
+◆ Existing decoder-side interactions use attention, prompts, routing, diffusion, Mamba, or bridge features to exchange task evidence, but most of them organize this evidence implicitly.
+◆ They usually fuse task features by similarity or affinity, without explicitly modeling that evidence reliability varies across tasks and spatial locations.</td></tr>
+<tr><td>2026-05-07</td><td>CARD: A Multi-Modal Automotive Dataset for Dense 3D Reconstruction in Challenging Road Topography</td><td>[2605.05014](http://arxiv.org/pdf/2605.05014)</td><td>◆ Autonomous driving must operate across diverse surfaces to enable safe mobility.
 ◆ However, most driving datasets are captured on well-paved flat roads.
 ◆ Moreover, recent driving datasets primarily provide sparse LiDAR ground truth for images, which is insufficient for assessing fine-grained geometry in depth estimation and completion.</td></tr>
 <tr><td>2026-05-06</td><td>Open-Source Image Editing Models Are Zero-Shot Vision Learners</td><td>[2605.04566](http://arxiv.org/pdf/2605.04566)</td><td>◆ Recent studies have shown that large generative models can solve vision tasks they were not explicitly trained for.
@@ -5697,4 +5736,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.07
+> 更新于: 2026.05.08
