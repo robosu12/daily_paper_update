@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.05.10)
+# SLAM领域最新论文 (2026.05.11)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-08</td><td>AERO-VIS: Asynchronous Event-based Real-time Onboard Visual-Inertial SLAM</td><td>[2605.07885](http://arxiv.org/pdf/2605.07885)</td><td>◆ The robustness of event cameras to high dynamic range and motion blur holds the potential to improve visual odometry systems in challenging environments.
+◆ Although their high temporal resolution does not require synchronous processing, most event-based odometry methods still run at fixed rates, which simplifies system design but restricts latency and throughput.
+◆ In this work, we present AERO-VIS, a stereo event-inertial SLAM system with an integrated, data-driven, robust, and performance-optimized keypoint detector.</td></tr>
 <tr><td>2026-05-07</td><td>GA3T: A Ground-Aerial Terrain Traversability Dataset for Heterogeneous Robot Teams in Unstructured Environments</td><td>[2605.06478](http://arxiv.org/pdf/2605.06478)</td><td>◆ Heterogeneous air-ground robot teams combine complementary sensing modalities, mobility characteristics, and spatial viewpoints that can significantly enhance perception in complex outdoor environments.
 ◆ However, progress in multi-robot collaborative perception has been constrained by the lack of real-world datasets featuring overlapping multi-modal observations from platforms operating in unstructured terrain.
 ◆ We present GA3T (Ground-Aerial Team for Terrain Traversal), a real-world multi-robot collaborative perception dataset collected using a Clearpath Husky UGV and an Autel EVO~II UAV across diverse unstructured environments, including forest trails, rocky paths, muddy terrain, snow piles, and grass-covered fields.</td></tr>
@@ -998,6 +1001,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-08</td><td>AERO-VIS: Asynchronous Event-based Real-time Onboard Visual-Inertial SLAM</td><td>[2605.07885](http://arxiv.org/pdf/2605.07885)</td><td>◆ The robustness of event cameras to high dynamic range and motion blur holds the potential to improve visual odometry systems in challenging environments.
+◆ Although their high temporal resolution does not require synchronous processing, most event-based odometry methods still run at fixed rates, which simplifies system design but restricts latency and throughput.
+◆ In this work, we present AERO-VIS, a stereo event-inertial SLAM system with an integrated, data-driven, robust, and performance-optimized keypoint detector.</td></tr>
 <tr><td>2026-05-07</td><td>Hardware-Aware Neural Feature Extraction for Resource-Constrained Devices</td><td>[2605.04282](http://arxiv.org/pdf/2605.04282)</td><td>◆ Visual SLAM is a core component of spatial computing systems, yet deploying learned local feature extractors on microcontroller-class hardware remains challenging due to memory, bandwidth, and quantization constraints.
 ◆ While modern neural descriptors provide strong robustness, their practical adoption is often hindered by system-level bottlenecks that are not captured by FLOP-based efficiency metrics.
 ◆ In this work, we introduce Gideon, a hardware-aware neural feature extractor explicitly designed for resource-constrained devices.</td></tr>
@@ -1331,6 +1337,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-08</td><td>Elastocapillary morphing of self-encapsulated droplets floating at the oil-air interface</td><td>[2605.07759](http://arxiv.org/pdf/2605.07759)</td><td>◆ Self-encapsulated droplets floating at an oil--air interface undergo striking shape changes during evaporation, including flattening and localized loss of membrane tension leading to crumpling and wrinkling.
+◆ Here we combine experiments, modeling and simulations to obtain predictive morphological maps.
+◆ We perform contact-angle and evaporation experiments on water droplets coated by a hydrophobin protein film and floating in a fluorinated oil, providing reference profiles and volume-loss sequences for quantitative validation.</td></tr>
+<tr><td>2026-05-08</td><td>Offline-Online Hierarchical 3D Global Relocalization With Synthetic LiDAR Sensing and Descriptor-Space Retrieval</td><td>[2605.07741](http://arxiv.org/pdf/2605.07741)</td><td>◆ 3D global relocalization is one of the key capabilities for mobile robots in practical applications.
+◆ However, in large scale spaces, existing methods often suffer from prolonged online relocalization time due to factors such as the massive pose search space and high computational overhead.
+◆ To address these issues, this paper proposes an offline-online hierarchical framework that decouples the search space.</td></tr>
 <tr><td>2026-05-06</td><td>Dr-PoGO: Direct Radar Pose-Graph Optimization</td><td>[2605.04806](http://arxiv.org/pdf/2605.04806)</td><td>◆ This paper introduces Dr-PoGO, a method for Simultaneous Localization And Mapping (SLAM) using a 2D spinning radar.
 ◆ Unlike cameras or lidars that require line-of-sight, millimetre-wave radars can `see&#x27; through dust, falling snow, rain, etc.
 ◆ Accordingly, it is a great modality for robust perception regardless of the weather conditions.</td></tr>
@@ -2551,10 +2563,34 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-08</td><td>Differentiable Ray Tracing with Gaussians for Unified Radio Propagation Simulation and View Synthesis</td><td>[2605.07781](http://arxiv.org/pdf/2605.07781)</td><td>◆ Explicit neural representations such as 3D Gaussian Splatting (3DGS) enable high-fidelity and real-time novel view synthesis, yet optimize for alpha-composited optical appearance rather than ray-intersectable geometry.
+◆ In contrast, radio-frequency (RF) digital twins require deterministic multi-bounce paths, where the geometry dictates trajectories and their associated attenuation and delay.
+◆ We introduce a framework enabling differentiable RF propagation simulation directly within visually reconstructed neural scenes, allowing point-to-point path computation between arbitrary 3D locations while preserving high-quality visual rendering.</td></tr>
+<tr><td>2026-05-08</td><td>Disambiguating 2D-3D Correspondences in Gaussian Splatting-based Feature Fields for Visual Localization</td><td>[2605.07351](http://arxiv.org/pdf/2605.07351)</td><td>◆ While Gaussian Splatting-based Feature Fields (GSFFs) have shown promise for visual localization, this paper highlights that photometrically optimized GSFFs are inherently ill-suited for 2D-3D matching.
+◆ The volumetric extent of each Gaussian induces many-to-one pixel-to-point mappings that destabilize PnP-based pose estimation, while photometric optimization gives rise to superfluous Gaussians devoid of multi-view consistency.
+◆ To address these issues, we propose SplitGS-Loc, a localization-specialized GSFFs construction framework that disambiguates 2D-3D correspondences by exploiting Gaussian attributes.</td></tr>
+<tr><td>2026-05-08</td><td>SplatWeaver: Learning to Allocate Gaussian Primitives for Generalizable Novel View Synthesis</td><td>[2605.07287](http://arxiv.org/pdf/2605.07287)</td><td>◆ Generalizable novel view synthesis aims to render unseen views from uncalibrated input images without requiring per-scene optimization.
+◆ Recent feed-forward approaches based on 3D Gaussian Splatting have achieved promising efficiency and rendering quality.
+◆ However, most of them assign a fixed number of Gaussians to each pixel or voxel, ignoring the spatially varying complexity of real-world scenes.</td></tr>
+<tr><td>2026-05-08</td><td>High-Fidelity Surface Splatting-Based 3D Reconstruction from Multi-View Images</td><td>[2605.07254](http://arxiv.org/pdf/2605.07254)</td><td>◆ Multi-view mesh reconstruction remains a core challenge in computer graphics and vision, especially for recovering high-frequency geometry from sparse observations.
+◆ Recent methods such as 3D Gaussian Splatting (3DGS) and Neural Radiance Fields (NeRF) rely on post-processing for mesh extraction, thereby limiting joint optimization of geometry and appearance.
+◆ Implicit Moving Least Squares (IMLS) instead enables direct conversion of point clouds into signed distance and texture fields, supporting end-to-end reconstruction and rendering.</td></tr>
+<tr><td>2026-05-08</td><td>From Pixels to Primitives: Scene Change Detection in 3D Gaussian Splatting</td><td>[2605.07203](http://arxiv.org/pdf/2605.07203)</td><td>◆ Scene change detection methods built on Gaussian splatting universally follow a render-then-compare paradigm: the pre-change scene is rendered into 2D and compared against post-change images via pixel or feature residuals.
+◆ This change detection problem with Gaussian Splatting has been treated as a question about pixels; we treat it as a question about primitives.
+◆ We provide direct evidence that native primitive attributes alone -- position, anisotropic covariance, and color -- carry sufficient signal for scene change detection.</td></tr>
+<tr><td>2026-05-08</td><td>AsyncEvGS: Asynchronous Event-Assisted Gaussian Splatting for Handheld Motion-Blurred Scenes</td><td>[2605.07192](http://arxiv.org/pdf/2605.07192)</td><td>◆ 3D reconstruction methods such as 3D Gaussian Splatting (3DGS) and Neural Radiance Fields (NeRF) achieve impressive photorealism but fail when input images suffer from severe motion blur.
+◆ While event cameras provide high-temporal-resolution motion cues, existing event-assisted approaches rely on low-resolution sensors and strict synchronization, limiting their practicality for handheld 3D capture on common devices, such as smartphones.
+◆ We introduce a flexible, high-resolution asynchronous RGB-Event dual-camera system and a corresponding reconstruction framework.</td></tr>
+<tr><td>2026-05-08</td><td>SatSurfGS: Generalizable 2D Gaussian Splatting for Sparse-View Satellite Surface Reconstruction</td><td>[2605.07181](http://arxiv.org/pdf/2605.07181)</td><td>◆ Sparse-view satellite image surface reconstruction remains highly challenging, fundamentally because the reliability of multi-view matching under satellite imaging conditions is strongly spatially heterogeneous.
+◆ Affected by large photometric differences, weak textures, and repetitive textures, multi-view geometric constraints are often sparse, unevenly distributed, and locally unreliable.
+◆ Although 2D Gaussian Splatting (2DGS) is more suitable than 3D Gaussian Splatting (3DGS) for the explicit representation of continuous surfaces, research on generalizable feed-forward 2DGS frameworks for sparse-view satellite surface reconstruction is still lacking.</td></tr>
+<tr><td>2026-05-07</td><td>AdpSplit: Error-Driven Adaptive Splitting for Faster Geometry Discovery in 3D Gaussian Splatting</td><td>[2605.06876](http://arxiv.org/pdf/2605.06876)</td><td>◆ Adaptive density control in 3D Gaussian Splatting (3DGS) repeatedly grows the Gaussian population through fixed-cardinality random splitting to discover useful scene structure.
+◆ However, in vanilla 3DGS, its binary split operator requires many densification rounds to expose fine details, making it a bottleneck for efficient training schedules with fewer iterations.
+◆ We introduce AdpSplit, an error-driven adaptive split operator that determines the number of split children and initializes the child parameters from L1-pixel-error region statistics, enabling fewer densification iterations, thus reduced training time, while preserving the rendering quality of full-schedule training.</td></tr>
 <tr><td>2026-05-07</td><td>OpenGaFF: Open-Vocabulary Gaussian Feature Field with Codebook Attention</td><td>[2605.06088](http://arxiv.org/pdf/2605.06088)</td><td>◆ Understanding open-vocabulary 3D scenes with Gaussian-based representations remains challenging due to fragmented and spatially inconsistent semantic predictions across multi-view observations.
 ◆ In this paper, we present OpenGaFF, a novel framework for open-vocabulary 3D scene understanding built upon 3D Gaussian Splatting.
 ◆ At the core of our method is a Gaussian Feature Field that models semantics as a continuous function of Gaussian geometry and appearance.</td></tr>
-<tr><td>2026-05-07</td><td>3DSS: 3D Surface Splatting for Inverse Rendering</td><td>[2605.05876](http://arxiv.org/pdf/2605.05876)</td><td>◆ We present 3D Surface Splatting (3DSS), the first differentiable surface splatting renderer for physically-based inverse rendering from multi-view images.
+<tr><td>2026-05-08</td><td>3DSS: 3D Surface Splatting for Inverse Rendering</td><td>[2605.05876](http://arxiv.org/pdf/2605.05876)</td><td>◆ We present 3D Surface Splatting (3DSS), the first differentiable surface splatting renderer for physically-based inverse rendering from multi-view images.
 ◆ Our central insight is that the surface separation problem at the heart of surface splatting admits a direct formulation in terms of the reconstruction kernels themselves.
 ◆ From this foundation we derive a coverage-based compositing model whose per-layer opacity arises directly from the accumulated Elliptical Weighted Average reconstruction weight, yielding anti-aliased silhouettes and informative visibility gradients at sparsely covered edges.</td></tr>
 <tr><td>2026-05-06</td><td>Aes3D: Aesthetic Assessment in 3D Gaussian Splatting</td><td>[2605.05155](http://arxiv.org/pdf/2605.05155)</td><td>◆ As 3D Gaussian Splatting (3DGS) gains attention in immersive media and digital content creation, assessing the aesthetics of 3D scenes becomes important in helping creators build more visually compelling 3D content.
@@ -4750,6 +4786,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-08</td><td>Towards Photorealistic and Efficient Bokeh Rendering via Diffusion Framework</td><td>[2605.07429](http://arxiv.org/pdf/2605.07429)</td><td>◆ Existing mobile devices are constrained by compact optical designs, such as small apertures, which make it difficult to produce natural, optically realistic bokeh effects.
+◆ Although recent learning-based methods have shown promising results, they still struggle with photos captured under high digital zoom levels, which often suffer from reduced resolution and loss of fine details.
+◆ A naive solution is to enhance image quality before applying bokeh rendering, yet this two-stage pipeline reduces efficiency and introduces unnecessary error accumulation.</td></tr>
+<tr><td>2026-05-08</td><td>Learning Image-Adaptive Scale Fields for Metric Depth Recovery</td><td>[2605.07418](http://arxiv.org/pdf/2605.07418)</td><td>◆ Monocular depth estimation (MDE) typically produces depth estimations that are defined up to an unknown scale or shift.
+◆ When only sparse metric anchors are available, recovering accurate metric depth becomes challenging yet necessary for practical applications.
+◆ We address this problem by formulating metric depth recovery as image-adaptive scale field modeling.</td></tr>
+<tr><td>2026-05-08</td><td>Palm-sized Omnidirectional Vision-Based UAV Exploration with Sparse Topological Map Guidance</td><td>[2605.07275](http://arxiv.org/pdf/2605.07275)</td><td>◆ Classic exploration methods often rely on dense occupancy maps or high-resolution point clouds for frontier detection and path planning, resulting in substantial memory consumption and computational overhead.
+◆ Moreover, micro UAVs under size, weight, and power (SWaP) constraints are not practical to be equipped with sensors like LiDAR to obtain accurate environmental geometric measurements.
+◆ This paper presents a lightweight autonomous exploration system that leverages omnidirectional vision and sparse topological map guidance.</td></tr>
 <tr><td>2026-05-07</td><td>$\mathcal{B}^{3}$-Net: Controlled Posterior Bridge Learning for Multi-Task Dense Prediction</td><td>[2605.05722](http://arxiv.org/pdf/2605.05722)</td><td>◆ Multi-task dense prediction solves complementary pixel-level tasks in a unified model, such as semantic segmentation, depth estimation, surface normal estimation, and edge detection.
 ◆ Existing decoder-side interactions use attention, prompts, routing, diffusion, Mamba, or bridge features to exchange task evidence, but most of them organize this evidence implicitly.
 ◆ They usually fuse task features by similarity or affinity, without explicitly modeling that evidence reliability varies across tasks and spatial locations.</td></tr>
@@ -5736,4 +5781,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.10
+> 更新于: 2026.05.11
