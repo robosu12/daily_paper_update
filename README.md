@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.05.11)
+# SLAM领域最新论文 (2026.05.12)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-11</td><td>MAGS-SLAM: Monocular Multi-Agent Gaussian Splatting SLAM for Geometrically and Photometrically Consistent Reconstruction</td><td>[2605.10760](http://arxiv.org/pdf/2605.10760)</td><td>◆ Collaborative photorealistic 3D reconstruction from multiple agents enables rapid large-scale scene capture for virtual production and cooperative multi-robot exploration.
+◆ While recent 3D Gaussian Splatting (3DGS) SLAM algorithms can generate high-fidelity real-time mapping, most of the existing multi-agent Gaussian SLAM methods still rely on RGB-D sensors to obtain metric depth and simplify cross-agent alignment, which limits the deployment on lightweight, low-cost, or power-constrained robotic platforms.
+◆ To address this challenge, we propose MAGS-SLAM, the first RGB-only multi-agent 3DGS SLAM framework for collaborative scene reconstruction.</td></tr>
+<tr><td>2026-05-10</td><td>Above and Below: Heterogeneous Multi-robot SLAM Across Surface and Underwater Domains</td><td>[2605.09811](http://arxiv.org/pdf/2605.09811)</td><td>◆ Multi-robot simultaneous localization and mapping (SLAM) is a fundamental task in multi-robot operations.
+◆ Robots must have a common understanding of their location and that of their team members to complete coordinated actions.
+◆ However, multi-robot SLAM between Uncrewed Surface Vessels (USVs) and Autonomous Underwater Vehicles (AUVs) has primarily been achieved through acoustic pinging between robots to retrieve range measurements; a measurement technique requires that robots to be in similar locations simultaneously, have an uninterrupted path for signal propagation, and may necessitate synchronized clocks.</td></tr>
+<tr><td>2026-05-10</td><td>Safety-Critical LiDAR-Inertial Odometry with On-Manifold Deterministic Protection Level</td><td>[2605.09383](http://arxiv.org/pdf/2605.09383)</td><td>◆ In safety-critical scenarios, the protection level of the autonomous navigation system is crucial for enabling mobile robots to perform safe tasks.
+◆ However, existing studies on probabilistic navigation systems for robots usually perform offline accuracy evaluations using limited datasets and assume that the results can be applied to unknown real-world environments.
+◆ As a result, current autonomous mobile robots often lack protection levels for online safety assessment.</td></tr>
 <tr><td>2026-05-08</td><td>AERO-VIS: Asynchronous Event-based Real-time Onboard Visual-Inertial SLAM</td><td>[2605.07885](http://arxiv.org/pdf/2605.07885)</td><td>◆ The robustness of event cameras to high dynamic range and motion blur holds the potential to improve visual odometry systems in challenging environments.
 ◆ Although their high temporal resolution does not require synchronous processing, most event-based odometry methods still run at fixed rates, which simplifies system design but restricts latency and throughput.
 ◆ In this work, we present AERO-VIS, a stereo event-inertial SLAM system with an integrated, data-driven, robust, and performance-optimized keypoint detector.</td></tr>
@@ -31,7 +40,7 @@
 <tr><td>2026-05-07</td><td>Indoor 60 GHz Radio Channel Dataset Enabling Digital Twin Construction</td><td>[2605.05824](http://arxiv.org/pdf/2605.05824)</td><td>◆ The ambitious performance targets of modern wireless networks, including 6G and Industrial IoT (IIoT) systems, necessitate advanced hardware platforms utilizing millimeter-wave (mmWave) technology.
 ◆ High-frequency signals provide the bandwidth and low latency required for these systems, but rely on beamforming to overcome path loss and exploit channel sparsity.
 ◆ This kind of architecture provides all the specifications needed to build a SLAM (Simultaneous Localization and Mapping) system.</td></tr>
-<tr><td>2026-05-06</td><td>SLAM: Structural Linguistic Activation Marking for Language Models</td><td>[2605.05443](http://arxiv.org/pdf/2605.05443)</td><td>◆ LLM watermarks must be detectable without compromising text quality, yet most existing schemes bias the next-token distribution and pay for detection with measurable quality loss.
+<tr><td>2026-05-08</td><td>SLAM: Structural Linguistic Activation Marking for Language Models</td><td>[2605.05443](http://arxiv.org/pdf/2605.05443)</td><td>◆ LLM watermarks must be detectable without compromising text quality, yet most existing schemes bias the next-token distribution and pay for detection with measurable quality loss.
 ◆ We present SLAM (Structural Linguistic Activation Marking), a novel white-box watermarking scheme that sidesteps this cost by writing the mark into structural geometry rather than token frequencies: sparse autoencoders identify residual-stream directions encoding linguistic structure (e.g., voice, tense, clause order), and we causally steer those directions at generation time, leaving lexical sampling and semantics unconstrained.
 ◆ On Gemma-2 2B and 9B, SLAM achieves 100% detection accuracy with a quality cost of only 1-2 reward points - compared to 7.5-11.5 for KGW, EWD, and Unigram - with naturalness and diversity preserved at near-unwatermarked levels across both models.</td></tr>
 <tr><td>2026-05-06</td><td>A Closed-Form Dual-Barrier CBF Safety Filter for Holonomic Robots on Incrementally Built Occupancy Grid Maps</td><td>[2605.05182](http://arxiv.org/pdf/2605.05182)</td><td>◆ We present a dual-barrier control barrier function (CBF) safety filter for real-time, safety-critical velocity control of holonomic robots operating in incrementally built occupancy grid maps.
@@ -1341,6 +1350,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-11</td><td>OpenSGA: Efficient 3D Scene Graph Alignment in the Open World</td><td>[2605.10484](http://arxiv.org/pdf/2605.10484)</td><td>◆ Scene graph alignment establishes object correspondences between two 3D scene graphs constructed from partially overlapping observations.
+◆ This enables efficient scene understanding and object-level relocalization when a robot revisits a place, as well as global map fusion across multiple agents.
+◆ Such capabilities are essential for robots that require long-term memory for long-horizon tasks involving interactions with the environment.</td></tr>
+<tr><td>2026-05-10</td><td>Above and Below: Heterogeneous Multi-robot SLAM Across Surface and Underwater Domains</td><td>[2605.09811](http://arxiv.org/pdf/2605.09811)</td><td>◆ Multi-robot simultaneous localization and mapping (SLAM) is a fundamental task in multi-robot operations.
+◆ Robots must have a common understanding of their location and that of their team members to complete coordinated actions.
+◆ However, multi-robot SLAM between Uncrewed Surface Vessels (USVs) and Autonomous Underwater Vehicles (AUVs) has primarily been achieved through acoustic pinging between robots to retrieve range measurements; a measurement technique requires that robots to be in similar locations simultaneously, have an uninterrupted path for signal propagation, and may necessitate synchronized clocks.</td></tr>
+<tr><td>2026-05-10</td><td>MAG-VLAQ: Multi-modal Aerial-Ground Query Aggregation for Cross-View Place Recognition</td><td>[2605.09418](http://arxiv.org/pdf/2605.09418)</td><td>◆ Multi-modal cross-view place recognition remains a fundamental challenge in computer vision and robotics due to the severe viewpoint, modality, and spatial-structure discrepancies between ground observations and aerial references.
+◆ To address this challenge, we present MAG-VLAQ, a foundation-model-enhanced query aggregation framework for multi-modal aerial-ground cross-view place recognition.
+◆ Specifically, our approach leverages pre-trained foundation models to extract dense visual tokens from both ground and aerial images, as well as expressive geometric tokens from ground LiDAR observations.</td></tr>
 <tr><td>2026-05-08</td><td>Elastocapillary morphing of self-encapsulated droplets floating at the oil-air interface</td><td>[2605.07759](http://arxiv.org/pdf/2605.07759)</td><td>◆ Self-encapsulated droplets floating at an oil--air interface undergo striking shape changes during evaporation, including flattening and localized loss of membrane tension leading to crumpling and wrinkling.
 ◆ Here we combine experiments, modeling and simulations to obtain predictive morphological maps.
 ◆ We perform contact-angle and evaporation experiments on water droplets coated by a hydrophobin protein film and floating in a fluorinated oil, providing reference profiles and volume-loss sequences for quantitative validation.</td></tr>
@@ -2163,6 +2181,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-11</td><td>3DReflecNet: A Large-Scale Dataset for 3D Reconstruction of Reflective, Transparent, and Low-Texture Objects</td><td>[2605.10204](http://arxiv.org/pdf/2605.10204)</td><td>◆ Accurate 3D reconstruction of objects with reflective, transparent, or low-texture surfaces still remains notoriously challenging.
+◆ Such materials often violate key assumptions in multi-view reconstruction pipelines, such as photometric consistency and the availability on distinct geometric texture cues.
+◆ Existing datasets primarily focus on diffuse, textured objects, and therefore provide limited insight into performance under real-world material complexities.</td></tr>
 <tr><td>2026-05-06</td><td>Creative Robot Tool Use by Counterfactual Reasoning</td><td>[2605.05411](http://arxiv.org/pdf/2605.05411)</td><td>◆ We propose a causal reasoning framework for creative robot tool use where a suitable tool for a task is correctly identified for use beyond its primary objectives.
 ◆ The proposed framework first discovers the causal relationships between the tool and the task by conducting simulated experiments in a dynamics model.
 ◆ We decouple the causal discovery problem into two complementary components: VLM-based feature suggestion and counterfactual tool generation via targeted geometric and physical feature perturbations.</td></tr>
@@ -2571,6 +2592,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-11</td><td>MAGS-SLAM: Monocular Multi-Agent Gaussian Splatting SLAM for Geometrically and Photometrically Consistent Reconstruction</td><td>[2605.10760](http://arxiv.org/pdf/2605.10760)</td><td>◆ Collaborative photorealistic 3D reconstruction from multiple agents enables rapid large-scale scene capture for virtual production and cooperative multi-robot exploration.
+◆ While recent 3D Gaussian Splatting (3DGS) SLAM algorithms can generate high-fidelity real-time mapping, most of the existing multi-agent Gaussian SLAM methods still rely on RGB-D sensors to obtain metric depth and simplify cross-agent alignment, which limits the deployment on lightweight, low-cost, or power-constrained robotic platforms.
+◆ To address this challenge, we propose MAGS-SLAM, the first RGB-only multi-agent 3DGS SLAM framework for collaborative scene reconstruction.</td></tr>
+<tr><td>2026-05-11</td><td>UAV-Assisted Scan-to-Simulation for Landslides Using Physics-Informed Gaussian Splatting</td><td>[2605.10715](http://arxiv.org/pdf/2605.10715)</td><td>◆ Landslide monitoring and simulation play an important role in urban safety assessment and disaster prevention.
+◆ Existing landslide simulation pipelines typically rely on digital elevation model and mesh-based representations, which are suitable for geometric analysis, but often lack visual realism.
+◆ This limitation reduces their effectiveness in interactive applications, hazard communication, and public education.</td></tr>
+<tr><td>2026-05-11</td><td>TransmissiveGS: Residual-Guided Disentangled Gaussian Splatting for Transmissive Scene Reconstruction and Rendering</td><td>[2605.10705](http://arxiv.org/pdf/2605.10705)</td><td>◆ Transmissive scenes are ubiquitous in daily life, yet reconstructing and rendering them remains highly challenging due to the inherent entanglement between near-field reflections from the surrounding environment on the transmissive surface, and the transmitted content of the scene behind it.
+◆ This coupling gives rise to dual surface geometries and dual radiance components within each observation, posing ambiguities for standard methods.
+◆ We present TransmissiveGS, a novel framework for disentangled reconstruction and rendering of transmissive scenes.</td></tr>
+<tr><td>2026-05-11</td><td>VEGA: Visual Encoder Grounding Alignment for Spatially-Aware Vision-Language-Action Models</td><td>[2605.10485](http://arxiv.org/pdf/2605.10485)</td><td>◆ Precise spatial reasoning is fundamental to robotic manipulation, yet the visual backbones of current vision-language-action (VLA) models are predominantly pretrained on 2D image data without explicit 3D geometric supervision, resulting in representations that lack accurate spatial awareness.
+◆ Existing implicit spatial grounding methods partially address this by aligning VLA features with those of 3D-aware foundation models, but they rely on empirical layer search and perform alignment on LLM-level visual tokens where spatial structure has already been entangled with linguistic semantics, limiting both generalizability and geometric interpretability.
+◆ We propose VEGA (Visual Encoder Grounding Alignment), a simple yet effective framework that directly aligns the output of the VLA&#x27;s visual encoder with spatially-aware features from DINOv2-FiT3D, a DINOv2 model fine-tuned with multi-view consistent 3D Gaussian Splatting supervision.</td></tr>
+<tr><td>2026-05-11</td><td>DySurface: Consistent 4D Surface Reconstruction via Bridging Explicit Gaussians and Implicit Functions</td><td>[2605.10360](http://arxiv.org/pdf/2605.10360)</td><td>◆ While novel view synthesis (NVS) for dynamic scenes has seen significant progress, reconstructing temporally consistent geometric surfaces remains a challenge.
+◆ Neural Radiance Fields (NeRF) and 3D Gaussian Splatting (3DGS) offer powerful dynamic scene rendering capabilities; however, relying solely on photometric optimization often leads to geometric ambiguities.
+◆ This results in discontinuous surfaces, severe artifacts, and broken surfaces over time.</td></tr>
+<tr><td>2026-05-11</td><td>PaMoSplat: Part-Aware Motion-Guided Gaussian Splatting for Dynamic Scene Reconstruction</td><td>[2605.10307](http://arxiv.org/pdf/2605.10307)</td><td>◆ Dynamic scene reconstruction represents a fundamental yet demanding challenge in computer vision and robotics.
+◆ While recent progress in 3DGS-based methods has advanced dynamic scene modeling, obtaining high-fidelity rendering and accurate tracking in scenarios with substantial, intricate motions remains significantly challenging.
+◆ To address these challenges, we propose PaMoSplat, a novel dynamic Gaussian splatting framework incorporating part awareness and motion priors.</td></tr>
+<tr><td>2026-05-11</td><td>AdaptSplat: Adapting Vision Foundation Models for Feed-Forward 3D Gaussian Splatting</td><td>[2605.10239](http://arxiv.org/pdf/2605.10239)</td><td>◆ This work explores a simple yet powerful lightweight adapter design for feed-forward 3D Gaussian Splatting (3DGS).
+◆ Existing methods typically apply complex, architecture-specific designs on top of the generic pipeline of image feature extraction $\rightarrow$ multi-view interaction $\rightarrow$ feature decoding.
+◆ However, constrained by the scale bottleneck of 3D training data and the low-pass filtering effect of deep networks, these methods still fall short in cross-domain generalization and high-frequency geometric fidelity.</td></tr>
+<tr><td>2026-05-11</td><td>SDTalk: Structured Facial Priors and Dual-Branch Motion Fields for Generalizable Gaussian Talking Head Synthesis</td><td>[2605.09956](http://arxiv.org/pdf/2605.09956)</td><td>◆ High-quality, real-time talking head synthesis remains a fundamental challenge in computer vision.
+◆ Existing reconstruction- and rendering-based methods typically rely on identity-specific models, limiting cross-identity generalization.
+◆ To address this issue, we propose SDTalk, a one-shot 3D Gaussian Splatting (3DGS)-based framework that generalizes to unseen identities without personalized training or fine-tuning.</td></tr>
+<tr><td>2026-05-10</td><td>ConFixGS: Learning to Fix Feedforward 3D Gaussian Splatting with Confidence-Aware Diffusion Priors in Driving Scenes</td><td>[2605.09688](http://arxiv.org/pdf/2605.09688)</td><td>◆ Feedforward 3D Gaussian Splatting (3DGS) often struggles in trajectory-based sparse-view driving scenes.
+◆ Existing Gaussian repair methods mainly target optimization-based 3DGS, while diffusion-based repair is typically restricted to iterative refinement near observed viewpoints, leaving feedforward 3DGS repair underexplored.
+◆ We propose ConFixGS, a plug-and-play method that learns to fix feedforward 3DGS with confidence-aware diffusion priors.</td></tr>
+<tr><td>2026-05-10</td><td>BEA-GS: BEyond RAdiance Supervision in 3DGS for Precise Object Extraction</td><td>[2605.09662](http://arxiv.org/pdf/2605.09662)</td><td>◆ Most Gaussian Splatting techniques that provide a 3D semantic representation of the scene do not optimize the underlying 3D geometry, making object-level editing or asset extraction challenging.
+◆ Recent methods, such as COBGS, Trace3D, ObjectGS, acknowledge this limitation and propose approaches that modify the scene&#x27;s geometry to represent the underlying semantics.
+◆ We advance this concept further by proposing a novel solution that provides near perfect boundaries in object extraction.</td></tr>
 <tr><td>2026-05-08</td><td>Differentiable Ray Tracing with Gaussians for Unified Radio Propagation Simulation and View Synthesis</td><td>[2605.07781](http://arxiv.org/pdf/2605.07781)</td><td>◆ Explicit neural representations such as 3D Gaussian Splatting (3DGS) enable high-fidelity and real-time novel view synthesis, yet optimize for alpha-composited optical appearance rather than ray-intersectable geometry.
 ◆ In contrast, radio-frequency (RF) digital twins require deterministic multi-bounce paths, where the geometry dictates trajectories and their associated attenuation and delay.
 ◆ We introduce a framework enabling differentiable RF propagation simulation directly within visually reconstructed neural scenes, allowing point-to-point path computation between arbitrary 3D locations while preserving high-quality visual rendering.</td></tr>
@@ -4796,7 +4847,34 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
-<tr><td>2026-05-08</td><td>Towards Photorealistic and Efficient Bokeh Rendering via Diffusion Framework</td><td>[2605.07429](http://arxiv.org/pdf/2605.07429)</td><td>◆ Existing mobile devices are constrained by compact optical designs, such as small apertures, which make it difficult to produce natural, optically realistic bokeh effects.
+<tr><td>2026-05-11</td><td>Neuromorphic Monocular Depth Estimation with Uncertainty Modeling</td><td>[2605.10675](http://arxiv.org/pdf/2605.10675)</td><td>◆ Event cameras offer distinct advantages over conventional frame-based sensors, including microsecond-level temporal resolution, high dynamic range, and low bandwidth.
+◆ In this paper, we predict per-pixel depth distributions from monocular event streams using deep neural networks.
+◆ We estimate uncertainty using Gaussian, log-normal, and evidential learning frameworks.</td></tr>
+<tr><td>2026-05-11</td><td>GemDepth: Geometry-Embedded Features for 3D-Consistent Video Depth</td><td>[2605.10525](http://arxiv.org/pdf/2605.10525)</td><td>◆ Video depth estimation extends monocular prediction into the temporal domain to ensure coherence.
+◆ However, existing methods often suffer from spatial blurring in fine-detail regions and temporal inconsistencies.
+◆ We argue that current approaches, which primarily rely on temporal smoothing via Transformers, struggle to maintain strict 3D geometric consistency-particularly under rotations or drastic view changes.</td></tr>
+<tr><td>2026-05-11</td><td>Improving Human Image Animation via Semantic Representation Alignment</td><td>[2605.10523](http://arxiv.org/pdf/2605.10523)</td><td>◆ The field of image-to-video generation has made remarkable progress.
+◆ However, challenges such as human limb twisting and facial distortion persist, especially when generating long videos or modeling intensive motions.
+◆ Existing human image animation works address these issues by incorporating human-specific semantic representations, e.g., dense poses or ID embeddings, as additional conditions.</td></tr>
+<tr><td>2026-05-11</td><td>Efficient Hybrid CNN-GNN Architecture for Monocular Depth Estimation</td><td>[2605.10251](http://arxiv.org/pdf/2605.10251)</td><td>◆ We present GraphDepth, a monocular depth estimation architecture that synergistically integrates Graph Neural Networks (GNNs) within a convolutional encoder-decoder framework.
+◆ Our approach embeds efficient GraphSAGE layers at multiple scales of a ResNet-101 U-Net backbone, enabling explicit modeling of long-range spatial relationships that lie beyond the receptive field of local convolutions.
+◆ Key technical contributions include: (1) batch-parallelized graph construction with configurable k-NN and   grid-based adjacency for scalable training; (2) multi-scale GraphSAGE integration at bottleneck and decoder stages   (1/32, 1/16, 1/8 resolution) to propagate global context   throughout the feature hierarchy; (3) channel-attention gated skip connections that adaptively weight encoder   features before fusion; and (4) heteroscedastic uncertainty estimation via a dedicated aleatoric   uncertainty head, enabling confidence-aware loss weighting during   optimization.</td></tr>
+<tr><td>2026-05-11</td><td>Learning to Perceive &quot;Where&quot;: Spatial Pretext Tasks for Robust Self-Supervised Learning</td><td>[2605.09963](http://arxiv.org/pdf/2605.09963)</td><td>◆ Existing self-supervised learning (SSL) methods primarily learn object-invariant representations but often neglect the spatial structure and relationships among object parts.
+◆ To address this limitation, we introduce Spatial Prediction (SP), a spatially aware pretext regression task that predicts the relative position and scale between a pair of disentangled local views from the same image.
+◆ By modeling part-to-part relationships in a continuous geometric space, SP encourages representations to capture fine-grained spatial dependencies beyond invariant categorical semantics, thereby learning the compositional structure of visual scenes.</td></tr>
+<tr><td>2026-05-10</td><td>Distilling 3D Spatial Reasoning into a Lightweight Vision-Language Model with CoT</td><td>[2605.09719](http://arxiv.org/pdf/2605.09719)</td><td>◆ Large-scale 3D vision-language models (VLMs) like LLaVA-3D offer strong spatial reasoning but are difficult to deploy due to high computational costs.
+◆ We propose a knowledge distillation framework that transfers spatial reasoning from a 7B teacher to a 2.29B student model.
+◆ Our approach achieves 8.7x lower inference latency and a 3x reduction in model size while retaining 54-72% of the teacher&#x27;s performance.</td></tr>
+<tr><td>2026-05-09</td><td>Cross-Modal RGB-D Fusion Transformer for 6D Pose Estimation of Non-Cooperative Spacecraft with Stereo-Derived Depth</td><td>[2605.08592](http://arxiv.org/pdf/2605.08592)</td><td>◆ On-orbit servicing and active debris removal involving non-cooperative spacecraft require reliable pose estimation to supply accurate position and orientation data for autonomous visual navigation.
+◆ Learning-based monocular methods have seen widespread adoption in spacecraft pose estimation, yet they suffer from an intrinsic depth ambiguity problem and tend to fail under the harsh illumination conditions routinely encountered in orbit.
+◆ Active depth sensors could in principle address the geometric ambiguity, but their power and mass requirements make them poorly suited to most spacecraft platforms.</td></tr>
+<tr><td>2026-05-08</td><td>Geometric Flood Depth Estimation: Fusing Transformer-Based Segmentation with Digital Elevation Models</td><td>[2605.08521](http://arxiv.org/pdf/2605.08521)</td><td>◆ Post-disaster situational awareness relies heavily on understanding both the extent and the volume of floodwaters.
+◆ While 2D semantic segmentation provides accurate flood masking, it lacks the vertical dimension required to assess navigability and structural risk.
+◆ This paper presents a geometric &quot;Water Surface Elevation&quot; approach for estimating flood depth from monocular aerial imagery.</td></tr>
+<tr><td>2026-05-08</td><td>Improved monocular depth prediction using distance transform over pre-semantic contours with self-supervised neural networks</td><td>[2605.08320](http://arxiv.org/pdf/2605.08320)</td><td>◆ Monocular depth estimation (MDE) with self-supervised training approaches struggles in low-texture areas, where photometric losses may lead to ambiguous depth predictions.
+◆ To address this, we propose a novel technique that enhances spatial information by applying a distance transform over pre-semantic contours, augmenting discriminative power in low texture regions.
+◆ Our approach jointly estimates pre-semantic contours, depth and ego-motion.</td></tr>
+<tr><td>2026-05-11</td><td>Towards Photorealistic and Efficient Bokeh Rendering via Diffusion Framework</td><td>[2605.07429](http://arxiv.org/pdf/2605.07429)</td><td>◆ Existing mobile devices are constrained by compact optical designs, such as small apertures, which make it difficult to produce natural, optically realistic bokeh effects.
 ◆ Although recent learning-based methods have shown promising results, they still struggle with photos captured under high digital zoom levels, which often suffer from reduced resolution and loss of fine details.
 ◆ A naive solution is to enhance image quality before applying bokeh rendering, yet this two-stage pipeline reduces efficiency and introduces unnecessary error accumulation.</td></tr>
 <tr><td>2026-05-08</td><td>Learning Image-Adaptive Scale Fields for Metric Depth Recovery</td><td>[2605.07418](http://arxiv.org/pdf/2605.07418)</td><td>◆ Monocular depth estimation (MDE) typically produces depth estimations that are defined up to an unknown scale or shift.
@@ -5793,4 +5871,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.11
+> 更新于: 2026.05.12
