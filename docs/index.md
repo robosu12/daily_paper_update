@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.05.12)
+# SLAM领域最新论文 (2026.05.13)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -2175,6 +2175,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-12</td><td>Fast and Accurate Prediction of Lattice Thermal Conductivity via Machine Learning Surrogates</td><td>[2605.11610](http://arxiv.org/pdf/2605.11610)</td><td>◆ The appearance of generative models has opened vast chemical spaces in the design of functional materials.
+◆ Although machine learning interatomic potentials (MLIPs) have substantially accelerated phonon calculations, high-fidelity prediction of lattice thermal conductivity \k{appa}lat still requires accurate treatment of anharmonic interactions, which remains a key challenge for existing potentials across novel chemical spaces.
+◆ To address this challenge, we present a comprehensive benchmark of 15 surrogate models for predicting \k{appa}lat using the Phonix database, which contains 6,966 entries with anharmonic phonon properties derived from first-principles calculations.</td></tr>
 <tr><td>2026-05-11</td><td>3DReflecNet: A Large-Scale Dataset for 3D Reconstruction of Reflective, Transparent, and Low-Texture Objects</td><td>[2605.10204](http://arxiv.org/pdf/2605.10204)</td><td>◆ Accurate 3D reconstruction of objects with reflective, transparent, or low-texture surfaces still remains notoriously challenging.
 ◆ Such materials often violate key assumptions in multi-view reconstruction pipelines, such as photometric consistency and the availability on distinct geometric texture cues.
 ◆ Existing datasets primarily focus on diffuse, textured objects, and therefore provide limited insight into performance under real-world material complexities.</td></tr>
@@ -2584,6 +2587,36 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-12</td><td>Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction</td><td>[2605.12494](http://arxiv.org/pdf/2605.12494)</td><td>◆ Surface reconstruction with differentiable rendering has achieved impressive performance in recent years, yet the pervasive photometric ambiguities have strictly bottlenecked existing approaches.
+◆ This paper presents AmbiSuR, a framework that explores an intrinsic solution upon Gaussian Splatting for the photometric ambiguity-robust surface 3D reconstruction with high performance.
+◆ Starting by revisiting the foundation, our investigation uncovers two built-in primitive-wise ambiguities in representation, while revealing an intrinsic potential for ambiguity self-indication in Gaussian Splatting.</td></tr>
+<tr><td>2026-05-12</td><td>3D Gaussian Splatting for Efficient Retrospective Dynamic Scene Novel View Synthesis with a Standardized Benchmark</td><td>[2605.12437](http://arxiv.org/pdf/2605.12437)</td><td>◆ Retrospective novel view synthesis (NVS) of dynamic scenes is fundamental to applications such as sports.
+◆ Recent dynamic 3D Gaussian Splatting (3DGS) approaches introduce temporally coupled formulations to enforce motion coherence across time.
+◆ In this paper, we argue that, in a synchronized multi-view (MV) setting typical of sports, the dynamic scene at each time step is already strongly geometrically constrained.</td></tr>
+<tr><td>2026-05-12</td><td>GeoQuery: Geometry-Query Diffusion for Sparse-View Reconstruction</td><td>[2605.12399](http://arxiv.org/pdf/2605.12399)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a prominent paradigm for 3D reconstruction and novel view synthesis.
+◆ However, it remains vulnerable to severe artifacts when trained under sparse-view constraints.
+◆ While recent methods attempt to rectify artifacts in rendered views using image diffusion models, they typically rely on multi-view self-attention to retrieve information from reference images.</td></tr>
+<tr><td>2026-05-12</td><td>PoseCompass: Intelligent Synthetic Pose Selection for Visual Localization</td><td>[2605.12144](http://arxiv.org/pdf/2605.12144)</td><td>◆ In visual localization, Absolute Pose Regression (APR) enables real-time 6-DoF camera pose inference from single images, yet critically depends on fine-tuning data quality and coverage.
+◆ While recent methods leverage 3D Gaussian Splatting (3DGS) for novel view synthesis-based data augmentation, random sampling generates redundant views and noisy samples from poorly reconstructed regions.
+◆ To mitigate this research gap, we propose PoseCompass, an intelligent pose selection pipeline for 3DGS-based APR.</td></tr>
+<tr><td>2026-05-12</td><td>PairDropGS: Paired Dropout-Induced Consistency Regularization for Sparse-View Gaussian Splatting</td><td>[2605.12072](http://arxiv.org/pdf/2605.12072)</td><td>◆ Dropout-based sparse-view 3D Gaussian Splatting (3DGS) methods alleviate overfitting by randomly suppressing Gaussian primitives during training.
+◆ Existing methods mainly focus on designing increasingly sophisticated dropout strategies, while they overlook the resulting inconsistencies among different dropped Gaussian subsets.
+◆ This oversight often leads to unstable reconstruction and suboptimal Gaussian representation learning.In this paper, we revisit dropout-based sparse-view 3DGS from a consistency regularization perspective and propose PairDropGS, a Paired Dropout-induced Consistency Regularization framework for sparse-view Gaussian splatting.</td></tr>
+<tr><td>2026-05-12</td><td>PointForward: Feedforward Driving Reconstruction through Point-Aligned Representations</td><td>[2605.11594](http://arxiv.org/pdf/2605.11594)</td><td>◆ High-fidelity reconstruction of driving scenes is crucial for autonomous driving.
+◆ While recent feedforward 3D Gaussian Splatting (3DGS) methods enable fast reconstruction, their per-pixel Gaussian prediction paradigm often suffers from multi-view inconsistency and layering artifacts.
+◆ Moreover, existing methods often model dynamic instances via dense flow prediction, which lacks explicit cross-view correspondence and instance-level consistency.</td></tr>
+<tr><td>2026-05-12</td><td>PointGS: Semantic-Consistent Unsupervised 3D Point Cloud Segmentation with 3D Gaussian Splatting</td><td>[2605.11520](http://arxiv.org/pdf/2605.11520)</td><td>◆ Unsupervised point cloud segmentation is critical for embodied artificial intelligence and autonomous driving, as it mitigates the prohibitive cost of dense point-level annotations required by fully supervised methods.
+◆ While integrating 2D pre-trained models such as the Segment Anything Model (SAM) to supplement semantic information is a natural choice, this approach faces a fundamental mismatch between discrete 3D points and continuous 2D images.
+◆ This mismatch leads to inevitable projection overlap and complex modality alignment, resulting in compromised semantic consistency across 2D-3D transfer.</td></tr>
+<tr><td>2026-05-12</td><td>3DGS$^3$: Joint Super Sampling and Frame Interpolation for Real-Time Large-Scale 3DGS Rendering</td><td>[2605.11489](http://arxiv.org/pdf/2605.11489)</td><td>◆ 3D Gaussian Splatting (3DGS) enables high-quality real-time 3D rendering but faces challenges in efficiently scaling to ultra-dense scenes and high-resolution due to computational bottlenecks that limit its use in latency-sensitive applications.
+◆ Instead of optimizing the splatting pipeline itself, we propose \textbf{3DGS$^3$}, a unified post-rendering framework that jointly performs super sampling and frame interpolation through differentiable processing of low-resolution outputs to achieve both high-resolution and high-frame-rate rendering.
+◆ Our \textbf{Gradient\- \-Aware Super Sampling (GASS)} module leverages the continuous differentiability of 3DGS to extract image gradients that guide a GRU-based refinement network to enable high-fidelity super sampling.</td></tr>
+<tr><td>2026-05-12</td><td>XFreq-GS: Cross-Frequency Wireless Radiation Field Reconstruction with 3D Gaussian Splatting</td><td>[2605.11432](http://arxiv.org/pdf/2605.11432)</td><td>◆ Channel modeling is fundamental to the analysis, design, and optimization of wireless communication systems, which, however, accurate wireless channel modeling remains challenging, especially given the increasingly complex wireless environments.
+◆ As an emerging paradigm, 3D Gaussian Splatting (3DGS)-based channel modeling methods achieve accurate wireless radiation field (WRF) reconstruction and high-fidelity spatial spectrum synthesis.
+◆ However, existing works only consider a single carrier frequency and fail to adapt to wide-range cross-frequency channels.</td></tr>
+<tr><td>2026-05-12</td><td>PD-4DGS:Progressive Decomposition of 4D Gaussian Splatting for Bandwidth-Adaptive Dynamic Scene Streaming</td><td>[2605.11427](http://arxiv.org/pdf/2605.11427)</td><td>◆ 4D Gaussian Splatting (4DGS) enables high-quality dynamic novel view synthesis, yet current models remain monolithic bitstreams that clients must download in full before any frame can be rendered, causing black-screen waits of tens to hundreds of seconds on mobile bandwidth and leaving 4DGS incompatible with modern adaptive-bitrate delivery.
+◆ Progressive 3DGS compression alleviates this for static scenes, but it acts only on spatial anchors and cannot partition the temporal deformation networks that dominate dynamic-scene size.
+◆ We present PD-4DGS, the first framework for progressive compression and on-demand transmission of 4DGS.</td></tr>
 <tr><td>2026-05-11</td><td>MAGS-SLAM: Monocular Multi-Agent Gaussian Splatting SLAM for Geometrically and Photometrically Consistent Reconstruction</td><td>[2605.10760](http://arxiv.org/pdf/2605.10760)</td><td>◆ Collaborative photorealistic 3D reconstruction from multiple agents enables rapid large-scale scene capture for virtual production and cooperative multi-robot exploration.
 ◆ While recent 3D Gaussian Splatting (3DGS) SLAM algorithms can generate high-fidelity real-time mapping, most of the existing multi-agent Gaussian SLAM methods still rely on RGB-D sensors to obtain metric depth and simplify cross-agent alignment, which limits the deployment on lightweight, low-cost, or power-constrained robotic platforms.
 ◆ To address this challenge, we propose MAGS-SLAM, the first RGB-only multi-agent 3DGS SLAM framework for collaborative scene reconstruction.</td></tr>
@@ -4837,10 +4870,22 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-12</td><td>4DVGGT-D: 4D Visual Geometry Transformer with Improved Dynamic Depth Estimation</td><td>[2605.12027](http://arxiv.org/pdf/2605.12027)</td><td>◆ Reconstructing dynamic 4D scenes from monocular videos is a fundamental yet challenging task.
+◆ While recent 3D foundation models provide strong geometric priors, their performance significantly degrades in dynamic environments.
+◆ This degradation stems from a fundamental tension: the inherent coupling of camera ego-motion and object motion within global attention mechanisms.</td></tr>
+<tr><td>2026-05-12</td><td>Selection, Not Fusion: Radar-Modulated State Space Models for Radar-Camera Depth Estimation</td><td>[2605.11840](http://arxiv.org/pdf/2605.11840)</td><td>◆ Radar-camera depth estimation must turn an ultra-sparse, all-weather, metric radar signal into a dense per-pixel depth map.
+◆ Existing methods -- concatenation, confidence-aware gating, sparse supervision, graph-based extraction -- combine radar and image features outside the backbone&#x27;s sequence operator, and even cross-modal Mamba variants leave the selection mechanism itself unimodal.
+◆ We argue that the selection mechanism is the right place for radar to enter.</td></tr>
+<tr><td>2026-05-12</td><td>Focusable Monocular Depth Estimation</td><td>[2605.11756](http://arxiv.org/pdf/2605.11756)</td><td>◆ Monocular depth foundation models generalize well across scenes, yet they are typically optimized with uniform pixel-wise objectives that do not distinguish user-specified or task-relevant target regions from the surrounding context.
+◆ We therefore introduce Focusable Monocular Depth Estimation (FDE), a region-aware depth estimation task in which, given a specified target region, the model is required to prioritize foreground depth accuracy, preserve sharp boundary transitions, and maintain coherent global scene geometry.
+◆ To prioritize task-critical region modeling, we propose FocusDepth, a prompt-conditioned monocular relative depth estimation framework that guides depth modeling to focus on target regions via box/text prompts.</td></tr>
+<tr><td>2026-05-12</td><td>The Midas Touch for Metric Depth</td><td>[2605.11578](http://arxiv.org/pdf/2605.11578)</td><td>◆ Recent advances have markedly improved the cross-scene generalization of relative depth estimation, yet its practical applicability remains limited by the absence of metric scale, local inconsistencies, and low computational efficiency.
+◆ To address these issues, we present \emph{\textbf{M}idas \textbf{T}ouch for \textbf{D}epth} (MTD), a mathematically interpretable approach that converts relative depth into metric depth using only extremely sparse 3D data.
+◆ To eliminate local scale inconsistencies, it applies a segment-wise recovery strategy via sparse graph optimization, followed by a pixel-wise refinement strategy using a discontinuity-aware geodesic cost.</td></tr>
 <tr><td>2026-05-11</td><td>Neuromorphic Monocular Depth Estimation with Uncertainty Modeling</td><td>[2605.10675](http://arxiv.org/pdf/2605.10675)</td><td>◆ Event cameras offer distinct advantages over conventional frame-based sensors, including microsecond-level temporal resolution, high dynamic range, and low bandwidth.
 ◆ In this paper, we predict per-pixel depth distributions from monocular event streams using deep neural networks.
 ◆ We estimate uncertainty using Gaussian, log-normal, and evidential learning frameworks.</td></tr>
-<tr><td>2026-05-11</td><td>GemDepth: Geometry-Embedded Features for 3D-Consistent Video Depth</td><td>[2605.10525](http://arxiv.org/pdf/2605.10525)</td><td>◆ Video depth estimation extends monocular prediction into the temporal domain to ensure coherence.
+<tr><td>2026-05-12</td><td>GemDepth: Geometry-Embedded Features for 3D-Consistent Video Depth</td><td>[2605.10525](http://arxiv.org/pdf/2605.10525)</td><td>◆ Video depth estimation extends monocular prediction into the temporal domain to ensure coherence.
 ◆ However, existing methods often suffer from spatial blurring in fine-detail regions and temporal inconsistencies.
 ◆ We argue that current approaches, which primarily rely on temporal smoothing via Transformers, struggle to maintain strict 3D geometric consistency-particularly under rotations or drastic view changes.</td></tr>
 <tr><td>2026-05-11</td><td>Improving Human Image Animation via Semantic Representation Alignment</td><td>[2605.10523](http://arxiv.org/pdf/2605.10523)</td><td>◆ The field of image-to-video generation has made remarkable progress.
@@ -5859,4 +5904,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.12
+> 更新于: 2026.05.13
