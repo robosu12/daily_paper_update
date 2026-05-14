@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.05.13)
+# SLAM领域最新论文 (2026.05.14)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-13</td><td>LEXI-SG: Monocular 3D Scene Graph Mapping with Room-Guided Feed-Forward Reconstruction</td><td>[2605.13741](http://arxiv.org/pdf/2605.13741)</td><td>◆ Scene graphs are becoming a standard representation for robot navigation, providing hierarchical geometric and semantic scene understanding.
+◆ However, most scene graph mapping methods rely on depth cameras or LiDAR sensors.
+◆ In this work, we present LEXI-SG, the first dense monocular visual mapping system for open-vocabulary 3D scene graphs using only RGB camera input.</td></tr>
+<tr><td>2026-05-12</td><td>WildPose: A Unified Framework for Robust Pose Estimation in the Wild</td><td>[2605.12774](http://arxiv.org/pdf/2605.12774)</td><td>◆ Estimating camera pose in dynamic environments is a critical challenge, as most visual SLAM and SfM methods assume static scenes.
+◆ While recent dynamic-aware methods exist, they are often not unified: semantic-based approaches are brittle, per-sequence optimization methods fail on short sequences, and other learned models may degrade on static-only scenes.
+◆ We present WildPose, a unified monocular pose estimation framework that is robust in dynamic environments while maintaining state-of-the-art performance on static and low-ego-motion datasets.</td></tr>
 <tr><td>2026-05-11</td><td>MAGS-SLAM: Monocular Multi-Agent Gaussian Splatting SLAM for Geometrically and Photometrically Consistent Reconstruction</td><td>[2605.10760](http://arxiv.org/pdf/2605.10760)</td><td>◆ Collaborative photorealistic 3D reconstruction from multiple agents enables rapid large-scale scene capture for virtual production and cooperative multi-robot exploration.
 ◆ While recent 3D Gaussian Splatting (3DGS) SLAM algorithms can generate high-fidelity real-time mapping, most of the existing multi-agent Gaussian SLAM methods still rely on RGB-D sensors to obtain metric depth and simplify cross-agent alignment, which limits the deployment on lightweight, low-cost, or power-constrained robotic platforms.
 ◆ To address this challenge, we propose MAGS-SLAM, the first RGB-only multi-agent 3DGS SLAM framework for collaborative scene reconstruction.</td></tr>
@@ -1010,6 +1016,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-12</td><td>WildPose: A Unified Framework for Robust Pose Estimation in the Wild</td><td>[2605.12774](http://arxiv.org/pdf/2605.12774)</td><td>◆ Estimating camera pose in dynamic environments is a critical challenge, as most visual SLAM and SfM methods assume static scenes.
+◆ While recent dynamic-aware methods exist, they are often not unified: semantic-based approaches are brittle, per-sequence optimization methods fail on short sequences, and other learned models may degrade on static-only scenes.
+◆ We present WildPose, a unified monocular pose estimation framework that is robust in dynamic environments while maintaining state-of-the-art performance on static and low-ego-motion datasets.</td></tr>
 <tr><td>2026-05-08</td><td>AERO-VIS: Asynchronous Event-based Real-time Onboard Visual-Inertial SLAM</td><td>[2605.07885](http://arxiv.org/pdf/2605.07885)</td><td>◆ The robustness of event cameras to high dynamic range and motion blur holds the potential to improve visual odometry systems in challenging environments.
 ◆ Although their high temporal resolution does not require synchronous processing, most event-based odometry methods still run at fixed rates, which simplifies system design but restricts latency and throughput.
 ◆ In this work, we present AERO-VIS, a stereo event-inertial SLAM system with an integrated, data-driven, robust, and performance-optimized keypoint detector.</td></tr>
@@ -2587,6 +2596,27 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-13</td><td>BlitzGS: City-Scale Gaussian Splatting at Lightning Speed</td><td>[2605.13794](http://arxiv.org/pdf/2605.13794)</td><td>◆ We present BlitzGS, a distributed 3DGS framework that reduces active Gaussian workload for fast city-scale reconstruction.
+◆ BlitzGS manages this workload at three coupled levels.
+◆ At the system level, the framework shards Gaussians across GPUs by index parity rather than spatial blocks.</td></tr>
+<tr><td>2026-05-13</td><td>Sparse Code Uplifting for Efficient 3D Language Gaussian Splatting</td><td>[2605.13600](http://arxiv.org/pdf/2605.13600)</td><td>◆ 3D Language Gaussian Splatting (3DLGS) augments 3D Gaussian Splatting with language-aligned visual features for open-vocabulary 3D scene understanding.
+◆ A core challenge is efficiently associating high-dimensional vision-language embeddings with millions of 3D Gaussians while preserving efficient feature rendering for text-based querying.
+◆ Existing methods either store dense features directly on Gaussians, causing high storage costs and slow rendering, or learn compact representations through expensive per-scene optimization with repeated feature rasterization.</td></tr>
+<tr><td>2026-05-13</td><td>Real2Sim: A Physics-driven and Editable Gaussian Splatting Framework for Autonomous Driving Scenes</td><td>[2605.13591](http://arxiv.org/pdf/2605.13591)</td><td>◆ Reliable autonomous driving relies on large-scale, well-labeled data and robust models.
+◆ However, manual data collection is resource-intensive, and traditional simulation suffers from a persistent reality gap.
+◆ While recent generative frameworks and radiance-field methods improve visual fidelity, they still struggle with temporal and spatial consistency and cannot ensure physics-aware behavior, limiting their applicability to driving scenario generation.</td></tr>
+<tr><td>2026-05-13</td><td>Z-Order Transformer for Feed-Forward Gaussian Splatting</td><td>[2605.13465](http://arxiv.org/pdf/2605.13465)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have enabled significant progress in photorealistic novel view synthesis.
+◆ However, traditional 3DGS relies on a slow, iterative optimization process, which limits its use in scenarios demanding real-time results.
+◆ To overcome this bottleneck, recent feed-forward methods aim to predict Gaussian attributes directly from images, but they often struggle with the redundancy of Gaussian primitives and rendering quality.</td></tr>
+<tr><td>2026-05-13</td><td>RoSplat: Robust Feed-Forward Pixel-wise Gaussian Splatting for Varying Input Views and High-Resolution Rendering</td><td>[2605.13093](http://arxiv.org/pdf/2605.13093)</td><td>◆ Generalizable 3D Gaussian Splatting has recently emerged as an efficient approach for novel-view synthesis, enabling feed-forward synthesis from only a few input views.
+◆ However, existing pixel-wise feed-forward methods suffer from over-bright renderings when the number of input views varies during inference, as well as insufficient supervision for accurate Gaussian scale estimation, which leads to hole artifacts, particularly in high-resolution renderings.
+◆ To address these issues, we identify that the over-brightness is caused by the varying number of overlapping Gaussians and propose a simple alpha normalization strategy to maintain brightness consistency across different number of input views.</td></tr>
+<tr><td>2026-05-13</td><td>HarmoGS: Robust 3D Gaussian Splatting in the Wild via Conflict-Aware Gradient Harmonization</td><td>[2605.13073](http://arxiv.org/pdf/2605.13073)</td><td>◆ In-the-wild 3D Gaussian Splatting remains challenging due to transient distractors and illumination-induced cross-view appearance inconsistencies.
+◆ Existing methods mainly rely on image-level masking to suppress unreliable supervision, but masking alone cannot fully eliminate residual occlusions or resolve illumination-induced inconsistencies, both of which can introduce conflicting cross-view gradients.
+◆ These unresolved conflicts may destabilize Gaussian optimization and lead to visible reconstruction artifacts.</td></tr>
+<tr><td>2026-05-13</td><td>GuardMarkGS: Unified Ownership Tracing and Edit Deterrence for 3D Gaussian Splatting</td><td>[2605.12919](http://arxiv.org/pdf/2605.12919)</td><td>◆ 3D Gaussian Splatting (3DGS) is becoming a practical representation for novel view synthesis, but its growing adoption, together with rapid advances in instruction-driven 3DGS editing, also exposes a dual copyright risk: once a 3DGS-based asset is released, it can be used without permission and manipulated through 3D editing.
+◆ Existing protection methods address only one side of this problem.
+◆ Watermarking can trace ownership after unauthorized use, but it cannot prevent malicious editing.</td></tr>
 <tr><td>2026-05-12</td><td>Revisiting Photometric Ambiguity for Accurate Gaussian-Splatting Surface Reconstruction</td><td>[2605.12494](http://arxiv.org/pdf/2605.12494)</td><td>◆ Surface reconstruction with differentiable rendering has achieved impressive performance in recent years, yet the pervasive photometric ambiguities have strictly bottlenecked existing approaches.
 ◆ This paper presents AmbiSuR, a framework that explores an intrinsic solution upon Gaussian Splatting for the photometric ambiguity-robust surface 3D reconstruction with high performance.
 ◆ Starting by revisiting the foundation, our investigation uncovers two built-in primitive-wise ambiguities in representation, while revealing an intrinsic potential for ambiguity self-indication in Gaussian Splatting.</td></tr>
@@ -4870,6 +4900,15 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-13</td><td>CoGE: Sim-to-Real Online Geometric Estimation for Monocular Colonoscopy</td><td>[2605.13038](http://arxiv.org/pdf/2605.13038)</td><td>◆ Geometric estimation including depth estimation and scene reconstruction is a crucial technique for colonoscopy which can provide surgeons with 3D spatial perception and navigation.
+◆ However, geometric ground truth in colonoscopy is difficult to obtain due to narrow and enclosed space of the colon, while there is a large feature gap between simulated data and realistic data caused by artifacts and illumination.
+◆ In this paper, we present CoGE, a novel framework for online monocular geometric estimation during colonoscopy.</td></tr>
+<tr><td>2026-05-13</td><td>OCH3R: Object-Centric Holistic 3D Reconstruction</td><td>[2605.13018](http://arxiv.org/pdf/2605.13018)</td><td>◆ Object-centric scene understanding is a fundamental challenge in computer vision.
+◆ Existing approaches often rely on multi-stage pipelines that first apply pre-trained segmentors to extract individual objects, followed by per-object 3D reconstruction.
+◆ Such methods are computationally expensive, fragile to segmentation errors, and scale poorly with scene complexity.</td></tr>
+<tr><td>2026-05-12</td><td>A Data Efficiency Study of Synthetic Fog for Object Detection Using the Clear2Fog Pipeline</td><td>[2605.12608](http://arxiv.org/pdf/2605.12608)</td><td>◆ Object detection in adverse weather is critical for the safety of autonomous vehicles; however, the scarcity of labelled, real-world foggy data remains a significant bottleneck.
+◆ In this paper, we propose Clear2Fog (C2F), an end-to-end, physics-based pipeline that simulates fog on clear-weather datasets while ensuring sensor-level consistency across camera and LiDAR.
+◆ By using monocular depth estimation and a novel atmospheric light estimation method, C2F overcomes structural artifacts and chromatic biases common in existing techniques.</td></tr>
 <tr><td>2026-05-12</td><td>4DVGGT-D: 4D Visual Geometry Transformer with Improved Dynamic Depth Estimation</td><td>[2605.12027](http://arxiv.org/pdf/2605.12027)</td><td>◆ Reconstructing dynamic 4D scenes from monocular videos is a fundamental yet challenging task.
 ◆ While recent 3D foundation models provide strong geometric priors, their performance significantly degrades in dynamic environments.
 ◆ This degradation stems from a fundamental tension: the inherent coupling of camera ego-motion and object motion within global attention mechanisms.</td></tr>
@@ -4885,7 +4924,7 @@
 <tr><td>2026-05-11</td><td>Neuromorphic Monocular Depth Estimation with Uncertainty Modeling</td><td>[2605.10675](http://arxiv.org/pdf/2605.10675)</td><td>◆ Event cameras offer distinct advantages over conventional frame-based sensors, including microsecond-level temporal resolution, high dynamic range, and low bandwidth.
 ◆ In this paper, we predict per-pixel depth distributions from monocular event streams using deep neural networks.
 ◆ We estimate uncertainty using Gaussian, log-normal, and evidential learning frameworks.</td></tr>
-<tr><td>2026-05-12</td><td>GemDepth: Geometry-Embedded Features for 3D-Consistent Video Depth</td><td>[2605.10525](http://arxiv.org/pdf/2605.10525)</td><td>◆ Video depth estimation extends monocular prediction into the temporal domain to ensure coherence.
+<tr><td>2026-05-13</td><td>GemDepth: Geometry-Embedded Features for 3D-Consistent Video Depth</td><td>[2605.10525](http://arxiv.org/pdf/2605.10525)</td><td>◆ Video depth estimation extends monocular prediction into the temporal domain to ensure coherence.
 ◆ However, existing methods often suffer from spatial blurring in fine-detail regions and temporal inconsistencies.
 ◆ We argue that current approaches, which primarily rely on temporal smoothing via Transformers, struggle to maintain strict 3D geometric consistency-particularly under rotations or drastic view changes.</td></tr>
 <tr><td>2026-05-11</td><td>Improving Human Image Animation via Semantic Representation Alignment</td><td>[2605.10523](http://arxiv.org/pdf/2605.10523)</td><td>◆ The field of image-to-video generation has made remarkable progress.
@@ -5904,4 +5943,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.13
+> 更新于: 2026.05.14
