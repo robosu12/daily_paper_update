@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.05.14)
+# SLAM领域最新论文 (2026.05.15)
 
 > 每日自动更新SLAM领域的最新arXiv论文
 
@@ -22,6 +22,9 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-14</td><td>SOCC-ICP: Semantics-Assisted Odometry based on Occupancy Grids and ICP</td><td>[2605.15074](http://arxiv.org/pdf/2605.15074)</td><td>◆ Reliable pose estimation in previously unseen environments is a fundamental capability of autonomous systems.
+◆ Existing LiDAR odometry methods typically employ point-, surfel-, or NDT-based map representations, which are distinct from the semantic occupancy grids commonly used for downstream tasks such as motion planning.
+◆ We introduce SOCC-ICP, a semantics-assisted odometry framework that jointly performs Semantic OCCupancy grid mapping and LiDAR scan alignment.</td></tr>
 <tr><td>2026-05-13</td><td>LEXI-SG: Monocular 3D Scene Graph Mapping with Room-Guided Feed-Forward Reconstruction</td><td>[2605.13741](http://arxiv.org/pdf/2605.13741)</td><td>◆ Scene graphs are becoming a standard representation for robot navigation, providing hierarchical geometric and semantic scene understanding.
 ◆ However, most scene graph mapping methods rely on depth cameras or LiDAR sensors.
 ◆ In this work, we present LEXI-SG, the first dense monocular visual mapping system for open-vocabulary 3D scene graphs using only RGB camera input.</td></tr>
@@ -1359,6 +1362,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-14</td><td>After the Interface: Relocating Human Agency in the Age of Conversational AI</td><td>[2605.15064](http://arxiv.org/pdf/2605.15064)</td><td>◆ As AI systems take on greater autonomy, a quiet anxiety has settled over the HCI community: human agency is eroding.
+◆ Users no longer control execution, interfaces recede, and machines decide.
+◆ We argue that this anxiety, while understandable, reflects a framing problem rather than an empirical finding.</td></tr>
+<tr><td>2026-05-14</td><td>Landscape-Aware Bandit Hyper-Heuristics for Online Operator Selection in UAV Inspection Routing</td><td>[2605.14620](http://arxiv.org/pdf/2605.14620)</td><td>◆ UAV multi-site inspection often reduces to choosing a high-quality visiting order after target sites have been extracted from a map.
+◆ This paper develops LA-BHH, a landscape-aware bandit hyper-heuristic that learns an operator-selection policy online for this routing layer.
+◆ LA-BHH treats 2-opt, swap, relocate, and Or-opt moves as low-level arms, builds context from static landscape descriptors and online search-state features, and updates a LinUCB controller from improvement rewards during the same run.</td></tr>
+<tr><td>2026-05-14</td><td>KVPO: ODE-Native GRPO for Autoregressive Video Alignment via KV Semantic Exploration</td><td>[2605.14278](http://arxiv.org/pdf/2605.14278)</td><td>◆ Aligning streaming autoregressive (AR) video generators with human preferences is challenging.
+◆ Existing reinforcement learning methods predominantly rely on noise-based exploration and SDE-based surrogate policies that are mismatched to the deterministic ODE dynamics of distilled AR models, and tend to perturb low-level appearance rather than the high-level semantic storyline progression critical for long-horizon coherence.
+◆ To address these limitations, we present KVPO, an ODE-native online Group Relative Policy Optimization (GRPO) framework for aligning streaming video generators.</td></tr>
+<tr><td>2026-05-13</td><td>Policy-DRIFT: Dynamic Reward-Informed Flow Trajectory Steering</td><td>[2605.14022](http://arxiv.org/pdf/2605.14022)</td><td>◆ Skin-friction drag induced by wall-bounded turbulent flows accounts for a substantial fraction of energy consumption across commercial aerospace, wind energy, and marine transport.
+◆ Its active reduction is one of the highest-value targets in engineering fluid dynamics.
+◆ Deep reinforcement learning (DRL) has emerged as the leading approach for real-time flow control, yet its performance ceiling is set not by algorithmic capability but by reward structure, the naive scalar objective does not optimally reflect the underlying physics.</td></tr>
 <tr><td>2026-05-11</td><td>OpenSGA: Efficient 3D Scene Graph Alignment in the Open World</td><td>[2605.10484](http://arxiv.org/pdf/2605.10484)</td><td>◆ Scene graph alignment establishes object correspondences between two 3D scene graphs constructed from partially overlapping observations.
 ◆ This enables efficient scene understanding and object-level relocalization when a robot revisits a place, as well as global map fusion across multiple agents.
 ◆ Such capabilities are essential for robots that require long-term memory for long-horizon tasks involving interactions with the environment.</td></tr>
@@ -2604,6 +2619,18 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-14</td><td>3D Skew-Normal Splatting</td><td>[2605.15010](http://arxiv.org/pdf/2605.15010)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a leading representation for real-time novel view synthesis and been widely adopted in various downstream applications.
+◆ The core strength of 3DGS lies in its efficient kernel-based scene representation, where Gaussian primitives provide favorable mathematical and computational properties.
+◆ However, under a finite primitive budget, the symmetric shape of each primitive directly affects representation compactness, especially near asymmetric structures such as object boundaries and one-sided surfaces.</td></tr>
+<tr><td>2026-05-14</td><td>Denoising-GS: Gaussian Splatting with Spatial-aware Denoising</td><td>[2605.14880](http://arxiv.org/pdf/2605.14880)</td><td>◆ Recent advances in 3D Gaussian Splatting (3DGS) have achieved remarkable success in high-fidelity Novel View Synthesis (NVS), yet the optimization process inevitably introduces noisy Gaussian primitives due to the sparse and incomplete initialization from Structure-from-Motion (SfM) point clouds.
+◆ Most existing methods focus solely on adjusting the positions of primitives during optimization, while neglecting the underlying spatial structure.
+◆ To this end, we introduce a new perspective by formulating the optimization of 3DGS as a primitive denoising process and propose Denoising-GS, a spatial-aware denoising framework for Gaussian primitives by taking both the positions and spatial structure into consideration.</td></tr>
+<tr><td>2026-05-14</td><td>Efficient Dense Matching for Enhanced Gaussian Splatting Using AV1 Motion Vectors</td><td>[2605.14629](http://arxiv.org/pdf/2605.14629)</td><td>◆ 3D Gaussian Splatting (3DGS) has emerged as a prominent framework for real-time, photorealistic scene reconstruction, offering significant speed-ups over Neural Radiance Fields (NeRF).
+◆ However, the fidelity of 3DGS representations remains heavily dependent on the quality of the initial point cloud.
+◆ While standard Structure-from-Motion (SfM) pipelines using COLMAP provide adequate initialisation, they often suffer from high computational costs and sparsity in textureless regions, which degrades subsequent reconstruction accuracy and convergence speed.</td></tr>
+<tr><td>2026-05-13</td><td>PanoPlane: Plane-Aware Panoramic Completion for Sparse-View Indoor 3D Gaussian Splatting</td><td>[2605.14135](http://arxiv.org/pdf/2605.14135)</td><td>◆ We present PanoPlane, an approach for high-fidelity sparse-view indoor novel view synthesis that reconstructs closed room geometry via panoramic scene completion.
+◆ Unlike perspective-based methods that generate training views from limited fields of view, PanoPlane leverages $360^{\circ}$ panoramic completion to condition the generative process on the full spatial layout.
+◆ We propose Layout Anchored Attention Steering, a training-free mechanism that steers attention within the diffusion model&#x27;s internal representation toward scene&#x27;s detected planar surfaces at inference time.</td></tr>
 <tr><td>2026-05-13</td><td>BlitzGS: City-Scale Gaussian Splatting at Lightning Speed</td><td>[2605.13794](http://arxiv.org/pdf/2605.13794)</td><td>◆ We present BlitzGS, a distributed 3DGS framework that reduces active Gaussian workload for fast city-scale reconstruction.
 ◆ BlitzGS manages this workload at three coupled levels.
 ◆ At the system level, the framework shards Gaussians across GPUs by index parity rather than spatial blocks.</td></tr>
@@ -4910,6 +4937,12 @@
 <table>
 <thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>
 <tbody>
+<tr><td>2026-05-14</td><td>H-OmniStereo: Zero-Shot Omnidirectional Stereo Matching with Heading-Aligned Normal Priors</td><td>[2605.14963](http://arxiv.org/pdf/2605.14963)</td><td>◆ Stereo matching on top-bottom equirectangular images provides an effective framework for full-surround perception, as vertically aligned epipolar lines enable the use of advanced perspective stereo architectures that are largely driven by large-scale datasets and monocular priors.
+◆ However, the performance of such adaptations is severely limited by the scarcity of omnidirectional stereo datasets and the degradation of perspective monocular priors under spherical distortions.To address these challenges, we propose H-OmniStereo, a zero-shot omnidirectional stereo matching framework.
+◆ First, we construct high-quality synthetic dataset comprising over 2.8 million top-bottom equirectangular stereo pairs to scale up training.</td></tr>
+<tr><td>2026-05-14</td><td>Towards Accurate Single Panoramic 3D Detection: A Semantic Gaussian Centric Approach</td><td>[2605.14601](http://arxiv.org/pdf/2605.14601)</td><td>◆ Three-dimensional object detection in panoramic imagery is crucial for comprehensive scene understanding, yet accurately mapping 2D features to 3D remains a significant challenge.
+◆ Prevailing methods often project 2D features onto discrete 3D grids, which break geometric continuity and limit representation efficiency.
+◆ To overcome this limitation, this paper proposes PanoGSDet, a monocular panoramic 3D detection framework built upon continuous semantic 3D Gaussian representations.</td></tr>
 <tr><td>2026-05-13</td><td>CoGE: Sim-to-Real Online Geometric Estimation for Monocular Colonoscopy</td><td>[2605.13038](http://arxiv.org/pdf/2605.13038)</td><td>◆ Geometric estimation including depth estimation and scene reconstruction is a crucial technique for colonoscopy which can provide surgeons with 3D spatial perception and navigation.
 ◆ However, geometric ground truth in colonoscopy is difficult to obtain due to narrow and enclosed space of the colon, while there is a large feature gap between simulated data and realistic data caused by artifacts and illumination.
 ◆ In this paper, we present CoGE, a novel framework for online monocular geometric estimation during colonoscopy.</td></tr>
@@ -5955,4 +5988,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.05.14
+> 更新于: 2026.05.15
