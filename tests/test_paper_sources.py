@@ -1,5 +1,8 @@
 import datetime
+import json
+import tempfile
 import unittest
+from pathlib import Path
 from unittest.mock import Mock, patch
 
 import daily_arxiv
@@ -54,6 +57,42 @@ class PaperSourceTests(unittest.TestCase):
         result = daily_arxiv.sort_papers(entries)
 
         self.assertEqual(list(result), ["2607.00001", "openreview:old"])
+
+    def test_render_summary_html_collapses_long_text(self):
+        summary = "◆ First line\n◆ " + ("long summary text " * 40)
+
+        rendered = daily_arxiv.render_summary_html(summary)
+
+        self.assertIn("<details>", rendered)
+        self.assertIn("<summary>", rendered)
+        self.assertIn("<div>", rendered)
+        self.assertNotIn("\n", rendered)
+
+    def test_json_to_md_renders_summary_as_full_width_row(self):
+        long_summary = "Long summary sentence. " * 30
+        data = {
+            "SLAM": {
+                "2607.00001": (
+                    "|2026-07-19|Paper title|Alice|[Paper](url)|无|"
+                    f"{long_summary}|\n"
+                )
+            }
+        }
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            json_path = Path(temp_dir) / "papers.json"
+            markdown_path = Path(temp_dir) / "README.md"
+            json_path.write_text(json.dumps(data), encoding="utf-8")
+            with patch(
+                "daily_arxiv.current_date",
+                return_value=datetime.date(2026, 7, 20),
+            ):
+                daily_arxiv.json_to_md(str(json_path), str(markdown_path))
+            rendered = markdown_path.read_text(encoding="utf-8")
+
+        self.assertIn("<th>论文与代码</th></tr>", rendered)
+        self.assertNotIn("<th>摘要</th>", rendered)
+        self.assertIn('<td colspan="3"><details>', rendered)
 
     def test_filter_old_papers_removes_future_dates(self):
         entries = {
