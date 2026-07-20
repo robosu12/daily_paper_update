@@ -21,7 +21,7 @@ github_url = "https://api.github.com/search/repositories"
 arxiv_url = "http://arxiv.org/"
 
 # DeepSeek API配置
-DEEPSEEK_API_KEY = "sk-179d350b272b4b4da85b426b6271c7b5"
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 
 # 全局过滤日期 - 修改这里调整过滤条件

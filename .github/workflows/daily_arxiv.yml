@@ -1,7 +1,7 @@
 name: Daily Arxiv Update
 on:
   schedule:
-    - cron: '0 8 * * *'  # 每天UTC时间0点（北京时间8点）运行
+    - cron: '0 8 * * *'  # 每天UTC时间8点（北京时间16点）运行
   workflow_dispatch:     # 允许手动触发
 jobs:
   update:
@@ -10,20 +10,22 @@ jobs:
       contents: write  # 授予提交和推送权限
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: '3.10'
           
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install arxiv PyYAML requests
+          python -m pip install -r requirements.txt
           
       - name: Run daily_arxiv.py
         run: python daily_arxiv.py
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
