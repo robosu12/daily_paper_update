@@ -7,7 +7,7 @@
 
 ##
 
-This repository hosts the source code for cv-arxiv-daily, an useful sripts to fetch arxiv paper daily. 
+This repository fetches recent papers from arXiv, OpenReview, and Semantic Scholar.
 
 ## Overview
 
@@ -35,12 +35,17 @@ This codebase is composed of the following parts:
     ![](../assets/4-ga-7.png)
     ![](../assets/4-ga-8.png)
     ![](../assets/4-ga-9.png)
+    - Optional: add `DEEPSEEK_API_KEY` and `SEMANTIC_SCHOLAR_API_KEY` under
+      Settings -> Secrets and variables -> Actions. Semantic Scholar works
+      without a key when public capacity is available, but authenticated
+      requests have a dedicated rate limit.
 4. Setting Gitpages (optional)
     - Setting -> Pages -> Build an deployment. Source: `Deploy from a branch`; Branch select `main` and `/docs` folder, then save.
     ![](../assets/5-pages-1.png)
     - Now you can open gitpage: https://your_github_usrname.github.io/cv-arxiv-daily
 5. Add new keywords (optional)
     - Edit `keywords` in [config.yaml](../config.yaml), you can add more filters or keywords.
+    - Enable or disable individual providers under `sources`.
     - Push changes to remote repo and re-run Github Actions Manually.
 
 </details>

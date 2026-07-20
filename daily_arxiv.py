@@ -11,6 +11,7 @@ import time
 import html
 import feedparser
 import random
+from dataclasses import dataclass
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
@@ -18,17 +19,136 @@ logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
 
 base_url = "https://arxiv.paperswithcode.com/api/v0/papers/"
 github_url = "https://api.github.com/search/repositories"
-arxiv_url = "http://arxiv.org/"
+arxiv_url = "https://arxiv.org/"
+openreview_search_url = "https://api2.openreview.net/notes/search"
+semantic_scholar_search_url = (
+    "https://api.semanticscholar.org/graph/v1/paper/search/bulk"
+)
+http_headers = {
+    "User-Agent": (
+        "daily_paper_update/1.0 "
+        "(+https://github.com/robosu12/daily_paper_update)"
+    )
+}
 
 # DeepSeek API配置
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
+SEMANTIC_SCHOLAR_API_KEY = os.getenv("SEMANTIC_SCHOLAR_API_KEY", "")
 
 # 全局过滤日期 - 修改这里调整过滤条件
 MIN_DATE = datetime.date(2026, 6, 1)
 MIN_YEAR = 2026
 MIN_MONTH = 6
 MIN_DAY = 1
+
+_semantic_scholar_disabled = False
+
+
+@dataclass
+class Paper:
+    source: str
+    source_id: str
+    title: str
+    authors: list[str]
+    abstract: str
+    published_date: datetime.date
+    paper_url: str
+    arxiv_id: str = ""
+    doi: str = ""
+
+    @property
+    def storage_key(self) -> str:
+        if self.arxiv_id:
+            return self.arxiv_id.split("v")[0]
+        if self.doi:
+            return f"doi:{self.doi.lower()}"
+        return f"{self.source}:{self.source_id}"
+
+    @property
+    def link_label(self) -> str:
+        if self.source == "arxiv":
+            return self.arxiv_id or self.source_id
+        if self.source == "openreview":
+            return "OpenReview"
+        return "Semantic Scholar"
+
+
+def normalize_title(title: str) -> str:
+    """Normalize titles for cross-source duplicate detection."""
+    return re.sub(r"\W+", "", title.casefold())
+
+
+def paper_identities(paper: Paper) -> set[str]:
+    identities = {f"title:{normalize_title(paper.title)}"}
+    if paper.arxiv_id:
+        identities.add(f"arxiv:{paper.arxiv_id.split('v')[0].lower()}")
+    if paper.doi:
+        identities.add(f"doi:{paper.doi.lower()}")
+    return identities
+
+
+def deduplicate_papers(papers: list[Paper]) -> list[Paper]:
+    """Keep source priority while removing duplicate records."""
+    unique = []
+    seen = set()
+    for paper in papers:
+        identities = paper_identities(paper)
+        if seen.intersection(identities):
+            logging.info(f"跳过跨来源重复论文: {paper.title} ({paper.source})")
+            continue
+        seen.update(identities)
+        unique.append(paper)
+    return unique
+
+
+def extract_arxiv_id(*values) -> str:
+    for value in values:
+        if not value:
+            continue
+        match = re.search(
+            r"(?:arxiv(?:\.org/(?:abs|pdf)/|:))([0-9]{4}\.[0-9]{4,5})(?:v\d+)?",
+            str(value),
+            flags=re.IGNORECASE,
+        )
+        if match:
+            return match.group(1)
+    return ""
+
+
+def openreview_value(content: dict, key: str, default=None):
+    value = content.get(key, default)
+    if isinstance(value, dict) and "value" in value:
+        return value["value"]
+    return value
+
+
+def timestamp_to_date(timestamp) -> datetime.date | None:
+    if not timestamp:
+        return None
+    try:
+        return datetime.datetime.fromtimestamp(
+            int(timestamp) / 1000,
+            tz=datetime.timezone.utc,
+        ).date()
+    except (TypeError, ValueError, OSError):
+        return None
+
+
+def parse_iso_date(date_str: str | None, year=None) -> datetime.date | None:
+    if date_str:
+        try:
+            return datetime.date.fromisoformat(date_str)
+        except ValueError:
+            pass
+    try:
+        return datetime.date(int(year), 1, 1) if year else None
+    except (TypeError, ValueError):
+        return None
+
+
+def sanitize_entry_text(value: str) -> str:
+    return str(value).replace("|", "｜")
 
 def load_config(config_file: str) -> dict:
     '''
@@ -80,6 +200,8 @@ def filter_old_papers(papers: dict) -> dict:
 
 def get_authors(authors, first_author=False):
     """优化作者显示格式"""
+    if not authors:
+        return "未知作者"
     if not first_author:
         return ", ".join(str(author) for author in authors)
     elif len(authors) > 1:
@@ -88,19 +210,24 @@ def get_authors(authors, first_author=False):
 
 def sort_papers(papers):
     """按日期排序论文"""
-    return dict(sorted(papers.items(), key=lambda x: x[0], reverse=True))
+    return dict(sorted(
+        papers.items(),
+        key=lambda item: item[1].split("|")[1],
+        reverse=True,
+    ))
 
 def get_official_code_link(paper_id: str, title: str, authors: list) -> str:
     """获取论文官方开源代码链接（带多重验证）"""
     # 1. 优先使用paperswithcode API获取官方链接
-    try:
-        code_response = requests.get(base_url + paper_id, timeout=10)
-        if code_response.status_code == 200:
-            data = code_response.json()
-            if data.get("official") and data["official"].get("url"):
-                return data["official"]["url"]
-    except Exception:
-        pass
+    if paper_id:
+        try:
+            code_response = requests.get(base_url + paper_id, timeout=10)
+            if code_response.status_code == 200:
+                data = code_response.json()
+                if data.get("official") and data["official"].get("url"):
+                    return data["official"]["url"]
+        except Exception:
+            pass
     
     # 2. 从作者名构建查询（修复last属性不存在的问题）
     author_query = ""
@@ -129,8 +256,8 @@ def get_official_code_link(paper_id: str, title: str, authors: list) -> str:
                 repo_name = (repo.get('name') or '').lower()
                 
                 # 验证关键词匹配
-                if ('arxiv' in repo_description or 
-                    paper_id.split('v')[0] in repo_description or
+                if ('arxiv' in repo_description or
+                    (paper_id and paper_id.split('v')[0] in repo_description) or
                     any(keyword in repo_description for keyword in ['paper', 'implementation'])):
                     return repo['html_url']
     except Exception:
@@ -230,11 +357,14 @@ def generate_fallback_summary(title: str, abstract: str) -> str:
 
 def fetch_arxiv_results(query, max_results=10):
     """修复参数错误并增强网络稳定性"""
-    max_retries = 5
+    max_retries = 3
     for attempt in range(max_retries):
         try:
-            # 修正参数名：使用正确的num_retries
-            client = arxiv.Client(num_retries=3)
+            client = arxiv.Client(
+                page_size=max_results,
+                delay_seconds=3,
+                num_retries=2,
+            )
             search = arxiv.Search(
                 query=query,
                 max_results=max_results,
@@ -271,15 +401,17 @@ def fetch_arxiv_results(query, max_results=10):
                 updated=datetime.datetime.strptime(entry.updated, "%Y-%m-%dT%H:%M:%SZ"),
                 published=datetime.datetime.strptime(entry.published, "%Y-%m-%dT%H:%M:%SZ"),
                 title=entry.title,
-                authors=[arxiv.Author(name=a.name) for a in entry.authors],
+                authors=[arxiv.Result.Author(name=a.name) for a in entry.authors],
                 summary=entry.summary,
                 comment=entry.get("arxiv_comment", ""),
                 journal_ref=entry.get("arxiv_journal_ref", ""),
                 doi=entry.get("arxiv_doi", ""),
                 primary_category=entry.get("arxiv_primary_category", {}).get("term", ""),
                 categories=[t.term for t in entry.tags if t.scheme == "http://arxiv.org/schemas/atom"],
-                links=[arxiv.Link(href=l.href, title=l.title, rel=l.rel) for l in entry.links],
-                pdf_url=next((l.href for l in entry.links if l.title == "pdf"), None)
+                links=[
+                    arxiv.Result.Link(href=l.href, title=l.title, rel=l.rel)
+                    for l in entry.links
+                ],
             )
             results.append(result)
         return results
@@ -289,74 +421,341 @@ def fetch_arxiv_results(query, max_results=10):
         logging.error(f"直接arXiv API请求失败: {type(e).__name__}: {str(e)}")
     return []
 
-def get_daily_papers(topic, query="slam", max_results=10, existing_data=None):
-    """获取每日论文 - 应用三重过滤机制确保无旧论文"""
+
+def fetch_arxiv_papers(query: str, max_results=10) -> list[Paper]:
+    papers = []
+    for result in fetch_arxiv_results(query, max_results):
+        paper_id = result.get_short_id().split("v")[0]
+        papers.append(Paper(
+            source="arxiv",
+            source_id=paper_id,
+            title=result.title.strip(),
+            authors=[str(author) for author in result.authors],
+            abstract=result.summary.replace("\n", " ").strip(),
+            published_date=result.updated.date(),
+            paper_url=f"{arxiv_url}pdf/{paper_id}",
+            arxiv_id=paper_id,
+            doi=result.doi or "",
+        ))
+    return papers
+
+
+def fetch_openreview_papers(
+        query: str,
+        max_results=10,
+        search_limit=50) -> list[Paper]:
+    """Search public OpenReview paper notes and normalize their metadata."""
+    try:
+        response = requests.get(
+            openreview_search_url,
+            params={"term": query, "limit": min(max(search_limit, max_results), 100)},
+            headers=http_headers,
+            timeout=30,
+        )
+        if response.status_code in (403, 429):
+            logging.warning(
+                f"OpenReview API暂不可用 ({response.status_code})，跳过该来源"
+            )
+            return []
+        response.raise_for_status()
+    except requests.RequestException as e:
+        logging.warning(f"OpenReview API请求失败: {e}")
+        return []
+
+    try:
+        notes = response.json().get("notes", [])
+    except ValueError:
+        logging.warning("OpenReview API返回了无效JSON，跳过该来源")
+        return []
+
+    papers = []
+    for note in notes:
+        content = note.get("content", {})
+        if not openreview_value(content, "title"):
+            content = note.get("forumContent", {})
+
+        title = str(openreview_value(content, "title", "") or "").strip()
+        abstract = str(openreview_value(content, "abstract", "") or "").strip()
+        authors = openreview_value(content, "authors", []) or []
+        if not isinstance(authors, list):
+            authors = [authors]
+        venue = str(openreview_value(content, "venue", "") or "")
+        if not title or not abstract:
+            continue
+        if any(word in venue.casefold() for word in ("withdrawn", "desk rejected")):
+            continue
+
+        published_date = timestamp_to_date(
+            note.get("pdate") or note.get("cdate") or note.get("tcdate")
+        )
+        if not published_date or published_date < MIN_DATE:
+            continue
+
+        forum_id = note.get("forum") or note.get("id")
+        source_id = note.get("id") or forum_id
+        if not source_id or not forum_id:
+            continue
+
+        pdf = openreview_value(content, "pdf", "") or ""
+        html_url = openreview_value(content, "html", "") or ""
+        bibtex = openreview_value(content, "_bibtex", "") or ""
+        arxiv_id = extract_arxiv_id(pdf, html_url, bibtex)
+        doi = str(openreview_value(content, "doi", "") or "")
+
+        papers.append(Paper(
+            source="openreview",
+            source_id=str(source_id),
+            title=title,
+            authors=[str(author) for author in authors],
+            abstract=abstract.replace("\n", " "),
+            published_date=published_date,
+            paper_url=f"https://openreview.net/forum?id={forum_id}",
+            arxiv_id=arxiv_id,
+            doi=doi,
+        ))
+
+    papers.sort(key=lambda paper: paper.published_date, reverse=True)
+    return papers[:max_results]
+
+
+def build_semantic_scholar_query(filters: list[str]) -> str:
+    terms = []
+    for item in filters:
+        clean_item = str(item).replace('"', "").strip()
+        terms.append(f'"{clean_item}"' if " " in clean_item else clean_item)
+    return " | ".join(terms)
+
+
+def fetch_semantic_scholar_papers(
+        filters: list[str],
+        max_results=10) -> list[Paper]:
+    """Fetch recent Semantic Scholar papers without blocking other sources."""
+    global _semantic_scholar_disabled
+    if _semantic_scholar_disabled:
+        return []
+
+    headers = dict(http_headers)
+    if SEMANTIC_SCHOLAR_API_KEY:
+        headers["x-api-key"] = SEMANTIC_SCHOLAR_API_KEY
+
+    params = {
+        "query": build_semantic_scholar_query(filters),
+        "fields": (
+            "paperId,title,abstract,authors,publicationDate,year,url,"
+            "externalIds,openAccessPdf,venue"
+        ),
+        "sort": "publicationDate:desc",
+        "publicationDateOrYear": f"{MIN_DATE.isoformat()}:",
+        "fieldsOfStudy": "Computer Science,Engineering",
+    }
+
+    response = None
+    for attempt in range(3):
+        try:
+            response = requests.get(
+                semantic_scholar_search_url,
+                params=params,
+                headers=headers,
+                timeout=30,
+            )
+            if response.status_code in (401, 403):
+                logging.warning(
+                    "Semantic Scholar API Key无效或无权限，跳过该来源"
+                )
+                _semantic_scholar_disabled = True
+                return []
+            if response.status_code != 429:
+                response.raise_for_status()
+                break
+            if not SEMANTIC_SCHOLAR_API_KEY:
+                logging.warning(
+                    "Semantic Scholar公共接口已限流；配置"
+                    "SEMANTIC_SCHOLAR_API_KEY后将自动启用该来源"
+                )
+                _semantic_scholar_disabled = True
+                return []
+            if attempt < 2:
+                retry_after = response.headers.get("Retry-After")
+                wait_time = int(retry_after) if retry_after and retry_after.isdigit() else 2 ** attempt
+                time.sleep(min(wait_time, 10))
+        except requests.RequestException as e:
+            logging.warning(f"Semantic Scholar API请求失败: {e}")
+            return []
+    else:
+        logging.warning("Semantic Scholar API持续限流，跳过该来源")
+        return []
+
+    if response is None:
+        return []
+
+    try:
+        items = response.json().get("data", [])
+    except ValueError:
+        logging.warning("Semantic Scholar API返回了无效JSON，跳过该来源")
+        return []
+
+    papers = []
+    for item in items:
+        title = str(item.get("title") or "").strip()
+        abstract = str(item.get("abstract") or "").strip()
+        published_date = parse_iso_date(
+            item.get("publicationDate"),
+            item.get("year"),
+        )
+        if not title or not abstract or not published_date:
+            continue
+        if published_date < MIN_DATE:
+            continue
+
+        external_ids = item.get("externalIds") or {}
+        arxiv_id = str(external_ids.get("ArXiv") or "").split("v")[0]
+        doi = str(external_ids.get("DOI") or "")
+        open_access_pdf = item.get("openAccessPdf") or {}
+        paper_url = open_access_pdf.get("url") or item.get("url")
+        if not paper_url:
+            continue
+
+        source_id = str(item.get("paperId") or "")
+        if not source_id:
+            continue
+
+        papers.append(Paper(
+            source="semantic_scholar",
+            source_id=source_id,
+            title=title,
+            authors=[
+                str(author.get("name"))
+                for author in item.get("authors") or []
+                if author.get("name")
+            ],
+            abstract=abstract.replace("\n", " "),
+            published_date=published_date,
+            paper_url=str(paper_url),
+            arxiv_id=arxiv_id,
+            doi=doi,
+        ))
+
+    papers.sort(key=lambda paper: paper.published_date, reverse=True)
+    return papers[:max_results]
+
+def get_daily_papers(
+        topic,
+        filters,
+        max_results=10,
+        existing_data=None,
+        sources=None,
+        openreview_search_limit=50):
+    """Fetch and merge papers from enabled sources for one topic."""
     papers = {}
     web_content = {}
-    
-    # 获取现有数据（如果提供）
     existing_papers = existing_data.get(topic, {}) if existing_data else {}
-    
-    # 获取arXiv结果
-    results = fetch_arxiv_results(query, max_results)
+
+    existing_titles = {}
+    for existing_key, entry in existing_papers.items():
+        parts = entry.split("|")
+        if len(parts) >= 7:
+            existing_titles[normalize_title(parts[2].strip())] = existing_key
+
+    source_config = {
+        "arxiv": True,
+        "openreview": True,
+        "semantic_scholar": True,
+    }
+    source_config.update(sources or {})
+
+    results = []
+    if source_config.get("arxiv"):
+        arxiv_query = " OR ".join(
+            f'"{item}"' if " " in item else item
+            for item in filters
+        )
+        arxiv_papers = fetch_arxiv_papers(arxiv_query, max_results)
+        logging.info(f"arXiv返回 {len(arxiv_papers)} 篇: {topic}")
+        results.extend(arxiv_papers)
+
+    if source_config.get("openreview"):
+        openreview_papers = fetch_openreview_papers(
+            topic,
+            max_results=max_results,
+            search_limit=openreview_search_limit,
+        )
+        logging.info(f"OpenReview返回 {len(openreview_papers)} 篇: {topic}")
+        results.extend(openreview_papers)
+
+    if source_config.get("semantic_scholar"):
+        semantic_scholar_papers = fetch_semantic_scholar_papers(
+            filters,
+            max_results=max_results,
+        )
+        logging.info(
+            f"Semantic Scholar返回 {len(semantic_scholar_papers)} 篇: {topic}"
+        )
+        results.extend(semantic_scholar_papers)
+
+    results = deduplicate_papers(results)
     if not results:
-        logging.error(f"无法获取主题 '{topic}' 的论文")
+        logging.warning(f"所有来源均未返回主题 '{topic}' 的近期论文")
         return {}, {}
-    
-    for result in results:
+
+    for paper in results:
         try:
-            # 提取基础信息
-            paper_id = result.get_short_id()
-            paper_key = paper_id.split('v')[0]
-            title = result.title
-            pdf_url = arxiv_url + 'pdf/' + paper_key
-            authors = get_authors(result.authors, first_author=True)
-            abstract = result.summary.replace("\n", " ")
-            date = result.updated.date()
-            
-            # 第一重过滤：获取时直接跳过旧论文
-            if date < MIN_DATE:
+            if paper.published_date < MIN_DATE:
                 continue
-            
-            # 使用完整标题
-            short_title = title
-            
-            # 检查是否已有摘要
+
+            paper_key = paper.storage_key
+            normalized_title = normalize_title(paper.title)
+            existing_title_key = existing_titles.get(normalized_title)
+            if existing_title_key and existing_title_key != paper_key:
+                logging.info(f"现有数据已包含同标题论文: {paper.title}")
+                continue
+
             summary = None
-            if paper_key in existing_papers:
-                existing_entry = existing_papers[paper_key]
+            existing_key = paper_key if paper_key in existing_papers else existing_title_key
+            if existing_key:
+                existing_entry = existing_papers[existing_key]
                 parts = existing_entry.split('|')
                 if len(parts) >= 7:
                     existing_summary = parts[6].strip()
                     if existing_summary and existing_summary not in ["无", "null", ""]:
                         summary = existing_summary
                         logging.info(f"使用现有摘要: {paper_key}")
-            
-            # 如果没有现有摘要或无效，生成新摘要
+
             if not summary:
-                summary = get_paper_summary(title, abstract)
+                summary = get_paper_summary(paper.title, paper.abstract)
                 logging.info(f"生成新摘要: {paper_key}")
-            
-            # 获取官方代码链接
-            code_link = get_official_code_link(paper_id, title, result.authors)
-                
-            # 构建表格行
+
+            code_link = get_official_code_link(
+                paper.arxiv_id,
+                paper.title,
+                paper.authors,
+            )
             code_display = "无"
             if code_link:
                 code_display = f"[代码]({code_link})"
-                
-            papers[paper_key] = f"|{date}|{short_title}|{authors}|[{paper_key}]({pdf_url})|{code_display}|{summary}|\n"
-            
-            # 构建网页内容
-            web_entry = f"- {date}, {title}, {authors}等, 论文: [{paper_key}]({pdf_url})"
+
+            title = sanitize_entry_text(paper.title)
+            authors = sanitize_entry_text(
+                get_authors(paper.authors, first_author=True)
+            )
+            summary = sanitize_entry_text(summary)
+            paper_link = f"[{paper.link_label}]({paper.paper_url})"
+            papers[paper_key] = (
+                f"|{paper.published_date}|{title}|{authors}|{paper_link}|"
+                f"{code_display}|{summary}|\n"
+            )
+
+            web_entry = (
+                f"- {paper.published_date}, {paper.title}, {authors}, "
+                f"论文: {paper_link}"
+            )
             if code_link:
                 web_entry += f", 代码: [链接]({code_link})"
             web_entry += f", 摘要: {summary}\n"
             web_content[paper_key] = web_entry
-        
+
         except Exception as e:
-            logging.error(f"处理论文出错: {str(e)}")
-    
+            logging.error(f"处理 {paper.source} 论文出错: {str(e)}")
+
     return {topic: papers}, {topic: web_content}
 
 def update_paper_links(filename):
@@ -497,7 +896,7 @@ def json_to_md(filename, md_filename,
     with open(md_filename, "w+", encoding="utf-8") as f:
         # 添加标题和介绍
         f.write(f"# SLAM领域最新论文 ({today})\n\n")
-        f.write("> 每日自动更新SLAM领域的最新arXiv论文\n\n")
+        f.write("> 每日自动更新SLAM领域的 arXiv、OpenReview 与 Semantic Scholar 论文\n\n")
         f.write("> 使用说明: [点击查看](./docs/README.md#usage)\n\n")
         
         # 3. 优化表格CSS
@@ -569,7 +968,11 @@ def json_to_md(filename, md_filename,
             f.write("<thead><tr><th>日期</th><th>标题</th><th>论文与代码</th><th>摘要</th></tr></thead>\n")
             f.write("<tbody>\n")
             
-            sorted_papers = sorted(papers.items(), key=lambda x: x[0], reverse=True)
+            sorted_papers = sorted(
+                papers.items(),
+                key=lambda item: item[1].split("|")[1],
+                reverse=True,
+            )
             
             for paper_id, paper_entry in sorted_papers:
                 entry_parts = paper_entry.strip().split('|')
@@ -622,8 +1025,10 @@ def demo(**config):
     data_collector_web = []
     
     # 解析配置
-    keywords = config['kv']
+    keywords = config['keywords']
     max_results = config['max_results']
+    sources = config.get('sources', {})
+    openreview_search_limit = config.get('openreview_search_limit', 50)
     publish_readme = config['publish_readme']
     publish_gitpage = config['publish_gitpage']
     publish_wechat = config['publish_wechat']
@@ -649,11 +1054,16 @@ def demo(**config):
     logging.info(f'更新论文链接: {update_links}')
     if not update_links:
         logging.info("开始获取每日论文")
-        for topic, query in keywords.items():
+        for topic, settings in keywords.items():
             logging.info(f"关键词: {topic}")
-            data, data_web = get_daily_papers(topic, query=query, 
-                                            max_results=max_results, 
-                                            existing_data=existing_data)
+            data, data_web = get_daily_papers(
+                topic,
+                filters=settings['filters'],
+                max_results=max_results,
+                existing_data=existing_data,
+                sources=sources,
+                openreview_search_limit=openreview_search_limit,
+            )
             data_collector.append(data)
             data_collector_web.append(data_web)
         logging.info("获取每日论文完成")

@@ -6,6 +6,13 @@ show_authors: True
 show_links: True
 show_badge: True
 max_results: 10
+openreview_search_limit: 50
+
+# paper sources
+sources:
+    arxiv: True
+    openreview: True
+    semantic_scholar: True
 
 publish_readme: True
 publish_gitpage: True

@@ -26,6 +26,7 @@ jobs:
         run: python daily_arxiv.py
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
         
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
