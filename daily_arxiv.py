@@ -38,7 +38,7 @@ SEMANTIC_SCHOLAR_API_KEY = os.getenv("SEMANTIC_SCHOLAR_API_KEY", "")
 
 # 全局过滤日期 - 修改这里调整过滤条件
 MIN_DATE = datetime.date(2026, 6, 1)
-SUMMARY_PREVIEW_CHARS = 360
+SUMMARY_MAX_CHARS = 600
 
 _semantic_scholar_disabled = False
 
@@ -153,31 +153,13 @@ def normalize_summary_text(summary: str) -> str:
     return re.sub(r"\s+", " ", str(summary)).strip()
 
 
-def summary_preview(summary: str, max_chars=SUMMARY_PREVIEW_CHARS) -> tuple[str, bool]:
+def truncate_summary_text(summary: str, max_chars=SUMMARY_MAX_CHARS) -> str:
     normalized = normalize_summary_text(summary)
-    if len(normalized) <= max_chars:
-        return normalized, False
-
-    preview = normalized[:max_chars].rstrip()
-    last_space = preview.rfind(" ")
-    if last_space >= int(max_chars * 0.75):
-        preview = preview[:last_space]
-    return preview.rstrip(" ,;:"), True
+    return normalized[:max_chars].rstrip()
 
 
 def render_summary_html(summary: str) -> str:
-    normalized = normalize_summary_text(summary)
-    preview, truncated = summary_preview(normalized)
-    preview_html = html.escape(preview)
-    if not truncated:
-        return f"<strong>摘要：</strong> {preview_html}"
-
-    return (
-        "<details>"
-        f"<summary><strong>摘要：</strong> {preview_html}...</summary>"
-        f"<div>{html.escape(normalized)}</div>"
-        "</details>"
-    )
+    return f"<strong>摘要：</strong> {html.escape(truncate_summary_text(summary))}"
 
 
 def current_date() -> datetime.date:
@@ -1006,7 +988,7 @@ def json_to_md(filename, md_filename,
             
             f.write('<div class="table-container">\n')
             f.write("<table>\n")
-            f.write("<thead><tr><th>日期</th><th>标题</th><th>论文与代码</th></tr></thead>\n")
+            f.write("<thead><tr><th>日期</th><th>标题</th><th>论文与摘要</th></tr></thead>\n")
             f.write("<tbody>\n")
             
             sorted_papers = sorted(
@@ -1043,11 +1025,8 @@ def json_to_md(filename, md_filename,
                     f.write("<tr>")
                     f.write(f"<td>{html.escape(date_str)}</td>")
                     f.write(f"<td>{html.escape(title)}</td>")
-                    f.write(f"<td>{paper_display}</td>")
-                    f.write("</tr>\n")
-                    f.write("<tr>")
                     f.write(
-                        f'<td colspan="3">{render_summary_html(summary)}</td>'
+                        f"<td>{paper_display}<br>{render_summary_html(summary)}</td>"
                     )
                     f.write("</tr>\n")
             

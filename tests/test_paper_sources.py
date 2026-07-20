@@ -58,17 +58,15 @@ class PaperSourceTests(unittest.TestCase):
 
         self.assertEqual(list(result), ["2607.00001", "openreview:old"])
 
-    def test_render_summary_html_collapses_long_text(self):
-        summary = "◆ First line\n◆ " + ("long summary text " * 40)
+    def test_render_summary_html_truncates_long_text(self):
+        summary = "A" * 700
 
         rendered = daily_arxiv.render_summary_html(summary)
 
-        self.assertIn("<details>", rendered)
-        self.assertIn("<summary>", rendered)
-        self.assertIn("<div>", rendered)
-        self.assertNotIn("\n", rendered)
+        self.assertEqual(rendered, f"<strong>摘要：</strong> {'A' * 600}")
+        self.assertNotIn("<details>", rendered)
 
-    def test_json_to_md_renders_summary_as_full_width_row(self):
+    def test_json_to_md_renders_link_and_summary_in_same_cell(self):
         long_summary = "Long summary sentence. " * 30
         data = {
             "SLAM": {
@@ -90,9 +88,14 @@ class PaperSourceTests(unittest.TestCase):
                 daily_arxiv.json_to_md(str(json_path), str(markdown_path))
             rendered = markdown_path.read_text(encoding="utf-8")
 
-        self.assertIn("<th>论文与代码</th></tr>", rendered)
-        self.assertNotIn("<th>摘要</th>", rendered)
-        self.assertIn('<td colspan="3"><details>', rendered)
+        self.assertIn("<th>论文与摘要</th></tr>", rendered)
+        self.assertIn("<td>[Paper](url)<br><strong>摘要：</strong>", rendered)
+        self.assertNotIn("colspan", rendered)
+        self.assertNotIn("<details><summary><strong>摘要", rendered)
+        rendered_summary = rendered.split("<strong>摘要：</strong> ", 1)[1].split(
+            "</td>", 1
+        )[0]
+        self.assertLessEqual(len(rendered_summary), daily_arxiv.SUMMARY_MAX_CHARS)
 
     def test_filter_old_papers_removes_future_dates(self):
         entries = {
