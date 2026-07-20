@@ -5,6 +5,7 @@ import arxiv
 import yaml
 import logging
 import argparse
+import calendar
 import datetime
 import requests
 import time
@@ -36,8 +37,7 @@ DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 SEMANTIC_SCHOLAR_API_KEY = os.getenv("SEMANTIC_SCHOLAR_API_KEY", "")
 
-# 全局过滤日期 - 修改这里调整过滤条件
-MIN_DATE = datetime.date(2026, 6, 1)
+RETENTION_MONTHS = 2
 SUMMARY_MAX_CHARS = 600
 
 _semantic_scholar_disabled = False
@@ -166,8 +166,18 @@ def current_date() -> datetime.date:
     return datetime.date.today()
 
 
+def retention_start_date(today: datetime.date | None = None) -> datetime.date:
+    today = today or current_date()
+    month_index = today.year * 12 + today.month - 1 - RETENTION_MONTHS
+    year, zero_based_month = divmod(month_index, 12)
+    month = zero_based_month + 1
+    day = min(today.day, calendar.monthrange(year, month)[1])
+    return datetime.date(year, month, day)
+
+
 def is_date_in_range(date_value: datetime.date) -> bool:
-    return MIN_DATE <= date_value <= current_date()
+    today = current_date()
+    return retention_start_date(today) <= date_value <= today
 
 def load_config(config_file: str) -> dict:
     '''
@@ -189,9 +199,7 @@ def load_config(config_file: str) -> dict:
     return config
 
 def filter_old_papers(papers: dict) -> dict:
-    """
-    过滤掉旧论文的核心函数
-    """
+    """仅保留滚动日期窗口内的论文。"""
     filtered = {}
     count = 0
     for paper_id, paper_entry in papers.items():
@@ -201,7 +209,7 @@ def filter_old_papers(papers: dict) -> dict:
             if len(parts) > 1:
                 date_str = parts[1].strip()
                 
-                if is_date_above_min(date_str):
+                if is_date_retained(date_str):
                     filtered[paper_id] = paper_entry
                 else:
                     count += 1
@@ -214,7 +222,7 @@ def filter_old_papers(papers: dict) -> dict:
     
     if count > 0:
         logging.info(
-            f"过滤掉 {count} 篇日期不在 {MIN_DATE} 至 {current_date()} 范围内的论文"
+            f"过滤掉 {count} 篇不在最近 {RETENTION_MONTHS} 个月内的论文"
         )
     
     return filtered
@@ -559,6 +567,7 @@ def fetch_semantic_scholar_papers(
     if SEMANTIC_SCHOLAR_API_KEY:
         headers["x-api-key"] = SEMANTIC_SCHOLAR_API_KEY
 
+    today = current_date()
     params = {
         "query": build_semantic_scholar_query(filters),
         "fields": (
@@ -567,7 +576,7 @@ def fetch_semantic_scholar_papers(
         ),
         "sort": "publicationDate:desc",
         "publicationDateOrYear": (
-            f"{MIN_DATE.isoformat()}:{current_date().isoformat()}"
+            f"{retention_start_date(today).isoformat()}:{today.isoformat()}"
         ),
         "fieldsOfStudy": "Computer Science,Engineering",
     }
@@ -919,7 +928,10 @@ def json_to_md(filename, md_filename,
     with open(md_filename, "w+", encoding="utf-8") as f:
         # 添加标题和介绍
         f.write(f"# SLAM领域最新论文 ({today})\n\n")
-        f.write("> 每日自动更新SLAM领域的 arXiv、OpenReview 与 Semantic Scholar 论文\n\n")
+        f.write(
+            "> 每日自动更新SLAM领域的 arXiv、OpenReview 与 Semantic Scholar 论文，"
+            f"仅保留最近 {RETENTION_MONTHS} 个月的结果\n\n"
+        )
         f.write("> 使用说明: [点击查看](./docs/README.md#usage)\n\n")
         
         # 3. 优化表格CSS
@@ -1007,7 +1019,7 @@ def json_to_md(filename, md_filename,
                     summary = entry_parts[6].strip()
                     
 
-                    if not is_date_above_min(date_str):
+                    if not is_date_retained(date_str):
                         continue
                     
                     if not summary or summary in ["无", "null"]:
@@ -1124,7 +1136,7 @@ def demo(**config):
         json_to_md(json_file, md_file, task='更新微信', to_web=False, 
                    use_title=False)
 
-def is_date_above_min(date_str: str) -> bool:
+def is_date_retained(date_str: str) -> bool:
     date_value = datetime.date.fromisoformat(date_str.replace('**', ''))
     return is_date_in_range(date_value)
 
@@ -1139,7 +1151,8 @@ if __name__ == "__main__":
     # 设置日志级别
     logging.getLogger().setLevel(logging.INFO)
     logging.info(
-        f"启动论文速递更新 (日期范围: {MIN_DATE} 至 {current_date()})"
+        "启动论文速递更新 "
+        f"(日期范围: {retention_start_date()} 至 {current_date()})"
     )
     
     # 加载配置并运行

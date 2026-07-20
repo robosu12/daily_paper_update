@@ -99,9 +99,10 @@ class PaperSourceTests(unittest.TestCase):
 
     def test_filter_old_papers_removes_future_dates(self):
         entries = {
+            "boundary": "|2026-05-20|Boundary|A|[Paper](url)|无|Summary|\n",
             "current": "|2026-07-19|Current|A|[Paper](url)|无|Summary|\n",
             "future": "|2026-08-01|Future|A|[Paper](url)|无|Summary|\n",
-            "old": "|2026-05-01|Old|A|[Paper](url)|无|Summary|\n",
+            "old": "|2026-05-19|Old|A|[Paper](url)|无|Summary|\n",
         }
 
         with patch(
@@ -110,7 +111,33 @@ class PaperSourceTests(unittest.TestCase):
         ):
             result = daily_arxiv.filter_old_papers(entries)
 
-        self.assertEqual(list(result), ["current"])
+        self.assertEqual(list(result), ["boundary", "current"])
+
+    def test_retention_start_date_handles_month_end(self):
+        self.assertEqual(
+            daily_arxiv.retention_start_date(datetime.date(2026, 4, 30)),
+            datetime.date(2026, 2, 28),
+        )
+
+    def test_update_json_file_deletes_expired_entries(self):
+        data = {
+            "SLAM": {
+                "expired": "|2026-05-19|Old|A|[Paper](url)|无|Summary|\n",
+                "retained": "|2026-05-20|New|A|[Paper](url)|无|Summary|\n",
+            }
+        }
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            json_path = Path(temp_dir) / "papers.json"
+            json_path.write_text(json.dumps(data), encoding="utf-8")
+            with patch(
+                "daily_arxiv.current_date",
+                return_value=datetime.date(2026, 7, 20),
+            ):
+                daily_arxiv.update_json_file(str(json_path), [])
+            updated = json.loads(json_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(list(updated["SLAM"]), ["retained"])
 
     @patch("daily_arxiv.fetch_arxiv_results")
     def test_fetch_arxiv_papers_uses_initial_publication_date(self, mock_fetch):
@@ -161,6 +188,10 @@ class PaperSourceTests(unittest.TestCase):
             ),
             patch("daily_arxiv.get_paper_summary", return_value="Summary"),
             patch("daily_arxiv.get_official_code_link", return_value=None),
+            patch(
+                "daily_arxiv.current_date",
+                return_value=datetime.date(2026, 7, 20),
+            ),
         ):
             data, _ = daily_arxiv.get_daily_papers(
                 "SLAM",
@@ -195,7 +226,11 @@ class PaperSourceTests(unittest.TestCase):
         }
         mock_get.return_value = response
 
-        papers = daily_arxiv.fetch_openreview_papers("Visual SLAM", 10)
+        with patch(
+            "daily_arxiv.current_date",
+            return_value=datetime.date(2026, 7, 20),
+        ):
+            papers = daily_arxiv.fetch_openreview_papers("Visual SLAM", 10)
 
         self.assertEqual(len(papers), 1)
         self.assertEqual(papers[0].source, "openreview")
@@ -228,7 +263,13 @@ class PaperSourceTests(unittest.TestCase):
         }
         mock_get.return_value = response
 
-        with patch.object(daily_arxiv, "SEMANTIC_SCHOLAR_API_KEY", "test-key"):
+        with (
+            patch.object(daily_arxiv, "SEMANTIC_SCHOLAR_API_KEY", "test-key"),
+            patch(
+                "daily_arxiv.current_date",
+                return_value=datetime.date(2026, 7, 20),
+            ),
+        ):
             daily_arxiv._semantic_scholar_disabled = False
             papers = daily_arxiv.fetch_semantic_scholar_papers(
                 ["SLAM", "LiDAR Odometry"],
@@ -241,7 +282,7 @@ class PaperSourceTests(unittest.TestCase):
         self.assertEqual(request.kwargs["headers"]["x-api-key"], "test-key")
         self.assertEqual(
             request.kwargs["params"]["publicationDateOrYear"],
-            f"2026-06-01:{daily_arxiv.current_date().isoformat()}",
+            "2026-05-20:2026-07-20",
         )
         self.assertIn(" | ", request.kwargs["params"]["query"])
 
