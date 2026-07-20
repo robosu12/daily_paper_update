@@ -38,9 +38,6 @@ SEMANTIC_SCHOLAR_API_KEY = os.getenv("SEMANTIC_SCHOLAR_API_KEY", "")
 
 # 全局过滤日期 - 修改这里调整过滤条件
 MIN_DATE = datetime.date(2026, 6, 1)
-MIN_YEAR = 2026
-MIN_MONTH = 6
-MIN_DAY = 1
 
 _semantic_scholar_disabled = False
 
@@ -150,6 +147,14 @@ def parse_iso_date(date_str: str | None, year=None) -> datetime.date | None:
 def sanitize_entry_text(value: str) -> str:
     return str(value).replace("|", "｜")
 
+
+def current_date() -> datetime.date:
+    return datetime.date.today()
+
+
+def is_date_in_range(date_value: datetime.date) -> bool:
+    return MIN_DATE <= date_value <= current_date()
+
 def load_config(config_file: str) -> dict:
     '''
     config_file: 配置文件路径
@@ -194,7 +199,9 @@ def filter_old_papers(papers: dict) -> dict:
             filtered[paper_id] = paper_entry
     
     if count > 0:
-        logging.info(f"过滤掉 {count} 篇 {MIN_DATE} 前的旧论文")
+        logging.info(
+            f"过滤掉 {count} 篇日期不在 {MIN_DATE} 至 {current_date()} 范围内的论文"
+        )
     
     return filtered
 
@@ -432,7 +439,7 @@ def fetch_arxiv_papers(query: str, max_results=10) -> list[Paper]:
             title=result.title.strip(),
             authors=[str(author) for author in result.authors],
             abstract=result.summary.replace("\n", " ").strip(),
-            published_date=result.updated.date(),
+            published_date=result.published.date(),
             paper_url=f"{arxiv_url}pdf/{paper_id}",
             arxiv_id=paper_id,
             doi=result.doi or "",
@@ -488,7 +495,7 @@ def fetch_openreview_papers(
         published_date = timestamp_to_date(
             note.get("pdate") or note.get("cdate") or note.get("tcdate")
         )
-        if not published_date or published_date < MIN_DATE:
+        if not published_date or not is_date_in_range(published_date):
             continue
 
         forum_id = note.get("forum") or note.get("id")
@@ -545,7 +552,9 @@ def fetch_semantic_scholar_papers(
             "externalIds,openAccessPdf,venue"
         ),
         "sort": "publicationDate:desc",
-        "publicationDateOrYear": f"{MIN_DATE.isoformat()}:",
+        "publicationDateOrYear": (
+            f"{MIN_DATE.isoformat()}:{current_date().isoformat()}"
+        ),
         "fieldsOfStudy": "Computer Science,Engineering",
     }
 
@@ -604,7 +613,7 @@ def fetch_semantic_scholar_papers(
         )
         if not title or not abstract or not published_date:
             continue
-        if published_date < MIN_DATE:
+        if not is_date_in_range(published_date):
             continue
 
         external_ids = item.get("externalIds") or {}
@@ -699,7 +708,7 @@ def get_daily_papers(
 
     for paper in results:
         try:
-            if paper.published_date < MIN_DATE:
+            if not is_date_in_range(paper.published_date):
                 continue
 
             paper_key = paper.storage_key
@@ -1101,21 +1110,8 @@ def demo(**config):
                    use_title=False)
 
 def is_date_above_min(date_str: str) -> bool:
-    date_str = date_str.replace('**', '')
-    data_part = date_str.split('-')
-    # print(f"{data_part[0]}-{data_part[1]}-{data_part[2]}")
-    
-    if int(data_part[0]) > MIN_YEAR:
-        return True
-    
-    if int(data_part[0]) == MIN_YEAR and int(data_part[1]) > MIN_MONTH:
-        return True
-    
-    if int(data_part[0]) == MIN_YEAR and int(data_part[1]) == MIN_MONTH and int(data_part[2]) >= MIN_DAY:
-        return True
-    
-    # print("False")
-    return False
+    date_value = datetime.date.fromisoformat(date_str.replace('**', ''))
+    return is_date_in_range(date_value)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -1127,7 +1123,9 @@ if __name__ == "__main__":
     
     # 设置日志级别
     logging.getLogger().setLevel(logging.INFO)
-    logging.info(f"启动论文速递更新 (过滤日期: {MIN_DATE})")
+    logging.info(
+        f"启动论文速递更新 (日期范围: {MIN_DATE} 至 {current_date()})"
+    )
     
     # 加载配置并运行
     config = load_config(args.config_path)

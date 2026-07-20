@@ -55,6 +55,37 @@ class PaperSourceTests(unittest.TestCase):
 
         self.assertEqual(list(result), ["2607.00001", "openreview:old"])
 
+    def test_filter_old_papers_removes_future_dates(self):
+        entries = {
+            "current": "|2026-07-19|Current|A|[Paper](url)|无|Summary|\n",
+            "future": "|2026-08-01|Future|A|[Paper](url)|无|Summary|\n",
+            "old": "|2026-05-01|Old|A|[Paper](url)|无|Summary|\n",
+        }
+
+        with patch(
+            "daily_arxiv.current_date",
+            return_value=datetime.date(2026, 7, 20),
+        ):
+            result = daily_arxiv.filter_old_papers(entries)
+
+        self.assertEqual(list(result), ["current"])
+
+    @patch("daily_arxiv.fetch_arxiv_results")
+    def test_fetch_arxiv_papers_uses_initial_publication_date(self, mock_fetch):
+        result = Mock()
+        result.get_short_id.return_value = "2607.00001v2"
+        result.title = "Revised SLAM Paper"
+        result.authors = ["Alice"]
+        result.summary = "Abstract"
+        result.published = datetime.datetime(2026, 7, 1)
+        result.updated = datetime.datetime(2026, 7, 19)
+        result.doi = None
+        mock_fetch.return_value = [result]
+
+        papers = daily_arxiv.fetch_arxiv_papers("SLAM", 1)
+
+        self.assertEqual(papers[0].published_date, datetime.date(2026, 7, 1))
+
     def test_get_daily_papers_serializes_each_source(self):
         arxiv_paper = self.make_paper(
             "arxiv",
@@ -168,9 +199,39 @@ class PaperSourceTests(unittest.TestCase):
         self.assertEqual(request.kwargs["headers"]["x-api-key"], "test-key")
         self.assertEqual(
             request.kwargs["params"]["publicationDateOrYear"],
-            "2026-06-01:",
+            f"2026-06-01:{daily_arxiv.current_date().isoformat()}",
         )
         self.assertIn(" | ", request.kwargs["params"]["query"])
+
+    @patch("daily_arxiv.requests.get")
+    def test_fetch_semantic_scholar_papers_rejects_future_date(self, mock_get):
+        response = Mock(status_code=200, headers={})
+        response.json.return_value = {
+            "data": [{
+                "paperId": "future-id",
+                "title": "Future Issue Paper",
+                "abstract": "Already indexed with a future issue date.",
+                "authors": [{"name": "Alice"}],
+                "publicationDate": "2026-08-01",
+                "year": 2026,
+                "url": "https://www.semanticscholar.org/paper/future-id",
+                "externalIds": {},
+                "openAccessPdf": None,
+            }]
+        }
+        mock_get.return_value = response
+
+        with (
+            patch.object(daily_arxiv, "SEMANTIC_SCHOLAR_API_KEY", "test-key"),
+            patch(
+                "daily_arxiv.current_date",
+                return_value=datetime.date(2026, 7, 20),
+            ),
+        ):
+            daily_arxiv._semantic_scholar_disabled = False
+            papers = daily_arxiv.fetch_semantic_scholar_papers(["SLAM"], 10)
+
+        self.assertEqual(papers, [])
 
 
 if __name__ == "__main__":
