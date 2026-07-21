@@ -1,7 +1,7 @@
 name: Daily Arxiv Update
 on:
   schedule:
-    - cron: '0 8 * * *'  # 每天UTC时间8点（北京时间16点）运行
+    - cron: '0 0 * * *'  # 每天UTC时间0点（北京时间8点）运行
   workflow_dispatch:     # 允许手动触发
 jobs:
   update:
