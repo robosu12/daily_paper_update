@@ -30,14 +30,13 @@ md_wechat_path: './docs/wechat.md'
 # keywords to search
 keywords:
     "LiDAR SLAM": 
-        filters: ["SLAM", "LiDAR Odometry", "LiDAR-inertial Odometry", "LiDAR Localization", "LiDAR Mapping"]
+        filters: ["LiDAR SLAM", "LiDAR Odometry", "LiDAR-inertial Odometry", "LiDAR-Visual-inertial Odometry"]
     "Visual SLAM":
         filters: ["Visual SLAM", "Visual Odometry", "Visual-inertial Odometry"]
     "Loop Closure":
-        filters: ["Place recognition", "Relocalization", "Loop Closure"]
-    "Image Matching":
-        filters: ["Keypoint Detection", "Feature Descriptor", "Image Matching", "Keypoint Matching", "Local Feature Matching"]
-    "Depth Estimation":
-        filters: ["Depth Estimation", "Stereo Matching"]
+        filters: ["Place recognition", "Relocalization", "Loop Closure", "Global Feature Matching"]
     "3DGS":
         filters: ["3DGS", "Gaussian Splatting"]
+    "Image Matching":
+        filters: ["Keypoint Detection", "Feature Descriptor", "Image Matching", "Stereo Matching", "Local Feature Matching"]
+
