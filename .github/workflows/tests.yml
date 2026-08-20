@@ -1,0 +1,25 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:  # 支持需要时手动重新运行测试。
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      # 测试覆盖来源回退、刊会筛选、一个月保留期和 README 渲染。
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v

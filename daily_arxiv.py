@@ -13,6 +13,7 @@ import html
 import feedparser
 import random
 from dataclasses import dataclass
+from html.parser import HTMLParser
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
@@ -25,6 +26,7 @@ openreview_search_url = "https://api2.openreview.net/notes/search"
 semantic_scholar_search_url = (
     "https://api.semanticscholar.org/graph/v1/paper/search/bulk"
 )
+crossref_search_url = "https://api.crossref.org/works"
 http_headers = {
     "User-Agent": (
         "daily_paper_update/1.0 "
@@ -72,6 +74,8 @@ class Paper:
             return self.arxiv_id or self.source_id
         if self.source == "openreview":
             return "OpenReview"
+        if self.source == "crossref":
+            return "Crossref"
         return "Semantic Scholar"
 
 
@@ -154,6 +158,26 @@ def sanitize_entry_text(value: str) -> str:
 
 def normalize_summary_text(summary: str) -> str:
     return re.sub(r"\s+", " ", str(summary)).strip()
+
+
+class MarkupTextExtractor(HTMLParser):
+    """提取 Crossref JATS/HTML 摘要中的纯文本。"""
+
+    def __init__(self):
+        """初始化用于按顺序收集文本片段的容器。"""
+        super().__init__()
+        self.parts = []
+
+    def handle_data(self, data):
+        """保存解析器遇到的文本，忽略外层标签结构。"""
+        self.parts.append(data)
+
+
+def strip_markup(value: str) -> str:
+    """使用标准解析器清理摘要标签，并合并多余空白。"""
+    parser = MarkupTextExtractor()
+    parser.feed(str(value or ""))
+    return normalize_summary_text(" ".join(parser.parts))
 
 
 def truncate_summary_text(summary: str, max_chars=SUMMARY_MAX_CHARS) -> str:
@@ -580,8 +604,13 @@ def match_venue_label(venue: str, venue_groups: dict[str, list[str]]) -> str:
     """把数据源返回的正式刊会名称映射为配置中的简短标签。"""
     normalized_venue = normalize_title(venue)
     for label, aliases in venue_groups.items():
-        if any(normalize_title(alias) == normalized_venue for alias in aliases):
-            return label
+        for alias in aliases:
+            normalized_alias = normalize_title(alias)
+            if normalized_alias == normalized_venue:
+                return label
+            # 兼容刊名前后的年份与 Proceedings 等数据源前后缀。
+            if len(normalized_alias) >= 8 and normalized_alias in normalized_venue:
+                return label
     return ""
 
 
@@ -707,6 +736,136 @@ def fetch_semantic_scholar_papers(
     papers.sort(key=lambda paper: paper.published_date, reverse=True)
     return papers[:max_results]
 
+
+def parse_crossref_date(item: dict) -> datetime.date | None:
+    """按在线、纸质、正式发布和创建时间顺序读取 Crossref 日期。"""
+    for key in ("published-online", "published-print", "issued", "created"):
+        date_parts = (item.get(key) or {}).get("date-parts") or []
+        if not date_parts or not date_parts[0]:
+            continue
+
+        values = list(date_parts[0][:3])
+        values.extend([1] * (3 - len(values)))
+        try:
+            return datetime.date(*values)
+        except (TypeError, ValueError):
+            continue
+    return None
+
+
+def paper_matches_filters(title: str, abstract: str, filters: list[str]) -> bool:
+    """使用与 config.yaml 相同的关键词校验 Crossref 候选论文。"""
+    searchable_text = normalize_title(f"{title} {abstract}")
+    return any(
+        normalize_title(filter_value) in searchable_text
+        for filter_value in filters
+        if str(filter_value).strip()
+    )
+
+
+def fetch_crossref_venue_papers(
+        filters: list[str],
+        venue_groups: dict[str, list[str]],
+        max_results=30) -> list[Paper]:
+    """从 Crossref 补充 Semantic Scholar 未返回的目标刊会论文。"""
+    today = current_date()
+    date_filter = (
+        f"from-pub-date:{retention_start_date(today).isoformat()},"
+        f"until-pub-date:{today.isoformat()}"
+    )
+    rows = min(max(max_results * 3, 20), 100)
+    papers = []
+
+    # 每个刊会单独检索，随后用正式刊名和关键词做严格二次校验。
+    for label, aliases in venue_groups.items():
+        if not aliases:
+            continue
+        params = {
+            "query.bibliographic": " OR ".join(filters),
+            "query.container-title": aliases[0],
+            "filter": date_filter,
+            "rows": rows,
+            "sort": "published",
+            "order": "desc",
+            "select": (
+                "DOI,title,author,abstract,published-online,published-print,"
+                "issued,created,URL,container-title"
+            ),
+        }
+        try:
+            response = requests.get(
+                crossref_search_url,
+                params=params,
+                headers=http_headers,
+                timeout=30,
+            )
+            response.raise_for_status()
+            items = response.json().get("message", {}).get("items", [])
+        except (requests.RequestException, ValueError) as error:
+            logging.warning(f"Crossref 刊会查询失败: {label} ({error})")
+            continue
+
+        for item in items:
+            titles = item.get("title") or []
+            title = str(titles[0] if isinstance(titles, list) else titles).strip()
+            abstract = strip_markup(item.get("abstract") or "")
+            published_date = parse_crossref_date(item)
+            if not title or not published_date or not is_date_in_range(published_date):
+                continue
+            if not paper_matches_filters(title, abstract, filters):
+                continue
+
+            container_titles = item.get("container-title") or []
+            if not isinstance(container_titles, list):
+                container_titles = [container_titles]
+            venue = next(
+                (
+                    str(name).strip()
+                    for name in container_titles
+                    if match_venue_label(str(name), {label: aliases})
+                ),
+                "",
+            )
+            if not venue:
+                continue
+
+            doi = str(item.get("DOI") or "").removeprefix(
+                "https://doi.org/"
+            )
+            paper_url = str(item.get("URL") or "")
+            if not paper_url and doi:
+                paper_url = f"https://doi.org/{doi}"
+            if not paper_url:
+                continue
+
+            authors = []
+            for author in item.get("author") or []:
+                name = " ".join(
+                    part
+                    for part in (author.get("given"), author.get("family"))
+                    if part
+                )
+                if name:
+                    authors.append(name)
+
+            source_id = doi or str(item.get("URL") or normalize_title(title))
+            papers.append(Paper(
+                source="crossref",
+                source_id=source_id,
+                title=title,
+                authors=authors,
+                abstract=abstract,
+                published_date=published_date,
+                paper_url=paper_url,
+                doi=doi,
+                venue=venue,
+            ))
+
+    papers = deduplicate_papers(papers)
+    papers.sort(key=lambda paper: paper.published_date, reverse=True)
+    return papers[:max_results]
+
+
 def get_daily_papers(
         topic,
         filters,
@@ -766,6 +925,29 @@ def get_daily_papers(
             f"Semantic Scholar返回 {len(semantic_scholar_papers)} 篇: {topic}"
         )
         results.extend(semantic_scholar_papers)
+
+    # Semantic Scholar 缺失或限流时，仅向 Crossref 查询尚未命中的刊会。
+    if venue_groups:
+        returned_labels = {
+            match_venue_label(paper.venue, venue_groups)
+            for paper in results
+            if paper.venue
+        }
+        missing_venues = {
+            label: aliases
+            for label, aliases in venue_groups.items()
+            if label not in returned_labels
+        }
+        if missing_venues:
+            crossref_papers = fetch_crossref_venue_papers(
+                filters,
+                missing_venues,
+                max_results=max_results,
+            )
+            logging.info(
+                f"Crossref 返回 {len(crossref_papers)} 篇刊会论文: {topic}"
+            )
+            results.extend(crossref_papers)
 
     results = deduplicate_papers(results)
     if not results:
@@ -989,6 +1171,10 @@ def json_to_md(filename, md_filename,
     except (FileNotFoundError, json.JSONDecodeError):
         data = {}
 
+    # 即使数据源临时失败，也保留顶部刊会表格和明确的空状态。
+    if featured_topic:
+        data.setdefault(featured_topic, {})
+
     # 目录和正文共用顺序，确保顶会顶刊表格稳定置顶。
     topic_names = order_topic_names(data, featured_topic)
     
@@ -1056,7 +1242,7 @@ def json_to_md(filename, md_filename,
         if use_tc:
             f.write("<details>\n<summary>分类目录</summary>\n<ol>\n")
             for keyword in topic_names:
-                if data[keyword]:
+                if data[keyword] or keyword == featured_topic:
                     kw_slug = re.sub(r'\W+', '-', keyword.lower())
                     f.write(f"<li><a href='#{kw_slug}'>{keyword}</a></li>\n")
             f.write("</ol>\n</details>\n\n")
@@ -1064,7 +1250,7 @@ def json_to_md(filename, md_filename,
         # 5. 添加各个主题部分
         for keyword in topic_names:
             papers = data[keyword]
-            if not papers:
+            if not papers and keyword != featured_topic:
                 continue
                 
             kw_slug = re.sub(r'\W+', '-', keyword.lower())
@@ -1089,6 +1275,13 @@ def json_to_md(filename, md_filename,
                 key=lambda item: item[1].split("|")[1],
                 reverse=True,
             )
+
+            if not sorted_papers and keyword == featured_topic:
+                f.write(
+                    "<tr><td colspan='4'>"
+                    f"最近 {RETENTION_MONTHS} 个月暂无收录论文"
+                    "</td></tr>\n"
+                )
             
             for paper_id, paper_entry in sorted_papers:
                 entry_parts = paper_entry.strip().split('|')

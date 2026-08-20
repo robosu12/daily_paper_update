@@ -136,6 +136,33 @@ class PaperSourceTests(unittest.TestCase):
         self.assertIn("<th>日期</th><th>刊会</th><th>标题</th>", rendered)
         self.assertIn("<td>RAL</td><td>Featured</td>", rendered)
 
+    def test_json_to_md_keeps_empty_featured_venue_table(self):
+        """顶会来源暂时无结果时仍应展示顶部表格和空状态。"""
+        data = {
+            "Visual SLAM": {
+                "regular": "|2026-07-18|Regular|Alice|[Paper](url)|无|Summary|\n",
+            },
+        }
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            json_path = Path(temp_dir) / "papers.json"
+            markdown_path = Path(temp_dir) / "README.md"
+            json_path.write_text(json.dumps(data), encoding="utf-8")
+            with patch(
+                "daily_arxiv.current_date",
+                return_value=datetime.date(2026, 7, 20),
+            ):
+                daily_arxiv.json_to_md(
+                    str(json_path),
+                    str(markdown_path),
+                    featured_topic="机器人顶会顶刊",
+                )
+            rendered = markdown_path.read_text(encoding="utf-8")
+
+        self.assertIn("<h2 id='机器人顶会顶刊'>机器人顶会顶刊</h2>", rendered)
+        self.assertIn("<th>日期</th><th>刊会</th><th>标题</th>", rendered)
+        self.assertIn("最近 1 个月暂无收录论文", rendered)
+
     def test_filter_old_papers_removes_future_dates(self):
         entries = {
             "boundary": "|2026-06-20|Boundary|A|[Paper](url)|无|Summary|\n",
@@ -288,6 +315,56 @@ class PaperSourceTests(unittest.TestCase):
             ["IEEE Robotics and Automation Letters"],
         )
 
+    def test_get_daily_papers_uses_crossref_for_missing_venue(self):
+        """Semantic Scholar 未命中的刊会应由 Crossref 补充。"""
+        paper = self.make_paper(
+            "crossref",
+            "10.1000/ras",
+            "Recent Gaussian Splatting SLAM",
+            datetime.date(2026, 7, 3),
+            doi="10.1000/ras",
+            venue="Robotics and Autonomous Systems",
+        )
+        venue_groups = {
+            "RAS": ["Robotics and Autonomous Systems"],
+        }
+
+        with (
+            patch(
+                "daily_arxiv.fetch_semantic_scholar_papers",
+                return_value=[],
+            ),
+            patch(
+                "daily_arxiv.fetch_crossref_venue_papers",
+                return_value=[paper],
+            ) as mock_crossref,
+            patch("daily_arxiv.get_paper_summary", return_value="Summary"),
+            patch("daily_arxiv.get_official_code_link", return_value=None),
+            patch(
+                "daily_arxiv.current_date",
+                return_value=datetime.date(2026, 7, 20),
+            ),
+        ):
+            data, _ = daily_arxiv.get_daily_papers(
+                "机器人顶会顶刊",
+                ["Gaussian Splatting"],
+                sources={
+                    "arxiv": False,
+                    "openreview": False,
+                    "semantic_scholar": True,
+                },
+                venue_groups=venue_groups,
+            )
+
+        entry = data["机器人顶会顶刊"]["doi:10.1000/ras"]
+        self.assertIn("[Crossref]", entry)
+        self.assertTrue(entry.endswith("|RAS|\n"))
+        mock_crossref.assert_called_once_with(
+            ["Gaussian Splatting"],
+            venue_groups,
+            max_results=10,
+        )
+
     def test_collect_keyword_filters_reuses_configured_terms(self):
         keywords = {
             "LiDAR SLAM": {"filters": ["SLAM", "LiDAR Odometry"]},
@@ -419,6 +496,60 @@ class PaperSourceTests(unittest.TestCase):
         self.assertEqual(
             mock_get.call_args.kwargs["params"]["venue"],
             ",".join(venues),
+        )
+
+    @patch("daily_arxiv.requests.get")
+    def test_fetch_crossref_venue_papers_validates_venue_and_keywords(
+            self, mock_get):
+        """Crossref 候选项必须同时匹配目标刊会和现有关键词。"""
+        response = Mock()
+        response.raise_for_status.return_value = None
+        response.json.return_value = {
+            "message": {
+                "items": [
+                    {
+                        "DOI": "10.1000/ral",
+                        "title": ["Recent Visual SLAM"],
+                        "author": [{"given": "Alice", "family": "Smith"}],
+                        "abstract": "<jats:p>A tagged abstract.</jats:p>",
+                        "published-online": {"date-parts": [[2026, 7, 1]]},
+                        "URL": "https://doi.org/10.1000/ral",
+                        "container-title": [
+                            "IEEE Robotics and Automation Letters",
+                        ],
+                    },
+                    {
+                        "DOI": "10.1000/other",
+                        "title": ["Recent Visual SLAM"],
+                        "published-online": {"date-parts": [[2026, 7, 1]]},
+                        "URL": "https://doi.org/10.1000/other",
+                        "container-title": ["Another Journal"],
+                    },
+                ],
+            },
+        }
+        mock_get.return_value = response
+        venue_groups = {
+            "RAL": ["IEEE Robotics and Automation Letters"],
+        }
+
+        with patch(
+            "daily_arxiv.current_date",
+            return_value=datetime.date(2026, 7, 20),
+        ):
+            papers = daily_arxiv.fetch_crossref_venue_papers(
+                ["Visual SLAM"],
+                venue_groups,
+                max_results=10,
+            )
+
+        self.assertEqual(len(papers), 1)
+        self.assertEqual(papers[0].source, "crossref")
+        self.assertEqual(papers[0].venue, "IEEE Robotics and Automation Letters")
+        self.assertEqual(papers[0].abstract, "A tagged abstract.")
+        self.assertEqual(
+            mock_get.call_args.kwargs["params"]["query.container-title"],
+            "IEEE Robotics and Automation Letters",
         )
 
     @patch("daily_arxiv.requests.get")

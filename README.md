@@ -9,6 +9,7 @@
 <details>
 <summary>分类目录</summary>
 <ol>
+<li><a href='#机器人顶会顶刊'>机器人顶会顶刊</a></li>
 <li><a href='#lidar-slam'>LiDAR SLAM</a></li>
 <li><a href='#visual-slam'>Visual SLAM</a></li>
 <li><a href='#loop-closure'>Loop Closure</a></li>
@@ -17,6 +18,24 @@
 <li><a href='#3dgs'>3DGS</a></li>
 </ol>
 </details>
+
+<h2 id='机器人顶会顶刊'>机器人顶会顶刊</h2>
+
+<div class="table-container">
+<table>
+<thead><tr><th>日期</th><th>刊会</th><th>标题</th><th>论文与摘要</th></tr></thead>
+<tbody>
+<tr><td>2026-08-01</td><td>RAL</td><td>MVOFormer: Flow-Semantic Transformer for Robust Monocular Visual Odometry</td><td>[Crossref](https://doi.org/10.1109/lra.2026.3707361)<br><strong>摘要：</strong> ◆ 暂无公开摘要，请通过论文链接查看原文。</td></tr>
+<tr><td>2026-08-01</td><td>RAL</td><td>LVGS-SLAM: LiDAR-Visual-Supervised Gaussian Splatting SLAM With Dense Depth Rendering for Unstructured Environments</td><td>[Crossref](https://doi.org/10.1109/lra.2026.3707359)<br><strong>摘要：</strong> ◆ 暂无公开摘要，请通过论文链接查看原文。</td></tr>
+<tr><td>2026-08-01</td><td>RAL</td><td>CubeDVO: Cubemap-Spherical Deep Visual Odometry for a Monocular 360-Degree Camera</td><td>[Crossref](https://doi.org/10.1109/lra.2026.3706936)<br><strong>摘要：</strong> ◆ 暂无公开摘要，请通过论文链接查看原文。</td></tr>
+<tr><td>2026-08-01</td><td>RAL</td><td>UniFormer-Based Dual Quaternion Network for Visual Odometry</td><td>[Crossref](https://doi.org/10.1109/lra.2026.3707344)<br><strong>摘要：</strong> ◆ 暂无公开摘要，请通过论文链接查看原文。</td></tr>
+<tr><td>2026-08-01</td><td>RAL</td><td>MixVIO: Selective Visual-Inertial Odometry via Phase-Aware Attention and Hybrid Kernel Modeling</td><td>[Crossref](https://doi.org/10.1109/lra.2026.3707325)<br><strong>摘要：</strong> ◆ 暂无公开摘要，请通过论文链接查看原文。</td></tr>
+<tr><td>2026-08-01</td><td>RAL</td><td>CodedVO: Coded Visual Odometry</td><td>[Crossref](https://doi.org/10.1109/lra.2024.3416788)<br><strong>摘要：</strong> ◆ 暂无公开摘要，请通过论文链接查看原文。</td></tr>
+</tbody>
+</table>
+</div>
+
+<div align='right'><a href='#top'>↑ 返回顶部</a></div>
 
 <h2 id='lidar-slam'>LiDAR SLAM</h2>
 
