@@ -138,10 +138,10 @@ class PaperSourceTests(unittest.TestCase):
 
     def test_filter_old_papers_removes_future_dates(self):
         entries = {
-            "boundary": "|2026-05-20|Boundary|A|[Paper](url)|无|Summary|\n",
+            "boundary": "|2026-06-20|Boundary|A|[Paper](url)|无|Summary|\n",
             "current": "|2026-07-19|Current|A|[Paper](url)|无|Summary|\n",
             "future": "|2026-08-01|Future|A|[Paper](url)|无|Summary|\n",
-            "old": "|2026-05-19|Old|A|[Paper](url)|无|Summary|\n",
+            "old": "|2026-06-19|Old|A|[Paper](url)|无|Summary|\n",
         }
 
         with patch(
@@ -155,14 +155,14 @@ class PaperSourceTests(unittest.TestCase):
     def test_retention_start_date_handles_month_end(self):
         self.assertEqual(
             daily_arxiv.retention_start_date(datetime.date(2026, 4, 30)),
-            datetime.date(2026, 2, 28),
+            datetime.date(2026, 3, 30),
         )
 
     def test_update_json_file_deletes_expired_entries(self):
         data = {
             "SLAM": {
-                "expired": "|2026-05-19|Old|A|[Paper](url)|无|Summary|\n",
-                "retained": "|2026-05-20|New|A|[Paper](url)|无|Summary|\n",
+                "expired": "|2026-06-19|Old|A|[Paper](url)|无|Summary|\n",
+                "retained": "|2026-06-20|New|A|[Paper](url)|无|Summary|\n",
             }
         }
 
@@ -376,7 +376,7 @@ class PaperSourceTests(unittest.TestCase):
         self.assertEqual(request.kwargs["headers"]["x-api-key"], "test-key")
         self.assertEqual(
             request.kwargs["params"]["publicationDateOrYear"],
-            "2026-05-20:2026-07-20",
+            "2026-06-20:2026-07-20",
         )
         self.assertIn(" | ", request.kwargs["params"]["query"])
 

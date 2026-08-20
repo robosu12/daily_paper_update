@@ -37,7 +37,8 @@ DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat/completions"
 SEMANTIC_SCHOLAR_API_KEY = os.getenv("SEMANTIC_SCHOLAR_API_KEY", "")
 
-RETENTION_MONTHS = 2
+# 所有来源统一保留最近一个月的论文。
+RETENTION_MONTHS = 1
 SUMMARY_MAX_CHARS = 600
 
 _semantic_scholar_disabled = False
