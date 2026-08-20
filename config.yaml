@@ -14,6 +14,26 @@ sources:
     openreview: True
     semantic_scholar: True
 
+# 机器人顶会顶刊；检索词自动汇总下方 keywords，无需重复维护
+top_venues:
+    enabled: True
+    title: "机器人顶会顶刊"
+    max_results: 30
+    venues:
+        "ICRA":
+            - "IEEE International Conference on Robotics and Automation"
+            - "International Conference on Robotics and Automation"
+            - "ICRA"
+        "IROS":
+            - "IEEE/RSJ International Conference on Intelligent Robots and Systems"
+            - "IEEE International Conference on Intelligent Robots and Systems"
+            - "International Conference on Intelligent Robots and Systems"
+            - "IROS"
+        "RAL": ["IEEE Robotics and Automation Letters"]
+        "RAS": ["Robotics and Autonomous Systems"]
+        "TRO": ["IEEE Transactions on Robotics"]
+        "TFR": ["IEEE Transactions on Field Robotics"]
+
 publish_readme: True
 publish_gitpage: True
 publish_wechat: False

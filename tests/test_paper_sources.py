@@ -66,6 +66,11 @@ class PaperSourceTests(unittest.TestCase):
         self.assertEqual(rendered, f"<strong>摘要：</strong> {'A' * 600}")
         self.assertNotIn("<details>", rendered)
 
+    def test_fallback_summary_reports_missing_abstract(self):
+        summary = daily_arxiv.generate_fallback_summary("Paper title", "")
+
+        self.assertEqual(summary, "◆ 暂无公开摘要，请通过论文链接查看原文。")
+
     def test_json_to_md_renders_link_and_summary_in_same_cell(self):
         long_summary = "Long summary sentence. " * 30
         data = {
@@ -96,6 +101,40 @@ class PaperSourceTests(unittest.TestCase):
             "</td>", 1
         )[0]
         self.assertLessEqual(len(rendered_summary), daily_arxiv.SUMMARY_MAX_CHARS)
+
+    def test_json_to_md_places_featured_venue_table_first(self):
+        data = {
+            "Visual SLAM": {
+                "regular": "|2026-07-18|Regular|Alice|[Paper](url)|无|Summary|\n",
+            },
+            "机器人顶会顶刊": {
+                "featured": (
+                    "|2026-07-19|Featured|Alice|[Paper](url)|无|Summary|RAL|\n"
+                ),
+            },
+        }
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            json_path = Path(temp_dir) / "papers.json"
+            markdown_path = Path(temp_dir) / "README.md"
+            json_path.write_text(json.dumps(data), encoding="utf-8")
+            with patch(
+                "daily_arxiv.current_date",
+                return_value=datetime.date(2026, 7, 20),
+            ):
+                daily_arxiv.json_to_md(
+                    str(json_path),
+                    str(markdown_path),
+                    featured_topic="机器人顶会顶刊",
+                )
+            rendered = markdown_path.read_text(encoding="utf-8")
+
+        self.assertLess(
+            rendered.index("机器人顶会顶刊"),
+            rendered.index("Visual SLAM"),
+        )
+        self.assertIn("<th>日期</th><th>刊会</th><th>标题</th>", rendered)
+        self.assertIn("<td>RAL</td><td>Featured</td>", rendered)
 
     def test_filter_old_papers_removes_future_dates(self):
         entries = {
@@ -207,6 +246,61 @@ class PaperSourceTests(unittest.TestCase):
             entries["semantic_scholar:semantic-id"],
         )
 
+    def test_get_daily_papers_serializes_top_venue_label(self):
+        paper = self.make_paper(
+            "semantic_scholar",
+            "ral-id",
+            "A Featured SLAM Paper",
+            datetime.date(2026, 7, 3),
+            venue="IEEE Robotics and Automation Letters",
+        )
+        venue_groups = {
+            "RAL": ["IEEE Robotics and Automation Letters"],
+        }
+
+        with (
+            patch(
+                "daily_arxiv.fetch_semantic_scholar_papers",
+                return_value=[paper],
+            ) as mock_fetch,
+            patch("daily_arxiv.get_paper_summary", return_value="Summary"),
+            patch("daily_arxiv.get_official_code_link", return_value=None),
+            patch(
+                "daily_arxiv.current_date",
+                return_value=datetime.date(2026, 7, 20),
+            ),
+        ):
+            data, _ = daily_arxiv.get_daily_papers(
+                "机器人顶会顶刊",
+                ["SLAM", "Visual Odometry"],
+                sources={
+                    "arxiv": False,
+                    "openreview": False,
+                    "semantic_scholar": True,
+                },
+                venue_groups=venue_groups,
+            )
+
+        entry = data["机器人顶会顶刊"]["semantic_scholar:ral-id"]
+        self.assertTrue(entry.endswith("|RAL|\n"))
+        self.assertEqual(
+            mock_fetch.call_args.kwargs["venues"],
+            ["IEEE Robotics and Automation Letters"],
+        )
+
+    def test_collect_keyword_filters_reuses_configured_terms(self):
+        keywords = {
+            "LiDAR SLAM": {"filters": ["SLAM", "LiDAR Odometry"]},
+            "Visual SLAM": {"filters": ["SLAM", "Visual Odometry"]},
+        }
+
+        filters = daily_arxiv.collect_keyword_filters(keywords)
+
+        self.assertEqual(
+            filters,
+            ["SLAM", "LiDAR Odometry", "Visual Odometry"],
+        )
+
     @patch("daily_arxiv.requests.get")
     def test_fetch_openreview_papers_normalizes_public_note(self, mock_get):
         response = Mock(status_code=200)
@@ -285,6 +379,47 @@ class PaperSourceTests(unittest.TestCase):
             "2026-05-20:2026-07-20",
         )
         self.assertIn(" | ", request.kwargs["params"]["query"])
+
+    @patch("daily_arxiv.requests.get")
+    def test_fetch_semantic_scholar_papers_filters_venues(self, mock_get):
+        response = Mock(status_code=200, headers={})
+        response.json.return_value = {
+            "data": [{
+                "paperId": "ral-id",
+                "title": "Recent SLAM in RA-L",
+                "abstract": None,
+                "tldr": {"text": "A recent TLDR."},
+                "authors": [{"name": "Alice"}],
+                "publicationDate": "2026-07-01",
+                "year": 2026,
+                "url": "https://www.semanticscholar.org/paper/ral-id",
+                "externalIds": {},
+                "openAccessPdf": None,
+                "venue": "IEEE Robotics and Automation Letters",
+            }],
+        }
+        mock_get.return_value = response
+        venues = [
+            "IEEE International Conference on Robotics and Automation",
+            "IEEE Robotics and Automation Letters",
+        ]
+
+        with patch(
+            "daily_arxiv.current_date",
+            return_value=datetime.date(2026, 7, 20),
+        ):
+            daily_arxiv._semantic_scholar_disabled = False
+            papers = daily_arxiv.fetch_semantic_scholar_papers(
+                ["SLAM"],
+                venues=venues,
+            )
+
+        self.assertEqual(papers[0].venue, "IEEE Robotics and Automation Letters")
+        self.assertEqual(papers[0].abstract, "A recent TLDR.")
+        self.assertEqual(
+            mock_get.call_args.kwargs["params"]["venue"],
+            ",".join(venues),
+        )
 
     @patch("daily_arxiv.requests.get")
     def test_fetch_semantic_scholar_papers_rejects_future_date(self, mock_get):

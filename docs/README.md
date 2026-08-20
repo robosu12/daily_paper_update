@@ -46,6 +46,9 @@ This codebase is composed of the following parts:
 5. Add new keywords (optional)
     - Edit `keywords` in [config.yaml](../config.yaml), you can add more filters or keywords.
     - Enable or disable individual providers under `sources`.
+    - Edit `top_venues.venues` to maintain the featured robotics conference
+      and journal list. This table automatically reuses every filter under
+      `keywords`, so no second keyword list is required.
     - Push changes to remote repo and re-run Github Actions Manually.
 
 </details>

@@ -54,6 +54,8 @@ class Paper:
     paper_url: str
     arxiv_id: str = ""
     doi: str = ""
+    # 保留正式刊会名称，用于顶会顶刊分组的二次校验。
+    venue: str = ""
 
     @property
     def storage_key(self) -> str:
@@ -298,6 +300,10 @@ def get_paper_summary(title: str, abstract: str) -> str:
     """确保摘要永不空白的生成函数"""
     MAX_RETRIES = 3
     WAIT_TIMES = [1, 2, 3]  # 重试等待时间
+
+    # 没有原始摘要时不调用模型，直接标明数据源暂未收录。
+    if not normalize_summary_text(abstract):
+        return generate_fallback_summary(title, abstract)
     
     # 1. 检查API密钥是否有效
     if not DEEPSEEK_API_KEY or DEEPSEEK_API_KEY == "your_api_key_here":
@@ -365,24 +371,14 @@ def get_paper_summary(title: str, abstract: str) -> str:
 
 def generate_fallback_summary(title: str, abstract: str) -> str:
     """智能生成备用摘要"""
-    # 1. 尝试从摘要中提取前3句
-    sentences = re.split(r'(?<=[.!?])\s+', abstract)
-    if len(sentences) >= 3:
-        return "◆ " + "\n◆ ".join(sentences[:3])
-    elif sentences:
-        return "◆ " + sentences[0]
-    
-    # 2. 如果摘要为空，根据标题生成示例摘要
-    topics = ["视觉定位", "三维重建", "特征匹配", "场景理解", "神经网络"]
-    techniques = ["深度学习", "卷积神经网络", "自监督学习", "特征金字塔"]
-    contributions = ["提高准确率", "降低计算成本", "增强鲁棒性", "解决领域难题"]
-    
-    return (
-        f"◆ 提出了一种新的{random.choice(topics)}方法\n"
-        f"◆ 通过{random.choice(techniques)}技术创新\n"
-        f"◆ 实现{random.choice(contributions)}\n"
-        f"◆ 在多个数据集上验证了有效性"
-    )
+    # 数据源无摘要时给出明确状态，避免生成与论文无关的随机描述。
+    if not normalize_summary_text(abstract):
+        return "◆ 暂无公开摘要，请通过论文链接查看原文。"
+
+    # 无模型可用时提取摘要前三句，保证内容来自论文原文。
+    normalized_abstract = normalize_summary_text(abstract)
+    sentences = re.split(r'(?<=[.!?])\s+', normalized_abstract)
+    return "◆ " + "\n◆ ".join(sentences[:3])
 
 def fetch_arxiv_results(query, max_results=10):
     """修复参数错误并增强网络稳定性"""
@@ -555,10 +551,44 @@ def build_semantic_scholar_query(filters: list[str]) -> str:
     return " | ".join(terms)
 
 
+def collect_keyword_filters(keywords: dict) -> list[str]:
+    """按配置顺序合并所有分类关键词，并去除重复项。"""
+    filters = []
+    seen = set()
+    for settings in keywords.values():
+        for item in settings.get("filters", []):
+            clean_item = str(item).strip()
+            normalized_item = clean_item.casefold()
+            if clean_item and normalized_item not in seen:
+                seen.add(normalized_item)
+                filters.append(clean_item)
+    return filters
+
+
+def collect_venue_aliases(venue_groups: dict[str, list[str]]) -> list[str]:
+    """展开刊会配置，供 Semantic Scholar 的 venue 参数使用。"""
+    aliases = []
+    for values in venue_groups.values():
+        aliases.extend(
+            str(value).strip() for value in values if str(value).strip()
+        )
+    return aliases
+
+
+def match_venue_label(venue: str, venue_groups: dict[str, list[str]]) -> str:
+    """把数据源返回的正式刊会名称映射为配置中的简短标签。"""
+    normalized_venue = normalize_title(venue)
+    for label, aliases in venue_groups.items():
+        if any(normalize_title(alias) == normalized_venue for alias in aliases):
+            return label
+    return ""
+
+
 def fetch_semantic_scholar_papers(
         filters: list[str],
-        max_results=10) -> list[Paper]:
-    """Fetch recent Semantic Scholar papers without blocking other sources."""
+        max_results=10,
+        venues: list[str] | None = None) -> list[Paper]:
+    """获取近期论文，可按正式刊会名称进一步过滤。"""
     global _semantic_scholar_disabled
     if _semantic_scholar_disabled:
         return []
@@ -572,7 +602,7 @@ def fetch_semantic_scholar_papers(
         "query": build_semantic_scholar_query(filters),
         "fields": (
             "paperId,title,abstract,authors,publicationDate,year,url,"
-            "externalIds,openAccessPdf,venue"
+            "externalIds,openAccessPdf,venue,tldr"
         ),
         "sort": "publicationDate:desc",
         "publicationDateOrYear": (
@@ -580,6 +610,9 @@ def fetch_semantic_scholar_papers(
         ),
         "fieldsOfStudy": "Computer Science,Engineering",
     }
+    # 顶会顶刊查询复用同一接口，仅额外限定正式刊会名称。
+    if venues:
+        params["venue"] = ",".join(venues)
 
     response = None
     for attempt in range(3):
@@ -629,12 +662,14 @@ def fetch_semantic_scholar_papers(
     papers = []
     for item in items:
         title = str(item.get("title") or "").strip()
-        abstract = str(item.get("abstract") or "").strip()
+        # 部分新刊论文尚无摘要，优先使用数据源提供的 TLDR 补充。
+        tldr = item.get("tldr") or {}
+        abstract = str(item.get("abstract") or tldr.get("text") or "").strip()
         published_date = parse_iso_date(
             item.get("publicationDate"),
             item.get("year"),
         )
-        if not title or not abstract or not published_date:
+        if not title or not published_date:
             continue
         if not is_date_in_range(published_date):
             continue
@@ -665,6 +700,7 @@ def fetch_semantic_scholar_papers(
             paper_url=str(paper_url),
             arxiv_id=arxiv_id,
             doi=doi,
+            venue=str(item.get("venue") or "").strip(),
         ))
 
     papers.sort(key=lambda paper: paper.published_date, reverse=True)
@@ -676,8 +712,9 @@ def get_daily_papers(
         max_results=10,
         existing_data=None,
         sources=None,
-        openreview_search_limit=50):
-    """Fetch and merge papers from enabled sources for one topic."""
+        openreview_search_limit=50,
+        venue_groups=None):
+    """获取并合并一个主题下已启用来源的论文。"""
     papers = {}
     web_content = {}
     existing_papers = existing_data.get(topic, {}) if existing_data else {}
@@ -715,9 +752,14 @@ def get_daily_papers(
         results.extend(openreview_papers)
 
     if source_config.get("semantic_scholar"):
+        # 仅顶会顶刊分组传入 venue，其余分类保持原有检索行为。
+        semantic_venues = (
+            collect_venue_aliases(venue_groups) if venue_groups else None
+        )
         semantic_scholar_papers = fetch_semantic_scholar_papers(
             filters,
             max_results=max_results,
+            venues=semantic_venues,
         )
         logging.info(
             f"Semantic Scholar返回 {len(semantic_scholar_papers)} 篇: {topic}"
@@ -733,6 +775,14 @@ def get_daily_papers(
         try:
             if not is_date_in_range(paper.published_date):
                 continue
+
+            # 服务端 venue 过滤之外再做一次映射校验，避免误收同名刊物。
+            venue_label = ""
+            if venue_groups:
+                venue_label = match_venue_label(paper.venue, venue_groups)
+                if not venue_label:
+                    logging.info(f"跳过非目标刊会论文: {paper.title} ({paper.venue})")
+                    continue
 
             paper_key = paper.storage_key
             normalized_title = normalize_title(paper.title)
@@ -771,9 +821,10 @@ def get_daily_papers(
             )
             summary = sanitize_entry_text(summary)
             paper_link = f"[{paper.link_label}]({paper.paper_url})"
+            venue_field = f"{venue_label}|" if venue_label else ""
             papers[paper_key] = (
                 f"|{paper.published_date}|{title}|{authors}|{paper_link}|"
-                f"{code_display}|{summary}|\n"
+                f"{code_display}|{summary}|{venue_field}\n"
             )
 
             web_entry = (
@@ -782,6 +833,8 @@ def get_daily_papers(
             )
             if code_link:
                 web_entry += f", 代码: [链接]({code_link})"
+            if venue_label:
+                web_entry += f", 刊会: {venue_label}"
             web_entry += f", 摘要: {summary}\n"
             web_content[paper_key] = web_entry
 
@@ -900,13 +953,24 @@ def update_json_file(filename, data_dict):
     with open(filename, "w") as f:
         json.dump(existing_data, f, indent=2)
 
+
+def order_topic_names(data: dict, featured_topic: str | None = None) -> list[str]:
+    """保持配置顺序，并把指定的重点表格移动到最前面。"""
+    topic_names = list(data)
+    if featured_topic in topic_names:
+        topic_names.remove(featured_topic)
+        topic_names.insert(0, featured_topic)
+    return topic_names
+
+
 def json_to_md(filename, md_filename,
                task='',
                to_web=False,
                use_title=True,
                use_tc=True,
                show_badge=True,
-               use_b2t=True):
+               use_b2t=True,
+               featured_topic=None):
     """生成Markdown文件并应用最终过滤"""
     today = datetime.date.today().strftime('%Y.%m.%d')
     
@@ -923,6 +987,9 @@ def json_to_md(filename, md_filename,
                 
     except (FileNotFoundError, json.JSONDecodeError):
         data = {}
+
+    # 目录和正文共用顺序，确保顶会顶刊表格稳定置顶。
+    topic_names = order_topic_names(data, featured_topic)
     
     # 2. 创建Markdown文件
     with open(md_filename, "w+", encoding="utf-8") as f:
@@ -931,6 +998,9 @@ def json_to_md(filename, md_filename,
         f.write(
             "> 每日自动更新SLAM领域的 arXiv、OpenReview 与 Semantic Scholar 论文，"
             f"仅保留最近 {RETENTION_MONTHS} 个月的结果\n\n"
+        )
+        f.write(
+            "> 顶部单列 ICRA、IROS、RAL、RAS、TRO 与 TFR 的最新 SLAM 论文\n\n"
         )
         f.write("> 使用说明: [点击查看](./docs/README.md#usage)\n\n")
         
@@ -984,14 +1054,15 @@ def json_to_md(filename, md_filename,
         # 4. 添加目录（如果需要）
         if use_tc:
             f.write("<details>\n<summary>分类目录</summary>\n<ol>\n")
-            for keyword in data.keys():
+            for keyword in topic_names:
                 if data[keyword]:
                     kw_slug = re.sub(r'\W+', '-', keyword.lower())
                     f.write(f"<li><a href='#{kw_slug}'>{keyword}</a></li>\n")
             f.write("</ol>\n</details>\n\n")
         
         # 5. 添加各个主题部分
-        for keyword, papers in data.items():
+        for keyword in topic_names:
+            papers = data[keyword]
             if not papers:
                 continue
                 
@@ -1000,7 +1071,16 @@ def json_to_md(filename, md_filename,
             
             f.write('<div class="table-container">\n')
             f.write("<table>\n")
-            f.write("<thead><tr><th>日期</th><th>标题</th><th>论文与摘要</th></tr></thead>\n")
+            if keyword == featured_topic:
+                f.write(
+                    "<thead><tr><th>日期</th><th>刊会</th><th>标题</th>"
+                    "<th>论文与摘要</th></tr></thead>\n"
+                )
+            else:
+                f.write(
+                    "<thead><tr><th>日期</th><th>标题</th>"
+                    "<th>论文与摘要</th></tr></thead>\n"
+                )
             f.write("<tbody>\n")
             
             sorted_papers = sorted(
@@ -1017,6 +1097,9 @@ def json_to_md(filename, md_filename,
                     paper_link = entry_parts[4].strip()
                     code_link = entry_parts[5].strip()
                     summary = entry_parts[6].strip()
+                    venue_label = (
+                        entry_parts[7].strip() if len(entry_parts) > 7 else ""
+                    )
                     
 
                     if not is_date_retained(date_str):
@@ -1036,6 +1119,8 @@ def json_to_md(filename, md_filename,
                     
                     f.write("<tr>")
                     f.write(f"<td>{html.escape(date_str)}</td>")
+                    if keyword == featured_topic:
+                        f.write(f"<td>{html.escape(venue_label or '未知')}</td>")
                     f.write(f"<td>{html.escape(title)}</td>")
                     f.write(
                         f"<td>{paper_display}<br>{render_summary_html(summary)}</td>"
@@ -1065,6 +1150,9 @@ def demo(**config):
     max_results = config['max_results']
     sources = config.get('sources', {})
     openreview_search_limit = config.get('openreview_search_limit', 50)
+    top_venue_config = config.get('top_venues', {})
+    top_venue_topic = top_venue_config.get('title', '机器人顶会顶刊')
+    venue_groups = top_venue_config.get('venues', {})
     publish_readme = config['publish_readme']
     publish_gitpage = config['publish_gitpage']
     publish_wechat = config['publish_wechat']
@@ -1090,6 +1178,24 @@ def demo(**config):
     logging.info(f'更新论文链接: {update_links}')
     if not update_links:
         logging.info("开始获取每日论文")
+
+        # 顶会顶刊使用现有分类的全部关键词，并只启用带 venue 的数据源。
+        if top_venue_config.get('enabled', True) and venue_groups:
+            top_data, top_data_web = get_daily_papers(
+                top_venue_topic,
+                filters=collect_keyword_filters(keywords),
+                max_results=top_venue_config.get('max_results', max_results),
+                existing_data=existing_data,
+                sources={
+                    'arxiv': False,
+                    'openreview': False,
+                    'semantic_scholar': sources.get('semantic_scholar', True),
+                },
+                venue_groups=venue_groups,
+            )
+            data_collector.append(top_data)
+            data_collector_web.append(top_data_web)
+
         for topic, settings in keywords.items():
             logging.info(f"关键词: {topic}")
             data, data_web = get_daily_papers(
@@ -1112,7 +1218,12 @@ def demo(**config):
             update_paper_links(json_file)
         else:
             update_json_file(json_file, data_collector)
-        json_to_md(json_file, md_file, task='更新README.md')
+        json_to_md(
+            json_file,
+            md_file,
+            task='更新README.md',
+            featured_topic=top_venue_topic,
+        )
     
     # 更新GitHub Pages
     if publish_gitpage:
@@ -1122,8 +1233,15 @@ def demo(**config):
             update_paper_links(json_file)
         else:
             update_json_file(json_file, data_collector)
-        json_to_md(json_file, md_file, task='更新GitPage', to_web=True, 
-                   use_tc=True, use_b2t=False)
+        json_to_md(
+            json_file,
+            md_file,
+            task='更新GitPage',
+            to_web=True,
+            use_tc=True,
+            use_b2t=False,
+            featured_topic=top_venue_topic,
+        )
     
     # 更新微信文档
     if publish_wechat:
@@ -1133,8 +1251,14 @@ def demo(**config):
             update_paper_links(json_file)
         else:
             update_json_file(json_file, data_collector_web)
-        json_to_md(json_file, md_file, task='更新微信', to_web=False, 
-                   use_title=False)
+        json_to_md(
+            json_file,
+            md_file,
+            task='更新微信',
+            to_web=False,
+            use_title=False,
+            featured_topic=top_venue_topic,
+        )
 
 def is_date_retained(date_str: str) -> bool:
     date_value = datetime.date.fromisoformat(date_str.replace('**', ''))

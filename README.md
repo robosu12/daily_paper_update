@@ -2,6 +2,8 @@
 
 > 每日自动更新SLAM领域的 arXiv、OpenReview 与 Semantic Scholar 论文，仅保留最近 2 个月的结果
 
+> 顶部单列 ICRA、IROS、RAL、RAS、TRO 与 TFR 的最新 SLAM 论文
+
 > 使用说明: [点击查看](./docs/README.md#usage)
 
 <details>
