@@ -1,4 +1,4 @@
-# SLAM领域最新论文 (2026.10.30)
+# SLAM领域最新论文 (2026.10.31)
 
 > 每日自动更新SLAM领域的 arXiv、OpenReview 与 Semantic Scholar 论文，仅保留最近 1 个月的结果
 
@@ -362,4 +362,4 @@
 
 ---
 > 本列表自动生成 | [反馈问题](https://github.com/your-repo/issues)
-> 更新于: 2026.10.30
+> 更新于: 2026.10.31
